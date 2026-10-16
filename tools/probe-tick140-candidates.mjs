@@ -1,0 +1,779 @@
+/**
+ * Tick140 candidates: thin-viewport residual after tick139 result head reclaim.
+ * Prefer live panelOver / CTA OOB / clip at SE-class + short heights.
+ * Focus: asset-error (no JS budget), pause tolerance-edge, loading, select/tut/opt.
+ */
+import { chromium } from 'playwright';
+import { createServer } from 'node:http';
+import { readFileSync, existsSync, writeFileSync } from 'node:fs';
+import { extname, join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const MIME = {
+  '.html': 'text/html; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.webp': 'image/webp',
+  '.json': 'application/json',
+  '.svg': 'image/svg+xml',
+  '.woff2': 'font/woff2',
+};
+
+function startServer() {
+  const server = createServer((req, res) => {
+    const urlPath = decodeURIComponent((req.url || '/').split('?')[0]);
+    const filePath = join(root, urlPath === '/' ? 'index.html' : urlPath.replace(/^\//, ''));
+    if (!filePath.startsWith(root) || !existsSync(filePath)) {
+      res.writeHead(404);
+      res.end('missing');
+      return;
+    }
+    res.writeHead(200, { 'Content-Type': MIME[extname(filePath)] || 'application/octet-stream' });
+    res.end(readFileSync(filePath));
+  });
+  return new Promise((resolve) => {
+    server.listen(0, '127.0.0.1', () => {
+      const { port } = server.address();
+      resolve({ server, url: `http://127.0.0.1:${port}/` });
+    });
+  });
+}
+
+function boxOut(el, box) {
+  if (!el || !box) return false;
+  const r = el.getBoundingClientRect();
+  return r.bottom > box.bottom + 1.5 || r.top < box.top - 1.5 || r.right > box.right + 1.5;
+}
+
+const LOCALES = ['ko', 'en', 'pt', 'es', 'ru', 'ja', 'zh-TW', 'zh-CN'];
+const SIZES = [
+  { width: 568, height: 320 },
+  { width: 640, height: 360 },
+  { width: 800, height: 450 },
+];
+
+const { server, url } = await startServer();
+const browser = await chromium.launch({ headless: true });
+const findings = [];
+
+try {
+  for (const size of SIZES) {
+    for (const loc of LOCALES) {
+      const page = await browser.newPage({
+        viewport: size,
+        hasTouch: false,
+        isMobile: false,
+      });
+      try {
+        await page.addInitScript(
+          ({ loc }) => {
+            localStorage.setItem(
+              'lao_mini_settings_v1',
+              JSON.stringify({
+                lang: loc,
+                muted: true,
+                bgmVolume: 0,
+                sfxVolume: 0,
+                autoFire: true,
+                padMode: 'fixed',
+                fullscreen: false,
+              }),
+            );
+            localStorage.setItem('lao_mini_tutorial_seen', '1');
+            Object.defineProperty(navigator, 'maxTouchPoints', { get: () => 0 });
+          },
+          { loc },
+        );
+
+        await page.goto(`${url}?cb=r140-${Date.now()}-${loc}-${size.width}x${size.height}`, {
+          waitUntil: 'domcontentloaded',
+          timeout: 60000,
+        });
+        await page.waitForSelector('#btn-start', { timeout: 60000 });
+        await page.waitForTimeout(40);
+
+        // ---- TITLE (live after boot) ----
+        const title = await page.evaluate(({ boxOutSrc }) => {
+          const boxOut = new Function(`return (${boxOutSrc})`)();
+          const app = document.getElementById('app');
+          const oc = document.getElementById('overlay-content');
+          const appR = app.getBoundingClientRect();
+          const ocR = oc.getBoundingClientRect();
+          const grid = oc.querySelector('.keys-grid');
+          const rules = oc.querySelector('.keys-rules');
+          const hi = oc.querySelector('.keys-hiscore');
+          const start = document.getElementById('btn-start');
+          const brand = oc.querySelector('.brand-mark');
+          const gR = grid?.getBoundingClientRect();
+          return {
+            panelOver: +(ocR.bottom - appR.bottom).toFixed(2),
+            gridH: gR ? +gR.height.toFixed(1) : 0,
+            rulesDisplay: rules ? getComputedStyle(rules).display : 'none',
+            hiInside: hi ? !boxOut(hi, ocR) : false,
+            startOut: start ? boxOut(start, appR) : true,
+            brandDisplay: brand ? getComputedStyle(brand).display : 'none',
+            headroom: +(appR.bottom - ocR.bottom).toFixed(1),
+          };
+        }, { boxOutSrc: boxOut.toString() });
+        findings.push({ screen: 'title', loc, w: size.width, h: size.height, ...title });
+
+        // ---- ASSET ERROR (no JS budget; CSS ≤420 icon/deco only) ----
+        const asset = await page.evaluate(async ({ loc, boxOutSrc }) => {
+          const boxOut = new Function(`return (${boxOutSrc})`)();
+          let tRetry = 'Retry';
+          let tSelect = 'To select';
+          let tH2 = 'Stage 3 assets failed to load';
+          try {
+            const mod = await import(`/js/i18n.js?probe=${Date.now()}`);
+            if (mod?.setLocale) mod.setLocale(loc);
+            if (mod?.t) {
+              tRetry = mod.t('btn.retry') || tRetry;
+              tSelect = mod.t('btn.toSelect') || tSelect;
+              tH2 = mod.t('err.stageLoad', { n: 3 }) || tH2;
+            }
+          } catch { /* */ }
+          const msg =
+            'Failed to decode texture atlas stage03_fx_pack_v2.webp (HTTP 404) — missing character portraits / effect packs / bullet sheets for orbital spire';
+          const overlay = document.getElementById('overlay');
+          const content = document.getElementById('overlay-content');
+          overlay.classList.add('is-on');
+          overlay.style.display = 'flex';
+          content.className = 'screen-asset-error';
+          content.style.cssText = '';
+          content.innerHTML = `
+            <span class="brand-mark">ASSET ERROR</span>
+            <span class="asset-error-icon" aria-hidden="true"></span>
+            <h2>${tH2}</h2>
+            <div class="asset-error-msg"><p>${msg}</p></div>
+            <span class="asset-error-deco" aria-hidden="true"></span>
+            <button class="btn btn-primary" id="btn-asset-retry">${tRetry}</button>
+            <button class="btn" id="btn-asset-select">${tSelect}</button>
+          `;
+          await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+          const app = document.getElementById('app');
+          const appR = app.getBoundingClientRect();
+          const ocR = content.getBoundingClientRect();
+          const retry = document.getElementById('btn-asset-retry');
+          const sel = document.getElementById('btn-asset-select');
+          const msgEl = content.querySelector('.asset-error-msg p');
+          const msgBox = content.querySelector('.asset-error-msg');
+          const brand = content.querySelector('.brand-mark');
+          const icon = content.querySelector('.asset-error-icon');
+          const deco = content.querySelector('.asset-error-deco');
+          const h2 = content.querySelector('h2');
+          const btns = [retry, sel].filter(Boolean);
+          const btnClip = btns.some(
+            (b) => b.scrollWidth > b.clientWidth + 2 || b.scrollHeight > b.clientHeight + 2,
+          );
+          return {
+            panelOver: +(ocR.bottom - appR.bottom).toFixed(2),
+            panelOverTop: +(appR.top - ocR.top).toFixed(2),
+            brandDisplay: brand ? getComputedStyle(brand).display : 'none',
+            brandH: brand ? +brand.getBoundingClientRect().height.toFixed(1) : 0,
+            iconDisplay: icon ? getComputedStyle(icon).display : 'none',
+            decoDisplay: deco ? getComputedStyle(deco).display : 'none',
+            h2H: h2 ? +h2.getBoundingClientRect().height.toFixed(1) : 0,
+            h2Fs: h2 ? getComputedStyle(h2).fontSize : '',
+            h2Text: tH2,
+            msgH: msgBox ? +msgBox.getBoundingClientRect().height.toFixed(1) : 0,
+            msgClip: msgEl
+              ? msgEl.scrollHeight > msgEl.clientHeight + 2 ||
+                msgEl.scrollWidth > msgEl.clientWidth + 2
+              : false,
+            msgOut: msgEl ? boxOut(msgEl, appR) : true,
+            retryOut: retry ? boxOut(retry, appR) : true,
+            selectOut: sel ? boxOut(sel, appR) : true,
+            btnClip,
+            headroom: +(appR.bottom - ocR.bottom).toFixed(1),
+            panelH: +ocR.height.toFixed(1),
+            appH: +appR.height.toFixed(1),
+          };
+        }, { loc, boxOutSrc: boxOut.toString() });
+        findings.push({ screen: 'asset', loc, w: size.width, h: size.height, ...asset });
+
+        // ---- LOADING mid-progress long label ----
+        const loading = await page.evaluate(async ({ loc, boxOutSrc }) => {
+          const boxOut = new Function(`return (${boxOutSrc})`)();
+          const stressMap = {
+            ko: '스테이지 자원을 불러오는 중… 거의 완료 (98%) — 캐릭터 초상화와 이펙트 팩',
+            en: 'Loading stage assets… nearly done (98%) — character portraits and effect packs',
+            pt: 'Carregando recursos do estágio… quase pronto (98%) — retratos e pacotes de efeitos',
+            es: 'Cargando recursos de etapa… casi listo (98%) — retratos y paquetes de efectos',
+            ru: 'Загрузка ресурсов этапа… почти готово (98%) — портреты и пакеты эффектов',
+            ja: 'ステージ資源を読み込み中… ほぼ完了 (98%) — キャラ肖像とエフェクトパック',
+            'zh-TW': '正在載入關卡資源… 即將完成 (98%) — 角色肖像與特效包',
+            'zh-CN': '正在加载关卡资源… 即将完成 (98%) — 角色肖像与特效包',
+          };
+          const content = document.getElementById('overlay-content');
+          const overlay = document.getElementById('overlay');
+          overlay.classList.add('is-on');
+          overlay.style.display = 'flex';
+          content.className = 'screen-loading';
+          content.style.cssText = '';
+          content.innerHTML = `
+            <div class="panel-frame" aria-hidden="true"></div>
+            <span class="brand-mark">LAO MINI ACTION</span>
+            <h2>LOADING</h2>
+            <span class="loading-deco" aria-hidden="true"></span>
+            <p id="loading-label">${stressMap[loc] || stressMap.en}</p>
+            <div class="load-track"><div class="load-fill" style="width:72%"></div></div>
+            <div class="load-meta"><span id="load-count">18 / 25</span><span id="load-pct">72%</span></div>
+          `;
+          await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+          const app = document.getElementById('app');
+          const appR = app.getBoundingClientRect();
+          const ocR = content.getBoundingClientRect();
+          const lab = document.getElementById('loading-label');
+          const deco = content.querySelector('.loading-deco');
+          const brand = content.querySelector('.brand-mark');
+          const meta = content.querySelector('.load-meta');
+          const track = content.querySelector('.load-track');
+          return {
+            panelOver: +(ocR.bottom - appR.bottom).toFixed(2),
+            panelOverTop: +(appR.top - ocR.top).toFixed(2),
+            decoDisplay: deco ? getComputedStyle(deco).display : 'none',
+            decoH: deco ? +deco.getBoundingClientRect().height.toFixed(1) : 0,
+            brandDisplay: brand ? getComputedStyle(brand).display : 'none',
+            brandH: brand ? +brand.getBoundingClientRect().height.toFixed(1) : 0,
+            labelH: lab ? +lab.getBoundingClientRect().height.toFixed(1) : 0,
+            labelClipY: lab ? lab.scrollHeight > lab.clientHeight + 2 : false,
+            labelClipX: lab ? lab.scrollWidth > lab.clientWidth + 2 : false,
+            labelOut: lab ? boxOut(lab, appR) : true,
+            metaOut: meta ? boxOut(meta, appR) : true,
+            trackOut: track ? boxOut(track, appR) : true,
+            headroom: +(appR.bottom - ocR.bottom).toFixed(1),
+          };
+        }, { loc, boxOutSrc: boxOut.toString() });
+        findings.push({ screen: 'loading', loc, w: size.width, h: size.height, ...loading });
+
+        // ---- PAUSE live ladder (tick131 + tick138) ----
+        const pause = await page.evaluate(async ({ loc, boxOutSrc }) => {
+          const boxOut = new Function(`return (${boxOutSrc})`)();
+          let tPause = 'Operation on hold';
+          let tResume = 'Resume';
+          let tOpts = 'OPTIONS';
+          let tMute = 'Unmute';
+          let tTitle = 'To title';
+          try {
+            const mod = await import(`/js/i18n.js?probe=${Date.now()}`);
+            if (mod?.setLocale) mod.setLocale(loc);
+            if (mod?.t) {
+              tPause = mod.t('pause.p');
+              tResume = mod.t('btn.resume');
+              tOpts = mod.t('btn.options');
+              tMute = mod.t('btn.unmute');
+              tTitle = mod.t('btn.toTitle');
+            }
+          } catch { /* */ }
+          const overlay = document.getElementById('overlay');
+          const content = document.getElementById('overlay-content');
+          overlay.classList.add('is-on');
+          overlay.style.display = 'flex';
+          content.className = 'screen-pause';
+          content.style.cssText = '';
+          content.innerHTML = `
+            <div class="panel-frame" aria-hidden="true"></div>
+            <div class="pause-stamp">
+              <span class="brand-mark">SYSTEM HOLD</span>
+              <h2>PAUSED</h2>
+              <span class="pause-deco" aria-hidden="true"></span>
+              <p class="pause-blurb">${tPause}</p>
+            </div>
+            <div class="pause-actions">
+              <button class="btn btn-primary btn-cta" id="btn-resume">${tResume}</button>
+              <button class="btn" id="btn-pause-options">${tOpts}</button>
+              <button class="btn" id="btn-pause-mute">${tMute}</button>
+              <button class="btn btn-ghost" id="btn-quit">${tTitle}</button>
+            </div>
+          `;
+          const app = document.getElementById('app');
+          const runSync = () => {
+            const oc = content;
+            const deco = oc.querySelector('.pause-deco');
+            const blurb = oc.querySelector('.pause-blurb');
+            const actions = oc.querySelector('.pause-actions');
+            const brand = oc.querySelector('.pause-stamp .brand-mark');
+            const h2 = oc.querySelector('.pause-stamp h2');
+            if (!app || !actions) return { steps: -1, over: 0 };
+            oc.classList.remove('is-pause-short');
+            oc.style.maxHeight = '';
+            oc.style.paddingTop = '';
+            oc.style.paddingBottom = '';
+            if (brand) brand.style.display = '';
+            if (h2) {
+              h2.style.fontSize = '';
+              h2.style.margin = '';
+              h2.style.letterSpacing = '';
+            }
+            if (deco) deco.style.display = '';
+            if (blurb) {
+              blurb.style.border = '';
+              blurb.style.backgroundImage = '';
+              blurb.style.padding = '';
+              blurb.style.clipPath = '';
+              blurb.style.marginTop = '';
+            }
+            actions.style.padding = '';
+            const panelOver = () => {
+              void oc.offsetHeight;
+              const appR = app.getBoundingClientRect();
+              const ocR = oc.getBoundingClientRect();
+              return Math.max(
+                0,
+                ocR.bottom - (appR.bottom + 1),
+                (appR.top - 1) - ocR.top,
+              );
+            };
+            const rawHeadroom = () => {
+              void oc.offsetHeight;
+              const appR = app.getBoundingClientRect();
+              const ocR = oc.getBoundingClientRect();
+              return appR.bottom - ocR.bottom;
+            };
+            let over = panelOver();
+            let steps = 0;
+            const appH0 = app.clientHeight || window.innerHeight || 450;
+            // Soft-continue probe: near-zero headroom under tolerance
+            const softNeed = appH0 <= 340 && rawHeadroom() < 8;
+            if (over <= 1.5 && !softNeed) return { steps, over, softNeed, head0: rawHeadroom() };
+            if (deco) deco.style.display = 'none';
+            steps = 1; over = panelOver();
+            if (over <= 1.5 && !softNeed) return { steps, over, softNeed, head0: rawHeadroom() };
+            if (blurb) {
+              blurb.style.border = 'none';
+              blurb.style.backgroundImage = 'none';
+              blurb.style.padding = '0';
+              blurb.style.clipPath = 'none';
+              blurb.style.marginTop = '2px';
+            }
+            steps = 2; over = panelOver();
+            if (over <= 1.5 && !softNeed) return { steps, over, softNeed, head0: rawHeadroom() };
+            oc.classList.add('is-pause-short');
+            if (brand) brand.style.display = 'none';
+            if (h2) {
+              h2.style.fontSize = '18px';
+              h2.style.margin = '0';
+              h2.style.letterSpacing = '0.12em';
+            }
+            steps = 3; over = panelOver();
+            if (over <= 1.5) return { steps, over, softNeed, head0: rawHeadroom() };
+            actions.style.padding = '6px';
+            steps = 4; over = panelOver();
+            if (over <= 1.5) return { steps, over, softNeed, head0: rawHeadroom() };
+            oc.style.paddingTop = '22px';
+            oc.style.paddingBottom = '16px';
+            steps = 5; over = panelOver();
+            if (over <= 1.5) return { steps, over, softNeed, head0: rawHeadroom() };
+            const appH = app.clientHeight || window.innerHeight || 450;
+            oc.style.maxHeight = `${Math.max(280, Math.floor(appH * 0.96))}px`;
+            return { steps: 6, over: panelOver(), softNeed, head0: rawHeadroom() };
+          };
+          const sync = runSync();
+          void content.offsetHeight;
+          const appR = app.getBoundingClientRect();
+          const ocR = content.getBoundingClientRect();
+          const brand = content.querySelector('.brand-mark');
+          const h2 = content.querySelector('h2');
+          const quit = document.getElementById('btn-quit');
+          const resume = document.getElementById('btn-resume');
+          const mute = document.getElementById('btn-pause-mute');
+          const btns = [...(content.querySelectorAll('.pause-actions button') || [])];
+          const btnClip = btns.some(
+            (b) => b.scrollWidth > b.clientWidth + 2 || b.scrollHeight > b.clientHeight + 2,
+          );
+          return {
+            panelOver: +(ocR.bottom - appR.bottom).toFixed(2),
+            syncSteps: sync?.steps ?? -1,
+            syncOver: +(sync?.over ?? 0).toFixed(2),
+            softNeed: !!sync?.softNeed,
+            head0: +(sync?.head0 ?? 0).toFixed(1),
+            brandDisplay: brand ? getComputedStyle(brand).display : 'none',
+            h2Fs: h2 ? getComputedStyle(h2).fontSize : '',
+            quitOut: quit ? boxOut(quit, appR) : true,
+            resumeOut: resume ? boxOut(resume, appR) : true,
+            muteOut: mute ? boxOut(mute, appR) : true,
+            btnClip,
+            headroom: +(appR.bottom - ocR.bottom).toFixed(1),
+            isPauseShort: content.classList.contains('is-pause-short'),
+            muteText: tMute,
+          };
+        }, { loc, boxOutSrc: boxOut.toString() });
+        findings.push({ screen: 'pause', loc, w: size.width, h: size.height, ...pause });
+
+        // ---- RESULT cleared (verify tick139; long MISSION COMPLETE brand) ----
+        const result = await page.evaluate(async ({ loc, boxOutSrc }) => {
+          const boxOut = new Function(`return (${boxOutSrc})`)();
+          let tRetry = 'Play again';
+          let tTitle = 'Title';
+          try {
+            const mod = await import(`/js/i18n.js?probe=${Date.now()}`);
+            if (mod?.setLocale) mod.setLocale(loc);
+            if (mod?.t) {
+              tRetry = mod.t('btn.retryRun') || tRetry;
+              tTitle = mod.t('btn.title') || tTitle;
+            }
+          } catch { /* */ }
+          const overlay = document.getElementById('overlay');
+          const content = document.getElementById('overlay-content');
+          overlay.classList.add('is-on');
+          overlay.style.display = 'flex';
+          content.className = 'screen-result cleared';
+          content.style.cssText = '';
+          content.innerHTML = `
+            <div class="panel-frame" aria-hidden="true"></div>
+            <span class="brand-mark">MISSION COMPLETE</span>
+            <h2>ALL CLEAR</h2>
+            <span class="result-deco" aria-hidden="true"></span>
+            <div class="result-score">
+              <div class="cell"><span class="lbl">SCORE</span><span class="val">012345678</span></div>
+              <div class="cell"><span class="lbl">HI-SCORE</span><span class="val">098765432</span></div>
+              <div class="cell"><span class="lbl">GRAZE</span><span class="val">1234</span></div>
+            </div>
+            <div class="result-meta">
+              <div class="cell"><span class="lbl">STAGE</span><span class="val">ALL 5 · FINAL GATE</span></div>
+              <div class="cell"><span class="lbl">PILOT</span><span class="val">CONSTANTIA</span></div>
+              <div class="cell"><span class="lbl">MAX COMBO</span><span class="val">99</span></div>
+              <div class="cell"><span class="lbl">NO MISS</span><span class="val">YES</span></div>
+            </div>
+            <button class="btn btn-primary" id="btn-retry">${tRetry}</button>
+            <button class="btn" id="btn-title">${tTitle}</button>
+          `;
+          // Mirror syncResultPanelBudget including Tick139
+          const app = document.getElementById('app');
+          const oc = content;
+          const deco = oc.querySelector('.result-deco');
+          const score = oc.querySelector('.result-score');
+          const meta = oc.querySelector('.result-meta');
+          const brand = oc.querySelector(':scope > .brand-mark');
+          const h2 = oc.querySelector(':scope > h2');
+          const retry = oc.querySelector('#btn-retry');
+          const titleBtn = oc.querySelector('#btn-title');
+          oc.classList.remove('is-result-short');
+          oc.style.maxHeight = '';
+          oc.style.paddingTop = '';
+          oc.style.paddingBottom = '';
+          if (deco) deco.style.display = '';
+          if (brand) { brand.style.display = ''; brand.style.marginBottom = ''; }
+          if (h2) {
+            h2.style.fontSize = '';
+            h2.style.margin = '';
+            h2.style.marginBottom = '';
+            h2.style.letterSpacing = '';
+          }
+          if (score) { score.style.marginTop = ''; score.style.marginBottom = ''; score.style.gap = ''; }
+          if (meta) { meta.style.marginBottom = ''; meta.style.gap = ''; }
+          for (const cell of oc.querySelectorAll('.result-score .cell, .result-meta .cell')) {
+            cell.style.padding = '';
+            cell.style.border = '';
+            cell.style.backgroundImage = '';
+            cell.style.boxShadow = '';
+            cell.style.clipPath = '';
+          }
+          if (retry) retry.style.padding = '';
+          if (titleBtn) titleBtn.style.padding = '';
+          const panelOver = () => {
+            void oc.offsetHeight;
+            const appR = app.getBoundingClientRect();
+            const ocR = oc.getBoundingClientRect();
+            return Math.max(0, ocR.bottom - (appR.bottom + 1), (appR.top - 1) - ocR.top);
+          };
+          const rawHeadroom = () => {
+            void oc.offsetHeight;
+            const appR = app.getBoundingClientRect();
+            const ocR = oc.getBoundingClientRect();
+            return appR.bottom - ocR.bottom;
+          };
+          const appH0 = app.clientHeight || window.innerHeight || 360;
+          let over = panelOver();
+          let steps = 0;
+          const soft = () => appH0 <= 340 && rawHeadroom() < 8;
+          if (over <= 1.5 && !soft()) { /* done */ }
+          else {
+            if (deco) deco.style.display = 'none';
+            steps = 1; over = panelOver();
+            if (!(over <= 1.5 && !soft())) {
+              if (brand) brand.style.marginBottom = '6px';
+              if (h2) h2.style.marginBottom = '6px';
+              if (score) { score.style.marginTop = '4px'; score.style.marginBottom = '8px'; score.style.gap = '12px'; }
+              if (meta) { meta.style.marginBottom = '8px'; meta.style.gap = '6px 12px'; }
+              steps = 2; over = panelOver();
+              if (!(over <= 1.5 && !soft())) {
+                oc.classList.add('is-result-short');
+                if (brand) brand.style.display = 'none';
+                if (h2) { h2.style.fontSize = '18px'; h2.style.margin = '0'; h2.style.letterSpacing = '0.12em'; }
+                steps = 2.5; over = panelOver();
+                if (over > 1.5) {
+                  for (const cell of oc.querySelectorAll('.result-score .cell, .result-meta .cell')) {
+                    cell.style.padding = '2px 4px';
+                    cell.style.border = 'none';
+                    cell.style.backgroundImage = 'none';
+                    cell.style.boxShadow = 'none';
+                    cell.style.clipPath = 'none';
+                  }
+                  steps = 3; over = panelOver();
+                  if (over > 1.5) {
+                    oc.style.paddingTop = '18px';
+                    oc.style.paddingBottom = '12px';
+                    steps = 4; over = panelOver();
+                    if (over > 1.5) {
+                      if (retry) retry.style.padding = '8px 20px';
+                      if (titleBtn) titleBtn.style.padding = '8px 20px';
+                      steps = 5; over = panelOver();
+                      if (over > 1.5) {
+                        oc.style.maxHeight = `${Math.max(260, Math.floor(appH0 * 0.96))}px`;
+                        steps = 6; over = panelOver();
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          void content.offsetHeight;
+          const appR = app.getBoundingClientRect();
+          const ocR = content.getBoundingClientRect();
+          const cells = [...content.querySelectorAll('.result-score .cell, .result-meta .cell')];
+          const cellClip = cells.some(
+            (c) => c.scrollHeight > c.clientHeight + 2 || c.scrollWidth > c.clientWidth + 2,
+          );
+          const jsFlat = cells.some((c) => c.style.backgroundImage === 'none');
+          return {
+            panelOver: +(ocR.bottom - appR.bottom).toFixed(2),
+            syncSteps: steps,
+            brandDisplay: brand ? getComputedStyle(brand).display : 'none',
+            h2Fs: h2 ? getComputedStyle(h2).fontSize : '',
+            cellClip,
+            jsFlat,
+            retryOut: retry ? boxOut(retry, appR) : true,
+            titleOut: titleBtn ? boxOut(titleBtn, appR) : true,
+            headroom: +(appR.bottom - ocR.bottom).toFixed(1),
+            isResultShort: content.classList.contains('is-result-short'),
+          };
+        }, { loc, boxOutSrc: boxOut.toString() });
+        findings.push({ screen: 'result', loc, w: size.width, h: size.height, ...result });
+      } finally {
+        await page.close();
+      }
+    }
+  }
+
+  // Live OPTIONS / SELECT / TUTORIAL via UI at SE-class only (cost control)
+  for (const loc of ['es', 'ru', 'pt', 'ja']) {
+    const size = { width: 568, height: 320 };
+    const page = await browser.newPage({
+      viewport: size,
+      hasTouch: false,
+      isMobile: false,
+    });
+    try {
+      await page.addInitScript(
+        ({ loc }) => {
+          localStorage.setItem(
+            'lao_mini_settings_v1',
+            JSON.stringify({
+              lang: loc,
+              muted: true,
+              bgmVolume: 0,
+              sfxVolume: 0,
+              autoFire: true,
+              padMode: 'fixed',
+              fullscreen: false,
+            }),
+          );
+          localStorage.setItem('lao_mini_tutorial_seen', '1');
+          Object.defineProperty(navigator, 'maxTouchPoints', { get: () => 0 });
+        },
+        { loc },
+      );
+      await page.goto(`${url}?cb=r140ui-${Date.now()}-${loc}`, {
+        waitUntil: 'domcontentloaded',
+        timeout: 60000,
+      });
+      await page.waitForSelector('#btn-start', { timeout: 60000 });
+
+      // OPTIONS
+      await page.evaluate(() => {
+        const b = [...document.querySelectorAll('button')].find((el) =>
+          /option|옵션|opções|opciones|опци|オプション|選項|选项/i.test(el.textContent || ''),
+        );
+        b?.click();
+      });
+      await page.waitForTimeout(140);
+      const options = await page.evaluate(({ boxOutSrc }) => {
+        const boxOut = new Function(`return (${boxOutSrc})`)();
+        const app = document.getElementById('app');
+        const oc = document.getElementById('overlay-content');
+        if (!oc?.classList.contains('screen-options')) {
+          return { skipped: true, cls: oc?.className || '' };
+        }
+        const appR = app.getBoundingClientRect();
+        const ocR = oc.getBoundingClientRect();
+        const scroll = oc.querySelector('.opt-scroll');
+        const back =
+          document.getElementById('btn-opt-back') ||
+          document.getElementById('btn-back') ||
+          oc.querySelector('.opt-actions .btn');
+        const sR = scroll?.getBoundingClientRect();
+        const bgm = oc.querySelector('#opt-bgm')?.closest('label, .opt-row, .opt-slider, div');
+        return {
+          panelOver: +(ocR.bottom - appR.bottom).toFixed(2),
+          scrollH: sR ? +sR.height.toFixed(1) : 0,
+          backOut: back ? boxOut(back, appR) : true,
+          bgmInFirst: bgm && sR
+            ? bgm.getBoundingClientRect().bottom <= sR.bottom + 2
+            : false,
+          headroom: +(appR.bottom - ocR.bottom).toFixed(1),
+          isOptShort: oc.classList.contains('is-opt-short'),
+        };
+      }, { boxOutSrc: boxOut.toString() });
+      findings.push({ screen: 'options', loc, w: size.width, h: size.height, ...options });
+
+      // Back to title then SELECT
+      await page.evaluate(() => {
+        const b =
+          document.getElementById('btn-opt-back') ||
+          document.getElementById('btn-back') ||
+          [...document.querySelectorAll('button')].find((el) =>
+            /back|뒤로|voltar|atrás|назад|戻る|返回/i.test(el.textContent || ''),
+          );
+        b?.click();
+      });
+      await page.waitForTimeout(100);
+      await page.click('#btn-start');
+      await page.waitForTimeout(200);
+      const select = await page.evaluate(({ boxOutSrc }) => {
+        const boxOut = new Function(`return (${boxOutSrc})`)();
+        const app = document.getElementById('app');
+        const oc = document.getElementById('overlay-content');
+        if (!oc?.classList.contains('screen-select')) {
+          return { skipped: true, cls: oc?.className || '' };
+        }
+        const appR = app.getBoundingClientRect();
+        const ocR = oc.getBoundingClientRect();
+        const grid = oc.querySelector('.char-grid');
+        const kit = oc.querySelector('.dossier-kit, .select-kit, .kit');
+        const sortie =
+          document.getElementById('btn-confirm') ||
+          document.getElementById('btn-sortie') ||
+          oc.querySelector('.select-actions .btn-primary, .select-actions .btn');
+        const gR = grid?.getBoundingClientRect();
+        const kitClip = kit
+          ? kit.scrollHeight > kit.clientHeight + 2 || kit.scrollWidth > kit.clientWidth + 2
+          : false;
+        return {
+          panelOver: +(ocR.bottom - appR.bottom).toFixed(2),
+          gridH: gR ? +gR.height.toFixed(1) : 0,
+          kitClip,
+          sortieOut: sortie ? boxOut(sortie, appR) : true,
+          headroom: +(appR.bottom - ocR.bottom).toFixed(1),
+        };
+      }, { boxOutSrc: boxOut.toString() });
+      findings.push({ screen: 'select', loc, w: size.width, h: size.height, ...select });
+    } finally {
+      await page.close();
+    }
+  }
+} finally {
+  await browser.close();
+  server.close();
+}
+
+const muddy = findings.filter((f) => {
+  if (f.skipped) return false;
+  if (f.screen === 'title') {
+    return (
+      f.panelOver > 1.5 ||
+      f.startOut ||
+      !f.hiInside ||
+      (f.h <= 400 && f.gridH > 0 && f.gridH < 36)
+    );
+  }
+  if (f.screen === 'asset') {
+    return (
+      f.panelOver > 1.5 ||
+      f.panelOverTop > 1.5 ||
+      f.retryOut ||
+      f.selectOut ||
+      f.msgOut ||
+      f.btnClip ||
+      (f.h <= 360 && f.headroom < 0)
+    );
+  }
+  if (f.screen === 'loading') {
+    return (
+      f.panelOver > 1.5 ||
+      f.panelOverTop > 1.5 ||
+      f.labelOut ||
+      f.metaOut ||
+      f.trackOut ||
+      f.labelClipY
+    );
+  }
+  if (f.screen === 'pause') {
+    return (
+      f.panelOver > 1.5 ||
+      f.quitOut ||
+      f.resumeOut ||
+      f.muteOut ||
+      f.btnClip ||
+      (f.syncSteps >= 6 && f.headroom < 0)
+    );
+  }
+  if (f.screen === 'result') {
+    return (
+      f.panelOver > 1.5 ||
+      f.retryOut ||
+      f.titleOut ||
+      f.cellClip ||
+      (f.syncSteps >= 6 && f.headroom < 0)
+    );
+  }
+  if (f.screen === 'options') {
+    return f.panelOver > 1.5 || f.backOut || (f.h <= 400 && f.scrollH < 120);
+  }
+  if (f.screen === 'select') {
+    return f.panelOver > 1.5 || f.sortieOut || f.kitClip || (f.h <= 400 && f.gridH < 36);
+  }
+  return false;
+});
+
+const soft = findings.filter((f) => {
+  if (muddy.includes(f)) return false;
+  if (f.screen === 'asset' && f.h <= 360 && f.brandDisplay !== 'none' && f.headroom < 10) return true;
+  if (f.screen === 'asset' && f.h <= 360 && f.msgClip) return true;
+  if (f.screen === 'asset' && f.h <= 320 && f.headroom < 12) return true;
+  if (f.screen === 'pause' && f.h <= 320 && (f.headroom < 4 || f.softNeed || f.syncSteps >= 4)) return true;
+  if (f.screen === 'loading' && f.h <= 360 && f.decoDisplay !== 'none' && f.headroom > 40) return true;
+  if (f.screen === 'result' && f.h <= 320 && (f.headroom < 8 || f.jsFlat || f.syncSteps >= 3)) return true;
+  if (f.screen === 'options' && f.h <= 320 && f.scrollH < 140) return true;
+  if (f.screen === 'select' && f.h <= 320 && f.gridH < 50) return true;
+  return false;
+});
+
+const out = { muddyCount: muddy.length, softCount: soft.length, muddy, soft, findings };
+writeFileSync(join(root, 'tools', 'probe-tick140-candidates-out.json'), JSON.stringify(out, null, 2));
+console.log(
+  JSON.stringify(
+    {
+      muddyCount: out.muddyCount,
+      softCount: out.softCount,
+      muddy: out.muddy,
+      soft: out.soft.slice(0, 50),
+      samples: {
+        asset320: findings.filter((f) => f.screen === 'asset' && f.h === 320),
+        asset360: findings.filter((f) => f.screen === 'asset' && f.h === 360 && ['es', 'ru', 'pt', 'ja'].includes(f.loc)),
+        pause320: findings.filter((f) => f.screen === 'pause' && f.h === 320),
+        loading320: findings.filter((f) => f.screen === 'loading' && f.h === 320),
+        result320: findings.filter((f) => f.screen === 'result' && f.h === 320),
+        options320: findings.filter((f) => f.screen === 'options'),
+        select320: findings.filter((f) => f.screen === 'select'),
+        title320: findings.filter((f) => f.screen === 'title' && f.h === 320 && ['es', 'ru'].includes(f.loc)),
+      },
+    },
+    null,
+    2,
+  ),
+);

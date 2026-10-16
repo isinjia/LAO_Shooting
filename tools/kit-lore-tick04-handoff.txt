@@ -1,0 +1,68 @@
+KIT LORE TICK 04 — REMAINING 6 KITS (SPAWN + LABELS)
+Date: 2026-10-05
+Sources: lastorigin.wiki.gg LRL / Merlin / Fafnir / Eternity / Labiata / Emily
+1945 II analog used only as muzzle cannon / blast shell (Merlin Big Gun, LRL charged axe splash).
+
+LOCKED (untouched this tick)
+  Hirume OLD kit: SHOT foxflame jets, HOLD sunbird (homing+blast), C sunseal.
+    Labels 야타가라스 / 봉황 날개 / 야타가라스 정화 결계.
+  Constantia tick2: tracer + lockround + bori.
+
+================================================================
+SHIPPED COMBAT (not name-only)
+================================================================
+LRL
+  Wiki A1 Axe of Darkness (single-target; no returning axe).
+  SHOT: travelling cleave (unchanged).
+  HOLD: heavy forward dragonaxe, pierce + blast, NO returnOwner.
+  C: cyclopsbeam 사이클롭스 영원의 광선 (unchanged).
+
+Merlin
+  Wiki A1 Big Gun = single-target cannon, not vertical Prydwen rain.
+  SHOT: muzzle style shell, aimed, blast from Lv2. Options = flanking shells.
+  HOLD: still horizontal breaching shells (빅 건 강사격).
+  C: parked commandmissile + unrepFor (UNREP).
+
+Fafnir
+  Wiki A2 Shock and Awe = area electric + adjacent bonus.
+  SHOT: lightning Hroti search bolt.
+  HOLD: jupiterorb chain field.
+  C: teslacoil blooms parked on target (NOT empfield). trySpecial now aims
+     area-shock / plasma-bloom at the selected foe.
+
+Eternity
+  Confirmed live: coffinround SHOT, coffinwall HOLD (Coffin for Two),
+  coffinmissile from top (Rest in Peace, no homing).
+
+Labiata
+  Wiki A2 Hundred Flower Efflorescence = area bloom, not cross-cut travel.
+  SHOT: orbitblade. HOLD: plasmaslash waves.
+  C: parked plasmacross blooms (vx=0, origin target) 백화제방.
+
+Emily
+  SHOT railbeam / C busterbeam (unchanged). es/ru i18n no longer “fragmented Xenox”.
+
+================================================================
+LIVE SORTIE (tools/probe-kit-lore-live.mjs → LIVE_SORTIE_DUMP_OK)
+================================================================
+hirume     foxflame + sunbird + sunseal     leftover []
+constantia tracer + lockround + bori        leftover []
+lrl        cleave + dragonaxe + cyclopsbeam leftover []  (returnOwner=false)
+merlin     shell + commandmissile           leftover []  (no orbital)
+fafnir     lightning + jupiterorb + teslacoil leftover [] (no empfield)
+eternity   coffinround + coffinwall + coffinmissile leftover []
+labiata    orbitblade + plasmaslash + plasmacross leftover []
+emily      railbeam + busterbeam            leftover []
+
+Select KO labels (base 5):
+  LRL 어둠의 도끼 / 어둠의 도끼 / 사이클롭스 영원의 광선
+  Merlin 빅 건 / 빅 건 강사격 / UNREP 전술 지원
+  Fafnir 흐로티 / 주피터 뇌운장 / 쇼크 앤 오
+Rares use select cheat; in-stage styles proven (dossier card may still paint after GO).
+
+Tests: test-weapon-roles, test-basic-shots, test-original-skill-roles,
+test-weapon-range, test-gameplay-design.
+
+Preserved: 5 stages, pads, i18n structure, deathbomb, power Lv5,
+fire-rate ×2 delay, Constantia die eyes, Hirume/Constantia kits.
+Korean-ready.

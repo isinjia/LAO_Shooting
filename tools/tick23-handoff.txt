@@ -1,0 +1,67 @@
+TICK23 handoff (2026-10-04) — graze / pickup sparkle (HOLD dens/side untouched)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep.
+
+
+THIS TICK — one focused win: graze / pickup sparkle
+
+1) js/polish-fx.js · grazeSpark
+   - Soft micro-flash (load < 0.55, non-light) + grit/needle mix.
+   - Count soft bump: light-capped; full load bands 1 / 3 / 6 (was 1 / 2 / 5).
+   - stretch + rampHot #ffffff → rampCool cool/tint so graze reads as glitter,
+     not equal disk blobs.
+   - PARTICLE_CAP / light-mode still shed under dense fields.
+   - HOLD dens/side/emit, bomb-vfx, NewUI, player-hit, hostile rim — untouched.
+
+2) js/powerup.js · PickupFeedback
+   - Spawn: tip-length / angle stagger + fine grit vs brighter chips
+     (power 18 / bomb 16 base, still POPUP_CAP=4 load shed).
+   - Draw: velocity-aligned soft additive streaks with white tip cores
+     (diamond path geometry removed — matches soft-sprite language).
+   - Labels / icons / rings unchanged; magnet / shot level / bomb stock untouched.
+
+3) Verify
+   - node tools/qa-graze-pickup.mjs PASS
+     graze active≈7 (flash+spark), maxStretch≈4.2, fine grit present;
+     pickup totalSparks≈34, stretchOk≈29, drawArcs≥20.
+   - node tools/test-gameplay-design.mjs · test-basic-shots.mjs · test-weapon-roles.mjs PASS
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; NewUI residual not the focus this tick)
+  VFX ≈ 60 (graze/pickup readability micro-pass inside soft-sprite language only —
+            still budget-capped / no client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Optional: NewUI residual (menu destinations still absent — do not fake lobby apps).
+  2) Or C special muzzle particles (player.specialFlash soft motes) micro-pass.
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  4) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+  5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520 /
+     graze stretch glitter / pickup soft-sprite chips.
+
+
+Model: inherit
+Korean-ready: yes

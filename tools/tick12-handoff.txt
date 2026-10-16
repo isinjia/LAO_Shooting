@@ -1,0 +1,49 @@
+TICK12 handoff (2026-10-04) — particle emitters extended (do not revert)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+PARTICLE BASE STATUS (landed before / during this tick)
+- projectile-vfx.js: soft point-sprite layer (types 0 mote / 1 streak / 2 smoke /
+  3 hot core / 4 plasma). Trails + bursts + hold muzzle are emitters, not gears.
+- polish-fx.js: hit/kill = soft flash + velocity motes/smoke (no cross/slash/chunk).
+- shot-fx.js: canvas fallback rewritten to softDisk / trailMotes clusters
+  (parallel agent) — no zigzag forks / gear spokes / Mach chevrons in fallback.
+
+THIS TICK (extend remaining kits + reduce leftover geometry)
+1) projectile-vfx KIT + emitters expanded for charge/special styles:
+   sunbird, flameward, sunseal, lockround, dragonaxe, commandmissile, orbital,
+   chainarc, coffinmissile/wall/shield, plasmacross, swordguard, orbitblade.
+   Cloud emitters cover wards (flameward/sunseal/shields) + Fafnir plasma orbs.
+   chainarc draws as particle stream toward chain origin.
+2) bullet.js GPU_FRIENDLY_STYLES matched to KIT — canvas shape silhouettes skipped
+   when GPU active for those kits (incl. Fafnir hold jupiterorb / chainarc).
+3) bomb-vfx drawGpu remaps legacy types 5–13 → particle 0–4:
+   rings/seals → mote necklaces; beams/type13 Fafnir arcs → streak + drip motes.
+   Canvas bomb fallback also mote-ring / drip (no crosshair / seal rect / zigzag).
+4) polish-fx kit hit accents denser for plasma/fire (Fafnir lightning included).
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 74 (unchanged from tick11 — world2 select/pause; still no live lobby apps)
+  VFX ≈ 54 (real emitters landed + kits extended, but still soft-blob / arcade-lite;
+            bomb remap is coarse; not client-grade sparks/trails yet)
+  NEVER claim VFX 70 while particles still look soft/cheap.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX still BELOW prior
+  dishonest 70 claims and near/under user VFX60 until trails read as sparks.
+  Expectation band this pass: UI ~72-76, VFX ~50-58.
+
+NEXT TICK — open polish
+  1) Raise particle readability: sharper spark streaks, denser Fafnir hit spray,
+     less muddy bomb ring necklaces (budget-aware).
+  2) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  3) Live menu destinations still absent — do not fake clickable lobby apps.
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset.
+  5) If another agent still owns projectile-vfx shaders, prefer hit/bomb/UI
+     polish over conflicting GPU rewrites.

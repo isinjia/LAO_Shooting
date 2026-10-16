@@ -1,0 +1,96 @@
+{
+  "when": "2026-10-04T13:48:07.856Z",
+  "env": "Playwright Chromium headless — combat rAF only (tick01). Not a physical GPU.",
+  "baseline": {
+    "pc960_combat_avg": [
+      30.83,
+      43.09
+    ],
+    "mobile412_combat_avg": [
+      39.84,
+      56.54
+    ]
+  },
+  "viewports": [
+    {
+      "tag": "pc-960",
+      "viewport": {
+        "tag": "pc-960",
+        "width": 960,
+        "height": 540,
+        "dpr": 1,
+        "hasTouch": false
+      },
+      "combatMs": 16000,
+      "combat": {
+        "durationMs": 16078,
+        "frames": 427,
+        "fpsAvg": 30.23,
+        "fpsMin": 11.99,
+        "fpsMax": 60.61,
+        "dtAvgMs": 37.547,
+        "dtMaxMs": 83.4,
+        "dtP95Ms": 66.6,
+        "hitches": {
+          "over33ms": 165,
+          "over50ms": 37,
+          "over100ms": 0
+        },
+        "canvas": {
+          "cssW": 960,
+          "cssH": 540,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 1
+        },
+        "peaks": {
+          "enemies": 2,
+          "bulletsLive": 11,
+          "particles": 0,
+          "polish": 13,
+          "vfx": 43
+        }
+      }
+    },
+    {
+      "tag": "mobile-412x226",
+      "viewport": {
+        "tag": "mobile-412x226",
+        "width": 412,
+        "height": 226,
+        "dpr": 2.5,
+        "hasTouch": true
+      },
+      "combatMs": 8000,
+      "combat": {
+        "durationMs": 8045,
+        "frames": 365,
+        "fpsAvg": 50.64,
+        "fpsMin": 20,
+        "fpsMax": 60.61,
+        "dtAvgMs": 21.962,
+        "dtMaxMs": 50,
+        "dtP95Ms": 33.4,
+        "hitches": {
+          "over33ms": 19,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "canvas": {
+          "cssW": 401.8,
+          "cssH": 226,
+          "bufW": 703,
+          "bufH": 396,
+          "dpr": 2.5
+        },
+        "peaks": {
+          "enemies": 2,
+          "bulletsLive": 9,
+          "particles": 0,
+          "polish": 13,
+          "vfx": 48
+        }
+      }
+    }
+  ]
+}

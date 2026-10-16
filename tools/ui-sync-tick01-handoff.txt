@@ -1,0 +1,94 @@
+UI SYNC TICK 01 — Web vs Valofe NewUI (honest score)
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\resourece\
+Prior: tools/newui-unity-hook-handoff.txt (Ranking/Loding/Close/Deactivation)
+
+================================================================
+HONEST SYNC SCORE (harsh rubric → weighted ~equal)
+================================================================
+Axis                 Before  After   Notes
+-------------------- ------- ------- ------------------------------------------
+Chrome / assets        52%    62%    +8 OfflineBattle/SideStory/Base PNGs wired;
+                                     still missing SelectWorld×29 + MissORCA titles
+                                     + Atlas NewUI.png unused
+Layout language        58%    58%    HARD axes kept (fitH/CTA/letterbox/short HUD);
+                                     composition still mini-overlay, not full LAO lobby
+Typography             40%    40%    Dual-stroke mint invent; no LAO font stack;
+                                     English system brand labels remain
+Combat HUD             48%    48%    Sparse by design (no Top_Bg fill) — correct
+                                     constraint; not a LAO battle HUD clone
+Menu/select/pause/
+result/loading feel    50%    64%    Biggest lift this tick (real OfflineBattle +
+                                     SideStory + Frame_02/03 + Popup_Bg_Box)
+
+OVERALL (harsh):  BEFORE ≈ 50%   →   AFTER ≈ 56%
+≥80% yet?  NO.  Do not claim 80+ until SelectWorld/Atlas/title typography
+and broader panel chrome stop reading as CSS-invented mini-UI.
+
+Rubric honesty: prior hook tick raised ranking/close/ghost only; menu/result
+still looked like soft gradient+Box2 tile. This tick adds recognizable LAO
+OfflineBattle / SideStory bitmaps but does not reach lobby parity.
+
+================================================================
+SHIPPED THIS TICK
+================================================================
+Copied → assets/ui/newui/ (8 PNGs):
+  btn_newui_OfflineBattle_Complete.png      25055 B
+  btn_newui_OfflineBattle_InProgress.png    25789 B
+  btn_newui_SideStory.png                   78697 B
+  btn_newui_BattlePassTicket.png             9456 B
+  newui_Base_Icon_BaseLayout.png             4378 B
+  newui_Base_Icon_CollectAll.png             4534 B
+  newui_Base_Icon_present.png                2297 B
+  newui_Base_Icon_Upgrade.png                1253 B
+Local newui PNG count: 36 → 44
+
+CSS (append "UI SYNC TICK01" after UNITY NEWUI HOOK):
+  result.cleared   → OfflineBattle_Complete wash + Ranking Frame_02 on .result-score
+  result.gameover  → OfflineBattle_InProgress wash + Ranking Frame_03 on .result-score
+  screen-loading   → OfflineBattle_InProgress wash (load-track 14px untouched)
+  pause-blurb      → Popup_Bg_Box plate (+ Box2 tile)  [was idle]
+  load-meta        → Popup_Bg_Box plate
+  title-actions    → SideStory wash
+  select-actions   → SideStory wash
+  title lobby chips→ CollectAll / BattlePassTicket / BaseLayout
+  select mint chip → Base present
+  pause brand tip  → Base Upgrade ::before (stripped @ max-height:420px)
+  short viewport   → OfflineBattle/SideStory washes stripped (letterbox parity)
+
+JS (js/newui-assets.js SLICES preload):
+  offlineComplete, offlineInProgress, sideStory, battlePassTicket,
+  baseIconLayout, baseIconCollect, baseIconPresent, baseIconUpgrade
+
+No HTML markup changes. No combat HUD / pad / gauge dim changes.
+Hirume sunbird + Constantia kits NOT touched.
+
+================================================================
+INTENTIONALLY LEFT / STILL CSS-HEAVY
+================================================================
+  SelectWorld_Event_Btn/* (29 PNGs) — stage/event cards unused
+  MissORCA7_Tittle_{kr,jp,tw}.png — large locale titles; risk layout/i18n clash
+  Atlas/NewUI.png / NewMissorca.png — atlas sheets need slice map, not raw CSS
+  Title typography / brand stack — still invented dual-stroke
+  Combat HUD — sparse by constraint (gauges usable; no Top_Bg fill)
+  Many plates still Box2-tile + cyan chamfer CSS invention
+
+================================================================
+PATH TO ≥80% (next ticks — parent owns 5m loop)
+================================================================
+1) Wire 4–8 SelectWorld_Event bitmaps into select/sortie card chrome
+2) Decide MissORCA title art vs existing H1 (locale-aware, no layout cliff)
+3) Reduce CSS-invented chamfer/gradient where a Unity PNG exists
+4) Typography pass: LAO-like weights/tracking without breaking 8-lang fitH
+5) Keep combat HUD sparse; only micro Tap1/Box cues — never Top_Bg fill
+6) Re-score after each batch; refuse 80+ until menu+result+select read LAO
+
+================================================================
+PRESERVED / DO NOT
+================================================================
+  - i18n 8 langs, fitH, CTA-health, letterbox, short-landscape HUD
+  - No AI images; no shot-kit (Hirume/Constantia) edits this tick
+  - No pad/gauge dimension changes; no Top_Bg combat fill
+  - Do NOT re-arm 5m loop here (parent owns it)
+  - Existing features not deleted

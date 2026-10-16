@@ -1,0 +1,968 @@
+TICK88 handoff (2026-10-04) — residual scan: orbital / orbitblade / chainarc (honest +0)
+
+
+
+======================================================================
+
+
+
+PRESERVE (do not break)
+
+
+
+======================================================================
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+
+
+    fafnir thunder cloud · eternity RIP ward (hold) / HMG basic · labiata crescent · emily rail (basic)
+
+
+
+    Still exactly 8 HOLD_STYLE muzzle keys (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+    NOTE: eternity HOLD projectile is coffinwall ward; HMG (coffinround) is basic autofire.
+
+
+
+    HOLD_STYLE muzzle map eternity→coffinround remains FROZEN (qa-hold-muzzle).
+
+
+
+    NOTE: Emily chargeEnabled=false — basic railbeam IS the intentional laser kit;
+
+
+
+    HOLD_STYLE emily→railbolt (spike) stays frozen for muzzle map, but charge path is disabled.
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+
+  plasmacross uses soft disks + soft streaks only — never hard cross geometry.
+
+
+
+  sunseal uses soft disks + soft streaks only — never hard seal / gear marks.
+
+
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+
+
+- Player-hit cool-white/rose shatter sparks (tick21) — keep; tip/cool refine (tick53).
+
+
+
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep; afterglow tip/cool (tick54).
+
+
+
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep;
+
+
+
+  graze tip/cool (tick54); pickup tip/cool (tick55).
+
+
+
+- C special muzzle stretch grit / white tip cores (tick24) — keep; tip/cool refine (tick53).
+
+
+
+- Deathbomb grace bloom + arc grit (tick25) — keep; tip/cool refine (tick52).
+
+
+
+- Option satellite soft trails (tick26) — keep; tip/cool refine (tick51).
+
+
+
+- Focus-mode bloom + orbit grit (tick27) — keep; tip/cool refine (tick52).
+
+
+
+- Rare fanfare soft orbit grit (tick28) — keep (CSS motes already tip-cored; untouched).
+
+
+
+- WARNING mid/boss palette + band grit + midboss-frame-pulse (tick29) — keep.
+
+
+
+- STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip (tick30) — keep.
+
+
+
+- Pause overlay menubg+world2 + Box2 plates + brand Activation cue (tick31) — keep;
+
+
+
+  tip densify dual-stroke/inset/chip Activation (tick58).
+
+
+
+- Title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only (tick32) — keep;
+
+
+
+  keys-head + HI-SCORE dual-stroke tip densify (tick61).
+
+
+
+- STAGE START cyan wash + grit + dual stroke + START kind chip (tick33) — keep.
+
+
+
+- Loading bar Activation brand + track Tap1/chamfer + meta Box2 plate (tick34) — keep;
+
+
+
+  loading status tip densify label/meta/pct (tick66).
+
+
+
+- OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions (tick35) — keep;
+
+
+
+  label tip densify brand/h2/block-title/keys-head (tick61).
+
+
+
+- Touch-pad dual-stroke captions + role tints + float MOVE zone hint (tick36) — keep.
+
+
+
+- Select dossier Box2/cyan/Activation + select-actions Box2 plate (tick37) — keep;
+
+
+
+  kit quieter dual-stroke + hint dual-stroke/cyan tip densify (tick63).
+
+
+
+- Result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash (tick38) — keep;
+
+
+
+  result-score/meta .lbl dual-stroke tip densify (tick62).
+
+
+
+- HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue (tick39) — keep.
+
+
+
+- Title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 (tick40) — keep;
+
+
+
+  chip/status dual-stroke tip densify (tick64).
+
+
+
+- Tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + tut note/actions Box2 (tick41) — keep;
+
+
+
+  note/row quieter dual-stroke tip densify (tick65).
+
+
+
+- Mobile portrait detection: isPortrait (h>w), syncPortraitHint, .rotate-hint.is-on,
+
+
+
+  orientationchange settle — do NOT break.
+
+
+
+- Rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke (tick42) — keep;
+
+
+
+  rotate-card p quieter dual-stroke tip densify (tick67).
+
+
+
+- Asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+
+
+
+  Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 (tick43) — keep;
+
+
+
+  asset-error-msg p quieter dual-stroke tip densify (tick67).
+
+
+
+- Boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+
+
+
+  track Box2+Tap1 + midboss-frame-pulse + critical pulse (tick44) — keep.
+
+
+
+- HUD stocks Box2 cyan rim/inset/chamfer + LIFE/BOMB dual-stroke + pip densify +
+
+
+
+  life-critical/extend/deathbomb pulses + life-warn Activation +
+
+
+
+  CHARGE cyan rim/inset/chamfer + Tap1 + ready Activation cue (tick45) — keep.
+
+
+
+- SP track Box2 cyan rim/inset/chamfer + Lv notches + Tap1 + brass fill +
+
+
+
+  dual-stroke SPECIAL/Lv chip + ready/is-ready-flash Activation cue (tick46) — keep.
+
+
+
+- SCORE/HI + STAGE meta Box2 cyan rim/inset/chamfer + brass SCORE +
+
+
+
+  dual-stroke HI/meta labels (tick47) — keep.
+
+
+
+- Canvas trail stretch + color ramp + hit grit soft-sprite language (tick48) — keep.
+
+
+
+- GPU mote tipBias/coolBand + streak tipCore + bomb grit tip-forward (tick49) — keep.
+
+
+
+- wipeSpark stretch+ramp + explosion fine grit (tick50) — keep;
+
+
+
+  wipeSpark tip/cool refine (tick56); explosion tip/cool refine (tick57).
+
+
+
+- Hold muzzle fine grit + option trail tip/cool (tick51) — keep.
+
+
+
+- Deathbomb + focus grit tip/cool (tick52) — keep.
+
+
+
+- specialFlash + player-hit grit tip/cool (tick53) — keep.
+
+
+
+- Graze tip/cool + bomb afterglow grit (tick54) — keep.
+
+
+
+- Pickup tip/cool (tick55) — keep.
+
+
+
+- hitSpark tip/cool (tick59) — keep: stretch 2.65/1.85 + rampHot #fffef8;
+
+
+
+  count / fine / drag frozen; cool tip flash #fffef8.
+
+
+
+- #sp-status ready-line tip densify (tick60) — keep.
+
+
+
+- OPTIONS/CONTROLS / result / select / title lobby / tutorial / loading /
+
+
+
+  rotate / asset-error tip densify (tick58–67) — keep; no overlay structure churn.
+
+
+
+- HOLD dens/side/emit FROZEN (tick51 qa-hold-muzzle): kit dens numbers,
+
+
+
+  holdIdentity side/streak/smoke/rise/drag, trail emit `dt * dens * (light ? 34 : 72)`,
+
+
+
+  muzzle emitRate `(light ? 26 : 56)`, HOLD_STYLE map (eternity→coffinround) — untouched.
+
+
+
+- Eternity coffinwall ward silhouette (tick69) — keep.
+
+
+
+- Constantia sightbeam lance needle silhouette (tick70) — keep.
+
+
+
+- Labiata plasmaslash crescent blade plate silhouette (tick71) — keep.
+
+
+
+- Fafnir jupiterorb thunder cloud weather-field silhouette (tick72) — keep.
+
+
+
+- Hirume sunbird phoenix wing-fan silhouette (tick73) — keep.
+
+
+
+- LRL dragonaxe tumble blade silhouette (tick74) — keep.
+
+
+
+- Merlin shell breech casing silhouette (tick75) — keep.
+
+
+
+- Eternity HMG caliber slug silhouette (tick76) — keep.
+
+
+
+- Fafnir lightning search-bolt fork silhouette (tick77) — keep.
+
+
+
+- Fafnir empfield EMP pulse-ring silhouette (tick78) — keep.
+
+
+
+- Emily xenoxcore split-shard silhouette (tick79) — keep.
+
+
+
+- Eternity coffinmissile RIP casket silhouette (tick80) — keep.
+
+
+
+- Constantia lockround Winchester lock slug silhouette (tick81) — keep.
+
+
+
+- Merlin commandmissile Fragarach command marker silhouette (tick82) — keep.
+
+
+
+- Labiata plasmacross Trollsberd soft diagonal cross-cut silhouette (tick83) — keep.
+
+
+
+- Hirume sunseal Yatagarasu soft ember purification seal ring (tick84) — keep.
+
+
+
+- Emily railbeam intentional continuous laser (charge disabled) — keep.
+
+
+
+- LRL C `cyclopsbeam` intentional magenta beam-clear laser KEEP (tick85 VERIFY) — keep;
+
+
+
+  do NOT un-laser.
+
+
+
+- LRL basic `cleave` slash-wave crest silhouette (tick86) — keep.
+
+
+
+- Constantia basic `tracer` Winchester ballistic needle silhouette (tick87) — keep.
+
+
+
+- Constantia basic primary stays `tracer`; hold stays `sightbeam` — lockround is C + option flanks.
+
+
+
+- Merlin hold stays `shell` breech casing; commandmissile is C area-denial only.
+
+
+
+- Labiata hold stays `plasmaslash` crescent blade; plasmacross is C wide-pierce cross-cut only.
+
+
+
+- Hirume hold stays `sunbird`/`flameward` phoenix fan; sunseal is C bullet-clear seal only.
+
+
+
+- LRL hold stays `dragonaxe` tumble returning axe; basic `cleave` is slash-wave only.
+
+
+
+======================================================================
+
+
+
+THIS TICK — residual scan only (no silhouette ship)
+
+
+
+======================================================================
+
+
+
+1) Candidate pick (from tick87 residual list)
+
+
+
+   Scanned: orbital / orbitblade / chainarc.
+
+
+
+   Verdict — NONE clear enough to ship this pass.
+
+
+
+   Rejected (not clear homing/laser collapse OR hold-collision risk):
+
+
+
+     · merlin basic/option `orbital`
+
+
+
+       Gameplay already vertical rain (vx=0, vy>0, above-target spawn + trackX).
+
+
+
+       Canvas/GPU fall through generic flying soft mass (kit.stretch 1.3) —
+
+
+       mild "falling orange bolt" softness, NOT a muzzle laser / homing ribbon.
+
+
+
+       Hold `shell` breech casing (tick75) already carries arty identity;
+
+
+
+       silhouette fork here risks colliding shell without a confirmed laser collapse.
+
+
+
+     · labiata basic/option `orbitblade`
+
+
+
+       Gameplay already orbiting guard blades (vx=vy=0, orbitOwner / orbitRadius).
+
+
+
+       Canvas/GPU = magenta soft mass (kit.stretch 1.2) — soft-orb escort look,
+
+
+
+       NOT generic homing seeker path / continuous laser pillar.
+
+
+
+       Hold crescent (tick71) + C plasmacross (tick83) already carry sword identity;
+
+
+
+       blade-plate fork risks hold collision without a confirmed laser collapse.
+
+
+
+     · fafnir `chainarc`
+
+
+
+       Dedicated bent-arc body already present (shot-fx chainarc branch +
+
+
+
+       GPU chain-origin particle stream). Muddy vs empfield / lightning
+
+
+
+       NOT confirmed live this pass — shared plasma cream tip is intentional
+
+
+
+       chain language, not a new generic laser/homing regression.
+
+
+
+2) Muddy evidence (pre-fix)
+
+
+
+   No CLEAR muddy regression meeting the bar:
+
+
+
+     "collapses to generic homing/laser AND fixable without dens churn
+
+
+
+      OR breaking hold kits."
+
+
+
+   Residual softness remains (soft-sprite ceiling) but is not a shippable
+
+
+
+   individuality collapse under the tick69–87 bar.
+
+
+
+3) Fix shipped
+
+
+
+   NONE — honest +0 QA pass. dens/n/fine/drag untouched.
+
+
+
+   tick69–87 silhouettes preserved. No AI images. No feature deletion.
+
+
+
+   No CSS / tip densify this tick.
+
+
+
+4) Verify
+
+
+
+   - node tools/test-weapon-roles.mjs PASS
+
+
+
+   - node tools/test-basic-shots.mjs PASS
+
+
+
+   - node tools/qa-hold-muzzle.mjs PASS (dens/side/emitRate/8 identities frozen)
+
+
+
+   - node tools/qa-particle-quality.mjs PASS (holdDensFrozen)
+
+
+
+   - node tools/qa-gpu-mote-quality.mjs PASS (holdDensFrozen)
+
+
+
+   - node tools/test-gameplay-design.mjs PASS
+
+
+
+   - node tools/qa-wipe-explosion.mjs PASS (holdDensFrozen)
+
+
+
+   - node tools/qa-special-muzzle.mjs PASS
+
+
+
+   - node tools/test-special-shots.mjs PASS (assertSpecialBalance + all 8 chars
+
+
+
+     volleys / damage 6/12/18 PASS)
+
+
+
+======================================================================
+
+
+
+HONEST SCORE (do NOT claim polished / 70+ VFX / 80+ UI)
+
+
+
+======================================================================
+
+
+
+  UI  ≈ 79 (unchanged — no CSS / tip densify this tick;
+
+
+
+            tip densify path tip58–67 still near exhaustion)
+
+
+
+  VFX ≈ 69 (+0; no silhouette ship — residual scan rejected all three;
+
+
+
+            soft-sprite / budget-capped ceiling remains;
+
+
+
+            do NOT claim 70+; +1 blocked by soft-sprite rule + no clear win)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+
+
+  user 60 band — do not round up to 70.
+
+
+
+  Expectation band this pass: UI ~77-79, VFX ~67-69.
+
+
+
+======================================================================
+
+
+
+NEXT TICK — open polish
+
+
+
+======================================================================
+
+
+
+1) HOLD dens/side/emit remain FROZEN. Do not dens-churn to "answer"
+
+
+
+   individuality. Live charge HOLD silhouettes (tick69–75) + HMG basic
+
+
+
+   (tick76) + lightning basic (tick77) + empfield C (tick78) + xenoxcore C
+
+
+
+   (tick79) + coffinmissile C (tick80) + lockround C (tick81) +
+
+
+
+   commandmissile C (tick82) + plasmacross C (tick83) + sunseal C (tick84)
+
+
+
+   + cyclopsbeam intentional beam KEEP (tick85 VERIFY)
+
+
+
+   + cleave basic slash-wave (tick86)
+
+
+
+   + tracer basic Winchester needle (tick87) are shipped.
+
+
+
+   Emily railbeam stays intentional laser. jupiterorb tick72 stays.
+
+
+
+   sightbeam HOLD tick70 + lockround C tick81 stay distinct from tracer basic.
+
+
+
+2) Remaining soft gaps (only if a REAL muddy regression is confirmed live):
+
+
+
+     · orbital / orbitblade — only if escorts CLEARLY collapse to
+
+
+
+       generic homing/laser without colliding shell / crescent identities
+
+
+
+       (tick88 re-scan: still NOT clear)
+
+
+
+     · chainarc — only if muddy vs emp/lightning despite bent-arc body
+
+
+
+       (tick88: still unconfirmed)
+
+
+
+     · tip densify only for a NEW clearly muddy caption
+
+
+
+     · bomb tip polish — only if a NEW clearly muddy bomb caption remains
+
+
+
+3) Soft-blob VFX path largely exhausted after tick59 + tick69–87 wire.
+
+
+
+   Further VFX only if a real muddy regression — tiny +0/+1 only; NEVER claim 70+.
+
+
+
+4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+
+
+     death power reset / per-character hold identities / soft-particle language /
+
+
+
+     eternity coffinwall ward silhouette (tick69) /
+
+
+
+     constantia sightbeam lance needle silhouette (tick70) /
+
+
+
+     labiata plasmaslash crescent blade plate silhouette (tick71) /
+
+
+
+     fafnir jupiterorb thunder cloud weather-field silhouette (tick72) /
+
+
+
+     hirume sunbird phoenix wing-fan silhouette (tick73) /
+
+
+
+     lrl dragonaxe tumble blade silhouette (tick74) /
+
+
+
+     merlin shell breech casing silhouette (tick75) /
+
+
+
+     eternity HMG caliber slug silhouette (tick76) /
+
+
+
+     fafnir lightning search-bolt fork silhouette (tick77) /
+
+
+
+     fafnir empfield EMP pulse-ring silhouette (tick78) /
+
+
+
+     emily xenoxcore split-shard silhouette (tick79) /
+
+
+
+     eternity coffinmissile RIP casket silhouette (tick80) /
+
+
+
+     constantia lockround Winchester lock slug silhouette (tick81) /
+
+
+
+     merlin commandmissile Fragarach command marker silhouette (tick82) /
+
+
+
+     labiata plasmacross Trollsberd cross-cut silhouette (tick83) /
+
+
+
+     hirume sunseal Yatagarasu purification seal ring silhouette (tick84) /
+
+
+
+     lrl cyclopsbeam intentional magenta beam-clear laser KEEP (tick85) /
+
+
+
+     lrl cleave slash-wave crest silhouette (tick86) /
+
+
+
+     constantia tracer Winchester ballistic needle silhouette (tick87) /
+
+
+
+     emily railbeam intentional continuous laser (charge disabled) /
+
+
+
+     enemy bullet rim/core / player-hit rose shatter (+ tip/cool) /
+
+
+
+     bomb cast budget 260/520 (+ afterglow tip/cool) /
+
+
+
+     graze stretch glitter (+ tip/cool) / pickup soft-sprite chips (+ tip/cool) /
+
+
+
+     C special muzzle stretch grit (+ tip/cool) /
+
+
+
+     deathbomb grace bloom+arc grit (+ tip/cool) /
+
+
+
+     option satellite soft trails (+ tip/cool) /
+
+
+
+     focus-mode bloom+orbit grit (+ tip/cool) / rare fanfare soft orbit grit /
+
+
+
+     WARNING / STAGE CLEAR / STAGE START / pause / CONTROLS / loading /
+
+
+
+     OPTIONS / touch-pad / select / result / HUD clusters / tip densify
+
+
+
+     tip58–67 / canvas+GPU tip/cool paths / HOLD dens frozen.
+
+
+
+======================================================================
+
+
+
+한국어 요약 (Korean-ready)
+
+
+
+======================================================================
+
+
+
+- Tick88 포커스: 잔여 후보 orbital / orbitblade / chainarc 재스캔. dens 동결.
+
+
+
+- 후보 스캔 결과: 세 후보 모두 제네릭 호밍/레이저 붕괴가 명확하지 않음.
+
+
+
+  · orbital — 이미 수직 낙하 지원(vx=0); 소프트 폴링 볼트 느낌은 있으나
+
+
+
+    머즐 레이저/호밍 리본 붕괴 아님. hold shell 충돌 위험.
+
+
+
+  · orbitblade — 이미 궤도 가드; 마젠타 소프트 질량이지
+
+
+
+    호밍/레이저 기둥 붕괴 아님. hold crescent / C cross-cut 충돌 위험.
+
+
+
+  · chainarc — 벤트아크 바디 이미 존재; emp/lightning muddy 미확인.
+
+
+
+- 수정: 없음 (정직 +0). dens/kit 숫자·기능·AI 이미지 없음. tick69–87 보존.
+
+
+
+- QA: weapon-roles / basic-shots / hold-muzzle / particle / gpu-mote /
+
+
+
+  gameplay-design / wipe-explosion / special-muzzle / special-shots PASS.
+
+
+
+  HOLD dens frozen 유지.
+
+
+
+- 점수(정직): UI ≈79 (+0), VFX ≈69 (+0). VFX 70+ / UI 80+ 주장 금지.
+
+
+
+- 다음: dens churn 금지. 추가 작업은 새 muddy 확인 시에만
+
+
+
+  (잔여: orbital / orbitblade / chainarc / bomb tip — 확인 후).
+
+
+
+  tip densify·soft-blob 경로 거의 소진.
+
+
+
+Model: inherit
+
+
+
+Korean-ready: yes

@@ -1,0 +1,1 @@
+See tools/griffin-sleipnir-skill-handoff.txt (Griffin C=Skill1, X=Skill2; Sleipnir C=Skill1, X=Skill2).

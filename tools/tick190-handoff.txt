@@ -1,0 +1,922 @@
+TICK190 handoff (2026-10-04) — honest +0 residual scan (deathbomb grace plate logical 960×540 unread; HOLD uniqueness NOT re-shipped)
+
+
+
+======================================================================
+PRESERVE (do not break)
+======================================================================
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+  hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+  fafnir thunder cloud · eternity RIP ward (hold) / HMG basic · labiata crescent · emily rail (basic)
+
+
+
+  Still exactly 8 HOLD_STYLE muzzle keys (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+  NOTE: eternity HOLD projectile is coffinwall ward; HMG (coffinround) is basic autofire.
+  HOLD_STYLE muzzle map eternity→coffinround remains FROZEN (qa-hold-muzzle).
+
+
+
+  NOTE: Emily chargeEnabled=false — basic railbeam IS the intentional laser kit;
+  HOLD_STYLE emily→railbolt (spike) stays frozen for muzzle map, but charge path is disabled.
+
+
+
+  TICK174 live dump @960×540: identityOk=true for all 7 charge kits; unique
+  primary styles sunbird / sightbeam / dragonaxe / shell / jupiterorb /
+  coffinwall / plasmaslash. Emily chargeOn=false shotStyle=railbeam.
+
+
+
+  Tick175–190 did NOT re-dump / re-ship HOLD uniqueness (no NEW identityOk fail).
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+  plasmacross / sunseal soft disks + soft streaks only.
+  Rare option diamond chip is a prior identity cue (tick26) — keep.
+
+
+
+- Enemy bullet / player-hit / bomb / graze / pickup / C muzzle / deathbomb /
+  option trails / focus / rare fanfare / WARNING / STAGE CLEAR / pause /
+  CONTROLS / loading / OPTIONS / touch-pad / select / result / HUD clusters /
+  tip densify tip58–67 / tip89–97 / rim densify tip100–110 / charge 112–114
+  — KEEP as documented in tick166-handoff PRESERVE. dens FROZEN.
+
+
+
+- HOLD dens/side/emit FROZEN (tick51 qa-hold-muzzle): kit dens numbers,
+  holdIdentity side/streak/smoke/rise/drag, trail emit, muzzle emitRate,
+  HOLD_STYLE map (eternity→coffinround) — untouched.
+
+
+
+- Shot/hold/C silhouettes tick69–87 KEEP (including cyclopsbeam intentional laser).
+
+
+
+- Title CONTROLS keys-rules / panel budget / grid floor / HI pin / full-row
+  parent-aware floor (tick118–124 + tick130) — KEEP.
+
+
+
+- Title extreme-short CONTROLS grid floor (tick135) — KEEP.
+
+
+
+- Pause short-landscape panel floor + deco reclaim (tick131) — KEEP.
+
+
+
+- Pause extreme-short head reclaim (tick138) — KEEP.
+
+
+
+- Pause SE-class soft-continue (tick140) — KEEP.
+
+
+
+- Tutorial panel i18n maxCap + grid scroll + CTA pin (tick125) — KEEP.
+
+
+
+- Tutorial short-landscape grid floor + deco/note reclaim (tick132) — KEEP.
+
+
+
+- Tutorial extreme-short grid floor (tick137) — KEEP.
+
+
+
+- Result short-landscape panel floor + deco/margin reclaim (tick133) — KEEP.
+
+
+
+- Result extreme-short head reclaim (tick139) — KEEP.
+
+
+
+- Select panel i18n maxCap + char-grid scroll + CTA pin (tick126) — KEEP.
+
+
+
+- Select short-landscape deco+blurb reclaim (tick129) — KEEP.
+
+
+
+- Select extreme-short dossier/actions/hint reclaim (tick134) — KEEP.
+  Ready/confirm hint display:none is intentional last-resort when avail<56
+  or CTA overflow — kit + SORTIE stay. Do NOT invent hint restore that
+  starves grid / SORTIE.
+
+
+
+- OPTIONS panel maxCap + BACK pin (tick127) / flatten nested scroll (tick128)
+  autofire full-span (tick120) / mute-fullscreen 2-col (tick121) — KEEP.
+
+
+
+- OPTIONS extreme-short scroll floor (tick136) — KEEP.
+  is-opt-short brand none + h2 compact + scrollH soft floor (140 want /
+  72 last-resort) — KEEP. Soft scrollH≈71 with BACK vis full is playtest,
+  not a chrome ship.
+
+
+
+- SE-class select/OPTIONS maxCap floor (tick141) — KEEP.
+
+
+
+- Ultra-short tutorial/pause/result fitH maxCap floor (tick142) — KEEP.
+
+
+
+- Result ultra-short last-resort soft-continue (tick143) — KEEP.
+
+
+
+- Select ultra-short CTA-health fitH clamp (tick144) — KEEP.
+
+
+
+- OPTIONS CTA-health Math.max(260) still LATENT (tick145 +0 QA) — KEEP until
+  a live locale proves inflate.
+
+
+
+- showOverlay / hideOverlay clear content.style.maxHeight + paddingTop/Bottom
+  so panel-budget inline caps from options/select/tutorial/pause/result do not
+  leak across screens.
+
+
+
+- TICK146–169 KEEP as documented in tick170-handoff PRESERVE
+  (touch HUD 146–149 / residual 150 / loading+AE 151–160 / select·pause·tutorial·result
+  CTA chrome 161–166 / residual scans 167–169). dens FROZEN.
+
+
+
+- TICK170 rare fanfare short-landscape chrome reclaim — KEEP.
+  fitRareFanfareCard measure-then-reclaim: is-rare-compact → is-rare-ultra
+  (portrait hide). Strings / motes stretch≥1.55 / tip cores / dens / HOLD
+  frozen. Soft cardOver≈2–10.5 @≤320 with hint/name/tag full left
+  intentionally — do NOT invent ultra force without NEW unread.
+
+
+
+- TICK171–187 KEEP as documented in tick187-handoff PRESERVE
+  (honest +0 residual scans through combat HUD + FLOATING pads NEW mid-short).
+  dens FROZEN. Soft invent CLOSED on axes already floored.
+
+
+
+- TICK188 honest +0 residual scan — KEEP as documentation.
+  Production pause OPTIONS / UNMUTE after live SORTIE (muted:true →
+  btn.unmute) @ NEW mid-short × pt/es/ru HARD=0 SOFT=0.
+  Distinct from tick186 MUTE. Do NOT invent 4-btn shrink / unmute truncate.
+
+
+
+- TICK189 honest +0 residual scan — KEEP as documentation.
+  Production floating stick AFTER touch (is-stick-on) @ NEW mid-short
+  × pt/es/ru HARD=0 SOFT=0. Distinct from tick187 idle hide.
+  Do NOT invent stick shrink / snap-opacity / corner-tap OOB.
+
+
+
+- TICK190 honest +0 residual scan — KEEP as documentation (this tick).
+
+
+
+  Production deathbomb first-teach grace plate in logical 960×540 space
+  (canvas W/H after setTransform). Viewport 960×540 so CSS matches logical
+  stage — CSS mid-short unread invent REJECTED (AJ KEEP).
+
+
+
+  @ 960×540 × pt/es/ru first-teach + bombs>0:
+
+
+
+  HARD=0 SOFT=0. Live i18n t('deathbomb.first') + production measure-then-grow
+  (tick116 baseW 268 / max(subW,titleW)+28 / cap W-48).
+
+
+
+  ru subW=317.3 boxW=346 plate 307..653; es subW=257 boxW=286;
+  pt subW=240.6 boxW=269; titleW=148.1 all. plate inside 0..960.
+  css=960×540 (no CSS shrink). paused=true freeze for measure only —
+  not a product pause-menu ship.
+
+
+
+  Do NOT invent canvas card shrink from CSS viewport. HOLD uniqueness
+  not re-probed. No CSS/JS product ship. dens FROZEN.
+
+
+
+======================================================================
+THIS TICK — honest +0 (no CSS/JS ship)
+======================================================================
+
+
+
+1) Candidate pick (user focus: live-scan ONE remaining clear HARD muddy
+   OR honest +0 with human-playtest gap list. Prefer proven HARD only.
+   dens FROZEN; UI≈79 VFX≈69; never claim 80+/70+)
+
+
+
+   Exhausted CLOSED: tip densify (58–97), shot/hold/C individuality (69–87),
+   rim densify (100–110), charge feedback (112–114). dens FROZEN.
+   CONTROLS / tutorial / OPTIONS / result / pause / select thin-viewport
+   panel budgets tick118–145 CLOSED.
+   Select/pause/tutorial/result CTA chrome tick161–166 CLOSED.
+   Touch HUD corridor/pad/ultra/cliff tick146–149 CLOSED.
+   Loading / asset-error letterbox ships tick151–160 CLOSED.
+   Tick167–169 layout residual scans CLOSED +0.
+   Tick170 rare fanfare short-landscape hint reclaim CLOSED.
+   Tick171–189 residual scans CLOSED +0 (see tick189-handoff for detail).
+
+
+
+   SKIP re-scan (user): select dossier (173), pause resume/quit (174),
+   tutorial GO/SKIP + result retry/title (175), title START/OPTIONS (176),
+   rare fanfare eternity (177), loading overlay (178), asset-error overlay
+   (179), OPTIONS panel BACK (180), rare fanfare labiata/emily (182),
+   sortie-load-fail overlay (183), char-load-fail overlay (184),
+   combat HUD + locked pads (185), pause OPTIONS/MUTE (186),
+   combat HUD + floating pads (187), pause OPTIONS/UNMUTE (188),
+   floating stick is-stick-on (189)
+   on NEW mid-short 360×218 / 375×212 / 404×228 / 430×245 × pt/es/ru;
+   rotate-hint portrait swaps 218×360 / 212×375 / 228×404 / 245×430
+   × pt/es/ru (181).
+
+
+
+   REJECT as HARD (user): hint display:none / letterbox appTop naive OOB
+   (173), pause letterbox false HARD (174), title HI floor hiVis=0 KEEP
+   (135/176), rare fanfare ru@430 card over≈20 with text vis full (177 SOFT),
+   asset-error @404 oc peek with vis 44/44 (179 SOFT), OPTIONS BACK ru@360
+   scrollH=71 with BACK vis 46/46 (180 SOFT), rotate-hint #app overApp
+   letterbox KEEP (168/181), rare fanfare labiata/emily cardOver vis-full
+   (182 SOFT), result-short brandNone CSS KEEP (183/184), HUD/pause @360
+   appTop letterbox with vis full (tick185–189), floating idle stick
+   hidden intentional (187), floating stick fade opacity with vis full
+   (189).
+
+
+
+   THIS TICK extra REJECT: CSS canvas shrink / mid-short deathbomb unread
+   invent (AJ KEEP). Logical 960 plate that fits after tick116 grow is
+   NOT HARD. Dual-stroke caption language KEEP. Do NOT invent plate widen
+   / font shrink / canvas card CSS match. paused=true measure freeze is
+   probe-only.
+
+
+
+   Scanned NEW axis (DIFFERENT panel/viewport/play from ticks 173–189):
+
+
+
+   A) Production deathbomb first-teach grace plate
+      (inDeathBombWindow + isFirstDeathBomb + bombs>0) @ logical 960×540
+      × pt/es/ru. HARD bar = title/sub wider than grown plate (pad 12)
+      OR plate OOB of 0..W. CSS cssW<960 REJECTED as HARD.
+      Live: hard=0 soft=0 ok=3 skip=0.
+
+
+
+   B) SKIP invent — HOLD uniqueness already live-proven tick174.
+      No identityOk fail / duplicate primary style this tick. Do not dump
+      again unless a NEW live HARD muddy is proven.
+
+
+
+   C) SKIP this tick — ja/zh one panel at a DIFFERENT size remains OPEN
+      (BD). Picked deathbomb 960-space unread (BE) instead.
+
+
+
+   Verdict: honest +0 — no CSS/JS product ship. dens FROZEN.
+   OPTIONS Math.max(260) still LATENT (not probed this tick; last live 0).
+   Axis BE (deathbomb 960-space first-teach) CLOSED HARD=0.
+   Axis BC (floating stick AFTER touch NEW mid-short) remains CLOSED tick189.
+   Axis BB (pause OPTIONS/UNMUTE NEW mid-short) remains CLOSED tick188.
+   Axis AN HOLD uniqueness remains CLOSED-as-proven structural (tick174).
+
+
+
+2) Muddy evidence (live measure)
+
+
+
+   probe-tick190-residual:
+
+
+
+     · SUMMARY hard=0 soft=0 ok=3 skip=0
+
+
+
+     · HARD DETAIL: none
+
+
+
+     · pt@960×540: ok. first=true canBomb=true window=true.
+       titleW=148.1 subW=240.6 boxW=269 plate=345.5..614.5
+       subChars=47 css=960×540. vis-unread=false. plate in 0..960.
+
+
+
+     · es@960×540: ok. titleW=148.1 subW=257 boxW=286 plate=337..623
+       subChars=52 css=960×540.
+
+
+
+     · ru@960×540: ok. titleW=148.1 subW=317.3 boxW=346 plate=307..653
+       subChars=55 css=960×540. Longest grow still inside W-48 cap (912).
+       Do NOT invent plate widen / canvas CSS shrink.
+
+
+
+3) Fix shipped
+
+
+
+   NONE to js/ or css/ product paths.
+
+
+
+   tools/probe-tick190-residual.mjs (+ .out.txt) — production deathbomb
+   first-teach plate @ logical 960×540, vis-unread HARD classifier
+   (tick116 grow math; AJ CSS-shrink reject; tick173 display:none reject;
+   tick174 out-with-vis-full analog N/A). Live i18n pt/es/ru via /js/i18n.js.
+   Distinct from overlay/HUD/stick NEW mid-short axes.
+
+
+
+   tip/dens / HOLD / motes / tick69–189 / OPTIONS Math.max(260) LATENT 유지.
+   Title CONTROLS HI @h≤288 KEEP (tick135). HOLD uniqueness dump not re-run.
+   rare eternity ru@430 cardOver SOFT KEEP (tick177).
+   rare labiata/emily @404/@430 cardOver SOFT KEEP (tick182).
+   AE@404×228 oc-peek SOFT KEEP (tick179).
+   OPT ru@360×218 scrollH≈71 SOFT KEEP (tick180).
+   rotate #app overApp portrait letterbox KEEP (tick168 / tick181).
+   sortie/char-load fail brandNone result-short CSS KEEP (tick183/184).
+   HUD fixed appTop letterbox @360 KEEP (tick185).
+   pause OPTIONS/MUTE appTop letterbox @360 KEEP (tick186).
+   HUD floating appTop letterbox @360 + idle stick hide KEEP (tick187).
+   pause OPTIONS/UNMUTE appTop letterbox @360 KEEP (tick188).
+   floating stick AFTER touch @360 appTop letterbox + fade opacity KEEP
+   (tick189).
+   deathbomb 960-space first-teach plate grow KEEP (this tick; tick116).
+
+
+
+4) Verify (preserve battery — ALL PASS)
+
+
+
+   - node tools/probe-tick190-residual.mjs → hard=0 soft=0 ok=3 skip=0
+   - node tools/qa-rare-fanfare.mjs PASS (motes=8 + tick170 fit retained)
+   - node tools/qa-options-panel-i18n.mjs PASS (tick127 kept)
+   - node tools/qa-options-scroll-floor-i18n.mjs PASS (tick136 kept)
+   - node tools/qa-options-nested-scroll-i18n.mjs PASS (tick128 kept)
+   - node tools/qa-options-newui.mjs PASS (tick35/61 kept)
+   - node tools/qa-rotate-overlay.mjs PASS (tick42/67 kept)
+   - node tools/qa-asset-error-shortwide.mjs PASS (tick156 kept)
+   - node tools/qa-asset-error-shortwide-cliff.mjs PASS (tick157 kept)
+   - node tools/qa-asset-error-icon-cliff.mjs PASS (tick159 kept)
+   - node tools/qa-asset-error-overlay.mjs PASS (tick43/67 kept)
+   - node tools/qa-loading-nearultra.mjs PASS (tick153 kept)
+   - node tools/qa-loading-ultranarrow.mjs PASS (tick151 kept)
+   - node tools/qa-pause-quit-ultra-i18n.mjs PASS (tick166 kept)
+   - node tools/qa-select-cta-chrome-i18n.mjs PASS (tick161 kept)
+   - node tools/qa-fitH-parity-i18n.mjs PASS (tick142 kept)
+   - node tools/qa-result-cta-chrome-i18n.mjs PASS (tick165 kept)
+   - node tools/qa-tutorial-cta-chrome-i18n.mjs PASS (tick164 kept)
+   - node tools/qa-hold-muzzle.mjs PASS (dens/side/emitRate/8 identities frozen)
+   - node tools/qa-particle-quality.mjs PASS (holdDensFrozen)
+   - node tools/qa-deathbomb-prompt-i18n.mjs PASS
+   - node tools/test-gameplay-design.mjs PASS
+   - node tools/test-weapon-roles.mjs PASS (7 distinct hold kits)
+
+
+
+======================================================================
+HONEST SCORE (do NOT claim polished / 70+ VFX / 80+ UI)
+======================================================================
+
+
+
+  UI  ≈ 79 (+0; deathbomb first-teach 960-space HARD=0 after tick116
+            grow / plate-in-stage / CSS-shrink KEEP reject.
+
+
+
+            Soft rare cardOver remains: eternity ru@430 (tick177) AND
+            labiata/emily pt/es@404 over≈25 + all@430 over≈18–20 with
+            hint/name/tag full — ultra invent CLOSED.
+
+
+
+            Soft OPT ru@360×218 scrollH=71 with BACK visApp 46/46 remains
+            playtest — tick136 floor invent CLOSED.
+
+
+
+            Soft AE@404×228 ~7px oc-peek with Retry/ToSelect visApp 44/44
+            remains playtest — tick159 gate invent CLOSED.
+
+
+
+            Soft title CONTROLS HI peek@h≤288 / brand@800 under CONTROLS /
+            select kit wrap / OPTIONS scroll / rotate letterbox residuals
+            remain.
+
+
+
+            NEVER claim 80+.)
+
+
+
+  VFX ≈ 69 (+0; HOLD uniqueness not re-shipped — tick174 structural proof
+            stands; no particle / rim / silhouette / dens ship — soft-sprite
+            budget-capped ceiling remains; rare motes unchanged; reported
+            band stays ≤69; do NOT claim 70+)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~77-79, VFX ~67-69.
+
+
+
+======================================================================
+NEXT TICK — open polish (NON-tip / NON-rim invent preferred)
+======================================================================
+
+
+
+1) HOLD dens/side/emit remain FROZEN. Do not dens-churn.
+   Live charge HOLD silhouettes (tick69–87) + caption dual-stroke (tick89–97)
+   + i18n plate/max-width grows (tick116–117) + CONTROLS/title/pause/tutorial/
+   result/select/OPTIONS short-viewport ships (tick118–145) + touch HUD
+   corridor (tick146) + pad compact (tick147) + ultra-narrow HUD reclaim
+   (tick148) + near-ultra cliff reclaim (tick149) + tick150 +0 scan +
+   loading/AE letterbox (tick151–160) + CTA chrome (tick161–166) +
+   tick167–169 residual scans + tick170 rare fanfare short-landscape reclaim +
+   tick171–189 honest +0 residual scans +
+   tick190 honest +0 deathbomb 960-space first-teach residual scan
+   stay.
+   dens FROZEN. tip/rim/charge invent CLOSED.
+
+
+
+2) Tip densify + canvas ceremony/pulse/fade + touch micro + stock pulse
+   glow-forward paths CLOSED (tick58–97 / tick89–94). Do NOT invent
+   dual-stroke on soft-val / Activation-chip peers.
+
+
+
+3) NEXT axis for tick191 (propose — pick ONE only if live muddy proven):
+
+
+
+   A) Title brand-less hero @800 / @1280×560 — brand restore still breaks HI
+      under CONTROLS floor; playtest only. Prefer honest +0 unless new crush.
+
+
+
+   A2) CLOSED-as-floor tick169 — Title CONTROLS HI vis=0 @h≤288 is tick135
+      grid-floor overflow. Strengthened by tick176 mid-short reconfirm
+      (hiVis=0 / hiKeys=0; START/OPTIONS full). Do NOT invent HI reclaim
+      that shrinks grid below floor. Only re-open if START/OPTIONS unread
+      OR product drops grid floor.
+
+
+
+   B–K) CLOSED tick151–160 loading / asset-error letterbox ladder.
+      Soft AE@250–290 invent CLOSED (tick158/160).
+      Strengthened by tick178 loading NEW mid-short HARD=0 SOFT=0
+      AND tick179 AE NEW mid-short HARD=0.
+      Do NOT invent loading chrome / brand hide at 212–245h.
+      Do NOT raise AE tick159 224-gate to 228/240 (steals brand @400×240).
+
+
+
+   L) OPTIONS @800 brand/head density — already ≥ soft floor after tick136;
+      do NOT invent tip; only ship if CTA/label muddy reappears.
+
+
+
+   M) Soft-blob VFX / silhouette residual — dens FROZEN; tip/rim invent CLOSED.
+      Tick174 HOLD structural uniqueness HARD=0. Prefer honest +0 over invent.
+      User “not just homing OR laser” stays playtest/VFX-ceiling unless a NEW
+      live HARD muddy is proven (duplicate primary style / identityOk fail).
+
+
+
+   N) CLOSED tick170 — Rare fanfare short-landscape hint reclaim.
+      Strengthened by tick171 / tick177 / tick182. Soft cardOver invent CLOSED.
+      Ultra ladder idle. Prefer honest +0 + device QA.
+
+
+
+   O) CLOSED-as-soft tick173 — Select dossier long-kit wrap @ NEW mid-short.
+      Prefer honest +0 + device QA.
+
+
+
+   P–S) CLOSED tick162–166 pause/tutorial/result CTA chrome.
+
+
+
+   T) LATENT — OPTIONS CTA-health Math.max(260) still in source; unused
+      live (healthSteps=0 through tick167–180, including NEW mid-short).
+      Soft scrollH<72 @≤360×218 ru (tick180) — invent CLOSED.
+
+
+
+   U–AG) CLOSED tick142–169 fitH / touch HUD / residual scans as in tick170.
+
+
+
+   AH–BA) CLOSED tick170–187 as documented in tick187-handoff NEXT
+       (rare / overlay peers / canvas ceremony / select / pause resume-quit /
+       HOLD structural / tut+result / title / rare chars / loading / AE /
+       OPTIONS BACK / rotate / sortie-load / char-load / HUD fixed /
+       pause MUTE muted:false / HUD floating).
+
+
+
+   BB) CLOSED tick188 — production pause OPTIONS/UNMUTE (muted:true)
+       @ NEW mid-short × pt/es/ru HARD=0 SOFT=0.
+       Do NOT invent 4-btn shrink. ja/zh pause-unmute at these sizes remain
+       unprobed — only re-open if a live UNMUTE unread is shown.
+
+
+
+   BC) CLOSED tick189 — production floating stick AFTER touch (is-stick-on)
+       @ NEW mid-short 360/375/404/430 × pt/es/ru HARD=0 SOFT=0.
+       Distinct from tick187 idle hide. Do NOT invent stick shrink /
+       snap-opacity / corner-tap OOB. Thumb-edge / two-finger / ja/zh
+       stick remain unprobed — only re-open if a live unread is shown.
+
+
+
+   BD) OPEN candidate — ja/zh locale sweep on ONE unfloored panel at a
+       DIFFERENT size (not re-scan pt/es/ru NEW mid-short axes already
+       HARD=0). Prefer proven HARD unread only; no invent from soft wrap.
+       Suggested: pause UNMUTE or OPTIONS BACK @ 390×220 / 412×226 /
+       428×241 (tick171 peer sizes) × ja/zh-Hant only.
+
+
+
+   BE) CLOSED tick190 — deathbomb first-teach plate logical 960×540
+       × pt/es/ru HARD=0 SOFT=0. tick116 grow holds (ru boxW=346 < W-48).
+       Do NOT invent canvas CSS shrink / plate widen. ja/zh / needDrop /
+       non-first window remain unprobed — only re-open if 960-space
+       unread is proven (not CSS mid-short).
+
+
+
+4) Human-playtest gaps remaining (한국어 기기 QA 우선순위)
+
+
+
+   · [기기] Rare fanfare PRODUCTION (select overlay-host) *@320×200 /
+     *@340×200: tick170 compact — 힌트·이름·태그 가독 + 카드 살짝 over
+     (cardOver≈3–11) 체감. ultra 미사용. 문자열 유지. tick171 live HARD=0.
+
+
+
+   · [기기] Rare *@360–400 compact / *@480 default card over≈4–6 체감.
+     dens/motes 변경 없음.
+
+
+
+   · [기기] Rare overlay-host eternity @360×218 / @375×212 / @404×228 /
+     @430×245 × pt/es/ru (tick177): HARD=0. 11/12 compact over=0.
+     ru@430×245 카드 over≈20 + 이름 41px(compact 미적용)이지만 힌트·이름·태그
+     vis full — 체감만. ultra invent 금지.
+
+
+
+   · [기기] Rare overlay-host labiata + emily @360×218 / @375×212 /
+     @404×228 / @430×245 × pt/es/ru (tick182): HARD=0. soft=10.
+     @360/@375 compact over=0. pt/es@404 cardOver≈25 + all@430
+     cardOver≈18–20 (ru name 41) with hint/name/tag vis full — 체감만.
+     ultra invent 금지. eternity와 동일 패턴 확장.
+
+
+
+   · [기기] Overlay peers @390×220 / @412×226 / @428×241: BACK/SORTIE/quit
+     (tick171) + tutorial GO/SKIP + result retry/title (tick172) full.
+     체감만.
+
+
+
+   · [기기] Select dossier @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru CONSTANTIA (tick173): name/kit/SORTIE full; ready/confirm
+     hint 숨김(tick134); kit 2줄 wrap + grid 얇음 체감만. invent 금지.
+
+
+
+   · [기기] Pause resume/quit @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick174): CTA vis full / panelOver=0. 체감만. invent 금지.
+
+
+
+   · [기기] Tutorial GO/SKIP + result retry/title @360×218 / @375×212 /
+     @404×228 / @430×245 × pt/es/ru (tick175): CTA vis full / panelOver=0.
+     체감만. invent 금지.
+
+
+
+   · [기기] Title START/OPTIONS @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick176): START/OPTIONS vis full / panelOver=0; CONTROLS
+     HI peek 없음(hiVis=0, tick135 floor); brand 보임. HI/로비 크롬 체감만.
+     invent 금지.
+
+
+
+   · [기기] Loading overlay @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru eager (tick178): h2/label/track/meta vis full / brand 유지 /
+     panelOver=0. 클리프(≤200) 밖. 체감만. invent 금지.
+
+
+
+   · [기기] Asset-error overlay @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick179): HARD=0. @360/@375 brand none KEEP (tick152/154).
+     @404×228 Retry/ToSelect visApp 44/44 but oc ~7px peek (92vh maxH) —
+     체감만. tick159 게이트 상향 / 브랜드 숨김 invent 금지. @430 vis full.
+
+
+
+   · [기기] OPTIONS panel BACK @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick180): HARD=0. is-opt-short brand none KEEP (tick136).
+     BACK visApp full / panelOver=0 / healthSteps=0.
+     ru@360×218 scrollH=71 (72 미만 last-resort) — 체감만. invent 금지.
+     autofire 라벨은 스크롤 아래( vis=0 ) — 의도된 스크롤 KEEP.
+
+
+
+   · [기기] Rotate overlay @218×360 / @212×375 / @228×404 / @245×430
+     × pt/es/ru (tick181): HARD=0 SOFT=0. is-on 생산 경로. strong/p visVv
+     full / overVv=0. #app overApp≈75–117은 16:9 레터박스 — 체감만.
+     invent 금지 (카드 축소 / 본문 클립). tick168 360×640 세트와 다른 크기.
+
+
+
+   · [기기] Sortie-load fail overlay @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick183): HARD=0 SOFT=0. production startGame catch.
+     h2/retry/toSelect visApp full / panelOver=0. brandNone=true는
+     result-short CSS KEEP — 체감만. invent 금지 (브랜드 복원 /
+     syncResultPanelBudget 부착). tick175 result·tick179 AE와 다른 패널.
+
+
+
+   · [기기] Char-load fail overlay @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick184): HARD=0 SOFT=0. production showSelect catch.
+     h2/toTitle visApp full / panelOver=0. brandNone=true는 result-short
+     CSS KEEP (tick183 analog) — 체감만. invent 금지. tick183 sortie-err는
+     retry+toSelect 두 CTA; 이쪽은 toTitle 단일 CTA.
+
+
+
+   · [기기] Combat HUD + fixed pads @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick185): HARD=0 SOFT=0. production SORTIE + touchUi.
+     #lives/#bombs visApp 14/14 / .tc-fire 56/56 / .tc-bomb 40/40 /
+     overlap=false / stocksOver=0. @360 appTop≈7.75 레터박스는 vis full —
+     체감만. invent 금지 (패드 축소 / Top_Bg fill / HUD 크롬).
+     tick146–149 360×240·350×220 세트와 다른 높이.
+
+
+
+   · [기기] Pause OPTIONS/MUTE @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick186): HARD=0 SOFT=0. production pause after SORTIE.
+     muted:false mute 라벨 (pt Mudo / es Silencio / ru Без звука).
+     OPTIONS/MUTE visApp full / resume·quit full / panelOver=0.
+     @360 appTop≈7.75 레터박스는 vis full — 체감만. invent 금지 (4버튼 축소).
+     tick174 resume/quit·tick167 320×200 세트와 다른 축.
+
+
+
+   · [기기] Combat HUD + FLOATING pads @360×218 / @375×212 / @404×228 /
+     @430×245 × pt/es/ru (tick187): HARD=0 SOFT=0. production SORTIE +
+     padMode=floating / tc-mode-float. #lives/#bombs 14/14 / .tc-fire 56/56 /
+     .tc-bomb 40/40 / overlap=false / stocksOver=0 / floatMode=true.
+     stick idle-hidden (stickOn=false, stickBaseNone=true) — 의도된 플로팅.
+     stick zone은 히트 타깃으로 유지. @360 appTop≈7.75 레터박스는 vis full —
+     체감만. invent 금지 (패드 축소 / Top_Bg fill / idle stick 강제 표시).
+     tick185 fixed와 다른 padMode 축.
+
+
+
+   · [기기] Pause OPTIONS/UNMUTE @360×218 / @375×212 / @404×228 / @430×245
+     × pt/es/ru (tick188): HARD=0 SOFT=0. production pause after SORTIE.
+     muted:true → unmute 라벨 (pt Ativar som / es Activar sonido /
+     ru Включить звук). unmuteAxis=true.
+     OPTIONS/UNMUTE visApp full (pt/es 30/30; ru 26–32) / resume·quit full /
+     panelOver=0. @360 appTop≈7.75 레터박스는 vis full — 체감만.
+     invent 금지 (4버튼 축소 / unmute 문자열 truncate).
+     tick186 MUTE(muted:false)와 다른 라벨 축. ja/zh UNMUTE는 미프로브.
+
+
+
+   · [기기] Floating stick AFTER touch @360×218 / @375×212 / @404×228 /
+     @430×245 × pt/es/ru (tick189): HARD=0 SOFT=0. production SORTIE +
+     padMode=floating + pointerdown zone-center → is-stick-on.
+     base visApp 104/104 out=false / knob 46/46 / fire 56/56 /
+     bombPad 40/40 / overlap=false / stickOn=true.
+     @360 appTop≈7.75 레터박스는 vis full — 체감만.
+     페이드 중 opacity≈0.36–0.48 (0.16s 0→0.68) + vis full — 체감만.
+     invent 금지 (스틱 축소 / snap-opacity / 코너 탭 OOB).
+     tick187 idle hide와 다른 제스처 축. 엄지 가장자리·ja/zh는 미프로브.
+
+
+
+   · [기기] Deathbomb first-teach plate logical 960×540 × pt/es/ru
+     (tick190): HARD=0 SOFT=0. production window + tick116 grow.
+     ru boxW=346 / subW=317.3 / plate 307..653 내부. css=960×540.
+     글자 가독 체감만. invent 금지 (CSS 뷰포트에 맞춘 캔버스 카드 축소 /
+     플레이트 강제 확장). ja/zh·needDrop·비-first 창은 미프로브.
+     CSS mid-short unread는 960-space가 아님 — invent 금지.
+
+
+
+   · [기기] Title CONTROLS HI @h≤288 / brand@800 / pause·result·tutorial·select
+     ultra / OPTIONS scroll soft / AE·loading·touch — tick170 list 유지.
+     invent 금지.
+
+
+
+   · [기기] Canvas START/CLEAR @짧은 가로: 논리 960 카드가 CSS에 맞춰 축소됨.
+     글자 가독만 체감. 카드 폭 ship 금지. deathbomb first-teach 960-space는
+     tick190 HARD=0 — CSS mid-short unread invent 금지.
+
+
+
+   · [기기/VFX] HOLD 체감 개성 (user): 코드상 homing-OR-laser 붕괴 아님
+     (tick174 live; tick175–190 재덤프 없음). 소프트 스프라이트 유사도는 천장
+     이슈. dens/실루엣 invent 금지. VFX 70+ 주장 금지.
+
+
+
+   · [VFX 천장] Soft-sprite / budget-capped particles — dens FROZEN.
+     tip/rim/charge invent CLOSED. VFX 70+ 주장 금지.
+
+
+
+   · LATENT: OPTIONS Math.max(260) — inflate 실측 없으면 ship 금지.
+
+
+
+5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     silhouettes tick69–87 / caption dual-stroke tick89–97 /
+     i18n grows tick116–117 / CONTROLS–OPTIONS–select–tutorial–pause–result
+     short-viewport ships tick118–145 / touch HUD tick146–149 /
+     loading/AE tick151–160 / CTA chrome tick161–166 /
+     residual scans tick167–169 / tick170 rare fanfare reclaim /
+     tick171–189 honest +0 residual scans /
+     tick190 honest +0 deathbomb 960-space first-teach residual scan /
+     tip densify tip58–67 / rim tip100–110 / charge 112–114 / HOLD dens frozen.
+
+
+
+======================================================================
+한국어 요약 (Korean-ready)
+======================================================================
+
+
+
+- Tick190 포커스: tick173–189와 다른 패널·뷰포트 — production deathbomb
+  first-teach 그레이스 플레이트 (inDeathBombWindow + isFirstDeathBomb +
+  bombs>0) @ 논리 960×540 × pt/es/ru.
+  CSS mid-short unread invent 금지 (AJ KEEP).
+  HOLD uniqueness는 tick174 증명 유지 — 재선적 없음. dens FROZEN.
+  tick69–189 유지. UI≈79 VFX≈69 밴드 유지. 80+/70+ 금지.
+
+
+
+- Verdict: honest +0 — CSS/JS product ship 없음.
+
+
+
+  · DB960 × pt/es/ru: hard=0 soft=0 ok=3 skip=0 (3셀)
+  · pt: subW=240.6 boxW=269 plate 345.5..614.5
+  · es: subW=257 boxW=286 plate 337..623
+  · ru: subW=317.3 boxW=346 plate 307..653 (W-48 캡 내부)
+  · titleW=148.1 / css=960×540 / window=true / first=true
+  · CSS 축소 unread → KEEP invent 금지
+  · HOLD dump 재실행 없음 (identityOk 실패 미발생)
+  · 기존 REJECT 유지: title HI floor / hint display:none /
+    AE@404 oc-peek / OPT ru@360 scrollH≈71 / rotate #app overApp /
+    rare cardOver vis-full (eternity+labiata+emily) /
+    sortie/char-load fail brandNone CSS KEEP /
+    HUD fixed+floating @360 appTop letterbox vis full /
+    floating idle stick hide KEEP /
+    floating stick AFTER touch fade opacity KEEP /
+    pause MUTE+UNMUTE @360 appTop letterbox vis full
+
+
+
+- Docs: tools/probe-tick190-residual.mjs (+ .out.txt)
+
+
+
+- 점수(정직): UI ≈79 (+0 밴드, 80+ 금지), VFX ≈69 (+0, 70+ 금지).
+
+
+
+- 사람 플레이테스트 갭(요약):
+
+
+
+  · 기기: rare compact overlay-host 체감 / rare eternity+labiata+emily
+    @404/@430 cardOver 체감 (text full) /
+    select dossier kit wrap·hintHide /
+    pause resume/quit NEW mid-short 체감 /
+    pause OPTIONS/MUTE NEW mid-short 체감 (mute 라벨 full) /
+    pause OPTIONS/UNMUTE NEW mid-short 체감 (unmute 라벨 full,
+    @360 레터박스; ja/zh 미프로브) /
+    tut+result NEW mid-short 체감 /
+    title START/OPTIONS NEW mid-short + HI peek@h≤288 체감 /
+    loading NEW mid-short 체감 (브랜드 유지) /
+    AE NEW mid-short 체감 (@404 oc ~7px peek, visApp full) /
+    OPTIONS NEW mid-short 체감 (ru@360 scrollH≈71, BACK full) /
+    rotate PORTRAIT swap NEW mid-short 체감 (#app overApp 레터박스) /
+    sortie-load fail NEW mid-short 체감 (brand none CSS KEEP, CTA full) /
+    char-load fail NEW mid-short 체감 (brand none CSS KEEP, toTitle full) /
+    combat HUD+fixed pads NEW mid-short 체감 /
+    combat HUD+floating pads NEW mid-short 체감 (idle stick 숨김 의도) /
+    floating stick AFTER touch NEW mid-short 체감 (base 104/104 full;
+    페이드 opacity; 엄지 가장자리·ja/zh 미프로브) /
+    deathbomb first-teach 960-space 체감 (ru boxW=346 내부; CSS 축소 invent
+    금지; ja/zh·needDrop 미프로브) /
+    brand@800 /
+    pause·result·tutorial·select ultra / OPTIONS scroll soft /
+    AE·loading·touch / canvas START 글자 가독 / HOLD 체감 개성
+  · VFX: soft-sprite 천장 · dens FROZEN · 70+ 금지
+  · LATENT: OPTIONS Math.max(260) inflate 없으면 ship 금지
+
+
+
+- 다음(tick191): NEW proven HARD muddy만 재개입 / 없으면 honest +0 /
+  HOLD dens·실루엣 invent 금지 (identityOk 실패 없으면 +0) /
+  display:none zero-rect OOB 오탐 금지 / title HI floor invent 금지 /
+  rare soft cardOver·ultra invent 금지 /
+  loading brand hide invent 금지 /
+  AE tick159 게이트 상향 / @404 oc-peek invent 금지 /
+  OPTIONS scrollH<72 / autofire 강제 vis invent 금지 /
+  rotate #app overApp 레터박스 invent 금지 /
+  sortie/char-load fail brand restore invent 금지 /
+  HUD pad shrink / Top_Bg fill invent 금지 (fixed+floating) /
+  floating idle stick 강제 표시 invent 금지 /
+  stick AFTER touch shrink / snap-opacity / 코너 OOB invent 금지 /
+  pause 4-btn shrink invent 금지 (MUTE+UNMUTE 축 모두) /
+  deathbomb CSS 카드 축소 / 플레이트 강제 확장 invent 금지 /
+  OPTIONS Math.max(260)는 실측 inflate 없으면 +0 / dens frozen /
+  VFX 70+ 금지.
+
+
+
+  후보: ja/zh 한 패널 unread만 (다른 크기; 예: pause UNMUTE @390/412/428).
+
+
+
+Model: inherit
+Korean-ready: yes

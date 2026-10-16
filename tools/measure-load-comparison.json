@@ -1,0 +1,53 @@
+{
+  "after": {
+    "method": {
+      "env": "Playwright Chromium + tools/static-server.mjs",
+      "progressive": "title manifests+BG → select base roster → sortie stage1+pilot; later acts prefetch",
+      "eager": "same title/select, then ?eager=1 loads ALL players+enemies before field opens",
+      "transfer": "Performance Resource Timing transferSize (fallback encodedBodySize) for /assets/*",
+      "memory": "performance.memory.usedJSHeapSize at sortie-ready (Chromium)",
+      "sheets": "sd_baked/*/sheet.json + sheet_XX.webp|png (trim/shelf pack; per-frame PNG fallback)"
+    },
+    "results": [
+      {
+        "label": "progressive",
+        "titleMs": 2310,
+        "selectMs": 4151,
+        "sortieMs": 4507,
+        "mode": "progressive",
+        "transferBytes": 21589758,
+        "heapBytes": 10000000,
+        "assetRequests": 33,
+        "audio404": 0,
+        "clips": 9,
+        "frames": 15
+      },
+      {
+        "label": "eager",
+        "titleMs": 2989,
+        "selectMs": 5804,
+        "sortieMs": 8968,
+        "mode": "eager",
+        "transferBytes": 48724987,
+        "heapBytes": 10000000,
+        "assetRequests": 93,
+        "audio404": 0,
+        "clips": 26,
+        "frames": 41
+      }
+    ],
+    "comparison": {
+      "sortieMsDelta": 4461,
+      "transferDelta": 27135229,
+      "heapDelta": 0
+    }
+  },
+  "vsBefore": {
+    "progressiveTransferBefore": 50430695,
+    "progressiveTransferAfter": 21589758,
+    "transferSaved": 28840937,
+    "transferSavedRatio": 57.2,
+    "sortieMsBefore": 8958,
+    "sortieMsAfter": 4507
+  }
+}

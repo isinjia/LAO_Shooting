@@ -1,0 +1,90 @@
+LAO MINI ACTION — frame-opt LOOP TICK 03 handoff
+================================================
+Date: 2026-10-04
+Goal: raise combat frame rate; target honest ~55+ avg without feature deletion.
+UI layout scans: NOT restarted. UI≈79 / VFX dens≈69 unchanged. dens FROZEN.
+
+Prior (tick02, same harness)
+----------------------------
+pc-960 SORTIE 16s: avg 49.26  min 14.99  p95 33.4ms  max dt 66.7ms
+  hitches >33ms 36/704  >50ms 2  >100ms 0
+  peaks: enemies 4, bullets 16, vfx 70, polish 16, legacy particles 0
+  split: update 0.308  draw 13.654  vfxJS 0.295 (n=706)
+mobile-412 short 8s: avg 55.82  min 20.00  p95 33.4ms
+Tick01 same harness PC 30.23. Older passes PC 30.83 / 43.09.
+
+Hot-path after tick02
+---------------------
+draw() still ~14ms wall. Hint was wash + city motes + clearRect + sprites.
+Tick03 added drawStageBackground wall into __LAO_SPLIT__.bg:
+  bg JS ~0.12ms — issuing cached blits is cheap; GPU/fill wait sits in the rest of draw().
+Proven leftover fill-rate: extra translucent wash fillRect over full 960×540
+AFTER scene blit (city/nest/airfield/abyss). Hive tiles stay alpha, so wash
+must remain a screen fill there.
+
+Shipped (one bake — look intended same)
+---------------------------------------
+js/stage-background.js
+  - Bake act wash into pre-scaled painted slices / abyss fullScene
+  - Skip per-frame wash fillRect on covering acts (combat SORTIE = city)
+  - Hive: still fill wash after translucent tiles
+js/game.js
+  - Optional __LAO_SPLIT__.bg accumulator around drawStageBackground
+Tick01 HUD caches + tick02 scene blit / grade overlay / stroke batch kept.
+
+NOT shipped: skip clearRect (shake up to ~14px), mote count/size cuts,
+sprite atlas, dens, pause skip-draw.
+
+Re-measure (Playwright headless, same Hirume/invuln/autoPlay/mute SORTIE)
+------------------------------------------------------------------------
+tools/measure-frame-opt-tick03.mjs → tools/frame-opt-tick03-raw.json
+
+pc-960 16s combat:
+  avg 51.83  min 20.00  p95 33.4ms  max dt 50.0ms
+  hitches >33ms 31/753  >50ms 0  >100ms 0
+  peaks: enemies 4, bullets 16, vfx 78, polish 16, legacy particles 0
+  canvas 960×540 buf 960×540 dpr1
+  split: update 0.289  draw 12.460  bg 0.121  vfxJS 0.273 (n=755)
+
+mobile-412×226 dpr2.5 8s combat (short viewport):
+  avg 59.08  min 20.00  p95 16.8ms  max dt 50.0ms
+  hitches >33ms 2/466  >50ms 0
+  canvas CSS 401.8×226 buf 703×396
+  Note: shorter window + headless variance; do not treat 59 vs 56 as the PC win.
+
+Honest FPS delta
+----------------
+PC avg 51.83 vs tick02 49.26: modest real gain (~+2.6 / draw 13.65→12.46).
+Not 55+. Do not round to 60. Mobile short 59 sits in the prior 40–57 band
+plus variance — honest mobile +0 to small. Target 55+ PC avg still open.
+
+Scores (not inflated)
+---------------------
+성능/프레임: PC ~59 (was ~58; combat ~52 not 60-locked) / mobile-like ~62
+메모리: 76–78 (not re-scored)
+UI layout: ≈79  DO NOT claim 80+
+VFX dens:  ≈69  DO NOT claim 70+
+
+Preserved
+---------
+charge/hold C1–3, bombs, deathbomb, 5 stages, pads, i18n,
+STAGE START/CLEAR, WARNING, HOLD identities
+(sunbird/sightbeam/dragonaxe/shell/jupiterorb/coffinwall/plasmaslash).
+dens FROZEN.
+
+Next tick
+---------
+bg JS is not the 12ms. Remaining draw ~12.5ms is entities + HUD plate text
++ clearRect/GPU drain after scene. Profile those subsections. Candidate:
+skip clearRect by padding the opaque #0a1018 fill for shake (~14px), or
+batch city motes without cutting count. Do not claim 55+ until a headed
+or second headless PC pass holds ~55.
+
+Korean-ready user summary
+-------------------------
+전투 프레임 최적화 3틱입니다. 도시 등 불투명 배경에 매 프레임 덮던
+색 워시를 미리 구운 장에 넣었습니다. 하이브만 타일 알파 때문에 기존처럼
+화면 fill입니다. HUD·HOLD·폭탄·5스테이지·밀도는 그대로입니다. 헤드리스
+PC 960 전투 평균 FPS 51.8(2틱 49.3)이라 작은 이득입니다. 목표 55+는
+아직입니다. 남은 draw ~12.5ms는 배경 JS가 아니라 스프라이트/HUD/clear
+쪽입니다. UI 79·VFX 69 그대로입니다.

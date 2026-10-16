@@ -1,0 +1,125 @@
+SELECT ROSTER — 3 NAMED + RANDOM (Griffin / Sleipnir / Express 76)
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\
+
+================================================================
+SELECT LAYOUT
+================================================================
+Top row (named slots 01–03 only; no slot 04 / 05 cards):
+  1 griffin     P/A-00 그리폰
+  2 sleipnir    P-49 슬레이프니르
+  3 express76   익스프레스 76
+
+Bottom row:
+  RANDOM (slot label ??) — centered under slot 2 (grid-column: 2)
+
+No 5-slot / 6-card grid. No-scroll, no jitter, no skill-name rows on select.
+FormationIcon portraits (not SelectWorld Event_Btn). MissORCA not restored.
+
+Nav: arrows / WASD / stick — left/right wrap among the 3; up/down toggle
+named row ↔ RANDOM. Space / touch / FIRE confirm. Mouse click still
+selects + sorties (existing bindCharCards).
+
+================================================================
+PLAYABLE IDS
+================================================================
+Named select / RANDOM pool:
+  griffin, sleipnir, express76
+
+RANDOM: uniform among those 3 only (no 3% eternity/labiata/emily roll).
+
+Hidden / leftover kits still in CHAR_META + PLAYER_KEYS (not named slots):
+  hirume, constantia, lrl, merlin, fafnir, eternity, labiata, emily
+Hirume sunbird + Constantia locks untouched.
+
+================================================================
+CHEATS (RANDOM card reveal)
+================================================================
+↑↓↑↓↑↓↑↓     Labiata   (was Eternity)
+←→←→←→←→     LRL       (was Labiata)
+
+Emily directional cheat (↑←↓→↑↓) removed 2026-10-06 — kit/art remain.
+Eternity: no directional cheat; kit/art remain in code.
+Cheat unlocks paint the RANDOM card (LRL has no RARE badge).
+
+================================================================
+PORTRAITS (FormationIcon N)
+================================================================
+assets/ui/char-select/griffin.png
+  ← Texture/FormationIcon/FormationIcon_BR_PA00EL_N.png
+assets/ui/char-select/sleipnir.png
+  ← Texture/FormationIcon/FormationIcon_BR_Sleipnir_N.png
+assets/ui/char-select/express76.png
+  ← Texture/FormationIcon/FormationIcon_PECS_Express76_N.png
+
+Hidden reveal still uses existing hirume/constantia/lrl/merlin/fafnir/
+eternity/labiata/emily FormationIcon copies.
+
+================================================================
+IN-GAME SD
+================================================================
+Baked with tools/bake_sd_character.py from Google_QA Character folders
+(idle / move / die, 768px native frames — not Event_Btn):
+
+  griffin    Char_BR_PA00EL_N     stand / move_fly_jet / die
+             assets/sd_baked/griffin/{anim.json,preview.png,native/}
+  sleipnir   Char_BR_Sleipnir_N   Idle_1 / Move / Die
+             assets/sd_baked/sleipnir/...
+  express76  Char_PECS_Express76_N idle1 / move / die
+             assets/sd_baked/express76/...
+
+If a bake is missing at runtime, ensurePlayer still soft-falls back to
+Hirume clip for UI/sim (does not register Hirume art under the failed key).
+
+================================================================
+KIT MAPPING (honest — no new shot types)
+================================================================
+Wiki/Unity names on HUD/i18n; combat reuses existing pattern plumbing.
+
+griffin   SHOT 핸드 미사일  → pattern baton (Merlin aimed shells)
+          HOLD 폭격         → Merlin charged shell volley
+          C    폭격         → Emily busterbeam profile (area strike)
+          bomb              → Emily bomb VFX branch
+
+sleipnir  SHOT 제압 사격    → pattern hmg (Eternity HMG cadence/style)
+          HOLD 돌격         → LRL charged axe
+          C    돌격         → LRL phantom-rush special
+          bomb              → LRL bomb VFX branch
+          (LRL Skill2 36-frame bomb clip stays LRL-only; not copied)
+
+express76 SHOT 특급 배달    → pattern rifle (Constantia aimed tracers)
+          HOLD 폭발물 택배  → Merlin charged shells
+          C    폭발물 택배  → Merlin UNREP (unrepFor + 1.1 fire support)
+          bomb              → Merlin bomb VFX branch
+
+Did not invent new bullet styles. Did not delete Hirume/Constantia kits.
+
+================================================================
+I18N
+================================================================
+8 locales (ko ja en zh-Hant zh-Hans pt es ru):
+  char.griffin / char.sleipnir / char.express76
+  kit.*.shot|charge|special + special.* for the 3 units
+Select dossier still hides skill-name rows.
+
+================================================================
+FILES
+================================================================
+js/assets.js, js/main.js, js/rare-fanfare.js, js/i18n.js
+js/weapon-skills.js, js/special-skill-profiles.js, js/bomb-vfx.js
+js/player.js, js/game.js (UNREP also on express76)
+css/style.css (RANDOM centered on row 2)
+tools/bake_sd_character.py (Google_QA abs paths + ani/3D_mesh globs)
+assets/ui/char-select/{griffin,sleipnir,express76}.png
+assets/sd_baked/{griffin,sleipnir,express76}/
+tools/select-roster-griffin-sleipnir-express-handoff.txt
+
+================================================================
+DO NOT
+================================================================
+Do not restore MissORCA / lobby Event_Btn card faces / skill names on select.
+Do not put Hirume/Constantia/Merlin/Fafnir as named slots 1–5.
+Do not re-enable 5-slot grid or char-grid scroll.
+Do not invent unreferenced shot types for the new trio.
+Do not delete leftover character systems (cheats / fallback / kits).

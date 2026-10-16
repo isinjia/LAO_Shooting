@@ -1,0 +1,78 @@
+enemy-hitbox-sprite-size-handoff
+================================
+Date: 2026-10-06
+Scope: Enemy damage hit regions only (player attacks vs enemies).
+Untouched: Hirume/Constantia kits, player hitR=4, bomb full-screen X.
+
+GOAL
+----
+User asked for "이미지 크기 자체가 피격판정" — enemy damage hitbox covers the
+drawn sprite footprint, not the old tiny center core.
+
+
+FORMULAS
+--------
+drawSize = size * drawScale
+  (drawScale defaults to 1; midboss spawn multiplies by 1.22, boss by 1.5)
+
+BEFORE (damage hitR):
+  grunt:          hitR = size * 0.24
+  midboss / boss: hitR = size * 0.26
+  (drawScale ignored for collision)
+
+AFTER (damage hitR):
+  all kinds:      hitR = drawSize * 0.5
+                = size * drawScale * 0.5
+  Circle radius = half the drawn square so a centered circle covers the sprite.
+
+Collision path (unchanged structure):
+  circle-circle: dist² < (b.r + e.hitR * hitScale)²
+  beams:         capsule distance uses same e.hitR (now larger)
+  dying soak:    hitScale 0.85 still applies on the new hitR
+  bombs / X:     full-screen — not driven by hitR
+
+
+BODY CONTACT (power-down)
+-------------------------
+BEFORE: (e.hitR * 0.7 + p.hitR)
+AFTER:  (e.hitR * 0.38 + p.hitR)
+
+Choice: full-sprite damage hitR makes the old ×0.7 body factor far too harsh
+(especially high-drawScale grunts). Tightened to ×0.38 so body radius stays
+near the old core feel when drawScale≈1, while still scaling mildly with
+enlarged visuals. Documented — not matching full image on purpose for fairness.
+
+
+EXAMPLE NUMBERS
+---------------
+Enemy              size  drawScale  drawSize | old hitR | new hitR | old body | new body
+                   (meta) (meta/spawn)       | size×w   | draw/2   | hitR×0.7 | hitR×0.38
+------------------------------------------------------------------------------------------------
+wasp (grunt)         56      1         56    |  13.4    |  28.0    |   9.4    |  10.6
+nightchick           58      1         58    |  13.9    |  29.0    |   9.7    |  11.0
+programmob_an        60    1.45        87    |  14.4    |  43.5    |  10.1    |  16.5
+programmob_as        66     2.4      158.4   |  15.8    |  79.2    |  11.1    |  30.1
+legion (elite)      100     1.2       120    |  24.0    |  60.0    |  16.8    |  22.8
+nestchaser mid*     116    1.65×1.22 ≈233.5  |  30.2    | 116.8    |  21.1    |  44.4
+juggernaut mid*     118    1.15×1.22 ≈165.5  |  30.7    |  82.8    |  21.5    |  31.4
+predator boss*      136       1×1.5   204    |  35.4    | 102.0    |  24.8    |  38.8
+doomeater boss*     148       1×1.5   222    |  38.5    | 111.0    |  26.9    |  42.2
+
+* mid/boss drawScale includes spawn multiplier (1.22 / 1.5) from game.js
+  _spawnStageLeader. old mid/boss used size×0.26; grunt/elite used size×0.24.
+
+
+FILES TOUCHED
+-------------
+js/enemy.js   — hitR getter → drawSize * 0.5
+js/game.js    — body-contact factor 0.7 → 0.38 (+ comment)
+js/assets.js  — ENEMY_META comment: drawScale now feeds damage hitR
+
+
+NOT CHANGED
+-----------
+player.hitR = 4
+bomb / special X full-screen clear
+Hirume / Constantia skill kits
+dying hitScale 0.85 path (inherits larger hitR automatically)
+beam capsule path (inherits larger hitR automatically)

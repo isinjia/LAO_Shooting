@@ -1,0 +1,92 @@
+KIT LORE TICK 01 — LAST-ORIGIN SKILL → SHMUP BULLETS
+Date: 2026-10-05
+Sources (this tick):
+  https://lastorigin.wiki.gg/wiki/Hirume
+  https://lastorigin.wiki.gg/wiki/Constantia
+  https://lastorigin.wiki.gg/wiki/LRL
+  https://lastorigin.wiki.gg/wiki/Merlin
+  https://lastorigin.wiki.gg/wiki/Fafnir
+  https://lastorigin.wiki.gg/wiki/Eternity
+  https://lastorigin.wiki.gg/wiki/Labiata
+  https://lastorigin.wiki.gg/wiki/Emily
+  Namuwiki flavor quotes (Hirume 태양 숨결 / 퇴마의 술법; Constantia 라이플 사격 / 발목 잡기)
+  Strike 1945 II analogs used ONLY where a turn-based skill is not a readable shmup shot:
+    napalm / spread-bomb cluster, aimed vulcan / cannon slug (no invented bird-seeker / overwatch laser)
+
+================================================================
+WIKI MAPPING TABLE
+================================================================
+Char        Wiki skill                         → Shmup slot     Form used
+----------- ---------------------------------- ---------------- ------------------------------------------
+hirume      A1 Breath of the Sun (태양 숨결)    SHOT            Forward fire cone; center 100%, sides 50%
+                                                                (wiki falloff) + small blastRadius ignite
+hirume      A1 charged / ground-aim fire       HOLD            Aimed sunbird fire cluster, blast + short
+                                                                root; NO homing phoenix
+hirume      A2 Exorcism Technique (퇴마의 술법) C 1–3           Parked sunseal ward (0 dmg bullet-clear)
+hirume      Weapon Yatagarasu / P3 Left Eye    X bomb VFX only Full-screen bomb rules unchanged
+constantia  A1 Rifle Shot (라이플 사격)         SHOT            Aimed Winchester slugs, pierce by P, NO homing
+constantia  A1 charged rifle                   HOLD            One lockround slug (pierce, no beam lance)
+constantia  A2 Ankle Biter (발목 잡기)          C 1–3           One Bori; mark/root; 6/12/18
+constantia  Winchester 1887 Custom             options         1945 twin-gun aimed snapshots (split lanes)
+
+LRL         A1 Axe of Darkness                 SHOT (later)    Still travelling cleave (not yet retuned)
+LRL         (no returning-axe skill)           HOLD (later)    Still dragonaxe boomerang — wiki mismatch
+LRL         A2 Cyclops Eternal Beam            C               cyclopsbeam (already maps)
+merlin      A1 Big Gun                         SHOT/HOLD mix   Vertical Prydwen fall vs horizontal shell
+merlin      A2 UNREP                           C               Support markers + unrepFor buff
+fafnir      A1 Hroti                           SHOT            Tesla search bolt (weapon Jupiter)
+fafnir      A2 Shock and Awe                   C mismatch      C is still EMP field, not Shock and Awe
+eternity    A1 Nanny's Machinegun              SHOT            HMG stream (ok)
+eternity    P1 Coffin for Two                  HOLD            coffinwall (ok-ish as nullify/DR)
+eternity    A2 Rest in Peace                   C               coffinmissile from top (ok)
+labiata     A1 Hundred Flower Blossoms         SHOT            Still orbitblade / Trollsberd read
+labiata     A2 Hundred Flower Efflorescence    C mismatch      Still plasmacross “십자 절단”
+emily       A1 Railgun Shot                    SHOT            railbeam, chargeEnabled false (ok)
+emily       A2 Buster Cannon                   C               busterbeam (ok; i18n special.* still stale)
+
+================================================================
+SHIPPED THIS TICK (complete 2 characters)
+================================================================
+Hirume — primary + hold + C1–3 + bomb label/i18n
+  SHOT: foxflame Breath of the Sun fan with ignite splash + 50% side falloff
+  HOLD: sunbird napalm cluster (1945), root on core puff, P grows count
+  C: 퇴마의 술법 (sunseal, 0 dmg, radius/lifetime by level)
+  X: still stock bomb + deathbomb; VFX label updated
+  8-locale kit/special strings updated
+
+Constantia — primary + hold + C1–3 + bomb label/i18n
+  SHOT: aimed rifle (no lock-on missiles)
+  HOLD: lockround slug, not sightbeam lance
+  C: 발목 잡기, still one Bori
+  options: aimed, not homing
+  8-locale kit/special strings updated
+
+Tests updated: test-weapon-roles, test-basic-shots, test-original-skill-roles
+Passed locally: weapon-roles, basic-shots, original-skill-roles, special-shots static/runtime JSON
+Playwright select-screen verify (:5188):
+  Hirume card: SHOT 태양 숨결 · HOLD 태양 숨결 · SPECIAL 퇴마의 술법
+  Constantia card: SHOT 라이플 사격 · HOLD 라이플 강사격 · SPECIAL 발목 잡기
+  KIT_VERIFY_OK. In-stage firing not exercised this tick (no UI/FPS loop restart).
+
+Preserved: 5 stages, pads, i18n 8 langs, STAGE START/CLEAR, WARNING, deathbomb,
+power max Lv5, death resets power, fire-rate ×2 delay, Constantia die eyes.
+No AI images. dens allowed to change where identity had to match lore (phoenix→sun breath,
+lance→slug).
+
+================================================================
+REMAINING CHARACTERS
+================================================================
+lrl      — Axe of Darkness is single-target; returning HOLD is unreferenced
+merlin   — A1 Big Gun is single-target cannon, not vertical battery; HOLD Prydwen
+           breach is invented vs wiki
+fafnir   — remap C from EMP to Shock and Awe (area electric, adjacent bonus)
+eternity — mostly aligned; confirm HOLD vs Coffin for Two vs RIP
+labiata  — remap to Hundred Flower (plasma stacks), drop invented cross-cut name
+emily    — gameplay ok; fix special.emily i18n “추적 분열탄” vs Buster Cannon
+All      — browser-verify select kit lines + in-stage SHOT/HOLD/C once server is up
+
+================================================================
+DO NOT
+================================================================
+Do not invent new bullet systems. Next tick: LRL + Merlin or Fafnir + Labiata,
+same constraint (wiki first, 1945 II only as analog).

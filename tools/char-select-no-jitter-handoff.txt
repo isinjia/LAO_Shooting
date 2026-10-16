@@ -1,0 +1,76 @@
+CHAR SELECT — NO SELECTION JITTER / LAYOUT JUMP
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+GOAL
+================================================================
+When arcade nav / click moves highlight to another character, the
+3×2 card grid must stay visually stable — no 움찔움찔 / layout jump.
+Preserve portraits, no-scroll grid, select nav, NewUI. Do not fight
+title-widen / title arcade menu CSS.
+
+================================================================
+ROOT CAUSE
+================================================================
+1) Primary: base `.char-card.selected` and `.char-card:hover` apply
+   `transform: translateY(-2px)` with `transition: … transform 0.15s`.
+   NewUI select overrides restyled border/background/box-shadow but
+   did NOT clear transform, so every selection change animated a 2px
+   pop up/down on the leaving and entering cards.
+
+2) Secondary: `#select-dossier-name` text length changes on
+   `syncSelectDossier()` (called from `setSelectedCard`). Longer names
+   could wrap and change pinned dossier height → flex slot for
+   `.char-grid` flexed → cards looked like they jerked even without
+   `--select-face` rebudget (budget only runs on show/resize).
+
+Not the cause (already stable / out of flow):
+- Selected border stayed 1px (color/shadow only in NewUI ticks)
+- `.char-card.selected::after` "SELECT" badge is position:absolute
+- `syncSelectPanelBudget` is NOT called on selection change
+- Name font-weight already 700 selected and unselected
+
+================================================================
+FIX
+================================================================
+css/style.css — append block "CHAR SELECT NO-JITTER"
+Scoped to `#overlay-content.screen-select` (+ `.lao-newui` twins):
+
+- Force `transform: none` on card / :hover / .selected / random.selected
+- Keep `border-width: 1px` (no width grow); leave border-style alone
+  so RANDOM dashed border stays
+- Transition only color/shadow/background (no transform)
+- `:focus` / `:focus-visible` → outline:none (no focus ring reflow)
+- Lock `.name` font-weight 700 selected + unselected
+- Dossier name: min-height + nowrap + ellipsis so name swaps do not
+  change pinned chrome height
+
+JS: no change required. `setSelectedCard` / `moveSelectByDir` /
+keyboard·stick·click paths already only toggle `.selected` +
+`syncSelectDossier()`.
+
+================================================================
+PRESERVED
+================================================================
+- 3×2 no-scroll `.char-grid` (tick126 / nav-noscroll)
+- Portrait `--select-face` + NewUI brass selected wash
+- Arcade pad nav + Space confirm
+- Title arcade menu scale/focus (unrelated selectors)
+- RANDOM dashed / rare reveal styles
+
+================================================================
+FILES
+================================================================
+- css/style.css — select-scoped no-jitter block (end of file)
+- tools/char-select-no-jitter-handoff.txt — this note
+
+================================================================
+VERIFY
+================================================================
+1) Open character select (NewUI on).
+2) Move highlight with arrows / WASD / stick across all 6 slots.
+3) Cards must not pop up/down; grid gaps and face sizes stay put.
+4) Mouse hover must not lift cards either.
+5) Click select still works; SORTIE / portraits / RANDOM unchanged.
+6) Short landscape (e.g. 800×450): still no scroll, all 6 visible.

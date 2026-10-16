@@ -1,0 +1,929 @@
+TICK142 handoff (2026-10-04) — ultra-short tutorial/pause/result fitH maxCap floor
+
+
+
+======================================================================
+
+PRESERVE (do not break)
+
+======================================================================
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+    fafnir thunder cloud · eternity RIP ward (hold) / HMG basic · labiata crescent · emily rail (basic)
+
+
+
+  Still exactly 8 HOLD_STYLE muzzle keys (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+  NOTE: eternity HOLD projectile is coffinwall ward; HMG (coffinround) is basic autofire.
+
+  HOLD_STYLE muzzle map eternity→coffinround remains FROZEN (qa-hold-muzzle).
+
+
+
+  NOTE: Emily chargeEnabled=false — basic railbeam IS the intentional laser kit;
+
+  HOLD_STYLE emily→railbolt (spike) stays frozen for muzzle map, but charge path is disabled.
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+  plasmacross / sunseal soft disks + soft streaks only.
+
+  Rare option diamond chip is a prior identity cue (tick26) — keep.
+
+
+
+- Enemy bullet / player-hit / bomb / graze / pickup / C muzzle / deathbomb /
+
+  option trails / focus / rare fanfare / WARNING / STAGE CLEAR / pause /
+
+  CONTROLS / loading / OPTIONS / touch-pad / select / result / HUD clusters /
+
+  tip densify tip58–67 / tip89–97 / rim densify tip100–110 / charge 112–114
+
+  — KEEP as documented in tick141-handoff PRESERVE. dens FROZEN.
+
+
+
+- HOLD dens/side/emit FROZEN (tick51 qa-hold-muzzle): kit dens numbers,
+
+  holdIdentity side/streak/smoke/rise/drag, trail emit, muzzle emitRate,
+
+  HOLD_STYLE map (eternity→coffinround) — untouched.
+
+
+
+- Shot/hold/C silhouettes tick69–87 KEEP (including cyclopsbeam intentional laser).
+
+
+
+- Title CONTROLS keys-rules / panel budget / grid floor / HI pin / full-row /
+
+  parent-aware floor (tick118–124 + tick130) — KEEP.
+
+
+
+- Title extreme-short CONTROLS grid floor (tick135) — KEEP.
+
+
+
+- Pause short-landscape panel floor + deco reclaim (tick131) — KEEP.
+
+
+
+- Pause extreme-short head reclaim (tick138) — KEEP.
+
+  ≤400 brand hide + h2 compact (18px !important); is-pause-short JS path;
+
+  tick131 deco→blurb→actions→pad→maxCap ladder retained after head step.
+
+
+
+- Pause SE-class soft-continue (tick140) — KEEP.
+
+  appH≤340 && rawHeadroom<8 soft-continue so ≤400 CSS belt cannot mask
+
+  negative headroom under +1.5 tolerance; actions/panel pad still fund;
+
+  tip31/58 / tick131 / tick138 / dens untouched.
+
+
+
+- Tutorial panel i18n maxCap + grid scroll + CTA pin (tick125) — KEEP.
+
+
+
+- Tutorial short-landscape grid floor + deco/note reclaim (tick132) — KEEP.
+
+
+
+- Tutorial extreme-short grid floor (tick137) — KEEP.
+
+  softGridWant=40; head brand + h2 compact reclaim; h2 i18n kept.
+
+
+
+- Result short-landscape panel floor + deco/margin reclaim (tick133) — KEEP.
+
+
+
+- Result extreme-short head reclaim (tick139) — KEEP.
+
+  ≤340 brand hide + h2 compact (18px !important); is-result-short JS path;
+
+  ≤340 rawHeadroom soft-continue (<8); tick133 deco→margins→(head)→cells→pad→CTA→maxCap.
+
+
+
+- Select panel i18n maxCap + char-grid scroll + CTA pin (tick126) — KEEP.
+
+
+
+- Select short-landscape deco+blurb reclaim (tick129) — KEEP.
+
+
+
+- Select extreme-short dossier/actions/hint reclaim (tick134) — KEEP.
+
+
+
+- OPTIONS panel maxCap + BACK pin (tick127) / flatten nested scroll (tick128)
+
+  autofire full-span (tick120) / mute-fullscreen 2-col (tick121) — KEEP.
+
+
+
+- OPTIONS extreme-short scroll floor (tick136) — KEEP.
+
+  softScrollWant=140; head brand + Title_Deco ::after reclaim; h2 i18n kept.
+
+
+
+- SE-class select/OPTIONS maxCap floor (tick141) — KEEP.
+
+  fitH = floor(min(clientHeight, painted #app box)); floorCap = min(320, fitH);
+
+  maxCap = min(680, max(floorCap, ratioCap)). CSS min(92%,680) belt unchanged.
+
+
+
+- Ultra-short tutorial/pause/result fitH maxCap floor (tick142) — KEEP (this ship).
+
+  Tutorial always-on: floorCap = min(300, fitH); maxCap = min(560, max(floorCap, ratioCap)).
+
+  Pause last-resort: floorCap = min(280, fitH); maxCap = max(floorCap, floor(fitH*0.96)).
+
+  Result last-resort: floorCap = min(260, fitH); maxCap = max(floorCap, floor(fitH*0.96)).
+
+  Title — no always-on floor muddy (skip).
+
+
+
+- showOverlay / hideOverlay clear content.style.maxHeight + paddingTop/Bottom
+
+  so panel-budget inline caps from options/select/tutorial/pause/result do not
+
+  leak across screens (tick127 hygiene + tick133 pad clear; sync* re-apply
+
+  their own caps).
+
+
+
+
+
+======================================================================
+
+THIS TICK — ultra-short tutorial/pause/result fitH maxCap floor (1 ship)
+
+======================================================================
+
+
+
+1) Candidate pick (user focus: ONE muddy outside exhausted tip/rim/charge lists;
+
+   prefer i18n clip / nested scroll / CTA OOB / panel overflow; live-measured win;
+
+   thin-viewport residual; check fitH clamp parity for tutorial/pause/result/title)
+
+
+
+   Exhausted CLOSED: tip densify (58–97), shot/hold/C individuality (69–87),
+
+   rim densify (100–110), charge feedback (112–114). dens FROZEN.
+
+   CONTROLS path tick118–124 + parent floor tick130 + extreme-short tick135 CLOSED.
+
+   Tutorial panel budget CLOSED (tick125) — CTA pin only.
+
+   Tutorial short-landscape grid floor CLOSED (tick132) — deco/note @≤480.
+
+   Tutorial extreme-short grid floor CLOSED (tick137).
+
+   Select panel maxCap + CTA pin CLOSED (tick126).
+
+   Select short-landscape deco+blurb CLOSED (tick129).
+
+   Select extreme-short grid floor CLOSED (tick134).
+
+   OPTIONS autofire/mute-fullscreen CLOSED (tick120–121).
+
+   OPTIONS panel maxCap + BACK pin CLOSED (tick127).
+
+   OPTIONS flatten nested scroll CLOSED (tick128).
+
+   OPTIONS extreme-short scroll floor CLOSED (tick136).
+
+   Pause short-landscape panel floor CLOSED (tick131) — deco/blurb @≤480 / @800.
+
+   Pause extreme-short head reclaim CLOSED (tick138).
+
+   Pause SE-class soft-continue CLOSED (tick140).
+
+   Result short-landscape panel floor CLOSED (tick133).
+
+   Result extreme-short head reclaim CLOSED (tick139).
+
+   SE-class select/OPTIONS maxCap floor CLOSED (tick141).
+
+
+
+   Scanned preferred axes (probe-tick142-fitH-parity):
+
+
+
+   A) SKIP — Title brand restore @800/@1280×560 after tick130/135:
+
+      hiInside playtest-only; no floorOverflow; SE headroom≫0.
+
+
+
+   B) SKIP — Loading taller mid-progress label @320/@450:
+
+      invent without clip = tip invent.
+
+
+
+   C) SKIP — OPTIONS / select @SE after tick141: already muddyCount=0 on fitH.
+
+
+
+   D) SKIP — Soft-blob VFX / silhouette residual — dens FROZEN; tip/rim invent CLOSED.
+
+
+
+   E) SKIP — Select dossier long-kit wrap @≤400: prior tick134 clear.
+
+
+
+   F) SKIP — Asset-error brand/h2 reclaim — headroom clear; invent hide = tip invent.
+
+
+
+   G) WIN — Tutorial / pause / result ultra-short fitH floor parity:
+
+      SE @568×320: tutorial maxH=300 < appBox≈319.5 (clear — floor 300 under app);
+
+      pause/result ladders clear without last-resort maxCap.
+
+      Ultra-short proven muddy (before):
+
+        tutorial @480×288: maxH=300 > appBox≈270 → panelOver≈15 / headroom≈−15
+
+        tutorial @400×280: maxH=300 > appBox≈225 → panelOver≈37.5
+
+        pause last-resort @480×288: maxH=280 > appBox≈270 → panelOver≈5
+
+        result last-resort @400×280: maxH=260 > appBox≈225 → panelOver≈17.5 / CTA out
+
+      After fitH: floorOverflowCount=0; tutorial @288 maxH=270 / panelOver=0;
+
+      pause @288 maxH=270 / panelOver=0; result @280 maxH=225 / panelOver=0.
+
+      SE @320 retained (tutorial maxH=300 / headroom≈9.75 / gridH≥54).
+
+
+
+   H) SKIP — Pause es/ru @568×320 headroom≈2.2 after tick140 — CTA clear / over=0.
+
+
+
+   I) SKIP — Tutorial @800 long-locale brand restore — intentional measure path.
+
+
+
+   J) WAS OPEN (tick141 handoff) — Tutorial Math.max(300,…) vs painted #app
+
+      on ultra-short <300 — LIVE PROVEN @480×288 / @400×280 → SHIPPED this tick
+
+      (with pause/result last-resort parity in the same fitH pattern).
+
+
+
+2) Muddy evidence
+
+
+
+   Before (desktop maxTouchPoints=0) live stress:
+
+
+
+     @480×288 TUTORIAL (6 locales): panelOver≈15 / headroom≈−15 /
+
+       maxH=300 / appBox≈270 / clientH=270 / CTA clear / gridH≈54–61
+
+
+
+     @480×288 PAUSE (6 locales): panelOver≈5 / headroom≈−5 /
+
+       maxH=280 (last-resort step 6) / appBox≈270
+
+
+
+     @400×280 RESULT (6 locales): panelOver≈17.5 / headroom≈−17.5 /
+
+       maxH=260 (last-resort step 7) / appBox≈225 / ctaOut=true
+
+
+
+     @568×320 (SE): tutorial/pause/result already clear under prior floors
+
+       (tutorial maxH=300 < appBox≈319.5; pause/result no last-resort)
+
+
+
+   After tick142 fitH clamp:
+
+
+
+     floorOverflowCount=0 on probe-tick142-fitH-parity
+
+     (6 locales × title+tutorial+pause+result × 568×320 / 640×360 / 480×288 / 400×280);
+
+     @480×288 tutorial: maxH=270 / panelOver=0 / headroom=0 / CTA clear;
+
+     @480×288 pause: maxH=270 / panelOver=0;
+
+     @400×280 result: maxH=225 / panelOver=0;
+
+     @568×320 tutorial: maxH=300 / headroom≈9.75 / gridH≥54 / CTA clear.
+
+     Residual (NOT this ship): tutorial gridH may drop below softGridWant=40 when
+
+     fitH shrinks maxCap hard (@288 gridH≈24–31; @280 gridH≈0) — nested scroll
+
+     retained by design; inventing tip densify CLOSED. Result @288 raw
+
+     panelOver≈2 with maxH=0 (ladder +1.5 tolerance / no last-resort) — next gap.
+
+     Pause/result quit/CTA OOB at 225px app when 4-button chrome cannot fit —
+
+     playtest only; do not invent tip.
+
+
+
+3) Fix shipped
+
+
+
+   js/main.js — TICK142:
+
+
+
+     · syncTutorialPanelBudget: fitH = floor(min(clientH, appBoxH));
+
+       floorCap = min(300, fitH); ratioCap = floor(fitH * 0.92);
+
+       maxCap = min(560, max(floorCap, ratioCap))
+
+     · syncPausePanelBudget last-resort: floorCap = min(280, fitH);
+
+       maxCap = max(floorCap, floor(fitH * 0.96))
+
+     · syncResultPanelBudget last-resort: floorCap = min(260, fitH);
+
+       maxCap = max(floorCap, floor(fitH * 0.96))
+
+     · tip41/65/31/58/38/62 / tick116–141 / dens untouched
+
+
+
+   css/style.css — TICK142 marker comment above TICK125 belt
+
+     (documents fitH clamp; CSS min(92%,560) / pause/result belts unchanged)
+
+
+
+   QA: tools/qa-fitH-parity-i18n.mjs (new)
+
+   QA assert sync: qa-tutorial-panel / qa-select-panel / qa-options-panel
+
+     now match fitH * 0.92 (was appH * 0.92 — kept green only while tutorial
+
+     still held the old formula)
+
+
+
+   Probe: tools/probe-tick142-fitH-parity.mjs
+
+
+
+   Markup strings / tip densify / dens / tick116–141 untouched.
+
+
+
+
+
+4) Verify (preserve battery — ALL PASS)
+
+
+
+   - node tools/qa-fitH-parity-i18n.mjs PASS (tick142 ship)
+
+   - Playwright desktop probe: floorOverflowCount=0
+
+     (6 locales × 4 screens × 4 sizes; @288/@280 maxH≤appBox; SE retained)
+
+   - node tools/qa-se-maxcap-floor-i18n.mjs PASS (tick141 kept)
+
+   - node tools/qa-pause-extreme-soft-i18n.mjs PASS (tick140 kept)
+
+   - node tools/qa-pause-extreme-floor-i18n.mjs PASS (tick138 kept)
+
+   - node tools/qa-pause-panel-i18n.mjs PASS (tick131 kept)
+
+   - node tools/qa-pause-newui.mjs PASS (tick31 + tip58 kept)
+
+   - node tools/qa-result-extreme-floor-i18n.mjs PASS (tick139 kept)
+
+   - node tools/qa-result-panel-i18n.mjs PASS (tick133 kept)
+
+   - node tools/qa-result-screen.mjs PASS (tick38 + tip62 kept)
+
+   - node tools/qa-tutorial-extreme-floor-i18n.mjs PASS (tick137 kept)
+
+   - node tools/qa-tutorial-grid-floor-i18n.mjs PASS (tick132 kept)
+
+   - node tools/qa-tutorial-panel-i18n.mjs PASS (tick125 kept)
+
+   - node tools/qa-tutorial-newui.mjs PASS (tick41 + tip65 kept)
+
+   - node tools/qa-options-scroll-floor-i18n.mjs PASS (tick136 kept)
+
+   - node tools/qa-options-panel-i18n.mjs PASS (tick127 kept)
+
+   - node tools/qa-options-nested-scroll-i18n.mjs PASS (tick128 kept)
+
+   - node tools/qa-options-newui.mjs PASS (tick35 + tip61 kept)
+
+   - node tools/qa-opt-fullscreen-i18n.mjs PASS (tick121 kept)
+
+   - node tools/qa-opt-autofire-i18n.mjs PASS (tick120 kept)
+
+   - node tools/qa-title-grid-floor-extreme-i18n.mjs PASS (tick135 kept)
+
+   - node tools/qa-title-controls-floor-i18n.mjs PASS (tick130+135)
+
+   - node tools/qa-keys-rules-i18n.mjs PASS (tick118 kept)
+
+   - node tools/qa-keys-grid-floor-i18n.mjs PASS (tick122 kept)
+
+   - node tools/qa-keys-hi-floor-i18n.mjs PASS (tick123 kept)
+
+   - node tools/qa-keys-grid-full-i18n.mjs PASS (tick124 kept)
+
+   - node tools/qa-keys-panel-budget-i18n.mjs PASS (tick119 kept)
+
+   - node tools/qa-title-lobby.mjs PASS (tick40 + tip64 kept)
+
+   - node tools/qa-controls-newui.mjs PASS (tick32 + tip61 kept)
+
+   - node tools/qa-select-grid-floor-i18n.mjs PASS (tick134 kept)
+
+   - node tools/qa-select-panel-i18n.mjs PASS (tick126 kept)
+
+   - node tools/qa-select-dossier.mjs PASS (tick37 + tip63 kept)
+
+   - node tools/qa-sp-status-i18n.mjs PASS (tick117 kept)
+
+   - node tools/qa-deathbomb-prompt-i18n.mjs PASS (tick116 kept)
+
+   - node tools/qa-loading-bar-newui.mjs PASS (tick34 + tip66 kept)
+
+   - node tools/qa-rotate-overlay.mjs PASS (tick42 + tip67 kept)
+
+   - node tools/qa-asset-error-overlay.mjs PASS (tick43 + tip67 kept)
+
+   - node tools/qa-charge-ring-clip.mjs PASS (tick114 kept)
+
+   - node tools/qa-charge-windup-label.mjs PASS (tick113 kept)
+
+   - node tools/qa-charge-windup-fill.mjs PASS (tick112 kept)
+
+   - node tools/qa-hold-muzzle.mjs PASS (dens/side/emitRate/8 identities frozen)
+
+   - node tools/qa-particle-quality.mjs PASS (holdDensFrozen)
+
+   - node tools/test-gameplay-design.mjs PASS
+
+   - node tools/test-weapon-roles.mjs PASS
+
+   - node tools/qa-deathbomb-feedback.mjs PASS
+
+
+
+
+
+======================================================================
+
+HONEST SCORE (do NOT claim polished / 70+ VFX / 80+ UI)
+
+======================================================================
+
+
+
+  UI  ≈ 79 (+0; ultra-short fitH floor removes Math.max(300|280|260) overflow
+
+            on tutorial/pause/result without inventing tip/glow — still do
+
+            NOT claim 80+; tip densify path still closed; no invented bump)
+
+
+
+  VFX ≈ 69 (+0; no particle / rim / silhouette / dens ship — soft-sprite
+
+            budget-capped ceiling remains; reported band stays ≤69;
+
+            do NOT claim 70+)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+  user 60 band — do not round up to 70.
+
+  Expectation band this pass: UI ~77-79, VFX ~67-69.
+
+
+
+
+
+======================================================================
+
+NEXT TICK — open polish (NON-tip / NON-rim invent preferred)
+
+======================================================================
+
+
+
+1) HOLD dens/side/emit remain FROZEN. Do not dens-churn.
+
+   Live charge HOLD silhouettes (tick69–87) + caption dual-stroke (tick89–97)
+
+   + i18n plate/max-width grows (tick116–117) + CONTROLS/title/pause/tutorial/
+
+   result/select/OPTIONS short-viewport ships (tick118–142) stay.
+
+   dens FROZEN. tip/rim/charge invent CLOSED.
+
+
+
+2) Tip densify + canvas ceremony/pulse/fade + touch micro + stock pulse
+
+   glow-forward paths CLOSED (tick58–97 / tick89–94). Do NOT invent
+
+   dual-stroke on soft-val / Activation-chip peers.
+
+
+
+3) NEXT axis for tick143 (propose — pick ONE only if live muddy proven):
+
+
+
+   A) Title brand-less hero @800 / @1280×560 — brand restore still breaks HI
+
+      under CONTROLS floor; playtest only. Prefer honest +0 unless new crush.
+
+
+
+   B) Loading @450 deco still block with huge headroom — only ship if
+
+      a taller mid-progress label proves panelOver/clip; otherwise leave.
+
+
+
+   C) OPTIONS @800 brand/head density — already ≥ soft floor after tick136;
+
+      do NOT invent tip; only ship if CTA/label muddy reappears.
+
+
+
+   D) Soft-blob VFX / silhouette residual — dens FROZEN; tip/rim invent CLOSED.
+
+      Prefer honest +0 over invent.
+
+
+
+   E) Rare fanfare — re-check only if new long tag locale lands; currently clear.
+
+
+
+   F) Select dossier long-kit wrap under tip63 when Box2 flattened @≤400 —
+
+      live kitClip/CTA clear after tick134; playtest readability only.
+
+
+
+   G) Asset-error @568×320 long pt/ru h2 with brand still visible —
+
+      headroom clear; only ship brand/h2 reclaim if panelOver/CTA muddy.
+
+
+
+   H) Pause es/ru @568×320 headroom≈2.2 after full pad ladder — CTA clear /
+
+      over=0; only ship maxCap soft if a locale clips CTA or headroom goes
+
+      negative again.
+
+
+
+   I) Tutorial @800 long-locale brand still reclaimed when avail < 2-row —
+
+      intentional measure path; only ship restore if headroom proven without
+
+      dropping gridH < softGridWant.
+
+
+
+   J) CLOSED this tick — tutorial/pause/result fitH parity shipped.
+
+
+
+   K) Result @480×288 raw panelOver≈2 with maxH=0 (ladder +1.5 tolerance;
+
+      never reaches last-resort) — only ship soft-continue / one more reclaim
+
+      if CTA clips or headroom goes clearly negative across locales.
+
+
+
+   L) Tutorial grid soft floor under shrunk fitH maxCap (@288 gridH≈24–31;
+
+      @280 gridH≈0 while CTA clear / nested scroll retained) — only ship if
+
+      a locale proves CTA/label muddy; do NOT invent tip densify to force
+
+      softGridWant above avail.
+
+
+
+   M) Pause/result 4-button chrome @400×280 (appBox≈225) quit/CTA OOB
+
+      after fitH clamp — extreme; playtest only; avoid tip invent.
+
+
+
+4) Human-playtest gaps remaining (concise)
+
+
+
+   · Locale * tutorial @480×288 / @400×280: fitH maxCap after tick142
+
+     (maxH=fitH; panelOver=0; CTA clear; grid may be < softGridWant).
+
+
+
+   · Locale * pause/result ultra-short last-resort: fitH floor after tick142
+
+     (maxH≤appBox; panelOver=0 on last-resort path).
+
+
+
+   · Locale * select/OPTIONS @568×320: maxCap fitH after tick141
+
+     (maxH=319; headroom≈0.3; scrollH≥156 / gridH≥52; CTA clear).
+
+
+
+   · Locale ko/en/pt/zh-TW pause @568×320: soft-continue after tick140
+
+     (headroom≈11.2; syncSteps=5; padTop=22; CTA clear).
+
+     Locale es/ru pause @568×320: headroom≈2.2 after full pad (playtest).
+
+
+
+   · Locale * result @568×320: head reclaim after tick139
+
+     (headroom≈9.8–11.8; brand/h2 compact ≤340; jsFlat=false; CTA clear).
+
+     Locale * result @480×288: raw panelOver≈2 / maxH=0 (playtest K).
+
+
+
+   · Locale es/ru pause @640×360: head reclaim after tick138
+
+     (headroom≈9.4; brand/Title_Deco hidden ≤400; h2 18px kept;
+
+      CTA clear; syncSteps=0 — no pad shrink).
+
+
+
+   · Locale es/ru tutorial @640×360: grid floor after tick137
+
+     (gridH≈48–73; brand/Title_Deco head reclaim ≤400; h2 i18n kept;
+
+      SORTIE CTA clear; nested .tutorial-grid scroll retained by design).
+
+
+
+   · Locale es/ru OPTIONS @640×360: scroll floor after tick136
+
+     (scrollH≈168–173; BGM fully in first viewport; h2 i18n kept;
+
+      decorative brand/Title_Deco hidden ≤400; BACK + nested flatten retained).
+
+
+
+   · Locale es/ru title @640×360: CONTROLS grid floor after tick135
+
+     (gridH≥40; rules peek ~28px; HI inside .keys-hiscore; START clear).
+
+     Brand-less short hero vs CONTROLS read — playtest only.
+
+
+
+   · Locale es/ru select @640×360: grid floor after tick134 (gridH≈63–73);
+
+     hint chip may hide last-resort (string stays in DOM); kit+SORTIE clear.
+
+
+
+   · Locale ko/en/pt/ru @1280×560: brand still reclaimed under CONTROLS floor
+
+     (restore breaks HI); status/tagline reclaimed — playtest lobby chrome.
+
+
+
+   · Locale en/pt/es/ru: SP ready-line max-width grow (tick117).
+
+
+
+   · Locale en/pt/es/ru: first deathbomb teach prompt plate grow (tick116).
+
+
+
+   · Select dossier: long kit wrap readability under tip63 dual-stroke
+
+     (especially when Box2 flattened @≤400) — playtest only; no live kitClip.
+
+
+
+   · Desktop charge: mid-hold HUD fill warm + CHARGE brass vs SP mint pair.
+
+
+
+   · Touch: `.tc-charge-ring` mid/low-% arc vs stage wash (tick114).
+
+
+
+   · Hold-ready: `#charge-track.ready` static vs SP `is-ready-flash` pulse.
+
+
+
+   · Muzzle aura early charge (k≈0.15–0.3) soft — dens FROZEN; playtest only.
+
+
+
+   · Emily chargeEnabled=false — intentional; do not "fix" missing charge.
+
+
+
+5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+     death power reset / per-character hold identities / soft-particle language
+
+     silhouettes tick69–87 / caption dual-stroke tick89–97 /
+
+     i18n grows tick116–117 / CONTROLS–OPTIONS–select–tutorial–pause–result
+
+     short-viewport ships tick118–142 / tip densify tip58–67 /
+
+     rim tip100–110 / charge 112–114 / HOLD dens frozen.
+
+
+
+
+
+======================================================================
+
+한국어 요약 (Korean-ready)
+
+======================================================================
+
+
+
+- Tick142 포커스: tip/rim/charge·title135·select134·tutorial137·
+
+  OPTIONS 127/128/136·pause131/138/140·result133/139·select/OPTIONS141
+
+  소진 축 밖 1건 — thin-viewport 실측 후 tutorial/pause/result에 tick141과
+
+  같은 fitH clamp가 필요한지 확인. SE@568×320은 tutorial maxH=300 <
+
+  appBox≈319.5로 이미 안전. 초단 @480×288 / @400×280에서
+
+  Math.max(300|280|260, …)가 painted #app보다 커서 muddy 확정
+
+
+
+  (tutorial panelOver≈15 / pause≈5 / result≈17.5+CTA out).
+
+
+
+- Verdict: SHIP. title은 floor muddy 없음. loading / asset-error / VFX dens /
+
+  pause es/ru@320 headroom≈2.2 / tutorial@800 brand는 실측 muddy 없음
+
+  (또는 invent). tutorial+pause last-resort+result last-resort 동일 fitH
+
+  패턴으로 1건 출하.
+
+
+
+- Ship: syncTutorialPanelBudget floorCap=min(300,fitH);
+
+  syncPausePanelBudget last-resort floorCap=min(280,fitH);
+
+  syncResultPanelBudget last-resort floorCap=min(260,fitH).
+
+  tip/dens / tick116–141 유지. CSS는 TICK142 마커 코멘트만.
+
+  QA: qa-fitH-parity-i18n.mjs (+ select/options/tutorial panel assert fitH).
+
+  After: floorOverflowCount=0; @288/@280 maxH=fitH / panelOver=0;
+
+  SE@320 tutorial maxH=300 / headroom≈9.75 유지.
+
+
+
+- SKIP: title brand HI / loading deco / OPTIONS·select already clear /
+
+  VFX dens frozen / pause es/ru headroom playtest / tutorial@800 brand.
+
+  Residual next: result@288 raw panelOver≈2 (maxH=0) / tutorial gridH under
+
+  shrunk fitH / pause·result @225px chrome OOB — playtest only.
+
+
+
+- QA: fitH-parity + se-maxcap-floor + pause-* + result-* + tutorial-* +
+
+  options-* + title-grid-floor-extreme + title-controls-floor + keys-* +
+
+  title-lobby + controls + select-* + sp-status + deathbomb-prompt +
+
+  loading/rotate/asset-error + charge 112–114 + hold-muzzle dens frozen +
+
+  particle + gameplay/weapon + deathbomb-feedback ALL PASS.
+
+  dens FROZEN. tick69–141 유지.
+
+
+
+- 점수(정직): UI ≈79 (+0, 80+ 금지), VFX ≈69 (+0, 70+ 금지).
+
+
+
+- 다음(tick143): title brand playtest(HI 깨짐 주의) / loading taller label /
+
+  select dossier kit wrap playtest / asset-error brand playtest /
+
+  pause es/ru@320 headroom≈2.2 playtest / tutorial@800 brand restore
+
+  playtest / result@288 soft-continue only if proven / tutorial grid under
+
+  fitH only if CTA muddy / VFX dens frozen.
+
+  없으면 +0 QA OK.
+
+
+
+
+
+Model: inherit
+
+Korean-ready: yes

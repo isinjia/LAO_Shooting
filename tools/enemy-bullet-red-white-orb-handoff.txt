@@ -1,0 +1,62 @@
+Enemy bullet red/white orb unify — handoff
+==========================================
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+Goal
+----
+All monster/enemy projectiles render as circular energy orbs:
+bright white / pale-hot core + saturated orange-red outer halo
+(screenshot / Strikers-like glowing balls). Player shots stay distinct.
+
+Primary change
+--------------
+File: js/bullet.js
+
+- Added ENEMY_ORB_PALETTE + bakeEnemyOrbSprite / ensureEnemyOrbSprite
+  (cached 32×32 soft sprites: full halo + dense/tight bake).
+- Added shared drawEnemyOrb(ctx, x, y, r, opts) helper.
+- Bullet.draw for !friendly always calls drawEnemyOrb.
+  Spawn `color` is kept on the bullet for data/identity but IGNORED for paint.
+- Removed rice/pellet oriented path, hostileBodyColor luma gate, and
+  per-bullet layered fill/stroke. Dense fields (enemyLive > 110) still
+  pass { skipHalo: true } → tighter prebaked sprite + slightly smaller blit.
+- Hitbox `r` / speeds / pattern counts unchanged; draw size ≈ r×2.85
+  (tight ≈ r×2.5) for readability.
+
+Untouched (player / concurrent UI)
+----------------------------------
+- Friendly path: _drawFriendly → drawCharacterShot (shot-fx.js) unchanged.
+- ProjectileVfx still skips !friendly (player-only GPU layer).
+- polish-fx / bomb-vfx / title / FPS / markers not edited this pass.
+- enemy.js / patterns.js spawn colors & pattern logic left as-is
+  (visual unify is renderer-side only).
+
+Bullet types / patterns covered (all hostile via same renderer)
+---------------------------------------------------------------
+From patterns.js helpers used by enemy.js:
+  fireAimed, fireFan, fireRing, fireSpiral, fireSpreadLeft (+ fireSpreadDown)
+
+Former spawn color identities now all paint as the same red/white orb
+(examples still present in enemy.js data, paint ignored):
+  #ffffff, #8fe5ff, #9cc7ff, #ffe9a0, #ffb778, #ff8e7a, #ff7789,
+  #ffa54d, #eab6ff, #ff6b6b / this.color fallbacks (#ff6b6b, #feca57,
+  #f368e0, #ff9f43, #ff718a), plus colorless → former default sprite path.
+
+Boss / mid / grunt / machine / insect / spiral / aimed / ring / fan /
+spread-left — any Bullet with friendly===false.
+
+QA
+--
+tools/qa-enemy-bullet-telegraph.mjs updated for orb helper assertions.
+  Run: node tools/qa-enemy-bullet-telegraph.mjs  → PASS
+
+Player bullets confirmation
+---------------------------
+Player shots still use drawCharacterShot / ProjectileVfx / NativeShotEffects.
+No recolor of teal crescent / arrow / kit styles to the enemy orb palette.
+
+Do not undo
+-----------
+Concurrent title/FPS/marker UI work — this pass touched bullet render +
+telegraph QA only.

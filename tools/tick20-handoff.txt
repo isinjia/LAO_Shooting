@@ -1,0 +1,64 @@
+TICK20 handoff (2026-10-04) — enemy bullet readability (HOLD dens/side untouched)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+THIS TICK — one focused win: enemy bullet readability
+
+1) js/bullet.js (hostile draw only — no HOLD / dens / side / emit churn)
+   - Dark under-rim (rgba 18,10,22) always drawn under the rice body so pale /
+     cyan / cream pellets separate from neon city washes.
+   - skipHalo (>110 live hostiles) now drops ONLY the soft bloom ellipse;
+     thin white edge + dark rim + hot core stay (dense boss rings still silhouette).
+   - White hitbox core slightly larger (#fffef8) for tip read.
+   - hostileBodyColor(): only very bright hex fills (luma≥210) nudge slightly
+     toward a cool mid so pure white / ice pale don't vanish — hue identity kept.
+   - Friendly / GPU styles / spawn / caps / fireRate / HOLD kits untouched.
+
+2) HOLD muddy pairs
+   - Left alone (tick19 live-verify already DISTINCT). No dens/side/emit edits.
+
+3) NewUI / combat HUD
+   - Untouched. Sparse HUD + Korean stage title still in place.
+   - QA shot (tools/qa-enemy-bullets.png): STAGE 1/5 · 프로그램 침입; no Top_Bg
+     full fill on hud-top.
+
+4) Verify
+   - node tools/test-gameplay-design.mjs · test-basic-shots.mjs · test-weapon-roles.mjs PASS
+   - tools/qa-enemy-bullets.mjs: enemyLive 125 → skipHalo path exercised;
+     spiral pale/orange pellets read on city BG (tools/qa-enemy-bullets.png).
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; NewUI residual not the focus this tick)
+  VFX ≈ 60 (hostile rim/core readability win only — soft-sprite / budget-capped
+            kit particles unchanged; NOT client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Optional: particle quality micro-pass inside soft-sprite language
+     (core/tip variance only) — still honest VFX≈60, never claim 70+.
+  2) Or NewUI residual (menu destinations still absent — do not fake lobby apps).
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  4) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+  5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language.
+
+Model: inherit
+Korean-ready: yes

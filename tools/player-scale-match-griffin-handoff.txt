@@ -1,0 +1,109 @@
+PLAYER SCALE MATCH GRIFFIN + DIE SHRINK FIX
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+ROOT CAUSE (die momentary shrink)
+================================================================
+bake_sd_character.py framed die with PER-FRAME body AABB (same branch as skill),
+while idle/move used a shared locomotion AABB. Collapsing die poses reframed the
+body (zoom in/out), so ClipAnimator.draw at fixed drawSize + contentBox made the
+death flash look momentarily smaller/larger than idle.
+
+Secondary: clip-anim.js fallback unionContentBox sampled die frames; flatten/FX
+expanded the box (Labiata-style) and shrank locomotion. Griffin/Sleipnir had no
+baked contentBox, so they hit this path.
+
+NOT caused by: deathFlash alpha, hitScale, or player.hitR (still fixed 4).
+
+================================================================
+ROOT CAUSE (uneven character sizes)
+================================================================
+All kits defaulted to drawSize 78 (Labiata alone used 170) while baked contentBox
+/ body fill differed per character — Express76 looked small (wide ponytail box),
+Labiata huge, etc. Select portraits (FormationIcon) left untouched.
+
+================================================================
+BASELINE (Griffin)
+================================================================
+drawSize: 78
+contentBox (idle+move): 501x541 @ (137,118)
+idle body on-screen ≈ 63.0 × 69.5 px (diag ≈ 93.8)
+hitR unchanged: 4
+
+================================================================
+DRAW SIZE BEFORE → AFTER (idle body diag ≈ Griffin 93.8)
+================================================================
+Character     drawSize before → after   idle body diag before → after
+griffin       78 → 78                   ~93.9 → 93.8   (baseline)
+sleipnir      78 → 79                   ~92.5 → 94.1
+express76     78 → 92                   ~79.2 → 93.5
+hirume        78 → 75                   ~98.1 → 94.3
+constantia    78 → 79                   ~92.1 → 93.2
+lrl           78 → 79                   ~93.2 → 94.3
+merlin        78 → 86                   ~85.2 → 93.9
+fafnir        78 → 78                   ~94.3 → 94.3
+eternity      78 → 79                   ~92.9 → 94.0
+labiata       170 → 93                  ~170.7 → 93.4
+              offsets 38,-23 → 21,-13   (scaled with drawSize)
+emily         78 → 72                   ~100.9 → 93.2
+
+Metric: uniform scale so idle opaque-bbox diagonal matches Griffin at drawSize 78.
+Aspect of each bake preserved (no stretch).
+
+================================================================
+DIE SHRINK FIX STATUS
+================================================================
+FIXED (rebaked die with locomotion camera = idle/move):
+  griffin   — die written 19 @ 768px; die0 height ratio vs idle ≈ 1.02
+  sleipnir  — die written 74 @ 768px; die0 == idle footprint
+  express76 — die written 30 @ 768px; die0 == idle footprint (hair intact)
+  labiata   — die written 70 @ 768px; sheet.json repacked (--force)
+
+DRAW PATH (all characters):
+  clip-anim.js — unionContentBox fallback uses idle+move only (excludes die)
+  griffin/sleipnir anim.json — wrote idle+move contentBox
+
+BAKER (future bakes):
+  tools/bake_sd_character.py — die uses locomotion_bounds; only skill stays per-frame
+
+OTHER playable/cheat kits (hirume, constantia, lrl, merlin, fafnir, eternity, emily):
+  Already ~100% die0/idle under baked contentBox + sheet ox/oy; drawSize matched.
+  Die not rebaked this pass (no roster shrink report). Rebake+repack if needed later.
+
+================================================================
+WHAT CHANGED (files)
+================================================================
+js/assets.js
+  CHAR_META.drawSize (+ labiata drawOffset) for all player keys vs Griffin diag.
+
+js/clip-anim.js
+  loadSheetAnim / loadNativeAnim: contentBox union from idle+move only.
+
+tools/bake_sd_character.py
+  Die shares idle/move locomotion framing (not per-frame skill zoom).
+
+assets/sd_baked/griffin|sleipnir|express76/
+  Rebaked native/die_*.png; griffin/sleipnir contentBox added.
+
+assets/sd_baked/labiata/
+  Rebaked native/die_*.png + pack_sprite_sheets.py --keys labiata --force
+
+tools/player-scale-match-griffin-handoff.txt  (this file)
+
+================================================================
+VERIFY
+================================================================
+- In-sortie: Griffin / Sleipnir / Express76 idle body reads same size.
+- On hit: die flash keeps same body scale as idle (pose may flatten; no camera zoom).
+- Labiata (cheat/rare): smaller than old 170 stamp; body+weapon diag ≈ Griffin.
+- Hitboxes: player.hitR still 4 — drawSize does not drive collision.
+
+================================================================
+DO NOT
+================================================================
+Do not AI-paint / invent die frames.
+Do not change FormationIcon select portraits for size.
+Do not couple hitR to drawSize.
+Do not put die back on per-frame bake bounds.
+Do not sample die into fallback contentBox unions.

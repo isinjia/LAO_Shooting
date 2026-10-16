@@ -1,0 +1,123 @@
+LAO MINI ACTION — low-end mobile frame pass handoff
+====================================================
+Date: 2026-10-04
+Tick7 (10m AGENT_LOOP): CANCELLED. Loop STOPPED.
+
+Loop
+----
+Shell 674150 / PID 46412 Stop-Process. Terminal status failed.
+No AGENT_LOOP_TICK_frame_opt process remains. Do not start another AGENT_LOOP.
+
+Goal
+----
+Ship a MINIMAL quality/scale path so low-end phones (small GPU fill-rate,
+high DPR 2.5–3, thermal) stay playable. 960 logical gameplay + hitboxes +
+i18n + pads + letterbox KEEP. dens FROZEN. Do not retry skip-clearRect or
+clip-anim save/restore skip.
+
+Shipped
+-------
+js/mobile.js
+  Existing prefersLightFx() / wantsTouchControls() / mobileDprCap() kept.
+  New prefersLowEndGfx(): touch+small CSS and/or high DPR / reduced-motion /
+  saveData / hardwareConcurrency<=4 / MAX_TEXTURE_SIZE<=4096 / tiny CSS.
+  html.is-lowend-gfx + data-lao-dpr-cap. Particle dens caps NOT wired here.
+
+js/canvas.js
+  Low-end tiny or dpr>=2.5: backing-store cap 1 (was 1.75 on all light FX).
+  Other low-end: cap 1.5. Logical W×H 960×540 via setTransform. Smoothing
+  'low' only on low-end.
+
+js/stage-background.js
+  Decorative motes() early-return on low-end (city + other act drift).
+  Scene grids / silk / claws / baked vignette gradeOverlay blit kept.
+
+js/projectile-vfx.js
+  WebGL pixelRatio cap 1 on low-end (was 1.25 light). dens / KIT / holds
+  unchanged.
+
+css/style.css
+  html.is-lowend-gfx: HUD --hud-shadow without 10px glow blur; hide extra
+  .app-bezel::after mix-blend wash; drop #hud.is-dimmed saturate filter.
+  Dual-stroke copy / pads / START/CLEAR / WARNING unchanged.
+
+js/main.js
+  Boot calls prefersLowEndGfx() so the class exists before HUD paint.
+
+NOT shipped / frozen
+--------------------
+prefersLightFx dens (projectile-vfx 900/220 vs 2800/720) unchanged.
+HOLD identities / charge C1–3 / bombs / deathbomb / 5 stages / pads / i18n
+unchanged. skip-clearRect and clip-anim save/restore skip not retried.
+
+Measure (Playwright Chromium headless — NOT a physical phone)
+-------------------------------------------------------------
+tools/measure-frame-opt-mobile-lowend.mjs → tools/frame-opt-mobile-lowend-raw.json
+Hirume / invuln / autoPlay / mute SORTIE. Same seed as ticks 1–6.
+
+Before (tick06):
+  pc-960 16s: avg 50.23  min 19.96  draw 13.118  buf 960×540 dpr1
+  mobile-412×226 dpr2.5 8s: avg 55.28  buf 703×396 (cap 1.75)
+
+After this pass:
+  pc-960 16s: avg 46.57  min 14.99  p95 33.4ms  max dt 66.7ms
+    hitches >33ms 68/653  >50ms 4
+    peaks: enemies 4, bullets 16, vfx 66, polish 18
+    canvas CSS 960×540 buf 960×540  lowend=false
+    split: update 0.378  draw 14.526  bg 0.140  vfxJS 0.343
+    Honest PC ~47 vs tick06 ~50 / tick05 ~54 — same noisy desktop band, +0.
+    Do not treat this as a PC combat win or a shipped regression of 960 logic.
+
+  mobile-412×226 dpr2.5 8s: avg 56.53  min 12.00  p95 33.4ms  max dt 83.3ms
+    hitches >33ms 6/427  >50ms 2
+    peaks: enemies 2, bullets 9 (lighter than PC — do not quote as PC FPS)
+    canvas CSS 401.8×226 buf 402×226  lowend=true  dprCap=1
+    split: update 0.568  draw 8.861  bg 0.227  vfxJS 0.523
+    Buffer pixels ~3.1× smaller vs tick06 703×396. Headless FPS ~56 vs 55
+    is +0 on a desktop GPU (fill-rate not the limiter here).
+
+  mobile-360×218 dpr2 8s: avg 59.79  min 20.00  p95 16.8ms  max dt 50.0ms
+    hitches >33ms 1/477
+    canvas CSS 360×202.5 buf 360×203  (16:9 letterbox inside 218-tall view)
+    lowend=true  dprCap=1
+    split draw 3.711  bg 0.121
+    No prior 360 baseline. Headless near vsync; not a real 360p phone.
+
+Honest FPS
+----------
+Desktop headless does not prove low-end thermal/fill-rate. The shipped win
+is smaller canvas/WebGL backing stores on tiny/high-DPR phones + skipped
+decorative motes/HUD glow. Do not claim combat 55+ locked, UI 80+, or VFX 70+.
+PC combat this pass ~47 (not 60). Mobile-like harness ~56–60 with fewer
+enemies.
+
+Scores (not inflated)
+---------------------
+성능/프레임: PC ~55–59 band historically; this headless PC ~47. Mobile-like
+  harness ~62 on desktop GPU only.
+메모리: not re-scored
+UI layout: ≈79  DO NOT claim 80+
+VFX dens:  ≈69  DO NOT claim 70+
+
+Remaining real-device QA
+------------------------
+Must check on an actual low-end Android/iOS phone (DPR 2.5–3, 4 cores,
+thermal after 3–5 min SORTIE):
+  - pads + letterbox + 960 hitboxes
+  - charge/hold C1–3 identities (sunbird/sightbeam/dragonaxe/shell/
+    jupiterorb/coffinwall/plasmaslash)
+  - bombs / deathbomb / 5 stages / STAGE START+CLEAR / WARNING
+  - i18n strings still fit
+  - city stage readable without motes
+  - no HUD unreadable after glow cheapen
+Headless 412/360 is a buffer-size check, not device FPS.
+
+Korean-ready user summary
+-------------------------
+10분 프레임 최적화 루프는 중단했습니다(틱7 취소). 저사양 모바일용으로
+논리 해상도 960은 유지한 채 캔버스 백킹스토어를  Tiny/고DPR에서 1배로
+낮추고, 장식용 배경 모트와 HUD 글로우 블러만 줄였습니다. 차지/HOLD·폭탄·
+5스테이지·패드·다국어·밀도는 그대로입니다. 헤드리스 PC 960은 평균 46.6
+(이전 틱 ~50–54와 같은 노이즈), 412는 버퍼 703→402에 평균 56.5, 360은
+평균 59.8입니다. 데스크톱 GPU라 실기기 필레이트/발열은 아직 확인이
+필요합니다. UI 80+ / VFX 70+는 주장하지 않습니다.

@@ -1,0 +1,9 @@
+=== A) pause OPTIONS/UNMUTE ja/zh-Hant @ tick171 peer sizes (not tick188 mid-short) ===
+PAUSE-UNMUTE ja@390×220 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="ミュート解除" resume=32/32 quit=32/32 actionsOut=false over=0 appH=219.4 appTop=0.31 maxH=
+PAUSE-UNMUTE zh-Hant@390×220 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="解除靜音" resume=32/32 quit=32/32 actionsOut=false over=0 appH=219.4 appTop=0.31 maxH=
+PAUSE-UNMUTE ja@412×226 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="ミュート解除" resume=32/32 quit=32/32 actionsOut=false over=0 appH=226 appTop=0 maxH=
+PAUSE-UNMUTE zh-Hant@412×226 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="解除靜音" resume=32/32 quit=32/32 actionsOut=false over=0 appH=226 appTop=0 maxH=
+PAUSE-UNMUTE ja@428×241 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="ミュート解除" resume=32/32 quit=32/32 actionsOut=false over=0 appH=240.8 appTop=0.13 maxH=
+PAUSE-UNMUTE zh-Hant@428×241 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="解除靜音" resume=32/32 quit=32/32 actionsOut=false over=0 appH=240.8 appTop=0.13 maxH=
+=== SUMMARY ===
+hard=0 soft=0 ok=6 skip=0

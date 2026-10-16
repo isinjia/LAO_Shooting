@@ -1,0 +1,53 @@
+=== A) select dossier name/kit/hint @ NEW mid-short sizes (CONSTANTIA) ===
+SEL pt@360×218 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=15 over=0 maxH=202px
+  kitText: SHOT Tiro de precisão · HOLD Lança de vigilância Winchester · SPECIAL Ra
+SEL es@360×218 → SOFT sel=constantia name=20/20 kit=48/48 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=202px
+  kitText: SHOT Francotirador preciso · HOLD Lanza de vigilancia Winchester · SPECI
+SEL ru@360×218 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=202px
+  kitText: SHOT Точный снайпинг · HOLD Дозорное копьё Винчестера · SPECIAL Следящий
+SEL pt@375×212 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=210px
+  kitText: SHOT Tiro de precisão · HOLD Lança de vigilância Winchester · SPECIAL Ra
+SEL es@375×212 → SOFT sel=constantia name=20/20 kit=48/48 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=210px
+  kitText: SHOT Francotirador preciso · HOLD Lanza de vigilancia Winchester · SPECI
+SEL ru@375×212 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=7 over=0 maxH=210px
+  kitText: SHOT Точный снайпинг · HOLD Дозорное копьё Винчестера · SPECIAL Следящий
+SEL pt@404×228 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=3 over=0 maxH=227px
+  kitText: SHOT Tiro de precisão · HOLD Lança de vigilância Winchester · SPECIAL Ra
+SEL es@404×228 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=3 over=0 maxH=227px
+  kitText: SHOT Francotirador preciso · HOLD Lanza de vigilancia Winchester · SPECI
+SEL ru@404×228 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=227px
+  kitText: SHOT Точный снайпинг · HOLD Дозорное копьё Винчестера · SPECIAL Следящий
+SEL pt@430×245 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=17 over=0 maxH=241px
+  kitText: SHOT Tiro de precisão · HOLD Lança de vigilância Winchester · SPECIAL Ra
+SEL es@430×245 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=17 over=0 maxH=241px
+  kitText: SHOT Francotirador preciso · HOLD Lanza de vigilancia Winchester · SPECI
+SEL ru@430×245 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=11 over=0 maxH=241px
+  kitText: SHOT Точный снайпинг · HOLD Дозорное копьё Винчестера · SPECIAL Следящий
+=== B) OPTIONS Math.max(260) LATENT @ NEW mid-short sizes ===
+OPT pt@360×218 → ok inflated=false health=0 maxH=202 fitH=202 ctaVis=46/46 scrollH=72 over=0
+OPT es@360×218 → ok inflated=false health=0 maxH=202 fitH=202 ctaVis=46/46 scrollH=72 over=0
+OPT ru@360×218 → ok inflated=false health=0 maxH=202 fitH=202 ctaVis=44/44 scrollH=76 over=0
+OPT pt@375×212 → ok inflated=false health=0 maxH=210 fitH=210 ctaVis=44/44 scrollH=84 over=0
+OPT es@375×212 → ok inflated=false health=0 maxH=210 fitH=210 ctaVis=46/46 scrollH=80 over=0
+OPT ru@375×212 → ok inflated=false health=0 maxH=210 fitH=210 ctaVis=44/44 scrollH=84 over=0
+OPT pt@404×228 → ok inflated=false health=0 maxH=227 fitH=227 ctaVis=44/44 scrollH=101 over=0
+OPT es@404×228 → ok inflated=false health=0 maxH=227 fitH=227 ctaVis=46/46 scrollH=97 over=0
+OPT ru@404×228 → ok inflated=false health=0 maxH=227 fitH=227 ctaVis=44/44 scrollH=101 over=0
+OPT pt@430×245 → ok inflated=false health=0 maxH=241 fitH=241 ctaVis=44/44 scrollH=115 over=0
+OPT es@430×245 → ok inflated=false health=0 maxH=241 fitH=241 ctaVis=46/46 scrollH=111 over=0
+OPT ru@430×245 → ok inflated=false health=0 maxH=241 fitH=241 ctaVis=46/46 scrollH=111 over=0
+=== SUMMARY ===
+hard=0 soft=12 ok=12 optionsHealthLive=0
+SOFT DETAIL:
+  SEL pt@360×218 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=15 over=0 maxH=202px
+  SEL es@360×218 → SOFT sel=constantia name=20/20 kit=48/48 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=202px
+  SEL ru@360×218 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=202px
+  SEL pt@375×212 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=210px
+  SEL es@375×212 → SOFT sel=constantia name=20/20 kit=48/48 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=210px
+  SEL ru@375×212 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=7 over=0 maxH=210px
+  SEL pt@404×228 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=3 over=0 maxH=227px
+  SEL es@404×228 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=3 over=0 maxH=227px
+  SEL ru@404×228 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=0 over=0 maxH=227px
+  SEL pt@430×245 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=17 over=0 maxH=241px
+  SEL es@430×245 → SOFT sel=constantia name=20/20 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=17 over=0 maxH=241px
+  SEL ru@430×245 → SOFT sel=constantia name=22/22 kit=32/32 hint=0/0 hintHide=true cta=28/28 kitHClip=false wrapSoft=true gridH=11 over=0 maxH=241px

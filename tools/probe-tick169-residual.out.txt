@@ -1,0 +1,156 @@
+=== A) TITLE START/OPTIONS + CONTROLS HI @ sizes outside tick167 F) ===
+HARD title ko@340x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title en@340x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ru@340x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title pt@340x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title es@340x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title zh-Hant@340x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ja@340x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ko@342x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title en@342x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ru@342x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title pt@342x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title es@342x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title zh-Hant@342x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ja@342x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ko@360x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title en@360x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ru@360x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title pt@360x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title es@360x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title zh-Hant@360x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ja@360x200 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ko@360x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title en@360x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ru@360x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title pt@360x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title es@360x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title zh-Hant@360x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ja@360x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ko@380x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title en@380x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ru@380x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title pt@380x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title es@380x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title zh-Hant@380x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ja@380x220 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=0/36 brandHidden=false
+HARD title ko@390x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=2/36 brandHidden=false
+HARD title en@390x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=2/36 brandHidden=false
+HARD title ru@390x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=2/36 brandHidden=false
+HARD title pt@390x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=2/36 brandHidden=false
+HARD title es@390x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=2/36 brandHidden=false
+HARD title zh-Hant@390x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=2/36 brandHidden=false
+HARD title ja@390x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=2/36 brandHidden=false
+HARD title ko@420x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=18.2/36 brandHidden=false
+HARD title en@420x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=18.2/36 brandHidden=false
+HARD title ru@420x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=18.2/36 brandHidden=false
+HARD title pt@420x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=18.2/36 brandHidden=false
+HARD title es@420x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=18.2/36 brandHidden=false
+HARD title zh-Hant@420x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=18.2/36 brandHidden=false
+HARD title ja@420x240 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=18.2/36 brandHidden=false
+HARD title ko@480x288 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=36/36 brandHidden=false
+HARD title en@480x288 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=36/36 brandHidden=false
+HARD title ru@480x288 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=36/36 brandHidden=false
+HARD title pt@480x288 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=36/36 brandHidden=false
+HARD title es@480x288 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=36/36 brandHidden=false
+HARD title zh-Hant@480x288 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=36/36 brandHidden=false
+HARD title ja@480x288 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=0/0/0/25.5 grid=36/36 brandHidden=false
+ok title ko@667x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title en@667x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title ru@667x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title pt@667x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title es@667x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title zh-Hant@667x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title ja@667x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title ko@812x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title en@812x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title ru@812x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title pt@812x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title es@812x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title zh-Hant@812x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+ok title ja@812x375 over=0 start=43/43 out=false opt=46/46 out=false hiShown=true hi=25.5/25.5/25.5/25.5 grid=53/53 brandHidden=false
+
+=== B) Gameplay TOP HUD @ sizes outside tick151 HUD_CASES ===
+ok hud ru@340x200T score=158/158 clip=false unread=false hi=158/158 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud pt@340x200T score=158/158 clip=false unread=false hi=158/158 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud es@340x200T score=158/158 clip=false unread=false hi=158/158 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ko@340x200T score=158/158 clip=false unread=false hi=158/158 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ru@390x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud pt@390x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud es@390x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ko@390x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ru@420x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud pt@420x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud es@420x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ko@420x240T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ru@736x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud pt@736x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud es@736x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ko@736x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ru@812x375T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud pt@812x375T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud es@812x375T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ko@812x375T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ru@896x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud pt@896x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud es@896x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+ok hud ko@896x414T score=154/154 clip=false unread=false hi=154/154 clip=false unread=false scoresOut=false metaOut=false lives=14/14 bombs=14/14
+
+SUMMARY hard=56 soft=0 ok=38
+HARD DETAIL:
+  title ko@340x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@340x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@340x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@340x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@340x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@340x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@340x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ko@342x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@342x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@342x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@342x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@342x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@342x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@342x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ko@360x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@360x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@360x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@360x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@360x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@360x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@360x200 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ko@360x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@360x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@360x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@360x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@360x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@360x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@360x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ko@380x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@380x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@380x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@380x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@380x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@380x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@380x220 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ko@390x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@390x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@390x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@390x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@390x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@390x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@390x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ko@420x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@420x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@420x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@420x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@420x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@420x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@420x240 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ko@480x288 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title en@480x288 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ru@480x288 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title pt@480x288 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title es@480x288 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title zh-Hant@480x288 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined
+  title ja@480x288 startOut=false optOut=false hiShown=true hiVisKeys=0 hiH=25.5 scoreUnread=undefined hiUnread=undefined scoresOut=undefined

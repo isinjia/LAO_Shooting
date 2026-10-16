@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#142536}canvas{display:block}</style><canvas width="1080" height="600"></canvas><script type="module">
+import {loadNativeWeaponFx} from '/js/native-weapon-fx.js';
+import {BulletPool} from '/js/bullet.js';import {Player} from '/js/player.js';import {AssetBank} from '/js/assets.js';
+await loadNativeWeaponFx();const ctx=document.querySelector('canvas').getContext('2d');const meta=new AssetBank().CHAR_META.lrl;
+window.renderAt=(time)=>{const pool=new BulletPool();const labels=[];
+for(const lv of [1,2,3]){
+ const y=lv*162-30;
+ const p=Object.assign(Object.create(Player.prototype),{charKey:'lrl',meta,alive:true,respawnTimer:0,spCost:100,sp:lv*100,x:120,y});
+ p.trySpecial(pool); labels.push({lv,y});
+}
+for(let t=0;t<time;t+=1/120)pool.update(Math.min(1/120,time-t),1080,600);
+ctx.fillStyle='#142536';ctx.fillRect(0,0,1080,600);ctx.fillStyle='#d5e5f2';ctx.font='20px sans-serif';ctx.fillText('LRL SKILL1 PHANTOM RUSH',26,32);
+for(const {lv,y} of labels){ctx.fillText('C Lv'+lv,26,y+6);ctx.strokeStyle='#365163';ctx.beginPath();ctx.moveTo(100,y);ctx.lineTo(1040,y);ctx.stroke();}
+pool.draw(ctx);return pool.list.map(b=>({x:b.x,y:b.y,style:b.style,nativeKey:b.nativeKey,damage:b.damage}));};
+window.ready=true;window.renderAt(0);
+</script>

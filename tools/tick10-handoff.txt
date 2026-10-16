@@ -1,0 +1,41 @@
+TICK10 handoff (2026-10-04) — Back/Info + hold/C kit marks (do not revert)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+THIS TICK
+1) NewUI Back / Info (decorative; no fake lobby destinations):
+   - Lobby_Icon_Back on select BACK, options BACK, pause TO TITLE,
+     result TITLE, load/asset error backs.
+   - Icon_Info on title status bar + options INFO/CFG strip.
+   - Title_Deco1 underline under SORTIE SELECT; Title_Deco2 cue on select brand.
+   - Short viewports still hide rails/status/deco (CONTROLS protected).
+   - Playwright: title info+8 rails, options back+info+autofire, select deco+back+6 rails.
+
+2) Hold / C kit identity (cheap, no particle suites):
+   - shot-fx kitWake: charge (sunbird/sightbeam/dragonaxe/commandmissile/
+     jupiterorb/coffinmissile/swordlance/railbeam) + C (sunseal/lockround/
+     cyclopsbeam/orbital/empfield/coffinwall/plasmacross/xenoxcore).
+   - ProjectileVfx hold muzzle uses kit shader type (not generic type-5 orb).
+   - Player specialFlash: kit-shaped muzzle strokes on top of shared ellipse.
+
+HONEST SCORE
+  UI  ≈ 72 (Back/Info + select Title_Deco1/2; still short of live Panel_Lobby
+            destinations / full atlas chrome)
+  VFX ≈ 70 (hold/C kit marks + prior tap wakes; not NewUI-grade particle suites)
+  NEVER claim 90.
+  Baseline recall: user VFX60 UI40 → both above baseline, neither near polished client.
+  Expectation band for this pass: UI ~70-74, VFX ~68-72.
+
+NEXT TICK — open polish
+  1) world2 still unused — optional select/pause wash only if density still thin.
+  2) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  3) Live menu destinations still absent — do not fake clickable lobby apps.
+  4) Hold/C is silhouette/shader-type, not a full charge-particle suite.
+  5) Do not revert fireRate ×2.

@@ -1,0 +1,63 @@
+TICK15 handoff (2026-10-04) — HOLD dens/side split + leftover overlay chrome
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+THIS TICK — muddy-pair dens/side + overlay leftover
+
+1) projectile-vfx.js
+   - KIT: foxflame tighter/longer vs sunbird/flameward wide rising sheet;
+     railbolt sparser/longer needles vs denser railbeam; jupiterorb puffier.
+   - holdIdentity: fan wider/smokier, spike thinner/faster, lance ≠ spike cone,
+     axe/arty/cloud/hmg/crescent side-streak-smoke retuned (still 8 kinds).
+   - Burst: lance vs spike split; fan/crescent wide; hmg/arty/cloud re-budgeted.
+   - Trails: spike extra aligned needles (no laser ribbon); fan shorter/wider;
+     head stretch per identity (spike flat, fan round, cloud fat).
+   - Hold muzzle cone/rate split (fan wide, spike tight, hmg denser).
+
+2) shot-fx.js (canvas fallback)
+   - foxflame spread 0.72 vs phoenix fan 1.72; railspike length 9.6 / spread 0.18.
+   - Charge tip clouds no longer share one streak recipe (spike / lance / HMG).
+
+3) polish-fx.js
+   - Hit grit: hold fan rises more than basic foxflame; railbolt needle vs lance.
+
+4) NewUI leftover gaps
+   - result / tutorial / loading / pause: panel-frame Top_Bg edge rails.
+   - tutorial / loading / result: menubg + world2 wash (decorative).
+   - result cells / tut-row / load-track: Box2 tile.
+   - Still no fake clickable lobby app destinations.
+   - Combat HUD unchanged (sparse; no Top_Bg fill on hud-top).
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (overlay rails + wash; still no live lobby apps)
+  VFX ≈ 60 (8 holds more particle-distinct; still arcade soft-sprite /
+            budget-capped — NOT client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band if identities read in playtest — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~56-62.
+
+
+NEXT TICK — open polish
+  1) Playtest muddy pairs again: foxflame vs phoenix fan, railbeam vs railspike,
+     lance vs HMG tracers. Prefer emit-budget / side / dens — no new silhouettes.
+  2) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  3) Live menu destinations still absent — do not fake clickable lobby apps.
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language.
+
+Model: inherit
+Korean-ready: yes

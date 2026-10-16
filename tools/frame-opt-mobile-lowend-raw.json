@@ -1,0 +1,161 @@
+{
+  "when": "2026-10-04T14:34:09.743Z",
+  "env": "Playwright Chromium headless — combat rAF. Not a physical phone GPU.",
+  "baseline": {
+    "tick06_pc960": 50.23,
+    "tick06_mobile412": 55.28,
+    "note": "tick06 canvas 412: CSS 401.8×226 buf 703×396 (dpr cap 1.75)"
+  },
+  "viewports": [
+    {
+      "tag": "pc-960",
+      "viewport": {
+        "tag": "pc-960",
+        "width": 960,
+        "height": 540,
+        "dpr": 1,
+        "hasTouch": false
+      },
+      "combatMs": 16000,
+      "combat": {
+        "durationMs": 16052,
+        "frames": 653,
+        "fpsAvg": 46.57,
+        "fpsMin": 14.99,
+        "fpsMax": 60.61,
+        "dtAvgMs": 24.552,
+        "dtMaxMs": 66.7,
+        "dtP95Ms": 33.4,
+        "hitches": {
+          "over33ms": 68,
+          "over50ms": 4,
+          "over100ms": 0
+        },
+        "splitMs": {
+          "n": 655,
+          "updateAvg": 0.378,
+          "drawAvg": 14.526,
+          "bgAvg": 0.14,
+          "vfxAvg": 0.343
+        },
+        "canvas": {
+          "cssW": 960,
+          "cssH": 540,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 1,
+          "lowend": false,
+          "dprCap": "1.75",
+          "transformOk": true
+        },
+        "peaks": {
+          "enemies": 4,
+          "bulletsLive": 16,
+          "particles": 0,
+          "polish": 18,
+          "vfx": 66
+        }
+      }
+    },
+    {
+      "tag": "mobile-412x226",
+      "viewport": {
+        "tag": "mobile-412x226",
+        "width": 412,
+        "height": 226,
+        "dpr": 2.5,
+        "hasTouch": true
+      },
+      "combatMs": 8000,
+      "combat": {
+        "durationMs": 8010,
+        "frames": 427,
+        "fpsAvg": 56.53,
+        "fpsMin": 12,
+        "fpsMax": 60.61,
+        "dtAvgMs": 18.774,
+        "dtMaxMs": 83.3,
+        "dtP95Ms": 33.4,
+        "hitches": {
+          "over33ms": 6,
+          "over50ms": 2,
+          "over100ms": 0
+        },
+        "splitMs": {
+          "n": 429,
+          "updateAvg": 0.568,
+          "drawAvg": 8.861,
+          "bgAvg": 0.227,
+          "vfxAvg": 0.523
+        },
+        "canvas": {
+          "cssW": 401.8,
+          "cssH": 226,
+          "bufW": 402,
+          "bufH": 226,
+          "dpr": 2.5,
+          "lowend": true,
+          "dprCap": "1",
+          "transformOk": true
+        },
+        "peaks": {
+          "enemies": 2,
+          "bulletsLive": 9,
+          "particles": 0,
+          "polish": 13,
+          "vfx": 46
+        }
+      }
+    },
+    {
+      "tag": "mobile-360x218",
+      "viewport": {
+        "tag": "mobile-360x218",
+        "width": 360,
+        "height": 218,
+        "dpr": 2,
+        "hasTouch": true
+      },
+      "combatMs": 8000,
+      "combat": {
+        "durationMs": 8008,
+        "frames": 477,
+        "fpsAvg": 59.79,
+        "fpsMin": 20,
+        "fpsMax": 60.61,
+        "dtAvgMs": 16.805,
+        "dtMaxMs": 50,
+        "dtP95Ms": 16.8,
+        "hitches": {
+          "over33ms": 1,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "splitMs": {
+          "n": 479,
+          "updateAvg": 0.298,
+          "drawAvg": 3.711,
+          "bgAvg": 0.121,
+          "vfxAvg": 0.26
+        },
+        "canvas": {
+          "cssW": 360,
+          "cssH": 202.5,
+          "bufW": 360,
+          "bufH": 203,
+          "dpr": 2,
+          "lowend": true,
+          "dprCap": "1",
+          "transformOk": true
+        },
+        "peaks": {
+          "enemies": 2,
+          "bulletsLive": 9,
+          "particles": 0,
+          "polish": 13,
+          "vfx": 47
+        }
+      }
+    }
+  ]
+}

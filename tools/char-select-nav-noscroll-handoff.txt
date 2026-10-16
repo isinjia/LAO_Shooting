@@ -1,0 +1,89 @@
+CHAR SELECT — NO-SCROLL FIT + GRID NAV / CONFIRM
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+GOAL
+================================================================
+1) Character select must NOT scroll; enlarge usable grid / shrink chrome
+   so all (or max) roster cards fit the viewport — especially mobile /
+   short-landscape.
+2) Navigate highlight with keyboard arrows/WASD OR on-screen stick.
+3) Confirm with Space OR touch on card (SORTIE CTA kept). Mouse click
+   still only selects (not auto-sortie).
+
+================================================================
+LAYOUT CHANGES
+================================================================
+css/style.css (tick126 char-grid belt)
+- `.char-grid` overflow-y:auto → overflow:hidden (no scroll / no pan-y)
+- grid-template-rows: 1fr 1fr so both rows share the flex slot
+- Cards flex-center; tighter gap/margin; name clamp
+- Portrait size via CSS var `--select-face` (JS budget sets it)
+- NewUI `.char-preview` width/height use var(--select-face, …)
+- `.touch-controls.is-select-nav`: z-index 6 (above #overlay z5),
+  stick + FIRE only (hide FOCUS/BOMB/SP/PAUSE); compact sizes
+
+js/main.js syncSelectPanelBudget
+- Priority: fund full 2-row grid (no scroll) before soft floor
+- Earlier chrome reclaim (resource ≤640, deco/blurb ≤520)
+- Ladder: resource → deco/blurb → dossier flatten → actions plate →
+  head margins → hint hide → brand (.is-select-short) → h2 → pad
+- grid minHeight = remaining flex slot; --select-face from row height
+- CTA-health (tick141/144/161) still shaves/compacts if SORTIE OOB
+- HARD axes preserved where possible; no-scroll + all chars visible wins
+
+Preserved: NewUI world styling, portraits, i18n names, RANDOM/rare slot,
+dossier name (kit names stay hidden), SORTIE/BACK/OPTIONS CTAs.
+
+================================================================
+INPUT MAPPING
+================================================================
+Navigate (2D wrap on 3×2 grid)
+- Keyboard: Arrow keys + WASD (settings up/down/left/right bindings)
+- Touch: left virtual stick (select-nav pads, latch per tilt)
+- Rare-unlock direction cheat buffer still fed by the same dirs
+
+Confirm sortie
+- Space (and Enter alias)
+- Touch / pen tap on a character card (select + SORTIE)
+- FIRE pad on select-nav stick overlay
+- Existing #btn-go SORTIE CTA
+- Desktop double-click on card (unchanged intent)
+
+Select only (no auto-sortie)
+- Mouse click on card
+
+Pads lifecycle
+- startSelectNavPads() at end of showSelect (touchUi only)
+- stopSelectNavPads() via stopSelectPreviews on leave
+  (SORTIE / BACK / OPTIONS / remount)
+
+================================================================
+MOBILE / SHORT-LANDSCAPE FIT NOTES
+================================================================
+- 6 cards (5 base + RANDOM) in 3 columns × 2 rows always laid out in
+  the flex slot; overflow hidden — no scroll thumb.
+- Short height: chrome reclaimed first; faces scale down via
+  --select-face (floor ~36px) so both rows remain visible.
+- Stick+FIRE sit above the overlay; sized smaller ≤480px height so they
+  cover less of the card grid.
+- body.touch-ui panel scroll on other screens unchanged; screen-select
+  stays overflow:hidden.
+- Ultra-short (e.g. 400×240): CTA-health may still compact actions /
+  brand; grid keeps remaining height with smaller faces.
+
+================================================================
+FILES
+================================================================
+- js/main.js — nav helpers, Space confirm, touch stick, budget retune
+- css/style.css — no-scroll grid + select-nav pad chrome + face var
+- tools/char-select-nav-noscroll-handoff.txt — this note
+
+================================================================
+DO NOT
+================================================================
+Do not re-enable char-grid scroll as the default fit path.
+Do not hide skill names restore on select (stay hidden).
+Do not alter Hirume / Constantia gameplay kits.
+Do not break mouse-click select-only or SORTIE CTA.

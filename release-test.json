@@ -1,0 +1,214 @@
+{
+ "runs": [
+  {
+   "pilot": "griffin",
+   "wallSec": 7,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "1050s 4:waves",
+    "1119s 4:boss-windup",
+    "1121s 4:boss",
+    "1246s 4:tally",
+    "1251s 4:exit",
+    "1252s 5:transition"
+   ],
+   "specials": 54,
+   "bombs": 15,
+   "simMin": 20.9,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "sleipnir",
+   "wallSec": 6,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "1028s 4:waves",
+    "1098s 4:boss-windup",
+    "1100s 4:boss",
+    "1215s 4:tally",
+    "1220s 4:exit",
+    "1222s 5:transition"
+   ],
+   "specials": 53,
+   "bombs": 12,
+   "simMin": 20.4,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "express76",
+   "wallSec": 6,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "1038s 4:waves",
+    "1107s 4:boss-windup",
+    "1109s 4:boss",
+    "1238s 4:tally",
+    "1243s 4:exit",
+    "1245s 5:transition"
+   ],
+   "specials": 64,
+   "bombs": 16,
+   "simMin": 20.7,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "constantia",
+   "wallSec": 10,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "993s 4:waves",
+    "1061s 4:boss-windup",
+    "1064s 4:boss",
+    "1175s 4:tally",
+    "1181s 4:exit",
+    "1182s 5:transition"
+   ],
+   "specials": 59,
+   "bombs": 12,
+   "simMin": 19.7,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "labiata",
+   "wallSec": 9,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "995s 4:waves",
+    "1065s 4:boss-windup",
+    "1067s 4:boss",
+    "1177s 4:tally",
+    "1182s 4:exit",
+    "1184s 5:transition"
+   ],
+   "specials": 93,
+   "bombs": 14,
+   "simMin": 19.7,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "lrl",
+   "wallSec": 8,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "892s 4:waves",
+    "963s 4:boss-windup",
+    "965s 4:boss",
+    "1045s 4:tally",
+    "1050s 4:exit",
+    "1052s 5:transition"
+   ],
+   "specials": 39,
+   "bombs": 10,
+   "simMin": 17.5,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "peregrinus",
+   "wallSec": 10,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "914s 4:waves",
+    "984s 4:boss-windup",
+    "986s 4:boss",
+    "1072s 4:tally",
+    "1078s 4:exit",
+    "1079s 5:transition"
+   ],
+   "specials": 94,
+   "bombs": 10,
+   "simMin": 18,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  }
+ ],
+ "ui": [
+  {
+   "label": "desktop",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "label": "phone",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "label": "tablet",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  }
+ ]
+}

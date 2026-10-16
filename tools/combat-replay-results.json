@@ -1,0 +1,221 @@
+{
+  "seed": 12648430,
+  "seedStability": {
+    "ok": true,
+    "match": true,
+    "a": {
+      "label": "A1",
+      "steps": 96,
+      "frames": 96,
+      "stageClock": 3.2,
+      "phase": "waves",
+      "score": 0,
+      "graze": 0,
+      "lives": 3,
+      "bombs": 0,
+      "enemies": 2,
+      "bullets": 6,
+      "bossPhase": null,
+      "phaseSeen": -1
+    },
+    "b": {
+      "label": "A2",
+      "steps": 96,
+      "frames": 96,
+      "stageClock": 3.2,
+      "phase": "waves",
+      "score": 0,
+      "graze": 0,
+      "lives": 3,
+      "bombs": 0,
+      "enemies": 2,
+      "bullets": 6,
+      "bossPhase": null,
+      "phaseSeen": -1
+    },
+    "note": "Soft signal only. Prefer scripted record/replay for reproducible wave bugs."
+  },
+  "replay": {
+    "ok": true,
+    "match": true,
+    "recorded": {
+      "frames": 1280,
+      "stageClock": 42.233,
+      "phase": "waves",
+      "score": 4605,
+      "graze": 9,
+      "lives": 3,
+      "bombs": 3,
+      "enemies": 3,
+      "bullets": 38,
+      "events": 8
+    },
+    "replayed": {
+      "frames": 1280,
+      "stageClock": 42.233,
+      "phase": "waves",
+      "score": 4605,
+      "graze": 9,
+      "lives": 3,
+      "bombs": 3,
+      "enemies": 3,
+      "bullets": 38
+    },
+    "inputLog": [
+      {
+        "f": 0,
+        "t": 0,
+        "action": "shoot",
+        "down": true
+      },
+      {
+        "f": 0,
+        "t": 0,
+        "action": "focus",
+        "down": true
+      },
+      {
+        "f": 16,
+        "t": 0.5333,
+        "action": "up",
+        "down": true
+      },
+      {
+        "f": 40,
+        "t": 1.3333,
+        "action": "up",
+        "down": false
+      },
+      {
+        "f": 40,
+        "t": 1.3333,
+        "action": "down",
+        "down": true
+      },
+      {
+        "f": 80,
+        "t": 2.6667,
+        "action": "down",
+        "down": false
+      },
+      {
+        "f": 104,
+        "t": 3.4667,
+        "action": "special",
+        "down": true
+      },
+      {
+        "f": 112,
+        "t": 3.7,
+        "action": "special",
+        "down": false
+      }
+    ]
+  },
+  "noInvulnAttempt": {
+    "ok": true,
+    "state": "playing",
+    "stage": 1,
+    "phase": "transition",
+    "lives": 4,
+    "score": 73644,
+    "transitions": [
+      {
+        "t": 55.03,
+        "from": "waves",
+        "to": "mid-windup",
+        "bossPhase": null
+      },
+      {
+        "t": 55.03,
+        "from": "mid-windup",
+        "to": "midboss",
+        "bossPhase": 0
+      },
+      {
+        "t": 55.03,
+        "from": "midboss",
+        "to": "mid-recover",
+        "bossPhase": 2
+      },
+      {
+        "t": 55.1,
+        "from": "mid-recover",
+        "to": "waves",
+        "bossPhase": null
+      },
+      {
+        "t": 126.03,
+        "from": "waves",
+        "to": "boss-windup",
+        "bossPhase": null
+      },
+      {
+        "t": 126.03,
+        "from": "boss-windup",
+        "to": "boss",
+        "bossPhase": 0
+      },
+      {
+        "t": 126.03,
+        "from": "boss",
+        "to": "transition",
+        "bossPhase": 2
+      }
+    ],
+    "bossPhaseMax": 2,
+    "sawMidboss": true,
+    "sawPhaseBreak": true
+  },
+  "allOk": true,
+  "inputLog": [
+    {
+      "f": 0,
+      "t": 0,
+      "action": "shoot",
+      "down": true
+    },
+    {
+      "f": 0,
+      "t": 0,
+      "action": "focus",
+      "down": true
+    },
+    {
+      "f": 16,
+      "t": 0.5333,
+      "action": "up",
+      "down": true
+    },
+    {
+      "f": 40,
+      "t": 1.3333,
+      "action": "up",
+      "down": false
+    },
+    {
+      "f": 40,
+      "t": 1.3333,
+      "action": "down",
+      "down": true
+    },
+    {
+      "f": 80,
+      "t": 2.6667,
+      "action": "down",
+      "down": false
+    },
+    {
+      "f": 104,
+      "t": 3.4667,
+      "action": "special",
+      "down": true
+    },
+    {
+      "f": 112,
+      "t": 3.7,
+      "action": "special",
+      "down": false
+    }
+  ]
+}

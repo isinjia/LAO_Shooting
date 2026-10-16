@@ -1,0 +1,31 @@
+LAO MINI ACTION — stage label simplify (number only)
+Date: 2026-10-06
+
+Goal
+- In-game stage text was "STAGE 1/5 · 프로그램 침입" style.
+- Show number-only locale form: "스테이지 1" (no "/5", no stage name).
+
+Changes
+1) js/i18n.js
+   - New key hud.stageN in all 8 locales:
+     ko 스테이지 {n} / ja ステージ {n} / en STAGE {n} /
+     zh-Hant 關卡 {n} / zh-Hans 关卡 {n} /
+     pt Estágio {n} / es Etapa {n} / ru Стадия {n}
+   - stage-plan name/subtitle keys kept (unused for this caption).
+
+2) js/game.js
+   - Canvas HUD caption: t('hud.stageN') — was STAGE n/total · name
+   - STAGE START card title: t('hud.stageN'); subtitle suppressed
+   - Internal stageTitle still "STAGE n" for ceremony detect (/^STAGE\s+\d+/)
+   - stageSubtitle cleared on start / non-finale CLEAR (finale keeps MISSION COMPLETE)
+   - DOM #stage-num still number-only under STAGE lbl (unchanged)
+
+3) js/main.js
+   - Result STAGE cell: t('hud.stageN') or "ALL 5" — no · stageName
+
+4) QA
+   - tools/qa-wave-hud-caption.mjs — stageLabel = t('hud.stageN')
+   - tools/qa-stage-start-card.mjs — cardSub empty on START + hud.stageN title
+
+Not touched
+- Stage gameplay, waves, bosses, stage-plan name data, route strip (stage.subtitle).

@@ -1,0 +1,931 @@
+TICK155 handoff (2026-10-04) — asset-error mid-narrow letterbox CTA reclaim
+
+
+
+======================================================================
+
+PRESERVE (do not break)
+
+======================================================================
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+  hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+  fafnir thunder cloud · eternity RIP ward (hold) / HMG basic · labiata crescent · emily rail (basic)
+
+
+
+  Still exactly 8 HOLD_STYLE muzzle keys (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+  NOTE: eternity HOLD projectile is coffinwall ward; HMG (coffinround) is basic autofire.
+
+  HOLD_STYLE muzzle map eternity→coffinround remains FROZEN (qa-hold-muzzle).
+
+
+
+  NOTE: Emily chargeEnabled=false — basic railbeam IS the intentional laser kit;
+
+  HOLD_STYLE emily→railbolt (spike) stays frozen for muzzle map, but charge path is disabled.
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+  plasmacross / sunseal soft disks + soft streaks only.
+
+  Rare option diamond chip is a prior identity cue (tick26) — keep.
+
+
+
+- Enemy bullet / player-hit / bomb / graze / pickup / C muzzle / deathbomb /
+
+  option trails / focus / rare fanfare / WARNING / STAGE CLEAR / pause /
+
+  CONTROLS / loading / OPTIONS / touch-pad / select / result / HUD clusters /
+
+  tip densify tip58–67 / tip89–97 / rim densify tip100–110 / charge 112–114
+
+  — KEEP as documented in tick154-handoff PRESERVE. dens FROZEN.
+
+
+
+- HOLD dens/side/emit FROZEN (tick51 qa-hold-muzzle): kit dens numbers,
+
+  holdIdentity side/streak/smoke/rise/drag, trail emit, muzzle emitRate,
+
+  HOLD_STYLE map (eternity→coffinround) — untouched.
+
+
+
+- Shot/hold/C silhouettes tick69–87 KEEP (including cyclopsbeam intentional laser).
+
+
+
+- Title CONTROLS keys-rules / panel budget / grid floor / HI pin / full-row /
+
+  parent-aware floor (tick118–124 + tick130) — KEEP.
+
+
+
+- Title extreme-short CONTROLS grid floor (tick135) — KEEP.
+
+
+
+- Pause short-landscape panel floor + deco reclaim (tick131) — KEEP.
+
+
+
+- Pause extreme-short head reclaim (tick138) — KEEP.
+
+
+
+- Pause SE-class soft-continue (tick140) — KEEP.
+
+
+
+- Tutorial panel i18n maxCap + grid scroll + CTA pin (tick125) — KEEP.
+
+
+
+- Tutorial short-landscape grid floor + deco/note reclaim (tick132) — KEEP.
+
+
+
+- Tutorial extreme-short grid floor (tick137) — KEEP.
+
+
+
+- Result short-landscape panel floor + deco/margin reclaim (tick133) — KEEP.
+
+
+
+- Result extreme-short head reclaim (tick139) — KEEP.
+
+
+
+- Select panel i18n maxCap + char-grid scroll + CTA pin (tick126) — KEEP.
+
+
+
+- Select short-landscape deco+blurb reclaim (tick129) — KEEP.
+
+
+
+- Select extreme-short dossier/actions/hint reclaim (tick134) — KEEP.
+
+
+
+- OPTIONS panel maxCap + BACK pin (tick127) / flatten nested scroll (tick128)
+
+  autofire full-span (tick120) / mute-fullscreen 2-col (tick121) — KEEP.
+
+
+
+- OPTIONS extreme-short scroll floor (tick136) — KEEP.
+
+
+
+- SE-class select/OPTIONS maxCap floor (tick141) — KEEP.
+
+
+
+- Ultra-short tutorial/pause/result fitH maxCap floor (tick142) — KEEP.
+
+
+
+- Result ultra-short last-resort soft-continue (tick143) — KEEP.
+
+
+
+- Select ultra-short CTA-health fitH clamp (tick144) — KEEP.
+
+
+
+- OPTIONS/tutorial CTA-health Math.max(260) LATENT only (tick145 +0 QA) — KEEP.
+
+
+
+- showOverlay / hideOverlay clear content.style.maxHeight + paddingTop/Bottom
+
+  so panel-budget inline caps from options/select/tutorial/pause/result do not
+
+  leak across screens.
+
+
+
+- TICK146 short-landscape touch HUD corridor restore — KEEP.
+
+
+
+- TICK147 short-landscape touch pad compact restore — KEEP.
+
+
+
+- TICK148 ultra-narrow short-landscape HUD reclaim — KEEP.
+
+
+
+- TICK149 near-ultra short-landscape HUD cliff reclaim — KEEP.
+
+
+
+- TICK150 +0 QA residual scan (float/portrait/ring/cliff 361–400) — KEEP.
+
+
+
+- TICK151 loading ultra-narrow letterbox reclaim @≤320 — KEEP.
+
+  Do NOT widen tick151 media to 360 (would steal brand @360×240).
+
+
+
+- TICK152 asset-error ultra-narrow letterbox reclaim @≤360 — KEEP.
+
+
+
+- TICK153 loading near-ultra letterbox cliff reclaim @321–360 × ≤200 — KEEP.
+
+
+
+- TICK154 asset-error near-ultra letterbox CTA reclaim @361–380 — KEEP.
+
+
+
+- TICK155 asset-error mid-narrow letterbox CTA reclaim — KEEP (this tick).
+
+  @media (max-height:420px) and (min-width:381px) and (max-width:399px)
+
+  and (orientation:landscape):
+
+  body.touch-ui / .lao-newui #overlay-content.screen-asset-error { max-height:100% };
+
+  .brand-mark { display:none };
+
+  h2 { font-size:14px; letter-spacing:0.06em; margin:0 0 2px; line-height:1.25 }.
+
+  tip67 / tick43 / tick152 ≤360 / tick154 ≤380 chrome untouched.
+
+  Width gate 399 (not 400) preserves brand @400×240/280 (soft over CTAs full).
+
+
+
+
+
+======================================================================
+
+THIS TICK — asset-error mid-narrow letterbox CTA reclaim (ONE ship)
+
+======================================================================
+
+
+
+1) Candidate pick (user focus: letterbox / ultra-narrow overlay residual;
+
+   next HARD muddy cliff width; dens FROZEN; prefer live-measured win)
+
+
+
+   Exhausted CLOSED: tip densify (58–97), shot/hold/C individuality (69–87),
+
+   rim densify (100–110), charge feedback (112–114). dens FROZEN.
+
+   CONTROLS / tutorial / select / OPTIONS / pause / result thin-viewport
+
+   panel budgets tick118–145 CLOSED.
+
+   Touch HUD corridor/pad/ultra/cliff tick146–149 CLOSED.
+
+   Tick150 residual scan CLOSED +0.
+
+   Loading ultra-narrow letterbox ≤320 (tick151) CLOSED.
+
+   Asset-error ultra-narrow letterbox ≤360 (tick152) CLOSED.
+
+   Loading near-ultra cliff @321–360 × ≤200 (tick153) CLOSED.
+
+   Asset-error near-ultra CTA reclaim @361–380 (tick154) CLOSED.
+
+
+
+   Scanned preferred axes (probe-tick155-residual + probe-tick155-ae399):
+
+
+
+   A) SKIP — Title brand restore @800/@1280×560: playtest-only HI conflict.
+
+
+
+   B) CLOSED tick151 — loading ultra-narrow @≤320.
+
+
+
+   C) CLOSED tick153 — loading near-ultra cliff.
+
+
+
+   D) CLOSED tick152 — asset-error ultra-narrow @≤360.
+
+
+
+   E) CLOSED tick154 — asset-error near-ultra CTA reclaim @361–380.
+
+
+
+   F) SHIP — Asset-error mid-narrow CTA reclaim @381–399 short-landscape.
+
+      Live BEFORE (real i18n):
+
+        · ja@381×240: over≈3.25; h2≈71; maxH≈220.8 (92vh);
+
+          retryOut/selOut=true; rVis≈37.55/44; sVis≈38.55/48 — HARD
+
+        · ja@381×220 / @381×200 / @390×200: same CTA OOB class (200 rVis=0)
+
+        · en/pt/es/ru/ja@399×200: HARD CTA OOB (ru msg also clipped)
+
+        · pt/es/ru@381×240: soft over≈3.25 but CTAs full
+
+        · ja@390×240 / @399×240: clear with brand (h2≈39)
+
+        · en/ko@400×240: clear; @400×280 pt/es/ru soft over≈3 CTAs full
+
+      Mode matrix (inline reclaim, ja focus):
+
+        · maxH100 alone — still HARD (CTA unread)
+
+        · maxH100+brand — clears @381×220/240; @×200 still HARD
+
+        · maxH100+brand+h2 — clears all @381–399 incl. 200 (mild preferred)
+
+      Do NOT extend max-width to 400 (soft over@400 CTAs full + brand kept).
+
+
+
+   G) SKIP — Soft @400×260–280 asset-error pt/es/ru panelOver≈3 — CTAs full.
+
+
+
+   H) SKIP — Loading @201–210×321–360 / @361–400 short: all meta/lab/track full
+
+      after tick151/153; no HARD.
+
+
+
+   I) SKIP — Rotate-card portrait extremes: probe vs #app letterbox false-positives
+
+      (rotate-hint covers viewport; product portrait lock). Leave unless product
+
+      drops portrait lock or a NEW locale proves unread vs viewport.
+
+
+
+   J) SKIP — Soft-blob VFX / silhouette residual — dens FROZEN.
+
+
+
+   K) SKIP — Gameplay TOP HUD / cliff 361–400 / float / portrait / ring.
+
+
+
+2) Muddy evidence (BEFORE → AFTER)
+
+
+
+   BEFORE (probe-tick155-residual / ae399, real i18n):
+
+     AE HARD:
+
+       ja@381×240: over=3.25 hr=-3.25 ocH=220.8/214.31 maxH=220.8px
+
+         brand=inline-block:24 h2=71/71 msg=32/32
+
+         retryOut=true selOut=true rVis=37.55/44 sVis=38.55/48
+
+       ja@381×220 / @381×200 / @390×200 / @399×200: CTA OOB (200 rVis=0)
+
+       en/pt/es/ru@399×200: CTA OOB
+
+     AE SOFT: pt/es/ru@381×240 over≈3.25 CTAs full; @399/@400×260–280 soft
+
+     AE @400: brand kept; ja clear; pt/es/ru soft over≈3 CTAs full
+
+     LOADING: HARD=0 across scanned residual sizes
+
+     ROTATE: #app-vs-card false HARD — not shipped
+
+
+
+   AFTER (qa-asset-error-midnarrow + CSS TICK155):
+
+     AE HARD=0 @381–399
+
+       ja@381×240/220/200 / @390×200 / @399×200: over=0; brand=none;
+
+         maxH=100%; h2=17.5; rVis/sVis full; msg full
+
+       pt@399×240: over=0; CTAs full
+
+       @380×240: tick154 kept (brand none + h2)
+
+       @360×240: tick152 kept (brand none + row)
+
+       @400×240: brand kept; clear
+
+       @400×280 pt: soft over=3 CTAs full (left intentionally)
+
+
+
+3) Fix shipped
+
+
+
+   css/style.css — TICK155 block AFTER TICK154:
+
+     @media (max-height:420px) and (min-width:381px) and (max-width:399px)
+
+     and (orientation:landscape)
+
+       body.touch-ui / .lao-newui #overlay-content.screen-asset-error {
+
+         max-height:100%;
+
+       }
+
+       .brand-mark { display:none }
+
+       > h2 { font-size:14px; letter-spacing:0.06em; margin:0 0 2px;
+
+              line-height:1.25 }
+
+
+
+   Rejected invent: extend tick154 max-width to 399 in-place (would rewrite
+
+     tick154 contract; prefer additive TICK155 block; tick154 ≤380 kept).
+
+   Rejected invent: blanket max-width:400 (steals brand @400; soft CTAs full).
+
+   Rejected invent: tip densify / string remove / icon hide beyond tick43
+
+     max-height:420 already hides icon/deco.
+
+   Rejected invent: full tick152 row-CTA + compact pad (mode clear once
+
+     brand+h2 lands; same mild recipe as tick154).
+
+   Rejected invent: rotate-card #app-letterbox “HARD” (viewport cover by design).
+
+   Rejected invent: loading residual (HARD=0).
+
+
+
+   js/main.js — untouched.
+
+   tip/dens / tick69–154 — untouched.
+
+
+
+   Probe / QA evidence:
+
+     tools/probe-tick155-residual.mjs
+
+     tools/probe-tick155-ae399.mjs
+
+     tools/qa-asset-error-midnarrow.mjs
+
+
+
+4) Verify (preserve battery — ALL PASS)
+
+
+
+   - node tools/qa-asset-error-midnarrow.mjs → PASS (this tick)
+
+   - node tools/qa-asset-error-nearultra.mjs → PASS (tick154 kept)
+
+   - node tools/qa-asset-error-ultranarrow.mjs → PASS (tick152 kept; brand@≥400)
+
+   - node tools/qa-asset-error-overlay.mjs → PASS (tick43/67 kept)
+
+   - node tools/qa-loading-nearultra.mjs → PASS (tick153 kept)
+
+   - node tools/qa-loading-ultranarrow.mjs → PASS (tick151 kept; brand@360×240)
+
+   - node tools/qa-loading-bar-newui.mjs → PASS (tick34/66 kept)
+
+   - node tools/qa-rotate-overlay.mjs → PASS
+
+   - node tools/qa-touch-hud-cliff.mjs → PASS (tick149 kept)
+
+   - node tools/qa-touch-hud-ultranarrow.mjs → PASS (tick148 kept)
+
+   - node tools/qa-touch-pad-compact.mjs → PASS (tick147 kept)
+
+   - node tools/qa-touch-hud-corridor.mjs → PASS (tick146 kept)
+
+   - node tools/qa-hold-muzzle.mjs PASS (dens/side/emitRate/8 identities frozen)
+
+   - node tools/qa-particle-quality.mjs PASS (holdDensFrozen)
+
+   - node tools/qa-touch-pad-labels.mjs PASS
+
+   - node tools/qa-select-fitH-health-i18n.mjs PASS (tick144 kept)
+
+   - node tools/qa-fitH-parity-i18n.mjs PASS (tick142 kept)
+
+   - node tools/test-gameplay-design.mjs PASS
+
+   - node tools/test-weapon-roles.mjs PASS
+
+
+
+
+
+======================================================================
+
+HONEST SCORE (do NOT claim polished / 70+ VFX / 80+ UI)
+
+======================================================================
+
+
+
+  UI  ≈ 79 (+0; asset-error @381–399 CTA letterbox reclaim is one concrete
+
+            residual ship outside exhausted axes, but score band stays ≤79
+
+            — do NOT claim 80+. Soft AE@400 panelOver / title brand /
+
+            cliff 361–400 / float remain soft-or-next without invent.)
+
+
+
+  VFX ≈ 69 (+0; no particle / rim / silhouette / dens ship — soft-sprite
+
+            budget-capped ceiling remains; reported band stays ≤69;
+
+            do NOT claim 70+)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+  user 60 band — do not round up to 70.
+
+  Expectation band this pass: UI ~77-79, VFX ~67-69.
+
+
+
+
+
+======================================================================
+
+NEXT TICK — open polish (NON-tip / NON-rim invent preferred)
+
+======================================================================
+
+
+
+1) HOLD dens/side/emit remain FROZEN. Do not dens-churn.
+
+   Live charge HOLD silhouettes (tick69–87) + caption dual-stroke (tick89–97)
+
+   + i18n plate/max-width grows (tick116–117) + CONTROLS/title/pause/tutorial/
+
+   result/select/OPTIONS short-viewport ships (tick118–145) + touch HUD
+
+   corridor (tick146) + pad compact (tick147) + ultra-narrow HUD reclaim
+
+   (tick148) + near-ultra cliff reclaim (tick149) + tick150 +0 scan +
+
+   loading ultra-narrow letterbox (tick151) + asset-error ultra-narrow
+
+   letterbox (tick152) + loading near-ultra cliff (tick153) + asset-error
+
+   near-ultra CTA reclaim (tick154) + asset-error mid-narrow CTA reclaim
+
+   (tick155) stay.
+
+   dens FROZEN. tip/rim/charge invent CLOSED.
+
+
+
+2) Tip densify + canvas ceremony/pulse/fade + touch micro + stock pulse
+
+   glow-forward paths CLOSED (tick58–97 / tick89–94). Do NOT invent
+
+   dual-stroke on soft-val / Activation-chip peers.
+
+
+
+3) NEXT axis for tick156 (propose — pick ONE only if live muddy proven):
+
+
+
+   A) Title brand-less hero @800 / @1280×560 — brand restore still breaks HI
+
+      under CONTROLS floor; playtest only. Prefer honest +0 unless new crush.
+
+
+
+   B) CLOSED tick151 — loading ultra-narrow @≤320 letterbox reclaim.
+
+
+
+   C) CLOSED tick153 — loading near-ultra cliff @321–360 × ≤200.
+
+
+
+   D) CLOSED tick152 — asset-error ultra-narrow @≤360 letterbox reclaim.
+
+
+
+   E) CLOSED tick154 — asset-error near-ultra CTA reclaim @361–380.
+
+
+
+   F) CLOSED tick155 — asset-error mid-narrow CTA reclaim @381–399.
+
+      Re-check only if a NEW long locale wraps h2 past single-line under
+
+      14px @399×200 with brand already none, or width gate 399 misses a
+
+      NEW CTA unread exactly @400 with brand kept.
+
+
+
+   G) Soft @400×260–280 asset-error pt/es/ru panelOver≈3 — CTAs full;
+
+      only ship if a locale proves CTA unread or over≫3.
+
+
+
+   H) OPTIONS @800 brand/head density — already ≥ soft floor after tick136;
+
+      do NOT invent tip; only ship if CTA/label muddy reappears.
+
+
+
+   I) Soft-blob VFX / silhouette residual — dens FROZEN; tip/rim invent CLOSED.
+
+      Prefer honest +0 over invent.
+
+
+
+   J) Rare fanfare — re-check only if new long tag locale lands; currently clear.
+
+
+
+   K) Select dossier long-kit wrap under tip63 when Box2 flattened @≤400 —
+
+      live kitClip/CTA clear after tick134; playtest readability only.
+
+
+
+   L) Pause es/ru @568×320 headroom≈2.2 after full pad ladder — CTA clear /
+
+      over=0; only ship maxCap soft if a locale clips CTA or headroom goes
+
+      negative again.
+
+
+
+   M) Tutorial @800 long-locale brand still reclaimed when avail < 2-row —
+
+      intentional measure path; only ship restore if headroom proven without
+
+      dropping gridH < softGridWant.
+
+
+
+   N) CLOSED tick142–145 fitH / CTA-health paths.
+
+
+
+   O) CLOSED tick146–149 touch HUD ships.
+
+
+
+   P) CLOSED tick150 scan — remaining cliff 361–400 / float / ring×HUD /
+
+      portrait: no HARD muddy. Soft @361–363 playtest only.
+
+
+
+   Q) Float padMode parked-stick×stocks — by-design; only ship if a NEW
+
+      residual proves muddy without inventing zone shrink.
+
+
+
+   R) Portrait gameplay pad×HUD — rotate-hint covers; leave unless product
+
+      drops portrait lock. Rotate-card #app-letterbox probe noise — do NOT
+
+      invent without viewport-grounded unread.
+
+
+
+   S) NOTE — tick148 @≤340 still has .tc-actions zone geometry overlap vs
+
+      stacked gauges at h≈240 (gapGA≈−22) while bomb×charge buttons stay
+
+      clear. Do NOT invent right/zone shrink unless NEW button×HUD muddy.
+
+
+
+   T) Gameplay TOP HUD — live clear; only ship if NEW score/HI/meta unread.
+
+
+
+   U) PREFERRED NEXT if no NEW HARD — honest +0 residual scan across
+
+      soft AE@400 CTA unread / title brand crush / loading feel /
+
+      @361–363 soft spill / float parked / OR pick the first newly proven
+
+      HARD muddy only.
+
+
+
+4) Human-playtest gaps remaining (concise)
+
+
+
+   · Asset-error @381–399: after tick155 brand hidden + h2 compact +
+
+     maxH=100%. Confirm human feel without brand belt on mid-narrow
+
+     letterbox phones (CTA/h2/msg fully visible). Includes sizes that were
+
+     already clear at mid height (@390×240) — same mild-band trade as tick154.
+
+
+
+   · Asset-error @361–380: tick154 brand-less + h2 — human feel.
+
+
+
+   · Asset-error @≤360: tick152 brand-less + row-CTA — human feel.
+
+
+
+   · Asset-error @400×260–280 long pt/es/ru: soft panelOver≈3 CTAs full.
+
+
+
+   · Loading @321–360 × ≤200: tick153 brand-less — human feel.
+
+
+
+   · Loading @≤320: tick151 brand reclaim — human-feel without brand.
+
+
+
+   · Loading @360×240: brand KEPT (height gate). Confirm still clear.
+
+
+
+   · Touch @361–363 short-landscape: soft POWER spill — playtest only.
+
+
+
+   · Touch fixed/float @342–360 / @320×200: tick148/149 feel — playtest.
+
+
+
+   · Touch float padMode @≤400×280: parked stick under stocks expected.
+
+
+
+   · Locale * OPTIONS/tutorial Math.max(260) LATENT — unused live.
+
+
+
+   · Locale * select @400×280: ctaOut=true chrome residual after tick144.
+
+
+
+   · Locale * result/pause/tutorial ultra-short fitH floors — kept.
+
+
+
+   · Locale es/ru pause @568×320: headroom≈2.2 — playtest.
+
+
+
+   · Locale ko/en/pt/ru @1280×560: brand still reclaimed under CONTROLS —
+
+     playtest lobby chrome.
+
+
+
+   · Select dossier: long kit wrap readability under tip63 — playtest.
+
+
+
+   · Rotate-card portrait extremes: leave unless new locale / product
+
+     drops portrait lock (do not treat #app-letterbox overflow as HARD).
+
+
+
+   · Desktop charge / touch ring / hold-ready / muzzle aura / Emily —
+
+     dens FROZEN; playtest only.
+
+
+
+5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+     death power reset / per-character hold identities / soft-particle language /
+
+     silhouettes tick69–87 / caption dual-stroke tick89–97 /
+
+     i18n grows tick116–117 / CONTROLS–OPTIONS–select–tutorial–pause–result
+
+     short-viewport ships tick118–145 / touch HUD corridor tick146 /
+
+     touch pad compact tick147 / ultra-narrow HUD reclaim tick148 /
+
+     near-ultra cliff reclaim tick149 / tick150 +0 residual scan /
+
+     loading ultra-narrow letterbox tick151 /
+
+     asset-error ultra-narrow letterbox tick152 /
+
+     loading near-ultra letterbox cliff tick153 /
+
+     asset-error near-ultra letterbox CTA reclaim tick154 /
+
+     asset-error mid-narrow letterbox CTA reclaim tick155 /
+
+     tip densify tip58–67 / rim tip100–110 / charge 112–114 / HOLD dens frozen.
+
+
+
+
+
+======================================================================
+
+한국어 요약 (Korean-ready)
+
+======================================================================
+
+
+
+- Tick155 포커스: letterbox / ultra-narrow overlay residual — AE@381–399
+
+  CTA OOB (live-measure). dens FROZEN. tick69–154 유지. UI≈79 VFX≈69 밴드 유지.
+
+
+
+- Verdict: SHIP — asset-error mid-narrow letterbox CTA reclaim @381–399.
+
+  원인: tick154가 max-width:380만 게이트해서 바로 옆 ja@381×240에서
+
+  brand 유지 + 92vh maxH≈220.8이 panelOver≈3.25 + CTA 일부만 보임
+
+  (rVis≈37.5/44, retryOut/selOut). h2≈71 랩. @399×200은 전 로케일 HARD
+
+  (rVis=0류). @×200은 brand만으로도 부족 → h2 1줄 compact까지 필요.
+
+  @400은 brand 유지·CTA full이라 미확장. loading residual HARD=0.
+
+  rotate #app 대비 HARD는 뷰포트 커버 설계상 false-positive → SKIP.
+
+
+
+- Ship: css/style.css TICK155 (TICK154 다음)
+
+  @media (max-height:420px) and (min-width:381px) and (max-width:399px)
+
+  and (orientation:landscape)
+
+    screen-asset-error { max-height:100% } + brand none + h2 14px compact
+
+  문자열 삭제 없음. tip densify invent 거부. tick152 풀 row-CTA 복제 거부
+
+  (mild brand/h2면 충분 — tick154와 동일). max-width:400 확장 거부.
+
+  tick154 블록 인플레이스 확장 거부(additive TICK155). js/main.js 미변경.
+
+  tip/dens / tick69–154 유지.
+
+
+
+- SKIP: soft AE@400 / title brand HI / VFX dens / cliff soft / float·portrait /
+
+  loading 재개입 / rotate invent.
+
+
+
+- QA: asset-error-midnarrow + asset-error-nearultra + asset-error-ultranarrow +
+
+  asset-error-overlay + loading-nearultra + loading-ultranarrow +
+
+  loading-bar-newui + rotate + touch-hud-cliff + ultranarrow + pad-compact +
+
+  corridor + hold-muzzle dens frozen + particle + touch-pad labels +
+
+  select-fitH-health + fitH-parity + gameplay/weapon ALL PASS.
+
+  AE HARD ja@381 / @399×200 → 0. dens FROZEN. tick69–154 유지.
+
+
+
+- 점수(정직): UI ≈79 (+0, 80+ 금지), VFX ≈69 (+0, 70+ 금지).
+
+
+
+- 다음(tick156): PREFERRED — HARD muddy 없으면 honest +0 residual scan /
+
+  soft AE@400 playtest only /
+
+  AE@400 NEW unread만 재개입 /
+
+  loading@≤200 brand-less human-feel /
+
+  @361–363 soft spill playtest /
+
+  float parked feel / title brand playtest /
+
+  select dossier kit wrap playtest / pause es/ru@320 playtest /
+
+  @280 chrome OOB playtest only /
+
+  tick148≤340 actions-zone feel playtest / VFX dens frozen.
+
+
+
+Model: inherit
+
+Korean-ready: yes

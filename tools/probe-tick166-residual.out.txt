@@ -1,0 +1,209 @@
+SOFT options ko@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=49 min=21px short=true brandHidden=true
+SOFT title ko@320x200 over=2 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select ko@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ko@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options en@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=54 min=26px short=true brandHidden=true
+SOFT title en@320x200 over=2 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok select en@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial en@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options ru@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=49 min=21px short=true brandHidden=true
+SOFT title ru@320x200 over=2 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select ru@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ru@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options pt@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=54 min=26px short=true brandHidden=true
+SOFT title pt@320x200 over=2 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select pt@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial pt@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options es@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=54 min=26px short=true brandHidden=true
+SOFT title es@320x200 over=2 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select es@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial es@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options zh-Hant@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=50 min=22px short=true brandHidden=true
+SOFT title zh-Hant@320x200 over=2 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok select zh-Hant@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial zh-Hant@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options ja@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=50 min=20px short=true brandHidden=true
+SOFT title ja@320x200 over=2 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select ja@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ja@320x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options ko@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=69 min=41px short=true brandHidden=true
+ok select ko@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ko@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+ok options en@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=74 min=46px short=true brandHidden=true
+ok select en@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial en@360x200 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+SOFT options ru@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=69 min=41px short=true brandHidden=true
+ok select ru@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ru@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+ok options pt@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=74 min=46px short=true brandHidden=true
+ok select pt@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial pt@360x200 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options es@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=74 min=46px short=true brandHidden=true
+ok select es@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial es@360x200 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+SOFT options zh-Hant@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=70 min=42px short=true brandHidden=true
+ok select zh-Hant@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial zh-Hant@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options ja@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=67 min=40px short=true brandHidden=true
+ok select ja@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ja@360x200 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options ko@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=71 min=43px short=true brandHidden=true
+ok select ko@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ko@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+ok options en@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=76 min=48px short=true brandHidden=true
+ok select en@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial en@360x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+SOFT options ru@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=71 min=43px short=true brandHidden=true
+ok select ru@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ru@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+ok options pt@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=76 min=48px short=true brandHidden=true
+ok select pt@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial pt@360x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options es@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=76 min=48px short=true brandHidden=true
+ok select es@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial es@360x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+SOFT options zh-Hant@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=71 min=43px short=true brandHidden=true
+ok select zh-Hant@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial zh-Hant@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+SOFT options ja@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=71 min=43px short=true brandHidden=true
+ok select ja@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ja@360x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28
+ok options ko@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=66px short=true brandHidden=true
+ok title ko@400x240 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok select ko@400x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ko@400x240 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options en@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+ok title en@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select en@400x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial en@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options ru@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=67px short=true brandHidden=true
+ok title ru@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select ru@400x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ru@400x240 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options pt@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+ok title pt@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select pt@400x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial pt@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options es@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+ok title es@400x240 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok select es@400x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial es@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options zh-Hant@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=95 min=67px short=true brandHidden=true
+ok title zh-Hant@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select zh-Hant@400x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial zh-Hant@400x240 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options ja@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=93 min=65px short=true brandHidden=true
+ok title ja@400x240 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select ja@400x240 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ja@400x240 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options ko@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=66px short=true brandHidden=true
+SOFT title ko@400x280 over=16.3 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select ko@400x280 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ko@400x280 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options en@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+SOFT title en@400x280 over=16.3 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select en@400x280 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial en@400x280 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options ru@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=66px short=true brandHidden=true
+SOFT title ru@400x280 over=16.3 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok select ru@400x280 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ru@400x280 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options pt@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+SOFT title pt@400x280 over=16.3 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select pt@400x280 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial pt@400x280 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options es@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+SOFT title es@400x280 over=16.3 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select es@400x280 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial es@400x280 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44
+ok options zh-Hant@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=66px short=true brandHidden=true
+SOFT title zh-Hant@400x280 over=16.3 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select zh-Hant@400x280 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial zh-Hant@400x280 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options ja@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=93 min=65px short=true brandHidden=true
+SOFT title ja@400x280 over=16.3 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok select ja@400x280 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok tutorial ja@400x280 over=0 ctaOut=false ctaVis=45/45 secOut=false secVis=46/46
+ok options ko@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=139 min=111px short=true brandHidden=true
+ok select ko@480x288 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok options en@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=142 min=114px short=false brandHidden=true
+ok select en@480x288 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok options ru@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=139 min=111px short=true brandHidden=true
+ok select ru@480x288 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok options pt@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=142 min=114px short=false brandHidden=true
+ok select pt@480x288 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok options es@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=142 min=114px short=false brandHidden=true
+ok select es@480x288 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok options zh-Hant@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=139 min=112px short=true brandHidden=true
+ok select zh-Hant@480x288 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok options ja@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=138 min=110px short=true brandHidden=true
+ok select ja@480x288 over=0 ctaOut=false ctaVis=28/28 secOut=false secVis=28/28 backOut=false
+ok options ko@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=186 min=140px short=false brandHidden=true
+ok title ko@568x320 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options en@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=191 min=140px short=false brandHidden=true
+ok title en@568x320 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options ru@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=186 min=140px short=false brandHidden=true
+ok title ru@568x320 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options pt@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=191 min=140px short=false brandHidden=true
+ok title pt@568x320 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options es@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=191 min=140px short=false brandHidden=true
+ok title es@568x320 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options zh-Hant@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=45/45 actionsOut=false scrollH=187 min=140px short=false brandHidden=true
+ok title zh-Hant@568x320 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options ja@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=185 min=140px short=false brandHidden=true
+ok title ja@568x320 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options ko@800x450 over=0 maxH=414px fitH=450 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=174 min=140px short=false brandHidden=false
+ok title ko@800x450 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options en@800x450 over=0 maxH=414px fitH=450 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=180 min=140px short=false brandHidden=false
+ok title en@800x450 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options ru@800x450 over=0 maxH=414px fitH=450 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=174 min=140px short=false brandHidden=false
+ok title ru@800x450 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options pt@800x450 over=0 maxH=414px fitH=450 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=180 min=140px short=false brandHidden=false
+ok title pt@800x450 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options es@800x450 over=0 maxH=414px fitH=450 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=180 min=140px short=false brandHidden=false
+ok title es@800x450 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options zh-Hant@800x450 over=0 maxH=414px fitH=450 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=171 min=140px short=false brandHidden=false
+ok title zh-Hant@800x450 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options ja@800x450 over=0 maxH=414px fitH=450 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=172 min=140px short=false brandHidden=false
+ok title ja@800x450 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options ko@1280x560 over=0 maxH=515px fitH=560 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=275 min=140px short=false brandHidden=false
+ok title ko@1280x560 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options en@1280x560 over=0 maxH=515px fitH=560 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=281 min=140px short=false brandHidden=false
+ok title en@1280x560 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options ru@1280x560 over=0 maxH=515px fitH=560 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=275 min=140px short=false brandHidden=false
+ok title ru@1280x560 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options pt@1280x560 over=0 maxH=515px fitH=560 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=281 min=140px short=false brandHidden=false
+ok title pt@1280x560 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options es@1280x560 over=0 maxH=515px fitH=560 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=281 min=140px short=false brandHidden=false
+ok title es@1280x560 over=0 ctaOut=false ctaVis=46/46 secOut=false secVis=46/46 brandHidden=true
+ok options zh-Hant@1280x560 over=0 maxH=515px fitH=560 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=275 min=140px short=false brandHidden=false
+ok title zh-Hant@1280x560 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+ok options ja@1280x560 over=0 maxH=515px fitH=560 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=275 min=140px short=false brandHidden=false
+ok title ja@1280x560 over=0 ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 brandHidden=true
+
+SUMMARY hard=0 soft=29 ok=153 optionsHealthLive=0
+SOFT DETAIL (first 24):
+  options ko@320x200 over=0 scrollH=49 actionsOut=false health=0
+  title ko@320x200 over=2 scrollH=- actionsOut=false health=0
+  options en@320x200 over=0 scrollH=54 actionsOut=false health=0
+  title en@320x200 over=2 scrollH=- actionsOut=false health=0
+  options ru@320x200 over=0 scrollH=49 actionsOut=false health=0
+  title ru@320x200 over=2 scrollH=- actionsOut=false health=0
+  options pt@320x200 over=0 scrollH=54 actionsOut=false health=0
+  title pt@320x200 over=2 scrollH=- actionsOut=false health=0
+  options es@320x200 over=0 scrollH=54 actionsOut=false health=0
+  title es@320x200 over=2 scrollH=- actionsOut=false health=0
+  options zh-Hant@320x200 over=0 scrollH=50 actionsOut=false health=0
+  title zh-Hant@320x200 over=2 scrollH=- actionsOut=false health=0
+  options ja@320x200 over=0 scrollH=50 actionsOut=false health=0
+  title ja@320x200 over=2 scrollH=- actionsOut=false health=0
+  options ko@360x200 over=0 scrollH=69 actionsOut=false health=0
+  options ru@360x200 over=0 scrollH=69 actionsOut=false health=0
+  options zh-Hant@360x200 over=0 scrollH=70 actionsOut=false health=0
+  options ja@360x200 over=0 scrollH=67 actionsOut=false health=0
+  options ko@360x240 over=0 scrollH=71 actionsOut=false health=0
+  options ru@360x240 over=0 scrollH=71 actionsOut=false health=0
+  options zh-Hant@360x240 over=0 scrollH=71 actionsOut=false health=0
+  options ja@360x240 over=0 scrollH=71 actionsOut=false health=0
+  title ko@400x280 over=16.3 scrollH=- actionsOut=false health=0
+  title en@400x280 over=16.3 scrollH=- actionsOut=false health=0

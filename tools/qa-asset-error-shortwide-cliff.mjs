@@ -1,0 +1,276 @@
+/**
+ * Tick157: asset-error short-wide letterbox CTA cliff reclaim @≥400×221–223 —
+ * CSS markers + live CTA visibility with brand KEPT (maxH100 only).
+ */
+import assert from 'node:assert/strict';
+import { readFileSync, existsSync } from 'node:fs';
+import { createServer } from 'node:http';
+import { extname, join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { chromium } from 'playwright';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const css = readFileSync(join(root, 'css/style.css'), 'utf8');
+
+assert.match(css, /TICK157 — asset-error short-wide letterbox CTA cliff reclaim/);
+const idx = css.indexOf('TICK157 — asset-error short-wide letterbox CTA cliff reclaim');
+const idx159 = css.indexOf('TICK159 — asset-error short-wide cliff icon reopen');
+const block = css.slice(idx, idx159 > idx ? idx159 : idx + 1200);
+assert.match(
+  block,
+  /max-height:\s*223px\)\s*and\s*\(min-height:\s*221px\)\s*and\s*\(min-width:\s*400px\)\s*and\s*\(orientation:\s*landscape\)/,
+);
+assert.match(block, /screen-asset-error[\s\S]{0,160}?max-height:\s*100%/);
+// Tick157 itself: no brand hide / no h2 compact (tick159 adds h2 after this block)
+assert.doesNotMatch(block, /brand-mark\s*\{\s*display:\s*none/);
+assert.doesNotMatch(block, /font-size:\s*14px/);
+// Prior ships kept + tick159 strengthen present
+assert.match(css, /TICK159 — asset-error short-wide cliff icon reopen/);
+assert.match(css, /TICK156 — asset-error short-wide letterbox CTA reclaim/);
+assert.match(css, /TICK155 — asset-error mid-narrow letterbox CTA reclaim/);
+assert.match(css, /TICK154 — asset-error near-ultra letterbox CTA reclaim/);
+assert.match(css, /TICK152 — asset-error ultra-narrow letterbox reclaim/);
+// Do not raise tick157 gate to 240
+assert.doesNotMatch(block, /max-height:\s*240px/);
+
+const MIME = {
+  '.html': 'text/html; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.webp': 'image/webp',
+  '.json': 'application/json',
+  '.svg': 'image/svg+xml',
+  '.woff2': 'font/woff2',
+};
+
+function startServer() {
+  const server = createServer((req, res) => {
+    const urlPath = decodeURIComponent((req.url || '/').split('?')[0]);
+    const filePath = join(root, urlPath === '/' ? 'index.html' : urlPath.replace(/^\//, ''));
+    if (!filePath.startsWith(root) || !existsSync(filePath)) {
+      res.writeHead(404);
+      res.end('missing');
+      return;
+    }
+    res.writeHead(200, { 'Content-Type': MIME[extname(filePath)] || 'application/octet-stream' });
+    res.end(readFileSync(filePath));
+  });
+  return new Promise((resolve) => {
+    server.listen(0, '127.0.0.1', () => {
+      resolve({ server, url: `http://127.0.0.1:${server.address().port}/` });
+    });
+  });
+}
+
+const CASES = [
+  // cliff band — brand KEPT + CTA full
+  {
+    size: { width: 400, height: 221 },
+    h2: 'Falha ao carregar o estágio 1',
+    retry: 'Tentar de novo',
+    select: 'À seleção',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 400, height: 221 },
+    h2: 'Fallo al cargar la etapa 1',
+    retry: 'Reintentar',
+    select: 'A selección',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 400, height: 221 },
+    h2: 'Не удалось загрузить стадию 1',
+    retry: 'Повторить',
+    select: 'К выбору',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 400, height: 222 },
+    h2: 'Falha ao carregar o estágio 1',
+    retry: 'Tentar de novo',
+    select: 'À seleção',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 400, height: 223 },
+    h2: 'Не удалось загрузить стадию 1',
+    retry: 'Повторить',
+    select: 'К выбору',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 420, height: 221 },
+    h2: 'Falha ao carregar o estágio 1',
+    retry: 'Tentar de novo',
+    select: 'À seleção',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 480, height: 221 },
+    h2: 'Fallo al cargar la etapa 1',
+    retry: 'Reintentar',
+    select: 'A selección',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 568, height: 221 },
+    h2: 'Falha ao carregar o estágio 1',
+    retry: 'Tentar de novo',
+    select: 'À seleção',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 400, height: 221 },
+    h2: 'ステージ 1 読み込み失敗',
+    retry: '再試行',
+    select: '選択へ',
+    expectBrand: 'keep',
+  },
+  // tick156 keep — brand none @≤220
+  {
+    size: { width: 400, height: 220 },
+    h2: 'Falha ao carregar o estágio 1',
+    retry: 'Tentar de novo',
+    select: 'À seleção',
+    expectBrand: 'none',
+  },
+  {
+    size: { width: 400, height: 200 },
+    h2: 'ステージ 1 読み込み失敗',
+    retry: '再試行',
+    select: '選択へ',
+    expectBrand: 'none',
+  },
+  // brand keep above cliff
+  {
+    size: { width: 400, height: 224 },
+    h2: 'Falha ao carregar o estágio 1',
+    retry: 'Tentar de novo',
+    select: 'À seleção',
+    expectBrand: 'keep',
+  },
+  {
+    size: { width: 400, height: 240 },
+    h2: 'ステージ 1 読み込み失敗',
+    retry: '再試行',
+    select: '選択へ',
+    expectBrand: 'keep',
+  },
+];
+
+const { server, url } = await startServer();
+const browser = await chromium.launch({ headless: true });
+try {
+  for (const { size, h2, retry, select, expectBrand } of CASES) {
+    const page = await browser.newPage({ viewport: size });
+    try {
+      await page.goto(`${url}?cb=qa157-${size.width}x${size.height}-${h2.slice(0, 6)}`, {
+        waitUntil: 'domcontentloaded',
+        timeout: 60000,
+      });
+      await page.waitForSelector('#btn-start', { timeout: 60000 });
+      const m = await page.evaluate(
+        ({ h2, retry, select }) => {
+          document.body.classList.add('touch-ui', 'lao-newui');
+          const overlay = document.getElementById('overlay');
+          const content = document.getElementById('overlay-content');
+          overlay.classList.add('show');
+          overlay.classList.remove('hidden');
+          overlay.style.display = 'flex';
+          content.className = 'screen-asset-error';
+          content.style.cssText = '';
+          content.innerHTML = `
+            <span class="brand-mark">ASSET ERROR</span>
+            <span class="asset-error-icon" aria-hidden="true"></span>
+            <h2>${h2}</h2>
+            <div class="asset-error-msg"><p>ASSET LOAD FAILED: stage01/boss_core.png</p></div>
+            <span class="asset-error-deco" aria-hidden="true"></span>
+            <button class="btn btn-primary" id="btn-asset-retry">${retry}</button>
+            <button class="btn" id="btn-asset-select"><i class="btn-ico lobby-ico-back" aria-hidden="true"></i>${select}</button>
+          `;
+          void content.offsetHeight;
+          const appR = document.getElementById('app').getBoundingClientRect();
+          const ocR = content.getBoundingClientRect();
+          const brand = content.querySelector('.brand-mark');
+          const retryBtn = document.getElementById('btn-asset-retry');
+          const selBtn = document.getElementById('btn-asset-select');
+          const msg = content.querySelector('.asset-error-msg');
+          const h2el = content.querySelector('h2');
+          const panelOver = Math.max(0, ocR.bottom - appR.bottom, appR.top - ocR.top);
+          const out = (el) => {
+            const r = el.getBoundingClientRect();
+            return r.bottom > appR.bottom + 1.5 || r.top < appR.top - 1.5;
+          };
+          const vis = (el) => {
+            const r = el.getBoundingClientRect();
+            return Math.max(0, Math.min(r.bottom, appR.bottom) - Math.max(r.top, appR.top));
+          };
+          return {
+            panelOver: +panelOver.toFixed(2),
+            headroom: +(appR.bottom - ocR.bottom).toFixed(2),
+            ocH: +ocR.height.toFixed(2),
+            appH: +appR.height.toFixed(2),
+            maxH: getComputedStyle(content).maxHeight,
+            brandDisp: getComputedStyle(brand).display,
+            h2H: +h2el.getBoundingClientRect().height.toFixed(2),
+            msgVis: +vis(msg).toFixed(2),
+            msgH: +msg.getBoundingClientRect().height.toFixed(2),
+            retryOut: out(retryBtn),
+            selOut: out(selBtn),
+            rVis: +vis(retryBtn).toFixed(2),
+            sVis: +vis(selBtn).toFixed(2),
+            rH: +retryBtn.getBoundingClientRect().height.toFixed(2),
+            sH: +selBtn.getBoundingClientRect().height.toFixed(2),
+          };
+        },
+        { h2, retry, select },
+      );
+
+      assert.equal(m.retryOut, false, `@${size.width}x${size.height} retry OOB`);
+      assert.equal(m.selOut, false, `@${size.width}x${size.height} select OOB`);
+      assert.ok(
+        m.rVis >= m.rH - 2,
+        `@${size.width}x${size.height} retry clipped vis=${m.rVis}/${m.rH}`,
+      );
+      assert.ok(
+        m.sVis >= m.sH - 2,
+        `@${size.width}x${size.height} select clipped vis=${m.sVis}/${m.sH}`,
+      );
+      assert.ok(
+        m.msgVis >= m.msgH - 2,
+        `@${size.width}x${size.height} msg clipped vis=${m.msgVis}/${m.msgH}`,
+      );
+
+      if (expectBrand === 'none') {
+        assert.equal(m.brandDisp, 'none', `brand reclaimed @${size.width}x${size.height}`);
+      } else {
+        assert.notEqual(m.brandDisp, 'none', `brand kept @${size.width}x${size.height}`);
+      }
+
+      if (size.width >= 400 && size.height >= 221 && size.height <= 223) {
+        assert.ok(
+          m.maxH === '100%' || parseFloat(m.maxH) >= m.appH - 1,
+          `cliff band max-height prefers app box, got ${m.maxH}`,
+        );
+        assert.ok(m.panelOver <= 1.5, `cliff panelOver=${m.panelOver}`);
+      }
+
+      console.log(
+        `PASS @${size.width}x${size.height}`,
+        `over=${m.panelOver} hr=${m.headroom} ocH=${m.ocH}/${m.appH}`,
+        `brand=${m.brandDisp} maxH=${m.maxH} h2=${m.h2H}`,
+        `rVis=${m.rVis}/${m.rH} sVis=${m.sVis}/${m.sH} msg=${m.msgVis}/${m.msgH}`,
+      );
+    } finally {
+      await page.close();
+    }
+  }
+} finally {
+  await browser.close();
+  server.close();
+}
+
+console.log('qa-asset-error-shortwide-cliff: PASS');

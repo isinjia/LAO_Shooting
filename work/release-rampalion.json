@@ -1,0 +1,126 @@
+{
+ "runs": [
+  {
+   "pilot": "griffin",
+   "wallSec": 8,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "1033s 4:waves",
+    "1102s 4:boss-windup",
+    "1104s 4:boss",
+    "1232s 4:tally",
+    "1237s 4:exit",
+    "1238s 5:transition"
+   ],
+   "specials": 62,
+   "bombs": 14,
+   "simMin": 20.6,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "peregrinus",
+   "wallSec": 10,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "903s 4:waves",
+    "972s 4:boss-windup",
+    "975s 4:boss",
+    "1057s 4:tally",
+    "1062s 4:exit",
+    "1064s 5:transition"
+   ],
+   "specials": 95,
+   "bombs": 10,
+   "simMin": 17.7,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "rampalion",
+   "wallSec": 9,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "903s 4:waves",
+    "973s 4:boss-windup",
+    "976s 4:boss",
+    "1067s 4:tally",
+    "1072s 4:exit",
+    "1074s 5:transition"
+   ],
+   "specials": 38,
+   "bombs": 11,
+   "simMin": 17.9,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  }
+ ],
+ "ui": [
+  {
+   "label": "desktop",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "label": "phone",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "label": "tablet",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  }
+ ]
+}

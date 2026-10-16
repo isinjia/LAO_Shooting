@@ -1,0 +1,82 @@
+KIT LORE TICK 02 — HIRUME / CONSTANTIA COMBAT FEEL (NOT LABELS)
+Date: 2026-10-05
+Stopped remaining-character kit work (LRL/Merlin/Fafnir/Labiata/Emily) per user complaint.
+
+================================================================
+ROOT CAUSE (name-only vs spawn still old)
+================================================================
+Tick1 changed kit i18n and a few spawn flags, but play still used the old
+silhouettes:
+
+1) Hirume HOLD still spawned style `sunbird`.
+   shot-fx / projectile-vfx treated `sunbird` as the PHOENIX WING FAN
+   (`holdFan`, `phoenixFan`, "Phoenix tip — rising wing chips").
+   Tick1 only removed `homing`; motion was still a fast forward fire orb
+   with the same phoenix particle language. VFX HOLD_STYLE map already
+   said hirume → `flameward`, but fireCharacterCharge never spawned it.
+
+2) Hirume SHOT stayed `yatagarasu` / `foxflame` jets at 800 px/s — the
+   pre-lore "familiar wide-formation fan". blastRadius was a hidden
+   number; draw was still a long fire jet.
+
+3) Constantia HOLD used `lockround` but polish-fx grouped
+   `sightbeam || tracer || lockround` as the same LANCE hit burst.
+   The slug flew at rifle speed with no drop — felt like the old gold dart.
+
+4) Select-screen Playwright in tick1 only read dossier labels
+   (KIT_VERIFY_OK). In-stage firing was explicitly not exercised.
+
+Grep now: Hirume/Constantia spawn paths do not emit `sunbird`, `sightbeam`,
+or SHOT/HOLD `homing`. `sunbird`/`sightbeam` remain in shared VFX tables
+as unused legacy kits so other draw branches do not explode. Bori C still
+homes (wiki Ankle Biter companion).
+
+================================================================
+WHAT ACTUALLY CHANGED IN JS
+================================================================
+js/weapon-skills.js
+  Hirume HOLD: style `flameward` (cloud/napalm, not phoenix fan), ay gravity,
+  upward kick then drop, large blastRadius, no pierce, no homing.
+  Constantia HOLD: slower fat `lockround` (r~16), ay=55 drop, no beamLength,
+  no homing.
+
+js/player.js
+  Hirume SHOT: fatter foxflame puffs, blastRadius on every puff, slight ay,
+  no pierce laser, wider side 50% cones.
+  Constantia SHOT: slower 720, larger tracer r, still aimed, no homing.
+  Options: fatter tracers; Hirume escorts get ay + splash.
+
+js/assets.js — shotSpeed / r for both.
+js/shot-fx.js — flameward napalm chips ≠ sunbird phoenix wings.
+js/projectile-vfx.js — flameward holdIdentity is falling ember (arty), not fan.
+js/polish-fx.js — tracer/lockround ungrouped from sightbeam lance sparks.
+
+Tests: test-basic-shots, test-weapon-roles, test-original-skill-roles,
+test-weapon-range, tools/dump-hirume-constantia-combat.mjs
+Playwright: tools/probe-kit-lore-live.mjs against http://127.0.0.1:5188/
+  Hirume live styles: foxflame + flameward, leftover []
+  Constantia live styles: tracer + lockround, leftover []
+  Select kit lines still 태양 숨결 / 라이플 사격 (labels unchanged on purpose).
+
+================================================================
+HOW TO SEE IT IN PLAY
+================================================================
+Hirume: tap Z = fat falling fire puffs with splash. Hold Z until charge
+releases = slow arcing NAPALM BLOOMS (round ember clouds that drop),
+not a bird / not a laser jet. C still parks 퇴마 결계 (sunseal).
+
+Constantia: tap Z = brass rifle capsules that SNAP-AIM (no curve-seek).
+Hold Z = one much fatter slug that SAGS while flying. C still one Bori.
+
+Do not expect dossier text to change; the complaint was combat feel.
+
+================================================================
+REMAINING (not this tick)
+================================================================
+LRL returning HOLD, Merlin vertical Big Gun mismatch, Fafnir EMP vs
+Shock and Awe, Labiata cross-cut name, Emily special.emily i18n.
+Do not revert Hirume phoenix or Constantia sightbeam.
+
+Preserved: 5 stages, pads, i18n structure, START/CLEAR, WARNING, deathbomb,
+power Lv5, death reset, fire-rate ~half, Constantia die eyes.
+Korean-ready.

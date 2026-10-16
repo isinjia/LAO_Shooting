@@ -1,0 +1,84 @@
+CHAR SELECT PORTRAIT FIX — Event_Btn → real unit faces
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Texture\FormationIcon\
+
+================================================================
+WHAT WAS WRONG
+================================================================
+UI sync tick02–05 painted SelectWorld_Event_Btn PNGs (stage/event cards)
+as `.char-card` CSS backgrounds (nth-child 1–8 + selected overrides).
+Those are EVENT ART, not character portraits — cards looked like wrong /
+placeholder characters jammed behind a tiny SD thumb.
+MissORCA title art stays removed (not restored).
+
+================================================================
+FIX SHIPPED
+================================================================
+1) CSS (style.css)
+   - Removed all SelectWorld_Event_* urls from `.char-grid .char-card`
+     (idle + selected + tick05 brass selected nth-child overrides).
+   - Cards use neutral / brass plate gradients only.
+   - `.char-preview` emphasized (96px, cover, z-index 1). Event_Btn kept
+     on non-card chrome (select backdrop wash, rails, etc.) — not faces.
+
+2) Assets copied → assets/ui/char-select/{key}.png
+   Source: Unity FormationIcon_*_N.png (exact cast, N skin).
+
+3) JS (main.js)
+   - SELECT_PORTRAITS map + selectPortraitSrc()
+   - Base roster cards + rare reveal use FormationIcon paths
+   - Fallback chain: FormationIcon → idle frame → anim.preview →
+     assets/sd_baked/{key}/preview.png
+   - Idle SD cycle disabled when FormationIcon is present (avoids
+     overwriting the correct portrait with sheet thumbs)
+
+4) rare-fanfare.js
+   - eternity / labiata / emily fanfare prefer FormationIcon face
+
+Preserved: layout HARD axes / fitH budget, i18n names, selection /
+RANDOM / cheat rare flow, Hirume + Constantia kits untouched.
+No AI images. No MissORCA restore.
+
+================================================================
+EACH CARD NOW SHOWS
+================================================================
+Slot / key        Face asset
+----------------  ----------------------------------------------------------
+1 hirume          assets/ui/char-select/hirume.png
+                  ← FormationIcon_3P_Hirume_N.png
+2 constantia      assets/ui/char-select/constantia.png
+                  ← FormationIcon_3P_ConstantiaS2_N.png
+3 lrl             assets/ui/char-select/lrl.png
+                  ← FormationIcon_PECS_LRL_N.png
+4 merlin          assets/ui/char-select/merlin.png
+                  ← FormationIcon_PECS_Merlin_N.png
+5 fafnir          assets/ui/char-select/fafnir.png
+                  ← FormationIcon_BR_Fafnir_N.png
+6 random          dice / ??? face (unchanged); on rare reveal →
+                  eternity | labiata | emily FormationIcon above
+
+Also available in-project (fallback / in-game SD, not card face now):
+  assets/sd_baked/{key}/preview.png + sheet idle for all 8 units.
+
+================================================================
+REMAINING GAPS (honest)
+================================================================
+- No separate "SelectChar" lobby full-body plate set was wired; FormationIcon
+  (square roster bust) is the LAO portrait used here. PCInvenIcon also
+  exists in Unity for all 8 if a denser inventory-style icon is preferred later.
+- Texture/face/ dialogue faces: only Labiata surprised variants found;
+  not used (expression packs, not select portraits).
+- Select screen backdrop still uses Event_03 soft wash (decorative panel,
+  not a character card face).
+- Emily / Labiata / etc. SD bake previews remain for gameplay; select UI
+  no longer cycles SD idle on cards (static FormationIcon for identity).
+- Browser visual QA of select screen not re-run in this tick (assets+CSS+JS wired).
+
+================================================================
+DO NOT
+================================================================
+Do not re-bind SelectWorld_Event_Btn to `.char-card` faces.
+Do not invent AI portraits.
+Do not restore MissORCA title art.
+Do not edit Hirume sunbird / Constantia lock kits for this portrait fix.

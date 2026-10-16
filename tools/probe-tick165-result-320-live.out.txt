@@ -1,0 +1,21 @@
+DUMP {
+  "appH": 180,
+  "ocH": 180,
+  "maxH": "180px",
+  "pad": "6px/4px cs=6px/4px",
+  "brand": 0,
+  "h2": 24,
+  "deco": 0,
+  "score": 43,
+  "meta": 93,
+  "retry": 24,
+  "title": 24,
+  "retryMt": "0px",
+  "titleMt": "0px",
+  "gap": "normal",
+  "html": "\n    <div class=\"panel-frame\" aria-hidden=\"true\">\n      <i class=\"pf-corner pf-tl\"></i><i class=\"pf-corner pf-tr\"></i>\n      <i class=\"pf-corner pf-bl\"></i><i class=\"pf-corner pf-br\"></i>\n    </div>\n    <span class=\"brand-mark\" style=\"margin-bottom: 6px; display: none;\">SYSTEM DOWN</span>\n    <h2 style=\"margin: 0px; font-size: 13px; letter-spacing: 0.1em;\">GAME OVER</h2>\n    <span class=\"result-de"
+}
+ok metaHide over=0 ocH=105 cta=24/24 out=false sec=24 out=false scoreH=43 metaH=0
+HARD ctaRow over=0 ocH=180 cta=13/24 out=true sec=13 out=true scoreH=43 metaH=93
+ok meta2 over=0 ocH=162 cta=24/24 out=false sec=24 out=false scoreH=43 metaH=57
+ok scoreOnly over=0 ocH=105 cta=24/24 out=false sec=24 out=false scoreH=43 metaH=0

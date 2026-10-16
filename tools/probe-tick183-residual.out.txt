@@ -1,0 +1,27 @@
+=== A) sortie-load fail overlay @ NEW mid-short (screen-result gameover) ===
+SORTIE-ERR pt@360×218 → ok h2=48/48 oc=48 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=200.5 appH=202.5 over=0 appTop=7.75 maxH=200.56px
+  h2: Falha ao carregar a decolagem | retry: Tentar de novo | sel: À seleção | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR es@360×218 → ok h2=24/24 oc=24 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=180.1 appH=202.5 over=0 appTop=7.75 maxH=200.56px
+  h2: Fallo al cargar la salida | retry: Reintentar | sel: A selección | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR ru@360×218 → ok h2=54/54 oc=54 retry=46/46 oc=46 sel=46/46 oc=46 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=169.1 appH=202.5 over=0 appTop=7.75 maxH=200.56px
+  h2: Не удалось загрузить вылет | retry: Повторить | sel: К выбору | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR pt@375×212 → ok h2=48/48 oc=48 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=195 appH=210.9 over=0 appTop=0.53 maxH=195.04px
+  h2: Falha ao carregar a decolagem | retry: Tentar de novo | sel: À seleção | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR es@375×212 → ok h2=24/24 oc=24 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=138.1 appH=210.9 over=0 appTop=0.53 maxH=195.04px
+  h2: Fallo al cargar la salida | retry: Reintentar | sel: A selección | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR ru@375×212 → ok h2=54/54 oc=54 retry=46/46 oc=46 sel=46/46 oc=46 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=169.1 appH=210.9 over=0 appTop=0.53 maxH=195.04px
+  h2: Не удалось загрузить вылет | retry: Повторить | sel: К выбору | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR pt@404×228 → ok h2=24/24 oc=24 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=138.1 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Falha ao carregar a decolagem | retry: Tentar de novo | sel: À seleção | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR es@404×228 → ok h2=24/24 oc=24 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=138.1 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Fallo al cargar la salida | retry: Reintentar | sel: A selección | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR ru@404×228 → ok h2=27/27 oc=27 retry=46/46 oc=46 sel=46/46 oc=46 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=142.1 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Не удалось загрузить вылет | retry: Повторить | sel: К выбору | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR pt@430×245 → ok h2=24/24 oc=24 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=138.1 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Falha ao carregar a decolagem | retry: Tentar de novo | sel: À seleção | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR es@430×245 → ok h2=24/24 oc=24 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=138.1 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Fallo al cargar la salida | retry: Reintentar | sel: A selección | msg: PROBE SORTIE GATE FAIL
+SORTIE-ERR ru@430×245 → ok h2=27/27 oc=27 retry=46/46 oc=46 sel=46/46 oc=46 h2None=false rNone=false sNone=false h2Out=false/false rOut=false/false sOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=142.1 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Не удалось загрузить вылет | retry: Повторить | sel: К выбору | msg: PROBE SORTIE GATE FAIL
+=== SUMMARY ===
+hard=0 soft=0 ok=12

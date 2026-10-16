@@ -1,0 +1,53 @@
+=== A) OPTIONS BACK @ NEW mid-short (not tick171 390/412/428) ===
+OPT pt@360×218 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=76 scrollMin=48px auto=0/54 none=false health=0 ocH=202 appH=202.5 over=0 appTop=7.75 maxH=202px inlineMaxH=202px
+  h2: Configurações | back: Voltar | caps=[]
+  ocBox t=8 b=210 w=345.6 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":134,"b":178,"l":119.5,"r":240.5}
+OPT es@360×218 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=76 scrollMin=48px auto=0/54 none=false health=0 ocH=202 appH=202.5 over=0 appTop=7.75 maxH=202px inlineMaxH=202px
+  h2: Ajustes | back: Volver | caps=[]
+  ocBox t=8 b=210 w=345.6 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":134,"b":178,"l":118.8,"r":241.2}
+OPT ru@360×218 → SOFT h2=27/27 oc=27 back=46/46 oc=46 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=71 scrollMin=48px auto=0/54 none=false health=0 ocH=202 appH=202.5 over=0 appTop=7.75 maxH=202px inlineMaxH=202px
+  h2: Настройки | back: Назад | caps=[]
+  ocBox t=8 b=210 w=345.6 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":132,"b":178,"l":118.6,"r":241.4}
+OPT pt@375×212 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=84 scrollMin=56px auto=0/50 none=false health=0 ocH=210 appH=210.9 over=0 appTop=0.53 maxH=210px inlineMaxH=210px
+  h2: Configurações | back: Voltar | caps=[]
+  ocBox t=1 b=211 w=360 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":135,"b":179,"l":127.1,"r":247.9}
+OPT es@375×212 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=84 scrollMin=56px auto=0/50 none=false health=0 ocH=210 appH=210.9 over=0 appTop=0.53 maxH=210px inlineMaxH=210px
+  h2: Ajustes | back: Volver | caps=[]
+  ocBox t=1 b=211 w=360 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":135,"b":179,"l":126,"r":249}
+OPT ru@375×212 → ok h2=27/27 oc=27 back=46/46 oc=46 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=79 scrollMin=56px auto=0/54 none=false health=0 ocH=210 appH=210.9 over=0 appTop=0.53 maxH=210px inlineMaxH=210px
+  h2: Настройки | back: Назад | caps=[]
+  ocBox t=1 b=211 w=360 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":133,"b":179,"l":126.1,"r":248.9}
+OPT pt@404×228 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=101 scrollMin=73px auto=0/54 none=false health=0 ocH=227 appH=227.3 over=0 appTop=0.38 maxH=227px inlineMaxH=227px
+  h2: Configurações | back: Voltar | caps=[]
+  ocBox t=0.5 b=227.5 w=387.8 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":151.5,"b":195.5,"l":141.4,"r":262.5}
+OPT es@404×228 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=101 scrollMin=73px auto=0/50 none=false health=0 ocH=227 appH=227.3 over=0 appTop=0.38 maxH=227px inlineMaxH=227px
+  h2: Ajustes | back: Volver | caps=[]
+  ocBox t=0.5 b=227.5 w=387.8 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":151.5,"b":195.5,"l":140.8,"r":263.2}
+OPT ru@404×228 → ok h2=27/27 oc=27 back=46/46 oc=46 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=96 scrollMin=73px auto=0/54 none=false health=0 ocH=227 appH=227.3 over=0 appTop=0.38 maxH=227px inlineMaxH=227px
+  h2: Настройки | back: Назад | caps=[]
+  ocBox t=0.5 b=227.5 w=387.8 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":149.5,"b":195.5,"l":140.5,"r":263.4}
+OPT pt@430×245 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=115 scrollMin=87px auto=0/54 none=false health=0 ocH=241 appH=241.9 over=0 appTop=1.56 maxH=241px inlineMaxH=241px
+  h2: Configurações | back: Voltar | caps=[]
+  ocBox t=2 b=243 w=412.8 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":168,"b":212,"l":154.4,"r":275.5}
+OPT es@430×245 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=115 scrollMin=87px auto=0/54 none=false health=0 ocH=241 appH=241.9 over=0 appTop=1.56 maxH=241px inlineMaxH=241px
+  h2: Ajustes | back: Volver | caps=[]
+  ocBox t=2 b=243 w=412.8 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":168,"b":212,"l":153.8,"r":276.2}
+OPT ru@430×245 → ok h2=26/26 oc=26 back=46/46 oc=46 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=111 scrollMin=87px auto=0/54 none=false health=0 ocH=241 appH=241.9 over=0 appTop=1.56 maxH=241px inlineMaxH=241px
+  h2: Настройки | back: Назад | caps=[]
+  ocBox t=2 b=243 w=412.8 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=hidden/hidden
+  backBox {"t":166,"b":212,"l":153.5,"r":276.4}
+=== SUMMARY ===
+hard=0 soft=1 ok=11 optionsHealthLive=0
+SOFT DETAIL (panelOver / oc-out visApp-full / health inflate / scrollH<72 — invent CLOSED):
+  OPT ru@360×218 → SOFT h2=27/27 oc=27 back=46/46 oc=46 h2None=false backNone=false h2Out=false/false backOut=false/false actOut=false ov=hidden/hidden brandNone=true brandDisp=none short=true scrollH=71 scrollMin=48px auto=0/54 none=false health=0 ocH=202 appH=202.5 over=0 appTop=7.75 maxH=202px inlineMaxH=202px

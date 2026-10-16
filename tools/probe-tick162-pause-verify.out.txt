@@ -1,0 +1,31 @@
+ok ko@400x240 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok en@400x240 over=0 maxH=- brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok ru@400x240 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok pt@400x240 over=0 maxH=- brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok es@400x240 over=0 maxH=- brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok zh-Hant@400x240 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok ja@400x240 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok ko@400x280 over=0 maxH=225px brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok en@400x280 over=0 maxH=225px brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok ru@400x280 over=0 maxH=225px brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok pt@400x280 over=0 maxH=225px brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok es@400x280 over=0 maxH=225px brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok zh-Hant@400x280 over=0 maxH=225px brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok ja@400x280 over=0 maxH=225px brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok ko@480x288 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok en@480x288 over=0 maxH=- brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok ru@480x288 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok pt@480x288 over=0 maxH=- brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok es@480x288 over=0 maxH=- brand=none actions=102 compact=true cta=30/30 quit=30/30 ctaOut=false quitOut=false actionsOut=false
+ok zh-Hant@480x288 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok ja@480x288 over=0 maxH=- brand=none actions=108 compact=true cta=32/32 quit=32/32 ctaOut=false quitOut=false actionsOut=false
+ok ko@568x320 over=0 maxH=- brand=none actions=171 compact=false cta=45/45 quit=46/46 ctaOut=false quitOut=false actionsOut=false
+ok en@568x320 over=0 maxH=- brand=none actions=166 compact=false cta=44/44 quit=44/44 ctaOut=false quitOut=false actionsOut=false
+ok ru@568x320 over=0 maxH=- brand=none actions=191 compact=false cta=45/45 quit=46/46 ctaOut=false quitOut=false actionsOut=false
+ok pt@568x320 over=0 maxH=- brand=none actions=166 compact=false cta=44/44 quit=44/44 ctaOut=false quitOut=false actionsOut=false
+ok es@568x320 over=0 maxH=- brand=none actions=166 compact=false cta=44/44 quit=44/44 ctaOut=false quitOut=false actionsOut=false
+ok zh-Hant@568x320 over=0 maxH=- brand=none actions=171 compact=false cta=45/45 quit=46/46 ctaOut=false quitOut=false actionsOut=false
+ok ja@568x320 over=0 maxH=- brand=none actions=171 compact=false cta=45/45 quit=46/46 ctaOut=false quitOut=false actionsOut=false
+
+=== HARD SUMMARY ===
+count=0

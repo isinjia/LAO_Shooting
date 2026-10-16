@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+  // Phones / tablets play through play.html: it turns the game frame 90deg while the device
+  // is upright, so there's no need to rotate the screen first (see play.html).
+  (function () {
+    var q = location.search;
+    if (window.top !== window || /[?&]embed=1/.test(q)) return;
+    if (navigator.webdriver && !/[?&]shell=1/.test(q)) return;
+    var touch = (window.matchMedia && matchMedia('(pointer: coarse)').matches)
+      || (navigator.maxTouchPoints > 0 && Math.min(innerWidth, innerHeight) <= 900);
+    if (touch) location.replace('play.html' + q + location.hash);
+  })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#050608" />
+  <title>LAST SHOOTING — 사령관은 사정 중입니다.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Default KO path only; JP/SC/TC load on demand via i18n.ensureLocaleFont -->
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div class="app-bezel" aria-hidden="true"></div>
+    <canvas id="game" width="960" height="540"></canvas>
+
+    <div id="auto-fire-toast" class="auto-fire-toast" aria-live="polite"></div>
+    <div id="hud">
+      <div class="hud-top">
+        <div class="hud-cluster hud-stocks">
+          <div class="hud-cluster-accent" aria-hidden="true"></div>
+          <div class="hud-plate-ticks" aria-hidden="true"></div>
+          <div class="stock-row" id="life-stock">
+            <span class="hud-lbl">LIFE</span>
+            <div class="pip-row" id="lives-pips" aria-hidden="true"></div>
+            <span class="hud-val hud-val-sm" id="lives">3</span>
+            <span class="life-warn-chip" id="life-warn" aria-hidden="true">WARNING</span>
+          </div>
+          <div class="stock-row" id="bomb-stock">
+            <span class="hud-lbl">BOMB</span>
+            <div class="pip-row pip-bomb" id="bombs-pips" aria-hidden="true"></div>
+            <span class="hud-val hud-val-sm" id="bombs">3</span>
+          </div>
+          <div class="stock-row stock-power">
+            <span class="hud-lbl">POWER</span>
+            <span class="power-badge" data-i18n-title="hud.powerTip" title="빨간 P 운반 적 처치 · P 4개로 Lv5">Lv <span id="power-lv">1</span></span>
+          </div>
+          <div class="stock-row hud-auto-chip" id="auto-fire-chip" hidden><span class="hud-auto-dot" aria-hidden="true"></span>AUTO</div>
+        </div>
+
+        <div class="hud-top-right">
+        <div class="hud-cluster hud-scores">
+          <div class="hud-cluster-accent" aria-hidden="true"></div>
+          <div class="hud-plate-ticks" aria-hidden="true"></div>
+          <div class="hud-stat hud-stat-score">
+            <span class="hud-lbl">SCORE</span>
+            <span class="hud-val" id="score">0000000</span>
+          </div>
+          <div class="hud-stat hud-stat-hi" hidden style="display:none">
+            <span class="hud-lbl">HI-SCORE</span>
+            <span class="hud-val" id="hi-score">0000000</span>
+          </div>
+        </div>
+        <div class="hud-cluster hud-meta">
+          <div class="hud-cluster-accent" aria-hidden="true"></div>
+          <div class="hud-stat">
+            <span class="hud-lbl">STAGE</span>
+            <span class="hud-val" id="stage-num">1</span>
+          </div>
+          <div class="hud-stat">
+            <span class="hud-lbl">GRAZE</span>
+            <span class="hud-val" id="graze">0</span>
+          </div>
+          <div class="hud-stat">
+            <span class="hud-lbl">COMBO</span>
+            <span class="hud-val hud-val-sm" id="combo-val">—</span>
+          </div>
+          <div class="hud-stat hud-audio" id="hud-audio">
+            <span class="hud-lbl">AUDIO</span>
+            <span class="hud-val hud-val-sm" id="mute-flag">BGM</span>
+          </div>
+        </div>
+        </div>
+        <span id="pause-flag" class="pause-chip" aria-hidden="true">PAUSE</span>
+      </div>
+
+      <div class="hud-bottom">
+        <div class="hud-cluster hud-gauges">
+          <div class="hud-cluster-accent hud-cluster-accent-brass" aria-hidden="true"></div>
+          <div class="hud-plate-ticks" aria-hidden="true"></div>
+          <div id="charge-row" class="gauge-row">
+            <span class="sp-label">SUB</span>
+            <div id="charge-track" data-i18n-title="hud.chargeTitle" title="사격 홀드 보조무기">
+              <div id="charge-fill"></div>
+            </div>
+          </div>
+          <div id="sp-row" class="gauge-row">
+            <span class="sp-label">SPECIAL</span>
+            <div id="sp-track" data-i18n-title="hud.spTitle" title="특수탄: 1~3칸에 따라 Lv1~3, C로 현재 레벨 소모">
+              <div id="sp-fill"></div>
+            </div>
+            <span id="sp-pct">Lv1</span>
+          </div>
+          <div id="sp-status" role="status" aria-live="polite" data-i18n="hud.spIdle">C · Lv1 집중탄 · 1칸 소모</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="boss-bar" class="hidden">
+      <div class="boss-frame">
+        <div class="boss-meta">
+          <span id="boss-tag">BOSS</span>
+          <span id="boss-name">BOSS</span>
+          <span id="boss-hp-pct">100%</span>
+        </div>
+          <div id="boss-hp-track"><div id="boss-hp-fill"></div><span class="boss-hp-ticks" aria-hidden="true"></span></div>
+      </div>
+    </div>
+
+    <div id="overlay">
+      <div class="overlay-veil" aria-hidden="true"></div>
+      <div id="overlay-content"></div>
+    </div>
+
+    <!-- On-screen pads (shown during play on touch / coarse pointer) -->
+    <div id="touch-controls" class="touch-controls tc-mode-fixed" aria-hidden="true">
+      <div class="tc-stick-zone" data-i18n-aria="tc.move" aria-label="이동">
+        <div class="tc-stick-base">
+          <span class="tc-stick-ring" aria-hidden="true"></span>
+          <span class="tc-stick-cross" aria-hidden="true"></span>
+          <div class="tc-stick-knob"></div>
+        </div>
+      </div>
+      <div class="tc-actions">
+        <button type="button" class="tc-btn tc-focus" data-tc="focus" data-i18n-aria="tc.focus" aria-label="저속"><span class="tc-glyph">◇</span><span class="tc-caption">FOCUS</span></button>
+        <button type="button" class="tc-btn tc-bomb" data-tc="bomb" data-i18n-aria="tc.bomb" aria-label="폭탄"><span class="tc-stock" id="tc-bomb-stock" aria-hidden="true">3</span><span class="tc-glyph">✕</span><span class="tc-caption">BOMB</span></button>
+        <button type="button" class="tc-btn tc-special" data-tc="special" data-i18n-aria="tc.special" aria-label="특수탄"><span class="tc-ready" aria-hidden="true">READY</span><span class="tc-glyph">◆</span><span class="tc-caption">SP</span></button>
+        <button type="button" class="tc-btn tc-leg" data-tc="leg" data-i18n-aria="tc.leg" aria-label="다리 스킬" hidden><span class="tc-glyph">»</span><span class="tc-caption">LEG</span></button>
+        <button type="button" class="tc-btn tc-fire" data-tc="shoot" data-i18n-aria="tc.shoot" aria-label="사격"><span class="tc-charge-ring" aria-hidden="true"></span><span class="tc-glyph">●</span><span class="tc-caption">FIRE</span></button>
+      </div>
+      <button type="button" class="tc-btn tc-pause" data-tc="pause" data-i18n-aria="tc.pause" aria-label="일시정지"><span class="tc-glyph">Ⅱ</span></button>
+    </div>
+  </div>
+
+  <div id="rotate-hint" class="rotate-hint" aria-hidden="true">
+    <div class="rotate-card">
+      <span class="rotate-icon" aria-hidden="true">⟲</span>
+      <strong data-i18n="rotate.title">가로 모드로 돌려 주세요</strong>
+      <p data-i18n-html="rotate.body">이 게임은 가로(랜드스케이프) 탄막입니다.<br/>기기를 옆으로 돌리면 플레이할 수 있습니다.</p>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

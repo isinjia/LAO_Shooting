@@ -1,0 +1,489 @@
+TICK54 handoff (2026-10-04) — graze tip/cool + bomb afterglow grit (HOLD dens untouched)
+
+
+
+======================================================================
+
+PRESERVE (do not break)
+
+======================================================================
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+
+
+
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+
+
+- Player-hit cool-white/rose shatter sparks (tick21) — keep; tip/cool refine (tick53).
+
+
+
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep; afterglow tip/cool (tick54).
+
+
+
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep; graze tip/cool (tick54).
+
+
+
+- C special muzzle stretch grit / white tip cores (tick24) — keep; tip/cool refine (tick53).
+
+
+
+- Deathbomb grace bloom + arc grit (tick25) — keep; tip/cool refine (tick52).
+
+
+
+- Option satellite soft trails (tick26) — keep; tip/cool refine (tick51).
+
+
+
+- Focus-mode bloom + orbit grit (tick27) — keep; tip/cool refine (tick52).
+
+
+
+- Rare fanfare soft orbit grit (tick28) — keep (CSS motes already tip-cored; untouched).
+
+
+
+- WARNING mid/boss palette + band grit + midboss-frame-pulse (tick29) — keep.
+
+
+
+- STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip (tick30) — keep.
+
+
+
+- Pause overlay menubg+world2 + Box2 plates + brand Activation cue (tick31) — keep.
+
+
+
+- Title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only (tick32) — keep.
+
+
+
+- STAGE START cyan wash + grit + dual stroke + START kind chip (tick33) — keep.
+
+
+
+- Loading bar Activation brand + track Tap1/chamfer + meta Box2 plate (tick34) — keep.
+
+
+
+- OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions (tick35) — keep.
+
+
+
+- Touch-pad dual-stroke captions + role tints + float MOVE zone hint (tick36) — keep.
+
+
+
+- Select dossier Box2/cyan/Activation + select-actions Box2 plate (tick37) — keep.
+
+
+
+- Result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash (tick38) — keep.
+
+
+
+- HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue (tick39) — keep.
+
+
+
+- Title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 (tick40) — keep.
+
+
+
+- Tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + note/actions Box2 (tick41) — keep.
+
+
+
+- Mobile portrait detection: isPortrait (h>w), syncPortraitHint, .rotate-hint.is-on,
+
+  orientationchange settle — do NOT break.
+
+
+
+- Rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke (tick42) — keep.
+
+
+
+- Asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+
+  Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 (tick43) — keep.
+
+
+
+- Boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+
+  track Box2+Tap1 + midboss-frame-pulse + critical pulse (tick44) — keep.
+
+
+
+- HUD stocks Box2 cyan rim/inset/chamfer + LIFE/BOMB dual-stroke + pip densify +
+
+  life-critical/extend/deathbomb pulses + life-warn Activation +
+
+  CHARGE cyan rim/inset/chamfer + Tap1 + ready Activation cue (tick45) — keep.
+
+
+
+- SP track Box2 cyan rim/inset/chamfer + Lv notches + Tap1 + brass fill +
+
+  dual-stroke SPECIAL/Lv chip + ready/is-ready-flash Activation cue (tick46) — keep.
+
+
+
+- SCORE/HI + STAGE meta Box2 cyan rim/inset/chamfer + brass SCORE +
+
+  dual-stroke HI/meta labels (tick47) — keep.
+
+
+
+- Canvas trail stretch + color ramp + hit grit soft-sprite language (tick48) — keep.
+
+
+
+- GPU mote tipBias/coolBand + streak tipCore + bomb grit tip-forward (tick49) — keep.
+
+
+
+- wipeSpark stretch+ramp + explosion fine grit (tick50) — keep;
+
+  qa-wipe-explosion snapshots pool fields (tick54 QA harden only).
+
+
+
+- Hold muzzle fine grit + option trail tip/cool (tick51) — keep.
+
+
+
+- Deathbomb + focus grit tip/cool (tick52) — keep.
+
+
+
+- specialFlash + player-hit grit tip/cool (tick53) — keep.
+
+
+
+======================================================================
+
+THIS TICK — one focused win: graze tip/cool + bomb afterglow grit
+
+======================================================================
+
+
+
+1) js/polish-fx.js · grazeSpark tip-forward / cool tip (n tiers frozen)
+
+
+
+   - n still load>0.75?1 : load>0.5?3 : 6 (light min 2) — NO dens churn;
+
+     flash bloom kept.
+
+
+
+   - Tip-forward stretch: fine 2.65+rand*2.4 / soft 1.85+rand*1.6
+
+     (was 2.2/1.4 muddier disks).
+
+
+
+   - Cool-white tip chips #fffef8 (i%4) + rampHot #fffef8
+
+     (was flat #ffffff rampHot).
+
+
+
+2) js/bomb-vfx.js · detonate afterglow residual grit (gritN / cast budget frozen)
+
+
+
+   - gritN still dense?(light?2:4):(light?3:6) — NO dens / budget churn
+
+     (cast budget 260/520 untouched).
+
+
+
+   - Tip-forward length/thin aspect: fine 18/2.55 · soft 24/3.6
+
+     (was flat 16+(j%3)*7 / 3.2+(j%3)*0.9).
+
+
+
+   - Cool tip chips #fffef8 (was #fff8e0).
+
+
+
+   - Boom-phase sparkN / type7 remap / ring grit n untouched.
+
+
+
+3) tools/qa-graze-pickup.mjs · tools/qa-bomb-density.mjs ·
+
+   tools/qa-gpu-mote-quality.mjs · tools/qa-wipe-explosion.mjs
+
+
+
+   - Source asserts graze n frozen + tip stretch / rampHot / tip chips;
+
+     afterglow gritN frozen + tip-forward len/thick + #fffef8.
+
+
+
+   - Runtime: graze maxStretch≥2.5 + tipHot; bomb budget ≤520.
+
+
+
+   - wipeSpark QA: snapshot r/stretch/ramp (pool reuse was mutating samples).
+
+
+
+4) Verify
+
+
+
+   - node tools/qa-graze-pickup.mjs PASS
+
+     graze active≥4 maxStretch≥2.5 tipHot≥1; pickup arcs intact.
+
+
+
+   - node tools/qa-bomb-density.mjs PASS
+
+     peakBudget≤520; afterglow tip-forward source asserts.
+
+
+
+   - node tools/qa-gpu-mote-quality.mjs PASS
+
+     HOLD dens frozen; gritN/sparkN/budget frozen; afterglow tip asserts.
+
+
+
+   - node tools/qa-wipe-explosion.mjs PASS (pool-snapshot harden).
+
+
+
+   - node tools/qa-particle-quality.mjs · qa-special-muzzle.mjs ·
+
+     qa-hold-muzzle.mjs · qa-deathbomb-feedback.mjs ·
+
+     qa-focus-mode.mjs · qa-option-trails.mjs ·
+
+     qa-hud-score-meta.mjs ·
+
+     test-gameplay-design.mjs · test-basic-shots.mjs ·
+
+     test-weapon-roles.mjs PASS
+
+
+
+======================================================================
+
+HONEST SCORE (do NOT claim polished / 70+)
+
+======================================================================
+
+
+
+  UI  ≈ 75 (unchanged this tick — SCORE/HI/meta plates from tick47 stand)
+
+
+
+  VFX ≈ 67 (honest +1: graze muddy soft-disk residual → tip-forward /
+
+            #fffef8 cool tips + bomb afterglow tip-thin/#fffef8;
+
+            same graze n tiers / gritN / cast 260/520;
+
+            HOLD dens untouched; rare fanfare CSS left alone;
+
+            still soft-sprite / budget-capped —
+
+            do NOT claim 70+)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+  user 60 band — do not round up to 70.
+
+
+
+  Expectation band this pass: UI ~73-77, VFX ~65-68.
+
+
+
+======================================================================
+
+NEXT TICK — open polish
+
+======================================================================
+
+
+
+  1) Optional: pause tip residual (pause-blurb dual-stroke / tip densify —
+
+     keep menubg+world2 + Box2 plates + brand Activation; no overlay churn).
+
+
+
+  2) Optional: #sp-status ready-line densify (dual-stroke / brass cue when
+
+     revealed — keep max-height hide/show wiring).
+
+
+
+  3) Optional: pause-chip Activation densify (opacity is-on wiring kept;
+
+     hud-top sparse).
+
+
+
+  4) Particle path diminishing: further soft-sprite stretch/ramp unlikely
+
+     to read as +1 — prefer UI residual above. No HOLD dens churn.
+
+     Pickup chips still on older stretch (2.1/1.25) if one more particle
+
+     tip pass is wanted — skip unless muddy. Rare fanfare CSS tip-cored.
+
+
+
+  5) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+
+
+
+  6) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+     death power reset / per-character hold identities / soft-particle language /
+
+     enemy bullet rim/core / player-hit rose shatter (+ tip/cool) /
+
+     bomb cast budget 260/520 (+ afterglow tip/cool) /
+
+     graze stretch glitter (+ tip/cool) / pickup soft-sprite chips /
+
+     C special muzzle stretch grit (+ tip/cool) /
+
+     deathbomb grace bloom+arc grit (+ tip/cool) /
+
+     option satellite soft trails (+ tip/cool) /
+
+     focus-mode bloom+orbit grit (+ tip/cool) / rare fanfare soft orbit grit /
+
+     WARNING mid/boss palette + band grit + midboss-frame-pulse /
+
+     STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip /
+
+     pause overlay menubg+world2 + Box2 plates + brand Activation cue /
+
+     title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only /
+
+     STAGE START cyan wash + grit + dual stroke + START kind chip /
+
+     loading bar Activation brand + track Tap1/chamfer + meta Box2 plate /
+
+     OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions /
+
+     touch-pad dual-stroke captions + float MOVE zone hint /
+
+     select dossier Box2/cyan/Activation + select-actions Box2 plate /
+
+     result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash /
+
+     HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue /
+
+     title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 /
+
+     tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + note/actions Box2 /
+
+     rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke /
+
+     asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+
+     Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 /
+
+     boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+
+     track Box2+Tap1 + midboss-frame-pulse + critical pulse /
+
+     HUD stocks Box2 cyan rim/inset/chamfer + LIFE/BOMB dual-stroke + pip densify +
+
+     life-critical/extend/deathbomb pulses + life-warn Activation +
+
+     CHARGE cyan rim/inset/chamfer + Tap1 + ready Activation cue /
+
+     SP track Box2 cyan rim/inset/chamfer + Lv notches + Tap1 + brass fill +
+
+     dual-stroke SPECIAL/Lv chip + ready/is-ready-flash Activation cue /
+
+     SCORE/HI + STAGE meta Box2 cyan rim/inset/chamfer + brass SCORE +
+
+     dual-stroke HI/meta labels /
+
+     canvas trail stretch + color ramp + hit grit (tick48) /
+
+     GPU mote tipBias/coolBand + streak tipCore + bomb grit tip-forward (tick49) /
+
+     wipeSpark stretch+ramp + explosion fine grit (tick50) /
+
+     hold muzzle fine grit + option trail tip/cool (tick51) /
+
+     deathbomb + focus grit tip/cool (tick52) /
+
+     specialFlash + player-hit grit tip/cool (tick53) /
+
+     graze tip/cool + bomb afterglow grit (tick54).
+
+
+
+Model: inherit
+
+
+
+Korean-ready: yes

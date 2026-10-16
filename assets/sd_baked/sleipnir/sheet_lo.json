@@ -1,0 +1,55 @@
+{
+ "scale": 0.5,
+ "sheets": {
+  "sheet_00.webp": {
+   "file": "sheet_00.lo.webp",
+   "sx": 0.5,
+   "sy": 0.49987760097919215
+  },
+  "sheet_01.webp": {
+   "file": "sheet_01.lo.webp",
+   "sx": 0.5,
+   "sy": 0.5
+  },
+  "sheet_02.webp": {
+   "file": "sheet_02.lo.webp",
+   "sx": 0.5,
+   "sy": 0.5002063557573256
+  },
+  "sheet_03.webp": {
+   "file": "sheet_03.lo.webp",
+   "sx": 0.5001564945226917,
+   "sy": 0.5
+  },
+  "sheet_04.webp": {
+   "file": "sheet_04.lo.webp",
+   "sx": 0.5,
+   "sy": 0.5
+  },
+  "sheet_05.webp": {
+   "file": "sheet_05.lo.webp",
+   "sx": 0.5,
+   "sy": 0.5
+  },
+  "sheet_06.webp": {
+   "file": "sheet_06.lo.webp",
+   "sx": 0.49987036556909514,
+   "sy": 0.4998771196854264
+  },
+  "sheet_07.webp": {
+   "file": "sheet_07.lo.webp",
+   "sx": 0.4998540145985401,
+   "sy": 0.5
+  },
+  "sheet_08.webp": {
+   "file": "sheet_08.lo.webp",
+   "sx": 0.4998540145985401,
+   "sy": 0.5001271940981938
+  },
+  "sheet_09.webp": {
+   "file": "sheet_09.lo.webp",
+   "sx": 0.4998540145985401,
+   "sy": 0.5
+  }
+ }
+}

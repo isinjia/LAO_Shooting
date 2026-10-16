@@ -1,0 +1,14 @@
+<!doctype html><html><body style="margin:0;background:#192538"><canvas id="c" width="960" height="630"></canvas><script type="module">
+import { drawCharacterShot } from '../js/shot-fx.js';
+import { SPECIAL_SKILL_PROFILES } from '../js/special-skill-profiles.js';
+const c=document.querySelector('canvas'),g=c.getContext('2d');
+const keys=['lrl','merlin','fafnir','eternity','labiata','emily'];
+for(let i=0;i<keys.length;i++){
+ const key=keys[i],s=SPECIAL_SKILL_PROFILES[key][2].shots[0];
+ const x=160+i%3*320,y=150+Math.floor(i/3)*310;
+ g.save();g.strokeStyle='#35526a';g.strokeRect(x-145,y-120,290,250);g.restore();
+ drawCharacterShot(g,{...s,x,y,vx:s.vx??(s.speed||1)*780,vy:s.vy??0,
+  special:true,age:0.4,phase:0,r:s.r,color:s.color||'#e4aaff',glow:s.glow||'#9fe8ff'});
+ g.fillStyle='#e9f7ff';g.font='20px sans-serif';g.fillText(key,x-130,y+105);
+}
+</script></body></html>

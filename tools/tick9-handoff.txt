@@ -1,0 +1,39 @@
+TICK9 handoff (2026-10-04) — Lobby icons + kit-distinct VFX (do not revert)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+
+THIS TICK
+1) Panel_Lobby icon slices from AssetBundle (Valofe_NewUi/resourece):
+   - Copied 12 Lobby_Icon_*.png + Info/Deactivation/Box/Title_Deco1-2/menubg2/world2.
+   - Title: left/right rails use real mission/squad/cha/equip/workshop/research/room/friend icons.
+   - Select: left + right rails (cha/squad/mission + book/box3/base); chip icons on ROSTER/SORTIE/CONFIRM.
+   - Options: SYSTEM/AUDIO/KEYS resource strip with research/workshop/equip icons; menubg2 wash.
+   - Short/narrow viewports still hide rails/status strips (CONTROLS protected).
+
+2) Kit-distinct VFX beyond tip/hit clarity:
+   - PolishFx.setKitPalette(color/glow/style) from CHAR_META.shot at Game ctor.
+   - hitSpark / explosion tint streaks+rings with kit palette (not only warm hsl).
+   - _kitHitAccent: per-style secondary mark (fox embers, tracer brass streak, cleave/plasma
+     slash, shell ring, lightning forks, coffin cross+slab, rail Mach ring).
+   - shot-fx kitWake: cheap canvas ornaments per primary shot style (ember orbit, casing/scope,
+     axe hash, exhaust ellipse, Tesla fork, coffin slab, plasma ticks, Mach chevron).
+
+HONEST SCORE
+  UI  ≈ 70 (lobby icon rails/chips + options strip; still short of live Panel_Lobby
+            destinations / full atlas chrome)
+  VFX ≈ 68 (kit-tinted hits/kills + shot wake accents; not NewUI-grade particle suites)
+  NEVER claim 90.
+  Baseline recall: user VFX60 UI40 → both above baseline, neither near polished client.
+  Expectation band for this pass: UI ~68-72, VFX ~66-70.
+
+NEXT TICK — open polish
+  1) Optional: wire newui_Lobby_Icon_Back / Icon_Info on back buttons / status cue.
+  2) Optional: Title_Deco1/2 or world2 on select brand — only if density still thin.
+  3) Charge/special kit VFX identity (hold/C) still middling vs primary shot wakes.
+  4) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  5) Live menu destinations still absent — do not fake clickable lobby apps.

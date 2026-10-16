@@ -1,0 +1,28 @@
+=== A) tutorial GO/SKIP @ NEW mid-short sizes ===
+TUT pt@360×218 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=202px
+TUT es@360×218 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=202px
+TUT ru@360×218 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=202px
+TUT pt@375×212 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=210px
+TUT es@375×212 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=210px
+TUT ru@375×212 → ok cta=45/45 sec=46/46 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=210px
+TUT pt@404×228 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=227px
+TUT es@404×228 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=227px
+TUT ru@404×228 → ok cta=45/45 sec=46/46 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=227px
+TUT pt@430×245 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=241px
+TUT es@430×245 → ok cta=44/44 sec=44/44 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=241px
+TUT ru@430×245 → ok cta=45/45 sec=46/46 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=241px
+=== B) result retry/title @ NEW mid-short sizes ===
+RES pt@360×218 → ok cta=24/24 sec=24/24 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=202px
+RES es@360×218 → ok cta=24/24 sec=24/24 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=202px
+RES ru@360×218 → ok cta=24/24 sec=24/24 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=202px
+RES pt@375×212 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=
+RES es@375×212 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=
+RES ru@375×212 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=
+RES pt@404×228 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=
+RES es@404×228 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=
+RES ru@404×228 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=
+RES pt@430×245 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=
+RES es@430×245 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=
+RES ru@430×245 → ok cta=28/28 sec=28/28 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=
+=== SUMMARY ===
+hard=0 soft=0 ok=24

@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><canvas id="screen" width="960" height="640"></canvas>
+<style>html,body{margin:0;background:#101827}canvas{display:block;margin:auto;background:#162539}</style>
+<script type="module">
+import { loadNativeWeaponFx } from '../js/native-weapon-fx.js';
+import { Player } from '../js/player.js';
+import { BombVfx } from '../js/bomb-vfx.js';
+import { AssetBank } from '../js/assets.js';
+await loadNativeWeaponFx();
+const canvas=document.getElementById('screen'),ctx=canvas.getContext('2d');
+const player=new Player('lrl',new AssetBank().CHAR_META.lrl,{idle:[],move:[],die:[]},960,640);
+player.x=165;player.y=318;player.tryBomb();
+const bomb=new BombVfx();bomb.trigger(player,[{alive:true,x:570,y:210},{alive:true,x:735,y:330},{alive:true,x:560,y:440}],0);
+window.player=player;window.bomb=bomb;
+window.preview=(t)=>{
+ ctx.clearRect(0,0,960,640);ctx.fillStyle='#162539';ctx.fillRect(0,0,960,640);
+ ctx.strokeStyle='#34516c';for(let y=70;y<640;y+=90){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(960,y);ctx.stroke()}
+ player.anim.time=t;player.anim.draw(ctx,player.x,player.y,118);
+ bomb.drawOriginalSkill2(ctx,t);
+ ctx.fillStyle='#d9eaf6';ctx.font='20px sans-serif';ctx.fillText('LRL · SKILL2 BOMB',25,35);
+};
+window.preview(0.45);
+</script>

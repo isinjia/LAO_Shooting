@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#142536}canvas{display:block}</style><canvas width="1000" height="420"></canvas><script type="module">
+import {loadNativeWeaponFx} from '/js/native-weapon-fx.js';
+import {BulletPool} from '/js/bullet.js';import {Player} from '/js/player.js';import {AssetBank} from '/js/assets.js';
+await loadNativeWeaponFx();const ctx=document.querySelector('canvas').getContext('2d');const meta=new AssetBank().CHAR_META;
+window.renderAt=(time)=>{const pool=new BulletPool();
+let next=0;
+for(let t=0;t<time;t+=1/120){
+ if(t>=next){for(const [i,lv] of [1,5].entries()){
+ const p={x:100,y:125+i*180,meta:meta.lrl,shotLevel:lv,focus:false,_shotCounter:0};Player.prototype.shoot.call(p,pool);
+ }next+=.28;}
+ pool.update(Math.min(1/120,time-t),1000,420);
+ for(const b of pool.list){if(b.alive&&b.x>=800){pool.nativeEffects.emit(b,'impact',{x:800,y:b.y});b.alive=false;}}
+}
+ctx.fillStyle='#142536';ctx.fillRect(0,0,1000,420);ctx.font='20px sans-serif';ctx.fillStyle='#d2e8f2';ctx.fillText('LRL / ARROW + SWORD WAVE',28,32);
+for(const [i,lv] of [1,5].entries()){ctx.fillText('P'+lv,30,100+i*180);ctx.strokeStyle='#365163';ctx.beginPath();ctx.moveTo(110,125+i*180);ctx.lineTo(920,125+i*180);ctx.stroke();ctx.strokeRect(786,105+i*180,28,40);}
+pool.draw(ctx);};window.renderAt(0);window.ready=true;
+</script>

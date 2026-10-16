@@ -1,0 +1,14 @@
+REMOVE EMILY SELECT CHEAT
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+Removed RANDOM-card sequence only:
+  ↑ ← ↓ → ↑ ↓   (up, left, down, right, up, down) → Emily
+  from js/rare-fanfare.js SELECT_CHEAT_CODES.
+
+Emily CHAR_META / PLAYER_KEYS / SD / portraits / kit stay (leftover, not named slot).
+RANDOM still uniform griffin / sleipnir / express76. MissORCA not restored.
+
+Remaining cheats:
+  ↑↓ ×4   Labiata
+  ←→ ×4   LRL

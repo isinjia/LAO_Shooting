@@ -1,0 +1,27 @@
+=== A) char-load fail overlay @ NEW mid-short (screen-result gameover) ===
+CHAR-ERR pt@360×218 → ok h2=48/48 oc=48 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=160.1 appH=202.5 over=0 appTop=7.75 maxH=200.56px
+  h2: Falha ao carregar personagem | back: Ao título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR es@360×218 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=136.1 appH=202.5 over=0 appTop=7.75 maxH=200.56px
+  h2: Fallo al cargar personaje | back: Al título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR ru@360×218 → ok h2=48/48 oc=48 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=160.1 appH=202.5 over=0 appTop=7.75 maxH=200.56px
+  h2: Не удалось загрузить персонажа | back: К титулу | msg: PROBE CHAR GATE FAIL
+CHAR-ERR pt@375×212 → ok h2=48/48 oc=48 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=160.1 appH=210.9 over=0 appTop=0.53 maxH=195.04px
+  h2: Falha ao carregar personagem | back: Ao título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR es@375×212 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=136.1 appH=210.9 over=0 appTop=0.53 maxH=195.04px
+  h2: Fallo al cargar personaje | back: Al título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR ru@375×212 → ok h2=52/52 oc=52 back=45/45 oc=45 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=165.1 appH=210.9 over=0 appTop=0.53 maxH=195.04px
+  h2: Не удалось загрузить персонажа | back: К титулу | msg: PROBE CHAR GATE FAIL
+CHAR-ERR pt@404×228 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=136.1 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Falha ao carregar personagem | back: Ao título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR es@404×228 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=136.1 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Fallo al cargar personaje | back: Al título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR ru@404×228 → ok h2=48/48 oc=48 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=160.1 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Не удалось загрузить персонажа | back: К титулу | msg: PROBE CHAR GATE FAIL
+CHAR-ERR pt@430×245 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=136.1 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Falha ao carregar personagem | back: Ao título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR es@430×245 → ok h2=26/26 oc=26 back=46/46 oc=46 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=140.1 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Fallo al cargar personaje | back: Al título | msg: PROBE CHAR GATE FAIL
+CHAR-ERR ru@430×245 → ok h2=24/24 oc=24 back=44/44 oc=44 h2None=false bNone=false h2Out=false/false bOut=false/false msg=20.1/20.1 none=false out=false brandNone=true brandVis=0/0 ocClass=screen-result gameover ov=auto/auto ocH=136.1 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Не удалось загрузить персонажа | back: К титулу | msg: PROBE CHAR GATE FAIL
+=== SUMMARY ===
+hard=0 soft=0 ok=12

@@ -1,0 +1,10 @@
+<!doctype html><html><body style="margin:0;background:#203247"><canvas id="c" width="720" height="240"></canvas><script type="module">
+import { drawCharacterShot } from '../js/shot-fx.js';
+const c=document.getElementById('c'),g=c.getContext('2d');
+const atlas=new Image();atlas.src='../assets/bori/Texture_3P_Bori_N.png';
+await atlas.decode();
+for(let i=0;i<4;i++){
+  drawCharacterShot(g,{x:90+i*175,y:115,vx:700,vy:0,r:37,style:'bori',age:i*0.07,color:'#ffdf89'});
+  g.fillStyle='#a9bbcb';g.font='14px sans-serif';g.fillText(`${i*0.07}s`,70+i*175,215);
+}
+</script></body></html>

@@ -1,0 +1,1054 @@
+{
+  "static": {
+    "ok": true,
+    "targets": [
+      6,
+      12,
+      18
+    ],
+    "bombLeader": 22,
+    "rows": [
+      {
+        "key": "hirume",
+        "level": 1,
+        "name": "야타가라스 정화 결계",
+        "bullets": 1,
+        "damage": 0,
+        "expectedDamage": 0,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "hirume",
+        "level": 2,
+        "name": "야타가라스 정화 결계",
+        "bullets": 1,
+        "damage": 0,
+        "expectedDamage": 0,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "hirume",
+        "level": 3,
+        "name": "야타가라스 정화 결계",
+        "bullets": 1,
+        "damage": 0,
+        "expectedDamage": 0,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "constantia",
+        "level": 1,
+        "name": "발목 잡기",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "constantia",
+        "level": 2,
+        "name": "발목 잡기",
+        "bullets": 1,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "constantia",
+        "level": 3,
+        "name": "발목 잡기",
+        "bullets": 1,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "lrl",
+        "level": 1,
+        "name": "어둠의 도끼 · 환영 돌진",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "lrl",
+        "level": 2,
+        "name": "어둠의 도끼 · 환영 돌진",
+        "bullets": 3,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "lrl",
+        "level": 3,
+        "name": "어둠의 도끼 · 환영 돌진",
+        "bullets": 1,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "sleipnir",
+        "level": 1,
+        "name": "제압 사격",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "sleipnir",
+        "level": 2,
+        "name": "제압 사격",
+        "bullets": 2,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "sleipnir",
+        "level": 3,
+        "name": "제압 사격",
+        "bullets": 3,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "merlin",
+        "level": 1,
+        "name": "UNREP 전술 지원",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "merlin",
+        "level": 2,
+        "name": "UNREP 전술 지원",
+        "bullets": 1,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "merlin",
+        "level": 3,
+        "name": "UNREP 전술 지원",
+        "bullets": 1,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "express76",
+        "level": 1,
+        "name": "화물 배송",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "express76",
+        "level": 2,
+        "name": "화물 배송",
+        "bullets": 1,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "express76",
+        "level": 3,
+        "name": "화물 배송",
+        "bullets": 1,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "fafnir",
+        "level": 1,
+        "name": "쇼크 앤 오",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "fafnir",
+        "level": 2,
+        "name": "쇼크 앤 오",
+        "bullets": 1,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "fafnir",
+        "level": 3,
+        "name": "쇼크 앤 오",
+        "bullets": 1,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "eternity",
+        "level": 1,
+        "name": "편히 잠드소서",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "eternity",
+        "level": 2,
+        "name": "편히 잠드소서",
+        "bullets": 2,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "eternity",
+        "level": 3,
+        "name": "편히 잠드소서",
+        "bullets": 3,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "labiata",
+        "level": 1,
+        "name": "백화제방",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "labiata",
+        "level": 2,
+        "name": "백화제방",
+        "bullets": 1,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "labiata",
+        "level": 3,
+        "name": "백화제방",
+        "bullets": 1,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "rampalion",
+        "level": 1,
+        "name": "라이온 로켓 펀치",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "rampalion",
+        "level": 2,
+        "name": "라이온 로켓 펀치",
+        "bullets": 2,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "rampalion",
+        "level": 3,
+        "name": "라이온 로켓 펀치",
+        "bullets": 3,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "griffin",
+        "level": 1,
+        "name": "핸드 미사일",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "griffin",
+        "level": 2,
+        "name": "핸드 미사일",
+        "bullets": 2,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "griffin",
+        "level": 3,
+        "name": "핸드 미사일",
+        "bullets": 3,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "emily",
+        "level": 1,
+        "name": "버스터 캐논",
+        "bullets": 1,
+        "damage": 6,
+        "expectedDamage": 6,
+        "damageOk": true,
+        "gaugeCost": 1,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "emily",
+        "level": 2,
+        "name": "버스터 캐논",
+        "bullets": 1,
+        "damage": 12,
+        "expectedDamage": 12,
+        "damageOk": true,
+        "gaugeCost": 2,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      },
+      {
+        "key": "emily",
+        "level": 3,
+        "name": "버스터 캐논",
+        "bullets": 1,
+        "damage": 18,
+        "expectedDamage": 18,
+        "damageOk": true,
+        "gaugeCost": 3,
+        "vsBombLeader": 22,
+        "belowBomb": true
+      }
+    ]
+  },
+  "runtime": {
+    "ok": false,
+    "error": "page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.char-card[data-key=\"hirume\"]')\u001b[22m\n"
+  },
+  "allOk": false,
+  "expected": {
+    "hirume": [
+      {
+        "bullets": 1,
+        "damage": 0
+      },
+      {
+        "bullets": 1,
+        "damage": 0
+      },
+      {
+        "bullets": 1,
+        "damage": 0
+      }
+    ],
+    "constantia": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 1,
+        "damage": 12
+      },
+      {
+        "bullets": 1,
+        "damage": 18
+      }
+    ],
+    "lrl": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 3,
+        "damage": 12
+      },
+      {
+        "bullets": 1,
+        "damage": 18
+      }
+    ],
+    "sleipnir": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 2,
+        "damage": 12
+      },
+      {
+        "bullets": 3,
+        "damage": 18
+      }
+    ],
+    "merlin": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 1,
+        "damage": 12
+      },
+      {
+        "bullets": 1,
+        "damage": 18
+      }
+    ],
+    "express76": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 1,
+        "damage": 12
+      },
+      {
+        "bullets": 1,
+        "damage": 18
+      }
+    ],
+    "fafnir": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 1,
+        "damage": 12
+      },
+      {
+        "bullets": 1,
+        "damage": 18
+      }
+    ],
+    "eternity": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 2,
+        "damage": 12
+      },
+      {
+        "bullets": 3,
+        "damage": 18
+      }
+    ],
+    "labiata": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 1,
+        "damage": 12
+      },
+      {
+        "bullets": 1,
+        "damage": 18
+      }
+    ],
+    "rampalion": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 2,
+        "damage": 12
+      },
+      {
+        "bullets": 3,
+        "damage": 18
+      }
+    ],
+    "griffin": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 2,
+        "damage": 12
+      },
+      {
+        "bullets": 3,
+        "damage": 18
+      }
+    ],
+    "emily": [
+      {
+        "bullets": 1,
+        "damage": 6
+      },
+      {
+        "bullets": 1,
+        "damage": 12
+      },
+      {
+        "bullets": 1,
+        "damage": 18
+      }
+    ]
+  },
+  "analysis": [
+    {
+      "key": "hirume",
+      "level": 1,
+      "name": "야타가라스 정화 결계",
+      "bullets": 1,
+      "damage": 0,
+      "expectedDamage": 0,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "hirume",
+      "level": 2,
+      "name": "야타가라스 정화 결계",
+      "bullets": 1,
+      "damage": 0,
+      "expectedDamage": 0,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "hirume",
+      "level": 3,
+      "name": "야타가라스 정화 결계",
+      "bullets": 1,
+      "damage": 0,
+      "expectedDamage": 0,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "constantia",
+      "level": 1,
+      "name": "발목 잡기",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "constantia",
+      "level": 2,
+      "name": "발목 잡기",
+      "bullets": 1,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "constantia",
+      "level": 3,
+      "name": "발목 잡기",
+      "bullets": 1,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "lrl",
+      "level": 1,
+      "name": "어둠의 도끼 · 환영 돌진",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "lrl",
+      "level": 2,
+      "name": "어둠의 도끼 · 환영 돌진",
+      "bullets": 3,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "lrl",
+      "level": 3,
+      "name": "어둠의 도끼 · 환영 돌진",
+      "bullets": 1,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "sleipnir",
+      "level": 1,
+      "name": "제압 사격",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "sleipnir",
+      "level": 2,
+      "name": "제압 사격",
+      "bullets": 2,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "sleipnir",
+      "level": 3,
+      "name": "제압 사격",
+      "bullets": 3,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "merlin",
+      "level": 1,
+      "name": "UNREP 전술 지원",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "merlin",
+      "level": 2,
+      "name": "UNREP 전술 지원",
+      "bullets": 1,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "merlin",
+      "level": 3,
+      "name": "UNREP 전술 지원",
+      "bullets": 1,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "express76",
+      "level": 1,
+      "name": "화물 배송",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "express76",
+      "level": 2,
+      "name": "화물 배송",
+      "bullets": 1,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "express76",
+      "level": 3,
+      "name": "화물 배송",
+      "bullets": 1,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "fafnir",
+      "level": 1,
+      "name": "쇼크 앤 오",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "fafnir",
+      "level": 2,
+      "name": "쇼크 앤 오",
+      "bullets": 1,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "fafnir",
+      "level": 3,
+      "name": "쇼크 앤 오",
+      "bullets": 1,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "eternity",
+      "level": 1,
+      "name": "편히 잠드소서",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "eternity",
+      "level": 2,
+      "name": "편히 잠드소서",
+      "bullets": 2,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "eternity",
+      "level": 3,
+      "name": "편히 잠드소서",
+      "bullets": 3,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "labiata",
+      "level": 1,
+      "name": "백화제방",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "labiata",
+      "level": 2,
+      "name": "백화제방",
+      "bullets": 1,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "labiata",
+      "level": 3,
+      "name": "백화제방",
+      "bullets": 1,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "rampalion",
+      "level": 1,
+      "name": "라이온 로켓 펀치",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "rampalion",
+      "level": 2,
+      "name": "라이온 로켓 펀치",
+      "bullets": 2,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "rampalion",
+      "level": 3,
+      "name": "라이온 로켓 펀치",
+      "bullets": 3,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "griffin",
+      "level": 1,
+      "name": "핸드 미사일",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "griffin",
+      "level": 2,
+      "name": "핸드 미사일",
+      "bullets": 2,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "griffin",
+      "level": 3,
+      "name": "핸드 미사일",
+      "bullets": 3,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "emily",
+      "level": 1,
+      "name": "버스터 캐논",
+      "bullets": 1,
+      "damage": 6,
+      "expectedDamage": 6,
+      "damageOk": true,
+      "gaugeCost": 1,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "emily",
+      "level": 2,
+      "name": "버스터 캐논",
+      "bullets": 1,
+      "damage": 12,
+      "expectedDamage": 12,
+      "damageOk": true,
+      "gaugeCost": 2,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    },
+    {
+      "key": "emily",
+      "level": 3,
+      "name": "버스터 캐논",
+      "bullets": 1,
+      "damage": 18,
+      "expectedDamage": 18,
+      "damageOk": true,
+      "gaugeCost": 3,
+      "vsBombLeader": 22,
+      "belowBomb": true
+    }
+  ]
+}

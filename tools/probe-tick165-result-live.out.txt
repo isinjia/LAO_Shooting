@@ -1,0 +1,94 @@
+HARD result ko@320x200 over=2 maxH= fitH=180 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 ocH=184
+HARD result en@320x200 over=2 maxH= fitH=180 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 ocH=184
+HARD result ru@320x200 over=2 maxH= fitH=180 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 ocH=184
+HARD result pt@320x200 over=2 maxH= fitH=180 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 ocH=184
+HARD result es@320x200 over=2 maxH= fitH=180 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 ocH=184
+HARD result zh-Hant@320x200 over=2 maxH= fitH=180 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 ocH=184
+HARD result ja@320x200 over=2 maxH= fitH=180 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 ocH=184
+HARD result ko@360x200 over=0 maxH= fitH=200 inflated=false steps=0 short=false brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 ocH=184
+HARD result en@360x200 over=0 maxH= fitH=200 inflated=false steps=0 short=false brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 ocH=184
+HARD result ru@360x200 over=0 maxH= fitH=200 inflated=false steps=0 short=false brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 ocH=184
+HARD result pt@360x200 over=0 maxH= fitH=200 inflated=false steps=0 short=false brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 ocH=184
+HARD result es@360x200 over=0 maxH= fitH=200 inflated=false steps=0 short=false brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 ocH=184
+HARD result zh-Hant@360x200 over=0 maxH= fitH=200 inflated=false steps=0 short=false brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 ocH=184
+HARD result ja@360x200 over=0 maxH= fitH=200 inflated=false steps=0 short=false brandHidden=true ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 ocH=184
+HARD result ko@360x240 over=0 maxH=202px fitH=202 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=12/44 secOut=true secVis=13/44 headroom=0.25 ocH=202
+HARD result en@360x240 over=0 maxH=202px fitH=202 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=12/44 secOut=true secVis=13/44 headroom=0.25 ocH=202
+HARD result ru@360x240 over=0 maxH=202px fitH=202 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=12/44 secOut=true secVis=13/44 headroom=0.25 ocH=202
+HARD result pt@360x240 over=0 maxH=202px fitH=202 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=12/44 secOut=true secVis=13/44 headroom=0.25 ocH=202
+HARD result es@360x240 over=0 maxH=202px fitH=202 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=12/44 secOut=true secVis=13/44 headroom=0.25 ocH=202
+HARD result zh-Hant@360x240 over=0 maxH=202px fitH=202 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=12/44 secOut=true secVis=13/44 headroom=0.25 ocH=202
+HARD result ja@360x240 over=0 maxH=202px fitH=202 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=12/44 secOut=true secVis=13/44 headroom=0.25 ocH=202
+HARD result ko@400x240 over=0 maxH= fitH=225 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=14.8/44 secOut=true secVis=15.8/44 headroom=2.11 ocH=220.8
+HARD result en@400x240 over=0 maxH= fitH=225 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=14.8/44 secOut=true secVis=15.8/44 headroom=2.11 ocH=220.8
+HARD result ru@400x240 over=0 maxH= fitH=225 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=14.8/44 secOut=true secVis=15.8/44 headroom=2.11 ocH=220.8
+HARD result pt@400x240 over=0 maxH= fitH=225 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=14.8/44 secOut=true secVis=15.8/44 headroom=2.11 ocH=220.8
+HARD result es@400x240 over=0 maxH= fitH=225 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=14.8/44 secOut=true secVis=15.8/44 headroom=2.11 ocH=220.8
+HARD result zh-Hant@400x240 over=0 maxH= fitH=225 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=14.8/44 secOut=true secVis=15.8/44 headroom=2.11 ocH=220.8
+HARD result ja@400x240 over=0 maxH= fitH=225 inflated=false steps=3 short=true brandHidden=true ctaOut=true ctaVis=14.8/44 secOut=true secVis=15.8/44 headroom=2.11 ocH=220.8
+HARD result ko@400x280 over=0 maxH=225px fitH=225 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=35/44 secOut=true secVis=36/44 headroom=0 ocH=225
+HARD result en@400x280 over=0 maxH=225px fitH=225 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=35/44 secOut=true secVis=36/44 headroom=0 ocH=225
+HARD result ru@400x280 over=0 maxH=225px fitH=225 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=35/44 secOut=true secVis=36/44 headroom=0 ocH=225
+HARD result pt@400x280 over=0 maxH=225px fitH=225 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=35/44 secOut=true secVis=36/44 headroom=0 ocH=225
+HARD result es@400x280 over=0 maxH=225px fitH=225 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=35/44 secOut=true secVis=36/44 headroom=0 ocH=225
+HARD result zh-Hant@400x280 over=0 maxH=225px fitH=225 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=35/44 secOut=true secVis=36/44 headroom=0 ocH=225
+HARD result ja@400x280 over=0 maxH=225px fitH=225 inflated=false steps=7 short=true brandHidden=true ctaOut=true ctaVis=35/44 secOut=true secVis=36/44 headroom=0 ocH=225
+ok result ko@480x288 over=0 maxH= fitH=270 inflated=false steps=3 short=true brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=2.53 ocH=265
+ok result en@480x288 over=0 maxH= fitH=270 inflated=false steps=3 short=true brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=2.53 ocH=265
+ok result ru@480x288 over=0 maxH= fitH=270 inflated=false steps=3 short=true brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=2.53 ocH=265
+ok result pt@480x288 over=0 maxH= fitH=270 inflated=false steps=3 short=true brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=2.53 ocH=265
+ok result es@480x288 over=0 maxH= fitH=270 inflated=false steps=3 short=true brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=2.53 ocH=265
+ok result zh-Hant@480x288 over=0 maxH= fitH=270 inflated=false steps=3 short=true brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=2.53 ocH=265
+ok result ja@480x288 over=0 maxH= fitH=270 inflated=false steps=3 short=true brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=2.53 ocH=265
+ok result ko@568x320 over=0 maxH= fitH=319 inflated=false steps=0 short=false brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.25 ocH=291
+ok result en@568x320 over=0 maxH= fitH=319 inflated=false steps=0 short=false brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.25 ocH=291
+ok result ru@568x320 over=0 maxH= fitH=319 inflated=false steps=0 short=false brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.25 ocH=291
+ok result pt@568x320 over=0 maxH= fitH=319 inflated=false steps=0 short=false brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.25 ocH=291
+ok result es@568x320 over=0 maxH= fitH=319 inflated=false steps=0 short=false brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.25 ocH=291
+ok result zh-Hant@568x320 over=0 maxH= fitH=319 inflated=false steps=0 short=false brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.25 ocH=291
+ok result ja@568x320 over=0 maxH= fitH=319 inflated=false steps=0 short=false brandHidden=true ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.25 ocH=291
+ok result ko@640x360 over=0 maxH= fitH=360 inflated=false steps=0 short=false brandHidden=false ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.41 ocH=331.2
+ok result en@640x360 over=0 maxH= fitH=360 inflated=false steps=0 short=false brandHidden=false ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.41 ocH=331.2
+ok result ru@640x360 over=0 maxH= fitH=360 inflated=false steps=0 short=false brandHidden=false ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.41 ocH=331.2
+ok result pt@640x360 over=0 maxH= fitH=360 inflated=false steps=0 short=false brandHidden=false ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.41 ocH=331.2
+ok result es@640x360 over=0 maxH= fitH=360 inflated=false steps=0 short=false brandHidden=false ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.41 ocH=331.2
+ok result zh-Hant@640x360 over=0 maxH= fitH=360 inflated=false steps=0 short=false brandHidden=false ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.41 ocH=331.2
+ok result ja@640x360 over=0 maxH= fitH=360 inflated=false steps=0 short=false brandHidden=false ctaOut=false ctaVis=44/44 secOut=false secVis=44/44 headroom=14.41 ocH=331.2
+
+SUMMARY hard=35 soft=0 ok=21
+HARD DETAIL:
+  result ko@320x200 over=2 steps=3 maxH= cta=0/44 sec=0/44 headroom=-2
+  result en@320x200 over=2 steps=3 maxH= cta=0/44 sec=0/44 headroom=-2
+  result ru@320x200 over=2 steps=3 maxH= cta=0/44 sec=0/44 headroom=-2
+  result pt@320x200 over=2 steps=3 maxH= cta=0/44 sec=0/44 headroom=-2
+  result es@320x200 over=2 steps=3 maxH= cta=0/44 sec=0/44 headroom=-2
+  result zh-Hant@320x200 over=2 steps=3 maxH= cta=0/44 sec=0/44 headroom=-2
+  result ja@320x200 over=2 steps=3 maxH= cta=0/44 sec=0/44 headroom=-2
+  result ko@360x200 over=0 steps=0 maxH= cta=0/44 sec=0/44 headroom=8
+  result en@360x200 over=0 steps=0 maxH= cta=0/44 sec=0/44 headroom=8
+  result ru@360x200 over=0 steps=0 maxH= cta=0/44 sec=0/44 headroom=8
+  result pt@360x200 over=0 steps=0 maxH= cta=0/44 sec=0/44 headroom=8
+  result es@360x200 over=0 steps=0 maxH= cta=0/44 sec=0/44 headroom=8
+  result zh-Hant@360x200 over=0 steps=0 maxH= cta=0/44 sec=0/44 headroom=8
+  result ja@360x200 over=0 steps=0 maxH= cta=0/44 sec=0/44 headroom=8
+  result ko@360x240 over=0 steps=7 maxH=202px cta=12/44 sec=13/44 headroom=0.25
+  result en@360x240 over=0 steps=7 maxH=202px cta=12/44 sec=13/44 headroom=0.25
+  result ru@360x240 over=0 steps=7 maxH=202px cta=12/44 sec=13/44 headroom=0.25
+  result pt@360x240 over=0 steps=7 maxH=202px cta=12/44 sec=13/44 headroom=0.25
+  result es@360x240 over=0 steps=7 maxH=202px cta=12/44 sec=13/44 headroom=0.25
+  result zh-Hant@360x240 over=0 steps=7 maxH=202px cta=12/44 sec=13/44 headroom=0.25
+  result ja@360x240 over=0 steps=7 maxH=202px cta=12/44 sec=13/44 headroom=0.25
+  result ko@400x240 over=0 steps=3 maxH= cta=14.8/44 sec=15.8/44 headroom=2.11
+  result en@400x240 over=0 steps=3 maxH= cta=14.8/44 sec=15.8/44 headroom=2.11
+  result ru@400x240 over=0 steps=3 maxH= cta=14.8/44 sec=15.8/44 headroom=2.11
+  result pt@400x240 over=0 steps=3 maxH= cta=14.8/44 sec=15.8/44 headroom=2.11
+  result es@400x240 over=0 steps=3 maxH= cta=14.8/44 sec=15.8/44 headroom=2.11
+  result zh-Hant@400x240 over=0 steps=3 maxH= cta=14.8/44 sec=15.8/44 headroom=2.11
+  result ja@400x240 over=0 steps=3 maxH= cta=14.8/44 sec=15.8/44 headroom=2.11
+  result ko@400x280 over=0 steps=7 maxH=225px cta=35/44 sec=36/44 headroom=0
+  result en@400x280 over=0 steps=7 maxH=225px cta=35/44 sec=36/44 headroom=0
+  result ru@400x280 over=0 steps=7 maxH=225px cta=35/44 sec=36/44 headroom=0
+  result pt@400x280 over=0 steps=7 maxH=225px cta=35/44 sec=36/44 headroom=0
+  result es@400x280 over=0 steps=7 maxH=225px cta=35/44 sec=36/44 headroom=0
+  result zh-Hant@400x280 over=0 steps=7 maxH=225px cta=35/44 sec=36/44 headroom=0
+  result ja@400x280 over=0 steps=7 maxH=225px cta=35/44 sec=36/44 headroom=0

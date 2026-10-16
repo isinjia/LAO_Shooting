@@ -1,0 +1,67 @@
+TICK24 handoff (2026-10-04) — C special muzzle particles (HOLD dens/side untouched)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep.
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep.
+
+
+THIS TICK — one focused win: C special muzzle particles
+
+1) js/player.js · specialFlash draw
+   - Kept shared soft bloom ellipse stack (kit tint + white core).
+   - Equal disk motes → additive soft-sprite grit / forward needles:
+     stretch ≥1.5, slight angle fan, white tip cores, tip-length stagger.
+   - Count soft bump: foxflame/lightning 9 · other kits 7 (was 7 / 5).
+   - Lightning radial wash retained (no zigzag geometry return).
+   - HOLD dens/side/emit, bomb-vfx, NewUI, graze/pickup, player-hit,
+     hostile rim, deathbomb ring — untouched.
+
+2) tools/qa-special-muzzle.mjs
+   - Asserts lighter pass, bloom ellipses≥3, scaleStretch≥5, rotate≥5,
+     soft arcs≥20, white tip fills≥5; lightning stretch≥7.
+
+3) Verify
+   - node tools/qa-special-muzzle.mjs PASS
+     foxflame scaleStretch=9 rotate=9 arcs=27 whiteFill=10;
+     lightning scaleStretch=9 arcs=28.
+   - node tools/test-gameplay-design.mjs · test-basic-shots.mjs ·
+     test-weapon-roles.mjs · qa-graze-pickup.mjs PASS
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; NewUI residual not the focus this tick)
+  VFX ≈ 60 (C special muzzle micro-pass inside soft-sprite language only —
+            still budget-capped / no client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Optional: NewUI residual (menu destinations still absent — do not fake lobby apps).
+  2) Or deathbomb grace feedback micro-pass (urgent ring readability only).
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  4) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+  5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520 /
+     graze stretch glitter / pickup soft-sprite chips / C special muzzle stretch grit.
+
+
+Model: inherit
+Korean-ready: yes

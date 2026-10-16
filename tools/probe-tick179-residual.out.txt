@@ -1,0 +1,79 @@
+=== A) Asset-error overlay @ NEW mid-short (outside tick156/157/159 cliff) ===
+AE pt@360×218 → ok h2=17.5/17.5 oc=17.5 msg=46/46 oc=46 retry=36/36 oc=36 sel=36/36 oc=36 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=true brandDisp=none brandVis=0 in152=true in154=false in156=false in159=false ocH=139.5 appH=202.5 over=0 appTop=7.75 maxH=100%
+  h2: Falha ao carregar o estágio 1 | retry: Tentar de novo | sel: À seleção
+  ocBox t=39.25 b=178.75 w=331.2 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":50.3,"b":67.8,"l":29.4,"r":330.6}
+  rBox {"t":131.8,"b":167.8,"l":31.9,"r":190.3}
+  sBox {"t":131.8,"b":167.8,"l":196.3,"r":328}
+AE es@360×218 → ok h2=17.5/17.5 oc=17.5 msg=46/46 oc=46 retry=36/36 oc=36 sel=36/36 oc=36 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=true brandDisp=none brandVis=0 in152=true in154=false in156=false in159=false ocH=139.5 appH=202.5 over=0 appTop=7.75 maxH=100%
+  h2: Fallo al cargar la etapa 1 | retry: Reintentar | sel: A selección
+  ocBox t=39.25 b=178.75 w=331.2 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":50.3,"b":67.8,"l":29.4,"r":330.6}
+  rBox {"t":131.8,"b":167.8,"l":44.5,"r":161.7}
+  sBox {"t":131.8,"b":167.8,"l":167.7,"r":315.5}
+AE ru@360×218 → ok h2=17.5/17.5 oc=17.5 msg=46/46 oc=46 retry=36/36 oc=36 sel=36/36 oc=36 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=true brandDisp=none brandVis=0 in152=true in154=false in156=false in159=false ocH=139.5 appH=202.5 over=0 appTop=7.75 maxH=100%
+  h2: Не удалось загрузить стадию 1 | retry: Повторить | sel: К выбору
+  ocBox t=39.25 b=178.75 w=331.2 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":50.3,"b":67.8,"l":29.4,"r":330.6}
+  rBox {"t":131.8,"b":167.8,"l":50.3,"r":170.8}
+  sBox {"t":131.8,"b":167.8,"l":176.8,"r":309.7}
+AE pt@375×212 → ok h2=17.5/17.5 oc=17.5 msg=32/32 oc=32 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=true brandDisp=none brandVis=0 in152=false in154=true in156=false in159=false ocH=183.5 appH=210.9 over=0 appTop=0.53 maxH=100%
+  h2: Falha ao carregar o estágio 1 | retry: Tentar de novo | sel: À seleção
+  ocBox t=14.25 b=197.75 w=345 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":31.3,"b":48.8,"l":30,"r":345}
+  rBox {"t":94.8,"b":138.8,"l":98.3,"r":276.7}
+  sBox {"t":138.8,"b":182.8,"l":111.6,"r":263.4}
+AE es@375×212 → ok h2=17.5/17.5 oc=17.5 msg=32/32 oc=32 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=true brandDisp=none brandVis=0 in152=false in154=true in156=false in159=false ocH=140.5 appH=210.9 over=0 appTop=0.53 maxH=100%
+  h2: Fallo al cargar la etapa 1 | retry: Reintentar | sel: A selección
+  ocBox t=35.75 b=176.25 w=345 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":52.8,"b":70.3,"l":30,"r":345}
+  rBox {"t":117.3,"b":161.3,"l":32.2,"r":169.4}
+  sBox {"t":116.3,"b":160.3,"l":175,"r":342.8}
+AE ru@375×212 → ok h2=17.5/17.5 oc=17.5 msg=32/32 oc=32 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=true brandDisp=none brandVis=0 in152=false in154=true in156=false in159=false ocH=140.5 appH=210.9 over=0 appTop=0.53 maxH=100%
+  h2: Не удалось загрузить стадию 1 | retry: Повторить | sel: К выбору
+  ocBox t=35.75 b=176.25 w=345 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":52.8,"b":70.3,"l":30,"r":345}
+  rBox {"t":117.3,"b":161.3,"l":38,"r":178.5}
+  sBox {"t":116.3,"b":160.3,"l":184.1,"r":337}
+AE pt@404×228 → SOFT h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=36.8 sel=44/44 oc=37.8 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/true sOut=false/true ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=209.8 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Falha ao carregar o estágio 1 | retry: Tentar de novo | sel: À seleção
+  ocBox t=9.13 b=218.88 w=371.7 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":61.1,"b":125.1,"l":31.2,"r":372.8}
+  rBox {"t":182.1,"b":226.1,"l":34.1,"r":212.5}
+  sBox {"t":181.1,"b":225.1,"l":218.1,"r":369.9}
+AE es@404×228 → SOFT h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=36.8 sel=44/44 oc=37.8 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/true sOut=false/true ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=209.8 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Fallo al cargar la etapa 1 | retry: Reintentar | sel: A selección
+  ocBox t=9.13 b=218.88 w=371.7 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":61.1,"b":125.1,"l":31.2,"r":372.8}
+  rBox {"t":182.1,"b":226.1,"l":46.6,"r":183.9}
+  sBox {"t":181.1,"b":225.1,"l":189.5,"r":357.3}
+AE ru@404×228 → SOFT h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=36.8 sel=44/44 oc=37.8 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/true sOut=false/true ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=209.8 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  h2: Не удалось загрузить стадию 1 | retry: Повторить | sel: К выбору
+  ocBox t=9.13 b=218.88 w=371.7 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":61.1,"b":125.1,"l":31.2,"r":372.8}
+  rBox {"t":182.1,"b":226.1,"l":52.5,"r":193}
+  sBox {"t":181.1,"b":225.1,"l":198.6,"r":351.5}
+AE pt@430×245 → ok h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=225.4 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Falha ao carregar o estágio 1 | retry: Tentar de novo | sel: À seleção
+  ocBox t=9.8 b=235.19 w=395.6 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":61.8,"b":125.8,"l":32.2,"r":397.8}
+  rBox {"t":182.8,"b":226.8,"l":47.1,"r":225.5}
+  sBox {"t":181.8,"b":225.8,"l":231.1,"r":382.9}
+AE es@430×245 → ok h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=225.4 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Fallo al cargar la etapa 1 | retry: Reintentar | sel: A selección
+  ocBox t=9.8 b=235.19 w=395.6 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":61.8,"b":125.8,"l":32.2,"r":397.8}
+  rBox {"t":182.8,"b":226.8,"l":59.7,"r":196.9}
+  sBox {"t":181.8,"b":225.8,"l":202.5,"r":370.3}
+AE ru@430×245 → ok h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=44 sel=44/44 oc=44 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/false sOut=false/false ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=225.4 appH=241.9 over=0 appTop=1.56 maxH=225.4px
+  h2: Не удалось загрузить стадию 1 | retry: Повторить | sel: К выбору
+  ocBox t=9.8 b=235.19 w=395.6 clip=polygon(14px 0px, calc(100% - 6px) 0px, 100% 6px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 6px 100%, 0px calc(100% - 6px), 0px 14px) ov=auto/auto
+  h2Box {"t":61.8,"b":125.8,"l":32.2,"r":397.8}
+  rBox {"t":182.8,"b":226.8,"l":65.5,"r":206}
+  sBox {"t":181.8,"b":225.8,"l":211.6,"r":364.5}
+=== SUMMARY ===
+hard=0 soft=3 ok=9
+SOFT DETAIL (panelOver / oc-out with visApp full — invent CLOSED):
+  AE pt@404×228 → SOFT h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=36.8 sel=44/44 oc=37.8 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/true sOut=false/true ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=209.8 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  AE es@404×228 → SOFT h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=36.8 sel=44/44 oc=37.8 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/true sOut=false/true ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=209.8 appH=227.3 over=0 appTop=0.38 maxH=209.76px
+  AE ru@404×228 → SOFT h2=64/64 oc=64 msg=32/32 oc=32 retry=44/44 oc=36.8 sel=44/44 oc=37.8 h2None=false msgNone=false rNone=false sNone=false h2Out=false/false msgOut=false/false rOut=false/true sOut=false/true ov=auto/auto brandNone=false brandDisp=inline-block brandVis=24 in152=false in154=false in156=false in159=false ocH=209.8 appH=227.3 over=0 appTop=0.38 maxH=209.76px

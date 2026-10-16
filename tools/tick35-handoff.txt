@@ -1,0 +1,279 @@
+TICK35 handoff (2026-10-04) — OPTIONS NewUI residual (HOLD dens/side untouched)
+
+
+
+======================================================================
+
+
+
+PRESERVE (do not break)
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+
+
+
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+
+
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+
+
+
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep.
+
+
+
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep.
+
+
+
+- C special muzzle stretch grit / white tip cores (tick24) — keep.
+
+
+
+- Deathbomb grace bloom + arc grit (tick25) — keep.
+
+
+
+- Option satellite soft trails (tick26) — keep.
+
+
+
+- Focus-mode bloom + orbit grit (tick27) — keep.
+
+
+
+- Rare fanfare soft orbit grit (tick28) — keep.
+
+
+
+- WARNING mid/boss palette + band grit + midboss-frame-pulse (tick29) — keep.
+
+
+
+- STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip (tick30) — keep.
+
+
+
+- Pause overlay menubg+world2 + Box2 plates + brand Activation cue (tick31) — keep.
+
+
+
+- Title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only (tick32) — keep.
+
+
+
+- STAGE START cyan wash + grit + dual stroke + START kind chip (tick33) — keep.
+
+
+
+- Loading bar Activation brand + track Tap1/chamfer + meta Box2 plate (tick34) — keep.
+
+
+
+THIS TICK — one focused win: OPTIONS NewUI residual
+
+
+
+1) css/style.css · TICK35 OPTIONS polish (decorative only)
+
+
+
+   - screen-options: menubg2 + world2 wash (pause parity; menubg2 retained).
+
+
+
+   - opt-head brand-mark: Activation + Title_Deco2 cue (pause-stamp parity).
+
+
+
+   - opt-block + opt-keys: cyan rim + Box2 tile + 8px chamfer + cyan inset rail.
+
+
+
+   - opt-actions: Box2 plate + cyan rim + 6px chamfer.
+
+
+
+   - Short viewports: strip keys/actions plate density (keep SYSTEM block).
+
+
+
+   - Retained: Title_Deco under head, Top_Bg panel rails, lobby status/resource
+
+     chips (no fake lobby-rail), hud-top { background-image: none }.
+
+
+
+   - Untouched: touch-pad label/caption clarity, HOLD dens/side/emit,
+
+     bomb-vfx, combat particle stack, STAGE START/CLEAR / WARNING, pause NewUI,
+
+     title CONTROLS pins, loading bar NewUI, rare fanfare, graze/pickup,
+
+     player-hit, hostile rim, C muzzle, deathbomb, option trails, focus-mode.
+
+
+
+2) tools/qa-options-newui.mjs
+
+
+
+   - Asserts menubg2+world2, brand Activation+Deco2, Box2 block/keys+actions,
+
+     Title_Deco+Top_Bg retained, lobby chips kept, hud-top sparse,
+
+     no lobby-rail, pads/HOLD untouched, prior pause/CONTROLS/loading markers.
+
+
+
+3) Verify
+
+
+
+   - node tools/qa-options-newui.mjs PASS
+
+     menubg2+world2 brand Activation+Deco2 Box2 block/keys+actions
+
+     Title_Deco+Top_Bg retained lobby chips kept hud-top sparse
+
+     no fake lobby rail pads/HOLD untouched
+
+
+
+   - node tools/qa-loading-bar-newui.mjs · qa-pause-newui.mjs ·
+
+     qa-controls-newui.mjs · qa-stage-start-card.mjs ·
+
+     qa-stage-clear-card.mjs · qa-warning-midboss.mjs ·
+
+     qa-rare-fanfare.mjs · qa-focus-mode.mjs · qa-option-trails.mjs ·
+
+     qa-deathbomb-feedback.mjs · qa-special-muzzle.mjs ·
+
+     qa-graze-pickup.mjs · test-gameplay-design.mjs · test-basic-shots.mjs ·
+
+     test-weapon-roles.mjs PASS
+
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+
+
+
+  UI  ≈ 75 (OPTIONS NewUI catch-up — wash/brand/Box2 plates;
+
+            touch-pad label/caption clarity still open)
+
+
+
+  VFX ≈ 60 (no combat particle work this tick — still soft-sprite /
+
+            budget-capped; NOT client-grade sparks)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+  user 60 band — do not round up to 70.
+
+
+
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+
+NEXT TICK — open polish
+
+
+
+  1) Touch pad label / caption clarity (still open)
+
+     keep combat HUD sparse; do not fill hud-top with Top_Bg.
+
+
+
+  2) Optional: menu destinations / lobby chrome depth (still absent).
+
+
+
+  3) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+
+
+
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+     death power reset / per-character hold identities / soft-particle language /
+
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520 /
+
+     graze stretch glitter / pickup soft-sprite chips / C special muzzle stretch grit /
+
+     deathbomb grace bloom+arc grit / option satellite soft trails /
+
+     focus-mode bloom+orbit grit / rare fanfare soft orbit grit /
+
+     WARNING mid/boss palette + band grit + midboss-frame-pulse /
+
+     STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip /
+
+     pause overlay menubg+world2 + Box2 plates + brand Activation cue /
+
+     title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only /
+
+     STAGE START cyan wash + grit + dual stroke + START kind chip /
+
+     loading bar Activation brand + track Tap1/chamfer + meta Box2 plate /
+
+     OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions.
+
+
+
+Model: inherit
+
+
+
+Korean-ready: yes

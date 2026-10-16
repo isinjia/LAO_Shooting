@@ -1,0 +1,65 @@
+UI KILL BG ILLUST — HAND OFF
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Companion: tools/ui-unity-replace-original-handoff.txt (same CSS append; expands to NewUI button/popup replace)
+
+Request: Title CONTROLS / loading 뒤로 비치는 캐릭터 일러스트 제거 → 패널이 깨끗하게 읽히게.
+
+================================================================
+REMOVED / OPAQUED (figurative bleeds)
+================================================================
+CSS append on css/style.css — block
+  "UI UNITY REPLACE ORIGINAL / KILL BG ILLUST (2026-10-05)"
+
+Title (#overlay-content.screen-title)
+  - REMOVED SelectWorld_Event_05 / Event_05_ character wash
+  - REMOVED btn_newui_OfflineBattle_Complete character plate
+  - REMOVED menubg/world2 soft stack that let Event art read through
+  → OPAQUE Ranking_Backplate + Popup_Bg tile + solid #0c0e12
+
+CONTROLS (.keys)
+  - REMOVED SelectWorld_Event_23 figurative cover wash
+  → OPAQUE Popup_Bg + Popup_Bg_Box; keys-head / rules / hiscore solid plates
+
+Loading (#overlay-content.screen-loading)
+  - REMOVED SelectWorld_Event_18 / Event_18_ character wash
+  - REMOVED OfflineBattle_InProgress figurative panel under bar
+  - REMOVED Event_19 from .load-meta
+  → OPAQUE Ranking_Backplate + Popup_Bg; load-track Popup_Bg only
+  → KEEP Loding tip cue (newui_OfflineBattle_InProgress_Loding.png) on ::after
+    (small chrome tip — not figurative character art)
+
+Title CTA / lobby
+  - REMOVED SideStory figurative wash on .title-actions → Btn_Sub plate
+  - REMOVED Event_06_ / Event_22_ / Event_29 from status / foot / rails
+  → Opaque Popup_Bg_Box / Ranking_Frame_01; rails background none
+
+Also opaqued (menu bleed parity): options / pause / tutorial / select /
+rotate-hint / asset-error Event_* washes → Ranking + Popup_Bg.
+
+================================================================
+KEPT (intentional chrome, non-figurative)
+================================================================
+  newui_Popup_Bg_Title_Deco / Title_Deco1 / Title_Deco2
+  newui_Popup_Bg_Text_Deco (CONTROLS head cue)
+  newui_Top_Bg panel rails
+  newui_Btn_Sub / Sub2 / Activation / Tap1 / Deactivation
+  UI_Ranking_Backplate / Frame_01
+  OfflineBattle_InProgress_Loding tip on load-track::after only
+
+================================================================
+SCREENS FIXED
+================================================================
+  title (START / OPTIONS / CONTROLS)
+  loading (track + meta + panel)
+  options / pause / tutorial / select / rotate-hint / asset-error
+  result (OfflineBattle character underkill → Ranking + Popup opaque)
+
+================================================================
+PRESERVED
+================================================================
+  fitH / CTA-health / letterbox / short-landscape HUD
+  load-track height 14px
+  combat HUD sparse (no Top_Bg fill)
+  i18n 8 langs; no HTML markup; no MissORCA; no AI images
+  gameplay / shot kits untouched

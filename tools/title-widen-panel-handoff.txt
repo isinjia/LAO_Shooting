@@ -1,0 +1,81 @@
+TITLE WIDEN PANEL — HAND OFF
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+GOAL
+================================================================
+Title brand "LAO SHOOTING GAME" was clipping to "LAO SHOOTING GAM"
+(missing E) at the right edge of the overlay plate. Widen the title
+panel / #overlay-content.screen-title so the full nowrap title fits
+on one line, accounting for left/right lobby rails. Prefer panel
+widen over aggressive font shrink; slight font/letter trim OK on
+short/narrow viewports. Keep arcade START/OPTIONS focus. Do NOT
+restore deleted status/chips/hiscore. Avoid stage-label agent files.
+
+================================================================
+ROOT CAUSE
+================================================================
+- #overlay-content.screen-title max plate ≈520px (min(94%, 520px))
+- body.lao-newui title padding-left/right 40px for lobby rails
+- .title-main { white-space:nowrap } + large h1 letter-spacing
+- Net content width ≈440px < intrinsic title width → overflow:hidden
+  clipped the final "E" against the right rail / plate edge.
+
+================================================================
+CSS CHANGES (style.css — end block only)
+================================================================
+Appended "TITLE WIDEN PANEL" block:
+
+1) Plate widen
+   #overlay-content.screen-title (incl. body.lao-newui / touch-ui):
+     width / max-width: min(96%, 640px)
+     padding-left/right: 30px (was 40px rail inset)
+
+2) Rail inset tighten (title only)
+   .lobby-rail left: 8px (was 14px)
+   .lobby-rail-right right: 8px
+   rail width 24px; ico 20×20 (was 28 / 22)
+
+3) Title type — slight trim, keep one line
+   h1: clamp(28px, 4.8vw, 40px); letter-spacing 0.08em
+   .title-main: nowrap + overflow:visible + matching letter-spacing
+
+4) Short / narrow viewports
+   max-height:420px → smaller clamp + 0.06em tracking
+   max-width:520px → width min(98%,640), pad 22px, smaller clamp
+   max-width:420px → pad 18px (rails already hidden by prior ticks)
+
+No JS title-width logic added (not needed).
+
+================================================================
+INTENTIONALLY NOT TOUCHED
+================================================================
+- js/main.js showTitle HTML (rails / foot / START / OPTIONS kept;
+  status/chips/hiscore stay deleted)
+- Arcade menu focus / title-nav pads (prior title-arcade-menu)
+- Select / options / pause / combat HUD / stage-label files
+- #app letterbox aspect (960:540) — panel still ≤96% of overlay
+
+================================================================
+HARD / LETTERBOX NOTES
+================================================================
+- Wider plate uses % of #app overlay; letterbox axes unchanged.
+- Short landscapes already hide rails (@max-height/width 420); pad
+  drops further so nowrap brand stays readable.
+- overflow:hidden on screen-title retained for column flex; content
+  width after widen should exceed title intrinsic width.
+
+================================================================
+FILES
+================================================================
+  - css/style.css — TITLE WIDEN PANEL end block
+  - tools/title-widen-panel-handoff.txt — this file
+
+================================================================
+KOREAN SUMMARY
+================================================================
+타이틀 패널을 520px→640px(min 96%)로 넓히고, 좌우 로비 레일
+inset/패딩을 줄여 "LAO SHOOTING GAME" 한 줄(nowrap)이 잘리지
+않게 함. 짧은·좁은 뷰포트만 살짝 폰트/자간 축소. START/OPTIONS
+아케이드 메뉴·삭제된 status/chips/hiscore는 그대로. JS 미변경.

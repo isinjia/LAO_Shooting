@@ -1,0 +1,21 @@
+=== ko@320x200 unreadFinal=0.00
+  before over=2 maxH= fitH=180 cta=32/32 out=false quit=16.9/32 out=true actOut=true btnMinH=0px gap=4px padT=12px blurb=block brand=none h2=18px
+  ultraCompact over=2 maxH= fitH=180 cta=26/26 out=false quit=26/26 out=false actOut=false btnMinH=24px gap=2px padT=12px blurb=block brand=none h2=18px
+=== en@320x200 unreadFinal=0.00
+  before over=2 maxH= fitH=180 cta=30/30 out=false quit=20.9/30 out=true actOut=true btnMinH=0px gap=4px padT=12px blurb=block brand=none h2=18px
+  ultraCompact over=2 maxH= fitH=180 cta=24/24 out=false quit=24/24 out=false actOut=false btnMinH=24px gap=2px padT=12px blurb=block brand=none h2=18px
+=== ru@320x200 unreadFinal=0.00
+  before over=2 maxH= fitH=180 cta=32/32 out=false quit=0/32 out=true actOut=true btnMinH=0px gap=4px padT=12px blurb=block brand=none h2=18px
+  ultraCompact over=2 maxH= fitH=180 cta=26/26 out=false quit=26/26 out=false actOut=false btnMinH=24px gap=2px padT=12px blurb=block brand=none h2=18px
+=== pt@320x200 unreadFinal=0.00
+  before over=2 maxH= fitH=180 cta=30/30 out=false quit=20.9/30 out=true actOut=true btnMinH=0px gap=4px padT=12px blurb=block brand=none h2=18px
+  ultraCompact over=2 maxH= fitH=180 cta=24/24 out=false quit=24/24 out=false actOut=false btnMinH=24px gap=2px padT=12px blurb=block brand=none h2=18px
+=== es@320x200 unreadFinal=0.00
+  before over=2 maxH= fitH=180 cta=30/30 out=false quit=4.9/30 out=true actOut=true btnMinH=0px gap=4px padT=12px blurb=block brand=none h2=18px
+  ultraCompact over=2 maxH= fitH=180 cta=24/24 out=false quit=24/24 out=false actOut=false btnMinH=24px gap=2px padT=12px blurb=block brand=none h2=18px
+=== zh-Hant@320x200 unreadFinal=0.00
+  before over=2 maxH= fitH=180 cta=32/32 out=false quit=16.9/32 out=true actOut=true btnMinH=0px gap=4px padT=12px blurb=block brand=none h2=18px
+  ultraCompact over=2 maxH= fitH=180 cta=26/26 out=false quit=26/26 out=false actOut=false btnMinH=24px gap=2px padT=12px blurb=block brand=none h2=18px
+=== ja@320x200 unreadFinal=0.00
+  before over=2 maxH= fitH=180 cta=32/32 out=false quit=16.9/32 out=true actOut=true btnMinH=0px gap=4px padT=12px blurb=block brand=none h2=18px
+  ultraCompact over=2 maxH= fitH=180 cta=26/26 out=false quit=26/26 out=false actOut=false btnMinH=24px gap=2px padT=12px blurb=block brand=none h2=18px

@@ -1,0 +1,84 @@
+LAO MINI ACTION — frame-opt LOOP TICK 04 handoff
+================================================
+Date: 2026-10-04
+Goal: raise combat frame rate; target honest ~55+ avg without feature deletion.
+UI layout scans: NOT restarted. UI≈79 / VFX dens≈69 unchanged. dens FROZEN.
+
+Prior (tick03, same harness)
+----------------------------
+pc-960 SORTIE 16s: avg 51.83  min 20.00  p95 33.4ms  max dt 50.0ms
+  hitches >33ms 31/753  >50ms 0  >100ms 0
+  peaks: enemies 4, bullets 16, vfx 78, polish 16, legacy particles 0
+  split: update 0.289  draw 12.460  bg 0.121  vfxJS 0.273 (n=755)
+mobile-412 short 8s: avg 59.08  min 20.00  p95 16.8ms
+Tick02 PC 49.26. Tick01 PC 30.23.
+
+Tried, not shipped
+------------------
+Skip ctx.clearRect + pad #0a1018 / hive wash by 16px (max shake mag 14).
+Two PC passes: avg 40.25 (noisy, enemies peak 2, draw 16.5ms) then 47.14
+(enemies 4, draw 14.1ms). Both worse or not better than 51.83. Reverted.
+
+Shipped (one compositor hint — look intended same)
+--------------------------------------------------
+js/canvas.js
+  - getContext('2d', { alpha: false })
+  - #game CSS is already #000; opaque buffer matches painted frames
+  - Does not change charge/HOLD/bombs/stages/HUD layout/dens
+
+Tick01 HUD caches + tick02 scene blit + tick03 baked wash kept.
+
+Re-measure (Playwright headless, same Hirume/invuln/autoPlay/mute SORTIE)
+------------------------------------------------------------------------
+tools/measure-frame-opt-tick04.mjs → tools/frame-opt-tick04-raw.json
+
+pc-960 16s combat:
+  avg 49.98  min 12.00  p95 33.4ms  max dt 83.3ms
+  hitches >33ms 42/715  >50ms 2  >100ms 0
+  peaks: enemies 4, bullets 16, vfx 71, polish 20, legacy particles 0
+  canvas 960×540 buf 960×540 dpr1
+  split: update 0.310  draw 13.208  bg 0.124  vfxJS 0.276 (n=717)
+
+mobile-412×226 dpr2.5 8s combat (short viewport):
+  avg 57.43  min 29.94  p95 33.3ms  max dt 33.4ms
+  hitches >33ms 7/443  >50ms 0
+  canvas CSS 401.8×226 buf 703×396
+
+Honest FPS delta
+----------------
+PC avg 49.98 vs tick03 51.83: honest +0 (slightly worse this pass; headless
+variance in the 47–52 band). Do not claim a win. Not 55+. Mobile short 57.43
+vs 59.08: +0. Opaque context may still help a headed compositor; this
+harness did not prove it. Remaining draw ~13ms is still sprites / HUD /
+clearRect fill-rate, not bg JS (~0.12ms).
+
+Scores (not inflated)
+---------------------
+성능/프레임: PC ~59 (combat ~50, not 60-locked) / mobile-like ~62
+메모리: 76–78 (not re-scored)
+UI layout: ≈79  DO NOT claim 80+
+VFX dens:  ≈69  DO NOT claim 70+
+
+Preserved
+---------
+charge/hold C1–3, bombs, deathbomb, 5 stages, pads, i18n,
+STAGE START/CLEAR, WARNING, HOLD identities
+(sunbird/sightbeam/dragonaxe/shell/jupiterorb/coffinwall/plasmaslash).
+dens FROZEN.
+
+Next tick
+---------
+Do not retry skip-clearRect on this headless Chromium. Profile entity blit
+and HUD plate/strokeText (still inside the 13ms draw). Candidate: batch or
+cache remaining HUD strokes without changing layout; sprite atlas only if
+it does not alter dens. Do not claim 55+ until a headed or second headless
+PC pass holds ~55. Keep alpha:false unless a headed pass regresses.
+
+Korean-ready user summary
+-------------------------
+전투 프레임 최적화 4틱입니다. 쉐이크 여백으로 clearRect를 빼는 안은
+헤드리스에서 이득이 없어 되돌렸습니다. 캔버스만 불투명 컨텍스트
+(alpha:false)로 두었습니다. HUD·HOLD·폭탄·5스테이지·밀도는 그대로입니다.
+헤드리스 PC 960 전투 평균 FPS 50.0(3틱 51.8)이라 정직한 +0입니다.
+목표 55+는 아직입니다. 남은 draw ~13ms는 배경 JS가 아니라 스프라이트/HUD
+쪽입니다. UI 79·VFX 69 그대로입니다.

@@ -1,0 +1,87 @@
+TITLE ARCADE MENU + TRIM RED-MARKS — HAND OFF
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+GOAL
+================================================================
+1) Title START / OPTIONS behave like an arcade menu: one focused item,
+   move with Up/Down (arrows, WASD, virtual stick), confirm with Space
+   (Enter alias). Touch/click on each button still works.
+2) Finish prior trim: remove red-circled title junk chrome.
+3) Keep "LAO SHOOTING GAME" on one line. Keep NewUI world button art.
+4) Do NOT break select-screen 2D grid nav. Do NOT delete START/OPTIONS
+   or restore MissORCA.
+
+================================================================
+TRIM RED-MARKS STATUS — DONE
+================================================================
+Removed from title overlay HTML (js/main.js showTitle):
+  - .lobby-status-bar  (CH.MINI / OPS / ONLINE / NEWUI)
+  - .lobby-resource-strip  (SORTIE / HI / READY chips)
+  - .keys.keys-hiscore-only  (HI-SCORE bar under CTAs)
+
+Kept (not red-marked / still decorative):
+  - lobby rails L/R, panel-frame, lobby-foot, brand-mark, title-sub
+  - HUD hi-score (index.html combat HUD) untouched
+  - Options/select lobby status/resource strips untouched
+
+Title brand:
+  - h1 wraps main in <span class="title-main">LAO SHOOTING GAME</span>
+  - CSS: .title-main { display:block; white-space:nowrap; }
+  - .title-sub stays on its own line below
+
+================================================================
+ARCADE MENU — INPUT / FOCUS
+================================================================
+js/main.js
+  - titleMenuIndex (default 0 = START)
+  - setTitleMenuFocus / moveTitleMenu / confirmTitleMenu
+  - onTitleMenuKey: screen==='title' only
+      · Arrow Up/Down + settings up/down (WASD) → move focus
+      · Space / Enter → activate focused button
+      · Left/Right ignored (vertical list only)
+  - startTitleNavPads / stopTitleNavPads (touchUi)
+      · stick up/down moves focus (latch); FIRE confirms
+      · classes: is-select-nav + is-title-nav (MENU caption)
+  - startSelectNavPads calls stopTitleNavPads (and vice versa)
+  - pointerenter on buttons syncs focus; click handlers unchanged
+    (still start game / open options) after stopTitleNavPads
+
+Select screen:
+  - onSelectCheatKey + startSelectNavPads unchanged (2D grid + Space)
+  - No shared focus index with title
+
+================================================================
+CSS (style.css end block)
+================================================================
+  - .title-main nowrap one-line brand
+  - .btn:not(.is-menu-focus) dimmer / slight scale-down
+  - .btn.is-menu-focus: brighter cyan border + glow + scale(1.06)
+    still uses btn_newui_world.png (no Activation / invent gold)
+  - .touch-controls.is-title-nav stick caption "MENU"
+
+================================================================
+INTENTIONALLY NOT TOUCHED
+================================================================
+  - MissORCA / illustration bleeds — not restored
+  - Select grid nav / rare cheat buffer
+  - Combat HUD HI-SCORE, gameplay, i18n strings
+  - Global non-title .btn-primary Activation styling
+  - START / OPTIONS buttons themselves (kept)
+
+================================================================
+FILES
+================================================================
+  - js/main.js   — showTitle trim + title menu focus/pads/keys
+  - css/style.css — focus visual + title-main nowrap + MENU caption
+  - tools/title-arcade-menu-handoff.txt — this file
+
+================================================================
+KOREAN SUMMARY
+================================================================
+타이틀: CH.MINI/ONLINE·SORTIE/HI/READY·HI-SCORE 바 삭제.
+"LAO SHOOTING GAME" 한 줄 고정.
+START/OPTIONS 아케이드 포커스(기본 START) — ↑↓/WASD/스틱 이동,
+Space·Enter·FIRE 확정, 클릭/터치 유지. 셀렉트 그리드 네비 분리.
+NewUI world 버튼 아트 유지, 선택 시 시안 글로우+스케일.

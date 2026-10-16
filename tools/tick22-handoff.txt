@@ -1,0 +1,62 @@
+TICK22 handoff (2026-10-04) — bomb particle density (HOLD dens/side untouched)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+
+
+THIS TICK — one focused win: bomb particle density
+
+1) js/bomb-vfx.js · soft remap (drawGpu) — cast budget still 260 light / 520 full
+   - Ring necklace chips: light 7/10 · full 11/16 (was 5/7 · 8/12).
+   - Radial stagger + tip stretch variance so grit reads denser than equal blobs.
+   - Beam / Fafnir drip motes: light 6 · full 8/12 (was 4 · 5/9).
+   - Canvas fallback necklace/drips matched (9→11/15, drips 8/12).
+
+2) js/bomb-vfx.js · detonate
+   - Modest sparkN bump inside shared cast budget:
+     dense light/full 4/8 · sparse 5/11 (was 3/7 · 4/9).
+   - Tip-length / angle stagger on boom streaks (not even radial only).
+   - Afterglow residual grit chips so fade doesn't collapse to one soft ring.
+   - HOLD dens/side/emit, NewUI, player-hit, hostile rim — untouched.
+
+3) Verify
+   - node tools/test-gameplay-design.mjs · test-basic-shots.mjs · test-weapon-roles.mjs PASS
+   - tools/qa-bomb-density.mjs: peakBudget≈144 ≤ 520; peakPuts≈939 (remap density);
+     avgStreaks≈255 (grit/needles, not disk-only).
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; NewUI residual not the focus this tick)
+  VFX ≈ 60 (bomb density micro-pass inside soft-sprite remap / cast budget only —
+            still budget-capped; no client-grade sparks/trails)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Optional: graze / pickup feedback micro-pass (soft-sprite only).
+  2) Or NewUI residual (menu destinations still absent — do not fake lobby apps).
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  4) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+  5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520.
+
+
+Model: inherit
+Korean-ready: yes

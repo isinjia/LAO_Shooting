@@ -1,0 +1,1157 @@
+TICK68 handoff (2026-10-04) — honest +0 maintenance (no clear UI tip residual)
+
+
+
+======================================================================
+
+
+
+PRESERVE (do not break)
+
+
+
+======================================================================
+
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+
+
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+
+
+
+
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+
+
+
+- Player-hit cool-white/rose shatter sparks (tick21) — keep; tip/cool refine (tick53).
+
+
+
+
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep; afterglow tip/cool (tick54).
+
+
+
+
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep;
+
+
+
+  graze tip/cool (tick54); pickup tip/cool (tick55).
+
+
+
+
+- C special muzzle stretch grit / white tip cores (tick24) — keep; tip/cool refine (tick53).
+
+
+
+
+- Deathbomb grace bloom + arc grit (tick25) — keep; tip/cool refine (tick52).
+
+
+
+
+- Option satellite soft trails (tick26) — keep; tip/cool refine (tick51).
+
+
+
+
+- Focus-mode bloom + orbit grit (tick27) — keep; tip/cool refine (tick52).
+
+
+
+
+- Rare fanfare soft orbit grit (tick28) — keep (CSS motes already tip-cored; untouched).
+
+
+
+
+- WARNING mid/boss palette + band grit + midboss-frame-pulse (tick29) — keep.
+
+
+
+
+- STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip (tick30) — keep.
+
+
+
+
+- Pause overlay menubg+world2 + Box2 plates + brand Activation cue (tick31) — keep;
+
+
+
+  tip densify dual-stroke/inset/chip Activation (tick58).
+
+
+
+
+- Title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only (tick32) — keep;
+
+
+
+  keys-head + HI-SCORE dual-stroke tip densify (tick61).
+
+
+
+
+- STAGE START cyan wash + grit + dual stroke + START kind chip (tick33) — keep.
+
+
+
+
+- Loading bar Activation brand + track Tap1/chamfer + meta Box2 plate (tick34) — keep;
+
+
+
+  loading status tip densify label/meta/pct (tick66).
+
+
+
+
+- OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions (tick35) — keep;
+
+
+
+  label tip densify brand/h2/block-title/keys-head (tick61).
+
+
+
+
+- Touch-pad dual-stroke captions + role tints + float MOVE zone hint (tick36) — keep.
+
+
+
+
+- Select dossier Box2/cyan/Activation + select-actions Box2 plate (tick37) — keep;
+
+
+
+  kit quieter dual-stroke + hint dual-stroke/cyan tip densify (tick63).
+
+
+
+
+- Result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash (tick38) — keep;
+
+
+
+  result-score/meta .lbl dual-stroke tip densify (tick62).
+
+
+
+
+- HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue (tick39) — keep.
+
+
+
+
+- Title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 (tick40) — keep;
+
+
+
+  chip/status dual-stroke tip densify (tick64).
+
+
+
+
+- Tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + note/actions Box2 (tick41) — keep;
+
+
+
+  note/row quieter dual-stroke tip densify (tick65).
+
+
+
+
+- Mobile portrait detection: isPortrait (h>w), syncPortraitHint, .rotate-hint.is-on,
+
+
+
+  orientationchange settle — do NOT break.
+
+
+
+
+- Rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke (tick42) — keep;
+
+
+
+  rotate-card p quieter dual-stroke tip densify (tick67).
+
+
+
+
+- Asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+
+
+
+  Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 (tick43) — keep;
+
+
+
+  asset-error-msg p quieter dual-stroke tip densify (tick67).
+
+
+
+
+- Boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+
+
+
+  track Box2+Tap1 + midboss-frame-pulse + critical pulse (tick44) — keep.
+
+
+
+
+- HUD stocks Box2 cyan rim/inset/chamfer + LIFE/BOMB dual-stroke + pip densify +
+
+
+
+  life-critical/extend/deathbomb pulses + life-warn Activation +
+
+
+
+  CHARGE cyan rim/inset/chamfer + Tap1 + ready Activation cue (tick45) — keep.
+
+
+
+
+- SP track Box2 cyan rim/inset/chamfer + Lv notches + Tap1 + brass fill +
+
+
+
+  dual-stroke SPECIAL/Lv chip + ready/is-ready-flash Activation cue (tick46) — keep.
+
+
+
+
+- SCORE/HI + STAGE meta Box2 cyan rim/inset/chamfer + brass SCORE +
+
+
+
+  dual-stroke HI/meta labels (tick47) — keep.
+
+
+
+
+- Canvas trail stretch + color ramp + hit grit soft-sprite language (tick48) — keep.
+
+
+
+
+- GPU mote tipBias/coolBand + streak tipCore + bomb grit tip-forward (tick49) — keep.
+
+
+
+
+- wipeSpark stretch+ramp + explosion fine grit (tick50) — keep;
+
+
+
+  wipeSpark tip/cool refine (tick56); explosion tip/cool refine (tick57).
+
+
+
+
+- Hold muzzle fine grit + option trail tip/cool (tick51) — keep.
+
+
+
+
+- Deathbomb + focus grit tip/cool (tick52) — keep.
+
+
+
+
+- specialFlash + player-hit grit tip/cool (tick53) — keep.
+
+
+
+
+- Graze tip/cool + bomb afterglow grit (tick54) — keep.
+
+
+
+
+- Pickup tip/cool (tick55) — keep.
+
+
+
+
+- hitSpark tip/cool (tick59) — keep: stretch 2.65/1.85 + rampHot #fffef8;
+
+
+
+  count / fine / drag frozen; cool tip flash #fffef8.
+
+
+
+
+- #sp-status ready-line tip densify (tick60) — keep: dual-stroke + brass cue
+
+
+
+  when revealed; max-height hide/show + :has(ready/is-ready-flash) wiring frozen;
+
+
+
+  no Box2/Top_Bg plate on ready-line; SP track (tick46) untouched.
+
+
+
+
+- OPTIONS/CONTROLS label tip densify (tick61) — keep: opt-block-title /
+
+
+
+  opt-keys-head dual-stroke + cyan tip; opt-head brand tip + h2 dual-stroke;
+
+
+
+  title keys-head + HI-SCORE dual-stroke tip. menubg2+world2 / Box2 plates /
+
+
+
+  opaque pins / keys-grid scroll-only FROZEN. No overlay structure churn.
+
+
+
+
+- Result label tip densify (tick62) — keep: result-score .lbl dual-stroke +
+
+
+
+  cyan tip #e8fff8; result-meta .lbl quieter dual-stroke #d8e8e4.
+
+
+
+  Box2 cells / menubg2+world2 / brand Activation+Deco2 / cleared·gameover
+
+
+
+  wash / dual-stroke vals+h2 FROZEN. No overlay structure churn.
+
+
+
+
+- Select dossier kit/hint tip densify (tick63) — keep: kit quieter dual-stroke
+
+
+
+  #d8e8e4; hint dual-stroke + cyan tip #e8fff8. Box2 plate / cyan rim/inset /
+
+
+
+  name dual-stroke / hint Activation cue / select-actions Box2 FROZEN.
+
+
+
+  No overlay structure churn.
+
+
+
+
+- Title lobby chip/status tip densify (tick64) — keep: lobby-status-mint /
+
+
+
+  lobby-chip / lobby-chip-mint dual-stroke + cyan tip #e8fff8;
+
+
+
+  lobby-chip-gold quieter dual-stroke + brass tip #fff0c0;
+
+
+
+  foot .lobby-status-mint dual-stroke cyan tip. menubg+world2 / Box2
+
+
+
+  status+chips+foot / Activation brand / rail ico FROZEN.
+
+
+
+  No overlay structure churn.
+
+
+
+
+- Tutorial note/row tip densify (tick65) — keep: tut-row + tutorial-note
+
+
+
+  quieter dual-stroke #d8e8e4 (pause-blurb tip58 / select-kit / result-meta
+
+
+
+  quieter parity). Activation+Deco2 brand / tut-row Box2 cyan rim/inset /
+
+
+
+  tut-pill Activation / note+actions Box2 / menubg+world2 FROZEN.
+
+
+
+  No overlay structure churn.
+
+
+
+
+- Loading status tip densify (tick66) — keep: #loading-label + .load-meta
+
+
+
+  quieter dual-stroke #d8e8e4; #load-pct dual-stroke + cyan tip #e8fff8.
+
+
+
+  brand Activation+Deco2 / load-track Tap1/chamfer+Box2 / load-meta Box2 /
+
+
+
+  menubg2+world2 / Title_Deco1 FROZEN. No overlay structure churn.
+
+
+
+
+- Rotate / asset-error body tip densify (tick67) — keep: .rotate-card p +
+
+
+
+  .asset-error-msg p quieter dual-stroke #d8e8e4 (tutorial-note tip65 /
+
+
+
+  loading-label tip66 quieter parity). Soft single-shadow closed.
+
+
+
+  rotate menubg+world2 / card Box2 cyan rim/inset / Activation+Info /
+
+
+
+  strong dual-stroke (tick42) FROZEN; asset-error menubg+world2 cool-amber /
+
+
+
+  Activation+Deco2 / Info / msg Box2 cyan rim/inset / dual-stroke h2 /
+
+
+
+  Title_Deco1 (tick43) FROZEN. No overlay structure churn.
+
+
+
+
+======================================================================
+
+
+
+THIS TICK — honest +0 maintenance (no CSS / dens / overlay churn)
+
+
+
+======================================================================
+
+
+
+
+1) Residual scan (typography tip densify nearly exhausted)
+
+
+
+   Candidates considered vs tip58–67 quieter/strong dual-stroke language:
+
+
+
+     · HUD LIFE/BOMB .hud-stocks .hud-lbl — already dual-stroke (tick45);
+
+
+
+       color #d8f4f0 + black dual-stroke outline. NOT soft single-shadow.
+
+
+
+       Cyan tip add would be invented densify, not a muddy fix — SKIP.
+
+
+
+     · HUD STAGE/meta .hud-meta .hud-lbl — already dual-stroke (tick47);
+
+
+
+       same #d8f4f0 dual-stroke band. NOT muddy vs tip61–67 — SKIP.
+
+
+
+     · CHARGE / SPECIAL .sp-label — already dual-stroke (tick45/46) — SKIP.
+
+
+
+     · Stage banners START/CLEAR/WARNING — grit + dual-stroke + kind chip
+
+
+
+       already closed (tick29–33) — SKIP.
+
+
+
+     · Soft single-shadow body-copy (rotate-card p / asset-error-msg p)
+
+
+
+       closed tick67 — no further soft-shadow caption residual found.
+
+
+
+   Decision: option (2) honest +0 maintenance — no CSS edit this tick.
+
+
+
+   Preserve tip densify paths tick58–67 and tick31 menubg+world2/Box2/brand.
+
+
+
+   HOLD dens/side/emit FROZEN.
+
+
+
+
+2) HOLD_STYLE identity inventory (handoff note only — dens/kits untouched)
+
+
+
+   Source: js/projectile-vfx.js HOLD_STYLE + holdIdentity().
+
+
+
+   Still 8 per-character identities (NOT homing-vs-laser duality):
+
+
+
+     hirume     → flameward   → kind fan      (phoenix fan / rising ember sheet)
+
+
+
+     constantia → sightbeam   → kind lance    (overwatch lance / gold needle)
+
+
+
+     lrl        → dragonaxe   → kind axe      (returning axe / heavy tumble chips)
+
+
+
+     merlin     → shell       → kind arty     (artillery / falling ash bloom)
+
+
+
+     fafnir     → jupiterorb  → kind cloud    (thunder cloud / puffy volume)
+
+
+
+     eternity   → coffinround → kind hmg      (HMG volley / short tracers)
+
+
+
+     labiata    → plasmaslash → kind crescent (crescent / thin lateral sheet)
+
+
+
+     emily      → railbolt    → kind spike    (railspike / ultra-tight needles)
+
+
+
+   User perception risk (prior complaint): charge/hold individuality can feel
+
+
+
+   like only "homing vs laser". Current kits already encode 8 distinct emit
+
+
+
+   identities (fan/lance/axe/arty/cloud/hmg/crescent/spike). Next real gap
+
+
+
+   for that complaint is NOT dens churn this band — likely readable silhouette
+
+
+
+   / trail differentiation or UX copy, not tip densify. Do NOT dens-churn
+
+
+
+   HOLD this tick or invent VFX score bump from inventory alone.
+
+
+
+
+3) Verify (maintenance QA — no code churn)
+
+
+
+   - node tools/qa-rotate-overlay.mjs PASS (tick67 tip retained)
+
+
+
+   - node tools/qa-asset-error-overlay.mjs PASS (tick67 tip retained)
+
+
+
+   - node tools/qa-loading-bar-newui.mjs PASS (tick66 tip retained)
+
+
+
+   - node tools/qa-tutorial-newui.mjs PASS (tick65 tip retained)
+
+
+
+   - node tools/qa-title-lobby.mjs PASS (tick64 tip retained)
+
+
+
+   - node tools/qa-select-dossier.mjs PASS (tick63 tip retained)
+
+
+
+   - node tools/qa-result-screen.mjs PASS (tick62 tip retained)
+
+
+
+   - node tools/qa-options-newui.mjs PASS (tick61 tip retained)
+
+
+
+   - node tools/qa-controls-newui.mjs PASS (tick61 tip retained)
+
+
+
+   - node tools/qa-hud-sp-gauge.mjs PASS (tick60 ready-line retained)
+
+
+
+   - node tools/qa-pause-newui.mjs PASS (tick58 densify + tick31 plates retained)
+
+
+
+   - node tools/qa-hud-score-meta.mjs PASS (tick47 STAGE/meta dual-stroke retained)
+
+
+
+   - node tools/qa-hud-stock-cluster.mjs PASS (tick45 LIFE/BOMB dual-stroke retained)
+
+
+
+   - node tools/qa-particle-quality.mjs PASS (hitSpark tip/cool; HOLD dens frozen)
+
+
+
+   - node tools/test-gameplay-design.mjs · test-basic-shots.mjs ·
+
+
+
+     test-weapon-roles.mjs PASS
+
+
+
+
+======================================================================
+
+
+
+HONEST SCORE (do NOT claim polished / 70+ VFX / 80+ UI)
+
+
+
+======================================================================
+
+
+
+
+  UI  ≈ 79 (honest +0 maintenance: no clear muddy NewUI label residual
+
+
+
+            vs tip58–67; LIFE/BOMB/STAGE already dual-stroke tick45/47;
+
+
+
+            soft single-shadow body closed tip67; tip densify path near
+
+
+
+            exhaustion — do NOT invent cyan-tip bump or claim 80+)
+
+
+
+
+  VFX ≈ 69 (unchanged — no particle work this tick; soft-sprite /
+
+
+
+            budget-capped; HOLD dens untouched; do NOT claim 70+;
+
+
+
+            soft-blob tip/cool path remains nearly exhausted)
+
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+
+
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+
+
+  user 60 band — do not round up to 70.
+
+
+
+
+  Expectation band this pass: UI ~77-79, VFX ~67-69.
+
+
+
+
+======================================================================
+
+
+
+NEXT TICK — open polish
+
+
+
+======================================================================
+
+
+
+
+1) Typography tip densify band is nearly exhausted after tip58–67.
+
+
+
+     Do NOT invent LIFE/BOMB/STAGE cyan-tip densify for score theater.
+
+
+
+     Further UI tip only if a NEW clearly muddy caption appears after
+
+
+
+     a real visual regression — keep Box2/Activation stacks; no overlay churn.
+
+
+
+
+2) Next real gap candidates (pick ONE only if clearly worth it):
+
+
+
+     a) HOLD individuality readability (user: feels like only homing vs laser)
+
+
+
+        — NOT dens/side/emit churn. Prefer tiny readable trail/muzzle cue
+
+
+
+        or dossier/kit copy clarity if a real muddy identity gap is confirmed.
+
+
+
+        Inventory above documents current 8 HOLD_STYLE identities.
+
+
+
+     b) Soft-blob VFX path largely exhausted after tick59 — further VFX only
+
+
+
+        if a real muddy regression — tiny +0 only.
+
+
+
+     c) Pause tip densify (tick58) / menubg+world2 / Box2/brand (tick31) stand;
+
+
+
+        tip58–67 densify paths + combat HUD sparse stand.
+
+
+
+
+3) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+
+
+
+   Do not dens-churn to "answer" the individuality complaint.
+
+
+
+
+4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+
+
+     death power reset / per-character hold identities / soft-particle language /
+
+
+
+     enemy bullet rim/core / player-hit rose shatter (+ tip/cool) /
+
+
+
+     bomb cast budget 260/520 (+ afterglow tip/cool) /
+
+
+
+     graze stretch glitter (+ tip/cool) / pickup soft-sprite chips (+ tip/cool) /
+
+
+
+     C special muzzle stretch grit (+ tip/cool) /
+
+
+
+     deathbomb grace bloom+arc grit (+ tip/cool) /
+
+
+
+     option satellite soft trails (+ tip/cool) /
+
+
+
+     focus-mode bloom+orbit grit (+ tip/cool) / rare fanfare soft orbit grit /
+
+
+
+     WARNING mid/boss palette + band grit + midboss-frame-pulse /
+
+
+
+     STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip /
+
+
+
+     pause overlay menubg+world2 + Box2 plates + brand Activation cue /
+
+
+
+     pause tip densify dual-stroke/inset/chip Activation (tick58) /
+
+
+
+     title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only /
+
+
+
+     CONTROLS keys-head + HI-SCORE dual-stroke tip (tick61) /
+
+
+
+     STAGE START cyan wash + grit + dual stroke + START kind chip /
+
+
+
+     loading bar Activation brand + track Tap1/chamfer + meta Box2 plate /
+
+
+
+     loading status tip densify label/meta/pct (tick66) /
+
+
+
+     OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions /
+
+
+
+     OPTIONS label tip densify brand/h2/block-title/keys-head (tick61) /
+
+
+
+     touch-pad dual-stroke captions + float MOVE zone hint /
+
+
+
+     select dossier Box2/cyan/Activation + select-actions Box2 plate /
+
+
+
+     select-dossier kit quieter dual-stroke + hint dual-stroke/cyan tip (tick63) /
+
+
+
+     result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash /
+
+
+
+     result-score/meta .lbl dual-stroke tip densify (tick62) /
+
+
+
+     HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue /
+
+
+
+     title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 /
+
+
+
+     title lobby chip/status dual-stroke tip densify (tick64) /
+
+
+
+     tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + note/actions Box2 /
+
+
+
+     tutorial note/row quieter dual-stroke tip densify (tick65) /
+
+
+
+     rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke /
+
+
+
+     rotate-card p quieter dual-stroke tip densify (tick67) /
+
+
+
+     asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+
+
+
+     Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 /
+
+
+
+     asset-error-msg p quieter dual-stroke tip densify (tick67) /
+
+
+
+     boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+
+
+
+     track Box2+Tap1 + midboss-frame-pulse + critical pulse /
+
+
+
+     HUD stocks Box2 cyan rim/inset/chamfer + LIFE/BOMB dual-stroke + pip densify +
+
+
+
+     life-critical/extend/deathbomb pulses + life-warn Activation +
+
+
+
+     CHARGE cyan rim/inset/chamfer + Tap1 + ready Activation cue /
+
+
+
+     SP track Box2 cyan rim/inset/chamfer + Lv notches + Tap1 + brass fill +
+
+
+
+     dual-stroke SPECIAL/Lv chip + ready/is-ready-flash Activation cue /
+
+
+
+     #sp-status ready-line dual-stroke + brass cue when revealed (tick60) /
+
+
+
+     SCORE/HI + STAGE meta Box2 cyan rim/inset/chamfer + brass SCORE +
+
+
+
+     dual-stroke HI/meta labels /
+
+
+
+     canvas trail stretch + color ramp + hit grit (tick48) /
+
+
+
+     GPU mote tipBias/coolBand + streak tipCore + bomb grit tip-forward (tick49) /
+
+
+
+     wipeSpark stretch+ramp + explosion fine grit (tick50) /
+
+
+
+     wipeSpark tip/cool (tick56) / explosion tip/cool (tick57) /
+
+
+
+     hitSpark tip/cool (tick59) /
+
+
+
+     hold muzzle fine grit + option trail tip/cool (tick51) /
+
+
+
+     deathbomb + focus grit tip/cool (tick52) /
+
+
+
+     specialFlash + player-hit grit tip/cool (tick53) /
+
+
+
+     graze tip/cool + bomb afterglow grit (tick54) /
+
+
+
+     pickup tip/cool (tick55).
+
+
+
+
+======================================================================
+
+
+
+한국어 요약 (Korean-ready)
+
+
+
+======================================================================
+
+
+
+
+- Tick68 포커스: honest +0 maintenance. 명확한 muddy NewUI 라벨 residual 없음.
+
+
+
+  HUD LIFE/BOMB(tick45) · STAGE/meta(tick47) 이미 dual-stroke.
+
+
+
+  soft single-shadow body(rotate/asset-error)는 tip67에서 종료.
+
+
+
+  cyan tip 추가·점수 연출용 densify 금지. CSS/오버레이/HOLD dens 무변경.
+
+
+
+  tip densify 경로 tick58–67 + tick31 menubg+world2/Box2/brand 유지.
+
+
+
+
+- HOLD_STYLE 정체성 목록(핸드오프 기록만, dens/kits 미변경):
+
+
+
+  hirume fan · constantia lance · lrl axe · merlin arty ·
+
+
+
+  fafnir cloud · eternity hmg · labiata crescent · emily spike.
+
+
+
+  (사용자 “호밍 vs 레이저처럼 느껴짐” 불만의 다음 실질 갭은 dens churn이
+
+
+
+  아니라 가독성/카피 쪽 — 다음 틱에서 확인 시에만 초소형 대응.)
+
+
+
+
+- QA: rotate/asset-error/loading/tutorial/title/select/result/options/
+
+
+
+  controls/hud-sp/pause/hud-score/hud-stock/particle + gameplay/basic/
+
+
+
+  weapon-roles 전부 PASS. tip58–67 · HOLD dens frozen 유지.
+
+
+
+
+- 점수(정직): UI ≈79 (+0), VFX ≈69 (+0). UI 80+ / VFX 70+ 주장 금지.
+
+
+
+
+- 다음: tip densify 거의 소진. 새 muddy 회귀가 있을 때만 UI tip.
+
+
+
+  HOLD individuality는 dens 동결 유지한 채 실제 가독성 갭 확인 후.
+
+
+
+  soft-blob VFX 경로 거의 소진.
+
+
+
+
+Model: inherit
+
+
+
+Korean-ready: yes

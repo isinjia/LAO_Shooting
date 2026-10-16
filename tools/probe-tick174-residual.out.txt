@@ -1,0 +1,25 @@
+=== A) pause resume/quit @ NEW mid-short sizes ===
+PAUSE pt@360×218 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=
+PAUSE es@360×218 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=
+PAUSE ru@360×218 → ok cta=32/32 sec=32/32 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=7.75 maxH=
+PAUSE pt@375×212 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=
+PAUSE es@375×212 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=
+PAUSE ru@375×212 → ok cta=26/26 sec=26/26 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.53 maxH=
+PAUSE pt@404×228 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=
+PAUSE es@404×228 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=
+PAUSE ru@404×228 → ok cta=32/32 sec=32/32 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=0.38 maxH=
+PAUSE pt@430×245 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=
+PAUSE es@430×245 → ok cta=30/30 sec=30/30 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=
+PAUSE ru@430×245 → ok cta=32/32 sec=32/32 ctaOut=false secOut=false ctaNone=false secNone=false over=0 appTop=1.56 maxH=
+=== B) HOLD uniqueness live dump (960×540 logical; no CSS canvas invent) ===
+HOLD dump → ok
+  hirume mode=hold n=1 styles=sunbird homing=4.75 beam=0 vx=684.0000000000001 vy=0 ret=false blast=55 chain=0 wave=0 pierce=true clear=0 ok=true chargeOn=true
+  constantia mode=hold n=3 styles=sightbeam,tracer homing=0 beam=490 vx=0 vy=1200.5 ret=false blast=0 chain=0 wave=0 pierce=true clear=0 ok=true chargeOn=true
+  lrl mode=hold n=3 styles=dragonaxe homing=0 beam=0 vx=789.0856550472257 vy=-213.5207828670239 ret=true blast=0 chain=0 wave=0 pierce=true clear=0 ok=true chargeOn=true
+  merlin mode=hold n=4 styles=shell homing=0 beam=0 vx=741 vy=0 ret=false blast=94 chain=0 wave=0 pierce=false clear=0 ok=true chargeOn=true
+  fafnir mode=hold n=2 styles=jupiterorb homing=1.75 beam=0 vx=670.8000000000001 vy=0 ret=false blast=0 chain=4 wave=0 pierce=false clear=55 ok=true chargeOn=true
+  eternity mode=hold n=1 styles=coffinwall homing=0 beam=0 vx=0 vy=0 ret=false blast=0 chain=0 wave=0 pierce=true clear=78 ok=true chargeOn=true
+  labiata mode=hold n=4 styles=plasmaslash homing=0 beam=0 vx=277.41124923112494 vy=-628.2811781360529 ret=false blast=0 chain=0 wave=60 pierce=true clear=0 ok=true chargeOn=true
+  emily mode=basic-rail n=- styles=railbeam homing=- beam=- vx=- vy=- ret=- blast=- chain=- wave=- pierce=- clear=- ok=- chargeOn=false
+=== SUMMARY ===
+hard=0 soft=0 ok=13

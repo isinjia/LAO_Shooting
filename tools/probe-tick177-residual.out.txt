@@ -1,0 +1,17 @@
+=== A) Rare fanfare overlay-host @ NEW mid-short (eternity) ===
+RARE pt@360×218 eternity → ok hint=14/14 name=26/26 tag=37.2/37.2 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=198.2 ocH=202 appH=202.5 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=7.75
+RARE es@360×218 eternity → ok hint=14/14 name=26/26 tag=37.2/37.2 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=198.2 ocH=202 appH=202.5 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=7.75
+RARE ru@360×218 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=182.6 ocH=202 appH=202.5 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=7.75
+RARE pt@375×212 eternity → ok hint=14/14 name=26/26 tag=18.6/18.6 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=179.6 ocH=210 appH=210.9 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=0.53
+RARE es@375×212 eternity → ok hint=14/14 name=26/26 tag=37.2/37.2 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=198.2 ocH=210 appH=210.9 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=0.53
+RARE ru@375×212 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=182.6 ocH=210 appH=210.9 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=0.53
+RARE pt@404×228 eternity → ok hint=14/14 name=26/26 tag=18.6/18.6 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=179.6 ocH=227 appH=227.3 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=0.38
+RARE es@404×228 eternity → ok hint=14/14 name=26/26 tag=37.2/37.2 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=198.2 ocH=227 appH=227.3 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=0.38
+RARE ru@404×228 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=182.6 ocH=227 appH=227.3 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=0.38
+RARE pt@430×245 eternity → ok hint=14/14 name=26/26 tag=18.6/18.6 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=179.6 ocH=241 appH=241.9 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=1.56
+RARE es@430×245 eternity → ok hint=14/14 name=26/26 tag=18.6/18.6 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=179.6 ocH=241 appH=241.9 overApp=0 overOc=0 compact=true ultra=false portNone=false appTop=1.56
+RARE ru@430×245 eternity → SOFT hint=14/14 name=41/41 tag=20.1/20.1 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=282.1 ocH=241 appH=241.9 overApp=20.14 overOc=20.58 compact=false ultra=false portNone=false appTop=1.56
+=== SUMMARY ===
+hard=0 soft=1 ok=11
+SOFT DETAIL (cardOver only — invent CLOSED):
+  RARE ru@430×245 eternity → SOFT hint=14/14 name=41/41 tag=20.1/20.1 hintNone=false nameNone=false tagNone=false hintOut=false nameOut=false tagOut=false cardH=282.1 ocH=241 appH=241.9 overApp=20.14 overOc=20.58 compact=false ultra=false portNone=false appTop=1.56

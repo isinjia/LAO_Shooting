@@ -1,0 +1,104 @@
+{
+ "runs": [
+  {
+   "pilot": "griffin",
+   "wallSec": 7,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "1056s 4:waves",
+    "1125s 4:boss-windup",
+    "1127s 4:boss",
+    "1262s 4:tally",
+    "1267s 4:exit",
+    "1268s 5:transition"
+   ],
+   "specials": 54,
+   "bombs": 14,
+   "simMin": 21.1,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "pilot": "rampalion",
+   "wallSec": 9,
+   "stagesCleared": 5,
+   "stalls": [],
+   "nan": 0,
+   "phases": [
+    "857s 4:waves",
+    "927s 4:boss-windup",
+    "930s 4:boss",
+    "1001s 4:tally",
+    "1007s 4:exit",
+    "1008s 5:transition"
+   ],
+   "specials": 42,
+   "bombs": 6,
+   "simMin": 16.8,
+   "cleared": true,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  }
+ ],
+ "ui": [
+  {
+   "label": "desktop",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "label": "phone",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  },
+  {
+   "label": "tablet",
+   "checks": {
+    "titleNoOverflow": true,
+    "titleSmallTargets": [],
+    "playNoOverflow": true,
+    "playSmallTargets": [],
+    "pauseOpens": true,
+    "pauseSmallTargets": [],
+    "pauseResumes": true,
+    "gameOverShows": true,
+    "resultSmallTargets": [],
+    "retryStarts": true
+   },
+   "pageErrors": [],
+   "consoleErrors": [],
+   "failed": []
+  }
+ ]
+}

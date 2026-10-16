@@ -1,0 +1,51 @@
+=== A) Rotate overlay @ PORTRAIT swap of NEW mid-short (not tick168 360×640 set) ===
+RT pt@218×360 → ok isOn=true hintDisp=flex hintNone=false strong=72/72 app=66 p=100.7/100.7 app=46.7 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=true pOutApp=true icon=67.9/67.9 none=false overVv=0 overApp=105.05 cardH=332.7 inner=218x360 appH=122.6 appTop=118.69
+  strong: Gire para o modo paisagem
+  p: Este é um danmaku em paisagem (horizontal).Vire o aparelho de lado para jogar.
+  cardBox {"t":13.7,"b":346.4,"l":16,"r":202}
+RT es@218×360 → ok isOn=true hintDisp=flex hintNone=false strong=48/48 app=48 p=80.6/80.6 app=48.6 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=false pOutApp=true icon=68.6/68.6 none=false overVv=0 overApp=82.97 cardH=288.6 inner=218x360 appH=122.6 appTop=118.69
+  strong: Gira a modo horizontal
+  p: Este es un danmaku en apaisado.Gira el dispositivo de lado para jugar.
+  cardBox {"t":35.7,"b":324.3,"l":16,"r":202}
+RT ru@218×360 → ok isOn=true hintDisp=flex hintNone=false strong=72/72 app=66 p=100.7/100.7 app=46.7 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=true pOutApp=true icon=68.5/68.5 none=false overVv=0 overApp=105.05 cardH=332.7 inner=218x360 appH=122.6 appTop=118.69
+  strong: Поверните устройство горизонтально
+  p: Это горизонтальный (ландшафтный) данмаку-шутер.Поверните устройство набок, чтобы
+  cardBox {"t":13.7,"b":346.4,"l":8.7,"r":209.3}
+RT pt@212×375 → ok isOn=true hintDisp=flex hintNone=false strong=72/72 app=64.3 p=100.7/100.7 app=45 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=true pOutApp=true icon=68.5/68.5 none=false overVv=0 overApp=106.73 cardH=332.7 inner=212x375 appH=119.3 appTop=127.88
+  strong: Gire para o modo paisagem
+  p: Este é um danmaku em paisagem (horizontal).Vire o aparelho de lado para jogar.
+  cardBox {"t":21.1,"b":353.8,"l":16,"r":196}
+RT es@212×375 → ok isOn=true hintDisp=flex hintNone=false strong=48/48 app=48 p=80.6/80.6 app=46.9 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=false pOutApp=true icon=69.1/69.1 none=false overVv=0 overApp=84.66 cardH=288.6 inner=212x375 appH=119.3 appTop=127.88
+  strong: Gira a modo horizontal
+  p: Este es un danmaku en apaisado.Gira el dispositivo de lado para jugar.
+  cardBox {"t":43.2,"b":331.8,"l":16,"r":196}
+RT ru@212×375 → ok isOn=true hintDisp=flex hintNone=false strong=72/72 app=54.2 p=120.8/120.8 app=55 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=true pOutApp=true icon=68.5/68.5 none=false overVv=0 overApp=116.8 cardH=352.8 inner=212x375 appH=119.3 appTop=127.88
+  strong: Поверните устройство горизонтально
+  p: Это горизонтальный (ландшафтный) данмаку-шутер.Поверните устройство набок, чтобы
+  cardBox {"t":11.1,"b":363.9,"l":8.5,"r":203.5}
+RT pt@228×404 → ok isOn=true hintDisp=flex hintNone=false strong=72/72 app=68.8 p=100.7/100.7 app=49.5 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=true pOutApp=true icon=68.6/68.6 none=false overVv=0 overApp=102.23 cardH=332.7 inner=228x404 appH=128.3 appTop=137.88
+  strong: Gire para o modo paisagem
+  p: Este é um danmaku em paisagem (horizontal).Vire o aparelho de lado para jogar.
+  cardBox {"t":35.6,"b":368.3,"l":16,"r":212}
+RT es@228×404 → ok isOn=true hintDisp=flex hintNone=false strong=48/48 app=48 p=80.6/80.6 app=51.4 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=false pOutApp=true icon=68.6/68.6 none=false overVv=0 overApp=80.16 cardH=288.6 inner=228x404 appH=128.3 appTop=137.88
+  strong: Gira a modo horizontal
+  p: Este es un danmaku en apaisado.Gira el dispositivo de lado para jugar.
+  cardBox {"t":57.7,"b":346.3,"l":16,"r":212}
+RT ru@228×404 → ok isOn=true hintDisp=flex hintNone=false strong=72/72 app=68.8 p=100.7/100.7 app=49.5 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=true pOutApp=true icon=68.6/68.6 none=false overVv=0 overApp=102.23 cardH=332.7 inner=228x404 appH=128.3 appTop=137.88
+  strong: Поверните устройство горизонтально
+  p: Это горизонтальный (ландшафтный) данмаку-шутер.Поверните устройство набок, чтобы
+  cardBox {"t":35.6,"b":368.3,"l":10.4,"r":217.6}
+RT pt@245×430 → ok isOn=true hintDisp=flex hintNone=false strong=48/48 app=48 p=80.6/80.6 app=56.2 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=false pOutApp=true icon=69.1/69.1 none=false overVv=0 overApp=75.38 cardH=288.6 inner=245x430 appH=137.8 appTop=146.09
+  strong: Gire para o modo paisagem
+  p: Este é um danmaku em paisagem (horizontal).Vire o aparelho de lado para jogar.
+  cardBox {"t":70.7,"b":359.3,"l":16,"r":229}
+RT es@245×430 → ok isOn=true hintDisp=flex hintNone=false strong=48/48 app=48 p=80.6/80.6 app=56.2 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=false pOutApp=true icon=69.1/69.1 none=false overVv=0 overApp=75.38 cardH=288.6 inner=245x430 appH=137.8 appTop=146.09
+  strong: Gira a modo horizontal
+  p: Este es un danmaku en apaisado.Gira el dispositivo de lado para jugar.
+  cardBox {"t":70.7,"b":359.3,"l":16,"r":229}
+RT ru@245×430 → ok isOn=true hintDisp=flex hintNone=false strong=72/72 app=72 p=100.7/100.7 app=54.3 strongNone=false pNone=false strongOutVv=false pOutVv=false strongOutApp=false pOutApp=true icon=68.5/68.5 none=false overVv=0 overApp=97.45 cardH=332.7 inner=245x430 appH=137.8 appTop=146.09
+  strong: Поверните устройство горизонтально
+  p: Это горизонтальный (ландшафтный) данмаку-шутер.Поверните устройство набок, чтобы
+  cardBox {"t":48.6,"b":381.3,"l":16,"r":229}
+=== SUMMARY ===
+hard=0 soft=0 ok=12

@@ -1,0 +1,73 @@
+TICK27 handoff (2026-10-04) — focus-mode visuals (HOLD dens/side untouched)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep.
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep.
+- C special muzzle stretch grit / white tip cores (tick24) — keep.
+- Deathbomb grace bloom + arc grit (tick25) — keep.
+- Option satellite soft trails (tick26) — keep.
+
+
+THIS TICK — one focused win: focus-mode visuals
+
+1) js/player.js · draw (this.focus)
+   - Kept solid white hitbox fill + stroke on top (fully opaque over ghost body).
+   - Soft under-bloom ellipses (additive lighter): cool cyan + warm tip wash.
+   - Soft-sprite grit on a tight orbit: 5 motes, stretch ≥1.5, white tip cores,
+     pulse tied to this._t; no slash / X / polygon geometry.
+   - Unfocused path silent (no bloom / grit / core stroke).
+   - HOLD dens/side/emit, bomb-vfx, NewUI, WARNING ceremony, graze/pickup,
+     player-hit, hostile rim, C muzzle, deathbomb grace, option trails — untouched.
+
+2) tools/qa-focus-mode.mjs
+   - Asserts lighter pass, bloom ellipses≥2, scaleStretch≥5, rotate≥5,
+     white tips≥5, core stroke+arcs retained; unfocused silent.
+
+3) Verify
+   - node tools/qa-focus-mode.mjs PASS
+     focusOn lighter=1 ellipse=2 scaleStretch=5 whiteFill=10 stroke=1;
+     focusOff lighter=0 ellipse=0 scaleStretch=0 stroke=0.
+   - node tools/qa-option-trails.mjs · qa-deathbomb-feedback.mjs ·
+     qa-special-muzzle.mjs · qa-graze-pickup.mjs · test-gameplay-design.mjs ·
+     test-basic-shots.mjs · test-weapon-roles.mjs PASS
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; NewUI residual / WARNING polish not the focus this tick)
+  VFX ≈ 60 (focus-core readability micro-pass inside soft-sprite language only —
+            still budget-capped / no client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Optional: WARNING / midboss pulse readability (keep ceremony card set).
+  2) Or NewUI residual (menu destinations still absent — do not fake lobby apps).
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  4) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+  5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520 /
+     graze stretch glitter / pickup soft-sprite chips / C special muzzle stretch grit /
+     deathbomb grace bloom+arc grit / option satellite soft trails /
+     focus-mode bloom+orbit grit.
+
+
+Model: inherit
+Korean-ready: yes

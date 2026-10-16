@@ -1,0 +1,6 @@
+=== A) deathbomb first-teach plate @ logical 960×540 (not CSS mid-short) ===
+DB960 pt@960×540 → ok first=true canBomb=true window=true titleW=148.1 subW=240.6 boxW=269 plate=345.5..614.5 subChars=47 css=960x540 paused=true txt="X logo após o hit — mantém a vida · limpa tiros"
+DB960 es@960×540 → ok first=true canBomb=true window=true titleW=148.1 subW=257 boxW=286 plate=337..623 subChars=52 css=960x540 paused=true txt="X justo tras el golpe — conserva vida · limpia balas"
+DB960 ru@960×540 → ok first=true canBomb=true window=true titleW=148.1 subW=317.3 boxW=346 plate=307..653 subChars=55 css=960x540 paused=true txt="X сразу после попадания — сохранить жизнь · снести пули"
+=== SUMMARY ===
+hard=0 soft=0 ok=3 skip=0

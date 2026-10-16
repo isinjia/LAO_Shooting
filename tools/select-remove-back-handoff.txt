@@ -1,0 +1,41 @@
+CHAR SELECT — REMOVE BACK BUTTON
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+GOAL
+================================================================
+Remove the character-select Back button (#btn-back). Do not add a
+replacement title-return flow on select.
+
+================================================================
+REMOVED (select UI only)
+================================================================
+js/main.js showSelect():
+- Markup: <button id="btn-back"> … ${t('btn.back')}
+- Handler: #btn-back click → stopSelectPreviews() + showTitle()
+
+There is no other #btn-back in game JS. i18n key btn.back left in
+i18n.js (unused by live UI after this change).
+
+================================================================
+REMAINING SELECT ACTIONS
+================================================================
+- SORTIE (#btn-go) — confirm pick / RANDOM / rare reveal
+- OPTIONS (#btn-options-select) — showOptions('select')
+- Card click / FIRE pad — confirmSelectSortie
+- Arrows / WASD / stick — moveSelectByDir (3 named + RANDOM)
+- Space / Enter — confirm SORTIE
+- Rare-unlock cheat buffer (direction sequence) unchanged
+
+No select-screen title Back. Pause still has toTitle (#btn-quit).
+Options still has #btn-opt-back. ESC on select was not a title
+return before; not added.
+
+================================================================
+PRESERVED
+================================================================
+- Title / options / pause / load-back buttons
+- 3+RANDOM roster, portraits, cheats
+- Nav pads, syncSelectPanelBudget
+- MissORCA stays removed (untouched)

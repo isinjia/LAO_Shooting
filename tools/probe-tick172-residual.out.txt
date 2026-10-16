@@ -1,0 +1,35 @@
+=== A) tutorial + result CTAs @ NEW short-landscape sizes ===
+TUT pt@390×220 → ok ctaVis=44/44 secVis=44/44 over=0 maxH=219px
+RES pt@390×220 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT es@390×220 → ok ctaVis=44/44 secVis=44/44 over=0 maxH=219px
+RES es@390×220 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT ru@390×220 → ok ctaVis=45/45 secVis=46/46 over=0 maxH=219px
+RES ru@390×220 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT pt@412×226 → ok ctaVis=44/44 secVis=44/44 over=0 maxH=226px
+RES pt@412×226 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT es@412×226 → ok ctaVis=44/44 secVis=44/44 over=0 maxH=226px
+RES es@412×226 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT ru@412×226 → ok ctaVis=45/45 secVis=46/46 over=0 maxH=226px
+RES ru@412×226 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT pt@428×241 → ok ctaVis=44/44 secVis=44/44 over=0 maxH=240px
+RES pt@428×241 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT es@428×241 → ok ctaVis=44/44 secVis=44/44 over=0 maxH=240px
+RES es@428×241 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+TUT ru@428×241 → ok ctaVis=45/45 secVis=46/46 over=0 maxH=240px
+RES ru@428×241 → ok ctaVis=28/28 secVis=28/28 over=0 maxH=
+=== B) OPTIONS Math.max(260) LATENT @ NEW sizes ===
+OPT pt@390×220 → ok inflated=false health=0 maxH=219 fitH=219 ctaVis=44/44 scrollH=93 over=0
+OPT es@390×220 → ok inflated=false health=0 maxH=219 fitH=219 ctaVis=44/44 scrollH=93 over=0
+OPT ru@390×220 → ok inflated=false health=0 maxH=219 fitH=219 ctaVis=46/46 scrollH=89 over=0
+OPT pt@412×226 → ok inflated=false health=0 maxH=226 fitH=226 ctaVis=44/44 scrollH=100 over=0
+OPT es@412×226 → ok inflated=false health=0 maxH=226 fitH=226 ctaVis=44/44 scrollH=100 over=0
+OPT ru@412×226 → ok inflated=false health=0 maxH=226 fitH=226 ctaVis=44/44 scrollH=100 over=0
+OPT pt@428×241 → ok inflated=false health=0 maxH=240 fitH=240 ctaVis=44/44 scrollH=114 over=0
+OPT es@428×241 → ok inflated=false health=0 maxH=240 fitH=240 ctaVis=44/44 scrollH=114 over=0
+OPT ru@428×241 → ok inflated=false health=0 maxH=240 fitH=240 ctaVis=44/44 scrollH=114 over=0
+=== C) canvas START ceremony vs CSS #app (pt only) ===
+CV pt@390×220 → ok intro=true cardVis=118.2/118.2 visW=390/470 scale=1 over=0 canvas=390.0x219.4 app=390.0x219.4
+CV pt@412×226 → ok intro=true cardVis=118/118 visW=401.8/469.7 scale=0.999 over=0 canvas=401.8x226.0 app=401.8x226.0
+CV pt@428×241 → ok intro=true cardVis=117.9/117.9 visW=428/470 scale=1 over=0 canvas=428.0x240.8 app=428.0x240.8
+=== SUMMARY ===
+hard=0 soft=0 ok=30 optionsHealthLive=0

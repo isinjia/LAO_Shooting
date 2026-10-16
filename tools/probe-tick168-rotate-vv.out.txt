@@ -1,0 +1,30 @@
+ok RT ko@360x640 overVv=0 overApp=0.83 cardH=204.14/640 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT en@360x640 overVv=0 overApp=0.83 cardH=204.14/640 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT ru@360x640 overVv=0 overApp=10.89 cardH=224.28/640 strong=24/24 p=40.28/40.28 strongOut=false pOut=false
+ok RT pt@360x640 overVv=0 overApp=10.89 cardH=224.28/640 strong=24/24 p=40.28/40.28 strongOut=false pOut=false
+ok RT es@360x640 overVv=0 overApp=0.83 cardH=204.14/640 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT zh-Hant@360x640 overVv=0 overApp=0.83 cardH=204.14/640 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT ja@360x640 overVv=0 overApp=3.33 cardH=209.14/640 strong=29/29 p=20.14/20.14 strongOut=false pOut=false
+ok RT ko@400x700 overVv=0 overApp=0 cardH=204.14/700 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT en@400x700 overVv=0 overApp=0 cardH=204.14/700 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT ru@400x700 overVv=0 overApp=0 cardH=224.28/700 strong=24/24 p=40.28/40.28 strongOut=false pOut=false
+ok RT pt@400x700 overVv=0 overApp=0 cardH=224.28/700 strong=24/24 p=40.28/40.28 strongOut=false pOut=false
+ok RT es@400x700 overVv=0 overApp=0 cardH=204.14/700 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT zh-Hant@400x700 overVv=0 overApp=0 cardH=204.14/700 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT ja@400x700 overVv=0 overApp=0 cardH=209.14/700 strong=29/29 p=20.14/20.14 strongOut=false pOut=false
+ok RT ko@320x568 overVv=0 overApp=22.14 cardH=224.28/568 strong=24/24 p=40.28/40.28 strongOut=false pOut=false
+ok RT en@320x568 overVv=0 overApp=34.14 cardH=248.28/568 strong=48/48 p=40.28/40.28 strongOut=false pOut=false
+ok RT ru@320x568 overVv=0 overApp=34.14 cardH=248.28/568 strong=48/48 p=40.28/40.28 strongOut=false pOut=false
+ok RT pt@320x568 overVv=0 overApp=22.14 cardH=224.28/568 strong=24/24 p=40.28/40.28 strongOut=false pOut=false
+ok RT es@320x568 overVv=0 overApp=22.14 cardH=224.28/568 strong=24/24 p=40.28/40.28 strongOut=false pOut=false
+ok RT zh-Hant@320x568 overVv=0 overApp=12.08 cardH=204.14/568 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT ja@320x568 overVv=0 overApp=14.58 cardH=209.14/568 strong=29/29 p=20.14/20.14 strongOut=false pOut=false
+ok RT ko@240x320 overVv=0 overApp=56.64 cardH=248.28/320 strong=48/48 p=40.28/40.28 strongOut=false pOut=false
+ok RT en@240x320 overVv=0 overApp=56.64 cardH=248.28/320 strong=48/48 p=40.28/40.28 strongOut=false pOut=false
+ok RT ru@240x320 overVv=0 overApp=66.72 cardH=268.42/320 strong=48/48 p=60.42/60.42 strongOut=false pOut=false
+ok RT pt@240x320 overVv=0 overApp=66.72 cardH=268.42/320 strong=48/48 p=60.42/60.42 strongOut=false pOut=false
+ok RT es@240x320 overVv=0 overApp=56.64 cardH=248.28/320 strong=48/48 p=40.28/40.28 strongOut=false pOut=false
+ok RT zh-Hant@240x320 overVv=0 overApp=34.58 cardH=204.14/320 strong=24/24 p=20.14/20.14 strongOut=false pOut=false
+ok RT ja@240x320 overVv=0 overApp=59.14 cardH=253.28/320 strong=53/53 p=40.28/40.28 strongOut=false pOut=false
+
+SUMMARY hard=0 soft=0 ok=28

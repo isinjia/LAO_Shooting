@@ -1,0 +1,43 @@
+UI REMOVE MISSORCA — HAND OFF
+Date: 2026-10-05
+Request: 미스 오르카 스타일은 다 빼 (Remove all MissORCA style from the UI)
+
+================================================================
+REMOVED
+================================================================
+CSS (css/style.css — UI SYNC TICK02 block)
+  - .title-hero::before MissORCA locale art (kr default)
+  - html[lang=ja] / zh-Hant / zh-Hans background-image switches
+  - Tick02 H1 shrink-to-brass-caption overrides (were under MissORCA logo)
+  - @max-height:420px MissORCA densify (::before height + 11px H1)
+
+JS (js/newui-assets.js)
+  - preload keys: missOrcaTitleKr / missOrcaTitleJp / missOrcaTitleTw
+
+PNG (assets/ui/newui/) — deleted; no remaining live refs
+  - MissORCA7_Tittle_kr.png
+  - MissORCA7_Tittle_jp.png
+  - MissORCA7_Tittle_tw.png
+
+================================================================
+TITLE UI NOW
+================================================================
+  brand-mark: HORIZONTAL BULLET HELL (existing NewUI Activation+Deco2)
+  h1: LAO MINI ACTION + .title-sub SIDE SCROLL SHOOTER
+       → restored prior NewUI size/glow (clamp ~30–42px, mint dual-stroke)
+  ::after: Title_Deco underline (newui_Popup_Bg_Title_Deco.png) — kept
+  No event-specific hero logo. No AI images. No HTML markup changes.
+
+================================================================
+PRESERVED
+================================================================
+  SelectWorld Event_Btn card washes, Ranking frames, OfflineBattle,
+  SideStory/BattlePass icons, Top_Bg rails, fitH / CTA-health /
+  letterbox / short-landscape HUD, gauges/pads, i18n 8 langs,
+  combat HUD, shot kits.
+
+================================================================
+VERIFY
+================================================================
+  rg MissORCA|missOrca|MissORCA7 on *.css/*.js/*.html → no live hooks
+  (tools/*-handoff.txt historical notes may still mention MissORCA)

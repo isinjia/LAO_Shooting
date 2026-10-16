@@ -1,0 +1,397 @@
+TICK97 handoff (2026-10-04) — HUD stock pulse lbl tip densify dual-stroke + glow
+
+======================================================================
+PRESERVE (do not break)
+======================================================================
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity RIP ward (hold) / HMG basic · labiata crescent · emily rail (basic)
+
+    Still exactly 8 HOLD_STYLE muzzle keys (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+    NOTE: eternity HOLD projectile is coffinwall ward; HMG (coffinround) is basic autofire.
+    HOLD_STYLE muzzle map eternity→coffinround remains FROZEN (qa-hold-muzzle).
+
+    NOTE: Emily chargeEnabled=false — basic railbeam IS the intentional laser kit;
+    HOLD_STYLE emily→railbolt (spike) stays frozen for muzzle map, but charge path is disabled.
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+  plasmacross uses soft disks + soft streaks only — never hard cross geometry.
+  sunseal uses soft disks + soft streaks only — never hard seal / gear marks.
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+- Player-hit cool-white/rose shatter sparks (tick21) — keep; tip/cool refine (tick53).
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep; afterglow tip/cool (tick54).
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep;
+  graze tip/cool (tick54); pickup tip/cool (tick55).
+- C special muzzle stretch grit / white tip cores (tick24) — keep; tip/cool refine (tick53).
+- Deathbomb grace bloom + arc grit (tick25) — keep; tip/cool refine (tick52).
+- Option satellite soft trails (tick26) — keep; tip/cool refine (tick51).
+- Focus-mode bloom + orbit grit (tick27) — keep; tip/cool refine (tick52).
+- Rare fanfare soft orbit grit (tick28) — keep (CSS motes already tip-cored; untouched).
+
+- WARNING mid/boss palette + band grit + midboss-frame-pulse (tick29) — keep;
+  caption dual-stroke chip/subtitle (tick89).
+- STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip (tick30) — keep;
+  caption dual-stroke chip/subtitle/bonus (tick89).
+- Pause overlay menubg+world2 + Box2 plates + brand Activation cue (tick31) — keep;
+  tip densify dual-stroke/inset/chip Activation (tick58).
+- Title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only (tick32) — keep;
+  keys-head + HI-SCORE dual-stroke tip densify (tick61).
+- STAGE START cyan wash + grit + dual stroke + START kind chip (tick33) — keep;
+  caption dual-stroke chip/subtitle (tick89).
+- Loading bar Activation brand + track Tap1/chamfer + meta Box2 plate (tick34) — keep;
+  loading status tip densify label/meta/pct (tick66).
+- OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions (tick35) — keep;
+  label tip densify brand/h2/block-title/keys-head (tick61).
+- Touch-pad dual-stroke captions + role tints + float MOVE zone hint (tick36) — keep;
+  .tc-stock dual-stroke tip densify (tick95); .tc-ready dual-stroke + Activation glow (tick96).
+- Select dossier Box2/cyan/Activation + select-actions Box2 plate (tick37) — keep;
+  kit quieter dual-stroke + hint dual-stroke/cyan tip densify (tick63).
+- Result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash (tick38) — keep;
+  result-score/meta .lbl dual-stroke tip densify (tick62).
+- HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue (tick39) — keep.
+- Title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 (tick40) — keep;
+  chip/status dual-stroke tip densify (tick64).
+- Tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + tut note/actions Box2 (tick41) — keep;
+  note/row quieter dual-stroke tip densify (tick65).
+
+- Mobile portrait detection: isPortrait (h>w), syncPortraitHint, .rotate-hint.is-on,
+  orientationchange settle — do NOT break.
+- Rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke (tick42) — keep;
+  rotate-card p quieter dual-stroke tip densify (tick67).
+- Asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+  Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 (tick43) — keep;
+  asset-error-msg p quieter dual-stroke tip densify (tick67).
+
+- Boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+  track Box2+Tap1 + midboss-frame-pulse + critical pulse (tick44) — keep.
+- HUD stocks Box2 cyan rim/inset/chamfer + LIFE/BOMB dual-stroke + pip densify +
+  life-critical/extend/deathbomb pulses + life-warn Activation +
+  CHARGE cyan rim/inset/chamfer + Tap1 + ready Activation cue (tick45) — keep;
+  pulse lbl tip densify dual-stroke + glow (tick97).
+- SP track Box2 cyan rim/inset/chamfer + Lv notches + Tap1 + brass fill +
+  dual-stroke SPECIAL/Lv chip + ready/is-ready-flash Activation cue (tick46) — keep.
+- SCORE/HI + STAGE meta Box2 cyan rim/inset/chamfer + brass SCORE +
+  dual-stroke HI/meta labels (tick47) — keep.
+
+- Canvas trail stretch + color ramp + hit grit soft-sprite language (tick48) — keep.
+- GPU mote tipBias/coolBand + streak tipCore + bomb grit tip-forward (tick49) — keep.
+- wipeSpark stretch+ramp + explosion fine grit (tick50) — keep;
+  wipeSpark tip/cool refine (tick56); explosion tip/cool refine (tick57).
+- Hold muzzle fine grit + option trail tip/cool (tick51) — keep.
+- Deathbomb + focus grit tip/cool (tick52) — keep.
+- specialFlash + player-hit grit tip/cool (tick53) — keep.
+- Graze tip/cool + bomb afterglow grit (tick54) — keep.
+- Pickup tip/cool (tick55) — keep.
+- hitSpark tip/cool (tick59) — keep: stretch 2.65/1.85 + rampHot #fffef8;
+  count / fine / drag frozen; cool tip flash #fffef8.
+- #sp-status ready-line tip densify (tick60) — keep.
+- OPTIONS/CONTROLS / result / select / title lobby / tutorial / loading /
+  rotate / asset-error tip densify (tick58–67) — keep; no overlay structure churn.
+
+- HOLD dens/side/emit FROZEN (tick51 qa-hold-muzzle): kit dens numbers,
+  holdIdentity side/streak/smoke/rise/drag, trail emit `dt * dens * (light ? 34 : 72)`,
+  muzzle emitRate `(light ? 26 : 56)`, HOLD_STYLE map (eternity→coffinround) — untouched.
+
+- Eternity coffinwall ward silhouette (tick69) — keep.
+- Constantia sightbeam lance needle silhouette (tick70) — keep.
+- Labiata plasmaslash crescent blade plate silhouette (tick71) — keep.
+- Fafnir jupiterorb thunder cloud weather-field silhouette (tick72) — keep.
+- Hirume sunbird phoenix wing-fan silhouette (tick73) — keep.
+- LRL dragonaxe tumble blade silhouette (tick74) — keep.
+- Merlin shell breech casing silhouette (tick75) — keep.
+- Eternity HMG caliber slug silhouette (tick76) — keep.
+- Fafnir lightning search-bolt fork silhouette (tick77) — keep.
+- Fafnir empfield EMP pulse-ring silhouette (tick78) — keep.
+- Emily xenoxcore split-shard silhouette (tick79) — keep.
+- Eternity coffinmissile RIP casket silhouette (tick80) — keep.
+- Constantia lockround Winchester lock slug silhouette (tick81) — keep.
+- Merlin commandmissile Fragarach command marker silhouette (tick82) — keep.
+- Labiata plasmacross Trollsberd soft diagonal cross-cut silhouette (tick83) — keep.
+- Hirume sunseal Yatagarasu soft ember purification seal ring (tick84) — keep.
+- Emily railbeam intentional continuous laser (charge disabled) — keep.
+- LRL C `cyclopsbeam` intentional magenta beam-clear laser KEEP (tick85 VERIFY) — keep;
+  do NOT un-laser.
+- LRL basic `cleave` slash-wave crest silhouette (tick86) — keep.
+- Constantia basic `tracer` Winchester ballistic needle silhouette (tick87) — keep.
+- Tick88 residual scan (orbital / orbitblade / chainarc) — no silhouette ship; keep verdict.
+
+- STAGE banner caption dual-stroke chip/subtitle/bonus (tick89) — keep.
+- Deathbomb grace prompt caption dual-stroke title+sub (tick90) — keep.
+- Wave HUD stageLabel + route subtitle caption dual-stroke (tick91) — keep.
+- Boss CORE OPEN expose caption dual-stroke (tick92) — keep.
+- RARE sortie chip caption dual-stroke RARE+name (tick93) — keep.
+- Bomb cast identity label caption dual-stroke (tick94) — keep.
+- Touch-pad .tc-stock tip densify dual-stroke (tick95) — keep.
+- Touch-pad .tc-ready tip densify dual-stroke + Activation glow (tick96) — keep.
+- HUD stock pulse lbl tip densify dual-stroke + Activation/danger glow (tick97) — keep.
+
+- Constantia basic primary stays `tracer`; hold stays `sightbeam` — lockround is C + option flanks.
+- Merlin hold stays `shell` breech casing; commandmissile is C area-denial only.
+- Labiata hold stays `plasmaslash` crescent blade; plasmacross is C wide-pierce cross-cut only.
+- Hirume hold stays `sunbird`/`flameward` phoenix fan; sunseal is C bullet-clear seal only.
+- LRL hold stays `dragonaxe` tumble returning axe; basic `cleave` is slash-wave only.
+
+======================================================================
+THIS TICK — HUD stock pulse lbl tip densify dual-stroke + glow
+======================================================================
+
+1) Candidate pick (from tick96 NEXT / user residual prefs)
+
+   User preferred clear win among: remaining muddy micro UI / soft canvas
+   text / particle tip only if clearly off. Canvas ceremony / pulse / fade
+   soft-fill path CLOSED tick89–94. Touch .tc-stock CLOSED tick95.
+   Touch .tc-ready CLOSED tick96 (dual-stroke + Activation glow).
+
+   Next residual with REAL muddy evidence vs dual-stroke stock language:
+
+     · orbital / orbitblade / chainarc — tick88 re-scan NOT clear (SKIP)
+     · enemy carrier 'P' badge — solid red disk + cream rim; white
+       monogram on opaque stamp — not soft-shadow micro muddy (SKIP)
+     · bomb icon 'B' stamp — tiny dark glyph on opaque brass band (SKIP)
+     · polish-fx score popups — already single strokeText + fill (SKIP)
+     · pickup arcade label — already dark strokeText + intentional
+       color emboss under fade (SKIP)
+     · HUD LIFE/BOMB pulse labels (is-critical / is-extend /
+       is-deathbomb) — tick45 idle LIFE/BOMB dual-stroke, but pulse
+       overrides dropped lateral 1px/-1px strokes → glow-forward soft
+       rim on the same stock plate — CONFIRMED CLEAR WIN (micro UI
+       language regression vs idle dual-stroke + tick96 READY cue)
+
+2) Muddy evidence (pre-fix)
+
+   Pulse lbl overrides (tick45 keep-pulse block) were glow-forward:
+     · `#life-stock.is-critical .hud-lbl` — soft rim + danger glow only
+       (no lateral dual-stroke)
+     · `#life-stock.is-extend .hud-lbl` — soft rim + brass Activation
+       glow only
+     · `#bomb-stock.is-deathbomb .hud-lbl` — soft rim + brass Activation
+       glow only
+     · Idle `.hud-stocks .hud-lbl` already dual-stroked (tick45);
+       pulse state regressed tip language on the same plate
+     · Parallels tick96 READY: Activation glow cue without full rim
+
+3) Fix shipped
+
+   css/style.css — typography tip densify only (no Box2/Tap1 plate
+   churn, no dens, no silhouette, no AI images, no feature deletion):
+
+     · TICK97 block after TICK96:
+       `.lao-newui #life-stock.is-critical .hud-lbl`
+       `.lao-newui #life-stock.is-extend .hud-lbl`
+       `.lao-newui #bomb-stock.is-deathbomb .hud-lbl`
+       → dual-stroke text-shadow + keep pulse Activation/danger glow;
+       font-weight 800; pulse colors retained (#ff8a7a / #ffe08a)
+     · pip pulse animations / life-warn Activation / CHARGE /
+       tick45 idle dual-stroke / stock plate structure frozen
+     · tip58–67 / .tc-stock tip95 / .tc-ready tip96 / canvas
+       ceremony tick89–94 untouched
+
+   HOLD dens/side/emit untouched.
+   tools/qa-hud-stock-pulse-caption.mjs — assert pulse dual-stroke +
+   glow + tick45 pip/life-warn retained / no Tap1/Box2 / no touch-pad
+   rule churn / HOLD untouched.
+   qa-hud-stock-cluster.mjs — assert TICK97 tip without Box2 structure
+   churn; tick45 block retained.
+   qa-tc-ready-caption.mjs — TICK96 block bounded before TICK97.
+   qa-touch-pad-labels.mjs — TICK96 bounded; TICK97 pulse tip asserted
+   without touch-pad rule churn.
+
+4) Verify
+
+   - node tools/qa-hud-stock-pulse-caption.mjs PASS
+   - node tools/qa-hud-stock-cluster.mjs PASS
+   - node tools/qa-tc-ready-caption.mjs PASS
+   - node tools/qa-tc-stock-caption.mjs PASS
+   - node tools/qa-touch-pad-labels.mjs PASS
+   - node tools/qa-bomb-label-caption.mjs PASS
+   - node tools/qa-rare-chip-caption.mjs PASS
+   - node tools/qa-core-open-caption.mjs PASS
+   - node tools/qa-wave-hud-caption.mjs PASS
+   - node tools/qa-deathbomb-feedback.mjs PASS
+   - node tools/qa-stage-start-card.mjs PASS
+   - node tools/qa-stage-clear-card.mjs PASS
+   - node tools/qa-warning-midboss.mjs PASS
+   - node tools/qa-rotate-overlay.mjs PASS
+   - node tools/qa-asset-error-overlay.mjs PASS
+   - node tools/qa-bomb-density.mjs PASS (budget 260/520 + afterglow tip/cool)
+   - node tools/qa-hold-muzzle.mjs PASS (dens/side/emitRate/8 identities frozen)
+   - node tools/test-gameplay-design.mjs PASS
+   - node tools/test-weapon-roles.mjs PASS
+   - node tools/test-basic-shots.mjs PASS
+   - node tools/qa-particle-quality.mjs PASS (holdDensFrozen)
+   - node tools/qa-gpu-mote-quality.mjs PASS (holdDensFrozen)
+   - node tools/qa-wipe-explosion.mjs PASS (holdDensFrozen)
+   - node tools/qa-special-muzzle.mjs PASS
+   - node tools/test-special-shots.mjs PASS (assertSpecialBalance + all 8 chars
+     volleys / damage 6/12/18 PASS)
+   - node tools/qa-hud-score-meta.mjs PASS
+   - node tools/qa-boss-hp-bar.mjs PASS
+   - node tools/qa-hud-sp-gauge.mjs PASS (tick60 ready-line retained)
+
+======================================================================
+HONEST SCORE (do NOT claim polished / 70+ VFX / 80+ UI)
+======================================================================
+
+  UI  ≈ 79 (stock pulse lbl dual-stroke + glow closes micro muddy vs
+            tick45 idle LIFE/BOMB dual-stroke; still tip residual band
+            ~77-79; do NOT claim 80+; micro tip densify only — no
+            structure churn)
+
+  VFX ≈ 69 (+0; no particle / silhouette work — soft-sprite / budget-capped
+            ceiling remains; do NOT claim 70+)
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~77-79, VFX ~67-69.
+
+======================================================================
+NEXT TICK — open polish
+======================================================================
+
+1) HOLD dens/side/emit remain FROZEN. Do not dens-churn to "answer"
+   individuality. Live charge HOLD silhouettes (tick69–75) + HMG basic
+   (tick76) + lightning basic (tick77) + empfield C (tick78) + xenoxcore C
+   (tick79) + coffinmissile C (tick80) + lockround C (tick81) +
+   commandmissile C (tick82) + plasmacross C (tick83) + sunseal C (tick84)
+   + cyclopsbeam intentional beam KEEP (tick85 VERIFY)
+   + cleave basic slash-wave (tick86)
+   + tracer basic Winchester needle (tick87) are shipped.
+   Emily railbeam stays intentional laser. jupiterorb tick72 stays.
+   sightbeam HOLD tick70 + lockround C tick81 stay distinct from tracer basic.
+   STAGE banner caption dual-stroke (tick89) stays.
+   Deathbomb grace prompt caption dual-stroke (tick90) stays.
+   Wave HUD stageLabel + route subtitle dual-stroke (tick91) stays.
+   Boss CORE OPEN expose caption dual-stroke (tick92) stays.
+   RARE sortie chip caption dual-stroke (tick93) stays.
+   Bomb cast identity label caption dual-stroke (tick94) stays.
+   Touch-pad .tc-stock tip densify dual-stroke (tick95) stays.
+   Touch-pad .tc-ready tip densify dual-stroke + Activation glow (tick96) stays.
+   HUD stock pulse lbl tip densify dual-stroke + glow (tick97) stays.
+
+2) Canvas ceremony / pulse / fade caption soft-fill path CLOSED after
+   tick89–94. Touch micro soft-shadow path: .tc-stock CLOSED tick95.
+   Touch SP READY glow-only path: .tc-ready CLOSED tick96.
+   HUD stock pulse lbl glow-forward path: CLOSED tick97 (dual-stroke +
+   Activation/danger glow kept). Remaining soft gaps (only if a REAL
+   muddy regression is confirmed live):
+
+     · orbital / orbitblade — only if escorts CLEARLY collapse to
+       generic homing/laser without colliding shell / crescent identities
+       (tick88 re-scan: still NOT clear)
+     · chainarc — only if muddy vs emp/lightning despite bent-arc body
+       (tick88: still unconfirmed)
+     · tip densify only for a NEW clearly muddy caption
+       (CSS tip58–67 + .tc-stock tip95 + .tc-ready tip96 + stock pulse
+       tip97 near exhaustion; canvas ceremony + pulse + fade identity
+       captions closed)
+     · enemy carrier 'P' badge / bomb icon 'B' stamp — micro icon glyphs
+       on opaque stamps; only if live muddy vs dual-stroke HUD language
+       (lower priority; not floating ceremony / fade identity captions)
+     · #combo-val.is-hot — temporary meta pulse; already soft dual + rose
+       glow; only if confirmed muddy vs idle meta dual-stroke (lower
+       priority than stock pulse; SKIP unless live evidence)
+
+3) Soft-blob VFX path largely exhausted after tick59 + tick69–87 wire.
+   Further VFX only if a real muddy regression — tiny +0/+1 only; NEVER claim 70+.
+   Bomb/enemy VFX only if clearly off (do not churn for score).
+   If no clear micro-UI / silhouette muddy: honest +0 QA pass documenting
+   next gap is acceptable.
+
+4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     eternity coffinwall ward silhouette (tick69) /
+     constantia sightbeam lance needle silhouette (tick70) /
+     labiata plasmaslash crescent blade plate silhouette (tick71) /
+     fafnir jupiterorb thunder cloud weather-field silhouette (tick72) /
+     hirume sunbird phoenix wing-fan silhouette (tick73) /
+     lrl dragonaxe tumble blade silhouette (tick74) /
+     merlin shell breech casing silhouette (tick75) /
+     eternity HMG caliber slug silhouette (tick76) /
+     fafnir lightning search-bolt fork silhouette (tick77) /
+     fafnir empfield EMP pulse-ring silhouette (tick78) /
+     emily xenoxcore split-shard silhouette (tick79) /
+     eternity coffinmissile RIP casket silhouette (tick80) /
+     constantia lockround Winchester lock slug silhouette (tick81) /
+     merlin commandmissile Fragarach command marker silhouette (tick82) /
+     labiata plasmacross Trollsberd cross-cut silhouette (tick83) /
+     hirume sunseal Yatagarasu purification seal ring silhouette (tick84) /
+     lrl cyclopsbeam intentional magenta beam-clear laser KEEP (tick85) /
+     lrl cleave slash-wave crest silhouette (tick86) /
+     constantia tracer Winchester ballistic needle silhouette (tick87) /
+     emily railbeam intentional continuous laser (charge disabled) /
+     STAGE banner caption dual-stroke chip/subtitle/bonus (tick89) /
+     deathbomb grace prompt caption dual-stroke title+sub (tick90) /
+     wave HUD stageLabel + route subtitle caption dual-stroke (tick91) /
+     boss CORE OPEN expose caption dual-stroke (tick92) /
+     RARE sortie chip caption dual-stroke RARE+name (tick93) /
+     bomb cast identity label caption dual-stroke (tick94) /
+     touch-pad .tc-stock tip densify dual-stroke (tick95) /
+     touch-pad .tc-ready tip densify dual-stroke + Activation glow (tick96) /
+     HUD stock pulse lbl tip densify dual-stroke + glow (tick97) /
+     enemy bullet rim/core / player-hit rose shatter (+ tip/cool) /
+     bomb cast budget 260/520 (+ afterglow tip/cool) /
+     graze stretch glitter (+ tip/cool) / pickup soft-sprite chips (+ tip/cool) /
+     C special muzzle stretch grit (+ tip/cool) /
+     deathbomb grace bloom+arc grit (+ tip/cool) /
+     option satellite soft trails (+ tip/cool) /
+     focus-mode bloom+orbit grit (+ tip/cool) / rare fanfare soft orbit grit /
+     WARNING / STAGE CLEAR / STAGE START / pause / CONTROLS / loading /
+     OPTIONS / touch-pad / select / result / HUD clusters / tip densify
+     tip58–67 / canvas+GPU tip/cool paths / HOLD dens frozen.
+
+======================================================================
+한국어 요약 (Korean-ready)
+======================================================================
+
+- Tick97 포커스: HUD LIFE/BOMB pulse 라벨 (is-critical / is-extend /
+  is-deathbomb) glow-forward muddy
+  (canvas ceremony/pulse/fade 캡션 tick89–94 + .tc-stock tip95 +
+  .tc-ready tip96 소진 후, 같은 stock plate의 tick45 idle LIFE/BOMB
+  dual-stroke 대비 pulse 상태 lateral stroke 소실이 micro UI clear win;
+  orbital/orbitblade/chainarc·enemy P·bomb B·combo is-hot는 SKIP).
+
+- 증거: tick45 keep-pulse 오버라이드가 soft rim + Activation/danger glow만
+  유지하고 1px/-1px lateral dual-stroke를 제거. idle `.hud-stocks .hud-lbl`
+  dual-stroke 언어와 불일치. tick96 READY glow→dual-stroke+glow와 동형.
+
+- 수정: css/style.css TICK97 블록 — critical/extend/deathbomb .hud-lbl
+  dual-stroke tip densify + pulse glow 유지. 색/pip 애니메이션/
+  life-warn/CHARGE/tick45 plate 구조 유지. dens/실루엣/기능 삭제/
+  AI 이미지/Box2·Tap1 없음. qa-hud-stock-pulse-caption.mjs 추가.
+  hud-stock-cluster / tc-ready / touch-pad-labels TICK97 경계 반영.
+
+- QA: hud-stock-pulse-caption + hud-stock-cluster + tc-ready-caption +
+  tc-stock-caption + touch-pad-labels + bomb-label-caption +
+  rare-chip-caption + core-open-caption + wave-hud-caption +
+  deathbomb-feedback + stage-start/clear + warning-midboss +
+  rotate/asset-error + bomb-density + hold-muzzle / gameplay /
+  weapon-roles / basic-shots / particle / gpu-mote / wipe-explosion /
+  special-muzzle / special-shots / hud-score-meta / boss-hp-bar /
+  hud-sp-gauge PASS. HOLD dens frozen 유지.
+
+- 점수(정직): UI ≈79 (+0, 80+ 금지), VFX ≈69 (+0, 70+ 금지).
+
+- 다음: dens churn 금지. canvas soft-fill + .tc-stock soft-shadow +
+  .tc-ready glow-only + stock pulse glow-forward 경로 소진 (tick89–97).
+  추가 작업은 새 muddy 확인 시에만 (잔여: orbital / orbitblade /
+  chainarc / enemy P·bomb B micro glyph / combo is-hot — 확인 후).
+  tip densify·soft-blob 경로 거의 소진. 확인 없으면 honest +0 QA +
+  next gap 허용. stock pulse dual-stroke + glow tip densify는 tick97 보존.
+
+Model: inherit
+Korean-ready: yes

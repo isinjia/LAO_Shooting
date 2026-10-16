@@ -1,0 +1,130 @@
+{
+  "dump": {
+    "ok": true,
+    "enemyLive": 125,
+    "skipHalo": true
+  },
+  "pixels": [
+    {
+      "color": "#8fe5ff",
+      "core": [
+        26,
+        44,
+        41,
+        255
+      ],
+      "rimSample": [
+        25,
+        42,
+        45,
+        255
+      ]
+    },
+    {
+      "color": "#ffffff",
+      "core": [
+        44,
+        65,
+        60,
+        255
+      ],
+      "rimSample": [
+        29,
+        48,
+        41,
+        255
+      ]
+    },
+    {
+      "color": "#ff9f43",
+      "core": [
+        41,
+        60,
+        55,
+        255
+      ],
+      "rimSample": [
+        46,
+        67,
+        63,
+        255
+      ]
+    },
+    {
+      "color": "#8fe5ff",
+      "core": [
+        44,
+        63,
+        50,
+        255
+      ],
+      "rimSample": [
+        37,
+        54,
+        48,
+        255
+      ]
+    },
+    {
+      "color": "#ffffff",
+      "core": [
+        67,
+        78,
+        76,
+        255
+      ],
+      "rimSample": [
+        48,
+        65,
+        55,
+        255
+      ]
+    },
+    {
+      "color": "#ff9f43",
+      "core": [
+        47,
+        66,
+        61,
+        255
+      ],
+      "rimSample": [
+        38,
+        58,
+        54,
+        255
+      ]
+    },
+    {
+      "color": "#8fe5ff",
+      "core": [
+        73,
+        94,
+        97,
+        255
+      ],
+      "rimSample": [
+        58,
+        75,
+        61,
+        255
+      ]
+    },
+    {
+      "color": "#ffffff",
+      "core": [
+        72,
+        85,
+        84,
+        255
+      ],
+      "rimSample": [
+        74,
+        85,
+        84,
+        255
+      ]
+    }
+  ],
+  "out": "E:\\Test_Ban\\2_LAO_MINI_ACTION\\tools\\qa-enemy-bullets.png"
+}

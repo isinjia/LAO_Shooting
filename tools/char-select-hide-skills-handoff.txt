@@ -1,0 +1,55 @@
+CHAR SELECT — HIDE SHOT / HOLD / SPECIAL SKILL NAMES
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+GOAL
+================================================================
+Character select UI must not show SHOT / HOLD / SPECIAL (C) skill names.
+Combat skill systems and in-game HUD skill names stay intact.
+
+================================================================
+REMOVED / HIDDEN (select UI only)
+================================================================
+1) Char-card kit block (main.js charCardHtml)
+   - Removed `.kit-card` + `.kit-line` rows that painted:
+     SHOT {kit.shot} · HOLD {kit.charge} · SPECIAL {kit.special}
+   - Also covered RANDOM slot (??? / select.kitRare) and rare reveal
+     cards (paintRandomSlot → charCardHtml).
+
+2) kitLines() helper (main.js)
+   - Deleted. No longer builds select-card skill name HTML.
+
+3) Select dossier kit line (main.js syncSelectDossier)
+   - `#select-dossier-kit` cleared + hidden=true.
+   - Element kept in DOM for layout / probe selectors / HARD axes.
+   - Character name (#select-dossier-name) still updates on selection.
+
+4) Import cleanup
+   - Dropped unused `kitText` import from main.js select path.
+   - `kitText` + all `kit.*` / `special.*` i18n strings remain in i18n.js.
+
+================================================================
+PRESERVED
+================================================================
+- Selection behavior, portraits, charDisplayName i18n, RANDOM / rare cheat
+- Layout HARD axes / syncSelectPanelBudget (dossier element retained)
+- Combat HUD special name via specialDisplayName / hud.spReady (game.js)
+- Weapon / hold / special systems (player.js, weapon-skills.js,
+  special-skill-profiles.js, special-shots.js)
+- Hirume + Constantia gameplay kits untouched (foxflame / sunseal /
+  lockround etc.)
+
+================================================================
+COMBAT CONFIRMATION (static)
+================================================================
+- game.js still imports specialDisplayName and uses hud.spReady with
+  skill name for SP-ready / charge HUD copy.
+- player.specialName getter still resolves SPECIAL_ATTACKS names.
+- No edits to weapon-skills / special-skill-profiles / player shot logic.
+
+================================================================
+DO NOT
+================================================================
+Do not strip kit.* i18n keys. Do not hide combat HUD skill labels.
+Do not alter Hirume/Constantia kits for this UI-only change.

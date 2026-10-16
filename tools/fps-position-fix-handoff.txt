@@ -1,0 +1,14 @@
+LAO MINI ACTION — FPS overlay position fix
+Date: 2026-10-06
+
+Problem
+- Canvas FPS readout ("NN FPS") was drawn at top-right (W-12, 10)
+  and sat under the DOM STAGE / GRAZE / COMBO meta cluster.
+
+Change (position only)
+- File: js/game.js (draw path after shake restore; ~8Hz sample unchanged)
+- New anchor: right-aligned at (W - 12, 60) — just below the meta plate
+  (.hud-top ~8px + cluster ~48px). Stroke/fill/style/sample rate kept.
+
+Not touched
+- Combat HUD DOM/CSS, title/select screens, FPS sampling cost.

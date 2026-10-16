@@ -1,0 +1,40 @@
+TICK8 handoff (2026-10-04) — Latest LAO UI / VFX polish (do not revert)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+THIS TICK
+1) Lobby density toward Panel_Lobby chrome:
+   - Title: status bar (CH.MINI/OPS/ONLINE), right rail mirror, footer STANDBY,
+     soft menubg wash, CONTROLS Box2 + Text_Deco head.
+   - Select: left rail + ROSTER/SORTIE/CONFIRM strip; dossier Text_Deco cue;
+     Activation plate on SORTIE SELECT brand.
+   - Options: Title_Deco under opt-head.
+   - HUD: Tap1 soft-light on power-badge only (no Top_Bg full fill).
+   - Short/narrow viewports still hide rails/status to protect CONTROLS.
+
+2) Ceremony canvas bitmaps (when preloaded):
+   - js/newui-assets.js lazy cache (titleDeco/topBg/box2/textDeco).
+   - Boot + Game ctor call ensureNewUiSlices().
+   - START/CLEAR cards: Box2 tile fill, Top_Bg edge rails, Title_Deco underline.
+   - Hatch fallback if images not ready. WARNING unchanged.
+
+3) Cheap shot/hit clarity (baseline ~60 → modest bump only):
+   - shot-fx tipCore: brighter white core + thin rim.
+   - polish-fx hitSpark: slightly larger/longer flash+cross; flash/cross draw punch.
+
+HONEST SCORE
+  UI  ≈ 68 (lobby status/rails/menubg/keys Box2/select strip; still short of full
+            Panel_Lobby_NewUi parity / live menu destinations)
+  VFX ≈ 66 (shot tip + hit flash readability; kit individuality still middling)
+  NEVER claim 90.
+  Baseline recall: user VFX60 UI40 → both above baseline, neither near polished client.
+
+NEXT TICK — open polish
+  1) More Valofe slice copy if AssetBundle path available (Panel_Lobby icons).
+  2) Per-kit VFX identity (not just tip/hit clarity).
+  3) Optional: select right rail / options resource strip — only if density still thin.
+  4) Keep combat HUD sparse; do not fill hud-top with Top_Bg.

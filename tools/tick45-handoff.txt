@@ -1,0 +1,218 @@
+TICK45 handoff (2026-10-04) — HUD LIFE/BOMB/CHARGE cluster NewUI residual
+
+
+======================================================================
+PRESERVE (do not break)
+======================================================================
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep.
+
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep.
+
+- C special muzzle stretch grit / white tip cores (tick24) — keep.
+
+- Deathbomb grace bloom + arc grit (tick25) — keep.
+
+- Option satellite soft trails (tick26) — keep.
+
+- Focus-mode bloom + orbit grit (tick27) — keep.
+
+- Rare fanfare soft orbit grit (tick28) — keep.
+
+- WARNING mid/boss palette + band grit + midboss-frame-pulse (tick29) — keep.
+
+- STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip (tick30) — keep.
+
+- Pause overlay menubg+world2 + Box2 plates + brand Activation cue (tick31) — keep.
+
+- Title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only (tick32) — keep.
+
+- STAGE START cyan wash + grit + dual stroke + START kind chip (tick33) — keep.
+
+- Loading bar Activation brand + track Tap1/chamfer + meta Box2 plate (tick34) — keep.
+
+- OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions (tick35) — keep.
+
+- Touch-pad dual-stroke captions + role tints + float MOVE zone hint (tick36) — keep.
+
+- Select dossier Box2/cyan/Activation + select-actions Box2 plate (tick37) — keep.
+
+- Result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash (tick38) — keep.
+
+- HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue (tick39) — keep.
+
+- Title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 (tick40) — keep.
+
+- Tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + note/actions Box2 (tick41) — keep.
+
+- Mobile portrait detection: isPortrait (h>w), syncPortraitHint, .rotate-hint.is-on,
+  orientationchange settle — do NOT break.
+
+- Rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke (tick42) — keep.
+
+- Asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+  Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 (tick43) — keep.
+
+- Boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+  track Box2+Tap1 + midboss-frame-pulse + critical pulse (tick44) — keep.
+
+
+======================================================================
+THIS TICK — one focused win: HUD LIFE/BOMB/CHARGE cluster NewUI residual
+======================================================================
+
+1) css/style.css · TICK45 HUD LIFE/BOMB/CHARGE cluster NewUI polish (decorative only)
+
+   - .hud-stocks: Box2 + cyan rim/inset + 4px chamfer (combat plate,
+     not menubg wash — HUD sparse).
+
+   - .hud-stocks .hud-lbl / .hud-val-sm: dual-stroke readability.
+
+   - #lives-pips .pip / .on: cyan densify; skew silhouette kept.
+
+   - .pip-bomb .pip / .on: oval + fuse kept; cyan/brass densify when on.
+
+   - #life-stock.is-critical / .is-extend: pulse language reaffirmed
+     (life-critical-pulse kept).
+
+   - #bomb-stock.is-deathbomb / .is-empty: deathbomb flash + empty tint kept.
+
+   - .life-warn-chip: Activation plate + critical pulse kept.
+
+   - #charge-track: cyan rim/inset + 3px chamfer + Box2 + Tap1 ::after
+     end cue (boss/load track parity).
+
+   - #charge-row .sp-label: dual-stroke.
+
+   - #charge-track.ready / #charge-fill: brass Activation rim cue + fill sheen.
+
+   - Untouched: boss HP, power-badge, asset-error, rotate-hint, tutorial,
+     title lobby, CONTROLS pins, result score/meta, select dossier,
+     touch-pad labels, HOLD dens/side/emit, bomb-vfx, combat particles,
+     STAGE START/CLEAR / WARNING, pause/OPTIONS/loading NewUI,
+     SP track residual (left for next open polish), stock wiring
+     (is-critical / is-extend / is-deathbomb / is-empty / charge ready).
+
+
+2) tools/qa-hud-stock-cluster.mjs
+
+   - Asserts TICK45 stocks Box2 cyan rim/inset/chamfer, lbl dual-stroke,
+     pip densify, critical/extend/deathbomb pulses, life-warn Activation,
+     charge rim/Tap1/ready, hud-top sparse (no Top_Bg), markup retained,
+     prior ceremony markers, boss HP / power-badge / asset-error / rotate /
+     HOLD untouched.
+
+
+3) Verify
+
+   - node tools/qa-hud-stock-cluster.mjs PASS
+       stocks Box2 cyan rim/inset
+       lbl dual-stroke + pip densify
+       critical/extend/deathbomb kept
+       charge rim/Tap1/ready
+       hud-top sparse
+       boss/power/HOLD untouched
+
+   - node tools/qa-boss-hp-bar.mjs · qa-hud-power-badge.mjs ·
+     qa-asset-error-overlay.mjs · qa-rotate-overlay.mjs ·
+     qa-tutorial-newui.mjs · qa-title-lobby.mjs · qa-result-screen.mjs ·
+     qa-select-dossier.mjs · qa-touch-pad-labels.mjs ·
+     qa-options-newui.mjs · qa-loading-bar-newui.mjs ·
+     qa-pause-newui.mjs · qa-controls-newui.mjs ·
+     qa-stage-start-card.mjs · qa-stage-clear-card.mjs ·
+     qa-warning-midboss.mjs · qa-rare-fanfare.mjs ·
+     qa-focus-mode.mjs · qa-option-trails.mjs ·
+     qa-deathbomb-feedback.mjs · qa-special-muzzle.mjs ·
+     qa-graze-pickup.mjs · test-gameplay-design.mjs ·
+     test-basic-shots.mjs · test-weapon-roles.mjs PASS
+
+
+======================================================================
+HONEST SCORE (do NOT claim polished / 70+)
+======================================================================
+
+  UI  ≈ 75 (LIFE/BOMB stock densified to power-badge / charge-track /
+            boss-HP band + CHARGE rim/Tap1/ready cue; prior boss HP /
+            asset-error / rotate / tutorial / title lobby / result /
+            dossier / pads / OPTIONS/pause/CONTROLS depth;
+            critical/extend/deathbomb pulses kept clear)
+
+  VFX ≈ 60 (no combat particle work this tick — still soft-sprite /
+            budget-capped; NOT client-grade sparks)
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+======================================================================
+NEXT TICK — open polish
+======================================================================
+
+  1) Optional: SP gauge residual NewUI (sp-track / sp-fill / ready flash
+     toward charge/boss/load band — keep ready / is-ready-flash / Lv chip;
+     combat HUD sparse; never Top_Bg on hud-top).
+
+  2) Optional: small VFX particle quality win (soft-sprite language only;
+     NOT HOLD dens/side/emit churn; do not claim VFX 70+).
+
+  3) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520 /
+     graze stretch glitter / pickup soft-sprite chips / C special muzzle stretch grit /
+     deathbomb grace bloom+arc grit / option satellite soft trails /
+     focus-mode bloom+orbit grit / rare fanfare soft orbit grit /
+     WARNING mid/boss palette + band grit + midboss-frame-pulse /
+     STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip /
+     pause overlay menubg+world2 + Box2 plates + brand Activation cue /
+     title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only /
+     STAGE START cyan wash + grit + dual stroke + START kind chip /
+     loading bar Activation brand + track Tap1/chamfer + meta Box2 plate /
+     OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions /
+     touch-pad dual-stroke captions + float MOVE zone hint /
+     select dossier Box2/cyan/Activation + select-actions Box2 plate /
+     result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash /
+     HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue /
+     title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2 /
+     tutorial Activation+Deco2 + tut-row Box2 cyan rim/inset + note/actions Box2 /
+     rotate-hint menubg+world2 + card Box2 cyan rim/inset + Activation+Info icon + dual-stroke /
+     asset-error screen-asset-error menubg+world2 cool-amber + Activation+Deco2 +
+     Info icon + msg Box2 cyan rim/inset + dual-stroke h2 + Title_Deco1 /
+     boss HP frame Box2 rose rim/inset/chamfer + tag Activation + name/pct dual-stroke +
+     track Box2+Tap1 + midboss-frame-pulse + critical pulse /
+     HUD stocks Box2 cyan rim/inset/chamfer + LIFE/BOMB dual-stroke + pip densify +
+     life-critical/extend/deathbomb pulses + life-warn Activation +
+     CHARGE cyan rim/inset/chamfer + Tap1 + ready Activation cue.
+
+
+Model: inherit
+
+Korean-ready: yes

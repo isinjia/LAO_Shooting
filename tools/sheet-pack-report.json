@@ -1,0 +1,24 @@
+{
+  "packed": 1,
+  "skipped": 0,
+  "failed": 0,
+  "totalFrames": 216,
+  "totalSheets": 2,
+  "totalBytes": 3141088,
+  "format": "webp",
+  "pack": "shelf-trim",
+  "results": [
+    {
+      "key": "peregrinus_bskill2",
+      "skipped": false,
+      "frames": 216,
+      "sheets": 2,
+      "cell": [
+        380,
+        368
+      ],
+      "format": "webp",
+      "bytes": 3141088
+    }
+  ]
+}

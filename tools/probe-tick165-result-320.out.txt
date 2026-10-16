@@ -1,0 +1,5 @@
+HARD full over=0 maxH=180px ocH=180 ctaOut=true cta=23/28 secOut=true sec=23/28 scoreH=44 metaH=72 metaDisp=grid
+HARD full+row over=0 maxH=180px ocH=180 ctaOut=true cta=23/28 secOut=true sec=23/28 scoreH=44 metaH=72 metaDisp=grid
+ok full+metaHide over=0 maxH=180px ocH=120 ctaOut=false cta=28/28 secOut=false sec=28/28 scoreH=44 metaH=0 metaDisp=none
+ok full+ultra over=0 maxH=180px ocH=175.5 ctaOut=false cta=24/24 secOut=false sec=24/24 scoreH=44 metaH=71 metaDisp=grid
+ok full+row+ultra over=0 maxH=180px ocH=175 ctaOut=false cta=24/24 secOut=false sec=24/24 scoreH=44 metaH=71 metaDisp=grid

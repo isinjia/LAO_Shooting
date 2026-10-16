@@ -1,0 +1,135 @@
+{
+  "label": "after",
+  "env": "Playwright Chromium + tools/static-server.mjs",
+  "ok": true,
+  "disclaimer": "Headless frame times are a relative regression signal only — not device FPS.",
+  "simSec": 60.02,
+  "wallMs": 220,
+  "frames": 3601,
+  "avgFrameMs": 0.061,
+  "maxFrameMs": 57.7,
+  "stage": 1,
+  "phase": "midboss",
+  "waves": [
+    {
+      "stage": 1,
+      "wave": 0,
+      "phase": "waves",
+      "maxEnemies": 0,
+      "maxBullets": 39,
+      "maxFx": 0,
+      "maxDt": 0.016666666666666666,
+      "samples": 183
+    },
+    {
+      "stage": 1,
+      "wave": 1,
+      "phase": "waves",
+      "maxEnemies": 2,
+      "maxBullets": 47,
+      "maxFx": 4,
+      "maxDt": 0.016666666666666666,
+      "samples": 359
+    },
+    {
+      "stage": 1,
+      "wave": 2,
+      "phase": "waves",
+      "maxEnemies": 4,
+      "maxBullets": 49,
+      "maxFx": 16,
+      "maxDt": 0.016666666666666666,
+      "samples": 362
+    },
+    {
+      "stage": 1,
+      "wave": 3,
+      "phase": "waves",
+      "maxEnemies": 5,
+      "maxBullets": 54,
+      "maxFx": 23,
+      "maxDt": 0.016666666666666666,
+      "samples": 424
+    },
+    {
+      "stage": 1,
+      "wave": 4,
+      "phase": "waves",
+      "maxEnemies": 6,
+      "maxBullets": 51,
+      "maxFx": 33,
+      "maxDt": 0.016666666666666666,
+      "samples": 364
+    },
+    {
+      "stage": 1,
+      "wave": 5,
+      "phase": "waves",
+      "maxEnemies": 1,
+      "maxBullets": 40,
+      "maxFx": 16,
+      "maxDt": 0.016666666666666666,
+      "samples": 422
+    },
+    {
+      "stage": 1,
+      "wave": 6,
+      "phase": "waves",
+      "maxEnemies": 4,
+      "maxBullets": 40,
+      "maxFx": 30,
+      "maxDt": 0.016666666666666666,
+      "samples": 367
+    },
+    {
+      "stage": 1,
+      "wave": 7,
+      "phase": "waves",
+      "maxEnemies": 4,
+      "maxBullets": 90,
+      "maxFx": 16,
+      "maxDt": 0.016666666666666666,
+      "samples": 364
+    },
+    {
+      "stage": 1,
+      "wave": 8,
+      "phase": "waves",
+      "maxEnemies": 5,
+      "maxBullets": 94,
+      "maxFx": 41,
+      "maxDt": 0.016666666666666666,
+      "samples": 182
+    },
+    {
+      "stage": 1,
+      "wave": 9,
+      "phase": "waves",
+      "maxEnemies": 8,
+      "maxBullets": 110,
+      "maxFx": 25,
+      "maxDt": 0.016666666666666666,
+      "samples": 305
+    },
+    {
+      "stage": 1,
+      "wave": 9,
+      "phase": "mid-windup",
+      "maxEnemies": 1,
+      "maxBullets": 39,
+      "maxFx": 13,
+      "maxDt": 0.016666666666666666,
+      "samples": 121
+    },
+    {
+      "stage": 1,
+      "wave": 9,
+      "phase": "midboss",
+      "maxEnemies": 1,
+      "maxBullets": 48,
+      "maxFx": 21,
+      "maxDt": 0.016666666666666666,
+      "samples": 150
+    }
+  ]
+}

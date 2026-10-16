@@ -1,0 +1,37 @@
+=== B1) ja/zh-Hant rare on select overlay-content ===
+RARE-ASIA ja@320×200 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 overOc=1.3 compact=true ultra=false
+RARE-ASIA zh-Hant@320×200 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 overOc=1.3 compact=true ultra=false
+RARE-ASIA ja@340×200 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 overOc=0 compact=true ultra=false
+RARE-ASIA zh-Hant@340×200 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 overOc=0 compact=true ultra=false
+RARE-ASIA ja@390×220 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 overOc=0 compact=true ultra=false
+RARE-ASIA zh-Hant@390×220 eternity → ok hint=14/14 name=29/29 tag=18.6/18.6 overOc=0 compact=true ultra=false
+=== B2) overlay peer CTAs @ NEW short-landscape sizes ===
+OPT pt@390×220 → ok ctaVis=46/46 over=0
+SEL pt@390×220 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE pt@390×220 → ok ctaVis=30/30 secVis=30/30 over=0
+OPT es@390×220 → ok ctaVis=46/46 over=0
+SEL es@390×220 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE es@390×220 → ok ctaVis=30/30 secVis=30/30 over=0
+OPT ru@390×220 → ok ctaVis=46/46 over=0
+SEL ru@390×220 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE ru@390×220 → ok ctaVis=32/32 secVis=32/32 over=0
+OPT pt@412×226 → ok ctaVis=46/46 over=0
+SEL pt@412×226 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE pt@412×226 → ok ctaVis=30/30 secVis=30/30 over=0
+OPT es@412×226 → ok ctaVis=46/46 over=0
+SEL es@412×226 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE es@412×226 → ok ctaVis=30/30 secVis=30/30 over=0
+OPT ru@412×226 → ok ctaVis=46/46 over=0
+SEL ru@412×226 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE ru@412×226 → ok ctaVis=32/32 secVis=32/32 over=0
+OPT pt@428×241 → ok ctaVis=46/46 over=0
+SEL pt@428×241 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE pt@428×241 → ok ctaVis=30/30 secVis=30/30 over=0
+OPT es@428×241 → ok ctaVis=46/46 over=0
+SEL es@428×241 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE es@428×241 → ok ctaVis=30/30 secVis=30/30 over=0
+OPT ru@428×241 → ok ctaVis=46/46 over=0
+SEL ru@428×241 → ok ctaVis=28/28 secVis=28/28 over=0
+PAUSE ru@428×241 → ok ctaVis=32/32 secVis=32/32 over=0
+=== SUMMARY ===
+hard=0 soft=0 ok=33

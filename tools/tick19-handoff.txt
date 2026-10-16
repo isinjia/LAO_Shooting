@@ -1,0 +1,64 @@
+TICK19 handoff (2026-10-04) — Playwright verify muddy HOLD pairs (no VFX code change)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+THIS TICK — live verify only (fix dens/side/emit only if still muddy)
+
+1) Playwright capture (tools/qa-hold-muddy.mjs + tools/qa-hold-pixel-sample.mjs)
+   - Server: http://127.0.0.1:5188/ already up.
+   - Lv5 primed; styles confirmed on live bullets:
+       hirume HOLD → sunbird (fan)
+       labiata HOLD → plasmaslash (crescent)
+       lrl HOLD → dragonaxe (axe)
+       merlin HOLD → shell (arty)
+       eternity TAP → coffinround (HMG volley identity)
+   - Note: eternity HOLD charge still spawns coffinwall (관 방패); HMG read is
+     the coffinround autofire / kit identity — compare that vs merlin shell.
+
+2) Pair verdict (screenshots under tools/qa-hold-*.png)
+   - fan vs crescent vs axe: DISTINCT enough
+       yellow stacked ember fan ≠ pink elongated crescent sheet ≠ red chunky axe.
+       particleN mid-burst ≈ fan12 / crescent48 / axe18 (emit language diverges).
+   - merlin arty vs eternity HMG: DISTINCT enough
+       shell sparse ash (particleN≈14, 8 shells) ≠ coffinround dense short chips
+       (particleN≈44, 20 rounds). KIT dens 0.78 vs 1.34 still reads.
+   - No dens/side/emit-budget code change this tick (would be noise).
+
+3) NewUI / combat HUD
+   - Untouched. Sparse HUD + Korean stage title (프로그램 침입) confirmed in shots.
+   - POWER Lv5 visible; no Top_Bg full fill on hud-top.
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; overlay chrome already in place)
+  VFX ≈ 60 (playtest confirms muddy-pair split holds; still arcade
+            soft-sprite / budget-capped — NOT client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band if identities read in playtest — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Optional human eye pass on same pairs in a real sortie (not prime-swap).
+     Only touch dens/side/emit if a pair collapses again — no new silhouettes.
+  2) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  3) Live menu destinations still absent — do not fake clickable lobby apps.
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language.
+
+Model: inherit
+Korean-ready: yes

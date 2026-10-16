@@ -1,0 +1,1205 @@
+{
+  "allOk": true,
+  "turbo": 10,
+  "invuln": true,
+  "stagePlan": [
+    {
+      "stage": 1,
+      "name": "프로그램 침입",
+      "waveTimes": [
+        3,
+        9,
+        15,
+        22,
+        28,
+        35,
+        41,
+        47,
+        50,
+        64,
+        71,
+        78,
+        85,
+        92,
+        99,
+        106,
+        113,
+        120
+      ],
+      "midAt": 55,
+      "bossAt": 126
+    },
+    {
+      "stage": 2,
+      "name": "철충 군집",
+      "waveTimes": [
+        2,
+        7,
+        12,
+        17,
+        23,
+        29,
+        34,
+        40,
+        45,
+        58,
+        63,
+        69,
+        74,
+        80,
+        86,
+        92,
+        98,
+        105
+      ],
+      "midAt": 50,
+      "bossAt": 111
+    },
+    {
+      "stage": 3,
+      "name": "나이트칙 둥지",
+      "waveTimes": [
+        4,
+        10,
+        17,
+        24,
+        31,
+        38,
+        44,
+        50,
+        54,
+        70,
+        77,
+        84,
+        91,
+        98,
+        105,
+        112,
+        119,
+        126
+      ],
+      "midAt": 60,
+      "bossAt": 132
+    },
+    {
+      "stage": 4,
+      "name": "기계 강습",
+      "waveTimes": [
+        3,
+        7,
+        12,
+        16,
+        22,
+        27,
+        33,
+        38,
+        43,
+        61,
+        65,
+        71,
+        76,
+        82,
+        87,
+        94,
+        100,
+        107
+      ],
+      "midAt": 52,
+      "bossAt": 113
+    },
+    {
+      "stage": 5,
+      "name": "심층 포식자",
+      "waveTimes": [
+        3,
+        6,
+        12,
+        16,
+        23,
+        28,
+        35,
+        40,
+        47,
+        66,
+        70,
+        76,
+        83,
+        88,
+        95,
+        101,
+        109,
+        117
+      ],
+      "midAt": 56,
+      "bossAt": 124
+    }
+  ],
+  "specialPower": {
+    "hirume": {
+      "volleyTotals": [
+        6,
+        4,
+        0
+      ],
+      "vsBombLeader": 22
+    },
+    "constantia": {
+      "volleyTotals": [
+        6,
+        4,
+        3
+      ],
+      "vsBombLeader": 22
+    },
+    "lrl": {
+      "volleyTotals": [
+        6,
+        6,
+        9
+      ],
+      "vsBombLeader": 22
+    },
+    "merlin": {
+      "volleyTotals": [
+        6,
+        6,
+        6
+      ],
+      "vsBombLeader": 22
+    },
+    "fafnir": {
+      "volleyTotals": [
+        6,
+        6,
+        6
+      ],
+      "vsBombLeader": 22
+    },
+    "eternity": {
+      "volleyTotals": [
+        6,
+        3,
+        0
+      ],
+      "vsBombLeader": 22
+    },
+    "labiata": {
+      "volleyTotals": [
+        6,
+        3,
+        0
+      ],
+      "vsBombLeader": 22
+    },
+    "emily": {
+      "volleyTotals": [
+        6,
+        4,
+        9
+      ],
+      "vsBombLeader": 22
+    }
+  },
+  "results": {
+    "hirume": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 189683,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "hirume",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 6,
+            "bossFightSec": 18.1,
+            "totalSec": 150.13,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 17,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 10.13,
+            "bossFightSec": 19.8,
+            "totalSec": 140.97,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 28,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 10.87,
+            "bossFightSec": 26.87,
+            "totalSec": 169.77,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 27,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 13.57,
+            "bossFightSec": 25.83,
+            "totalSec": 152.43,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 41,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 14.63,
+            "bossFightSec": 29.13,
+            "totalSec": 167.8,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 40,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 21,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 153,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 155617,
+        "_wallStarted": 33915,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0552681\nHI-SCORE\n0552681\nGRAZE\n1358\nSTAGE\nALL 5 · 심층 포식자\nPILOT\nHirume\nMAX COMBO\n12\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    },
+    "constantia": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 158564,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "constantia",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 4.67,
+            "bossFightSec": 13.33,
+            "totalSec": 144.03,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 17,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 6.93,
+            "bossFightSec": 10.87,
+            "totalSec": 128.83,
+            "misses": 0,
+            "bombsUsed": 2,
+            "deathbombs": 0,
+            "specials": {
+              "1": 26,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 6.2,
+            "bossFightSec": 16.33,
+            "totalSec": 154.57,
+            "misses": 0,
+            "bombsUsed": 2,
+            "deathbombs": 0,
+            "specials": {
+              "1": 24,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 8.43,
+            "bossFightSec": 18.43,
+            "totalSec": 139.9,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 40,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 9.6,
+            "bossFightSec": 23.17,
+            "totalSec": 156.8,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 34,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 14,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 141,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 122882,
+        "_wallStarted": 35086.89999997616,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0536008\nHI-SCORE\n0552681\nGRAZE\n1483\nSTAGE\nALL 5 · 심층 포식자\nPILOT\n콘스탄챠\nMAX COMBO\n9\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    },
+    "lrl": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 158870,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "lrl",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 9.27,
+            "bossFightSec": 19.23,
+            "totalSec": 154.53,
+            "misses": 0,
+            "bombsUsed": 1,
+            "deathbombs": 0,
+            "specials": {
+              "1": 21,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 9.3,
+            "bossFightSec": 16.1,
+            "totalSec": 136.43,
+            "misses": 0,
+            "bombsUsed": 2,
+            "deathbombs": 0,
+            "specials": {
+              "1": 29,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 7.43,
+            "bossFightSec": 23.1,
+            "totalSec": 162.57,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 32,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 10.33,
+            "bossFightSec": 22.13,
+            "totalSec": 145.5,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 44,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 13.97,
+            "bossFightSec": 24.6,
+            "totalSec": 162.6,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 45,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 15,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 171,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 144778,
+        "_wallStarted": 13639.299999982119,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0570813\nHI-SCORE\n0570813\nGRAZE\n1091\nSTAGE\nALL 5 · 심층 포식자\nPILOT\nLRL\nMAX COMBO\n14\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    },
+    "merlin": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 154717,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "merlin",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 9.5,
+            "bossFightSec": 19.2,
+            "totalSec": 154.73,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 17,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 10.3,
+            "bossFightSec": 24.6,
+            "totalSec": 145.93,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 25,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 15.13,
+            "bossFightSec": 26.8,
+            "totalSec": 173.97,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 26,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 13.87,
+            "bossFightSec": 33.33,
+            "totalSec": 160.23,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 39,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 17.63,
+            "bossFightSec": 37.17,
+            "totalSec": 178.83,
+            "misses": 0,
+            "bombsUsed": 6,
+            "deathbombs": 0,
+            "specials": {
+              "1": 39,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 23,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 146,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 137165,
+        "_wallStarted": 16799.90000000596,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0556265\nHI-SCORE\n0570813\nGRAZE\n1598\nSTAGE\nALL 5 · 심층 포식자\nPILOT\n멀린\nMAX COMBO\n8\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    },
+    "fafnir": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 184915,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "fafnir",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 6.07,
+            "bossFightSec": 22,
+            "totalSec": 154.1,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 18,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 10.17,
+            "bossFightSec": 19.3,
+            "totalSec": 140.5,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 27,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 10.87,
+            "bossFightSec": 27.3,
+            "totalSec": 170.2,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 28,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 13.13,
+            "bossFightSec": 25.47,
+            "totalSec": 151.63,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 42,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 15,
+            "bossFightSec": 31.8,
+            "totalSec": 170.83,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 41,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 20,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 156,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 171944,
+        "_wallStarted": 12388,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0555026\nHI-SCORE\n0570813\nGRAZE\n1414\nSTAGE\nALL 5 · 심층 포식자\nPILOT\n파프니르\nMAX COMBO\n10\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    },
+    "eternity": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 131769,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "eternity",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 9.5,
+            "bossFightSec": 22.07,
+            "totalSec": 157.6,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 16,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 10.8,
+            "bossFightSec": 18.57,
+            "totalSec": 140.4,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 25,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 9.6,
+            "bossFightSec": 26.33,
+            "totalSec": 167.97,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 23,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 15.43,
+            "bossFightSec": 31.27,
+            "totalSec": 159.73,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 36,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 12.67,
+            "bossFightSec": 35.77,
+            "totalSec": 172.47,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 35,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 21,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 135,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 124667,
+        "_wallStarted": 6352,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0538462\nHI-SCORE\n0570813\nGRAZE\n1619\nSTAGE\nALL 5 · 심층 포식자\nPILOT\n이터니티\nMAX COMBO\n8\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    },
+    "labiata": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 143372,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "labiata",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 8.63,
+            "bossFightSec": 18.07,
+            "totalSec": 152.73,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 16,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 7.23,
+            "bossFightSec": 16.57,
+            "totalSec": 134.83,
+            "misses": 0,
+            "bombsUsed": 2,
+            "deathbombs": 0,
+            "specials": {
+              "1": 23,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 7.43,
+            "bossFightSec": 22.4,
+            "totalSec": 161.87,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 24,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 10.37,
+            "bossFightSec": 22,
+            "totalSec": 145.4,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 34,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 13.83,
+            "bossFightSec": 27.4,
+            "totalSec": 165.27,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 37,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 15,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 134,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 138231,
+        "_wallStarted": 4608.299999982119,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0556955\nHI-SCORE\n0570813\nGRAZE\n1262\nSTAGE\nALL 5 · 심층 포식자\nPILOT\n라비아타\nMAX COMBO\n10\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    },
+    "emily": {
+      "ok": true,
+      "state": "cleared",
+      "wallMs": 159483,
+      "turbo": 10,
+      "invuln": true,
+      "metrics": {
+        "charKey": "emily",
+        "stages": [
+          {
+            "stage": 1,
+            "name": "프로그램 침입",
+            "waveSec": 126.03,
+            "midFightSec": 6,
+            "bossFightSec": 21.33,
+            "totalSec": 153.37,
+            "misses": 0,
+            "bombsUsed": 4,
+            "deathbombs": 0,
+            "specials": {
+              "1": 15,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 2,
+            "name": "철충 군집",
+            "waveSec": 111.03,
+            "midFightSec": 10.97,
+            "bossFightSec": 19.1,
+            "totalSec": 141.1,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 21,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 3,
+            "name": "나이트칙 둥지",
+            "waveSec": 132.03,
+            "midFightSec": 11.77,
+            "bossFightSec": 25.1,
+            "totalSec": 168.9,
+            "misses": 0,
+            "bombsUsed": 5,
+            "deathbombs": 0,
+            "specials": {
+              "1": 20,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 4,
+            "name": "기계 강습",
+            "waveSec": 113.03,
+            "midFightSec": 10.97,
+            "bossFightSec": 24.93,
+            "totalSec": 148.93,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 31,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          },
+          {
+            "stage": 5,
+            "name": "심층 포식자",
+            "waveSec": 124.03,
+            "midFightSec": 15.33,
+            "bossFightSec": 31.93,
+            "totalSec": 171.3,
+            "misses": 0,
+            "bombsUsed": 3,
+            "deathbombs": 0,
+            "specials": {
+              "1": 32,
+              "2": 0,
+              "3": 0
+            },
+            "avgFps": 30.3,
+            "minFps": 30.3,
+            "frameDrops": 1
+          }
+        ],
+        "totalMisses": 0,
+        "totalBombs": 18,
+        "totalDeathbombs": 0,
+        "specialsByLevel": {
+          "1": 119,
+          "2": 0,
+          "3": 0
+        },
+        "cleared": true,
+        "wallMs": 140413,
+        "_wallStarted": 18295.90000000596,
+        "live": null
+      },
+      "end": {
+        "gone": true,
+        "cleared": true,
+        "gameover": false,
+        "text": "MISSION COMPLETE\nALL CLEAR\nSCORE\n0545341\nHI-SCORE\n0570813\nGRAZE\n1486\nSTAGE\nALL 5 · 심층 포식자\nPILOT\n에밀리\nMAX COMBO\n9\nNO MISS\nYES\n다시하기 타이틀"
+      }
+    }
+  }
+}

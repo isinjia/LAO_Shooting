@@ -1,0 +1,19 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>캐릭터별 폭탄 효과</title>
+<style>body{margin:0;background:#0c1320;color:#d9e6fa;font:15px system-ui}header{max-width:960px;margin:18px auto;display:flex;justify-content:space-between;align-items:center}button,select{background:#203450;border:1px solid #55749a;color:inherit;padding:8px 14px;border-radius:6px;margin-left:8px;cursor:pointer}#stage{position:relative;width:min(100vw,960px);aspect-ratio:16/9;margin:auto}canvas{width:100%;height:100%;display:block}p{max-width:960px;margin:16px auto;color:#9eb3ce}</style>
+<header><strong>캐릭터별 폭탄 · Three.js</strong><nav><select id="character"><option value="hirume">히루메</option><option value="constantia">콘스탄챠</option><option value="lrl">LRL</option><option value="merlin">멀린</option><option value="fafnir">파프니르</option></select><button id="replay">다시 발동 (X)</button></nav></header>
+<div id="stage"><canvas width="960" height="540"></canvas></div><p id="description"></p>
+<script type="module">
+import {ProjectileVfx} from '../js/projectile-vfx.js';
+import {BombVfx,BOMB_PROFILES} from '../js/bomb-vfx.js';
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d'),vfx=new ProjectileVfx(canvas),bomb=new BombVfx();
+const select=document.querySelector('#character');let time=0,last=performance.now();
+const player={x:145,y:270,charKey:'hirume'},targets=[{x:420,y:150,alive:true},{x:640,y:290,alive:true},{x:840,y:140,alive:true},{x:420,y:390,alive:true},{x:825,y:400,alive:true}];
+const descriptions={hirume:'야타가라스의 정화 화염과 보호 결계',constantia:'윈체스터 기반 표적 조준과 3연속 정밀 사격',lrl:'사이클롭스 이터널 빔을 광역 광선으로 재해석',merlin:'프리드웬 빅 건의 함포 지원 사격',fafnir:'주피터의 생체 전기 증폭과 광역 정전 방전'};
+function trigger(){player.charKey=select.value;bomb.clear();bomb.trigger(player,targets,time);document.querySelector('#description').textContent=descriptions[player.charKey];}
+select.onchange=trigger;document.querySelector('#replay').onclick=trigger;window.addEventListener('keydown',e=>{if(e.code==='KeyX'&&!e.repeat)trigger();});window.addEventListener('resize',()=>vfx.resize());
+function frame(now){time+=Math.min(.033,(now-last)/1000);last=now;ctx.fillStyle='#101a28';ctx.fillRect(0,0,960,540);ctx.strokeStyle='#1d3047';ctx.lineWidth=1;for(let x=0;x<960;x+=60){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,540);ctx.stroke();}for(let y=0;y<540;y+=60){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(960,y);ctx.stroke();}
+ctx.fillStyle='#8295ad';for(const e of targets){ctx.fillRect(e.x-14,e.y-18,28,36);ctx.fillStyle='#ef6678';ctx.fillRect(e.x-8,e.y-8,16,5);ctx.fillStyle='#8295ad';}
+ctx.fillStyle=BOMB_PROFILES[player.charKey].color;ctx.beginPath();ctx.arc(player.x,player.y,16,0,Math.PI*2);ctx.fill();
+vfx.render([],time,null,bomb);if(!vfx.active)bomb.drawCanvas(ctx,time);bomb.drawLabel(ctx,time);requestAnimationFrame(frame);}
+trigger();requestAnimationFrame(frame);window.addEventListener('pagehide',()=>{vfx.dispose();bomb.clear();});
+</script></html>

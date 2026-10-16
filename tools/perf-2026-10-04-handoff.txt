@@ -1,0 +1,116 @@
+LAO MINI ACTION — FPS / RAM handoff 2026-10-04
+================================================
+Why UI-layout AGENT_LOOP never scored 성능/프레임 or 메모리
+----------------------------------------------------------
+Those ticks measured overlay geometry (HARD unread vs #app, letterbox false-HARD,
+locale CTA wrap). They never hooked requestAnimationFrame, never sampled
+used JS heap, never counted live bullets/particles. Layout ≈79 and VFX ≈69
+are orthogonal axes. They did not go up. dens FROZEN; no HOLD/VFX rewrite;
+no layout pass in this tick.
+
+Env (do not treat as a shipping phone/PC GPU)
+---------------------------------------------
+- Playwright Chromium headless + local static server, Windows host
+- rAF timestamps (real loop, not tools/measure-perf.mjs sim-pump)
+- Heap: CDP Runtime.getHeapUsage (+ Performance.getMetrics). In-page
+  performance.memory was a weak signal until --enable-precise-memory-info
+- Hirume, tutorial skipped, muted, debug.invuln + autoPlay
+- Canvas: pc-960 CSS 960×540 buf 960×540 dpr1; mobile-412 CSS 401.8×226
+  buf 703×396 dpr2.5 (letterbox inside 412×226)
+
+Measured FPS (avg / min / p95 dt)
+---------------------------------
+pc-960 960×540
+  title idle 4s:  avg 28.93  min 11.99  p95 66.6ms  hitches >33ms 45/105  >100ms 0
+  select idle 4s: avg 26.34  min 11.99  p95 66.7ms  hitches >33ms 51/95
+  SORTIE combat 16s: avg 30.83  min 5.46  p95 66.6ms  max dt 183.3ms
+                    hitches >33ms 183/426  >50ms 44  >100ms 2
+  pause overlay 4s: avg 22.18  min 7.50  p95 83.4ms  >100ms 2
+  Note: title/select have NO Game rAF sim (loop starts at SORTIE). Idle FPS
+  is overlay CSS + compositor on a large viewport in headless.
+
+mobile-412×226 dpr2.5 hasTouch
+  title idle:  avg 60.00  min 59.52  p95 16.7ms  hitches 0
+  select idle: avg 59.88  min 30.03  p95 16.8ms  >33ms 0
+  SORTIE combat 16s: avg 39.84  min 14.99  p95 50.0ms  max dt 66.7ms
+                    hitches >33ms 114/550  >50ms 15  >100ms 0
+  pause overlay: avg 38.08  min 14.99  p95 50.0ms  >50ms 4
+
+Prior 16s combat pass (same harness, no CDP): pc combat avg 43.09 min 5.45;
+mobile combat avg 56.54 min 14.99. Headless variance is real — do not pick
+the prettier run.
+
+Live pools (not unbounded)
+--------------------------
+16s combat peaks: enemies 2–4, live bullets 10–16, legacy particles 0,
+PolishFx ≤20, ProjectileVfx transients 46–77, bomb casts 0.
+40s long combat (pc-960): bullets peak 39, vfx peak 152, polish 19,
+legacy particles 13 then 0. Caps in code: enemy bullets 280, friendly 200,
+legacy particles 80, vfx transient 220 light / 720 desktop. Culls already
+exist (swap-pop). No leak of uncapped arrays in this window.
+
+JS heap (CDP used / total)
+--------------------------
+Title/select: used ~3.1–3.6 MB, nodes ~658–735, listeners 48–60. Flat.
+16s combat pc: used 4.61 → 7.02 MB (+2.41). Listeners 62 stable.
+16s combat mobile: used 5.04 → 6.72 (+1.68), max 7.52. Nodes dropped
+775→389 after overlay hide (expected).
+Pause: used ~6.2–6.3 MB, not climbing.
+40s combat series: used sawtooth 4.93–9.26 MB, last 6.42 MB. Total heap
+9.0 → ~15.3 MB then plateau (not a runaway). Drops ~1.5–2.5 MB look like
+normal V8, not a 10MB+ GC spike storm.
+GPU / texture / WebGL buffer RAM: NOT measured.
+
+Scores 0–100 (honest, not inflated)
+-----------------------------------
+UI layout: ≈79  (unchanged; not re-scored)
+VFX dens:  ≈69  (unchanged; dens FROZEN)
+
+성능/프레임
+  PC 960×540 (this headless): 52
+    Combat not 60-locked; avg ~31 (other pass ~43); min single-digit;
+    p95 ~67ms; pause worse than combat. Load was early waves only.
+  mobile-like 412×226: 62
+    Title/select locked ~60; combat avg ~40, min ~15, p95 50ms.
+  Do NOT read mobile>PC as “phones are faster.” Smaller CSS box in the
+  same desktop Chromium. Real SoC QA is still missing.
+
+메모리
+  PC: 76
+  mobile-like: 78
+  JS heap small and not monotonically climbing over 40s; lists culled.
+  Deducted because: GPU RAM unknown, first 16s warmup climb, no midboss/
+  bomb-spam/full-clear, no physical device.
+
+Shipped gameplay/code: +0
+-------------------------
+No leak, missing cull, rAF stall, or hot-path debug log proven cheap enough
+to patch without touching HOLD/VFX dens or features (charge/hold, C1–3,
+bombs, deathbomb, 5 stages, pads, i18n, STAGE START/CLEAR, WARNING).
+Pause still calls game.draw() under the DOM overlay (intended dim field).
+Changing that would change pause look — not shipped.
+
+Harness added (measurement only, no game behavior change)
+  tools/measure-fps-ram-2026-10-04.mjs
+  tools/measure-long-heap-2026-10-04.mjs
+  tools/perf-2026-10-04-raw.json
+  tools/perf-2026-10-04-long-heap.json
+
+Remaining device-QA gaps
+------------------------
+- Real Windows/macOS GPU Chrome (headed, vsync) at 960 and 1920
+- Real Android/iOS Safari/Chrome landscape (360×218 class + 412×226)
+- Midboss / boss rings / bomb + C3 density (this SORTIE window stayed
+  ≤4 enemies, ≤39 bullets)
+- Full 5-stage run heap / FPS
+- WebGL/GPU memory (Three.js ProjectileVfx)
+- Pause vs combat on a real vsync display
+
+Korean-ready user summary
+-------------------------
+UI 다듬기 루프는 레이아웃만 재서 FPS/RAM 점수를 안 매겼습니다. 지금은
+헤드리스 Chromium으로 실측했습니다. PC 960 전투 평균 FPS 약 31(다른 패스
+43), 최소 약 5, 힙 약 5–9MB에서 40초간 폭주 없음. 짧은 모바일 뷰포트는
+타이틀 60, 전투 평균 약 40. 성능/프레임 PC 52 / 모바일형 62, 메모리
+76–78. UI 79·VFX 69는 그대로. 싼 누수/컬 누락이 증명되지 않아 게임
+코드는 안 건드렸습니다(+0). 실기기·보스탄막 QA는 남았습니다.

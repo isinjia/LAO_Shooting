@@ -1,0 +1,151 @@
+SOFT options ko@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=49 min=26px short=true brandHidden=true
+HARD result ko@320x200 over=2 maxH= fitH=180 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-2 short=false brandHidden=true
+SOFT options en@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=54 min=26px short=true brandHidden=true
+HARD result en@320x200 over=2 maxH= fitH=180 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 short=false brandHidden=true
+SOFT options ru@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=49 min=26px short=true brandHidden=true
+HARD result ru@320x200 over=2 maxH= fitH=180 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-2 short=false brandHidden=true
+SOFT options pt@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=54 min=26px short=true brandHidden=true
+HARD result pt@320x200 over=2 maxH= fitH=180 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 short=false brandHidden=true
+SOFT options es@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=54 min=26px short=true brandHidden=true
+HARD result es@320x200 over=2 maxH= fitH=180 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 short=false brandHidden=true
+SOFT options zh-Hant@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=45/45 actionsOut=false scrollH=50 min=26px short=true brandHidden=true
+HARD result zh-Hant@320x200 over=2 maxH= fitH=180 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 short=false brandHidden=true
+SOFT options ja@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=48 min=22px short=true brandHidden=true
+HARD result ja@320x200 over=2 maxH= fitH=180 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-2 short=false brandHidden=true
+SOFT options ko@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=70 min=46px short=true brandHidden=true
+HARD result ko@360x200 over=0 maxH= fitH=200 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=8 short=false brandHidden=true
+ok options en@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=74 min=46px short=true brandHidden=true
+HARD result en@360x200 over=0 maxH= fitH=200 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=8 short=false brandHidden=true
+SOFT options ru@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=69 min=46px short=true brandHidden=true
+HARD result ru@360x200 over=0 maxH= fitH=200 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=8 short=false brandHidden=true
+ok options pt@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=74 min=46px short=true brandHidden=true
+HARD result pt@360x200 over=0 maxH= fitH=200 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=8 short=false brandHidden=true
+ok options es@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=74 min=46px short=true brandHidden=true
+HARD result es@360x200 over=0 maxH= fitH=200 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=8 short=false brandHidden=true
+SOFT options zh-Hant@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=45/45 actionsOut=false scrollH=71 min=46px short=true brandHidden=true
+HARD result zh-Hant@360x200 over=0 maxH= fitH=200 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=8 short=false brandHidden=true
+SOFT options ja@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=68 min=42px short=true brandHidden=true
+HARD result ja@360x200 over=0 maxH= fitH=200 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=8 short=false brandHidden=true
+SOFT options ko@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=71 min=48px short=true brandHidden=true
+HARD result ko@360x240 over=9.16 maxH= fitH=202 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-9.16 short=false brandHidden=true
+ok options en@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=76 min=48px short=true brandHidden=true
+HARD result en@360x240 over=9.16 maxH= fitH=202 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-9.16 short=false brandHidden=true
+SOFT options ru@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=71 min=48px short=true brandHidden=true
+HARD result ru@360x240 over=9.16 maxH= fitH=202 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-9.16 short=false brandHidden=true
+ok options pt@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=76 min=48px short=true brandHidden=true
+HARD result pt@360x240 over=9.16 maxH= fitH=202 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-9.16 short=false brandHidden=true
+ok options es@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=76 min=48px short=true brandHidden=true
+HARD result es@360x240 over=9.16 maxH= fitH=202 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-9.16 short=false brandHidden=true
+ok options zh-Hant@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=72 min=48px short=true brandHidden=true
+HARD result zh-Hant@360x240 over=9.16 maxH= fitH=202 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=-9.16 short=false brandHidden=true
+SOFT options ja@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=70 min=44px short=true brandHidden=true
+HARD result ja@360x240 over=9.16 maxH= fitH=202 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-9.16 short=false brandHidden=true
+ok options ko@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=71px short=true brandHidden=true
+HARD result ko@400x240 over=0 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=2.11 short=false brandHidden=true
+ok options en@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+HARD result en@400x240 over=0 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=2.11 short=false brandHidden=true
+ok options ru@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=71px short=true brandHidden=true
+HARD result ru@400x240 over=0 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=2.11 short=false brandHidden=true
+ok options pt@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+HARD result pt@400x240 over=0 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=2.11 short=false brandHidden=true
+ok options es@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+HARD result es@400x240 over=0 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 headroom=2.11 short=false brandHidden=true
+ok options zh-Hant@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=95 min=71px short=true brandHidden=true
+HARD result zh-Hant@400x240 over=0 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=2.11 short=false brandHidden=true
+ok options ja@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=93 min=67px short=true brandHidden=true
+HARD result ja@400x240 over=0 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=2.11 short=false brandHidden=true
+ok options ko@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=95 min=71px short=true brandHidden=true
+HARD result ko@400x280 over=16.3 maxH= fitH=225 inflated=false ctaOut=true ctaVis=9.3/44 secOut=true secVis=10.3/44 headroom=-16.3 short=false brandHidden=true
+ok options en@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+HARD result en@400x280 over=16.3 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-16.3 short=false brandHidden=true
+ok options ru@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=94 min=71px short=true brandHidden=true
+HARD result ru@400x280 over=16.3 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-16.3 short=false brandHidden=true
+ok options pt@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+HARD result pt@400x280 over=16.3 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-16.3 short=false brandHidden=true
+ok options es@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=99 min=71px short=true brandHidden=true
+HARD result es@400x280 over=16.3 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-16.3 short=false brandHidden=true
+ok options zh-Hant@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=95 min=71px short=true brandHidden=true
+HARD result zh-Hant@400x280 over=16.3 maxH= fitH=225 inflated=false ctaOut=true ctaVis=9.8/45 secOut=true secVis=11.3/45 headroom=-16.3 short=false brandHidden=true
+ok options ja@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=93 min=67px short=true brandHidden=true
+HARD result ja@400x280 over=16.3 maxH= fitH=225 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 headroom=-16.3 short=false brandHidden=true
+ok options ko@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=137 min=114px short=false brandHidden=true
+HARD result ko@480x288 over=0 maxH= fitH=270 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 headroom=2.53 short=false brandHidden=true
+ok options en@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=142 min=114px short=false brandHidden=true
+HARD result en@480x288 over=0 maxH= fitH=270 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 headroom=2.53 short=false brandHidden=true
+ok options ru@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=137 min=114px short=false brandHidden=true
+HARD result ru@480x288 over=0 maxH= fitH=270 inflated=false ctaOut=true ctaVis=33.5/45 secOut=true secVis=35/45 headroom=2.53 short=false brandHidden=true
+ok options pt@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=142 min=114px short=false brandHidden=true
+HARD result pt@480x288 over=0 maxH= fitH=270 inflated=false ctaOut=true ctaVis=33/44 secOut=true secVis=35/44 headroom=2.53 short=false brandHidden=true
+ok options es@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=142 min=114px short=false brandHidden=true
+HARD result es@480x288 over=0 maxH= fitH=270 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 headroom=2.53 short=false brandHidden=true
+ok options zh-Hant@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=138 min=114px short=false brandHidden=true
+HARD result zh-Hant@480x288 over=0 maxH= fitH=270 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 headroom=2.53 short=false brandHidden=true
+ok options ja@480x288 over=0 maxH=270px fitH=270 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=140 min=112px short=true brandHidden=true
+HARD result ja@480x288 over=0 maxH= fitH=270 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 headroom=2.53 short=false brandHidden=true
+ok options ko@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=186 min=140px short=false brandHidden=true
+ok options en@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=191 min=140px short=false brandHidden=true
+ok options ru@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=186 min=140px short=false brandHidden=true
+ok options pt@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=191 min=140px short=false brandHidden=true
+ok options es@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 actionsOut=false scrollH=191 min=140px short=false brandHidden=true
+ok options zh-Hant@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 actionsOut=false scrollH=187 min=140px short=false brandHidden=true
+ok options ja@568x320 over=0 maxH=319px fitH=319 inflated=false health=0 caps=[] ctaOut=false ctaVis=48/48 actionsOut=false scrollH=185 min=140px short=false brandHidden=true
+
+SUMMARY hard=42 soft=14 ok=35
+HARD DETAIL:
+  result ko@320x200 over=2 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result en@320x200 over=2 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result ru@320x200 over=2 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result pt@320x200 over=2 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result es@320x200 over=2 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result zh-Hant@320x200 over=2 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result ja@320x200 over=2 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result ko@360x200 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result en@360x200 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ru@360x200 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result pt@360x200 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result es@360x200 over=0 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result zh-Hant@360x200 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ja@360x200 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ko@360x240 over=9.16 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result en@360x240 over=9.16 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ru@360x240 over=9.16 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result pt@360x240 over=9.16 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result es@360x240 over=9.16 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result zh-Hant@360x240 over=9.16 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result ja@360x240 over=9.16 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ko@400x240 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result en@400x240 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ru@400x240 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result pt@400x240 over=0 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result es@400x240 over=0 inflated=false ctaOut=true ctaVis=0/44 secOut=true secVis=0/44 health=0
+  result zh-Hant@400x240 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ja@400x240 over=0 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ko@400x280 over=16.3 inflated=false ctaOut=true ctaVis=9.3/44 secOut=true secVis=10.3/44 health=0
+  result en@400x280 over=16.3 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ru@400x280 over=16.3 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result pt@400x280 over=16.3 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result es@400x280 over=16.3 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result zh-Hant@400x280 over=16.3 inflated=false ctaOut=true ctaVis=9.8/45 secOut=true secVis=11.3/45 health=0
+  result ja@400x280 over=16.3 inflated=false ctaOut=true ctaVis=0/46 secOut=true secVis=0/46 health=0
+  result ko@480x288 over=0 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 health=0
+  result en@480x288 over=0 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 health=0
+  result ru@480x288 over=0 inflated=false ctaOut=true ctaVis=33.5/45 secOut=true secVis=35/45 health=0
+  result pt@480x288 over=0 inflated=false ctaOut=true ctaVis=33/44 secOut=true secVis=35/44 health=0
+  result es@480x288 over=0 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 health=0
+  result zh-Hant@480x288 over=0 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 health=0
+  result ja@480x288 over=0 inflated=false ctaOut=true ctaVis=19/46 secOut=true secVis=20/46 health=0
+SOFT DETAIL (first 20):
+  options ko@320x200 over=0 actionsOut=false scrollH=49
+  options en@320x200 over=0 actionsOut=false scrollH=54
+  options ru@320x200 over=0 actionsOut=false scrollH=49
+  options pt@320x200 over=0 actionsOut=false scrollH=54
+  options es@320x200 over=0 actionsOut=false scrollH=54
+  options zh-Hant@320x200 over=0 actionsOut=false scrollH=50
+  options ja@320x200 over=0 actionsOut=false scrollH=48
+  options ko@360x200 over=0 actionsOut=false scrollH=70
+  options ru@360x200 over=0 actionsOut=false scrollH=69
+  options zh-Hant@360x200 over=0 actionsOut=false scrollH=71
+  options ja@360x200 over=0 actionsOut=false scrollH=68
+  options ko@360x240 over=0 actionsOut=false scrollH=71
+  options ru@360x240 over=0 actionsOut=false scrollH=71
+  options ja@360x240 over=0 actionsOut=false scrollH=70

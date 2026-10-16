@@ -1,0 +1,63 @@
+TITLE BTN DESIGN — HAND OFF
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Prior verdict: START must NOT use Btn_Activation stretched + invent gold.
+             Use btn_newui_world for START, btn_newui_world2 for OPTIONS.
+
+================================================================
+PROBLEM
+================================================================
+Title START (.btn-primary / .btn-cta) was painted with square
+newui_Btn_Activation.png stretched 100%×100% plus invent gold
+linear-gradient / dark-gold text / gold breathe shadow — reads as
+fake brass CTA, not Last Origin NewUI world buttons.
+OPTIONS used Sub plate stretch (different family).
+Tap1 was bound on .btn-primary::after as a corner fake.
+
+================================================================
+FIX (css/style.css end block: TITLE BTN DESIGN 2026-10-05)
+================================================================
+Scoped ONLY to:
+  .lao-newui #overlay-content.screen-title .title-actions …
+
+START (.btn-primary / .btn-cta):
+  body art     → assets/ui/newui/btn_newui_world.png (499×200)
+  underlay     → opaque #2a3038 plate
+  size         → background-size: cover (not 100% 100% mush;
+                 art ~2.5:1 vs wide CTA ~5:1; no 9-slice meta)
+  text         → cyan-tint #e8ffff (not invent dark-gold #1a1206)
+  overlays     → NO invent gold gradient / soft-light wash
+  animation    → cta-breathe (gold pulse) killed on title CTA
+  ::after      → Tap1 / invent hatch removed (display:none)
+
+OPTIONS (.btn:not(.btn-primary):not(.btn-ghost)):
+  body art     → assets/ui/newui/btn_newui_world2.png (479×200)
+  underlay     → opaque #242830 plate
+  size         → cover + center (same family secondary)
+  preferred over Sub for title pair consistency
+
+Assets: already present under assets/ui/newui/ (no Unity re-copy needed).
+
+================================================================
+INTENTIONALLY NOT TOUCHED
+================================================================
+  Global .lao-newui .btn-primary / .btn-cta Activation+gold
+    (select SORTIE / pause / tutorial / result CTAs) — left as-is
+    so combat HUD / non-title overlays stay stable this tick
+  MissORCA, lobby fake rails, illustration bleeds — not restored
+  i18n / HARD axes / gameplay / HTML markup — unchanged
+  Title-actions rail Sub plate under the row — kept (not button body)
+
+================================================================
+KOREAN VISUAL SUMMARY
+================================================================
+타이틀 START: 가짜 금색 Activation 늘리기 → NewUI 월드 버튼(청록 챔퍼)
+타이틀 OPTIONS: Sub 판 → 같은 패밀리 world2
+글자색 금갈→밝은 시안, Tap1 코너 가짜 제거, 비율 뭉개짐 완화(cover)
+
+================================================================
+NEXT (optional)
+================================================================
+If select/pause/tutorial primary CTAs still read as invent-gold
+Activation mush, remap those the same way (world / world2) with
+screen-scoped overrides — do not change combat HUD gauges/pads.

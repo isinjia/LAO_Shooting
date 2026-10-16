@@ -1,0 +1,33 @@
+{
+  "name": "2_lao_mini_action",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tools/test-special-shots.mjs",
+    "test:basic": "node tools/test-basic-shots.mjs",
+    "test:sprites": "node tools/test-sprite-clips.mjs",
+    "test:weapons": "node tools/test-weapon-roles.mjs",
+    "test:gameplay": "node tools/test-gameplay-design.mjs",
+    "test:range": "node tools/test-weapon-range.mjs",
+    "measure:weapon-dps": "node tools/measure-weapon-dps.mjs",
+    "test:special": "node tools/test-special-shots.mjs",
+    "test:combat": "node tools/test-combat-replay.mjs",
+    "check:audio": "node tools/check-audio.mjs",
+    "measure:load": "node tools/measure-load.mjs",
+    "measure:perf": "node tools/measure-perf.mjs",
+    "measure:all": "node tools/measure-load.mjs && node tools/measure-perf.mjs",
+    "smoke:fullclear": "node tools/smoke-fullclear.mjs",
+    "pack:sheets": "python tools/pack_sprite_sheets.py --force",
+    "pack:sheets:png": "python tools/pack_sprite_sheets.py --force --format png",
+    "test:ci": "node tools/test-special-shots.mjs && node tools/test-combat-replay.mjs && node tools/check-audio.mjs",
+    "check:ci": "npm run test:ci && npm run measure:load"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "playwright": "^1.51.0"
+  }
+}

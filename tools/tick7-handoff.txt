@@ -1,0 +1,34 @@
+TICK7 handoff (2026-10-04) — Latest LAO UI polish (do not revert)
+======================================================================
+
+PARALLEL (do not revert)
+- Power max Lv5 (player.js shotLevelMax / power caps) — leave alone.
+- Stage START + CLEAR ceremony restore in game.js — already present with NewUI
+  steel/cyan/brass cards. WARNING preserved. Wave-cue spam still hidden.
+
+THIS TICK (complementary NewUI polish)
+- Lobby density: icon rail (Activation / Sub2 pips) + resource strip (SORTIE / HI / READY)
+  on title via main.js showTitle + css.
+- Top_Bg (20×500): vertical edge rails on title/select/options panel-frame;
+  thin left accent on HUD clusters (NOT hud-top full fill).
+- Title_Deco (320×16): title-hero underline slice.
+- Select: menubg + Popup_Bg on dossier; options: Box2 on opt-block.
+- Gauge slices: Box2 track tile + Tap1 end cue; mint/gold fills kept solid for
+  combat readability; SP/CHARGE labels brightened.
+
+PRESERVE
+- Death power reset, hold multi-shot split, NewUI tokens, WARNING, i18n, pads.
+- No AI images.
+
+NEXT TICK — open polish
+  1) Ceremony cards could optionally sample Title_Deco / Top_Bg bitmaps in canvas
+     (currently CSS-free canvas hatch) — only if images preloaded.
+  2) Combat VFX kit individuality still middling.
+  3) Lobby rail icons are decorative pips (no real menu destinations) — OK for mini.
+
+HONEST SCORE
+  VFX ≈ 64 (unchanged this tick; kit-wide NewUI-grade not claimed)
+  UI  ≈ 66 (lobby rail+resource strip, Top_Bg/Title_Deco wired, gauge slices;
+            still short of full Panel_Lobby_NewUi parity)
+  NEVER claim 90.
+  Baseline recall: user VFX60 UI40 → current UI above baseline, VFX modest bump only.

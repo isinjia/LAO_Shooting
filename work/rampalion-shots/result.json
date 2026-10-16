@@ -1,0 +1,92 @@
+[
+ {
+  "name": "치트 없이 \"램파리온\" 입력 시 해금 안 됨",
+  "ok": true,
+  "info": "{\"text\":\"?? ??? ⚄ ? RANDOM\",\"selected\":\"random\"}"
+ },
+ {
+  "name": "타이틀 치트 활성화",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "name": "선택 화면 \"램파리온\" 입력 → RANDOM 칸에 램파리온",
+  "ok": true,
+  "info": "{\"text\":\"?? 램파리온\",\"selected\":\"random\"}"
+ },
+ {
+  "name": "출격 캐릭터 = 램파리온",
+  "ok": true,
+  "info": "{\"charKey\":\"rampalion\",\"lives\":1,\"ramp\":true,\"level\":1,\"loaded\":34,\"total\":34,\"missing\":[],\"tracks\":[\"body\",\"chest\",\"head\",\"shoulderF\",\"shoulderB\",\"handF\",\"handB\",\"wingB\",\"wingF\",\"legF\",\"legB\",\"kneeF\",\"kneeB\",\"footF\",\"footB\",\"armB1\",\"armB2\",\"armBctrl\",\"armBd1\",\"armBd5\",\"armFd1\",\"armFd2\",\"handFs\"]}"
+ },
+ {
+  "name": "목숨 1개",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "name": "합체 그림(교체 몸통·부품·로봇) 전부 로드",
+  "ok": true,
+  "info": "34/34 missing="
+ },
+ {
+  "name": "뼈대 추적 정보 로드 (가슴·팔·등·다리)",
+  "ok": true,
+  "info": "body,chest,head,shoulderF,shoulderB,handF,handB,wingB,wingF,legF,legB,kneeF,kneeB,footF,footB,armB1,armB2,armBctrl,armBd1,armBd5,armFd1,armFd2,handFs"
+ },
+ {
+  "name": "레벨업마다 로봇이 날아와 합체 (Lv2~5)",
+  "ok": true,
+  "info": "[{\"lv\":2,\"slots\":[\"chest:fc_tyranthead5\"],\"attached\":true,\"docking\":1,\"pattern\":\"shinden\"},{\"lv\":3,\"slots\":[\"chest:fc_tyranthead5\",\"arm:fa_golt_L\"],\"attached\":true,\"docking\":1,\"pattern\":\"shinden\"},{\"lv\":4,\"slots\":[\"chest:fc_tyranthead5\",\"arm:fa_golt_L\",\"back:fpart_fire\"],\"attached\":true,\"docking\":1,\"pattern\":\"shinden\"},{\"lv\":5,\"slots\":[\"chest:fc_tyranthead5\",\"arm:fa_golt_L\",\"back:fpart_fire\",\"leg:fleg_shade_F\"],\"attached\":true,\"docking\":1,\"pattern\":\"shinden\"}]"
+ },
+ {
+  "name": "부위가 레벨 순서대로 하나씩: 가슴 → 팔 → 등 → 다리",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "name": "기본 무기는 그대로 (라이온 버스터, 보조무기 없음)",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "name": "기본 탄 + 파츠 추가 탄이 함께 발사 (파란 미사일 없음)",
+  "ok": true,
+  "info": "{\"seen\":{\"shindenshot\":9,\"p38missile\":3,\"p38shot\":4,\"foxflame\":3,\"cleave\":1},\"parts\":[\"dinoRoar\",\"clawSlash\",\"podMissiles\",\"shadowNeedles\"]}"
+ },
+ {
+  "name": "P 아이템 획득 레벨업 → 다음 부위 합체",
+  "ok": true,
+  "info": "{\"dropped\":true,\"lv\":3,\"slots\":[\"chest\",\"arm\"],\"attached\":true,\"fusions\":1}"
+ },
+ {
+  "name": "파워 2단계 이상 피격 → 파워 -1, 목숨 유지, 마지막 부품만 이탈",
+  "ok": true,
+  "info": "{\"r\":\"armor\",\"before\":{\"lv\":3,\"lives\":1,\"slots\":[\"chest\",\"arm\"]},\"after\":{\"lv\":2,\"lives\":1,\"slots\":[\"chest\"],\"ejects\":2,\"alive\":true,\"invuln\":2.033333333333334,\"state\":\"playing\"}}"
+ },
+ {
+  "name": "피격 후 무적 시간",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "name": "1스테이지 보급 편대 옴",
+  "ok": true,
+  "info": "{\"s1\":1,\"s2\":0,\"s3\":0}"
+ },
+ {
+  "name": "2스테이지 이후 보급 편대 안 옴",
+  "ok": true,
+  "info": ""
+ },
+ {
+  "name": "파워 1단계 피격 → 격파, 게임 오버",
+  "ok": true,
+  "info": "{\"r\":true,\"alive\":false,\"lives\":0,\"state\":\"gameover\"}"
+ },
+ {
+  "name": "콘솔/페이지 오류 없음",
+  "ok": true,
+  "info": ""
+ }
+]

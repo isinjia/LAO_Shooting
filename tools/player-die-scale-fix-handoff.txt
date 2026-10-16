@@ -1,0 +1,14 @@
+PLAYER DIE SCALE FIX
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+Superseded / folded into:
+  tools/player-scale-match-griffin-handoff.txt
+
+Summary:
+  Die used per-frame bake AABB (skill-style zoom) while idle/move shared one
+  locomotion camera → death flash looked momentarily smaller. Fixed by baking
+  die with locomotion_bounds, excluding die from contentBox unions, and
+  rebaking griffin / sleipnir / express76 / labiata die clips.
+
+  Same pass also normalized all player drawSize to Griffin idle body diagonal.

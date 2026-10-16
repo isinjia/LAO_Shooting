@@ -1,0 +1,87 @@
+LAO MINI ACTION — frame-opt LOOP TICK 06 handoff
+================================================
+Date: 2026-10-04
+Goal: raise combat frame rate; target honest ~55+ avg without feature deletion.
+UI layout scans: NOT restarted. UI≈79 / VFX dens≈69 unchanged. dens FROZEN.
+
+Prior (tick05, same harness)
+----------------------------
+pc-960 SORTIE 16s: avg 54.01  min 19.96  p95 33.4ms  max dt 50.1ms
+  hitches >33ms 31/797  >50ms 3  >100ms 0
+  peaks: enemies 4, bullets 16, vfx 76, polish 14, legacy particles 0
+  split: update 0.279  draw 11.734  bg 0.118  vfxJS 0.244 (n=799)
+mobile-412 short 8s: avg 59.50  min 29.94  p95 16.8ms
+Tick04 PC 49.98 draw 13.208. Tick03 PC 51.83. Tick02 PC 49.26. Tick01 PC 30.23.
+Tick04 skip-clearRect reverted — do not retry. Tick05 STAGE caption bake kept.
+
+Tried, not shipped
+------------------
+clip-anim.draw: skip ctx.save/restore + skip imageSmoothingQuality='high'
+when flash/flipX off and ctx already high (PC combat default).
+Trial measure (shipped then pulled): pc-960 avg 50.68  draw 12.909  frames 729
+  vs tick05 54.01 / 11.734. Hit-flash / deathbomb / flipX paths unchanged.
+Not a proven win — reverted to always save + force 'high' (tick05 identity).
+Do not retry this skip without a headed or split-isolated sprite-only probe.
+
+Shipped
+-------
+Honest +0. No gameplay/draw identity change this tick.
+Tick01 HUD caches + tick02 scene blit + tick03 baked wash + tick04
+alpha:false + tick05 STAGE caption/subtitle bitmaps kept.
+
+Re-measure (Playwright headless, same Hirume/invuln/autoPlay/mute SORTIE)
+------------------------------------------------------------------------
+After revert. tools/measure-frame-opt-tick06.mjs → tools/frame-opt-tick06-raw.json
+
+pc-960 16s combat:
+  avg 50.23  min 19.96  p95 33.4ms  max dt 50.1ms
+  hitches >33ms 32/722  >50ms 2  >100ms 0
+  peaks: enemies 4, bullets 16, vfx 74, polish 18, legacy particles 0
+  canvas 960×540 buf 960×540 dpr1
+  split: update 0.316  draw 13.118  bg 0.126  vfxJS 0.299 (n=724)
+
+mobile-412×226 dpr2.5 8s combat (short viewport):
+  avg 55.28  min 20.04  p95 33.4ms  max dt 49.9ms
+  hitches >33ms 8/415  >50ms 0
+  canvas CSS 401.8×226 buf 703×396
+  peaks: enemies 2 (lighter than PC pass) — do not treat 55.28 as the PC win.
+
+Honest FPS delta
+----------------
+PC avg 50.23 vs tick05 54.01 / tick04 49.98 / tick03 51.83.
+Draw 13.12 vs tick05 11.73. Frame count 722 vs 797.
+Same band as noisy tick04 (~50), not a regression of shipped code (clip-anim
+restored). Clip-anim trial 50.68 was inside this tick's noise, not +FPS.
+Honest +0. Not 55+. Do not round tick05's 54 to 55+ or 60.
+Mobile short 55.28 vs tick05 59.50 — also +0 (fewer enemies, harness wiggle).
+Remaining draw ~13ms this pass (~11.7ms on the hotter tick05 sample) is
+sprites / polish / clearRect fill, not bg JS (~0.13ms).
+
+Scores (not inflated)
+---------------------
+성능/프레임: PC ~59 (combat ~50 this pass / ~54 tick05, not 60-locked) / mobile-like ~62
+메모리: 76–78 (not re-scored)
+UI layout: ≈79  DO NOT claim 80+
+VFX dens:  ≈69  DO NOT claim 70+
+
+Preserved
+---------
+charge/hold C1–3, bombs, deathbomb, 5 stages, pads, i18n,
+STAGE START/CLEAR, WARNING, HOLD identities
+(sunbird/sightbeam/dragonaxe/shell/jupiterorb/coffinwall/plasmaslash).
+dens FROZEN.
+
+Next tick
+---------
+Do not retry skip-clearRect. Do not retry clip-anim save/quality skip as-is.
+Next candidate: polish spark save/restore batching or popup strokeText bake
+(layout/copy same). Sprite atlas only if dens unchanged.
+Do not claim 55+ until a headed or second headless PC pass holds ~55.
+
+Korean-ready user summary
+-------------------------
+전투 프레임 최적화 6틱입니다. 스프라이트마다 save/restore·스무딩 재설정을
+빼 보았지만 헤드리스 PC 960이 평균 50.7로 5틱(54.0)보다 나아지지 않아
+되돌렸습니다. 재측정 평균 FPS 50.2, draw 13.1ms라 이 틱은 +0입니다.
+5틱 54는 55+로 올리지 않습니다. 차지/HOLD·폭탄·5스테이지·밀도·
+WARNING/START/CLEAR는 그대로입니다. UI 79·VFX 69 그대로입니다.

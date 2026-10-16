@@ -1,0 +1,997 @@
+TICK147 handoff (2026-10-04) — short-landscape touch pad compact restore
+
+
+
+======================================================================
+
+PRESERVE (do not break)
+
+======================================================================
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+    fafnir thunder cloud · eternity RIP ward (hold) / HMG basic · labiata crescent · emily rail (basic)
+
+
+
+  Still exactly 8 HOLD_STYLE muzzle keys (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+  NOTE: eternity HOLD projectile is coffinwall ward; HMG (coffinround) is basic autofire.
+
+  HOLD_STYLE muzzle map eternity→coffinround remains FROZEN (qa-hold-muzzle).
+
+
+
+  NOTE: Emily chargeEnabled=false — basic railbeam IS the intentional laser kit;
+
+  HOLD_STYLE emily→railbolt (spike) stays frozen for muzzle map, but charge path is disabled.
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+  plasmacross / sunseal soft disks + soft streaks only.
+
+  Rare option diamond chip is a prior identity cue (tick26) — keep.
+
+
+
+- Enemy bullet / player-hit / bomb / graze / pickup / C muzzle / deathbomb /
+
+  option trails / focus / rare fanfare / WARNING / STAGE CLEAR / pause /
+
+  CONTROLS / loading / OPTIONS / touch-pad / select / result / HUD clusters /
+
+  tip densify tip58–67 / tip89–97 / rim densify tip100–110 / charge 112–114
+
+  — KEEP as documented in tick146-handoff PRESERVE. dens FROZEN.
+
+
+
+- HOLD dens/side/emit FROZEN (tick51 qa-hold-muzzle): kit dens numbers,
+
+  holdIdentity side/streak/smoke/rise/drag, trail emit, muzzle emitRate,
+
+  HOLD_STYLE map (eternity→coffinround) — untouched.
+
+
+
+- Shot/hold/C silhouettes tick69–87 KEEP (including cyclopsbeam intentional laser).
+
+
+
+- Title CONTROLS keys-rules / panel budget / grid floor / HI pin / full-row /
+
+  parent-aware floor (tick118–124 + tick130) — KEEP.
+
+
+
+- Title extreme-short CONTROLS grid floor (tick135) — KEEP.
+
+
+
+- Pause short-landscape panel floor + deco reclaim (tick131) — KEEP.
+
+
+
+- Pause extreme-short head reclaim (tick138) — KEEP.
+
+  ≤400 brand hide + h2 compact (18px !important); is-pause-short JS path;
+
+  tick131 deco→blurb→actions→pad→maxCap ladder retained after head step.
+
+
+
+- Pause SE-class soft-continue (tick140) — KEEP.
+
+  appH≤340 && rawHeadroom<8 soft-continue so ≤400 CSS belt cannot mask
+
+  negative headroom under +1.5 tolerance; actions/panel pad still fund;
+
+  tip31/58 / tick131 / tick138 / dens untouched.
+
+
+
+- Tutorial panel i18n maxCap + grid scroll + CTA pin (tick125) — KEEP.
+
+
+
+- Tutorial short-landscape grid floor + deco/note reclaim (tick132) — KEEP.
+
+
+
+- Tutorial extreme-short grid floor (tick137) — KEEP.
+
+  softGridWant=40; head brand + h2 compact reclaim; h2 i18n kept.
+
+
+
+- Result short-landscape panel floor + deco/margin reclaim (tick133) — KEEP.
+
+
+
+- Result extreme-short head reclaim (tick139) — KEEP.
+
+  ≤340 brand hide + h2 compact (18px !important); is-result-short JS path;
+
+  ≤340 rawHeadroom soft-continue (<8); tick133 deco→margins→(head)→cells→pad→CTA→maxCap.
+
+
+
+- Select panel i18n maxCap + char-grid scroll + CTA pin (tick126) — KEEP.
+
+
+
+- Select short-landscape deco+blurb reclaim (tick129) — KEEP.
+
+
+
+- Select extreme-short dossier/actions/hint reclaim (tick134) — KEEP.
+
+
+
+- OPTIONS panel maxCap + BACK pin (tick127) / flatten nested scroll (tick128)
+
+  autofire full-span (tick120) / mute-fullscreen 2-col (tick121) — KEEP.
+
+
+
+- OPTIONS extreme-short scroll floor (tick136) — KEEP.
+
+  softScrollWant=140; head brand + Title_Deco ::after reclaim; h2 i18n kept.
+
+
+
+- SE-class select/OPTIONS maxCap floor (tick141) — KEEP.
+
+  fitH = floor(min(clientHeight, painted #app box)); floorCap = min(320, fitH);
+
+  maxCap = min(680, max(floorCap, ratioCap)). CSS min(92%,680) belt unchanged.
+
+
+
+- Ultra-short tutorial/pause/result fitH maxCap floor (tick142) — KEEP.
+
+  Tutorial always-on: floorCap = min(300, fitH); maxCap = min(560, max(floorCap, ratioCap)).
+
+  Pause last-resort: floorCap = min(280, fitH); maxCap = max(floorCap, floor(fitH*0.96)).
+
+  Result last-resort: floorCap = min(260, fitH); maxCap = max(floorCap, floor(fitH*0.96)).
+
+  Title — no always-on floor muddy (skip).
+
+
+
+- Result ultra-short last-resort soft-continue (tick143) — KEEP.
+
+  After CTA-pad step: if (over ≤ 1.5 && !(appH0 ≤ 340 && rawHeadroom() < 8)) return;
+
+  else proceed to tick142 fitH last-resort. Early-ladder soft (tick139) retained.
+
+  tip38/62 / tick133/139/142 / dens untouched.
+
+
+
+- Select ultra-short CTA-health fitH clamp (tick144) — KEEP.
+
+  CTA-health shave: maxCap = max(floorCap, min(fitH, floor(maxCap - over - 4)));
+
+  legacy Math.max(260, …) removed from select sync. tip63 / tick126/129/134/141 /
+
+  dens / tick116–143 untouched.
+
+
+
+- OPTIONS/tutorial CTA-health Math.max(260) LATENT only (tick145 +0 QA) — KEEP.
+
+  Live healthSteps=0; do NOT invent defensive fitH clamp without inflate muddy.
+
+
+
+- showOverlay / hideOverlay clear content.style.maxHeight + paddingTop/Bottom
+
+  so panel-budget inline caps from options/select/tutorial/pause/result do not
+
+  leak across screens (tick127 hygiene + tick133 pad clear; sync* re-apply
+
+  their own caps).
+
+
+
+- TICK146 short-landscape touch HUD corridor restore — KEEP.
+
+  @media (max-height:420px) and (orientation:landscape) AFTER punch block:
+
+  hud-bottom right max(150px,…) (actions zone 142+8); cluster pad 2×6 !important;
+
+  stocks min-width:0 + max-width min(118px, calc(100vw - 284px));
+
+  gauges min-width:0 !important + same max-width; track/label/pip compact.
+
+  Must stay AFTER body.has-touch-pads .hud-gauges { min-width:180px !important }.
+
+
+
+- TICK147 short-landscape touch pad compact restore — KEEP.
+
+  Same ≤420 landscape media AFTER chrome punch (.tc-fire width:84px) and
+
+  AFTER TICK146: fire 56 / bomb·special 40 / focus 36 + short positions;
+
+  float .tc-mode-float re-compact + actions 142; track min-width 28;
+
+  gauge-row gap 3 + label min-width 0; .hud-gauges overflow:hidden.
+
+
+
+======================================================================
+
+THIS TICK — short-landscape touch pad compact restore (ship)
+
+======================================================================
+
+
+
+1) Candidate pick (user focus: ONE muddy outside exhausted tip/rim/charge lists;
+
+   prefer mobile/touch pad residual, loading screen, rotate-card, or gameplay
+
+   HUD clip if proven; live-measured win)
+
+
+
+   Exhausted CLOSED: tip densify (58–97), shot/hold/C individuality (69–87),
+
+   rim densify (100–110), charge feedback (112–114). dens FROZEN.
+
+   CONTROLS path tick118–124 + parent floor tick130 + extreme-short tick135 CLOSED.
+
+   Tutorial panel budget CLOSED (tick125) — CTA pin only.
+
+   Tutorial short-landscape grid floor CLOSED (tick132) — deco/note @≤480.
+
+   Tutorial extreme-short grid floor CLOSED (tick137).
+
+   Select panel maxCap + CTA pin CLOSED (tick126).
+
+   Select short-landscape deco+blurb CLOSED (tick129).
+
+   Select extreme-short grid floor CLOSED (tick134).
+
+   OPTIONS autofire/mute-fullscreen CLOSED (tick120–121).
+
+   OPTIONS panel maxCap + BACK pin CLOSED (tick127).
+
+   OPTIONS flatten nested scroll CLOSED (tick128).
+
+   OPTIONS extreme-short scroll floor CLOSED (tick136).
+
+   Pause short-landscape panel floor CLOSED (tick131) — deco/blurb @≤480 / @800.
+
+   Pause extreme-short head reclaim CLOSED (tick138).
+
+   Pause SE-class soft-continue CLOSED (tick140).
+
+   Result short-landscape panel floor CLOSED (tick133).
+
+   Result extreme-short head reclaim CLOSED (tick139).
+
+   SE-class select/OPTIONS maxCap floor CLOSED (tick141).
+
+   Ultra-short tutorial/pause/result fitH maxCap floor CLOSED (tick142).
+
+   Result ultra-short last-resort soft-continue CLOSED (tick143).
+
+   Select ultra-short CTA-health fitH clamp CLOSED (tick144).
+
+   OPTIONS/tutorial CTA-health Math.max(260) +0 QA CLOSED (tick145).
+
+   Touch HUD corridor (stick↔stocks / actions↔gauges containers) CLOSED (tick146).
+
+
+
+   Scanned preferred axes (probe-tick147-touch-residual + probe-tick147-btn-hud
+
+   + probe-tick147-bomb-charge):
+
+
+
+   A) SKIP — Title brand restore @800/@1280×560: playtest-only HI conflict.
+
+
+
+   B) SKIP — Loading real i18n: clear after tick146 scan; no new locale clip.
+
+
+
+   C) SKIP — OPTIONS / select @SE: already clear after tick141/144/145.
+
+
+
+   D) SKIP — Soft-blob VFX / silhouette residual — dens FROZEN; tip/rim invent CLOSED.
+
+
+
+   E) SKIP — Select dossier long-kit wrap @≤400: prior tick134 clear.
+
+
+
+   F) SKIP — Asset-error brand/h2 reclaim — headroom clear; invent hide = tip invent.
+
+
+
+   G) SKIP — Tutorial / pause / result fitH floor — shipped tick142; SE retained.
+
+
+
+   H) SKIP — Pause es/ru @568×320 last-resort soft invent — CTA clear.
+
+
+
+   I) SKIP — Tutorial @800 long-locale brand restore — intentional measure path.
+
+
+
+   J) SKIP — Result@288 last-resort soft — CLOSED tick143.
+
+
+
+   K) SKIP — Tutorial/OPTIONS CTA-health Math.max(260) — LATENT; healthSteps=0
+
+      (tick145).
+
+
+
+   L) SKIP — Rotate-card / loading — prior clear; not re-muddied.
+
+
+
+   M) CLOSED tick146 — fixed stick/actions container corridor.
+
+
+
+   N) SKIP — Float padMode actions-container↔gauges gap negative @480/@400:
+
+      .tc-actions is pointer-events:none; live button×gauges hits=[] at resting
+
+      stick. Parked float stick under stocks is by-design float placement, not
+
+      a CSS corridor bug. Do NOT invent float zone shrink.
+
+
+
+   O) SKIP — Charge ring×sibling pad buttons (bomb/special/focus): intentional
+
+      pad-cluster geometry (tick114 ring inset:-5). ring×HUD gauges/charge/sp
+
+      clear after pad compact. Do NOT invent ring shrink.
+
+
+
+   P) SHIP — Short-landscape pad compact lost to later chrome punch:
+
+      Early @media ≤420 landscape set fire 56 / bomb 40, but later
+
+      .tc-fire { width:84px } / .tc-bomb { width:58px } (no media) WINS.
+
+      Live before fix (fixed has-touch-pads):
+
+        @360×240: bomb×#charge-track = true (fireW=84 bombW=58)
+
+        @320×200: bomb×charge + charge-track min-width:44 overflow past
+
+                  gauges max-width (calc(100vw-284px)=36) into bomb
+
+        @400+/@480+/@568: button×HUD clear; tick146 container gaps kept
+
+      Float .tc-mode-float 68/46/42 also beat early short-landscape compact.
+
+
+
+   Q) CLOSED tick144/145 — CTA-health paths.
+
+
+
+2) Muddy evidence
+
+
+
+   Live probe-tick147-btn-hud + probe-tick147-bomb-charge (touch force-on):
+
+
+
+     BEFORE fix:
+
+       @360×240 fixed: bomb×charge=true; fireW=84px bombW=58px; gapBG≈16
+
+       @320×200 fixed: bomb×charge=true; charge left≈181 past gauges right≈166
+
+         (track min-width:44 + label min-width:4.6em overflow)
+
+       @400×280 / @480×288 / @568×320 fixed: button×HUD clear after tick146
+
+       Float resting: button×HUD clear; parkedStick×stocks = float placement
+
+       Ring×sibling pads: true all sizes (intentional cluster; not HUD muddy)
+
+
+
+     Cascade proof (css/style.css):
+
+       Early short-landscape .tc-fire { width:56px } LOST to later
+
+       .tc-fire { width:84px } (chrome punch, no media)
+
+       Tick146 track min-width:44 overflows gauges max-width @≤~340vw
+
+
+
+     AFTER ship (qa-touch-pad-compact live):
+
+       @568×320 fire=56 bomb=40 gapBC≈86.8 clear
+
+       @480×288 fire=56 bomb=40 gapBC≈51.7 clear
+
+       @400×280 fire=56 bomb=40 gapBC≈59 clear
+
+       @360×240 fire=56 bomb=40 gapBC≈41 clear
+
+       @320×200 fire=56 bomb=40 gapBC≈32; charge inside gauges (140–168) clear
+
+       floating same sizes: fire=56 bomb=40; bomb×charge=false
+
+
+
+3) Fix shipped
+
+
+
+   css/style.css — TICK147 block AFTER TICK146 / AFTER chrome punch:
+
+
+
+     @media (max-height:420px) and (orientation:landscape) {
+
+       .tc-fire { width/height:56; font-size:11; right:2; bottom:4 }
+
+       .tc-bomb/.tc-special { 40×40; positions as early short-landscape }
+
+       .tc-focus { 36×36; right:14; bottom:78 }
+
+       #sp-track/#charge-track min-width:28px (was 44 from tick146)
+
+       .gauge-row gap:3; min-width:0; .sp-label min-width:0
+
+       .hud-gauges overflow:hidden
+
+       .touch-controls.tc-mode-float .tc-actions { 142×142 }
+
+       float fire/bomb/special/focus re-compact to match fixed short sizes
+
+     }
+
+
+
+   Probe / QA (evidence + guard):
+
+     tools/probe-tick147-touch-residual.mjs
+
+     tools/probe-tick147-btn-hud.mjs
+
+     tools/probe-tick147-bomb-charge.mjs
+
+     tools/probe-tick147-320.mjs
+
+     tools/qa-touch-pad-compact.mjs
+
+
+
+   js/main.js — untouched this tick.
+
+   tip/dens / tick69–146 / tick116–146 — untouched.
+
+
+
+4) Verify (preserve battery — ALL PASS)
+
+
+
+   - node tools/qa-touch-pad-compact.mjs → PASS (@568/@480/@400/@360/@320
+
+     fixed+floating; fire=56 bomb=40; bomb×charge clear; chargeW≥20)
+
+   - node tools/qa-touch-hud-corridor.mjs → PASS (tick146 kept; gaps improved)
+
+   - node tools/qa-hold-muzzle.mjs PASS (dens/side/emitRate/8 identities frozen)
+
+   - node tools/qa-particle-quality.mjs PASS (holdDensFrozen)
+
+   - node tools/qa-touch-pad-labels.mjs PASS
+
+   - node tools/qa-rotate-overlay.mjs PASS
+
+   - node tools/qa-loading-bar-newui.mjs PASS
+
+   - node tools/qa-select-fitH-health-i18n.mjs PASS (tick144 kept)
+
+   - node tools/qa-fitH-parity-i18n.mjs PASS (tick142 kept)
+
+   - node tools/test-gameplay-design.mjs PASS
+
+   - node tools/test-weapon-roles.mjs PASS
+
+
+
+======================================================================
+
+HONEST SCORE (do NOT claim polished / 70+ VFX / 80+ UI)
+
+======================================================================
+
+
+
+  UI  ≈ 79 (+0; pad compact restore is layout hygiene for extreme
+
+            short-landscape thumbs — clears proven bomb×charge overlap,
+
+            not a broad UI polish leap; do NOT claim 80+)
+
+
+
+  VFX ≈ 69 (+0; no particle / rim / silhouette / dens ship — soft-sprite
+
+            budget-capped ceiling remains; reported band stays ≤69;
+
+            do NOT claim 70+)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+  user 60 band — do not round up to 70.
+
+  Expectation band this pass: UI ~77-79, VFX ~67-69.
+
+
+
+======================================================================
+
+NEXT TICK — open polish (NON-tip / NON-rim invent preferred)
+
+======================================================================
+
+
+
+1) HOLD dens/side/emit remain FROZEN. Do not dens-churn.
+
+   Live charge HOLD silhouettes (tick69–87) + caption dual-stroke (tick89–97)
+
+   + i18n plate/max-width grows (tick116–117) + CONTROLS/title/pause/tutorial/
+
+   result/select/OPTIONS short-viewport ships (tick118–145) + touch HUD
+
+   corridor (tick146) + pad compact (tick147) stay. dens FROZEN.
+
+   tip/rim/charge invent CLOSED.
+
+
+
+2) Tip densify + canvas ceremony/pulse/fade + touch micro + stock pulse
+
+   glow-forward paths CLOSED (tick58–97 / tick89–94). Do NOT invent
+
+   dual-stroke on soft-val / Activation-chip peers.
+
+
+
+3) NEXT axis for tick148 (propose — pick ONE only if live muddy proven):
+
+
+
+   A) Title brand-less hero @800 / @1280×560 — brand restore still breaks HI
+
+      under CONTROLS floor; playtest only. Prefer honest +0 unless new crush.
+
+
+
+   B) Loading — real i18n clear @400/@360; only ship if a NEW long load
+
+      locale proves panelOver/clip; otherwise leave.
+
+
+
+   C) OPTIONS @800 brand/head density — already ≥ soft floor after tick136;
+
+      do NOT invent tip; only ship if CTA/label muddy reappears.
+
+
+
+   D) Soft-blob VFX / silhouette residual — dens FROZEN; tip/rim invent CLOSED.
+
+      Prefer honest +0 over invent.
+
+
+
+   E) Rare fanfare — re-check only if new long tag locale lands; currently clear.
+
+
+
+   F) Select dossier long-kit wrap under tip63 when Box2 flattened @≤400 —
+
+      live kitClip/CTA clear after tick134; playtest readability only.
+
+
+
+   G) Asset-error @568×320 long pt/ru h2 with brand still visible —
+
+      headroom clear; only ship brand/h2 reclaim if panelOver/CTA muddy.
+
+
+
+   H) Pause es/ru @568×320 headroom≈2.2 after full pad ladder — CTA clear /
+
+      over=0; only ship maxCap soft if a locale clips CTA or headroom goes
+
+      negative again.
+
+
+
+   I) Tutorial @800 long-locale brand still reclaimed when avail < 2-row —
+
+      intentional measure path; only ship restore if headroom proven without
+
+      dropping gridH < softGridWant.
+
+
+
+   J) CLOSED tick142 — tutorial/pause/result fitH parity.
+
+
+
+   K) CLOSED tick143 — result@288 last-resort soft-continue.
+
+
+
+   L) Tutorial grid soft floor under shrunk fitH maxCap — only ship if
+
+      a locale proves CTA/label muddy; do NOT invent tip densify.
+
+
+
+   M) Pause/result/select 4-button / pinned-chrome @400×280 CTA OOB
+
+      after fitH clamp — extreme; playtest only; avoid tip invent.
+
+      Live after tick144: select ctaOut=true @280 remains (panelOver=0 /
+
+      maxH=fitH — inflate fixed; chrome residual).
+
+
+
+   N) CLOSED tick144 — select CTA-health Math.max(260) re-inflate shipped.
+
+
+
+   O) CLOSED tick145 — OPTIONS/tutorial Math.max(260) LATENT; only ship
+
+      fitH clamp if a future locale/size proves inflate/panelOver.
+
+
+
+   P) CLOSED tick146 — short-landscape touch HUD corridor restore.
+
+
+
+   Q) CLOSED tick147 — short-landscape touch pad compact restore.
+
+      Re-check only if a new chrome punch reintroduces fire 84 / bomb 58
+
+      under ≤420 landscape, or track min-width re-inflates past corridor.
+
+
+
+   R) Float padMode parked-stick×stocks — by-design placement in left zone;
+
+      only ship if a NEW residual (e.g. resting base or button×HUD) proves
+
+      muddy without inventing zone shrink.
+
+
+
+   S) Ultra-narrow @320 charge/SP label readability after min-width:0 —
+
+      tracks ≥28px clear of bomb; CHARGE word may ellipsize — playtest only;
+
+      do NOT invent tip densify on sp-label.
+
+
+
+4) Human-playtest gaps remaining (concise)
+
+
+
+   · Touch fixed pads @360×240 / @320×200: pad compact after tick147
+
+     (fire=56 bomb=40; bomb×charge clear; track min=28; label min=0;
+
+     gauges overflow:hidden). Confirm CHARGE/SPECIAL still readable.
+
+
+
+   · Touch float padMode @≤400×280: resting button×HUD clear after tick147;
+
+     parked stick under stocks is expected float behavior — playtest feel.
+
+
+
+   · Locale * OPTIONS/tutorial @400×280 / @360×240: CTA-health Math.max(260)
+
+     still in source but unused live (healthSteps=0; maxH=fitH; CTA clear).
+
+     Re-check only if a long locale forces the shave branch.
+
+
+
+   · Locale * select @400×280: CTA-health fitH clamp after tick144
+
+     (maxH=225; panelOver=0; headroom=0; inflated=false; ctaOut=true chrome).
+
+
+
+   · Locale * select @480×288: maxH=270 / panelOver=0 / CTA clear
+
+     (gridH may be 0 — nested scroll retained).
+
+
+
+   · Locale * result @480×288: last-resort soft-continue after tick143
+
+     (maxH=260; headroom≈5; panelOver≈−5; CTA clear).
+
+
+
+   · Locale * tutorial @480×288 / @400×280: fitH maxCap after tick142
+
+     (maxH=fitH; panelOver=0; CTA clear; grid may be < softGridWant).
+
+
+
+   · Locale * pause/result ultra-short last-resort: fitH floor after tick142
+
+     (maxH≤appBox; panelOver=0 on last-resort path).
+
+
+
+   · Locale * select/OPTIONS @568×320: maxCap fitH after tick141
+
+     (maxH=319; headroom≈0.3; scrollH≥156 / gridH≥51; select CTA clear).
+
+
+
+   · Locale ko/en/pt/zh-TW pause @568×320: soft-continue after tick140
+
+     (headroom≈11.2; syncSteps=5; padTop=22; CTA clear).
+
+     Locale es/ru pause @568×320: headroom≈2.2 after full pad (playtest).
+
+
+
+   · Locale * result @568×320: head reclaim after tick139
+
+     (headroom≈3.75 after tick143 path; brand/h2 compact ≤340; CTA clear).
+
+
+
+   · Locale * result/pause @400×280: panelOver=0 / maxH=fitH / ctaOut|quitOut
+
+     (4-button chrome extreme — playtest M; do not invent tip).
+
+
+
+   · Locale es/ru pause @640×360: head reclaim after tick138
+
+     (headroom≈9.4; brand/Title_Deco hidden ≤400; h2 18px kept;
+
+      CTA clear; syncSteps=0 — no pad shrink).
+
+
+
+   · Locale es/ru tutorial @640×360: grid floor after tick137
+
+     (gridH≈48–73; brand/Title_Deco head reclaim ≤400; h2 i18n kept;
+
+      SORTIE CTA clear; nested .tutorial-grid scroll retained by design).
+
+
+
+   · Locale es/ru OPTIONS @640×360: scroll floor after tick136
+
+     (scrollH≈168–173; BGM fully in first viewport; h2 i18n kept;
+
+      decorative brand/Title_Deco hidden ≤400; BACK + nested flatten retained).
+
+
+
+   · Locale es/ru title @640×360: CONTROLS grid floor after tick135
+
+     (gridH≥40; rules peek ~28px; HI inside .keys-hiscore; START clear).
+
+     Brand-less short hero vs CONTROLS read — playtest only.
+
+
+
+   · Locale es/ru select @640×360: grid floor after tick134 (gridH≈63–73);
+
+     hint chip may hide last-resort (string stays in DOM); kit+SORTIE clear.
+
+
+
+   · Locale ko/en/pt/ru @1280×560: brand still reclaimed under CONTROLS floor
+
+     (restore breaks HI); status/tagline reclaimed — playtest lobby chrome.
+
+
+
+   · Locale en/pt/es/ru: SP ready-line max-width grow (tick117).
+
+
+
+   · Locale en/pt/es/ru: first deathbomb teach prompt plate grow (tick116).
+
+
+
+   · Select dossier: long kit wrap readability under tip63 dual-stroke
+
+     (especially when Box2 flattened @≤400) — playtest only; no live kitClip.
+
+
+
+   · Loading real i18n @400/@360: panelOver=0 after tick146 scan — leave.
+
+
+
+   · Rotate-card portrait ru@280: card inside viewport — leave unless new locale.
+
+
+
+   · Desktop charge: mid-hold HUD fill warm + CHARGE brass vs SP mint pair.
+
+
+
+   · Touch: `.tc-charge-ring` mid/low-% arc vs stage wash (tick114) —
+
+     sibling pad overlap intentional; HUD clear after tick147.
+
+
+
+   · Hold-ready: `#charge-track.ready` static vs SP `is-ready-flash` pulse.
+
+
+
+   · Muzzle aura early charge (k≈0.15–0.3) soft — dens FROZEN; playtest only.
+
+
+
+   · Emily chargeEnabled=false — intentional; do not "fix" missing charge.
+
+
+
+5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+     death power reset / per-character hold identities / soft-particle language
+
+     silhouettes tick69–87 / caption dual-stroke tick89–97 /
+
+     i18n grows tick116–117 / CONTROLS–OPTIONS–select–tutorial–pause–result
+
+     short-viewport ships tick118–145 / touch HUD corridor tick146 /
+
+     touch pad compact tick147 /
+
+     tip densify tip58–67 / rim tip100–110 / charge 112–114 / HOLD dens frozen.
+
+
+
+======================================================================
+
+한국어 요약 (Korean-ready)
+
+======================================================================
+
+
+
+- Tick147 포커스: tip/rim/charge·thin-viewport 패널 예산(tick116–145) +
+
+  tick146 HUD corridor 소진 축 밖 1건 — mobile/touch pad · charge ring vs
+
+  pad · HUD clip 중 live muddy 실측.
+
+
+
+- Verdict: SHIP — short-landscape touch pad compact restore.
+
+  @360×240 fixed에서 bomb×#charge-track overlap 실측 (fireW=84/bombW=58).
+
+  원인: ≤420 landscape pad compact이 이후 chrome punch(.tc-fire 84px 등)에
+
+  패배. @320×200은 track min-width:44 + label min-width:4.6em이 gauges
+
+  max-width(36)를 뚫고 bomb로 침범. float resting button×HUD는 clear;
+
+  ring×sibling pad는 클러스터 의도(tick114). loading/rotate SKIP.
+
+
+
+- Ship: css/style.css TICK147 블록 (TICK146·punch 뒤). fire 56 / bomb 40 /
+
+  focus 36 복구, float 동반 축소, track min 28, label min 0, gauges
+
+  overflow:hidden. js/main.js 미변경. tip/dens / tick69–146 유지.
+
+
+
+- SKIP: title brand HI / loading / OPTIONS·select SE / VFX dens /
+
+  float parked-stick invent / ring×sibling invent / CTA-health latent /
+
+  @280 chrome OOB playtest.
+
+
+
+- QA: touch-pad-compact + touch-hud-corridor + hold-muzzle dens frozen +
+
+  particle + touch-pad labels + rotate + loading + select-fitH-health +
+
+  fitH-parity + gameplay/weapon ALL PASS. dens FROZEN. tick69–146 유지.
+
+
+
+- 점수(정직): UI ≈79 (+0, 80+ 금지), VFX ≈69 (+0, 70+ 금지).
+
+
+
+- 다음(tick148): @320 CHARGE 라벨 가독성 playtest / float parked feel
+
+  playtest / title brand playtest / loading only if new locale clip /
+
+  select dossier kit wrap playtest / asset-error brand playtest /
+
+  pause es/ru@320 playtest / @280 chrome OOB playtest only /
+
+  VFX dens frozen. 없으면 +0 QA OK.
+
+
+
+Model: inherit
+
+Korean-ready: yes

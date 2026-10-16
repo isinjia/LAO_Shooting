@@ -1,0 +1,160 @@
+=== A) Rare fanfare live DOM ===
+RARE ru@320×200 eternity → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+RARE ru@320×200 labiata → SOFT tagVis=34/34 hintVis=14/14 nameVis=29/29 cardOver=10.5 compact=true ultra=false on=true
+RARE ru@320×200 emily → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+RARE pt@320×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=9 compact=true ultra=false on=true
+RARE pt@320×200 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0.5 compact=true ultra=false on=true
+RARE pt@320×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0.5 compact=true ultra=false on=true
+RARE es@320×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=9 compact=true ultra=false on=true
+RARE es@320×200 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0.5 compact=true ultra=false on=true
+RARE es@320×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0.5 compact=true ultra=false on=true
+RARE en@320×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=9 compact=true ultra=false on=true
+RARE en@320×200 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0.5 compact=true ultra=false on=true
+RARE en@320×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0.5 compact=true ultra=false on=true
+RARE ko@320×200 eternity → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+RARE ko@320×200 labiata → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+RARE ko@320×200 emily → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+RARE ru@340×200 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@340×200 labiata → SOFT tagVis=34/34 hintVis=14/14 nameVis=29/29 cardOver=4.88 compact=true ultra=false on=true
+RARE ru@340×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE pt@340×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=3.38 compact=true ultra=false on=true
+RARE pt@340×200 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE pt@340×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@340×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=3.38 compact=true ultra=false on=true
+RARE es@340×200 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@340×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@340×200 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@340×200 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@340×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE ko@340×200 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@340×200 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@340×200 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@360×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@360×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@360×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE pt@360×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE pt@360×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE pt@360×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@360×240 eternity → ok tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@360×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@360×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@360×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@360×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@360×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE ko@360×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@360×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@360×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@400×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@400×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@400×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE pt@400×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE pt@400×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE pt@400×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@400×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@400×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@400×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@400×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@400×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@400×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE ko@400×240 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@400×240 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@400×240 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@400×280 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@400×280 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@400×280 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE pt@400×280 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE pt@400×280 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE pt@400×280 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@400×280 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@400×280 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE es@400×280 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@400×280 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@400×280 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE en@400×280 emily → ok tagVis=17/17 hintVis=14/14 nameVis=26/26 cardOver=0 compact=true ultra=false on=true
+RARE ko@400×280 eternity → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@400×280 labiata → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ko@400×280 emily → ok tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=0 compact=true ultra=false on=true
+RARE ru@480×288 eternity → SOFT tagVis=19/19 hintVis=14/14 nameVis=41/41 cardOver=7 compact=false ultra=false on=true
+RARE ru@480×288 labiata → SOFT tagVis=19/19 hintVis=14/14 nameVis=41/41 cardOver=7 compact=false ultra=false on=true
+RARE ru@480×288 emily → SOFT tagVis=19/19 hintVis=14/14 nameVis=41/41 cardOver=7 compact=false ultra=false on=true
+RARE pt@480×288 eternity → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE pt@480×288 labiata → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE pt@480×288 emily → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE es@480×288 eternity → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE es@480×288 labiata → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE es@480×288 emily → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE en@480×288 eternity → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE en@480×288 labiata → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE en@480×288 emily → SOFT tagVis=19/19 hintVis=14/14 nameVis=37/37 cardOver=5 compact=false ultra=false on=true
+RARE ko@480×288 eternity → SOFT tagVis=19/19 hintVis=14/14 nameVis=41/41 cardOver=7 compact=false ultra=false on=true
+RARE ko@480×288 labiata → SOFT tagVis=19/19 hintVis=14/14 nameVis=41/41 cardOver=7 compact=false ultra=false on=true
+RARE ko@480×288 emily → SOFT tagVis=19/19 hintVis=14/14 nameVis=41/41 cardOver=7 compact=false ultra=false on=true
+=== B) OPTIONS Math.max(260) LATENT ===
+OPT ko@320×200 → SOFT inflated=false health=0 maxH=180px fitH=180 ctaVis=46/46 panelOver=0 scrollH=24
+OPT en@320×200 → SOFT inflated=false health=0 maxH=180px fitH=180 ctaVis=46/46 panelOver=0 scrollH=24
+OPT ru@320×200 → SOFT inflated=false health=0 maxH=180px fitH=180 ctaVis=46/46 panelOver=0 scrollH=24
+OPT pt@320×200 → SOFT inflated=false health=0 maxH=180px fitH=180 ctaVis=46/46 panelOver=0 scrollH=24
+OPT es@320×200 → SOFT inflated=false health=0 maxH=180px fitH=180 ctaVis=46/46 panelOver=0 scrollH=24
+OPT zh-Hant@320×200 → SOFT inflated=false health=0 maxH=180px fitH=180 ctaVis=46/46 panelOver=0 scrollH=24
+OPT ja@320×200 → SOFT inflated=false health=0 maxH=180px fitH=180 ctaVis=50/50 panelOver=0 scrollH=20
+OPT ko@340×200 → SOFT inflated=false health=0 maxH=191px fitH=191 ctaVis=46/46 panelOver=0 scrollH=35
+OPT en@340×200 → SOFT inflated=false health=0 maxH=191px fitH=191 ctaVis=46/46 panelOver=0 scrollH=35
+OPT ru@340×200 → SOFT inflated=false health=0 maxH=191px fitH=191 ctaVis=46/46 panelOver=0 scrollH=35
+OPT pt@340×200 → SOFT inflated=false health=0 maxH=191px fitH=191 ctaVis=46/46 panelOver=0 scrollH=35
+OPT es@340×200 → SOFT inflated=false health=0 maxH=191px fitH=191 ctaVis=46/46 panelOver=0 scrollH=35
+OPT zh-Hant@340×200 → SOFT inflated=false health=0 maxH=191px fitH=191 ctaVis=46/46 panelOver=0 scrollH=35
+OPT ja@340×200 → SOFT inflated=false health=0 maxH=191px fitH=191 ctaVis=50/50 panelOver=0 scrollH=31
+OPT ko@342×220 → SOFT inflated=false health=0 maxH=192px fitH=192 ctaVis=46/46 panelOver=0 scrollH=36
+OPT en@342×220 → SOFT inflated=false health=0 maxH=192px fitH=192 ctaVis=46/46 panelOver=0 scrollH=36
+OPT ru@342×220 → SOFT inflated=false health=0 maxH=192px fitH=192 ctaVis=46/46 panelOver=0 scrollH=36
+OPT pt@342×220 → SOFT inflated=false health=0 maxH=192px fitH=192 ctaVis=46/46 panelOver=0 scrollH=36
+OPT es@342×220 → SOFT inflated=false health=0 maxH=192px fitH=192 ctaVis=46/46 panelOver=0 scrollH=36
+OPT zh-Hant@342×220 → SOFT inflated=false health=0 maxH=192px fitH=192 ctaVis=46/46 panelOver=0 scrollH=36
+OPT ja@342×220 → SOFT inflated=false health=0 maxH=192px fitH=192 ctaVis=50/50 panelOver=0 scrollH=32
+OPT ko@360×240 → SOFT inflated=false health=0 maxH=202px fitH=202 ctaVis=46/46 panelOver=0 scrollH=46
+OPT en@360×240 → SOFT inflated=false health=0 maxH=202px fitH=202 ctaVis=46/46 panelOver=0 scrollH=46
+OPT ru@360×240 → SOFT inflated=false health=0 maxH=202px fitH=202 ctaVis=46/46 panelOver=0 scrollH=46
+OPT pt@360×240 → SOFT inflated=false health=0 maxH=202px fitH=202 ctaVis=46/46 panelOver=0 scrollH=46
+OPT es@360×240 → SOFT inflated=false health=0 maxH=202px fitH=202 ctaVis=46/46 panelOver=0 scrollH=46
+OPT zh-Hant@360×240 → SOFT inflated=false health=0 maxH=202px fitH=202 ctaVis=46/46 panelOver=0 scrollH=46
+OPT ja@360×240 → SOFT inflated=false health=0 maxH=202px fitH=202 ctaVis=50/50 panelOver=0 scrollH=42
+OPT ko@400×280 → SOFT inflated=false health=0 maxH=225px fitH=225 ctaVis=46/46 panelOver=0 scrollH=69
+OPT en@400×280 → SOFT inflated=false health=0 maxH=225px fitH=225 ctaVis=46/46 panelOver=0 scrollH=69
+OPT ru@400×280 → SOFT inflated=false health=0 maxH=225px fitH=225 ctaVis=46/46 panelOver=0 scrollH=69
+OPT pt@400×280 → SOFT inflated=false health=0 maxH=225px fitH=225 ctaVis=46/46 panelOver=0 scrollH=69
+OPT es@400×280 → SOFT inflated=false health=0 maxH=225px fitH=225 ctaVis=46/46 panelOver=0 scrollH=69
+OPT zh-Hant@400×280 → SOFT inflated=false health=0 maxH=225px fitH=225 ctaVis=46/46 panelOver=0 scrollH=69
+OPT ja@400×280 → SOFT inflated=false health=0 maxH=225px fitH=225 ctaVis=50/50 panelOver=0 scrollH=65
+OPT ko@667×375 → ok inflated=false health=0 maxH=345px fitH=375 ctaVis=46/46 panelOver=0 scrollH=187
+OPT en@667×375 → ok inflated=false health=0 maxH=345px fitH=375 ctaVis=46/46 panelOver=0 scrollH=187
+OPT ru@667×375 → ok inflated=false health=0 maxH=345px fitH=375 ctaVis=46/46 panelOver=0 scrollH=187
+OPT pt@667×375 → ok inflated=false health=0 maxH=345px fitH=375 ctaVis=46/46 panelOver=0 scrollH=187
+OPT es@667×375 → ok inflated=false health=0 maxH=345px fitH=375 ctaVis=46/46 panelOver=0 scrollH=187
+OPT zh-Hant@667×375 → ok inflated=false health=0 maxH=345px fitH=375 ctaVis=46/46 panelOver=0 scrollH=187
+OPT ja@667×375 → ok inflated=false health=0 maxH=345px fitH=375 ctaVis=50/50 panelOver=0 scrollH=183
+=== C) Title brand @800 / @1280 (HARD=CTA unread only) ===
+TITLE ru@800×450 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE pt@800×450 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE es@800×450 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE en@800×450 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE ko@800×450 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE ru@1280×560 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE pt@1280×560 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE es@1280×560 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE en@1280×560 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+TITLE ko@1280×560 → SOFT startVis=43/43 optVis=46/46 brandHidden=true brandVis=0 hiVis=27.5 panelOver=0
+=== SUMMARY ===
+hard=0 soft=72 ok=70 optionsHealthLive=0
+SOFT sample (first 12 of 72):
+  RARE ru@320×200 eternity → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+  RARE ru@320×200 labiata → SOFT tagVis=34/34 hintVis=14/14 nameVis=29/29 cardOver=10.5 compact=true ultra=false on=true
+  RARE ru@320×200 emily → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+  RARE pt@320×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=9 compact=true ultra=false on=true
+  RARE es@320×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=9 compact=true ultra=false on=true
+  RARE en@320×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=9 compact=true ultra=false on=true
+  RARE ko@320×200 eternity → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+  RARE ko@320×200 labiata → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+  RARE ko@320×200 emily → SOFT tagVis=17/17 hintVis=14/14 nameVis=29/29 cardOver=2 compact=true ultra=false on=true
+  RARE ru@340×200 labiata → SOFT tagVis=34/34 hintVis=14/14 nameVis=29/29 cardOver=4.88 compact=true ultra=false on=true
+  RARE pt@340×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=3.38 compact=true ultra=false on=true
+  RARE es@340×200 eternity → SOFT tagVis=34/34 hintVis=14/14 nameVis=26/26 cardOver=3.38 compact=true ultra=false on=true

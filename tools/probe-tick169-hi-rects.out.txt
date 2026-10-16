@@ -1,0 +1,45 @@
+--- ko@320x200
+  app t/b=10/190 oc t/b=8/192 keys t/b=190.1/208.1 h=18 minH=8px maxH=8px ov=hidden
+  hi t/b=285.6/311.1 h=25.5 visK/Oc/App=0/0/0
+  grid t/b=215.6/251.6 h=36 visK/Oc=0/0 minH=36px
+  start t/b=80.1/124.1 visApp=44 h=44
+--- ko@360x240
+  app t/b=18.8/221.3 oc t/b=9.6/230.4 keys t/b=191.7/236.7 h=45 minH=45px maxH=45px ov=hidden
+  hi t/b=287.2/312.7 h=25.5 visK/Oc/App=0/0/0
+  grid t/b=217.2/253.2 h=36 visK/Oc=19.5/13.2 minH=36px
+  start t/b=81.7/125.7 visApp=44 h=44
+--- ko@400x240
+  app t/b=7.5/232.5 oc t/b=9.6/230.4 keys t/b=191.7/236.7 h=45 minH=45px maxH=45px ov=hidden
+  hi t/b=287.2/312.7 h=25.5 visK/Oc/App=0/0/0
+  grid t/b=217.2/253.2 h=36 visK/Oc=19.5/13.2 minH=36px
+  start t/b=81.7/125.7 visApp=44 h=44
+--- ko@400x280
+  app t/b=27.5/252.5 oc t/b=11.2/268.8 keys t/b=193.3/275.3 h=82 minH=82px maxH=82px ov=hidden
+  hi t/b=288.8/314.3 h=25.5 visK/Oc/App=0/0/0
+  grid t/b=218.8/254.8 h=36 visK/Oc=36/36 minH=36px
+  start t/b=83.3/127.3 visApp=44 h=44
+--- ko@480x288
+  app t/b=9/279 oc t/b=11.5/276.5 keys t/b=193.6/282.6 h=89 minH=89px maxH=89px ov=hidden
+  hi t/b=289.1/314.6 h=25.5 visK/Oc/App=0/0/0
+  grid t/b=219.1/255.1 h=36 visK/Oc=36/36 minH=36px
+  start t/b=83.6/127.6 visApp=44 h=44
+--- ko@568x320
+  app t/b=0.3/319.8 oc t/b=16/304 keys t/b=198/281 h=83 minH=83px maxH=83px ov=hidden
+  hi t/b=293.5/319 h=25.5 visK/Oc/App=0/10.5/25.5
+  grid t/b=223.5/259.5 h=36 visK/Oc=36/36 minH=36px
+  start t/b=88/132 visApp=44 h=44
+--- ko@640x360
+  app t/b=0/360 oc t/b=14.4/345.6 keys t/b=196.5/331.5 h=135 minH=135px maxH=135px ov=hidden
+  hi t/b=296/321.5 h=25.5 visK/Oc/App=25.5/25.5/25.5
+  grid t/b=222/262 h=40 visK/Oc=40/40 minH=40px
+  start t/b=86.5/130.5 visApp=44 h=44
+--- ko@667x375
+  app t/b=0/375 oc t/b=17.5/357.5 keys t/b=199.5/334.5 h=135 minH=135px maxH=135px ov=hidden
+  hi t/b=299/324.5 h=25.5 visK/Oc/App=25.5/25.5/25.5
+  grid t/b=225/265 h=40 visK/Oc=40/40 minH=40px
+  start t/b=89.5/133.5 visApp=44 h=44
+--- ko@800x450
+  app t/b=0/450 oc t/b=18/432 keys t/b=292.3/433.3 h=141 minH=141px maxH=141px ov=hidden
+  hi t/b=393.8/421.3 h=27.5 visK/Oc/App=27.5/27.5/27.5
+  grid t/b=319.8/359.8 h=40 visK/Oc=40/40 minH=40px
+  start t/b=104.1/148.1 visApp=44 h=44

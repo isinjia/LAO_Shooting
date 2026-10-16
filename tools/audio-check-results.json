@@ -1,0 +1,80 @@
+{
+  "audio404Count": 0,
+  "audio404": [],
+  "listen": {
+    "ok": true,
+    "master": 0.22,
+    "sfx": 0.85,
+    "measures": [
+      {
+        "label": "bgm-city",
+        "peak": 0.004541642032563686,
+        "clipped": false,
+        "capture": {
+          "ok": true,
+          "bytes": 5330,
+          "mime": "audio/webm;codecs=opus",
+          "peak": 0.005611465312540531,
+          "clipped": false
+        }
+      },
+      {
+        "label": "shoot-single",
+        "peak": 0.006938922684639692,
+        "clipped": false,
+        "capture": {
+          "ok": true,
+          "bytes": 5330,
+          "mime": "audio/webm;codecs=opus",
+          "peak": 0.008471480570733547,
+          "clipped": false
+        }
+      },
+      {
+        "label": "shoot-stack-12",
+        "peak": 0.006578609813004732,
+        "clipped": false,
+        "capture": {
+          "ok": true,
+          "bytes": 6299,
+          "mime": "audio/webm;codecs=opus",
+          "peak": 0.007754242978990078,
+          "clipped": false
+        }
+      },
+      {
+        "label": "special-lv3",
+        "peak": 0.02550674043595791,
+        "clipped": false,
+        "capture": {
+          "ok": true,
+          "bytes": 4092,
+          "mime": "audio/webm;codecs=opus",
+          "peak": 0.03509202599525452,
+          "clipped": false
+        }
+      },
+      {
+        "label": "bomb",
+        "peak": 0.05210930109024048,
+        "clipped": false,
+        "capture": {
+          "ok": true,
+          "bytes": 6093,
+          "mime": "audio/webm;codecs=opus",
+          "peak": 0.05328499525785446,
+          "clipped": false
+        }
+      }
+    ],
+    "autofireStackRatio": 0.9480736581151762,
+    "budgets": {
+      "peakSoft": 0.95,
+      "stackRatioSoft": 3.5
+    },
+    "peakOk": true,
+    "stackOk": true
+  },
+  "allOk": true,
+  "note": "Subjective quality left to user; this report is peak/clip/404 only."
+}

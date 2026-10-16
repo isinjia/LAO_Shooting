@@ -1,0 +1,112 @@
+GRIFFIN C + BOMB FIX
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity: E:\LAO\Google_QA\Assets\
+
+Reference videos (Naver skill intro):
+  Skill1 C  vid=CF1AEF86DD17F535D41E5508428F425CE66C
+            standing launcher + orange fire darts (핸드 미사일)
+  Skill2 X  vid=2BAD9607E9D6695E14F11E166368BD486E21
+            airborne jet pose + orange exhaust (폭격)
+
+WHAT C / BOMB NOW USE
+  griffin C     Skill1 핸드 미사일
+                Body: griffin-skill1.png (attack_hand_missile_skill)
+                Bullets: Unity pani_fire_sqns_43_re.png (3x3 dart sheet)
+                         nativeKey 'griffin' — NOT merlin_missile / shell reuse
+                Prefab: PA00EL_skill_1_fire (cannon_Fire mat pani_fire_sqns_43_m)
+  griffin bomb  Skill2 폭격
+                Body: griffin-skill2.png from move_fly_jet.anim (hasSkill2=true)
+                VFX: climb strobe + dive rockets stamped with pani_fire darts
+                     + existing PA00EL skill2 choreography (up line / dive / hit)
+
+SKILL2 BODY CLIP SEARCH
+  Searched Model_BR_PA00EL_N / NS1 / NS2 / NS3 / SS1 on Google_QA and Onestore_QA.
+  No dedicated skill2 / Attack_02 / bomb / dive clip exists on any Griffin SD pack.
+  Skill2 video body = jet-flight pose = Unity move_fly_jet.anim (also the SD move clip).
+  That clip is baked/packed as griffin-skill2 and played on X / deathbomb.
+
+SLEIPNIR
+  Unchanged mapping (Skill1 coffinround C, Skill2 charge body + VFX).
+
+UNCHANGED
+  griffin shot  still Merlin-style shells (baton / shell)
+  griffin HOLD  still Merlin charged shells
+  Hirume sunbird + Constantia locks. MissORCA not restored.
+
+FILES
+  js/special-skill-profiles.js, js/player.js, js/native-weapon-fx.js
+  js/native-shot-data.js, js/bomb-vfx.js
+  tools/import-native-shots.py, tools/import-skill-body-sheets.py
+  tools/bake_sd_character.py (griffin skill2 stem = move_fly_jet for future bakes)
+  assets/native-shots/griffin.png, griffin-skill2.png
+  tools/griffin-c-bomb-fix-handoff.txt
+
+CORRECTION 2026-10-07 (supersedes "SKILL2 BODY CLIP SEARCH" above)
+  The SD controller SD_BR_PA00_L_N.controller maps:
+    anim_skill1 -> attack_hand_missile.anim        (1.47s hand-missile launch)
+    anim_skill2 -> attack_hand_missile_skill.anim  (10.9s; volleys at 3.23-3.95s
+                                                    and 6.48-6.63s, hit 7.72s)
+  The earlier mapping was shifted: C used attack_hand_missile_skill and X used
+  move_fly_jet, so the bomb looked like the move animation.
+  Now: bake skill1=attack_hand_missile, skill2=attack_hand_missile_skill;
+       griffin-skill1.png = skill1 (16 cells), griffin-skill2.webp = full
+       skill2 uncompressed: all 262 frames, 17x16 grid, 24fps = 10.9s
+       (user request; WebP q80 ~2.8MB, loader WEBP_KEYS in native-weapon-fx.js).
+       The body stays locked in skill2 for the whole 10.9s (movement/shots
+       continue; C or a hit interrupts it). Bomb VFX timing (1.7s) unchanged.
+  Rebuild: python tools/bake_sd_character.py --char griffin --clips skill1,skill2
+           python tools/import-skill-body-sheets.py griffin-skill1 griffin-skill2
+
+BOMB = FULL ORIGINAL SKILL2 RUN (2026-10-07, supersedes the dive-rocket VFX above)
+  js/griffin-skill.js, driven by attack_hand_missile_skill.anim (10.85s):
+    path      pelvis position curve -> screen offset (x*8px, y scaled so the 38-unit
+              climb clears the top edge): crouch, rocket up/off screen, dive back,
+              hover, dash right (+55u), sweep left (-26u), return home.
+    shots     EventThrowProjectileFire1-4: 4x FX_bullet_hand_Missile 3.23-3.95s,
+              4x FX_PA00EL_Framebullet 6.48-6.63s; 1s ease-in flight (projectile
+              script curve), homing on live enemies.
+    art       handmissile.png body+plume, fire_smoke_sqns_2 booster, fire_Hit
+              (fire_sqns_hit + fire_sqns_m), PA00EL_skill_2_hit (hit_fire_m + hit_smog),
+              up_smoke boom, roket_fire jet, fly_line streaks -> griffin-fx-*.png
+              (tools/import-griffin-fx.py, sources in griffin-fx-source.json).
+    shakes    EventCameraShake 0.5 / 1 / 0.5 / 1.8 at their original times.
+  Gameplay: bullet clear + invuln still instant at the press; bomb damage
+  (pack 40 / leader 22) is applied as 1/8 per landed projectile to on-screen
+  enemies (same total). Griffin is invulnerable and does not shoot/charge during
+  the 10.85s run; movement input moves the home spot she returns to; C and a
+  second X are blocked until she lands. Old procedural climb/dive-rocket VFX removed.
+
+VIDEO MATCH PASS (2026-10-07, ref: user capture of the in-game skill intro)
+  Projectiles: yellow-orange fire comets (plume sprite + white-hot head bloom, missile
+    body only a faint silhouette) with grey dotted fire_smoke_sqns_2 chains.
+  Muzzle: big yellow flare + pani_fire burst at the launchers per shot.
+  Hand-missile hit: large yellow-white bloom (~270x350) -> fire_Hit ball + ground fire.
+  Flame bullets: 2 comets per Fire event (8 total, as in the video), quadratic arc
+    that plunges almost vertically onto the group.
+  Finisher (EventHit fire_Hit): giant vertical flare (~430x550) -> hit_smog black/
+    orange cloud -> stacked ground-fire pillar, at the group centre.
+  Liftoff: golden flame column (blade_line tinted gold) + side smoke puffs.
+  Flight: booster orb glow on her back; yellow dash flare when moving fast.
+  Damage unchanged in total: 12 landed shots x 1/12 of the blast each.
+  Not reproduced: damage numbers / "추가 화염 피해+20%" status text from the video.
+
+ABSOLUTE SCREEN PATH (2026-10-07, supersedes the pelvis-offset path)
+  Airborne positions are fixed screen keyframes traced from the video (SCREEN in
+  js/griffin-skill.js, x/W y/H): take off straight up from home and exit the top
+  (0.43-0.75s) -> enter top-left (1.4s) -> hover ~(0.27W,0.2H) firing hand missiles
+  (pelvis wobble kept) -> dash up-right (0.59W,0.14H)->(0.9W,0.07H) -> out top-right
+  (6.55s) -> streak along the top edge 0.42W->0.12W -> out top-left (7.3s) -> enter
+  from the left edge (8.15s) -> glide back to the ship's current position (9.0-10.85s).
+  Flame bullets launch from above the top-right and arc via a point just above the
+  frame (cy=-30) so they visibly plunge onto the group.
+
+CARPET BOMBING + VISIBLE TOP SWEEP (2026-10-07, user direction)
+  Leftward sweep now crosses inside the top of the screen (y ~0.1-0.12H) instead of
+  hugging the edge: enters right (6.6s) -> 0.72W -> 0.28W -> exits left (7.3s).
+  Volleys no longer aim at enemies: buildSchedule() scatters 10 hand missiles
+  (3.23-3.95s, x 0.38-0.95W) and 15 flame bullets (6.48-6.70s, x 0.10-0.95W) over
+  random screen points (Math.random: visual only). Each landed shot still applies
+  1/25 of the screen-wide bomb blast, so the total is unchanged. The fire_Hit
+  finisher lands on the live enemy group centre (fallback 0.66W, 0.5H).
+

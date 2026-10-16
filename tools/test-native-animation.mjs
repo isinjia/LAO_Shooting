@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import { NativeShotEffects, sampleLrlClip, LRL_CLIP } from '../js/native-weapon-fx.js';
+import { BulletPool } from '../js/bullet.js';
+assert.equal(LRL_CLIP.count,12);
+assert.deepEqual(sampleLrlClip(1),{first:11,second:11,mix:0});
+assert.equal(sampleLrlClip(.5).first,5);
+assert.equal(sampleLrlClip(.5).mix,.5);
+const pool=new BulletPool();
+const b=pool.spawn({nativeKey:'lrl',friendly:true,x:100,y:200,vx:600,vy:0,r:12,lifetime:2});
+assert.equal(pool.nativeEffects.list.length,1);
+pool.nativeEffects.emit(b,'impact',{x:500,y:220});
+b.reset({x:0,y:0});
+assert.equal(pool.nativeEffects.list[1].x,500,'Impact survives pooled bullet reset');
+assert.equal(pool.nativeEffects.list[1].r,12);
+pool.update(.28,1600,900);
+assert.equal(pool.nativeEffects.list.length,1,'Brief hit ends before launch tail');
+pool.update(.12,1600,900);assert.equal(pool.nativeEffects.list.length,0);
+const fx=new NativeShotEffects();
+for(let i=0;i<200;i++)fx.emit({nativeKey:'lrl',x:0,y:0,r:12,vx:600,vy:0});
+assert.equal(fx.list.length,48,'VFX cost is bounded');
+fx.update(0);assert.equal(fx.list[0].age,0,'Paused simulation freezes animation');
+fx.clear();assert.equal(fx.list.length,0);
+pool.spawn({nativeKey:'lrl',friendly:true,x:100,y:200,vx:600,vy:0,r:12});
+pool.clearAll();assert.equal(pool.nativeEffects.list.length,0);
+console.log('LRL animation: complete clip, interpolation, impact snapshots, lifetime, pause, cap and reset passed');
+
+// Axe contact uses the cut hit, but throwing the axe does not spawn a slash flash.
+const axeFx = new NativeShotEffects();
+const axe = {nativeKey:'lrl-axe',x:10,y:20,r:38,vx:600,vy:0};
+axeFx.emit(axe);assert.equal(axeFx.list.length,0);
+axeFx.emit(axe,'impact',{x:600,y:300});assert.equal(axeFx.list.length,1);
+assert(axeFx.list[0].heavy);assert.equal(axeFx.list[0].duration,.32);
+axe.x=900;axeFx.update(.1);assert.equal(axeFx.list[0].x,600,'Cut stays at contact point');
+axeFx.update(.23);assert.equal(axeFx.list.length,0,'Contact cut does not loop');

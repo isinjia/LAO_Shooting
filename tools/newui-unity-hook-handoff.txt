@@ -1,0 +1,80 @@
+UNITY NEWUI HOOK — copy + minimal CSS/JS (2026-10-05)
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Source: E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\resourece\
+Dest:   assets/ui/newui/
+
+================================================================
+COPIED (verified present)
+================================================================
+  newui_Popup_Icon_Close.png                         1242 B
+  newui_OfflineBattle_InProgress_Loding.png          1281 B  (Unity typo "Loding" kept)
+  UI_Ranking_Backplate.png                         121635 B
+  UI_Ranking_Frame_01.png                          242837 B
+  UI_Ranking_Frame_02.png                          243946 B  (present; CSS-idle)
+  UI_Ranking_Frame_03.png                          247239 B  (present; CSS-idle)
+
+Already-local (not re-copied; wired optionally):
+  newui_Btn_Deactivation.png
+  newui_Popup_Bg_Box.png
+
+================================================================
+CSS HOOKS (css/style.css — append block "UNITY NEWUI HOOK")
+================================================================
+1) Result score plate
+   .lao-newui #overlay-content.screen-result .result-score
+   → Ranking Backplate + Frame_01 decorative wash (padding only; cells keep Box2)
+   → stripped @ max-height:420px (letterbox / short-viewport parity)
+
+2) Loading track cue
+   .lao-newui #overlay-content.screen-loading .load-track::after
+   → OfflineBattle_InProgress_Loding.png (replaces Tap1 end cue art only)
+   → height/margin of .load-track unchanged (14px track kept)
+
+3) Pause / OPTIONS dismiss cue
+   .lao-newui #btn-quit .lobby-ico-back
+   .lao-newui #btn-opt-back .lobby-ico-back
+   → Popup_Icon_Close.png
+   → other .lobby-ico-back (select/title/result BACK) still Lobby_Icon_Back
+
+4) Ghost / secondary plate
+   .lao-newui .btn-ghost (+ :hover)
+   → newui_Btn_Deactivation.png under existing ghost gradient
+   → btn-primary Activation art NOT touched
+
+No HTML markup changes. No touch-pad / gauge / combat HUD Top_Bg fill.
+
+================================================================
+JS (js/newui-assets.js)
+================================================================
+Registered SLICES keys (preload via ensureNewUiSlices):
+  popupClose, loadingCue, rankingBackplate,
+  rankingFrame01, rankingFrame02, rankingFrame03,
+  btnDeactivation, popupBox
+
+Canvas draw sites (game.js ceremony) still use titleDeco/topBg/box2 only —
+new keys are preload-ready, not forced into HUD canvas paints.
+
+================================================================
+INTENTIONALLY CSS-ONLY / IDLE
+================================================================
+  UI_Ranking_Frame_02.png / UI_Ranking_Frame_03.png
+    — copied + JS-registered; no CSS hook yet (Frame_01 covers score plate)
+  newui_Popup_Bg_Box.png
+    — already local + JS-registered; Box2 already occupies secondary plates
+      (pause-blurb / result cells / load-meta). Left idle to avoid plate churn.
+
+================================================================
+DO NOT / PRESERVED
+================================================================
+  - Full-bleed Top_Bg on combat HUD
+  - Force .btn-primary → Activation rewrite (Activation already elsewhere)
+  - Touch-pad / gauge dimension changes
+  - Whole-UI rewrite; i18n strings; letterbox / CTA-health / panel fitH
+
+================================================================
+SMOKE
+================================================================
+  All 6 copied PNGs Test-Path OK
+  CSS HIT: Ranking Backplate/Frame_01, Loding, Close, Deactivation
+  CSS HIT: .result-score, #btn-quit/#btn-opt-back .lobby-ico-back, .btn-ghost, load-track::after
+  HTML dismiss controls still #btn-quit / #btn-opt-back (icon class unchanged)

@@ -1,0 +1,842 @@
+[
+  {
+    "loc": "ko",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "gridH": 14,
+      "gridMin": "0px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 82,
+      "h2H": 35
+    },
+    "afterBrand": {
+      "gridH": 44,
+      "gridMin": "44px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 47,
+      "h2H": 35
+    },
+    "afterH2": {
+      "gridH": 66,
+      "gridMin": "66px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced": {
+      "gridH": 71,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced2": {
+      "gridH": 71,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "avail": 115
+  },
+  {
+    "loc": "en",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "gridH": 36,
+      "gridMin": "36px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 52,
+      "gridMin": "52px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 73,
+      "gridMin": "73px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 78,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 78,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 122
+  },
+  {
+    "loc": "pt",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "gridH": 36,
+      "gridMin": "36px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 71,
+      "gridMin": "71px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 55,
+      "gridMin": "55px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 78,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 78,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 122
+  },
+  {
+    "loc": "es",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "gridH": 36,
+      "gridMin": "36px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 71,
+      "gridMin": "71px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 55,
+      "gridMin": "55px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 78,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 78,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 122
+  },
+  {
+    "loc": "ru",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "gridH": 14,
+      "gridMin": "0px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 82,
+      "h2H": 35
+    },
+    "afterBrand": {
+      "gridH": 63,
+      "gridMin": "63px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 47,
+      "h2H": 35
+    },
+    "afterH2": {
+      "gridH": 48,
+      "gridMin": "48px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced": {
+      "gridH": 71,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced2": {
+      "gridH": 71,
+      "gridMin": "40px",
+      "panelOver": -14.5,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "avail": 115
+  },
+  {
+    "loc": "ko",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "gridH": 46,
+      "gridMin": "46px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 82,
+      "h2H": 35
+    },
+    "afterBrand": {
+      "gridH": 81,
+      "gridMin": "81px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 47,
+      "h2H": 35
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced": {
+      "gridH": 108,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced2": {
+      "gridH": 108,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "avail": 152
+  },
+  {
+    "loc": "en",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "gridH": 54,
+      "gridMin": "54px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 115,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 115,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 159
+  },
+  {
+    "loc": "pt",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "gridH": 36,
+      "gridMin": "36px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 71,
+      "gridMin": "71px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 115,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 115,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 159
+  },
+  {
+    "loc": "es",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "gridH": 36,
+      "gridMin": "36px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 71,
+      "gridMin": "71px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 115,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 115,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 159
+  },
+  {
+    "loc": "ru",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "gridH": 65,
+      "gridMin": "65px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 82,
+      "h2H": 35
+    },
+    "afterBrand": {
+      "gridH": 63,
+      "gridMin": "63px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 47,
+      "h2H": 35
+    },
+    "afterH2": {
+      "gridH": 85,
+      "gridMin": "85px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced": {
+      "gridH": 108,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced2": {
+      "gridH": 108,
+      "gridMin": "40px",
+      "panelOver": -16,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "avail": 152
+  },
+  {
+    "loc": "ko",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "gridH": 83,
+      "gridMin": "83px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 82,
+      "h2H": 35
+    },
+    "afterBrand": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 47,
+      "h2H": 35
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced": {
+      "gridH": 145,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced2": {
+      "gridH": 145,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "avail": 189
+  },
+  {
+    "loc": "en",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 86.4,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 152,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 152,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 196
+  },
+  {
+    "loc": "pt",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "gridH": 73,
+      "gridMin": "73px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 152,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 152,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 196
+  },
+  {
+    "loc": "es",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "gridH": 73,
+      "gridMin": "73px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 78,
+      "h2H": 31
+    },
+    "afterBrand": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 43,
+      "h2H": 31
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced": {
+      "gridH": 152,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "forced2": {
+      "gridH": 152,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 24,
+      "h2H": 24
+    },
+    "avail": 196
+  },
+  {
+    "loc": "ru",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "gridH": 65,
+      "gridMin": "65px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "headH": 82,
+      "h2H": 35
+    },
+    "afterBrand": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 47,
+      "h2H": 35
+    },
+    "afterH2": {
+      "gridH": 86,
+      "gridMin": "86px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced": {
+      "gridH": 145,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "forced2": {
+      "gridH": 145,
+      "gridMin": "40px",
+      "panelOver": -18,
+      "ctaOut": false,
+      "brandH": 0,
+      "brandDisplay": "none",
+      "headH": 27,
+      "h2H": 27
+    },
+    "avail": 189
+  }
+]

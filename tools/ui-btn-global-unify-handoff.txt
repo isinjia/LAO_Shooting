@@ -1,0 +1,56 @@
+UI BTN GLOBAL UNIFY — HAND OFF
+Date: 2026-10-05 (cascade harden pass)
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+PROBLEM (prior)
+  Title-only world/world2 left select/pause/options/result/tutorial
+  CTAs on invent-gold Btn_Activation stretch — label contrast bad,
+  family mismatch vs title.
+
+FIX PASS 1 (css/style.css — global Buttons block ~9810)
+  .lao-newui .btn-primary / .btn-cta  → btn_newui_world.png + cyan #e8ffff
+  .lao-newui .btn (secondary)         → btn_newui_world2.png + #d0dce6
+  .lao-newui .btn-ghost               → Deactivation + brighter label
+  .lao-newui .btn-mini                → Sub / Sub2 (wide world unfit)
+  Kill Activation soft-light gold, Tap1 ::after, cta-breathe on primary
+  background-size: cover (not 100% 100% mush)
+
+STILL BROKEN AFTER PASS 1 (cascade residuals)
+  1. ~4148 .lao-newui .btn:not(.btn-primary):not(.btn-ghost)
+     Sub + multiply + 100% 100% — specificity (0,4,0) BEAT .btn-mini (0,2,0)
+     → options rebind/reset chips stayed mushy Sub-stretch, not clean Sub cover.
+  2. ~4802 .btn-primary .btn-ico { filter: brightness(0.2) sepia(0.4) }
+     Dark-on-gold leftover → icons on primary BACK (#btn-opt-back) nearly invisible
+     on dark world art.
+  3. ~8521 .btn-ghost soft-light + dual-layer gradient
+     Same specificity as global ghost; if order flipped, Deactivation washed out.
+  4. Title secondary opacity 0.92 via #overlay-content… (id specificity)
+     dimmed OPTIONS vs global intent.
+  5. Hover filter:brightness(1.05–1.08) on plates could flatten label contrast.
+  6. Invent-gold .btn-primary { background: linear-gradient… } shorthand still
+     in file; longhands usually won but body.lao-newui + background shorthand
+     reset makes kill airtight.
+
+FIX PASS 2 (this tick)
+  - Rewrite ~4148 → world2 + exclude btn-cta/btn-mini (no Sub fight)
+  - Neutralize primary .btn-ico dark filter (filter:none)
+  - Align ~8521 ghost to cover/normal/opaque (no soft-light)
+  - Title title-actions secondary opacity → 1
+  - Global + title reinforce blocks: body.lao-newui selectors, background
+    shorthand reset, filter:none, opacity:1 on all menu .btn variants
+  - brand-mark Activation left alone (not .btn)
+
+SURFACES COVERED
+  title START/OPTIONS, select SORTIE/BACK/OPTIONS, tutorial,
+  pause RESUME/OPTIONS/MUTE/QUIT, options BACK + mini rebind,
+  result RETRY/TITLE, loading back, asset-error, sortie fail
+
+INTACT
+  combat HUD gauges/pads, i18n, handlers, HARD axes, MissORCA stay removed
+  fake lobby rails untouched (optional soft-hide not this ask)
+
+CASCADE WINNERS (after pass 2)
+  body.lao-newui .btn-primary/.btn-cta     → world + #e8ffff
+  body.lao-newui .btn (secondary excl.)    → world2 + #d0dce6
+  body.lao-newui .btn-ghost                → Deactivation + #c5d2dc
+  body.lao-newui .btn-mini                 → Sub/Sub2 + #d0dce6

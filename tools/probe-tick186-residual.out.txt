@@ -1,0 +1,15 @@
+=== A) pause OPTIONS/MUTE (unmute) @ NEW mid-short (not tick174 resume/quit) ===
+PAUSE-MID pt@360×218 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Mudo" resume=30/30 quit=30/30 actionsOut=false over=0 appH=202.5 appTop=7.75 maxH=
+PAUSE-MID es@360×218 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Silencio" resume=30/30 quit=30/30 actionsOut=false over=0 appH=202.5 appTop=7.75 maxH=
+PAUSE-MID ru@360×218 → ok opt=32/32 none=false out=false txt="OPTIONS" mute=32/32 none=false out=false txt="Без звука" resume=32/32 quit=32/32 actionsOut=false over=0 appH=202.5 appTop=7.75 maxH=
+PAUSE-MID pt@375×212 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Mudo" resume=30/30 quit=30/30 actionsOut=false over=0 appH=210.9 appTop=0.53 maxH=
+PAUSE-MID es@375×212 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Silencio" resume=30/30 quit=30/30 actionsOut=false over=0 appH=210.9 appTop=0.53 maxH=
+PAUSE-MID ru@375×212 → ok opt=26/26 none=false out=false txt="OPTIONS" mute=26/26 none=false out=false txt="Без звука" resume=26/26 quit=26/26 actionsOut=false over=0 appH=210.9 appTop=0.53 maxH=
+PAUSE-MID pt@404×228 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Mudo" resume=30/30 quit=30/30 actionsOut=false over=0 appH=227.3 appTop=0.38 maxH=
+PAUSE-MID es@404×228 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Silencio" resume=30/30 quit=30/30 actionsOut=false over=0 appH=227.3 appTop=0.38 maxH=
+PAUSE-MID ru@404×228 → ok opt=32/32 none=false out=false txt="OPTIONS" mute=32/32 none=false out=false txt="Без звука" resume=32/32 quit=32/32 actionsOut=false over=0 appH=227.3 appTop=0.38 maxH=
+PAUSE-MID pt@430×245 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Mudo" resume=30/30 quit=30/30 actionsOut=false over=0 appH=241.9 appTop=1.56 maxH=
+PAUSE-MID es@430×245 → ok opt=30/30 none=false out=false txt="OPTIONS" mute=30/30 none=false out=false txt="Silencio" resume=30/30 quit=30/30 actionsOut=false over=0 appH=241.9 appTop=1.56 maxH=
+PAUSE-MID ru@430×245 → ok opt=32/32 none=false out=false txt="OPTIONS" mute=32/32 none=false out=false txt="Без звука" resume=32/32 quit=32/32 actionsOut=false over=0 appH=241.9 appTop=1.56 maxH=
+=== SUMMARY ===
+hard=0 soft=0 ok=12 skip=0

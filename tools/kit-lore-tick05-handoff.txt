@@ -1,0 +1,82 @@
+KIT LORE TICK 05 — BOMB / DEATHBOMB + SORTIE LEFTOVERS
+Date: 2026-10-05
+Wiki: lastorigin.wiki.gg (no shmup bomb skill on any of the 8).
+1945 II analog used only for X screen-clear when wiki has no bomb:
+  falling cluster / dive-bomb (Merlin, Emily), shared deathbomb grace.
+
+LOCKED (untouched this tick)
+  Hirume OLD kit: foxflame + sunbird + sunseal. X 야타가라스 · 봉황 날개.
+  Constantia tick2: tracer + lockround + bori. X 라이플 사격 · 발목 잡기.
+
+================================================================
+BOMB / DEATHBOMB vs WIKI (not name-only)
+================================================================
+Deathbomb: shared 1945 grace window (stock X, bullet wipe, life kept).
+  Wiki has no deathbomb. Existence / timers / stock UNCHANGED.
+
+X bomb rules (stock, wipe, invuln, leader dmg) UNCHANGED. VFX only.
+
+hirume     Wiki A1 fire + A2 ward analog. Fire rings + caster seal + target pillars.
+           MATCH (locked). Label 야타가라스 · 봉황 날개.
+constantia Wiki A1 rifle volleys. Lock rings + 3 tracers. MATCH (locked).
+lrl        Wiki A2 Cyclops Eternal Beam. Eye focus + wide sweep. MATCH.
+merlin     Wiki has no bomb (Big Gun is SHOT/HOLD; UNREP is C).
+           1945 II falling cluster analog. MATCH analog. Label 빅 건 · UNREP.
+fafnir     Wiki A2 Shock and Awe + intro city blackout.
+           EMP expand + chain arcs. MATCH. Label 흐로티 · 쇼크 앤 오.
+eternity   Wiki HMG + RIP. Coffin ward + HMG volleys. MATCH.
+labiata    Wiki A2 Hundred Flower Efflorescence = area bloom.
+           WAS leftover pierce-lance nest (unreferenced cross-cut).
+           NOW parked plasma blooms (existing ring/detonate/type11).
+           Label already 백화난만 · 백화제방 — visual now matches.
+emily      Wiki A2 Buster Cannon is ground-area rail; no bomb.
+           1945 II falling cluster analog (cyan rail strikes). MATCH analog.
+           C banner leftover “제녹스 버스터 캐논” → 버스터 캐논 (i18n).
+
+================================================================
+SHIPPED (proven leftover holes only)
+================================================================
+1) Labiata X VFX: flower blooms, not lance nest. No new bullet system.
+2) Eternity HOLD_STYLE coffinround → coffinwall (Coffin for Two muzzle,
+   existing cloud kind). SHOT coffinround / C coffinmissile unchanged.
+3) Emily C name 버스터 캐논 (was leftover Xenox split-bomb wording).
+4) Probe rare wait: RANDOM slot keeps data-key=random; wait is-rare + click.
+
+Hirume / Constantia combat untouched.
+
+================================================================
+LIVE SORTIE (tools/probe-kit-lore-live.mjs → LIVE_SORTIE_DUMP_OK)
+================================================================
+hirume     foxflame + sunbird + sunseal     leftover []
+constantia tracer + lockround + bori        leftover []
+lrl        cleave + dragonaxe + cyclopsbeam leftover []
+merlin     shell + commandmissile           leftover []
+fafnir     lightning + jupiterorb + teslacoil leftover []
+eternity   coffinround + coffinwall + coffinmissile leftover []
+           card: 보모의 기관총 / 두 사람을 위한 관 / 편히 잠드소서
+labiata    orbitblade + plasmaslash + plasmacross leftover []
+           card: 백화난만 / 백화난만 / 백화제방
+emily      railbeam + busterbeam            leftover []
+           card: 레일건 사격 / 버스터 캐논 (no HOLD)
+
+Tests: test-weapon-roles, test-basic-shots, test-original-skill-roles,
+test-weapon-range, test-gameplay-design.
+
+================================================================
+GAP LIST (docs / analog, not spawn holes)
+================================================================
+- ORIGINAL_SKILL_MAP.md still lists 회귀도끼 / 십자 절단 (stale doc).
+- tools/bomb-effects.md + bomb-preview.html still 5-char / Prydwen copy.
+- tools/qa-hold-muzzle.mjs still asserts constantia sightbeam +
+  eternity coffinround (stale freeze tests; live HOLD_STYLE is lockround
+  / coffinwall).
+- flameward / sightbeam / empfield / xenoxcore / orbital remain in shared
+  VFX tables as unused leftovers — not spawned this dump.
+- Merlin/Emily X stay 1945 falling-cluster analog (wiki has no bomb).
+
+Next tick: do not churn locked Hirume/Constantia. Only docs/QA freeze if
+asked. No invented systems.
+
+Preserved: 5 stages, pads, i18n structure, deathbomb, power Lv5,
+fire-rate ×2 delay, Constantia die eyes, Hirume/Constantia kits.
+Korean-ready.

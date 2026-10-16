@@ -1,0 +1,4 @@
+360×218 appTop=7.75 hintDisp=none inline=none naiveOut=true groundedOut=false falseHard=true name=20/20 kit=32/32 cta=28/28
+375×212 appTop=0.53 hintDisp=none inline=none naiveOut=false groundedOut=false falseHard=false name=20/20 kit=32/32 cta=28/28
+404×228 appTop=0.38 hintDisp=none inline=none naiveOut=false groundedOut=false falseHard=false name=20/20 kit=32/32 cta=28/28
+430×245 appTop=1.56 hintDisp=none inline=none naiveOut=true groundedOut=false falseHard=true name=20/20 kit=32/32 cta=28/28

@@ -1,0 +1,87 @@
+EXPRESS76 SD HAIR FIX
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Character\Char_PECS_Express76_N\
+
+================================================================
+ROOT CAUSE
+================================================================
+Express76 in-game SD looked bald (goggles on a skin-tone scalp) because the
+baker never painted the GPU hair meshes.
+
+Unity prefab (Model_PECS_Express76_N):
+  EX_parts_head     SpriteRenderer  active  — face/scalp only (no hair fill)
+  EX_parts_hair_1   SkinnedMeshRenderer  sortingOrder +5   (front hair / bangs)
+  EX_parts_hair_2   SkinnedMeshRenderer  sortingOrder -15  (back ponytail)
+  EX_parts_h        SpriteRenderer  m_IsActive 0  — grab/skill overlay, not idle
+
+Hair meshes live in 3d_mesh/Model_PECS_Express76_N_mesh.FBX
+  (fileIDs 4300008 / 4300006, guid a8ba0b2e95155d1469ee48e4295aad67).
+
+Their material is 3d_mesh/Materials/Model_PECS_Express76_Part1.mat
+  (guid 60a0884212bc55949b319f5fd391ed5a) → Part1.png atlas
+  (guid 88dfb0cfb75770f4d906d468901ed6c5).
+
+bake_sd_character.py only scanned model/materials/*.mat. Express76's
+lowercase materials/ folder has PNG atlases only (no .mat). SkinnedMesh
+pose() then hit `if not texpath: continue` and silently dropped hair
+(and also EX_parts_chest / EX_parts_necklace / EX_parts_line).
+
+Griffin/Sleipnir keep .mat next to sprite atlases in Materials/, plus extra
+SpriteRenderer hair pieces (hair_F_0, Hair_Top, …), so they baked complete.
+
+Select portrait assets/ui/char-select/express76.png is FormationIcon
+(FormationIcon_PECS_Express76_N) and already has dark hair — not rebaked.
+
+Did not invent hair. Did not force-enable inactive EX_parts_h.
+
+================================================================
+COMPARE (Griffin vs Express76)
+================================================================
+Griffin  Char_BR_PA00EL_N
+  Hair: SpriteRenderer layers (hair_F/L/R/B_*) + Hair_F_mesh / Hair_B_mesh
+  Mats: Model/.../Materials/*.mat + Texture_BR_PA00EL_N.png
+  Clips baked: stand / move_fly_jet / die  (idle/move/die)
+  Untouched this pass.
+
+Sleipnir Char_BR_Sleipnir_N
+  Sprite + skinned parts with Materials/*.mat
+  Clips: Idle_1 / Move / Die
+  Untouched this pass.
+
+Express76 Char_PECS_Express76_N
+  Hair is FBX skinned overlays, not atlas sprites.
+  Idle clip idle1 / move / die (same as before).
+  After fix: hair_1 + hair_2 (+ chest/necklace/line meshes) included.
+
+================================================================
+WHAT CHANGED
+================================================================
+tools/bake_sd_character.py
+  Also load .mat from 3d_mesh/Materials (and FBX-adjacent Materials/).
+  First-guid-wins; leftover Type37 / sd_full mats without textures are skipped.
+  One-shot log if a skinned part still has no mesh or no material.
+
+assets/sd_baked/express76/
+  Rebaked idle (48) / move (13) / die (30) @ 768px + preview.png + anim.json
+  contentBox now 649x551 @ (108,110) so ponytail is inside the draw crop.
+  parts0 idle: 41 (hair/chest/necklace/line meshes now present).
+  skill1 was posed during this rebake then removed from disk/json to match
+  griffin/sleipnir roster clip set (idle/move/die only). clip-anim.js does
+  not load skill1 PNGs anyway.
+
+Griffin / Sleipnir sd_baked: not rebaked.
+
+================================================================
+VERIFY
+================================================================
+preview.png / native/idle_000.png / move_000.png / die_000.png show dark
+ponytail + bangs + goggles, matching FormationIcon hair color/shape.
+
+================================================================
+DO NOT
+================================================================
+Do not rebake griffin/sleipnir unless their nested-mat case appears.
+Do not AI-paint hair or enable inactive EX_parts_h.
+Do not drop Emily hair_[flr]_skinned skip (unrelated spike guard).
+Do not restore MissORCA / extra select slots.

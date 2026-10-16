@@ -1,0 +1,887 @@
+[
+  {
+    "loc": "ko",
+    "w": 640,
+    "h": 360,
+    "scrollH": 168,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "언어 한국어日本語English繁體中文简体中文PortuguêsEspañol",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 138
+      }
+    ]
+  },
+  {
+    "loc": "en",
+    "w": 640,
+    "h": 360,
+    "scrollH": 173,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Language 한국어日本語English繁體中文简体中文PortuguêsE",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      }
+    ]
+  },
+  {
+    "loc": "pt",
+    "w": 640,
+    "h": 360,
+    "scrollH": 173,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Idioma 한국어日本語English繁體中文简体中文PortuguêsEsp",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      }
+    ]
+  },
+  {
+    "loc": "es",
+    "w": 640,
+    "h": 360,
+    "scrollH": 173,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Idioma 한국어日本語English繁體中文简体中文PortuguêsEsp",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      }
+    ]
+  },
+  {
+    "loc": "ru",
+    "w": 640,
+    "h": 360,
+    "scrollH": 168,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Язык 한국어日本語English繁體中文简体中文PortuguêsEspañ",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 138
+      }
+    ]
+  },
+  {
+    "loc": "ko",
+    "w": 720,
+    "h": 400,
+    "scrollH": 205,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "언어 한국어日本語English繁體中文简体中文PortuguêsEspañol",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      },
+      {
+        "text": "음소거",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      },
+      {
+        "text": "전체화면",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      }
+    ]
+  },
+  {
+    "loc": "en",
+    "w": 720,
+    "h": 400,
+    "scrollH": 210,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Language 한국어日本語English繁體中文简体中文PortuguêsE",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      },
+      {
+        "text": "Mute",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      },
+      {
+        "text": "Fullscreen",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      }
+    ]
+  },
+  {
+    "loc": "pt",
+    "w": 720,
+    "h": 400,
+    "scrollH": 210,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Idioma 한국어日本語English繁體中文简体中文PortuguêsEsp",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      },
+      {
+        "text": "Mudo",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      },
+      {
+        "text": "Tela cheia",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      }
+    ]
+  },
+  {
+    "loc": "es",
+    "w": 720,
+    "h": 400,
+    "scrollH": 210,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 127,
+        "h": 33
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 139,
+        "bottom": 172,
+        "h": 33
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Idioma 한국어日本語English繁體中文简体中文PortuguêsEsp",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 139
+      },
+      {
+        "text": "Silencio",
+        "fully": false,
+        "partial": true,
+        "top": 184
+      },
+      {
+        "text": "Pantalla completa",
+        "fully": false,
+        "partial": true,
+        "top": 184
+      }
+    ]
+  },
+  {
+    "loc": "ru",
+    "w": 720,
+    "h": 400,
+    "scrollH": 205,
+    "isShort": false,
+    "brandDisplay": "none",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Язык 한국어日本語English繁體中文简体中文PortuguêsEspañ",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      },
+      {
+        "text": "Без звука",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      },
+      {
+        "text": "Полный экран",
+        "fully": false,
+        "partial": true,
+        "top": 182
+      }
+    ]
+  },
+  {
+    "loc": "ko",
+    "w": 800,
+    "h": 450,
+    "scrollH": 171,
+    "isShort": false,
+    "brandDisplay": "inline-block",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 96,
+        "bottom": 129,
+        "h": 33
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 141,
+        "bottom": 174,
+        "h": 33
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "언어 한국어日本語English繁體中文简体中文PortuguêsEspañol",
+        "fully": true,
+        "partial": true,
+        "top": 48
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 96
+      },
+      {
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 141
+      }
+    ]
+  },
+  {
+    "loc": "en",
+    "w": 800,
+    "h": 450,
+    "scrollH": 178,
+    "isShort": false,
+    "brandDisplay": "inline-block",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Language 한국어日本語English繁體中文简体中文PortuguêsE",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      }
+    ]
+  },
+  {
+    "loc": "pt",
+    "w": 800,
+    "h": 450,
+    "scrollH": 171,
+    "isShort": false,
+    "brandDisplay": "inline-block",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 96,
+        "bottom": 129,
+        "h": 33
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 141,
+        "bottom": 174,
+        "h": 33
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Idioma 한국어日本語English繁體中文简体中文PortuguêsEsp",
+        "fully": true,
+        "partial": true,
+        "top": 48
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 96
+      },
+      {
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 141
+      }
+    ]
+  },
+  {
+    "loc": "es",
+    "w": 800,
+    "h": 450,
+    "scrollH": 178,
+    "isShort": false,
+    "brandDisplay": "inline-block",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94,
+        "bottom": 126,
+        "h": 32
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138,
+        "bottom": 170,
+        "h": 32
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Idioma 한국어日本語English繁體中文简体中文PortuguêsEsp",
+        "fully": true,
+        "partial": true,
+        "top": 46
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 94
+      },
+      {
+        "text": "SFX 0",
+        "fully": true,
+        "partial": true,
+        "top": 138
+      }
+    ]
+  },
+  {
+    "loc": "ru",
+    "w": 800,
+    "h": 450,
+    "scrollH": 169,
+    "isShort": false,
+    "brandDisplay": "inline-block",
+    "sliders": [
+      {
+        "i": 0,
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 96,
+        "bottom": 129,
+        "h": 33
+      },
+      {
+        "i": 1,
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 141,
+        "bottom": 174,
+        "h": 33
+      }
+    ],
+    "clips": [],
+    "visible": [
+      {
+        "text": "SYSTEM",
+        "fully": true,
+        "partial": true,
+        "top": 23
+      },
+      {
+        "text": "Язык 한국어日本語English繁體中文简体中文PortuguêsEspañ",
+        "fully": true,
+        "partial": true,
+        "top": 48
+      },
+      {
+        "text": "BGM 0",
+        "fully": true,
+        "partial": true,
+        "top": 96
+      },
+      {
+        "text": "SFX 0",
+        "fully": false,
+        "partial": true,
+        "top": 141
+      }
+    ]
+  }
+]

@@ -1,0 +1,639 @@
+{
+  "when": "2026-10-04T13:32:30.048Z",
+  "env": "Playwright Chromium headless — rAF timestamps + CDP Runtime.getHeapUsage. Not a physical GPU.",
+  "disclaimer": "Headless vsync/SwiftShader can differ from a real PC/phone. Numbers are live in this env, not invented. Compare scenes in the same env.",
+  "viewports": [
+    {
+      "tag": "pc-960",
+      "viewport": {
+        "tag": "pc-960",
+        "width": 960,
+        "height": 540,
+        "dpr": 1,
+        "hasTouch": false
+      },
+      "title": {
+        "durationMs": 4023,
+        "frames": 105,
+        "fpsAvg": 28.93,
+        "fpsMin": 11.99,
+        "fpsMax": 60.24,
+        "dtAvgMs": 37.934,
+        "dtMaxMs": 83.4,
+        "dtP95Ms": 66.6,
+        "hitches": {
+          "over33ms": 45,
+          "over50ms": 8,
+          "over100ms": 0
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 7.62,
+        "canvas": {
+          "cssW": 960,
+          "cssH": 540,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 1,
+          "inner": [
+            960,
+            540
+          ]
+        },
+        "peaks": null,
+        "lastPool": null,
+        "firstPool": null,
+        "heapStats": {
+          "n": 13,
+          "firstMb": 3.5,
+          "lastMb": 3.53,
+          "minMb": 3.5,
+          "maxMb": 3.53,
+          "climbMb": 0.03,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 3.498,
+          "totalMb": 6.16,
+          "nodes": 658,
+          "listeners": 48
+        },
+        "cdpHeapLast": {
+          "usedMb": 3.53,
+          "totalMb": 6.16,
+          "nodes": 658,
+          "listeners": 48
+        }
+      },
+      "select": {
+        "durationMs": 4028,
+        "frames": 95,
+        "fpsAvg": 26.34,
+        "fpsMin": 11.99,
+        "fpsMax": 60.24,
+        "dtAvgMs": 42.629,
+        "dtMaxMs": 83.4,
+        "dtP95Ms": 66.7,
+        "hitches": {
+          "over33ms": 51,
+          "over50ms": 20,
+          "over100ms": 0
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 16.49,
+        "canvas": {
+          "cssW": 960,
+          "cssH": 540,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 1,
+          "inner": [
+            960,
+            540
+          ]
+        },
+        "peaks": null,
+        "lastPool": null,
+        "firstPool": null,
+        "heapStats": {
+          "n": 13,
+          "firstMb": 3.56,
+          "lastMb": 3.14,
+          "minMb": 3.1,
+          "maxMb": 3.62,
+          "climbMb": -0.42,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 3.558,
+          "totalMb": 6.461,
+          "nodes": 735,
+          "listeners": 60
+        },
+        "cdpHeapLast": {
+          "usedMb": 3.136,
+          "totalMb": 5.152,
+          "nodes": 678,
+          "listeners": 60
+        }
+      },
+      "combat": {
+        "durationMs": 16061,
+        "frames": 426,
+        "fpsAvg": 30.83,
+        "fpsMin": 5.46,
+        "fpsMax": 60.61,
+        "dtAvgMs": 37.674,
+        "dtMaxMs": 183.3,
+        "dtP95Ms": 66.6,
+        "hitches": {
+          "over33ms": 183,
+          "over50ms": 44,
+          "over100ms": 2
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 20.3,
+        "canvas": {
+          "cssW": 960,
+          "cssH": 540,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 1,
+          "inner": [
+            960,
+            540
+          ]
+        },
+        "peaks": {
+          "enemies": 2,
+          "bulletsList": 10,
+          "bulletsLive": 10,
+          "bulletsFriendly": 7,
+          "bulletsEnemy": 3,
+          "bulletsFree": 3,
+          "particles": 0,
+          "polish": 16,
+          "popups": 1,
+          "vfx": 46,
+          "bombCasts": 0,
+          "powerUps": 1
+        },
+        "lastPool": {
+          "t": 16032.199999976157,
+          "enemies": 0,
+          "bulletsList": 9,
+          "bulletsLive": 9,
+          "bulletsFriendly": 6,
+          "bulletsEnemy": 3,
+          "bulletsFree": 1,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 27,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": false,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "firstPool": {
+          "t": -17.100000023841858,
+          "enemies": 0,
+          "bulletsList": 1,
+          "bulletsLive": 1,
+          "bulletsFriendly": 1,
+          "bulletsEnemy": 0,
+          "bulletsFree": 0,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 7,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": false,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "heapStats": {
+          "n": 46,
+          "firstMb": 4.61,
+          "lastMb": 7.02,
+          "minMb": 4.61,
+          "maxMb": 7.04,
+          "climbMb": 2.41,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 4.607,
+          "totalMb": 7.281,
+          "nodes": 379,
+          "listeners": 62
+        },
+        "cdpHeapLast": {
+          "usedMb": 7.016,
+          "totalMb": 10.531,
+          "nodes": 387,
+          "listeners": 62
+        }
+      },
+      "pause": {
+        "durationMs": 4067,
+        "frames": 75,
+        "fpsAvg": 22.18,
+        "fpsMin": 7.5,
+        "fpsMax": 60.24,
+        "dtAvgMs": 53.331,
+        "dtMaxMs": 133.4,
+        "dtP95Ms": 83.4,
+        "hitches": {
+          "over33ms": 60,
+          "over50ms": 30,
+          "over100ms": 2
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 20.74,
+        "canvas": {
+          "cssW": 960,
+          "cssH": 540,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 1,
+          "inner": [
+            960,
+            540
+          ]
+        },
+        "peaks": {
+          "enemies": 0,
+          "bulletsList": 9,
+          "bulletsLive": 9,
+          "bulletsFriendly": 6,
+          "bulletsEnemy": 3,
+          "bulletsFree": 1,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 27,
+          "bombCasts": 0,
+          "powerUps": 0
+        },
+        "lastPool": {
+          "t": 4040.4000000000015,
+          "enemies": 0,
+          "bulletsList": 9,
+          "bulletsLive": 9,
+          "bulletsFriendly": 6,
+          "bulletsEnemy": 3,
+          "bulletsFree": 1,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 27,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": true,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "firstPool": {
+          "t": 40.599999999998545,
+          "enemies": 0,
+          "bulletsList": 9,
+          "bulletsLive": 9,
+          "bulletsFriendly": 6,
+          "bulletsEnemy": 3,
+          "bulletsFree": 1,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 27,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": true,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "heapStats": {
+          "n": 13,
+          "firstMb": 6.33,
+          "lastMb": 6.28,
+          "minMb": 5.86,
+          "maxMb": 7.26,
+          "climbMb": -0.05,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 6.327,
+          "totalMb": 11.531,
+          "nodes": 447,
+          "listeners": 66
+        },
+        "cdpHeapLast": {
+          "usedMb": 6.278,
+          "totalMb": 8.531,
+          "nodes": 447,
+          "listeners": 66
+        }
+      }
+    },
+    {
+      "tag": "mobile-412x226",
+      "viewport": {
+        "tag": "mobile-412x226",
+        "width": 412,
+        "height": 226,
+        "dpr": 2.5,
+        "hasTouch": true
+      },
+      "title": {
+        "durationMs": 4005,
+        "frames": 240,
+        "fpsAvg": 60,
+        "fpsMin": 59.52,
+        "fpsMax": 60.24,
+        "dtAvgMs": 16.666,
+        "dtMaxMs": 16.8,
+        "dtP95Ms": 16.7,
+        "hitches": {
+          "over33ms": 0,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 7.68,
+        "canvas": {
+          "cssW": 401.8,
+          "cssH": 226,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 2.5,
+          "inner": [
+            412,
+            226
+          ]
+        },
+        "peaks": null,
+        "lastPool": null,
+        "firstPool": null,
+        "heapStats": {
+          "n": 13,
+          "firstMb": 3.55,
+          "lastMb": 3.59,
+          "minMb": 3.55,
+          "maxMb": 3.59,
+          "climbMb": 0.04,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 3.546,
+          "totalMb": 5.91,
+          "nodes": 658,
+          "listeners": 48
+        },
+        "cdpHeapLast": {
+          "usedMb": 3.586,
+          "totalMb": 5.91,
+          "nodes": 658,
+          "listeners": 48
+        }
+      },
+      "select": {
+        "durationMs": 4016,
+        "frames": 239,
+        "fpsAvg": 59.88,
+        "fpsMin": 30.03,
+        "fpsMax": 60.61,
+        "dtAvgMs": 16.736,
+        "dtMaxMs": 33.3,
+        "dtP95Ms": 16.8,
+        "hitches": {
+          "over33ms": 0,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 16.52,
+        "canvas": {
+          "cssW": 401.8,
+          "cssH": 226,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 2.5,
+          "inner": [
+            412,
+            226
+          ]
+        },
+        "peaks": null,
+        "lastPool": null,
+        "firstPool": null,
+        "heapStats": {
+          "n": 13,
+          "firstMb": 3.46,
+          "lastMb": 3.16,
+          "minMb": 3.13,
+          "maxMb": 3.54,
+          "climbMb": -0.31,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 3.464,
+          "totalMb": 6.211,
+          "nodes": 697,
+          "listeners": 60
+        },
+        "cdpHeapLast": {
+          "usedMb": 3.157,
+          "totalMb": 5.152,
+          "nodes": 678,
+          "listeners": 60
+        }
+      },
+      "combat": {
+        "durationMs": 16024,
+        "frames": 550,
+        "fpsAvg": 39.84,
+        "fpsMin": 14.99,
+        "fpsMax": 60.61,
+        "dtAvgMs": 29.12,
+        "dtMaxMs": 66.7,
+        "dtP95Ms": 50,
+        "hitches": {
+          "over33ms": 114,
+          "over50ms": 15,
+          "over100ms": 0
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 21.51,
+        "canvas": {
+          "cssW": 401.8,
+          "cssH": 226,
+          "bufW": 703,
+          "bufH": 396,
+          "dpr": 2.5,
+          "inner": [
+            412,
+            226
+          ]
+        },
+        "peaks": {
+          "enemies": 2,
+          "bulletsList": 16,
+          "bulletsLive": 16,
+          "bulletsFriendly": 13,
+          "bulletsEnemy": 3,
+          "bulletsFree": 3,
+          "particles": 0,
+          "polish": 18,
+          "popups": 1,
+          "vfx": 69,
+          "bombCasts": 0,
+          "powerUps": 1
+        },
+        "lastPool": {
+          "t": 16000.699999988079,
+          "enemies": 0,
+          "bulletsList": 14,
+          "bulletsLive": 14,
+          "bulletsFriendly": 11,
+          "bulletsEnemy": 3,
+          "bulletsFree": 2,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 53,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": false,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "firstPool": {
+          "t": -15.200000011920565,
+          "enemies": 0,
+          "bulletsList": 1,
+          "bulletsLive": 1,
+          "bulletsFriendly": 1,
+          "bulletsEnemy": 0,
+          "bulletsFree": 0,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 7,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": false,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "heapStats": {
+          "n": 46,
+          "firstMb": 5.04,
+          "lastMb": 6.72,
+          "minMb": 5.04,
+          "maxMb": 7.52,
+          "climbMb": 1.68,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 5.041,
+          "totalMb": 6.031,
+          "nodes": 775,
+          "listeners": 62
+        },
+        "cdpHeapLast": {
+          "usedMb": 6.718,
+          "totalMb": 11.281,
+          "nodes": 389,
+          "listeners": 62
+        }
+      },
+      "pause": {
+        "durationMs": 4043,
+        "frames": 133,
+        "fpsAvg": 38.08,
+        "fpsMin": 14.99,
+        "fpsMax": 60.24,
+        "dtAvgMs": 30.2,
+        "dtMaxMs": 66.7,
+        "dtP95Ms": 50,
+        "hitches": {
+          "over33ms": 29,
+          "over50ms": 4,
+          "over100ms": 0
+        },
+        "perfMemoryFrozen": false,
+        "perfMemoryMb": 20.37,
+        "canvas": {
+          "cssW": 401.8,
+          "cssH": 226,
+          "bufW": 703,
+          "bufH": 396,
+          "dpr": 2.5,
+          "inner": [
+            412,
+            226
+          ]
+        },
+        "peaks": {
+          "enemies": 0,
+          "bulletsList": 14,
+          "bulletsLive": 14,
+          "bulletsFriendly": 11,
+          "bulletsEnemy": 3,
+          "bulletsFree": 2,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 53,
+          "bombCasts": 0,
+          "powerUps": 0
+        },
+        "lastPool": {
+          "t": 4003.9000000119195,
+          "enemies": 0,
+          "bulletsList": 14,
+          "bulletsLive": 14,
+          "bulletsFriendly": 11,
+          "bulletsEnemy": 3,
+          "bulletsFree": 2,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 53,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": true,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "firstPool": {
+          "t": -12.699999988079071,
+          "enemies": 0,
+          "bulletsList": 14,
+          "bulletsLive": 14,
+          "bulletsFriendly": 11,
+          "bulletsEnemy": 3,
+          "bulletsFree": 2,
+          "particles": 0,
+          "polish": 0,
+          "popups": 0,
+          "vfx": 53,
+          "bombCasts": 0,
+          "powerUps": 0,
+          "paused": true,
+          "phase": "waves",
+          "state": "playing"
+        },
+        "heapStats": {
+          "n": 11,
+          "firstMb": 7.55,
+          "lastMb": 6.23,
+          "minMb": 6.23,
+          "maxMb": 7.67,
+          "climbMb": -1.32,
+          "gcDropsGe2Mb": 0,
+          "maxGcDropMb": 0
+        },
+        "cdpHeapFirst": {
+          "usedMb": 7.554,
+          "totalMb": 11.281,
+          "nodes": 450,
+          "listeners": 66
+        },
+        "cdpHeapLast": {
+          "usedMb": 6.23,
+          "totalMb": 9.281,
+          "nodes": 450,
+          "listeners": 66
+        }
+      }
+    }
+  ]
+}

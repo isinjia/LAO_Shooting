@@ -1,0 +1,105 @@
+UI SYNC TICK 03 — Web vs Valofe NewUI (honest score)
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\resourece\
+Prior: tools/ui-sync-tick02-handoff.txt
+
+================================================================
+HONEST SYNC SCORE (harsh rubric → weighted ~equal)
+================================================================
+Axis                 Before  After   Notes
+-------------------- ------- ------- ------------------------------------------
+Chrome / assets        74%    82%    +8 Event_Btn (03–08,11,12) → 16/29 wired;
+                                     Atlas/NewUI+NewMissorca inspected — packs
+                                     already-copied loose PNGs only (no net-new)
+Layout language        60%    66%    Title lobby + select dossier Event washes;
+                                     HARD axes kept; still mini-overlay vs full
+                                     Valofe lobby
+Typography             58%    58%    MissORCA + brass caption retained; no LAO
+                                     font file; English system labels remain
+Combat HUD             48%    48%    Sparse by design (no Top_Bg fill) — correct
+                                     constraint; unchanged this tick
+Menu/select/pause/
+result/loading feel    74%    83%    Pause Ranking Frame_01 + Event plates;
+                                     OPTIONS Popup_Bg/Box cutback; result cells
+                                     drop Box2+chamfer; dossier Event_04
+
+OVERALL (harsh):  BEFORE ≈ 65%   →   AFTER ≈ 71%
+≥80% yet?  NO.  ~9 pts short. Remaining Event_Btn (~13) + residual CSS plates
++ lobby composition + typography still keep score under 80.
+
+Rubric honesty: Atlas was extractable as a sprite map, but every named slice
+already exists as a loose resourece PNG already in assets/ui/newui — slicing
+would not raise chrome honesty. Gain this tick = Event rails (16 total) +
+pause/options/result/lobby plate cutback toward Unity bitmaps.
+
+================================================================
+SHIPPED THIS TICK
+================================================================
+Copied → assets/ui/newui/SelectWorld_Event_Btn/ (8 PNGs):
+  SelectWorld_Event_03.png    ~565 KB
+  SelectWorld_Event_04.png    ~514 KB
+  SelectWorld_Event_05.png    ~455 KB
+  SelectWorld_Event_06.png    ~504 KB
+  SelectWorld_Event_07.png    ~534 KB
+  SelectWorld_Event_08.png    ~533 KB
+  SelectWorld_Event_11.png    ~550 KB
+  SelectWorld_Event_12.png    ~576 KB
+Local newui PNG count: 55 → 63
+
+CSS (append "UI SYNC TICK03" after TICK02):
+  screen-select          → Event_03 soft wash (+ menubg)
+  select-dossier         → Event_04 + Popup_Bg_Box; clip-path:none
+  screen-title           → Event_05 lobby wash (+ menubg/world2)
+  lobby-status-bar       → Event_06 + Popup_Bg_Box; clip-path:none
+  screen-pause           → Event_07 wash
+  pause-blurb            → Ranking Frame_01 + Popup_Bg_Box; clip-path:none
+  pause-actions          → Event_11 + Popup_Bg_Box; clip-path:none
+  screen-options         → Event_08 wash
+  opt-block / opt-keys   → Popup_Bg tile + Popup_Bg_Box; clip-path:none
+  opt-actions            → Event_12 + Popup_Bg_Box; clip-path:none
+  result .cell           → Popup_Bg_Box; clip-path:none (Box2+chamfer cut)
+  title .lobby-chip      → Popup_Bg_Box reinforce (tick01 icons kept)
+  @max-height:420px      → strip heavy Event washes (letterbox parity)
+
+JS (js/newui-assets.js SLICES preload):
+  selectWorld03/04/05/06/07/08/11/12
+
+Atlas check:
+  Atlas/NewUI.asset + NewMissorca.asset parsed — sprite rects map 1:1 to
+  existing loose PNGs (OfflineBattle, MissORCA titles, Ranking frames, etc.).
+  No net-new chrome from atlas extraction this tick.
+
+No HTML markup changes. No combat HUD / pad / gauge dim changes.
+Hirume sunbird + Constantia kits NOT touched.
+5m loop NOT re-armed (parent shell 162101 owns it).
+
+================================================================
+INTENTIONALLY LEFT / STILL CSS-HEAVY
+================================================================
+  SelectWorld_Event_Btn remaining ~13 PNGs
+    (13–14,17–23,25,27–29 + underscore variants 04_/05_/…)
+  Atlas sheets — no unique slices beyond loose set (skip re-slice)
+  Some residual cyan rim / dual-stroke invent on labels
+  Combat HUD — sparse by constraint
+  Full lobby composition still mini-overlay vs Valofe lobby
+  No LAO font binary
+
+================================================================
+PATH TO ≥80% (next ticks — parent owns 5m loop)
+================================================================
+1) Wire remaining Event_Btn (~8–13) onto rails / idle / unused panels
+2) Broader plate cutback on tutorial / loading / rotate residual Box2
+3) Title lobby densify (rail/status) without fake destinations
+4) Typography: keep MissORCA; optional LAO-weight on brand-marks only
+5) Keep combat HUD sparse; never Top_Bg fill
+6) Re-score harshly; refuse 80+ until select+pause+options+lobby read LAO
+
+================================================================
+PRESERVED / DO NOT
+================================================================
+  - i18n 8 langs, fitH, CTA-health, letterbox, short-landscape HUD
+  - No AI images; no shot-kit (Hirume/Constantia) edits this tick
+  - No pad/gauge dimension changes; no Top_Bg combat fill
+  - Do NOT re-arm 5m loop here (parent owns it)
+  - Existing features not deleted

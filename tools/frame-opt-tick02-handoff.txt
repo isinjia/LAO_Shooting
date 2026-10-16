@@ -1,0 +1,86 @@
+LAO MINI ACTION — frame-opt LOOP TICK 02 handoff
+================================================
+Date: 2026-10-04
+Goal: raise combat frame rate; target honest ~55+ avg without feature deletion.
+UI layout scans: NOT restarted. UI≈79 / VFX dens≈69 unchanged. dens FROZEN.
+
+Prior (tick01, same harness)
+----------------------------
+pc-960 SORTIE 16s: avg 30.23  min 11.99  p95 66.6ms  max dt 83.4ms
+  hitches >33ms 165/427  >50ms 37  >100ms 0
+  peaks: enemies 2, bullets 11, vfx 43, polish 13, legacy particles 0
+mobile-412 short 8s: avg 50.64  min 20.00  p95 33.4ms
+Earlier 2026-10-04 passes: PC 30.83 / 43.09; mobile 39.84 / 56.54.
+
+Hot-path after tick01 caches
+----------------------------
+Split (instrumented Game.update/draw + ProjectileVfx.render JS only):
+  update ~0.31ms/frame — not the limiter.
+  WebGL VFX JS ~0.29ms — not the limiter (GPU wait not in this number).
+  draw ~13.7ms PC / ~12.0ms mobile — 2D fill-rate dominates.
+Proven draw costs still after tick01:
+  1. paintedScene resampled 1024×576→960×540 twice per frame
+  2. four translucent grade fills (tint + edge + vig + accent) after city FX
+  3. scanCity/hive many beginPath+stroke per line/hex
+NOT shipped: skip clearRect (shake edges), dens/mote cuts, pause skip-draw,
+WebGL DPR, HUD classList skip (unproven vs fill-rate).
+
+Shipped (minimal cache / batch — look intended same)
+----------------------------------------------------
+js/stage-background.js
+  - Pre-scale painted slices, hive tiles, abyss fullScene to offscreen; blit 1:1
+  - Bake tint+edge+vignette+accent to one overlay canvas (Porter-Duff over)
+  - Batch city grid strokes + hive hex strokes into fewer path/stroke calls
+  Tick01 HUD/i18n/gradient/matchMedia/pad-hint caches kept.
+
+Re-measure (Playwright headless, same Hirume/invuln/autoPlay/mute SORTIE)
+------------------------------------------------------------------------
+tools/measure-frame-opt-tick02.mjs → tools/frame-opt-tick02-raw.json
+
+pc-960 16s combat:
+  avg 49.26  min 14.99  p95 33.4ms  max dt 66.7ms
+  hitches >33ms 36/704  >50ms 2  >100ms 0
+  peaks: enemies 4, bullets 16, vfx 70, polish 16, legacy particles 0
+  canvas 960×540 buf 960×540 dpr1
+  split: update 0.308  draw 13.654  vfxJS 0.295 (n=706)
+
+mobile-412×226 dpr2.5 8s combat (short viewport):
+  avg 55.82  min 20.00  p95 33.4ms  max dt 50.0ms
+  hitches >33ms 15/421  >50ms 0
+  canvas CSS 401.8×226 buf 703×396
+  Note: shorter window than 16s baseline; do not treat 56 vs 51 as the PC win.
+
+Honest FPS delta
+----------------
+PC avg 49 vs tick01 30 (prior other pass 43): real gain on this harness,
+not 55+ yet. +19 vs tick01 / +6 vs best older pass. Headless variance still
+exists — do not round to 60. Mobile short 56 sits in the prior 40–57 band;
+honest mobile +0 to small. Target 55+ PC avg still open.
+
+Scores (not inflated)
+---------------------
+성능/프레임: PC ~58 (was ~52; combat ~49 not 60-locked) / mobile-like ~62
+메모리: 76–78 (not re-scored)
+UI layout: ≈79  DO NOT claim 80+
+VFX dens:  ≈69  DO NOT claim 70+
+
+Preserved
+---------
+charge/hold C1–3, bombs, deathbomb, 5 stages, pads, i18n,
+STAGE START/CLEAR, WARNING, HOLD identities
+(sunbird/sightbeam/dragonaxe/shell/jupiterorb/coffinwall/plasmaslash).
+dens FROZEN.
+
+Next tick
+---------
+draw() still ~14ms (opaque wash + city motes/1px rows + clearRect + sprites).
+Profile draw subsections (bg vs entities vs HUD plate text) without dens cuts.
+Do not claim 55+ until a headed or second headless pass holds ~55.
+
+Korean-ready user summary
+-------------------------
+전투 프레임 최적화 2틱입니다. 배경을 매 프레임 다시 스케일하던 비용과
+색보정 네 겹 fill을 한 장으로 합쳤고, 도시/하이브 선 그리기도 묶었습니다.
+HUD·HOLD·폭탄·5스테이지·밀도는 그대로입니다. 헤드리스 PC 960 전투 평균
+FPS 49(1틱 30, 예전 다른 패스 43)라 이번엔 이득이 있습니다. 목표 55+는
+아직입니다. UI 79·VFX 69 그대로입니다.

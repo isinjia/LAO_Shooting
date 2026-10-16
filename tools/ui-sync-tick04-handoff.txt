@@ -1,0 +1,111 @@
+UI SYNC TICK 04 — Web vs Valofe NewUI (honest score)
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\resourece\
+Prior: tools/ui-sync-tick03-handoff.txt
+
+================================================================
+HONEST SYNC SCORE (harsh rubric → chrome/menu weighted ~25% each)
+================================================================
+Axis                 Before  After   Notes
+-------------------- ------- ------- ------------------------------------------
+Chrome / assets        82%    92%    +13 Event_Btn → 29/29 main wired locally;
+                                     underscore alts (_04/_05/…) still unused
+Layout language        66%    75%    Tutorial/loading/rotate Event washes +
+                                     title lobby foot/keys/rail densify; HARD
+                                     axes kept; still mini-overlay vs Valofe
+Typography             58%    58%    No LAO .ttf/.otf in Valofe_NewUi — skipped
+                                     invent; MissORCA + brass caption retained
+Combat HUD             48%    48%    Sparse by design (no Top_Bg fill) — correct
+                                     constraint; unchanged this tick
+Menu/select/pause/
+result/loading feel    83%    91%    Tutorial/loading/rotate/asset-error Box2
+                                     → Event + Popup_Bg_Box plates; load-track
+                                     tile → Popup_Bg (14px dims kept)
+
+OVERALL (harsh):  BEFORE ≈ 71%   →   AFTER ≈ 77%
+≥80% yet?  NO.  ~3 pts short. Underscore Event alts + typography gap +
+combat-sparse floor + residual cyan/label invent keep score under 80.
+
+Rubric honesty: All main SelectWorld_Event_01–29 PNGs now copied and CSS-
+wired. Gain = tutorial/loading/rotate/lobby/asset-error plate honesty, not
+atlas re-slice (still no unique net-new chrome beyond Event set).
+
+================================================================
+SHIPPED THIS TICK
+================================================================
+Copied → assets/ui/newui/SelectWorld_Event_Btn/ (13 PNGs):
+  SelectWorld_Event_13.png    ~506 KB
+  SelectWorld_Event_14.png    ~544 KB
+  SelectWorld_Event_17.png    ~511 KB
+  SelectWorld_Event_18.png    ~589 KB
+  SelectWorld_Event_19.png    ~618 KB
+  SelectWorld_Event_20.png    ~572 KB
+  SelectWorld_Event_21.png    ~460 KB
+  SelectWorld_Event_22.png    ~521 KB
+  SelectWorld_Event_23.png    ~564 KB
+  SelectWorld_Event_25.png    ~425 KB
+  SelectWorld_Event_27.png    ~542 KB
+  SelectWorld_Event_28.png    ~447 KB
+  SelectWorld_Event_29.png    ~462 KB
+Local Event_Btn main set: 16 → 29 (complete 01–29)
+Local newui PNG count: 63 → 76
+
+CSS (append "UI SYNC TICK04" after TICK03):
+  screen-tutorial        → Event_13 wash (+ menubg/world2)
+  tut-row                → Event_14 + Popup_Bg_Box; clip-path:none
+  tutorial-note          → Event_17 + Popup_Bg_Box; clip-path:none
+  tutorial .pause-actions→ Event_25 + Popup_Bg_Box; clip-path:none
+  screen-loading         → Event_18 wash (+ OfflineBattle InProgress)
+  load-meta              → Event_19 + Popup_Bg_Box; clip-path:none
+  load-track             → Popup_Bg tile (not Box2); height 14px kept
+  rotate-hint            → Event_20 wash
+  rotate-card            → Event_21 + Popup_Bg_Box; clip-path:none
+  title .lobby-foot      → Event_22 + Popup_Bg_Box densify
+  title .keys            → Event_23 + Popup_Bg_Box (CONTROLS plate)
+  title lobby-rail(s)    → Event_29 soft wash (icons/geometry kept)
+  screen-asset-error     → Event_27 wash
+  asset-error-msg        → Event_28 + Popup_Bg_Box; clip-path:none
+  @max-height:420px      → strip heavy Event washes (letterbox parity)
+
+JS (js/newui-assets.js SLICES preload):
+  selectWorld13/14/17/18/19/20/21/22/23/25/27/28/29
+
+Typography: Valofe_NewUi scanned — no .ttf/.otf/.woff; no invent.
+
+No HTML markup changes. No combat HUD / pad / gauge dim changes.
+Hirume sunbird + Constantia kits NOT touched.
+5m loop NOT re-armed (parent shell 162101 owns it).
+
+================================================================
+INTENTIONALLY LEFT / STILL CSS-HEAVY
+================================================================
+  SelectWorld_Event_*_ underscore alt PNGs (~12) — not copied/wired
+  Residual cyan rim / dual-stroke invent on some labels
+  Combat HUD — sparse by constraint (caps overall)
+  Full lobby composition still mini-overlay vs Valofe lobby
+  No LAO font binary
+  Some non-overlay panels may still lean Box2 (gauges/pads — leave)
+
+================================================================
+PATH TO ≥80% (next ticks — parent owns 5m loop)
+================================================================
+1) Optional: wire 2–4 underscore Event alts onto idle select rails only
+   if they read distinct vs main set (else skip — honesty > count)
+2) Cut residual cyan/dual-stroke invent on overlay labels toward LAO
+   brass/mint caption only (no fake font files)
+3) Title lobby: one more real-asset densify pass if unused Unity icons
+   remain (Base/OfflineBattle leftovers) — no fake destinations
+4) Keep combat HUD sparse; never Top_Bg fill
+5) Re-score harshly; refuse 80+ until select+tutorial+loading+lobby
+   read LAO without CSS hatch invention dominating
+
+================================================================
+PRESERVED / DO NOT
+================================================================
+  - i18n 8 langs, fitH, CTA-health, letterbox, short-landscape HUD
+  - No AI images; no shot-kit (Hirume/Constantia) edits this tick
+  - No pad/gauge dimension changes; no Top_Bg combat fill
+  - load-track height 14px preserved
+  - Do NOT re-arm 5m loop here (parent owns it)
+  - Existing features not deleted

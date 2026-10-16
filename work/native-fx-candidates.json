@@ -1,0 +1,134 @@
+[
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\smoke_hard_re.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Constantia_skill\\skill1\\Constantia_bullet.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\bullet_sr_re.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Constantia_skill\\skill1\\Constantia_bullet.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\lazer_deco_sqsn_fix.PNG",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\emily_skill\\skill2\\lazer_beam_emily.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\glow_fire_fix.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\emily_skill\\skill2\\lazer_beam_emily.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\lazer_after_m.PNG",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\emily_skill\\skill2\\lazer_beam_emily.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\lazer_sqsn.PNG",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\emily_skill\\skill2\\lazer_beam_emily.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\2x2_Smoke_Sprite_0243.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Hirume_skill\\skill1\\Hirume_skill1_Hit_flame.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\128_glow_texture.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Hirume_skill\\skill1\\Hirume_skill1_Hit_flame.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Tyrant_Hit_2x2_sprite.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Hirume_skill\\skill1\\Hirume_skill1_Hit_flame.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Ignis_skill2_BG_fire_sqns2.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Hirume_skill\\skill1\\Hirume_skill1_Hit_flame.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Labiata_skill2_blade2_deco.PNG",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Labiata_skill\\skill1\\Labiata_skill1_blade1.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\blade_Johanna.PNG",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\Labiata_skill\\skill1\\Labiata_skill1_blade1.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\UI_Cha_particle_fix.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\64_lightparticle_3.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\Angel_line.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\256_light_texture.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\Hussar_lightning3 1.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\Hussar_lightning1 1.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Vargr_crack.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_skill1_22 1.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Goltarion_EV1_ground.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Charlotte_test_SandDust_sqns.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\fafnir_N_Skill1_A.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\merlin_skill\\skill1\\merlin_missile.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\merlin_N_bullet.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\128_dust_texture.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\merlin_N_bullet.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\glow.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\Eternity_skill1_bullet.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\gigantes_bullet_re.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\Eternity_skill1_bullet.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\Sword_Trail_0239.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\Eternity_skill1_bullet.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\simple_cent_round.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\FX_bullet_emilyRailGun_Gun 1.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\rpg_bullet_2.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\FX_bullet_emilyRailGun_Gun 1.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\railgun_bullet.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Bullet_Effect\\FX_bullet_emilyRailGun_Gun 1.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\particle_simple.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\LRL_skill\\LRL_bling.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\bling_particle.PNG",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\LRL_skill\\LRL_bling.prefab"
+  },
+  {
+    "path": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\boom_first_m3.png",
+    "prefab": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\LRL_skill\\LRL_skill2_glow.prefab"
+  }
+]

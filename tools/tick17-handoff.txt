@@ -1,0 +1,65 @@
+TICK17 handoff (2026-10-04) — remaining muddy pairs: fan/crescent/axe + arty≠HMG
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+THIS TICK — leftover wide-sheet / same-dens pairs (NewUI untouched)
+
+1) projectile-vfx.js
+   - KIT: shell dens 0.86 ≠ coffinround 1.22 (tick16 both sat at 1.08).
+     sunbird/flameward fatter-shorter vs plasmaslash thin-long 1.72 stretch.
+     dragonaxe heavier 1.42/0.78; jupiterorb puffier 1.82/0.58 vs crescent sheet.
+   - holdIdentity: fan rise/smoke ↑; axe side narrowed 1.52; crescent lateral
+     2.62 / streak 0.72 / rise 0; arty ash fall; HMG side grit / low smoke.
+   - Burst / trail / muzzle: fan smoke-cone ≠ crescent sheet ≠ axe chunks;
+     HMG chip life shorter than arty ash; cloud emit denser; 8 kinds unchanged.
+   - Lance / spike / foxflame-vs-fan / railbeam-vs-railbolt left as tick16.
+
+2) shot-fx.js (canvas fallback)
+   - Trail count/len/spread: HMG short dense vs arty sparse ash vs fan disks
+     vs crescent longer lateral vs axe chunk trail.
+   - Fan rise disks ↑; HMG extra side grit; arty more vertical ash; crescent
+     thinner longer wings; jupiterorb puffier volume; shell charge-tip ash
+     disks (≠ HMG spray).
+
+3) polish-fx.js
+   - Hit grit: fan rises more; crescent lateral stretch; axe heavier/slower;
+     arty falling smoke ≠ HMG wide short chips.
+
+4) NewUI
+   - No change (tick15 overlay chrome). Still no fake lobby apps.
+   - Combat HUD unchanged (sparse).
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; overlay chrome already in place)
+  VFX ≈ 60 (remaining wide-sheet + arty/HMG dens split; still arcade
+            soft-sprite / budget-capped — NOT client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band if identities read in playtest — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Playtest fan vs crescent vs axe, and merlin arty vs eternity HMG.
+     If still muddy, dens/side/emit-budget only — no new silhouettes.
+  2) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  3) Live menu destinations still absent — do not fake clickable lobby apps.
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language.
+
+Model: inherit
+Korean-ready: yes

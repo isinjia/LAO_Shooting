@@ -1,0 +1,15 @@
+=== A) combat HUD + fixed pads @ NEW mid-short (production SORTIE) ===
+HUD pt@360×218 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=202.5 appTop=7.75 touchUi=true
+HUD es@360×218 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=202.5 appTop=7.75 touchUi=true
+HUD ru@360×218 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=202.5 appTop=7.75 touchUi=true
+HUD pt@375×212 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=210.9 appTop=0.53 touchUi=true
+HUD es@375×212 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=210.9 appTop=0.53 touchUi=true
+HUD ru@375×212 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=210.9 appTop=0.53 touchUi=true
+HUD pt@404×228 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=227.3 appTop=0.38 touchUi=true
+HUD es@404×228 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=227.3 appTop=0.38 touchUi=true
+HUD ru@404×228 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=227.3 appTop=0.38 touchUi=true
+HUD pt@430×245 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=241.9 appTop=1.56 touchUi=true
+HUD es@430×245 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=241.9 appTop=1.56 touchUi=true
+HUD ru@430×245 → ok life=14/14 none=false out=false txt=3 bomb=14/14 none=false out=false txt=3 fire=56/56 w=56 none=false out=false bombPad=40/40 w=40 none=false out=false overlap=false stocksOver=0 appH=241.9 appTop=1.56 touchUi=true
+=== SUMMARY ===
+hard=0 soft=0 ok=12 skip=0

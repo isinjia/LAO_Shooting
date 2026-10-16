@@ -1,0 +1,21 @@
+{
+  "method": {
+    "env": "Playwright Chromium + tools/static-server.mjs",
+    "progressive": "title manifests+BG → select base roster → sortie stage1+pilot; later acts prefetch",
+    "eager": "same title/select, then ?eager=1 loads ALL players+enemies before field opens",
+    "transfer": "Performance Resource Timing transferSize (fallback encodedBodySize) for /assets/*",
+    "memory": "performance.memory.usedJSHeapSize at sortie-ready (Chromium)",
+    "sheets": "sd_baked/*/sheet.json + sheet_XX.webp|png (trim/shelf pack; per-frame PNG fallback)"
+  },
+  "results": [
+    {
+      "label": "progressive",
+      "error": "page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.char-card[data-key=\"hirume\"]')\u001b[22m\n"
+    },
+    {
+      "label": "eager",
+      "error": "page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.char-card[data-key=\"hirume\"]')\u001b[22m\n"
+    }
+  ],
+  "comparison": null
+}

@@ -1,0 +1,43 @@
+TICK11 handoff (2026-10-04) — world2 wash + canvas energy motes (do not revert)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+DEDICATED VFX AGENT (931b7980)
+- projectile-vfx.js still has Tesla jagged trunk / forked branches (type 4 / 13).
+- Rewrite NOT landed this tick — did NOT full-rewrite GPU shaders (avoid conflict).
+- If 931b7980 lands energy/particles, CONTINUE polish remaining kits/hits; do not revert.
+
+THIS TICK
+1) UI (tick10 leftover — world2 unused):
+   - Select overlay: menubg + btn_newui_world2 wash (decorative overlay blend).
+   - Pause overlay: world2 wash + Title_Deco1 underline (.pause-deco).
+   - Short viewports still hide pause-deco (CONTROLS / HUD rules unchanged).
+   - Still no fake clickable lobby destinations.
+
+2) Canvas fallbacks only (cheap geometry → energy motes; GPU shader file untouched):
+   - shot-fx: flameward petals, teslacoil/jupiterorb zigzags, teslabeam ticks,
+     empfield ticks, lightning/empfield kitWake forks → glow motes/arcs.
+   - player specialFlash lightning zigzag → spark motes + arc.
+   - bomb-vfx drawCanvas type 13 sine polyline → core line + spark motes.
+
+HONEST SCORE
+  UI  ≈ 74 (world2 on select/pause + pause deco; still short of live Panel_Lobby
+            destinations / full atlas chrome)
+  VFX ≈ 70 (canvas fallback energy motes; GPU Tesla/kit shaders still geometric)
+  NEVER claim 90.
+  Baseline recall: user VFX60 UI40 → both above baseline, neither near polished client.
+  Expectation band for this pass: UI ~72-76, VFX ~68-72.
+
+NEXT TICK — open polish
+  1) If 931b7980 GPU rewrite landed, polish remaining kits/hits on that base.
+  2) If still overlapping projectile-vfx.js, do not full-rewrite shaders.
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  4) Live menu destinations still absent — do not fake clickable lobby apps.
+  5) Do not revert fireRate ×2.

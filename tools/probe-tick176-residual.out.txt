@@ -1,0 +1,15 @@
+=== A) Title START/OPTIONS @ NEW mid-short sizes (HI soft-only) ===
+TITLE pt@360×218 → ok start=44/44 opt=44/44 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=7.75 maxH=
+TITLE es@360×218 → ok start=44/44 opt=44/44 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=7.75 maxH=
+TITLE ru@360×218 → ok start=44/44 opt=44/44 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=7.75 maxH=
+TITLE pt@375×212 → ok start=44/44 opt=44/44 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=0.53 maxH=
+TITLE es@375×212 → ok start=44/44 opt=44/44 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=0.53 maxH=
+TITLE ru@375×212 → ok start=46/46 opt=46/46 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=0.53 maxH=
+TITLE pt@404×228 → ok start=46/46 opt=46/46 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=0.38 maxH=
+TITLE es@404×228 → ok start=44/44 opt=44/44 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=0.38 maxH=
+TITLE ru@404×228 → ok start=46/46 opt=46/46 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=0.38 maxH=
+TITLE pt@430×245 → ok start=44/44 opt=44/44 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=1.56 maxH=
+TITLE es@430×245 → ok start=46/46 opt=46/46 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=1.56 maxH=
+TITLE ru@430×245 → ok start=46/46 opt=46/46 startOut=false optOut=false startNone=false optNone=false hiShown=true hiVis=0/25.5 hiKeys=0 brandHide=false brandVis=49.1 gridH=36 over=0 appTop=1.56 maxH=
+=== SUMMARY ===
+hard=0 soft=0 ok=12

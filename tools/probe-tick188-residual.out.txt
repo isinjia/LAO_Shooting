@@ -1,0 +1,15 @@
+=== A) pause OPTIONS/UNMUTE (muted:true) @ NEW mid-short (not tick186 mute) ===
+PAUSE-UNMUTE pt@360×218 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Ativar som" resume=30/30 quit=30/30 actionsOut=false over=0 appH=202.5 appTop=7.75 maxH=
+PAUSE-UNMUTE es@360×218 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Activar sonido" resume=30/30 quit=30/30 actionsOut=false over=0 appH=202.5 appTop=7.75 maxH=
+PAUSE-UNMUTE ru@360×218 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="Включить звук" resume=32/32 quit=32/32 actionsOut=false over=0 appH=202.5 appTop=7.75 maxH=
+PAUSE-UNMUTE pt@375×212 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Ativar som" resume=30/30 quit=30/30 actionsOut=false over=0 appH=210.9 appTop=0.53 maxH=
+PAUSE-UNMUTE es@375×212 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Activar sonido" resume=30/30 quit=30/30 actionsOut=false over=0 appH=210.9 appTop=0.53 maxH=
+PAUSE-UNMUTE ru@375×212 → ok unmuteAxis=true opt=26/26 none=false out=false txt="OPTIONS" unmute=26/26 none=false out=false txt="Включить звук" resume=26/26 quit=26/26 actionsOut=false over=0 appH=210.9 appTop=0.53 maxH=
+PAUSE-UNMUTE pt@404×228 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Ativar som" resume=30/30 quit=30/30 actionsOut=false over=0 appH=227.3 appTop=0.38 maxH=
+PAUSE-UNMUTE es@404×228 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Activar sonido" resume=30/30 quit=30/30 actionsOut=false over=0 appH=227.3 appTop=0.38 maxH=
+PAUSE-UNMUTE ru@404×228 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="Включить звук" resume=32/32 quit=32/32 actionsOut=false over=0 appH=227.3 appTop=0.38 maxH=
+PAUSE-UNMUTE pt@430×245 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Ativar som" resume=30/30 quit=30/30 actionsOut=false over=0 appH=241.9 appTop=1.56 maxH=
+PAUSE-UNMUTE es@430×245 → ok unmuteAxis=true opt=30/30 none=false out=false txt="OPTIONS" unmute=30/30 none=false out=false txt="Activar sonido" resume=30/30 quit=30/30 actionsOut=false over=0 appH=241.9 appTop=1.56 maxH=
+PAUSE-UNMUTE ru@430×245 → ok unmuteAxis=true opt=32/32 none=false out=false txt="OPTIONS" unmute=32/32 none=false out=false txt="Включить звук" resume=32/32 quit=32/32 actionsOut=false over=0 appH=241.9 appTop=1.56 maxH=
+=== SUMMARY ===
+hard=0 soft=0 ok=12 skip=0

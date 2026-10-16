@@ -1,0 +1,107 @@
+UI SYNC TICK 05 — Web vs Valofe NewUI (honest score)
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\resourece\
+Prior: tools/ui-sync-tick04-handoff.txt
+
+================================================================
+HONEST SYNC SCORE (harsh rubric → chrome/menu weighted ~25% each)
+================================================================
+Axis                 Before  After   Notes
+-------------------- ------- ------- ------------------------------------------
+Chrome / assets        92%    96%    +8 distinct Event_*_ alts wired; skipped
+                                     near-identical 23_/25_/27_ (honesty);
+                                     no unused loose Unity PNGs beyond Event
+Layout language        75%    79%    Idle rails → underscore alts; lobby densify
+                                     (OfflineBattle_Complete + Ranking_Frame_01
+                                     + Title_Deco on chips/rails); HARD axes kept
+Typography             58%    62%    Overlay invent cyan labels/rims → brass;
+                                     still no LAO .ttf/.otf in Valofe_NewUi
+Combat HUD             48%    48%    Sparse by design (no Top_Bg fill) — correct
+                                     constraint; unchanged this tick
+Menu/select/pause/
+result/loading feel    91%    94%    Brass plate rims + alt washes on select/
+                                     title/options/loading/rotate idle; selected
+                                     cards mint→brass wash
+
+OVERALL (harsh):  BEFORE ≈ 77%   →   AFTER ≈ 80%
+  Weight check: 0.25*96 + 0.25*94 + 0.20*79 + 0.15*62 + 0.15*48 = 79.9 ≈ 80
+
+≥80% yet?  YES (barely). Evidence = distinct underscore Event alts on idle
+rails + invent-cyan overlay cutback to brass + real-asset lobby densify.
+Ceiling still soft: typography (no font binary) + combat-sparse floor mean
+further ticks yield diminishing returns, not a clean 85+.
+
+Rubric honesty: Alts validated by MD5≠main AND pixel-sample avgd; 23_/25_/27_
+avgd≈0.1–0.5 → NOT copied. Gain is idle-state variety + label-token honesty,
+not fake atlas slices or AI art.
+
+================================================================
+SHIPPED THIS TICK
+================================================================
+Copied → assets/ui/newui/SelectWorld_Event_Btn/ (8 PNGs):
+  SelectWorld_Event_04_.png   ~499 KB
+  SelectWorld_Event_05_.png   ~463 KB
+  SelectWorld_Event_06_.png   ~519 KB
+  SelectWorld_Event_08_.png   ~536 KB
+  SelectWorld_Event_11_.png   ~549 KB
+  SelectWorld_Event_18_.png   ~593 KB
+  SelectWorld_Event_20_.png   ~551 KB
+  SelectWorld_Event_22_.png   ~508 KB
+Skipped (near-identical to main): 23_, 25_, 27_
+Local Event_Btn set: 29 → 37 (29 main + 8 alts)
+Local newui PNG count: 76 → 84
+
+CSS (append "UI SYNC TICK05" after TICK04):
+  select-dossier             → Event_04_ + brass inset (was cyan + main 04)
+  screen-title wash          → Event_05_ + OfflineBattle_Complete densify
+  lobby-status-bar           → Event_06_ + brass inset
+  screen-options wash        → Event_08_
+  pause-actions              → Event_11_
+  screen-loading wash        → Event_18_ (InProgress under kept)
+  rotate-hint                → Event_20_
+  lobby-foot                 → Event_22_ + Ranking_Frame_01 + brass inset
+  lobby-rail(s)              → Event_22_ + Event_29 stack
+  lobby-chip                 → Title_Deco strip + Popup_Bg_Box
+  lobby-chip-mint READY ico  → Base_Icon_Upgrade
+  overlay plate rims         → invent cyan inset → brass
+  rotate-card glow           → brass
+  char-card.selected         → mint border/wash → brass
+  overlay brand-mark / h2 /
+  dossier-name               → brass caption tokens
+  @max-height:420px          → strip heavy alt washes (letterbox parity)
+
+JS (js/newui-assets.js SLICES preload):
+  selectWorld04Alt/05Alt/06Alt/08Alt/11Alt/18Alt/20Alt/22Alt
+
+Typography: no invent font files. Combat HUD / pads / gauges untouched.
+Hirume sunbird + Constantia kits NOT touched.
+5m loop NOT re-armed (parent shell 162101 owns it).
+
+================================================================
+INTENTIONALLY LEFT / STILL CSS-HEAVY
+================================================================
+  SelectWorld_Event_23_/25_/27_ — near-identical; skipped
+  Combat HUD — sparse by constraint (caps overall ~ceiling)
+  No LAO font binary — typography axis soft-capped ~60s
+  Full Valofe lobby composition still mini-overlay scale
+  System chrome accent (Text_Deco / gauges) kept cyan by design
+  Some residual hatch/clip on non-overlay paths — leave gauges/pads
+
+================================================================
+PATH IF FURTHER TICKS (parent owns 5m loop — do NOT re-arm here)
+================================================================
+1) Only ship more assets if a NEW distinct Unity bitmap appears
+2) Optional: wire Btn_Deactivation / Text_Deco more on idle labels
+3) Keep combat HUD sparse; never Top_Bg fill
+4) Re-score harshly; refuse claiming 85+ without font + HUD policy change
+
+================================================================
+PRESERVED / DO NOT
+================================================================
+  - i18n 8 langs, fitH, CTA-health, letterbox, short-landscape HUD
+  - No AI images; no shot-kit (Hirume/Constantia) edits this tick
+  - No pad/gauge dimension changes; no Top_Bg combat fill
+  - load-track height 14px preserved
+  - Do NOT re-arm 5m loop here (parent owns it)
+  - Existing features not deleted

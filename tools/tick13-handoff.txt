@@ -1,0 +1,50 @@
+TICK13 handoff (2026-10-04) — particle QUALITY pass (do not revert)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+THIS TICK — particle quality (emitters already existed; raise readability)
+1) projectile-vfx.js
+   - Fragment soft sprites 0–4: hotter cores, tip-bright streaks, plasma sparkle,
+     additive-friendly color ramps inside the shader (white→kit→dim).
+   - _spray / burst: wide size variance, streak-biased hit chips, stronger velocity
+     damping, hot/mid/cool ramp fields (rampHot / rampCool).
+   - Trails: denser emission biased toward tip, thin ribbon tail, size grit,
+     velocity-aligned streak draw in sim loop.
+   - Hold muzzle: more streak chips with ramps (still front-only).
+2) polish-fx.js
+   - hitSpark / explosion / kit accents: stretch sparks, faster drag, denser plasma spray.
+   - draw(): additive (lighter) soft streak sprites aligned to velocity — sparks not disks.
+   - Soft flash kept; smoke stays source-over. No geometry marks.
+3) shot-fx.js (canvas fallback)
+   - Additive trail ribbons, softStreak helper, tip→cool color ramp, denser beam/chain.
+4) bomb-vfx.js
+   - GPU remap necklace + drip: size variance / streak chips (less equal soft blobs).
+   - Canvas bomb fallback matches grit necklace language.
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 74 (unchanged — still no live lobby apps)
+  VFX ≈ 58 (quality pass: sparks/trails read better than soft-blob ~54;
+            still arcade / not client-grade; bomb necklaces improved but coarse)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX now near/under user 60
+  if the streak language lands in playtest — do not round up to 70.
+  Expectation band this pass: UI ~72-76, VFX ~55-62.
+
+NEXT TICK — open polish
+  1) Playtest Fafnir hit spray + foxflame trails; if muddy, cut smoke ratio further.
+  2) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  3) Live menu destinations still absent — do not fake clickable lobby apps.
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / soft-particle language.
+  5) Prefer tuning emit budgets / kit dens over new silhouette systems.
+
+Model: inherit
+Korean-ready: yes

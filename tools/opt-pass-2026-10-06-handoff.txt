@@ -1,0 +1,112 @@
+LAO MINI ACTION — optimization pass handoff
+==========================================
+Date: 2026-10-06
+Goal: focused performance pass without feature deletion / UI NewUI regress /
+      Hirume sunbird / Constantia kit lore changes / MissORCA restore.
+
+Prior art (do not redo)
+-----------------------
+frame-opt tick01–06: HUD caches, scene blit, baked wash, alpha:false,
+  STAGE caption/subtitle bitmaps. skip-clearRect + clip-anim save skip
+  reverted — still off-limits.
+frame-opt-mobile-lowend: prefersLowEndGfx, DPR cap 1 on tiny/high-DPR,
+  skip decorative motes + HUD glow. KEPT.
+perf-2026-10-04: measure-only (+0 code).
+
+Inspected
+---------
+- Combat rAF: update + draw; draw still dominated by sprites / polish / clearRect.
+- Select overlay: TouchControls recreate on select↔combat shared #touch-controls.
+  Anon touchstart preventDefault leaked every new TouchControls (not removed
+  on dispose). Keyboard onSelectCheatKey early-returns off-select — cheap, kept.
+- PolishFx: per-spark save/translate/rotate/scale/restore; live strokeText
+  popups; hsl() string churn; offscreen chips kept until life end.
+- Legacy game.particles: same save/restore; no offscreen cull.
+- ProjectileVfx transients: put() while off-playfield until life end.
+- dens / HOLD identities / low-end caps: untouched.
+
+Shipped
+-------
+js/polish-fx.js
+  - Spark draw via ctx.ellipse(..., ang) — no per-spark save/restore.
+  - Batch globalCompositeOperation changes (lighter vs source-over).
+  - Offscreen cull (pad 72) in _tickVisuals + skip-draw.
+  - Score popup object pool + dual-stroke bitmap cache (blit + fade/pop scale).
+  - Prebaked WARM_PALETTE instead of per-emit hsl() strings.
+
+js/game.js
+  - Legacy particles: ellipse-with-rotation draw; offscreen cull in _updateParticles.
+
+js/projectile-vfx.js
+  - Transient particles culled when outside 960×540 ±80 (emit dens unchanged).
+
+js/touch-controls.js
+  - Named touchstart block handler; removeEventListener on dispose
+    (select nav ↔ combat pad churn no longer stacks listeners).
+
+Preserved
+---------
+NewUI buttons, select no-scroll nav, i18n/HARD layout, pads, charge/HOLD C1–3,
+bombs/deathbomb, 5 stages, STAGE START/CLEAR/WARNING, dens FROZEN,
+Hirume sunbird / Constantia kits, prefersLowEndGfx / mote skip / DPR caps.
+No AI images. No MissORCA restore. No feature deletion.
+
+Measure (Playwright Chromium headless)
+--------------------------------------
+tools/measure-opt-pass-2026-10-06.mjs → tools/opt-pass-2026-10-06-raw.json
+Hirume / invuln / autoPlay / mute SORTIE. Seed 0x51a9e (same as frame-opt).
+
+Prior band (documented; not same process):
+  lowend pass pc-960 16s: avg 46.57  draw 14.526  vfx peak 66
+  tick06 pc-960: avg 50.23  draw 13.118  vfx peak 74
+  tick05 pc-960: avg 54.01  draw 11.734  vfx peak 76
+  mobile-412 after lowend: avg 56.53  buf 402×226
+
+This pass (two runs):
+  pc-960 16s #1: avg 59.42  min 19.96  p95 16.8ms  max dt 50.1ms
+    hitches >33ms 7/942  >50ms 1
+    peaks: enemies 4, bullets 16, vfx 23, polish 13
+    split: update 0.197  draw 8.561  bg 0.084  vfxJS 0.155
+  pc-960 16s #2: avg 59.94  min 29.94  p95 16.8ms  max dt 33.4ms
+    hitches 0
+    peaks: enemies 4, bullets 16, vfx 27, polish 13
+    split: update 0.198  draw 7.930  bg 0.084  vfxJS 0.150
+  mobile-412×226 dpr2.5 8s: avg 59.86 / 59.91
+    buf 402×226 (lowend DPR cap still on)
+    peaks: enemies 2, bullets 9 — lighter than PC; do not quote as PC FPS.
+
+Honest reading
+--------------
+- Code-level win: drawAvg ~8.0–8.6ms vs prior frame-opt ~11.7–14.5ms on the
+  same harness shape (enemies 4 / bullets 16). That is the primary claim.
+- Headless FPS ~60 is vsync ceiling once draw drops under budget — do NOT
+  claim “combat locked 60 on real GPUs” or round to a shipped 60 score.
+- VFX live peak 23–27 vs prior 66–76: mostly offscreen transient cull freeing
+  list slots (dens/emit unchanged). Invisible chips no longer age+put.
+- Desktop GPU still not a thermal/fill-rate phone proof. low-end caps intact.
+
+Scores (not inflated)
+---------------------
+성능/프레임: PC headless combat ~59 band this pass (draw path win); not a
+  headed/real-device lock. Mobile-like harness ~60 on desktop GPU only.
+메모리: listener leak on select pads fixed; heap not re-scored (was 76–78).
+UI layout: ≈79  DO NOT claim 80+
+VFX dens:  ≈69  DO NOT claim 70+ (dens FROZEN)
+
+Residual bottlenecks
+--------------------
+- Sprite/clip-anim blit + clearRect fill still dominate remaining draw.
+- Enemy bullet soft-path still save/rotate (quadratic pellet silhouette).
+- WebGL ProjectileVfx instance budget / dens unchanged.
+- Pause still full game.draw under overlay.
+- Real low-end Android/iOS thermal QA still open.
+- Do not retry skip-clearRect or clip-anim save/quality skip as-is.
+
+Korean-ready user summary
+-------------------------
+최적화 패스를 돌렸습니다. 이미 들어간 HUD/배경 bake·저사양 DPR/모트 스킵은
+유지했고, 폴란드 FX 스파크의 매 입자 save/restore를 ellipse로 바꿨으며
+화면 밖 칩·팝업 비트맵 캐시·셀렉트 패드 touchstart 리스너 누수를
+정리했습니다. 헤드리스 PC 960 전투 draw가 이전 ~12–14ms대에서 ~8ms대로
+줄었고 평균 FPS는 ~59–60(수직동기 천장)입니다. dens·NewUI·셀렉트 내비·
+Hirume/Constantia 키트는 그대로입니다. 실기기 필레이트는 아직입니다.

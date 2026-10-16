@@ -1,0 +1,63 @@
+GRIFFIN + SLEIPNIR SKILL1/C + SKILL2/BOMB
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity: E:\LAO\Google_QA\Assets\AssetBundleResource\
+
+Wiki (LAO names; Unity clip/FX confirm the split):
+  P/A-00 Griffin
+    Skill1 핸드 미사일 / Hand Missile
+      Unity clip: attack_hand_missile_skill.anim
+      FX: FX/character_prefab/PA00EL_skill/PA00EL_skill_1_fire.prefab (pani fire / smoke mats)
+    Skill2 폭격 / Bombing
+      No dedicated N-model body clip (only attack_hand_missile / _skill).
+      FX: PA00EL_up_line, PA00EL_up_smoke, PA00EL_roket_fire_skill2,
+          PA00EL_skill_2_di_fire, PA00EL_skill_2_hit
+  P-49 Sleipnir
+    Skill1 제압 사격 / Suppressive Fire
+      Unity clip: Skil_1.anim
+      FX: Sleipnir_skill/skill1 (fire_L/R, lastfire, hit, sonicboom on guns)
+    Skill2 돌격 / Charge
+      Unity clip: Skil_2.anim
+      FX: Sleipnir_skill/skill2 (boost, speed line, sonicboom, up-smoke)
+
+WHAT C / BOMB NOW SPAWN
+  griffin C     Skill1 핸드 미사일 — shell volley (existing shell style, Griffin cyan)
+                + baked Skill1 body sheet (griffin-skill1.png) as attack clip
+  griffin bomb  Skill2 폭격 — own bomb VFX (climb strobe + vertical dive rockets + hits)
+                NOT Emily busterbeam / Emily bomb branch
+                Body: no Skill2 clip in Unity N — idle/move during X (honest fallback)
+  sleipnir C    Skill1 제압 사격 — coffinround HMG volley (existing HMG family)
+                + baked Skill1 body sheet (sleipnir-skill1.png)
+                NOT LRL phantom-rush / lrl-skill1-clone
+  sleipnir bomb Skill2 돌격 — sonic-boom rings + speed lines + target hits
+                + baked Skill2 body sheet (sleipnir-skill2.png)
+                NOT LRL skill2 star clip
+
+UNCHANGED (user only specified C/bomb)
+  griffin shot  핸드 미사일 / pattern baton / shell
+  griffin HOLD  폭격 / Merlin charged shells
+  sleipnir shot 제압 사격 / pattern hmg / coffinround
+  sleipnir HOLD 돌격 / LRL axe
+  Hirume sunbird + Constantia locks. MissORCA not restored.
+
+HONESTY / FALLBACKS
+  Griffin Skill2 has no SD body animation on Model_BR_PA00EL_N — bomb is FX-only.
+  Griffin/Sleipnir Skill1 fire uses particle materials (no merlin_missile.png analog);
+    C reuses existing shell / coffinround plumbing instead of inventing a new shot type.
+  Bomb VFX uses the existing particle sprite/ring/beam/detonate pipeline choreographed
+    to Unity Skill2 prefab beats (dive rockets / sonic boom), not Emily/LRL art reuse.
+  Native body sheets are sampled from Unity bakes (contentBox crop, 192px cells).
+
+BAKES / SHEETS
+  python tools/bake_sd_character.py --char griffin --clips skill1
+  python tools/bake_sd_character.py --char sleipnir --clips skill1,skill2
+  python tools/import-skill-body-sheets.py
+  assets/native-shots/{griffin-skill1,sleipnir-skill1,sleipnir-skill2}.png
+
+FILES
+  js/assets.js, js/special-skill-profiles.js, js/bomb-vfx.js, js/player.js
+  js/i18n.js, js/native-weapon-fx.js
+  tools/bake_sd_character.py, tools/import-skill-body-sheets.py
+  assets/sd_baked/{griffin,sleipnir}/ (skill frames + anim.json)
+  assets/native-shots/griffin-skill1.png, sleipnir-skill1.png, sleipnir-skill2.png
+  tools/griffin-sleipnir-skill-handoff.txt

@@ -1,0 +1,60 @@
+TICK21 handoff (2026-10-04) — player hit sparks (HOLD dens/side untouched)
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+
+THIS TICK — one focused win: player hit sparks
+
+1) js/polish-fx.js · notePlayerHit
+   - Was a generic explosion(scale 1.4) — same warm kit language as kill booms.
+   - Now a dedicated soft-sprite shatter: cool-white / rose dual flash + radial
+     elongated needles (tip variance: fine grit vs longer streaks).
+   - rampHot #ffffff → rampCool #ff6b8a so the sting reads as hurt, not kit kill.
+   - PARTICLE_CAP / light-mode loadMul still shed under dense fields.
+   - Hitstop stays short (0.055) so deathbomb X window remains usable.
+   - HOLD dens/side/emit, bomb-vfx budget, NewUI — untouched.
+
+2) js/game.js
+   - Comment only: notePlayerHit owns shatter sparks (no legacy burst double-up).
+
+3) Verify
+   - node tools/test-gameplay-design.mjs · test-basic-shots.mjs · test-weapon-roles.mjs PASS
+   - tools/qa-player-hit.mjs: notePlayerHit → active≈13 (spark/flash), rose+white
+     palette, maxStretch≈4.8; shot tools/qa-player-hit.png.
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (unchanged; NewUI residual not the focus this tick)
+  VFX ≈ 60 (player-hit readability micro-pass inside soft-sprite language only —
+            still budget-capped / no client-grade sparks; bomb density untouched)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+  user 60 band — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+NEXT TICK — open polish
+  1) Optional: bomb particle density micro-pass inside existing soft remap /
+     cast budget (260 light / 520 full) — still honest VFX≈60, never claim 70+.
+  2) Or NewUI residual (menu destinations still absent — do not fake lobby apps).
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  4) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+  5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language /
+     enemy bullet rim/core / player-hit rose shatter.
+
+Model: inherit
+Korean-ready: yes

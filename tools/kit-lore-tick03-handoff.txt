@@ -1,0 +1,36 @@
+KIT LORE TICK 03 — HIRUME USER REVERT (PRE-LORE KIT)
+Date: 2026-10-05
+
+User (Korean): "히루메는 예전껄로 바꿔 그게 더 나은 듯"
+Remaining-character kit work (LRL/Merlin/Fafnir/Labiata/Emily) STOPPED — do not ship tick3 lore remaps.
+
+================================================================
+HIRUME RESTORED (pre tick1/tick2 combat)
+================================================================
+Source: tick73/tick174 live HOLD (sunbird homing+blast, n=1) + tick2 notes
+that pre-lore SHOT was yatagarasu/foxflame jets at 800 px/s (wide fan).
+
+SHOT: foxflame jets, shotSpeed 800, no gravity puff, pierce from Lv2,
+wide-formation fan. Style foxflame. Labels 야타가라스.
+HOLD: one sunbird phoenix wing-fan seed (x+48), homing + blast + pierce,
+no ay napalm. VFX HOLD_STYLE hirume → sunbird. Labels 봉황 날개.
+C: still parked sunseal ward (0 dmg). Label 야타가라스 정화 결계.
+flameward remains in shared VFX tables as unused leftover — not spawned.
+
+================================================================
+CONSTANTIA KEPT (tick2)
+================================================================
+SHOT aimed tracer (no homing). HOLD dropping lockround slug. C one Bori.
+Do not restore sightbeam.
+
+================================================================
+VERIFY
+================================================================
+Unit: test-weapon-roles, test-basic-shots, test-original-skill-roles,
+tools/dump-hirume-constantia-combat.mjs
+Live SORTIE: tools/probe-kit-lore-live.mjs — Hirume must spawn sunbird,
+not flameward. Constantia tracer + lockround.
+
+Preserved: 5 stages, pads, i18n structure, deathbomb, power Lv5,
+fire-rate ×2 delay, Constantia die eyes, other characters' tick2-era kits.
+Korean-ready.

@@ -1,0 +1,71 @@
+KIT LORE TICK 06 — HONEST +0 (NO SPAWN/VFX HOLE)
+Date: 2026-10-05
+Wiki: lastorigin.wiki.gg (no shmup bomb skill on any of the 8).
+1945 II analog used only for X screen-clear when wiki has no bomb:
+  falling cluster / dive-bomb (Merlin, Emily), shared deathbomb grace.
+
+LOCKED (untouched this tick — do not churn)
+  Hirume: foxflame + sunbird + sunseal. X 야타가라스 · 봉황 날개.
+  Constantia: tracer + lockround + bori. X 라이플 사격 · 발목 잡기.
+
+================================================================
+AUDIT vs TICK5 GAP LIST
+================================================================
+Tick5 leftover SORTIE: all 8 kits leftover [].
+Tick5 “gaps” were docs / analog / unused palettes — NOT live spawn holes.
+
+Code check this tick (spawn, not names):
+  HOLD_STYLE live: hirume sunbird, constantia lockround, lrl dragonaxe,
+    merlin shell, fafnir jupiterorb, eternity coffinwall,
+    labiata plasmaslash, emily railbolt.
+  Labiata X still parked plasma blooms (ring/detonate/type11). Not spear-nest.
+  Eternity HOLD still coffinwall (Coffin for Two). SHOT coffinround / C coffinmissile.
+  Emily C still busterbeam. Banner 버스터 캐논 (tick5 i18n).
+  Deathbomb: shared 1945 grace. Existence / timers / stock UNCHANGED.
+  Merlin/Emily X: 1945 falling-cluster analog. Wiki has no bomb. KEEP.
+
+Unreferenced palettes still in shared VFX tables (NOT spawned — grep style: none):
+  flameward / sightbeam / empfield / xenoxcore / orbital
+  Removing them would be table churn, not a spawn fill. LEFT ALONE.
+
+Docs/QA (not spawn/VFX — not in scope unless asked):
+  ORIGINAL_SKILL_MAP.md stale 회귀도끼 / 십자 절단
+  tools/bomb-effects.md + bomb-preview.html 5-char / Prydwen copy
+  tools/qa-hold-muzzle.mjs freeze still sightbeam + coffinround
+
+SHIPPED THIS TICK: none. Honest +0.
+
+================================================================
+LIVE SORTIE (carry-forward tick5 LIVE_SORTIE_DUMP_OK)
+================================================================
+hirume     foxflame + sunbird + sunseal     leftover []
+constantia tracer + lockround + bori        leftover []
+lrl        cleave + dragonaxe + cyclopsbeam leftover []
+merlin     shell + commandmissile           leftover []
+fafnir     lightning + jupiterorb + teslacoil leftover []
+eternity   coffinround + coffinwall + coffinmissile leftover []
+           card: 보모의 기관총 / 두 사람을 위한 관 / 편히 잠드소서
+labiata    orbitblade + plasmaslash + plasmacross leftover []
+           card: 백화난만 / 백화난만 / 백화제방
+emily      railbeam + busterbeam            leftover []
+           card: 레일건 사격 / 버스터 캐논 (no HOLD)
+
+================================================================
+GAP LIST
+================================================================
+Proven spawn/VFX leftover: []
+
+Soft / out of scope (docs, analog, unused tables — playtest-soft):
+- ORIGINAL_SKILL_MAP.md stale names
+- bomb-effects.md / bomb-preview.html copy
+- qa-hold-muzzle.mjs stale freeze
+- unused VFX table keys (not spawned)
+- Merlin/Emily X stay 1945 cluster analog
+
+Next tick: +0 unless a NEW proven spawn/VFX hole appears.
+Do not invent shot systems. Do not churn locked Hirume/Constantia.
+Only docs/QA freeze if asked.
+
+Preserved: 5 stages, pads, i18n structure, deathbomb, power Lv5,
+fire-rate ×2 delay, Constantia die eyes, Hirume/Constantia kits.
+Korean-ready.

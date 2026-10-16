@@ -1,0 +1,327 @@
+TICK40 handoff (2026-10-04) — title lobby NewUI residual (rails/chips/status; START clear)
+
+
+
+======================================================================
+
+
+
+PRESERVE (do not break)
+
+
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+
+
+- Combat HUD sparse: never Top_Bg full fill on hud-top.
+
+
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+
+
+
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+
+
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+
+
+
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep.
+
+
+
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep.
+
+
+
+- C special muzzle stretch grit / white tip cores (tick24) — keep.
+
+
+
+- Deathbomb grace bloom + arc grit (tick25) — keep.
+
+
+
+- Option satellite soft trails (tick26) — keep.
+
+
+
+- Focus-mode bloom + orbit grit (tick27) — keep.
+
+
+
+- Rare fanfare soft orbit grit (tick28) — keep.
+
+
+
+- WARNING mid/boss palette + band grit + midboss-frame-pulse (tick29) — keep.
+
+
+
+- STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip (tick30) — keep.
+
+
+
+- Pause overlay menubg+world2 + Box2 plates + brand Activation cue (tick31) — keep.
+
+
+
+- Title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only (tick32) — keep.
+
+
+
+- STAGE START cyan wash + grit + dual stroke + START kind chip (tick33) — keep.
+
+
+
+- Loading bar Activation brand + track Tap1/chamfer + meta Box2 plate (tick34) — keep.
+
+
+
+- OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions (tick35) — keep.
+
+
+
+- Touch-pad dual-stroke captions + role tints + float MOVE zone hint (tick36) — keep.
+
+
+
+- Select dossier Box2/cyan/Activation + select-actions Box2 plate (tick37) — keep.
+
+
+
+- Result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash (tick38) — keep.
+
+
+
+- HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue (tick39) — keep.
+
+
+
+THIS TICK — one focused win: title lobby NewUI residual
+
+
+
+1) css/style.css · TICK40 title lobby polish (decorative only)
+
+
+
+   - screen-title menubg + world2 wash (select/OPTIONS depth parity).
+
+
+
+   - .lobby-status-bar: Box2 + cyan rim/inset + mint dual-stroke.
+
+
+
+   - .lobby-chip / gold / mint: Box2 + rim reinforce (title-scoped).
+
+
+
+   - .lobby-rail-ico: denser cyan/brass rim+shadow; Lobby_Icon PNG kept
+
+     (no background-image wipe). Still pointer-events:none / aria-hidden.
+
+
+
+   - .title-hero .brand-mark: Activation + Title_Deco2 cue.
+
+
+
+   - .lobby-foot: light Box2 channel + STANDBY dual-stroke.
+
+
+
+   - Untouched: START / .title-actions / .btn-cta (no CTA plate clutter),
+
+     title CONTROLS pins, HUD power-badge, result, select dossier,
+
+     touch-pad labels, HOLD dens/side/emit, bomb-vfx, combat particles,
+
+     STAGE START/CLEAR / WARNING, pause/OPTIONS/loading NewUI.
+
+
+
+2) tools/qa-title-lobby.mjs
+
+
+
+   - Asserts TICK40 menubg+world2, status Box2/cyan rim/inset, chips Box2,
+
+     rail densify without icon wipe, brand Activation+Deco2, foot dual-stroke,
+
+     no title-actions/btn-cta churn, no fake lobby onclick apps,
+
+     rails aria-hidden decorative, prior ceremony markers,
+
+     power-badge/result/select/pads/HOLD untouched.
+
+
+
+3) Verify
+
+
+
+   - node tools/qa-title-lobby.mjs PASS
+
+     menubg+world2
+
+     status Box2 cyan rim/inset
+
+     chips Box2+rim
+
+     rail ico densify icons kept
+
+     brand Activation+Deco2
+
+     foot dual-stroke
+
+     START/CONTROLS clear
+
+     no fake lobby apps
+
+
+
+   - node tools/qa-hud-power-badge.mjs · qa-result-screen.mjs ·
+
+     qa-select-dossier.mjs · qa-touch-pad-labels.mjs ·
+
+     qa-options-newui.mjs · qa-loading-bar-newui.mjs ·
+
+     qa-pause-newui.mjs · qa-controls-newui.mjs ·
+
+     qa-stage-start-card.mjs · qa-stage-clear-card.mjs ·
+
+     qa-warning-midboss.mjs · qa-rare-fanfare.mjs ·
+
+     qa-focus-mode.mjs · qa-option-trails.mjs ·
+
+     qa-deathbomb-feedback.mjs · qa-special-muzzle.mjs ·
+
+     qa-graze-pickup.mjs · test-gameplay-design.mjs ·
+
+     test-basic-shots.mjs · test-weapon-roles.mjs PASS
+
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+
+
+
+  UI  ≈ 75 (title lobby rails/chips/status densified to select/OPTIONS band
+
+            + prior power-badge / result / dossier / pads / OPTIONS/pause/
+
+            CONTROLS/loading depth; START kept clear)
+
+
+
+  VFX ≈ 60 (no combat particle work this tick — still soft-sprite /
+
+            budget-capped; NOT client-grade sparks)
+
+
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+  user 60 band — do not round up to 70.
+
+
+
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+
+NEXT TICK — open polish
+
+
+
+  1) Optional: tutorial / loading residual micro-depth if still light vs
+
+     title/select/OPTIONS/result.
+
+
+
+  2) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+
+
+
+  3) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+     death power reset / per-character hold identities / soft-particle language /
+
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520 /
+
+     graze stretch glitter / pickup soft-sprite chips / C special muzzle stretch grit /
+
+     deathbomb grace bloom+arc grit / option satellite soft trails /
+
+     focus-mode bloom+orbit grit / rare fanfare soft orbit grit /
+
+     WARNING mid/boss palette + band grit + midboss-frame-pulse /
+
+     STAGE CLEAR stage/finale palette + card grit + dual stroke + kind chip /
+
+     pause overlay menubg+world2 + Box2 plates + brand Activation cue /
+
+     title CONTROLS opaque pins + chamfer safe-zone + keys-grid scroll only /
+
+     STAGE START cyan wash + grit + dual stroke + START kind chip /
+
+     loading bar Activation brand + track Tap1/chamfer + meta Box2 plate /
+
+     OPTIONS menubg2+world2 + Activation brand + Box2 block/keys/actions /
+
+     touch-pad dual-stroke captions + float MOVE zone hint /
+
+     select dossier Box2/cyan/Activation + select-actions Box2 plate /
+
+     result screen Activation+Deco2 + Box2 score/meta cells + cleared/gameover wash /
+
+     HUD power-badge Tap1 + cyan rim/inset + dual-stroke Lv + overclock Activation cue /
+
+     title lobby menubg+world2 + status/chips Box2 rim + rail densify + brand Activation+Deco2.
+
+
+
+Model: inherit
+
+
+
+Korean-ready: yes

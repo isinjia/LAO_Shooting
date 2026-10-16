@@ -1,0 +1,494 @@
+[
+  {
+    "loc": "ko",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "panelOver": -14.5,
+      "headH": 95,
+      "brandH": 26,
+      "brandDisplay": "inline-block",
+      "h2H": 35,
+      "h2Fs": 24,
+      "scrollH": 100,
+      "scrollNeed": 991,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -14.5,
+      "headH": 57,
+      "scrollH": 138,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -14.5,
+      "headH": 45,
+      "scrollH": 152,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -14.5,
+      "headH": 45,
+      "scrollH": 162,
+      "avail": 162,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "en",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "panelOver": -14.5,
+      "headH": 88,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 31,
+      "h2Fs": 24,
+      "scrollH": 109,
+      "scrollNeed": 954,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -14.5,
+      "headH": 53,
+      "scrollH": 144,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -14.5,
+      "headH": 42,
+      "scrollH": 157,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -14.5,
+      "headH": 42,
+      "scrollH": 167,
+      "avail": 167,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "es",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "panelOver": -14.5,
+      "headH": 91,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 31,
+      "h2Fs": 24,
+      "scrollH": 106,
+      "scrollNeed": 977,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -14.5,
+      "headH": 53,
+      "scrollH": 144,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -14.5,
+      "headH": 42,
+      "scrollH": 157,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -14.5,
+      "headH": 42,
+      "scrollH": 167,
+      "avail": 167,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "ru",
+    "w": 640,
+    "h": 360,
+    "before": {
+      "panelOver": -14.5,
+      "headH": 92,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 35,
+      "h2Fs": 24,
+      "scrollH": 103,
+      "scrollNeed": 1018,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -14.5,
+      "headH": 57,
+      "scrollH": 138,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -14.5,
+      "headH": 45,
+      "scrollH": 152,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -14.5,
+      "headH": 45,
+      "scrollH": 162,
+      "avail": 162,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "ko",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "panelOver": -16,
+      "headH": 93,
+      "brandH": 26,
+      "brandDisplay": "inline-block",
+      "h2H": 35,
+      "h2Fs": 24,
+      "scrollH": 139,
+      "scrollNeed": 952,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -16,
+      "headH": 57,
+      "scrollH": 175,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -16,
+      "headH": 44,
+      "scrollH": 190,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -16,
+      "headH": 44,
+      "scrollH": 200,
+      "avail": 200,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "en",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "panelOver": -16,
+      "headH": 88,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 31,
+      "h2Fs": 24,
+      "scrollH": 146,
+      "scrollNeed": 917,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -16,
+      "headH": 53,
+      "scrollH": 181,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -16,
+      "headH": 42,
+      "scrollH": 194,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -16,
+      "headH": 42,
+      "scrollH": 204,
+      "avail": 204,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "es",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "panelOver": -16,
+      "headH": 93,
+      "brandH": 26,
+      "brandDisplay": "inline-block",
+      "h2H": 35,
+      "h2Fs": 24,
+      "scrollH": 139,
+      "scrollNeed": 970,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -16,
+      "headH": 57,
+      "scrollH": 175,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -16,
+      "headH": 44,
+      "scrollH": 190,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -16,
+      "headH": 44,
+      "scrollH": 200,
+      "avail": 200,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "ru",
+    "w": 720,
+    "h": 400,
+    "before": {
+      "panelOver": -16,
+      "headH": 92,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 35,
+      "h2Fs": 24,
+      "scrollH": 140,
+      "scrollNeed": 981,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -16,
+      "headH": 57,
+      "scrollH": 175,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -16,
+      "headH": 45,
+      "scrollH": 189,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -16,
+      "headH": 45,
+      "scrollH": 199,
+      "avail": 199,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "ko",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "panelOver": -18,
+      "headH": 92,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 35,
+      "h2Fs": 24,
+      "scrollH": 172,
+      "scrollNeed": 915,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -18,
+      "headH": 57,
+      "scrollH": 207,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -18,
+      "headH": 45,
+      "scrollH": 221,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -18,
+      "headH": 45,
+      "scrollH": 231,
+      "avail": 231,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "en",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "panelOver": -18,
+      "headH": 91,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 31,
+      "h2Fs": 24,
+      "scrollH": 175,
+      "scrollNeed": 890,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -18,
+      "headH": 53,
+      "scrollH": 213,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -18,
+      "headH": 42,
+      "scrollH": 226,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -18,
+      "headH": 42,
+      "scrollH": 236,
+      "avail": 236,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "es",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "panelOver": -18,
+      "headH": 91,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 31,
+      "h2Fs": 24,
+      "scrollH": 175,
+      "scrollNeed": 908,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -18,
+      "headH": 53,
+      "scrollH": 213,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -18,
+      "headH": 42,
+      "scrollH": 226,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -18,
+      "headH": 42,
+      "scrollH": 236,
+      "avail": 236,
+      "backOut": false,
+      "firstVisible": true
+    }
+  },
+  {
+    "loc": "ru",
+    "w": 800,
+    "h": 450,
+    "before": {
+      "panelOver": -18,
+      "headH": 92,
+      "brandH": 24,
+      "brandDisplay": "inline-block",
+      "h2H": 35,
+      "h2Fs": 24,
+      "scrollH": 172,
+      "scrollNeed": 949,
+      "backOut": false,
+      "firstVisible": true,
+      "headAfterH": "10px",
+      "headAfterDisplay": "block",
+      "headAfterContent": "\"\""
+    },
+    "trialA": {
+      "panelOver": -18,
+      "headH": 57,
+      "scrollH": 207,
+      "backOut": false,
+      "brandDisplay": "none"
+    },
+    "trialB": {
+      "panelOver": -18,
+      "headH": 45,
+      "scrollH": 221,
+      "backOut": false
+    },
+    "trialC": {
+      "panelOver": -18,
+      "headH": 45,
+      "scrollH": 231,
+      "avail": 231,
+      "backOut": false,
+      "firstVisible": true
+    }
+  }
+]

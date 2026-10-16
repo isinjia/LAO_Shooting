@@ -1,0 +1,87 @@
+UI UNITY REPLACE ORIGINAL — HAND OFF
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\resourece\
+Dest:      assets/ui/newui/
+Companion: tools/ui-kill-bg-illust-handoff.txt (bleed kill detail)
+
+User: 로딩·팝업·버튼은 Last Origin Unity NewUI 쓰라. 미니액션 오리지널 CSS invent 고집 금지.
+Do BOTH: (A) kill figurative bleeds  (B) real NewUI bitmaps on panels/buttons.
+
+================================================================
+A) FIGURATIVE BLEEDS KILLED
+================================================================
+Removed from live overlays (CSS override wins over tick01–05 washes):
+  SelectWorld_Event_05 / 05_ + OfflineBattle_Complete  → title
+  SelectWorld_Event_23                                 → CONTROLS .keys
+  SelectWorld_Event_18 / 18_ + OfflineBattle_InProgress → loading
+  SelectWorld_Event_19                                 → load-meta
+  SelectWorld_Event_06_ / 22_ / 29                     → lobby status/foot/rails
+  btn_newui_SideStory                                  → title-actions / select-actions
+  Event washes on options / pause / tutorial / select /
+    rotate-hint / asset-error                          → stripped
+
+Replaced with opaque:
+  UI_Ranking_Backplate + newui_Popup_Bg (+ Box where nested)
+  solid background-color underlays (#0c0e12 / #12161c) so art cannot show through gaps
+
+================================================================
+B) UNITY NEWUI REPLACE (panels + buttons)
+================================================================
+Re-copied from Unity (overwrite sync):
+  newui_Popup_Bg.png / Box / Box2
+  newui_Btn_Activation / Deactivation / Sub / Sub2 / Tap1
+  UI_Ranking_Backplate + Frame_01/02/03
+  newui_OfflineBattle_InProgress_Loding.png
+  Title_Deco / Deco1 / Deco2 / Text_Deco / Popup_Icon_Close
+  btn_newui_menubg / menubg2 / newui_Top_Bg
+(No new Event_* copies. No MissORCA. No AI images.)
+
+CSS block (end of css/style.css):
+  "UI UNITY REPLACE ORIGINAL / KILL BG ILLUST (2026-10-05)"
+
+Panels / popups → Popup_Bg + Ranking Backplate (opaque):
+  screen-title, screen-loading, screen-options, screen-pause,
+  screen-tutorial, screen-select, screen-asset-error, rotate-hint,
+  screen-result (cleared/gameover), .keys, .load-meta, opt/pause/tut cells,
+  .select-dossier, .rotate-card, .result-score
+
+Buttons → real Unity bitmaps:
+  .btn-primary / .btn-cta     → newui_Btn_Activation.png
+  .btn-primary::after         → newui_Btn_Tap1.png (replaces invent hatch)
+  secondary .btn              → newui_Btn_Sub.png (hover Sub2)
+  .btn-ghost                  → newui_Btn_Deactivation.png
+
+Loading track:
+  tile = Popup_Bg (opaque underlay)
+  ::after tip = OfflineBattle_InProgress_Loding.png (chrome tip only)
+  fill reinforces Tap1; height/margin 14px KEPT
+
+Kept decorative chrome (non-figurative):
+  Title_Deco, Text_Deco, Top_Bg rails, Ranking Frame_01 on foot/score
+
+================================================================
+SCREENS FIXED
+================================================================
+  title     — START / OPTIONS / CONTROLS read as LAO NewUI plates
+  loading   — no character under/through load track
+  options / pause / tutorial / select / rotate / asset-error / result
+  buttons   — Activation / Sub / Deactivation across overlays
+
+================================================================
+INTENTIONALLY NOT DONE
+================================================================
+  Combat HUD still sparse (no Top_Bg full fill) — constraint kept
+  Char-card faces still must NOT bind SelectWorld_Event_* (prior fix)
+  No HTML markup / i18n / fitH / CTA-health / letterbox changes
+  No gameplay / shot-kit edits
+  Event_* PNGs remain on disk (unused by this override) — safe to prune later
+
+================================================================
+VERIFY
+================================================================
+  rg "UI UNITY REPLACE ORIGINAL" css/style.css → block present
+  title/loading background-image must NOT list SelectWorld_Event_ or
+    OfflineBattle_Complete/InProgress (except Loding tip on ::after)
+  .btn-primary background-image includes newui_Btn_Activation.png
+  PNG Test-Path OK for all re-copied chrome assets

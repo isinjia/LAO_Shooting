@@ -1,0 +1,34 @@
+LAO SHOOTING GAME — UI / FPS / enemy-marker cleanup handoff
+Date: 2026-10-06
+
+A) Title
+1. CONTROLS body removed (keys-grid + rules + CONTROLS head).
+   Kept HI-SCORE in `.keys.keys-hiscore-only` (compact panel).
+2. Stage blurb removed — `<p class="tagline">` gone; i18n `title.tagline` emptied (all 8 locales).
+3. Main title → "LAO SHOOTING GAME" (h1, loading brand, index.html, i18n `doc.title` all locales).
+   Kept: HORIZONTAL BULLET HELL / SIDE SCROLL SHOOTER.
+
+B) Select / title UI
+4. Roster blurb removed — select-blurb element gone; i18n `select.blurb` emptied.
+5. Standby confirm UI removed — `select.ready` / `select.confirm` hint + CONFIRM chip gone.
+   Card click now direct-sortie (still has SORTIE CTA / pads / Space).
+6. Title OPTIONS button now uses same `btn_newui_world.png` plate as START (was world2 stripe mismatch).
+
+C) In-game
+7. FPS readout top-right during gameplay (~8Hz sample, dual-stroke cyan).
+
+D) Enemies
+8. Yellow ^ carets were signature-anchor / commander-link markers
+   (drawn above elites in formation: tall caret on anchor, short on linked).
+9. Draw path removed in `js/enemy.js` (logic flags `isSignatureAnchor` / `commanderRef` kept for AI).
+
+Files touched:
+- js/main.js
+- js/i18n.js
+- js/enemy.js
+- js/game.js
+- css/style.css
+- index.html
+
+Not restored: MissORCA title art.
+Not deleted: START/OPTIONS, NewUI chrome, gameplay systems, select→game flow.

@@ -1,0 +1,34 @@
+TICK6 handoff (2026-10-04) — Latest LAO UI IN PROGRESS (do not revert)
+======================================================================
+
+STATE
+- Valofe NewUI overhaul HAS landed (concurrent agent + this tick refine).
+  Markers: :root NewUI tokens, TICK4 Valofe NewUI lock block, body.lao-newui,
+  assets/ui/newui/* slices, js/main.js boot adds classList 'lao-newui'.
+- Constantia die: already fixed (leave alone).
+- Preserve: multi-shot split, power individuality, i18n, pads, WARNING-only.
+
+THIS TICK
+- CONTROLS overlap root cause: body.touch-ui #overlay-content { overflow-y:auto }
+  beat #overlay-content.screen-title { overflow:hidden }. Fixed with higher-spec
+  flex column + overflow-y:hidden; only .keys-grid scrolls.
+- Short viewport (420h): touch-help/rules compacted; kbd wrap gap → 0 overlaps.
+- VFX readability: beam type10 hotter/thinner halo; Constantia lock+white-core tracer.
+- NewUI refine: Sub button plate on secondary BTNs; mint/gold gauge tracks;
+  copied extra slices into assets/ui/newui/ (Sub, Sub2, Top_Bg, Title_Deco, menubg).
+
+NEXT TICK — continue Latest LAO (do NOT revert NewUI)
+Priority polish still open:
+  1) Wire newui_Top_Bg / Title_Deco into HUD/title more carefully (Top_Bg is 20×500 — needs vertical strip treatment, not full hud-top fill).
+  2) Lobby chrome closer to Panel_Lobby_NewUi (icon rail, resource strip).
+  3) Select/options panels: more real slices, less CSS-only hatch.
+  4) Combat VFX identity still middling — keep kit individuality readable.
+
+Source:
+  E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\
+  E:\LAO\Google_QA\Assets\AssetBundleResource\UI\Panel_*_NewUi.prefab
+
+HONEST SCORE
+  VFX ≈ 64 (beam/Constantia bump; not kit-wide NewUI-grade)
+  UI  ≈ 58 (NewUI tokens+slices live; CONTROLS fixed; lobby/gauge depth incomplete)
+  NEVER claim 90.

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>glb preview</title>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <style>body{margin:0;background:#111;color:#eee;font:12px monospace}canvas{border:1px solid #456}</style>
+</head>
+<body>
+  <pre id="log">loading...</pre>
+  <canvas id="c" width="512" height="512"></canvas>
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { loadGlbCharacter, GlbAnimator } from './js/glb-actor.js';
+
+    const log = (o) => { document.getElementById('log').textContent = typeof o === 'string' ? o : JSON.stringify(o, null, 2); };
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+
+    const template = await loadGlbCharacter('./assets/sd_glb/hirume.glb');
+    const anim = new GlbAnimator(template);
+    anim.play('idle', { restart: true });
+
+    let t = 0;
+    function tick(now) {
+      const dt = Math.min(0.05, (now - t) / 1000 || 0.016);
+      t = now;
+      anim.update(dt);
+      ctx.fillStyle = '#234';
+      ctx.fillRect(0, 0, 512, 512);
+      anim.draw(ctx, 256, 280, 420);
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+    log({ clips: Object.keys(template.clips), hitTime: template.hitTime, ok: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+TICK14 handoff (2026-10-04) — HOLD identity particle polish + NewUI gaps
+======================================================================
+
+PRESERVE (do not break)
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+- Hold identities stay per-character (NOT homing/laser duality):
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+
+THIS TICK — hold particle DISTINCTNESS + leftover NewUI
+
+1) projectile-vfx.js
+   - KIT dens/stretch/smoke retuned per hold style (fan / lance / axe / arty /
+     cloud / hmg / crescent / spike).
+   - HOLD_STYLE[charKey] + holdIdentity() drive trail / burst / muzzle language
+     (muzzle no longer uses basic autofire style — Emily railbolt ≠ railbeam).
+   - Trails: side/streak/smoke/rise/drag per identity; sunbird joins cloud emit;
+     jupiterorb denser storm cloud; crescent lateral sheet sprays; shell ash drip.
+   - Burst cones sized to identity (wide fan/crescent, tight lance/spike/hmg).
+
+2) shot-fx.js (canvas fallback)
+   - Per-hold trail spread/length + tip cloud (fan embers, axe chips, crescent
+     sheets, railspike needle, arty ash). Still soft particles only.
+
+3) polish-fx.js
+   - _kitHitAccent branches for crescent / axe / lance / arty / hmg hit grit.
+
+4) NewUI leftover gaps
+   - result / tutorial / loading: panel-frame or Title_Deco1 + menubg/world2 wash.
+   - Still no fake clickable lobby app destinations.
+   - Combat HUD unchanged (sparse; no Top_Bg fill).
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+  UI  ≈ 75 (result/tutorial/loading wash landed; still no live lobby apps)
+  VFX ≈ 60 (hold kits now particle-distinct; still arcade soft-sprite /
+            budget-capped — NOT client-grade sparks)
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX ≈ user 60 band
+  if hold identities read in playtest — do not round up to 70.
+  Expectation band this pass: UI ~73-77, VFX ~56-62.
+
+
+NEXT TICK — open polish
+  1) Playtest all 8 hold identities side-by-side; if two kits still muddy
+     (esp. foxflame vs phoenix fan, railbeam vs railspike), push dens/side further.
+  2) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+  3) Live menu destinations still absent — do not fake clickable lobby apps.
+  4) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+     death power reset / per-character hold identities / soft-particle language.
+  5) Prefer emit-budget tuning over new silhouette systems.
+
+
+Model: inherit
+Korean-ready: yes

@@ -1,0 +1,343 @@
+=== A) OPTIONS LATENT + peer chrome @ cliff sizes ===
+SOFT options ko@340x200 over=0 maxH=191px fitH=191 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=60 short=true
+ok pause ko@340x200 over=0 cta=26/26 quit=26/26 opt=26/26 mute=26/26 gap=2px btnMinH=24px
+ok result ko@340x200 over=0 cta=24/24 title=24/24
+ok select ko@340x200 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ko@340x200 over=0 sortie=28/28 skip=28/28
+SOFT options en@340x200 over=0 maxH=191px fitH=191 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=65 short=true
+SOFT options ru@340x200 over=0 maxH=191px fitH=191 inflated=false health=0 ctaOut=false ctaVis=45/45 scrollH=62 short=true
+ok pause ru@340x200 over=0 cta=26/26 quit=26/26 opt=26/26 mute=26/26 gap=2px btnMinH=24px
+ok result ru@340x200 over=0 cta=24/24 title=24/24
+ok select ru@340x200 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ru@340x200 over=0 sortie=28/28 skip=28/28
+SOFT options pt@340x200 over=0 maxH=191px fitH=191 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=65 short=true
+ok pause pt@340x200 over=0 cta=24/24 quit=24/24 opt=24/24 mute=24/24 gap=2px btnMinH=24px
+ok result pt@340x200 over=0 cta=24/24 title=24/24
+ok select pt@340x200 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial pt@340x200 over=0 sortie=28/28 skip=28/28
+SOFT options es@340x200 over=0 maxH=191px fitH=191 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=61 short=true
+ok pause es@340x200 over=0 cta=24/24 quit=24/24 opt=24/24 mute=24/24 gap=2px btnMinH=24px
+ok result es@340x200 over=0 cta=24/24 title=24/24
+ok select es@340x200 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial es@340x200 over=0 sortie=28/28 skip=28/28
+SOFT options zh-Hant@340x200 over=0 maxH=191px fitH=191 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=61 short=true
+SOFT options ja@340x200 over=0 maxH=191px fitH=191 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=59 short=true
+ok pause ja@340x200 over=0 cta=26/26 quit=26/26 opt=26/26 mute=26/26 gap=2px btnMinH=24px
+ok result ja@340x200 over=0 cta=24/24 title=24/24
+ok select ja@340x200 over=0 cta=30/30 opt=30/30 backOut=false
+ok tutorial ja@340x200 over=0 sortie=28/28 skip=28/28
+SOFT options ko@342x220 over=0 maxH=192px fitH=192 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=62 short=true
+ok pause ko@342x220 over=0 cta=26/26 quit=26/26 opt=26/26 mute=26/26 gap=2px btnMinH=24px
+ok result ko@342x220 over=0 cta=23/24 title=24/24
+ok select ko@342x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ko@342x220 over=0 sortie=28/28 skip=28/28
+SOFT options en@342x220 over=0 maxH=192px fitH=192 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=66 short=true
+SOFT options ru@342x220 over=0 maxH=192px fitH=192 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=62 short=true
+ok pause ru@342x220 over=0 cta=26/26 quit=26/26 opt=26/26 mute=26/26 gap=2px btnMinH=24px
+ok result ru@342x220 over=0 cta=23/24 title=24/24
+ok select ru@342x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ru@342x220 over=0 sortie=28/28 skip=28/28
+SOFT options pt@342x220 over=0 maxH=192px fitH=192 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=66 short=true
+ok pause pt@342x220 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result pt@342x220 over=0 cta=24/24 title=24/24
+ok select pt@342x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial pt@342x220 over=0 sortie=28/28 skip=28/28
+SOFT options es@342x220 over=0 maxH=192px fitH=192 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=62 short=true
+ok pause es@342x220 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result es@342x220 over=0 cta=24/24 title=24/24
+ok select es@342x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial es@342x220 over=0 sortie=28/28 skip=28/28
+SOFT options zh-Hant@342x220 over=0 maxH=192px fitH=192 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=66 short=true
+SOFT options ja@342x220 over=0 maxH=192px fitH=192 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=60 short=true
+ok pause ja@342x220 over=0 cta=26/26 quit=26/26 opt=26/26 mute=26/26 gap=2px btnMinH=24px
+ok result ja@342x220 over=0 cta=23/24 title=24/24
+ok select ja@342x220 over=0 cta=30/30 opt=30/30 backOut=false
+ok tutorial ja@342x220 over=0 sortie=28/28 skip=28/28
+ok options ko@380x220 over=0 maxH=213px fitH=213 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=82 short=true
+ok pause ko@380x220 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ko@380x220 over=0 cta=28/28 title=28/28
+ok select ko@380x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ko@380x220 over=0 sortie=45/45 skip=46/46
+ok options en@380x220 over=0 maxH=213px fitH=213 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=87 short=true
+ok options ru@380x220 over=0 maxH=213px fitH=213 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=82 short=true
+ok pause ru@380x220 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ru@380x220 over=0 cta=28/28 title=28/28
+ok select ru@380x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ru@380x220 over=0 sortie=45/45 skip=46/46
+ok options pt@380x220 over=0 maxH=213px fitH=213 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=87 short=true
+ok pause pt@380x220 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result pt@380x220 over=0 cta=28/28 title=28/28
+ok select pt@380x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial pt@380x220 over=0 sortie=44/44 skip=44/44
+ok options es@380x220 over=0 maxH=213px fitH=213 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=83 short=true
+ok pause es@380x220 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result es@380x220 over=0 cta=28/28 title=28/28
+ok select es@380x220 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial es@380x220 over=0 sortie=44/44 skip=44/44
+ok options zh-Hant@380x220 over=0 maxH=213px fitH=213 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=83 short=true
+ok options ja@380x220 over=0 maxH=213px fitH=213 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=81 short=true
+ok pause ja@380x220 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ja@380x220 over=0 cta=28/28 title=28/28
+ok select ja@380x220 over=0 cta=30/30 opt=30/30 backOut=false
+ok tutorial ja@380x220 over=0 sortie=45/45 skip=46/46
+ok options ko@390x240 over=0 maxH=219px fitH=219 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=89 short=true
+ok pause ko@390x240 over=0.72 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ko@390x240 over=0 cta=28/28 title=28/28
+ok select ko@390x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ko@390x240 over=0 sortie=45/45 skip=46/46
+ok options en@390x240 over=0 maxH=219px fitH=219 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=93 short=true
+ok options ru@390x240 over=0 maxH=219px fitH=219 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=88 short=true
+ok pause ru@390x240 over=0.72 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ru@390x240 over=0 cta=28/28 title=28/28
+ok select ru@390x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ru@390x240 over=0 sortie=45/45 skip=46/46
+ok options pt@390x240 over=0 maxH=219px fitH=219 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=93 short=true
+ok pause pt@390x240 over=0.72 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result pt@390x240 over=0 cta=28/28 title=28/28
+ok select pt@390x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial pt@390x240 over=0 sortie=44/44 skip=44/44
+ok options es@390x240 over=0 maxH=219px fitH=219 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=93 short=true
+ok pause es@390x240 over=0.72 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result es@390x240 over=0 cta=28/28 title=28/28
+ok select es@390x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial es@390x240 over=0 sortie=44/44 skip=44/44
+ok options zh-Hant@390x240 over=0 maxH=219px fitH=219 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=93 short=true
+ok options ja@390x240 over=0 maxH=219px fitH=219 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=87 short=true
+ok pause ja@390x240 over=0.72 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ja@390x240 over=0 cta=28/28 title=28/28
+ok select ja@390x240 over=0 cta=30/30 opt=30/30 backOut=false
+ok tutorial ja@390x240 over=0 sortie=45/45 skip=46/46
+ok options ko@400x225 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok pause ko@400x225 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ko@400x225 over=0 cta=28/28 title=28/28
+ok select ko@400x225 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ko@400x225 over=0 sortie=45/45 skip=46/46
+ok options en@400x225 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok options ru@400x225 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=45/45 scrollH=96 short=true
+ok pause ru@400x225 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ru@400x225 over=0 cta=28/28 title=28/28
+ok select ru@400x225 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ru@400x225 over=0 sortie=45/45 skip=46/46
+ok options pt@400x225 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok pause pt@400x225 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result pt@400x225 over=0 cta=28/28 title=28/28
+ok select pt@400x225 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial pt@400x225 over=0 sortie=44/44 skip=44/44
+ok options es@400x225 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=99 short=true
+ok pause es@400x225 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result es@400x225 over=0 cta=28/28 title=28/28
+ok select es@400x225 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial es@400x225 over=0 sortie=44/44 skip=44/44
+ok options zh-Hant@400x225 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok options ja@400x225 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=93 short=true
+ok pause ja@400x225 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ja@400x225 over=0 cta=28/28 title=28/28
+ok select ja@400x225 over=0 cta=30/30 opt=30/30 backOut=false
+ok tutorial ja@400x225 over=0 sortie=45/45 skip=46/46
+ok options ko@400x255 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok pause ko@400x255 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ko@400x255 over=0 cta=28/28 title=28/28
+ok select ko@400x255 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ko@400x255 over=0 sortie=45/45 skip=46/46
+ok options en@400x255 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok options ru@400x255 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok pause ru@400x255 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ru@400x255 over=0 cta=28/28 title=28/28
+ok select ru@400x255 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ru@400x255 over=0 sortie=45/45 skip=46/46
+ok options pt@400x255 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=99 short=true
+ok pause pt@400x255 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result pt@400x255 over=0 cta=28/28 title=28/28
+ok select pt@400x255 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial pt@400x255 over=0 sortie=44/44 skip=44/44
+ok options es@400x255 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=99 short=true
+ok pause es@400x255 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result es@400x255 over=0 cta=28/28 title=28/28
+ok select es@400x255 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial es@400x255 over=0 sortie=44/44 skip=44/44
+ok options zh-Hant@400x255 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=95 short=true
+ok options ja@400x255 over=0 maxH=225px fitH=225 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=93 short=true
+ok pause ja@400x255 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ja@400x255 over=0 cta=28/28 title=28/28
+ok select ja@400x255 over=0 cta=30/30 opt=30/30 backOut=false
+ok tutorial ja@400x255 over=0 sortie=45/45 skip=46/46
+ok options ko@420x240 over=0 maxH=236px fitH=236 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=105 short=true
+ok pause ko@420x240 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ko@420x240 over=0 cta=28/28 title=28/28
+ok select ko@420x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ko@420x240 over=0 sortie=45/45 skip=46/46
+ok options en@420x240 over=0 maxH=236px fitH=236 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=110 short=true
+ok options ru@420x240 over=0 maxH=236px fitH=236 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=105 short=true
+ok pause ru@420x240 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ru@420x240 over=0 cta=28/28 title=28/28
+ok select ru@420x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial ru@420x240 over=0 sortie=45/45 skip=46/46
+ok options pt@420x240 over=0 maxH=236px fitH=236 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=110 short=true
+ok pause pt@420x240 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result pt@420x240 over=0 cta=28/28 title=28/28
+ok select pt@420x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial pt@420x240 over=0 sortie=44/44 skip=44/44
+ok options es@420x240 over=0 maxH=236px fitH=236 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=110 short=true
+ok pause es@420x240 over=0 cta=30/30 quit=30/30 opt=30/30 mute=30/30 gap=4px btnMinH=0px
+ok result es@420x240 over=0 cta=28/28 title=28/28
+ok select es@420x240 over=0 cta=28/28 opt=28/28 backOut=false
+ok tutorial es@420x240 over=0 sortie=44/44 skip=44/44
+ok options zh-Hant@420x240 over=0 maxH=236px fitH=236 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=106 short=true
+ok options ja@420x240 over=0 maxH=236px fitH=236 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=104 short=true
+ok pause ja@420x240 over=0 cta=32/32 quit=32/32 opt=32/32 mute=32/32 gap=4px btnMinH=0px
+ok result ja@420x240 over=0 cta=28/28 title=28/28
+ok select ja@420x240 over=0 cta=30/30 opt=30/30 backOut=false
+ok tutorial ja@420x240 over=0 sortie=45/45 skip=46/46
+ok options ko@667x375 over=0 maxH=345px fitH=375 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=212 short=false
+ok pause ko@667x375 over=0 cta=45/45 quit=46/46 opt=46/46 mute=46/46 gap=10px btnMinH=44px
+ok options en@667x375 over=0 maxH=345px fitH=375 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=217 short=false
+ok options ru@667x375 over=0 maxH=345px fitH=375 inflated=false health=0 ctaOut=false ctaVis=46/46 scrollH=212 short=false
+ok pause ru@667x375 over=0 cta=45/45 quit=46/46 opt=66/66 mute=66/66 gap=10px btnMinH=44px
+ok options pt@667x375 over=0 maxH=345px fitH=375 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=217 short=false
+ok pause pt@667x375 over=0 cta=44/44 quit=44/44 opt=44/44 mute=44/44 gap=10px btnMinH=44px
+ok options es@667x375 over=0 maxH=345px fitH=375 inflated=false health=0 ctaOut=false ctaVis=44/44 scrollH=217 short=false
+ok pause es@667x375 over=0 cta=44/44 quit=44/44 opt=44/44 mute=44/44 gap=10px btnMinH=44px
+ok options zh-Hant@667x375 over=0 maxH=345px fitH=375 inflated=false health=0 ctaOut=false ctaVis=45/45 scrollH=214 short=false
+ok options ja@667x375 over=0 maxH=345px fitH=375 inflated=false health=0 ctaOut=false ctaVis=48/48 scrollH=210 short=false
+ok pause ja@667x375 over=0 cta=45/45 quit=46/46 opt=46/46 mute=46/46 gap=10px btnMinH=44px
+
+=== B) Asset-error + Loading @ cliff (real markup) ===
+ok AE ru@340x200 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD ru@340x200 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@340x200 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD pt@340x200 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@340x200 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD es@340x200 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@340x200 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD ko@340x200 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@340x200 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=40/40
+ok LD ja@340x200 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ru@342x220 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD ru@342x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@342x220 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD pt@342x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@342x220 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD es@342x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@342x220 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=36/36
+ok LD ko@342x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@342x220 over=0 h2=17.5/17.5 msg=46/46 retry=36/36 sel=40/40
+ok LD ja@342x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ru@380x220 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD ru@380x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@380x220 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD pt@380x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@380x220 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD es@380x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@380x220 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD ko@380x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@380x220 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=48/48
+ok LD ja@380x220 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ru@390x240 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD ru@390x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@390x240 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD pt@390x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@390x240 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD es@390x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@390x240 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=44/44
+ok LD ko@390x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@390x240 over=0 h2=17.5/17.5 msg=32/32 retry=44/44 sel=48/48
+ok LD ja@390x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ru@400x225 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ru@400x225 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@400x225 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD pt@400x225 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@400x225 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD es@400x225 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@400x225 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ko@400x225 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@400x225 over=0 h2=39/39 msg=32/32 retry=44/44 sel=48/48
+ok LD ja@400x225 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ru@400x255 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ru@400x255 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@400x255 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD pt@400x255 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@400x255 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD es@400x255 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@400x255 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ko@400x255 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@400x255 over=0 h2=39/39 msg=32/32 retry=44/44 sel=48/48
+ok LD ja@400x255 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ru@420x240 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ru@420x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@420x240 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD pt@420x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@420x240 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD es@420x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@420x240 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ko@420x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@420x240 over=0 h2=39/39 msg=32/32 retry=44/44 sel=48/48
+ok LD ja@420x240 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ru@667x375 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ru@667x375 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE pt@667x375 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD pt@667x375 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE es@667x375 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD es@667x375 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ko@667x375 over=0 h2=32/32 msg=32/32 retry=44/44 sel=44/44
+ok LD ko@667x375 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+ok AE ja@667x375 over=0 h2=39/39 msg=32/32 retry=44/44 sel=48/48
+ok LD ja@667x375 over=0 lab=20.14/20.14 track=14/14 meta=16/16 clips=false/false/false
+
+=== C) Rotate-card portrait extremes ===
+HARD rotate ko@360x640 present=true over=10.89 vis=202.5/224.3
+HARD rotate pt@360x640 present=true over=32.97 vis=202.5/268.4
+HARD rotate ru@360x640 present=true over=45.03 vis=202.5/292.6
+HARD rotate es@360x640 present=true over=10.89 vis=202.5/224.3
+HARD rotate ja@360x640 present=true over=23.47 vis=202.5/249.4
+HARD rotate en@360x640 present=true over=22.89 vis=202.5/248.3
+HARD rotate zh-Hant@360x640 present=true over=13.39 vis=202.5/229.3
+ok rotate ko@400x700 present=true over=0 vis=224.3/224.3
+HARD rotate pt@400x700 present=true over=21.72 vis=225/268.4
+HARD rotate ru@400x700 present=true over=33.78 vis=225/292.6
+ok rotate es@400x700 present=true over=0 vis=224.3/224.3
+HARD rotate ja@400x700 present=true over=12.22 vis=225/249.4
+ok rotate en@400x700 present=true over=0 vis=224.3/224.3
+HARD rotate zh-Hant@400x700 present=true over=2.14 vis=225/229.3
+
+=== D) pause→OPTIONS LATENT spot ===
+SOFT pause→opt ru@340x200 inflated=false health=0 cta=46/46 scrollH=60
+SOFT pause→opt pt@340x200 inflated=false health=0 cta=44/44 scrollH=65
+SOFT pause→opt es@340x200 inflated=false health=0 cta=44/44 scrollH=65
+ok pause→opt ru@390x240 inflated=false health=0 cta=46/46 scrollH=88
+ok pause→opt pt@390x240 inflated=false health=0 cta=44/44 scrollH=93
+ok pause→opt es@390x240 inflated=false health=0 cta=44/44 scrollH=93
+ok pause→opt ru@400x255 inflated=false health=0 cta=46/46 scrollH=94
+ok pause→opt pt@400x255 inflated=false health=0 cta=44/44 scrollH=99
+ok pause→opt es@400x255 inflated=false health=0 cta=44/44 scrollH=99
+
+SUMMARY hard=11 soft=17 ok=276 optionsHealthLive=0
+HARD DETAIL:
+  rotate ko@360x640 over=10.89 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate pt@360x640 over=32.97 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate ru@360x640 over=45.03 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate es@360x640 over=10.89 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate ja@360x640 over=23.47 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate en@360x640 over=22.89 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate zh-Hant@360x640 over=13.39 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate pt@400x700 over=21.72 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate ru@400x700 over=33.78 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate ja@400x700 over=12.22 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+  rotate zh-Hant@400x700 over=2.14 inflated=false ctaOut=undefined ctaVis=undefined/undefined secOut=false health=0 retryOut=false selectOut=false labClip=false unread=true
+SOFT DETAIL (first 32):
+  options ko@340x200 over=0 scrollH=60 health=0
+  options en@340x200 over=0 scrollH=65 health=0
+  options ru@340x200 over=0 scrollH=62 health=0
+  options pt@340x200 over=0 scrollH=65 health=0
+  options es@340x200 over=0 scrollH=61 health=0
+  options zh-Hant@340x200 over=0 scrollH=61 health=0
+  options ja@340x200 over=0 scrollH=59 health=0
+  options ko@342x220 over=0 scrollH=62 health=0
+  options en@342x220 over=0 scrollH=66 health=0
+  options ru@342x220 over=0 scrollH=62 health=0
+  options pt@342x220 over=0 scrollH=66 health=0
+  options es@342x220 over=0 scrollH=62 health=0
+  options zh-Hant@342x220 over=0 scrollH=66 health=0
+  options ja@342x220 over=0 scrollH=60 health=0
+  pause→opt ru@340x200 over=0 scrollH=60 health=0
+  pause→opt pt@340x200 over=0 scrollH=65 health=0
+  pause→opt es@340x200 over=0 scrollH=65 health=0

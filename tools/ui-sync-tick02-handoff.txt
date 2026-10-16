@@ -1,0 +1,104 @@
+UI SYNC TICK 02 — Web vs Valofe NewUI (honest score)
+Date: 2026-10-05
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+Unity src: E:\LAO\Google_QA\Assets\AssetBundleResource\Valofe_NewUi\resourece\
+Prior: tools/ui-sync-tick01-handoff.txt
+
+================================================================
+HONEST SYNC SCORE (harsh rubric → weighted ~equal)
+================================================================
+Axis                 Before  After   Notes
+-------------------- ------- ------- ------------------------------------------
+Chrome / assets        62%    74%    +8 SelectWorld event cards + 3 MissORCA
+                                     titles wired; 21 Event_Btn still unused;
+                                     Atlas/NewUI.png still unused
+Layout language        58%    60%    HARD axes kept; select cards drop CSS
+                                     chamfer (Unity frame); still mini-overlay
+                                     not full LAO lobby
+Typography             40%    58%    MissORCA PNG hero + brass caption under
+                                     logo; mint dual-stroke H1 demoted; CONTROLS
+                                     / dossier tip toward brass — no LAO font
+                                     file; English system labels remain
+Combat HUD             48%    48%    Sparse by design (no Top_Bg fill) — correct
+                                     constraint; unchanged this tick
+Menu/select/pause/
+result/loading feel    64%    74%    Select cards now read as LAO event chrome;
+                                     title lobby gains recognizable MissORCA
+                                     brand; result/pause/load carry tick01
+
+OVERALL (harsh):  BEFORE ≈ 56%   →   AFTER ≈ 65%
+≥80% yet?  NO.  Select still short of full Event_Btn set; Atlas unused;
+lobby composition + remaining CSS plates keep score under 80.
+
+Rubric honesty: tick01 OfflineBattle/SideStory lift carried; this tick's
+gain is concentrated on title brand + select card chrome. Do not claim
+80 until remaining Event_Btn / Atlas / broader plate cutback land.
+
+================================================================
+SHIPPED THIS TICK
+================================================================
+Copied → assets/ui/newui/ (11 PNGs):
+  SelectWorld_Event_Btn/SelectWorld_Event_01.png    ~454 KB
+  SelectWorld_Event_Btn/SelectWorld_Event_02.png    ~413 KB
+  SelectWorld_Event_Btn/SelectWorld_Event_09.png    ~442 KB
+  SelectWorld_Event_Btn/SelectWorld_Event_10.png    ~429 KB
+  SelectWorld_Event_Btn/SelectWorld_Event_15.png    ~330 KB
+  SelectWorld_Event_Btn/SelectWorld_Event_16.png    ~419 KB
+  SelectWorld_Event_Btn/SelectWorld_Event_24.png    ~423 KB
+  SelectWorld_Event_Btn/SelectWorld_Event_26.png    ~435 KB
+  MissORCA7_Tittle_kr.png                           ~104 KB
+  MissORCA7_Tittle_jp.png                            ~98 KB
+  MissORCA7_Tittle_tw.png                            ~96 KB
+Local newui PNG count: 44 → 55
+
+CSS (append "UI SYNC TICK02" after TICK01):
+  title-hero::before → MissORCA locale art (kr default; ja→jp;
+                       zh-Hant/zh-Hans→tw) height-clamped
+  screen-title h1    → brass caption under logo (mint dual-stroke demoted)
+  char-card ×8       → SelectWorld_Event_{01,02,09,10,15,16,24,26}
+                       nth-child washes; clip-path:none (Unity chamfer)
+  selected cards     → keep event art + mint wash (no world.png swap)
+  select-dossier /
+  select-actions /
+  select-dossier-hint /
+  lobby-chip         → clip-path:none (CSS chamfer cutback)
+  keys-head / HI /
+  dossier-name       → brass-leaning tracking/shadow (fitH untouched)
+  @max-height:420px  → MissORCA densify 40px; card focus center 30%
+
+JS (js/newui-assets.js SLICES preload):
+  selectWorld01/02/09/10/15/16/24/26,
+  missOrcaTitleKr/Jp/Tw
+
+No HTML markup changes. No combat HUD / pad / gauge dim changes.
+Hirume sunbird + Constantia kits NOT touched.
+5m loop NOT re-armed (parent shell 162101 owns it).
+
+================================================================
+INTENTIONALLY LEFT / STILL CSS-HEAVY
+================================================================
+  SelectWorld_Event_Btn remaining ~21 PNGs (03–08,11–14,17–23,25,27–29 + _)
+  Atlas/NewUI.png / NewMissorca.png — need slice map
+  Many non-select plates still Box2-tile + cyan rim invention
+  Combat HUD — sparse by constraint
+  Full lobby composition still mini-overlay vs Valofe lobby
+
+================================================================
+PATH TO ≥80% (next ticks — parent owns 5m loop)
+================================================================
+1) Wire more SelectWorld Event_Btn (aim 12–16 total on cards/rails)
+2) Atlas slice map OR more Popup/Title_Deco plates replacing cyan rim
+3) Broader chamfer/grad cutback on pause/options/result residual plates
+4) Typography: keep MissORCA; optional LAO-weight on brand-marks only
+5) Keep combat HUD sparse; never Top_Bg fill
+6) Re-score harshly; refuse 80+ until select+title+plates read LAO
+
+================================================================
+PRESERVED / DO NOT
+================================================================
+  - i18n 8 langs, fitH, CTA-health, letterbox, short-landscape HUD
+  - No AI images; no shot-kit (Hirume/Constantia) edits this tick
+  - No pad/gauge dimension changes; no Top_Bg combat fill
+  - Do NOT re-arm 5m loop here (parent owns it)
+  - Existing features not deleted
+

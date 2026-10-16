@@ -1,0 +1,42 @@
+﻿{
+  "method": {
+    "env": "Playwright Chromium + tools/static-server.mjs",
+    "progressive": "title manifests+BG ??select base roster ??sortie stage1+pilot; later acts prefetch",
+    "eager": "same title/select, then ?eager=1 loads ALL players+enemies before field opens",
+    "transfer": "Performance Resource Timing transferSize (fallback encodedBodySize) for /assets/*",
+    "memory": "performance.memory.usedJSHeapSize at sortie-ready (Chromium)"
+  },
+  "results": [
+    {
+      "label": "progressive",
+      "titleMs": 1346,
+      "selectMs": 5322,
+      "sortieMs": 8958,
+      "mode": "progressive",
+      "transferBytes": 50430695,
+      "heapBytes": 10000000,
+      "assetRequests": 1075,
+      "audio404": 0,
+      "clips": 9,
+      "frames": 994
+    },
+    {
+      "label": "eager",
+      "titleMs": 789,
+      "selectMs": 4391,
+      "sortieMs": 38277,
+      "mode": "eager",
+      "transferBytes": 50430494,
+      "heapBytes": 10000000,
+      "assetRequests": 2821,
+      "audio404": 0,
+      "clips": 26,
+      "frames": 2724
+    }
+  ],
+  "comparison": {
+    "sortieMsDelta": 29319,
+    "transferDelta": -201,
+    "heapDelta": 0
+  }
+}

@@ -1,0 +1,96 @@
+TITLE SKY + GRIFFIN ART — HAND OFF
+Date: 2026-10-06
+Workspace: E:\Test_Ban\2_LAO_MINI_ACTION
+
+================================================================
+GOAL
+================================================================
+Title screen: user-provided storm sky as full-bleed background + real
+LAO Griffin (P/A-00 / BR_PA00EL) illustration on the RIGHT. Keep one-line
+"LAO SHOOTING GAME", arcade START/OPTIONS (NewUI buttons), no CONTROLS
+junk, no MissORCA, no fake lobby chips, no AI-invented art.
+
+================================================================
+ASSETS USED
+================================================================
+Sky (user attach → project):
+  assets/ui/title-sky-storm.jpg
+  ← Cursor attach image-c90a6c80-d8f3-4b77-97e1-d2aeca465df0.jpg
+
+Griffin (real LAO FullbodyImg / Dialog plate — NOT FormationIcon square):
+  assets/ui/title-griffin-pa00.png
+  ← E:\LAO\Google_QA\Assets\AssetBundleResourceSub\Texture\FullbodyImg\
+      2DModel_BR_PA00EL_Dialog010101.png
+    (1072×1157, transparent PNG, waist-up Dialog / standing plate)
+
+Alternatives considered (not copied):
+  Texture/CutImg/2DModel_BR_PA00EL_Dialog010101.png — 2048² but black
+    lower mask blob (worse for overlay)
+  Texture/face/BR_PA00EL_Commu/BR_PA00EL_Commu_Idle.png — framed bust
+  Texture/FormationIcon/FormationIcon_BR_PA00EL_N.png — square roster
+
+================================================================
+JS (js/main.js)
+================================================================
+- clearTitleStageArt() — removes .title-stage-art + #overlay.is-title-art
+- showOverlay: non-title screens call clearTitleStageArt(); title adds
+  class is-title-art
+- hideOverlay: clears stage art
+- showTitle: after overlay HTML, appends
+    <div class="title-stage-art" aria-hidden="true">
+      <img class="title-griffin" src="assets/ui/title-griffin-pa00.png" …>
+    </div>
+  on #overlay (sibling of #overlay-content) so Griffin can sit full-bleed
+  right without panel overflow:hidden clipping.
+- Lobby rails / foot HTML kept (rails hidden via CSS). Status/chips/hiscore
+  stay deleted. MissORCA not restored.
+
+================================================================
+CSS HOOKS (style.css — end block "TITLE SKY + GRIFFIN ART")
+================================================================
+#overlay.is-title-art
+  — flex-start + left pad so menu sits left of Griffin
+
+#overlay.is-title-art .overlay-veil
+  — full-bleed title-sky-storm.jpg + L→R / bottom readability washes
+
+#overlay.is-title-art .title-stage-art
+  — absolute inset 0, z-index 2, pointer-events none
+
+#overlay.is-title-art .title-griffin
+  — right/bottom contain, max-width ~46%, drop-shadow
+
+#overlay.is-title-art #overlay-content.screen-title
+  — translucent left→right gradient wash (overrides opaque Ranking plate
+    for title-art only); z-index 4; width ≤560px
+
+#overlay.is-title-art … > .lobby-rail / .lobby-rail-right
+  — display:none (tucked; HTML remains)
+
+… .title-actions
+  — opaque Sub plate so START/OPTIONS stay readable over horizon
+
+Responsive:
+  max-height:420 / max-width:640 → smaller / opacity 0.82 Griffin
+  max-height:340 / max-width:480 → opacity 0.35 + scale
+  max-width:400 AND max-height:300 → Griffin hidden
+
+Kept: .title-main nowrap, arcade .is-menu-focus, NewUI world buttons.
+
+================================================================
+FILES
+================================================================
+  assets/ui/title-sky-storm.jpg
+  assets/ui/title-griffin-pa00.png
+  js/main.js
+  css/style.css
+  tools/title-sky-griffin-handoff.txt
+
+================================================================
+DO NOT
+================================================================
+Do not invent AI Griffin/sky art.
+Do not restore MissORCA title logos.
+Do not restore CONTROLS / status chips / HI-SCORE title chrome.
+Do not delete START/OPTIONS or break select 2D nav / HARD layout gates
+beyond the soft Griffin fade/hide above.

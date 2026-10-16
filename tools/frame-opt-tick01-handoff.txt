@@ -1,0 +1,88 @@
+LAO MINI ACTION — frame-opt LOOP TICK 01 handoff
+================================================
+Date: 2026-10-04
+Goal: raise combat frame rate; target honest ~55+ avg without feature deletion.
+UI layout scans: NOT restarted. UI≈79 / VFX dens≈69 unchanged. dens FROZEN.
+
+Prior baseline (tools/perf-2026-10-04-handoff.txt)
+-------------------------------------------------
+pc-960 SORTIE 16s: avg 30.83  min 5.46  p95 66.6ms  max dt 183.3ms  >100ms 2
+  other pass avg 43.09 min 5.45
+mobile-412 16s: avg 39.84  min 14.99  p95 50.0ms
+  other pass avg 56.54
+Frame scores ~52 PC / ~62 mobile-like. Memory 76–78. Heap OK.
+
+Hot-path findings
+-----------------
+Combat rAF: game.update + game.draw every frame (main.js loop).
+Proven every-frame costs (not HOLD dens):
+  1. _updateHud always ctx.measureText + font swap + t()/[...str] for #sp-status
+  2. draw() measureText for STAGE plate every frame
+  3. drawStageBackground createLinearGradient + createRadialGradient every frame
+  4. prefersLightFx() → matchMedia('(pointer: coarse)') from VFX/bomb/trail ticks
+  5. setPadHints allocated a new hints object every HUD tick
+NOT shipped: skip clearRect (needed untranslated under shake), dens cuts,
+pause skip-draw (changes pause look), WebGL DPR, city motes, shadowBlur on
+P-carrier (visual telegraph; no load in this SORTIE window).
+
+Shipped (minimal cache / reuse — behavior same)
+-----------------------------------------------
+- js/game.js: cache SP status i18n+measureText until text/locale/level changes
+  (Tick117 measure-then-grow + [...tracking] retained on cache miss)
+  cache STAGE label width; reuse pad-hint scratch object
+- js/touch-controls.js: compare pad hints without allocating `next` each call
+- js/stage-background.js: reuse CanvasGradient edge+vignette per ctx/grade
+- js/mobile.js: cache coarse/narrow/light/portrait; refresh on resize/MQ change
+
+NOT shipped / reverted
+----------------------
+- enemy.js shadowBlur → layered stroke: reverted (look change, unproven here)
+
+Re-measure (Playwright headless, same Hirume/invuln/autoPlay/mute SORTIE)
+------------------------------------------------------------------------
+tools/measure-frame-opt-tick01.mjs → tools/frame-opt-tick01-raw.json
+
+pc-960 16s combat:
+  avg 30.23  min 11.99  p95 66.6ms  max dt 83.4ms
+  hitches >33ms 165/427  >50ms 37  >100ms 0
+  peaks: enemies 2, bullets 11, vfx 43, polish 13, legacy particles 0
+  canvas 960×540 buf 960×540 dpr1
+
+mobile-412×226 dpr2.5 8s combat (short viewport):
+  avg 50.64  min 20.00  p95 33.4ms  max dt 50.0ms
+  hitches >33ms 19/365  >50ms 0
+  canvas CSS 401.8×226 buf 703×396
+  Note: shorter window than baseline 16s; do not treat 50 vs 40 as a ship win.
+
+Honest FPS delta
+----------------
+PC avg ~30 vs ~31 baseline (other pass ~43): +0 avg. Still far from 55+.
+PC min 12 vs 5.5 and no >100ms hitch this run — headless variance; not claimed.
+Mobile short-window 51 sits between prior 40 and 56. Honest +0.
+
+Scores (not inflated)
+---------------------
+성능/프레임: PC ~52 / mobile-like ~62 (unchanged; combat not 60-locked)
+메모리: 76–78 (not re-scored; no leak hunt this tick)
+UI layout: ≈79  DO NOT claim 80+
+VFX dens:  ≈69  DO NOT claim 70+
+
+Preserved
+---------
+charge/hold C1–3, bombs, deathbomb, 5 stages, pads, i18n,
+STAGE START/CLEAR, WARNING, HOLD identities
+(sunbird/sightbeam/dragonaxe/shell/jupiterorb/coffinwall/plasmaslash).
+dens FROZEN.
+
+Next tick
+---------
+Fill-rate still dominates PC 960 (opaque bg wash×N + city strokes + WebGL overlay
+on SwiftShader). Need a proven fill-rate win that does not change look, or
+headed-GPU numbers. Do not cut dens or ceremony cards.
+
+Korean-ready user summary
+-------------------------
+전투 프레임 최적화 1틱입니다. HUD 글자 측정·i18n, 배경 그라디언트, matchMedia를
+매 프레임 두던 비용을 캐시했습니다. 기능/HOLD/파티클 밀도는 안 건드렸습니다.
+헤드리스 재측정 PC 960 전투 평균 FPS 30(이전 31, 다른 패스 43)이라 평균은
+정직하게 +0입니다. 목표 55+는 아직입니다. UI 79·VFX 69 그대로입니다.

@@ -1,0 +1,165 @@
+TICK29 handoff (2026-10-04) — WARNING / midboss pulse readability (HOLD dens/side untouched)
+
+======================================================================
+
+
+
+PRESERVE (do not break)
+
+- Power max Lv5, death→power reset, START/CLEAR ceremony, WARNING,
+
+  hold multi-shot split, i18n, pads, progressive load, Constantia die eyes.
+
+- Autofire fireRate ×2 delay (user halved cadence) — do NOT revert.
+
+- No AI images — only assets/ui/newui + canvas sampling of those slices.
+
+- Combat HUD sparse: Tap1 on power-badge only; never Top_Bg full fill on hud-top.
+
+- Hold-FIRE: HUD gauge + front muzzle only (no behind-body gather orbs).
+
+- Hold identities stay per-character (NOT homing/laser duality):
+
+    hirume phoenix fan · constantia lance · lrl returning axe · merlin artillery
+
+    fafnir thunder cloud · eternity HMG volley · labiata crescent · emily railspike
+
+- Still exactly 8 hold kinds (fan / lance / axe / arty / cloud / hmg / crescent / spike).
+
+- No return to geometric shapes (gears / zigzags / polygons / cross/slash marks).
+
+- Enemy bullet dark under-rim + tip core + skipHalo outline (tick20) — keep.
+
+- Player-hit cool-white/rose shatter sparks (tick21) — keep.
+
+- Bomb soft-remap density + cast budget 260/520 (tick22) — keep.
+
+- Graze stretch glitter + pickup soft-sprite chips (tick23) — keep.
+
+- C special muzzle stretch grit / white tip cores (tick24) — keep.
+
+- Deathbomb grace bloom + arc grit (tick25) — keep.
+
+- Option satellite soft trails (tick26) — keep.
+
+- Focus-mode bloom + orbit grit (tick27) — keep.
+
+- Rare fanfare soft orbit grit (tick28) — keep.
+
+
+
+
+THIS TICK — one focused win: WARNING / midboss pulse readability
+
+
+
+1) js/game.js · WARNING ceremony card (mid-windup / boss-windup)
+
+   - Mid vs boss palette split: mid brass/amber band (matches #boss-bar.is-mid);
+
+     boss hotter crimson. Distinct pulseRate (11 mid / 14 boss).
+
+   - Soft-sprite grit inside band: 8 elongated ellipses (stretch ≥1.55),
+
+     screen blend, white tip cores — no slash / X / polygon geometry.
+
+   - Dual stroke on WARNING glyph (dark outer + kind-tinted rim) so pulse
+
+     never washes the letterforms; MID / FINAL kind chip + subtitle retained.
+
+   - Ceremony set unchanged: WARNING + stage START + stage CLEAR only.
+
+   - HOLD dens/side/emit, bomb-vfx, NewUI menus, rare fanfare, graze/pickup,
+
+     player-hit, hostile rim, C muzzle, deathbomb grace, option trails,
+
+     focus-mode visuals — untouched.
+
+
+
+2) css/style.css · #boss-bar.is-mid .boss-frame
+
+   - Brass edge glow + midboss-frame-pulse alternate (readability during fight).
+
+   - is-mid tag / track / fill gradients retained.
+
+
+
+3) tools/qa-warning-midboss.mjs
+
+   - Asserts mid brass vs boss crimson, grit=8 stretch≥1.55 tips, dual stroke,
+
+     kind chip, midboss-frame-pulse CSS; ceremony set comment retained;
+
+     no geometry marks in WARNING block.
+
+
+
+4) Verify
+
+   - node tools/qa-warning-midboss.mjs PASS
+
+     midBrass+bossCrimson grit=8 stretch≥1.55 tips dualStroke+kindChip
+
+     midboss-frame-pulse ceremony set retained.
+
+   - node tools/qa-rare-fanfare.mjs · qa-focus-mode.mjs · qa-option-trails.mjs ·
+
+     qa-deathbomb-feedback.mjs · qa-special-muzzle.mjs · qa-graze-pickup.mjs ·
+
+     test-gameplay-design.mjs · test-basic-shots.mjs · test-weapon-roles.mjs PASS
+
+
+
+
+HONEST SCORE (do NOT claim polished / 70+)
+
+  UI  ≈ 75 (WARNING / midboss readability micro-pass; NewUI residual /
+
+            pause overlay still not the focus — menu destinations absent)
+
+  VFX ≈ 60 (WARNING band soft grit only — still soft-sprite / budget-capped;
+
+            combat particle stack unchanged; NOT client-grade sparks)
+
+  NEVER claim VFX 70 while particles remain soft-sprite / budget-capped.
+
+  Baseline recall: user VFX60 UI40 → UI above baseline; VFX stays in the
+
+  user 60 band — do not round up to 70.
+
+  Expectation band this pass: UI ~73-77, VFX ~58-62.
+
+
+
+
+NEXT TICK — open polish
+
+  1) Optional: NewUI residual (menu destinations still absent — do not fake lobby apps).
+
+  2) Or pause overlay polish (keep combat HUD sparse).
+
+  3) Keep combat HUD sparse; do not fill hud-top with Top_Bg.
+
+  4) HOLD dens/side/emit: only if a real muddy regression — no silhouette churn.
+
+  5) Do not revert fireRate ×2 / Lv5 / hold split / START/CLEAR / NewUI /
+
+     death power reset / per-character hold identities / soft-particle language /
+
+     enemy bullet rim/core / player-hit rose shatter / bomb cast budget 260/520 /
+
+     graze stretch glitter / pickup soft-sprite chips / C special muzzle stretch grit /
+
+     deathbomb grace bloom+arc grit / option satellite soft trails /
+
+     focus-mode bloom+orbit grit / rare fanfare soft orbit grit /
+
+     WARNING mid/boss palette + band grit + midboss-frame-pulse.
+
+
+
+
+Model: inherit
+
+Korean-ready: yes

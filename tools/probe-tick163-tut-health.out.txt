@@ -1,0 +1,28 @@
+=== SOFT tut ko@360x240 === {"panelOver":0,"maxH":"202px","maxHpx":202,"fitH":202,"inflated":false,"ocH":202,"appH":202.5,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":true}
+=== SOFT tut ru@360x240 === {"panelOver":0,"maxH":"202px","maxHpx":202,"fitH":202,"inflated":false,"ocH":202,"appH":202.5,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":true}
+=== ok tut pt@360x240 === {"panelOver":0,"maxH":"202px","maxHpx":202,"fitH":202,"inflated":false,"ocH":202,"appH":202.5,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut es@360x240 === {"panelOver":0,"maxH":"202px","maxHpx":202,"fitH":202,"inflated":false,"ocH":202,"appH":202.5,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut en@360x240 === {"panelOver":0,"maxH":"202px","maxHpx":202,"fitH":202,"inflated":false,"ocH":202,"appH":202.5,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== SOFT tut ko@360x200 === {"panelOver":0,"maxH":"200px","maxHpx":200,"fitH":200,"inflated":false,"ocH":200,"appH":200,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":true}
+=== SOFT tut ru@360x200 === {"panelOver":0,"maxH":"200px","maxHpx":200,"fitH":200,"inflated":false,"ocH":200,"appH":200,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":true}
+=== ok tut pt@360x200 === {"panelOver":0,"maxH":"200px","maxHpx":200,"fitH":200,"inflated":false,"ocH":200,"appH":200,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut es@360x200 === {"panelOver":0,"maxH":"200px","maxHpx":200,"fitH":200,"inflated":false,"ocH":200,"appH":200,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut en@360x200 === {"panelOver":0,"maxH":"200px","maxHpx":200,"fitH":200,"inflated":false,"ocH":200,"appH":200,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut ko@400x240 === {"panelOver":0,"maxH":"225px","maxHpx":225,"fitH":225,"inflated":false,"ocH":225,"appH":225,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":false}
+=== ok tut ru@400x240 === {"panelOver":0,"maxH":"225px","maxHpx":225,"fitH":225,"inflated":false,"ocH":225,"appH":225,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":false}
+=== ok tut pt@400x240 === {"panelOver":0,"maxH":"225px","maxHpx":225,"fitH":225,"inflated":false,"ocH":225,"appH":225,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut es@400x240 === {"panelOver":0,"maxH":"225px","maxHpx":225,"fitH":225,"inflated":false,"ocH":225,"appH":225,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut en@400x240 === {"panelOver":0,"maxH":"225px","maxHpx":225,"fitH":225,"inflated":false,"ocH":225,"appH":225,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== HARD tut ko@320x200 === {"panelOver":0,"maxH":"180px","maxHpx":180,"fitH":180,"inflated":false,"ocH":180,"appH":180,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":true,"secVis":32,"secH":46,"actionsOut":true}
+=== HARD tut ru@320x200 === {"panelOver":0,"maxH":"180px","maxHpx":180,"fitH":180,"inflated":false,"ocH":180,"appH":180,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":true,"secVis":32,"secH":46,"actionsOut":true}
+=== HARD tut pt@320x200 === {"panelOver":0,"maxH":"180px","maxHpx":180,"fitH":180,"inflated":false,"ocH":180,"appH":180,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":true,"secVis":36,"secH":44,"actionsOut":true}
+=== HARD tut es@320x200 === {"panelOver":0,"maxH":"180px","maxHpx":180,"fitH":180,"inflated":false,"ocH":180,"appH":180,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":true,"secVis":36,"secH":44,"actionsOut":true}
+=== HARD tut en@320x200 === {"panelOver":0,"maxH":"180px","maxHpx":180,"fitH":180,"inflated":false,"ocH":180,"appH":180,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":true,"secVis":36,"secH":44,"actionsOut":true}
+=== ok tut ko@480x288 === {"panelOver":0,"maxH":"270px","maxHpx":270,"fitH":270,"inflated":false,"ocH":270,"appH":270,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":false}
+=== ok tut ru@480x288 === {"panelOver":0,"maxH":"270px","maxHpx":270,"fitH":270,"inflated":false,"ocH":270,"appH":270,"ctaOut":false,"ctaVis":45,"ctaH":45,"secOut":false,"secVis":46,"secH":46,"actionsOut":false}
+=== ok tut pt@480x288 === {"panelOver":0,"maxH":"270px","maxHpx":270,"fitH":270,"inflated":false,"ocH":270,"appH":270,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut es@480x288 === {"panelOver":0,"maxH":"270px","maxHpx":270,"fitH":270,"inflated":false,"ocH":270,"appH":270,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+=== ok tut en@480x288 === {"panelOver":0,"maxH":"270px","maxHpx":270,"fitH":270,"inflated":false,"ocH":270,"appH":270,"ctaOut":false,"ctaVis":44,"ctaH":44,"secOut":false,"secVis":44,"secH":44,"actionsOut":false}
+
+SUMMARY hard=5 soft=4 ok=16 inflateFail=0 primaryHard@360=0
+NOTE: @320×200 skip clip after fitH clamp alone is deferred chrome ladder (not this ship).

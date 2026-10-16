@@ -1,0 +1,97 @@
+KIT LORE TICK 70 — HONEST +0 (NO SPAWN/VFX HOLE)
+Date: 2026-10-05
+Wiki: lastorigin.wiki.gg (no shmup bomb skill on any of the 8).
+Continuity: tick69 honest +0; leftover [] all 8. Re-probe only — no code churn.
+
+Fafnir KEEP: lightning + jupiterorb + teslacoil. Not empfield.
+Labiata KEEP: orbitblade + plasmaslash + plasmacross. Not swordlance.
+LRL KEEP: cleave + dragonaxe forward + cyclopsbeam. returnOwner:false.
+Eternity KEEP: coffinround + coffinwall + coffinmissile.
+Emily KEEP: railbeam + busterbeam. chargeEnabled:false → no HOLD / no railbolt spawn.
+Merlin KEEP: shell + commandmissile. Not orbital.
+Hirume KEEP (locked): foxflame + sunbird + sunseal. X flameward.
+Constantia KEEP (locked): tracer + lockround + bori. X sightbeam.
+
+LOCKED (untouched this tick — do not churn)
+  Hirume: foxflame + sunbird + sunseal. X 야타가라스 · 봉황 날개.
+  Constantia: tracer + lockround + bori. X 라이플 사격 · 발목 잡기.
+
+================================================================
+LIVE SCAN vs TICK69
+================================================================
+Tick6–69: honest +0, leftover [] all 8. Tick5 leftovers were docs/QA/unused palettes only.
+
+This tick re-ran tools/probe-kit-lore-live.mjs → LIVE_SORTIE_DUMP_OK.
+Static spawn scan (js/player.js, js/weapon-skills.js, js/special-skill-profiles.js):
+  No style spawn of flameward / sightbeam / empfield / xenoxcore / orbital / swordlance.
+  railbolt only in weapon-skills default charge branch; Emily chargeEnabled:false → never spawned
+    (weapon-skills.js early-return when chargeEnabled === false; assets.js emily.chargeEnabled:false).
+  HOLD_STYLE emily:railbolt is unused table only (not a live spawn).
+  No returnOwner:true. LRL HOLD dragonaxe still forward.
+  Emily HOLD still chargeEnabled:false (railbeam + busterbeam only).
+  Labiata C still parked plasma blooms (plasmacross). Not spear-nest / swordlance.
+  Merlin SHOT/HOLD shell; C commandmissile. Not orbital.
+  Eternity HOLD coffinwall (not coffinround table as hold spawn); C coffinmissile.
+  Fafnir C teslacoil (not empfield); HOLD jupiterorb.
+  Hirume HOLD sunbird (not flameward).
+HOLD_STYLE live: hirume sunbird, constantia lockround (not sightbeam),
+  eternity coffinwall (not coffinround). Emily HOLD_STYLE railbolt is unused.
+
+Rule: leftover [] → +0, stop shipping. No kit hole proven vs wiki this tick.
+Unused palettes/docs are NOT spawn holes.
+
+Wiki analog KEEP (not a leftover old style in SORTIE):
+  Merlin/Emily X: 1945 falling-cluster. Wiki has no bomb.
+  Merlin C commandmissile: UNREP support markers (not orbital).
+  LRL HOLD dragonaxe: forward, not returning.
+  Labiata SHOT orbitblade / HOLD plasmaslash / C plasmacross: A1/A2 area plasma (not swordlance).
+  Fafnir C teslacoil: Shock and Awe area electric (not empfield).
+  Eternity HOLD coffinwall: Coffin for Two nullify/DR; C coffinmissile RIP.
+  Emily: railbeam + busterbeam only; no HOLD spawn; no xenoxcore.
+  Constantia: tracer + lockround + bori matches Rifle Shot / Ankle Biter.
+  Hirume: sunbird HOLD + sunseal C (locked; A2 wiki is support analog).
+
+SHIPPED THIS TICK: none. Honest +0.
+Do not invent shots. Do not name-only. Do not spawn unused palettes.
+Do not start/re-arm 10m loop — parent loop 674151 already runs.
+
+================================================================
+LIVE SORTIE (probe-kit-lore-live.mjs → LIVE_SORTIE_DUMP_OK)
+================================================================
+hirume     foxflame + sunbird + sunseal     leftover []
+           card: 야타가라스 / 봉황 날개 / 야타가라스 정화 결계
+constantia tracer + lockround + bori        leftover []
+           card: 라이플 사격 / 라이플 강사격 / 발목 잡기
+lrl        cleave + dragonaxe + cyclopsbeam leftover []
+           card: 어둠의 도끼 / 어둠의 도끼 / 사이클롭스 영원의 광선
+merlin     shell + commandmissile           leftover []
+           card: 빅 건 / 빅 건 강사격 / UNREP 전술 지원
+fafnir     lightning + jupiterorb + teslacoil leftover []
+           card: 흐로티 / 주피터 뇌운장 / 쇼크 앤 오
+eternity   coffinround + coffinwall + coffinmissile leftover []
+           card: 보모의 기관총 / 두 사람을 위한 관 / 편히 잠드소서
+labiata    orbitblade + plasmaslash + plasmacross leftover []
+           card: 백화난만 / 백화난만 / 백화제방
+emily      railbeam + busterbeam            leftover []
+           card: 레일건 사격 / 버스터 캐논 (no HOLD)
+
+================================================================
+GAP LIST
+================================================================
+Proven spawn/VFX leftover: []
+
+Soft / out of scope (docs, analog, unused tables — playtest-soft):
+- ORIGINAL_SKILL_MAP.md stale names
+- bomb-effects.md / bomb-preview.html copy
+- qa-hold-muzzle.mjs stale freeze (sightbeam / coffinround)
+- unused VFX table keys (not spawned): flameward / sightbeam / empfield / xenoxcore / orbital / railbolt / swordlance
+- Merlin/Emily X stay 1945 cluster analog
+
+Next tick: +0 unless a NEW proven spawn/VFX hole appears.
+Do not invent shot systems. Do not churn locked Hirume/Constantia.
+Only docs/QA freeze if asked.
+
+Preserved: 5 stages, pads, i18n structure, deathbomb, power Lv5,
+fire-rate ×2 delay, Constantia die eyes, Hirume/Constantia kits.
+Korean-ready.
+Loop re-arm: NO (parent shell 674151 only).

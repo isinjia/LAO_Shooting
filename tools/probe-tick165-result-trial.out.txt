@@ -1,0 +1,110 @@
+HARD baseline ko@320x200 over=2 maxH= chrome=66 cta=0/44 sec=0/44
+HARD baseline en@320x200 over=2 maxH= chrome=66 cta=0/44 sec=0/44
+HARD baseline ru@320x200 over=2 maxH= chrome=66 cta=0/44 sec=0/44
+HARD baseline pt@320x200 over=2 maxH= chrome=110 cta=0/44 sec=0/44
+HARD baseline ko@360x200 over=0 maxH= chrome=90 cta=0/44 sec=0/44
+HARD baseline en@360x200 over=0 maxH= chrome=90 cta=0/44 sec=0/44
+HARD baseline ru@360x200 over=0 maxH= chrome=90 cta=0/44 sec=0/44
+HARD baseline pt@360x200 over=0 maxH= chrome=90 cta=0/44 sec=0/44
+HARD baseline ko@360x240 over=0 maxH=202px chrome=30 cta=13/44 sec=13/44
+HARD baseline en@360x240 over=0 maxH=202px chrome=30 cta=13/44 sec=13/44
+HARD baseline ru@360x240 over=0 maxH=202px chrome=30 cta=13/44 sec=13/44
+HARD baseline pt@360x240 over=0 maxH=202px chrome=30 cta=13/44 sec=13/44
+HARD baseline ko@400x240 over=0 maxH= chrome=27.2 cta=15.8/44 sec=15.8/44
+HARD baseline en@400x240 over=0 maxH= chrome=27.2 cta=15.8/44 sec=15.8/44
+HARD baseline ru@400x240 over=0 maxH= chrome=27.2 cta=15.8/44 sec=15.8/44
+HARD baseline pt@400x240 over=0 maxH= chrome=27.2 cta=15.8/44 sec=15.8/44
+HARD baseline ko@400x280 over=0 maxH=225px chrome=7 cta=36/44 sec=36/44
+HARD baseline en@400x280 over=0 maxH=225px chrome=7 cta=36/44 sec=36/44
+HARD baseline ru@400x280 over=0 maxH=225px chrome=7 cta=36/44 sec=36/44
+HARD baseline pt@400x280 over=0 maxH=225px chrome=7 cta=36/44 sec=36/44
+TRIAL baseline: hard=20 soft=0 ok=4
+
+HARD ctaCompact ko@320x200 over=2 maxH= chrome=50 cta=0/28 sec=0/28
+HARD ctaCompact en@320x200 over=2 maxH= chrome=50 cta=0/28 sec=0/28
+HARD ctaCompact ru@320x200 over=2 maxH= chrome=50 cta=0/28 sec=0/28
+HARD ctaCompact pt@320x200 over=2 maxH= chrome=50 cta=0/28 sec=0/28
+HARD ctaCompact ko@360x200 over=0 maxH= chrome=74 cta=0/28 sec=0/28
+HARD ctaCompact en@360x200 over=0 maxH= chrome=74 cta=0/28 sec=0/28
+HARD ctaCompact ru@360x200 over=0 maxH= chrome=74 cta=0/28 sec=0/28
+HARD ctaCompact pt@360x200 over=0 maxH= chrome=74 cta=0/28 sec=0/28
+HARD ctaCompact ko@360x240 over=0 maxH=202px chrome=14 cta=13/28 sec=13/28
+HARD ctaCompact en@360x240 over=0 maxH=202px chrome=14 cta=13/28 sec=13/28
+HARD ctaCompact ru@360x240 over=0 maxH=202px chrome=14 cta=13/28 sec=13/28
+HARD ctaCompact pt@360x240 over=0 maxH=202px chrome=14 cta=13/28 sec=13/28
+HARD ctaCompact ko@400x240 over=0 maxH= chrome=11.2 cta=15.8/28 sec=15.8/28
+HARD ctaCompact en@400x240 over=0 maxH= chrome=11.2 cta=15.8/28 sec=15.8/28
+HARD ctaCompact ru@400x240 over=0 maxH= chrome=11.2 cta=15.8/28 sec=15.8/28
+HARD ctaCompact pt@400x240 over=0 maxH= chrome=11.2 cta=15.8/28 sec=15.8/28
+ok ctaCompact ko@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok ctaCompact en@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok ctaCompact ru@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok ctaCompact pt@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+TRIAL ctaCompact: hard=16 soft=0 ok=8
+
+HARD cta+score ko@320x200 over=2 maxH= chrome=14 cta=13/28 sec=13/28
+HARD cta+score en@320x200 over=2 maxH= chrome=14 cta=13/28 sec=13/28
+HARD cta+score ru@320x200 over=2 maxH= chrome=14 cta=13/28 sec=13/28
+HARD cta+score pt@320x200 over=2 maxH= chrome=14 cta=13/28 sec=13/28
+HARD cta+score ko@360x200 over=0 maxH= chrome=12 cta=15/28 sec=15/28
+HARD cta+score en@360x200 over=0 maxH= chrome=12 cta=15/28 sec=15/28
+HARD cta+score ru@360x200 over=0 maxH= chrome=12 cta=15/28 sec=15/28
+HARD cta+score pt@360x200 over=0 maxH= chrome=12 cta=15/28 sec=15/28
+ok cta+score ko@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score en@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score ru@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score pt@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score ko@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score en@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score ru@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score pt@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score ko@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok cta+score en@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok cta+score ru@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok cta+score pt@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+TRIAL cta+score: hard=8 soft=0 ok=16
+
+HARD cta+score+pad ko@320x200 over=2 maxH= chrome=8 cta=19/28 sec=19/28
+HARD cta+score+pad en@320x200 over=2 maxH= chrome=8 cta=19/28 sec=19/28
+HARD cta+score+pad ru@320x200 over=2 maxH= chrome=8 cta=19/28 sec=19/28
+HARD cta+score+pad pt@320x200 over=2 maxH= chrome=8 cta=19/28 sec=19/28
+ok cta+score+pad ko@360x200 over=0 maxH= chrome=6 cta=21/28 sec=21/28
+ok cta+score+pad en@360x200 over=0 maxH= chrome=6 cta=21/28 sec=21/28
+ok cta+score+pad ru@360x200 over=0 maxH= chrome=6 cta=21/28 sec=21/28
+ok cta+score+pad pt@360x200 over=0 maxH= chrome=6 cta=21/28 sec=21/28
+ok cta+score+pad ko@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad en@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad ru@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad pt@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad ko@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad en@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad ru@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad pt@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad ko@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad en@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad ru@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok cta+score+pad pt@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+TRIAL cta+score+pad: hard=4 soft=0 ok=20
+
+HARD full ko@320x200 over=0 maxH=180px chrome=4 cta=23/28 sec=23/28
+HARD full en@320x200 over=0 maxH=180px chrome=4 cta=23/28 sec=23/28
+HARD full ru@320x200 over=0 maxH=180px chrome=4 cta=23/28 sec=23/28
+HARD full pt@320x200 over=0 maxH=180px chrome=4 cta=23/28 sec=23/28
+ok full ko@360x200 over=0 maxH=200px chrome=0 cta=28/28 sec=28/28
+ok full en@360x200 over=0 maxH=200px chrome=0 cta=28/28 sec=28/28
+ok full ru@360x200 over=0 maxH=200px chrome=0 cta=28/28 sec=28/28
+ok full pt@360x200 over=0 maxH=200px chrome=0 cta=28/28 sec=28/28
+ok full ko@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok full en@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok full ru@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok full pt@360x240 over=0 maxH=202px chrome=0 cta=28/28 sec=28/28
+ok full ko@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok full en@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok full ru@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok full pt@400x240 over=0 maxH= chrome=0 cta=28/28 sec=28/28
+ok full ko@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok full en@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok full ru@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+ok full pt@400x280 over=0 maxH=225px chrome=0 cta=28/28 sec=28/28
+TRIAL full: hard=4 soft=0 ok=20
+

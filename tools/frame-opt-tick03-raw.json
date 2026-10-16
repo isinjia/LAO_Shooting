@@ -1,0 +1,114 @@
+{
+  "when": "2026-10-04T14:04:53.262Z",
+  "env": "Playwright Chromium headless — combat rAF only (tick03). Not a physical GPU.",
+  "baseline": {
+    "pc960_combat_avg": [
+      30.83,
+      43.09,
+      30.23,
+      49.26
+    ],
+    "mobile412_combat_avg": [
+      39.84,
+      56.54,
+      50.64,
+      55.82
+    ]
+  },
+  "viewports": [
+    {
+      "tag": "pc-960",
+      "viewport": {
+        "tag": "pc-960",
+        "width": 960,
+        "height": 540,
+        "dpr": 1,
+        "hasTouch": false
+      },
+      "combatMs": 16000,
+      "combat": {
+        "durationMs": 16024,
+        "frames": 753,
+        "fpsAvg": 51.83,
+        "fpsMin": 20,
+        "fpsMax": 60.24,
+        "dtAvgMs": 21.248,
+        "dtMaxMs": 50,
+        "dtP95Ms": 33.4,
+        "hitches": {
+          "over33ms": 31,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "splitMs": {
+          "n": 755,
+          "updateAvg": 0.289,
+          "drawAvg": 12.46,
+          "bgAvg": 0.121,
+          "vfxAvg": 0.273
+        },
+        "canvas": {
+          "cssW": 960,
+          "cssH": 540,
+          "bufW": 960,
+          "bufH": 540,
+          "dpr": 1
+        },
+        "peaks": {
+          "enemies": 4,
+          "bulletsLive": 16,
+          "particles": 0,
+          "polish": 16,
+          "vfx": 78
+        }
+      }
+    },
+    {
+      "tag": "mobile-412x226",
+      "viewport": {
+        "tag": "mobile-412x226",
+        "width": 412,
+        "height": 226,
+        "dpr": 2.5,
+        "hasTouch": true
+      },
+      "combatMs": 8000,
+      "combat": {
+        "durationMs": 8012,
+        "frames": 466,
+        "fpsAvg": 59.08,
+        "fpsMin": 20,
+        "fpsMax": 60.61,
+        "dtAvgMs": 17.202,
+        "dtMaxMs": 50,
+        "dtP95Ms": 16.8,
+        "hitches": {
+          "over33ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "splitMs": {
+          "n": 468,
+          "updateAvg": 0.28,
+          "drawAvg": 10.907,
+          "bgAvg": 0.13,
+          "vfxAvg": 0.251
+        },
+        "canvas": {
+          "cssW": 401.8,
+          "cssH": 226,
+          "bufW": 703,
+          "bufH": 396,
+          "dpr": 2.5
+        },
+        "peaks": {
+          "enemies": 2,
+          "bulletsLive": 9,
+          "particles": 0,
+          "polish": 13,
+          "vfx": 46
+        }
+      }
+    }
+  ]
+}

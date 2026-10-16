@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#050608" />
+  <title>LAST SHOOTING — 사령관은 사정 중입니다.</title>
+  <!--
+    Mobile shell: the game (index.html?embed=1) runs in an iframe that always gets a landscape
+    box. When the phone is held upright the frame is turned 90deg, so the game plays without
+    rotating the OS screen (portrait lock on). Inside the frame the game sees a normal
+    landscape viewport, so its layout, media queries and touch coordinates stay native.
+  -->
+  <style>
+    html, body {
+      margin: 0; height: 100%; overflow: hidden; background: #050608;
+      /* No touch-action: none here: Chrome applies it inside the iframe too, which killed
+         scrolling in the game's menus. */
+      overscroll-behavior: none; -webkit-user-select: none; user-select: none;
+    }
+    #game-frame {
+      position: fixed; left: 0; top: 0; border: 0; display: block; background: #050608;
+      transform-origin: 0 0;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="game-frame" title="LAST SHOOTING" allow="fullscreen; autoplay; screen-wake-lock" allowfullscreen></iframe>
+  <script>
+  (function () {
+    window.__LAO_SHELL__ = true;
+    var frame = document.getElementById('game-frame');
+    var q = location.search.replace(/^\?/, '');
+    q = q.split('&').filter(function (p) { return p && p !== 'shell=1'; }).join('&');
+    frame.src = 'index.html?embed=1' + (q ? '&' + q : '') + location.hash;
+
+    // Safe-area insets (notch / home bar) measured from a probe element.
+    var probe = document.createElement('div');
+    probe.style.cssText = 'position:fixed;left:0;top:0;visibility:hidden;pointer-events:none;'
+      + 'padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)';
+    document.body.appendChild(probe);
+
+    var last = '';
+    function fit() {
+      var vw = window.innerWidth, vh = window.innerHeight;
+      var cs = getComputedStyle(probe);
+      var st = parseFloat(cs.paddingTop) || 0, sr = parseFloat(cs.paddingRight) || 0;
+      var sb = parseFloat(cs.paddingBottom) || 0, sl = parseFloat(cs.paddingLeft) || 0;
+      var portrait = vh > vw;
+      var key = [vw, vh, st, sr, sb, sl].join(',');
+      if (key === last) return;
+      last = key;
+      if (portrait) {
+        // Landscape box = the portrait screen turned clockwise; the phone is held with its
+        // top to the left. Physical top/bottom insets become the game's left/right edges.
+        var w = vh - st - sb, h = vw - sl - sr;
+        frame.style.width = w + 'px';
+        frame.style.height = h + 'px';
+        frame.style.transform = 'translate(' + (vw - sr) + 'px,' + st + 'px) rotate(90deg)';
+      } else {
+        frame.style.width = (vw - sl - sr) + 'px';
+        frame.style.height = (vh - st - sb) + 'px';
+        frame.style.transform = 'translate(' + sl + 'px,' + st + 'px)';
+      }
+      document.documentElement.classList.toggle('is-rotated', portrait);
+    }
+    fit();
+    window.addEventListener('resize', fit);
+    window.addEventListener('orientationchange', function () { setTimeout(fit, 120); });
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', fit);
+    // Keep the frame focused so keyboard / gamepad style input reaches the game.
+    frame.addEventListener('load', function () { try { frame.contentWindow.focus(); } catch (e) {} });
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, { passive: false });
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+SOFT pause-unmute ko@320x200 over=2 mute="음소거" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause ko@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=49
+SOFT pause-unmute en@320x200 over=2 mute="Mute" cta=24/24 quit=24/24 opt=24/24 muteBtn=24/24
+SOFT options-from-pause en@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=54
+SOFT pause-unmute ru@320x200 over=2 mute="Без звука" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause ru@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=49
+SOFT pause-unmute pt@320x200 over=2 mute="Mudo" cta=24/24 quit=24/24 opt=24/24 muteBtn=24/24
+SOFT options-from-pause pt@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=54
+SOFT pause-unmute es@320x200 over=2 mute="Silencio" cta=24/24 quit=24/24 opt=24/24 muteBtn=24/24
+SOFT options-from-pause es@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=54
+SOFT pause-unmute zh-Hant@320x200 over=2 mute="靜音" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause zh-Hant@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=49
+SOFT pause-unmute ja@320x200 over=2 mute="ミュート" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause ja@320x200 over=0 maxH=180px fitH=180 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=49
+ok pause-unmute ko@360x200 over=0 mute="음소거" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause ko@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=69
+ok pause-unmute en@360x200 over=0 mute="Mute" cta=24/24 quit=24/24 opt=24/24 muteBtn=24/24
+ok options-from-pause en@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=74
+ok pause-unmute ru@360x200 over=0 mute="Без звука" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause ru@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=69
+ok pause-unmute pt@360x200 over=0 mute="Mudo" cta=24/24 quit=24/24 opt=24/24 muteBtn=24/24
+ok options-from-pause pt@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=74
+ok pause-unmute es@360x200 over=0 mute="Silencio" cta=24/24 quit=24/24 opt=24/24 muteBtn=24/24
+ok options-from-pause es@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=74
+ok pause-unmute zh-Hant@360x200 over=0 mute="靜音" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause zh-Hant@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=69
+ok pause-unmute ja@360x200 over=0 mute="ミュート" cta=26/26 quit=26/26 opt=26/26 muteBtn=26/26
+SOFT options-from-pause ja@360x200 over=0 maxH=200px fitH=200 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=69
+ok pause-unmute ko@360x240 over=0 mute="음소거" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+SOFT options-from-pause ko@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=71
+ok pause-unmute en@360x240 over=0 mute="Mute" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause en@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=76
+ok pause-unmute ru@360x240 over=0 mute="Без звука" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+SOFT options-from-pause ru@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=71
+ok pause-unmute pt@360x240 over=0 mute="Mudo" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause pt@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=76
+ok pause-unmute es@360x240 over=0 mute="Silencio" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause es@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=76
+ok pause-unmute zh-Hant@360x240 over=0 mute="靜音" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+SOFT options-from-pause zh-Hant@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=71
+ok pause-unmute ja@360x240 over=0 mute="ミュート" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+SOFT options-from-pause ja@360x240 over=0 maxH=202px fitH=202 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=71
+ok pause-unmute ko@400x240 over=0 mute="음소거" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause ko@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+ok pause-unmute en@400x240 over=0 mute="Mute" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause en@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=99
+ok pause-unmute ru@400x240 over=0 mute="Без звука" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause ru@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+ok pause-unmute pt@400x240 over=0 mute="Mudo" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause pt@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=99
+ok pause-unmute es@400x240 over=0 mute="Silencio" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause es@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=99
+ok pause-unmute zh-Hant@400x240 over=0 mute="靜音" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause zh-Hant@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+ok pause-unmute ja@400x240 over=0 mute="ミュート" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause ja@400x240 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+ok pause-unmute ko@400x280 over=0 mute="음소거" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause ko@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+ok pause-unmute en@400x280 over=0 mute="Mute" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause en@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=99
+ok pause-unmute ru@400x280 over=0 mute="Без звука" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause ru@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+ok pause-unmute pt@400x280 over=0 mute="Mudo" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause pt@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=99
+ok pause-unmute es@400x280 over=0 mute="Silencio" cta=30/30 quit=30/30 opt=30/30 muteBtn=30/30
+ok options-from-pause es@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=44/44 scrollH=99
+ok pause-unmute zh-Hant@400x280 over=0 mute="靜音" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause zh-Hant@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+ok pause-unmute ja@400x280 over=0 mute="ミュート" cta=32/32 quit=32/32 opt=32/32 muteBtn=32/32
+ok options-from-pause ja@400x280 over=0 maxH=225px fitH=225 inflated=false health=0 caps=[] ctaOut=false ctaVis=46/46 scrollH=94
+
+SUMMARY hard=0 soft=22 ok=48 optionsHealthLive=0

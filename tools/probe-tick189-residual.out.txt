@@ -1,0 +1,15 @@
+=== A) floating stick AFTER touch (is-stick-on) @ NEW mid-short ===
+STICKON pt@360×218 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.479955 knob=46/46 none=false zone=182.3/182.3 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=202.5 appTop=7.75 down={"ok":true,"x":71.3,"y":133.7}
+STICKON es@360×218 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.365629 knob=46/46 none=false zone=182.3/182.3 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=202.5 appTop=7.75 down={"ok":true,"x":71.3,"y":133.7}
+STICKON ru@360×218 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.36512 knob=46/46 none=false zone=182.3/182.3 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=202.5 appTop=7.75 down={"ok":true,"x":71.3,"y":133.7}
+STICKON pt@375×212 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.366057 knob=46/46 none=false zone=189.8/189.8 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=210.9 appTop=0.53 down={"ok":true,"x":74.3,"y":131.7}
+STICKON es@375×212 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.365169 knob=46/46 none=false zone=189.8/189.8 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=210.9 appTop=0.53 down={"ok":true,"x":74.3,"y":131.7}
+STICKON ru@375×212 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.480234 knob=46/46 none=false zone=189.8/189.8 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=210.9 appTop=0.53 down={"ok":true,"x":74.3,"y":131.7}
+STICKON pt@404×228 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.479806 knob=46/46 none=false zone=204.5/204.5 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=227.3 appTop=0.38 down={"ok":true,"x":80,"y":141.7}
+STICKON es@404×228 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.479875 knob=46/46 none=false zone=204.5/204.5 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=227.3 appTop=0.38 down={"ok":true,"x":80,"y":141.7}
+STICKON ru@404×228 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.479892 knob=46/46 none=false zone=204.5/204.5 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=227.3 appTop=0.38 down={"ok":true,"x":80,"y":141.7}
+STICKON pt@430×245 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.479772 knob=46/46 none=false zone=217.7/217.7 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=241.9 appTop=1.56 down={"ok":true,"x":85.1,"y":152}
+STICKON es@430×245 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.366 knob=46/46 none=false zone=217.7/217.7 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=241.9 appTop=1.56 down={"ok":true,"x":85.1,"y":152}
+STICKON ru@430×245 → ok stickOn=true base=104/104 w=104 none=false out=false op=0.365452 knob=46/46 none=false zone=217.7/217.7 fire=56/56 bombPad=40/40 overlapBaseFire=false appH=241.9 appTop=1.56 down={"ok":true,"x":85.1,"y":152}
+=== SUMMARY ===
+hard=0 soft=0 ok=12 skip=0
