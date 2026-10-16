@@ -1,0 +1,137 @@
+{
+  "root": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub",
+  "processing": "crop/resize; grey sheets tinted to prefab colours; original art only",
+  "sheets": {
+    "missile": {
+      "source": "Bullet/hand_missile_1/handmissile.png",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": null,
+      "tint": null,
+      "crop": [
+        0,
+        1,
+        255,
+        131
+      ],
+      "sha256": "365bed2ea8eaace306d03e93a347d8a6ffa58ff8d0bcc6affc54f2c1975220f6"
+    },
+    "plume": {
+      "source": "Bullet/hand_missile_1/handmissile.png",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": null,
+      "tint": "#ff6a1a",
+      "crop": [
+        0,
+        131,
+        256,
+        256
+      ],
+      "sha256": "365bed2ea8eaace306d03e93a347d8a6ffa58ff8d0bcc6affc54f2c1975220f6"
+    },
+    "booster": {
+      "source": "FX/sqns_fx/fire_smoke_sqns_2.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 128,
+      "tint": "#8a847e",
+      "crop": null,
+      "sha256": "af1505b77921ca8633abb9ef61897f84034cf5cc55c9619ffe07bb3180695882"
+    },
+    "firehit": {
+      "source": "FX/sqns_fx/fire_sqns_hit.PNG",
+      "grid": [
+        4,
+        4
+      ],
+      "cell": 160,
+      "tint": null,
+      "crop": null,
+      "sha256": "4bc9ee681819fa9a221e649e44598345103620c0716d31ea6df539cee5232af8"
+    },
+    "groundfire": {
+      "source": "FX/sqns_fx/fire_sqns_m.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 160,
+      "tint": null,
+      "crop": null,
+      "sha256": "2e696548a0d4e0a6193cd3d2943a9bf24e7c51be4a84a570c96d360fd200e636"
+    },
+    "skill2hit": {
+      "source": "FX/sqns_fx/hit_fire_m.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": null,
+      "crop": null,
+      "sha256": "816ff9cfd82e021bc47d92ad5bbb3a99529bf4fa18fe9c33943e362fb6eb0617"
+    },
+    "smog": {
+      "source": "FX/sqns_fx/hit_smog.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": null,
+      "crop": null,
+      "sha256": "582c3fc91c90ef1f7f18a9ad3f8e63939147347c9123afcb34368b641965f8f1"
+    },
+    "boom": {
+      "source": "FX/sqns_fx/boom_sqns_234.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": null,
+      "crop": null,
+      "sha256": "8cd7d5bda21935e3c5009b519e45e8efea5c08411d5c6c05a74c1404cb1c229e"
+    },
+    "jet": {
+      "source": "FX/sqns_fx/pani_fire_sqns_43.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 128,
+      "tint": "#ff8a2a",
+      "crop": null,
+      "sha256": "88e69c8e9d79b128cdac2b0c8e5744bb4b3b74752cb7a7209335107e9b854b8c"
+    },
+    "line": {
+      "source": "FX/sqns_fx/blade_line_skill2.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 256,
+      "tint": "#fff0d0",
+      "crop": null,
+      "sha256": "65c9c23cbef91b4b59a18bac77999e6b6018fea0620523a7a1d346279b6053d1"
+    },
+    "linegold": {
+      "source": "FX/sqns_fx/blade_line_skill2.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 256,
+      "tint": "#ffb02a",
+      "crop": null,
+      "sha256": "65c9c23cbef91b4b59a18bac77999e6b6018fea0620523a7a1d346279b6053d1"
+    }
+  }
+}

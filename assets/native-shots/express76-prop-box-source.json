@@ -1,0 +1,43 @@
+{
+  "source": "E:/LAO/Google_QA/Assets/AssetBundleResourceSub/FX/Texture/express_box.png",
+  "sha256": "b3228fe56c93226208909df96c57b869983f44d8091b733b679c7b8446f326b3",
+  "pieces": {
+    "lid": {
+      "rect": [
+        191,
+        207,
+        136,
+        21
+      ],
+      "center": [
+        259.2,
+        216.5
+      ]
+    },
+    "left": {
+      "rect": [
+        165,
+        252,
+        70,
+        85
+      ],
+      "center": [
+        204.0,
+        288.2
+      ]
+    },
+    "right": {
+      "rect": [
+        272,
+        256,
+        75,
+        80
+      ],
+      "center": [
+        303.5,
+        290.2
+      ]
+    }
+  },
+  "processing": "alpha-island split of the original express_box billboard (lid / left / right panels)"
+}

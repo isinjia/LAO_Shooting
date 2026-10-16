@@ -1,0 +1,12 @@
+{
+  "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Character\\Char_PECS_LRL_N\\Model_PECS_LRL_N\\Materials\\Texture_PECS_LRL_N.png",
+  "sprite": "parts_weapon",
+  "unityRect": [
+    536,
+    847,
+    402,
+    170
+  ],
+  "sourceSha256": "5c08bf4b9825de1f917736014316820880e1908d8bbb5f5986329f61261ac0f7",
+  "processing": "Exact sprite rect crop; original RGBA preserved"
+}

@@ -1,0 +1,30 @@
+{
+  "lrl-hit-cut": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\blade_line.PNG",
+    "sha256": "8dc7df4ba0579de32dfd97b58f0a24f4267c78cc69942f83f9111cb276ed05b0",
+    "grid": [
+      4,
+      2
+    ],
+    "bounds": [
+      17,
+      233,
+      496,
+      277
+    ]
+  },
+  "lrl-hit-sparks": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\3_2_hit_sqns.PNG",
+    "sha256": "f89e087dbb0116d2d1167e1e581dab4067cb372e8d53608aa5b0966099cf2b7a",
+    "grid": [
+      3,
+      2
+    ],
+    "bounds": [
+      74,
+      123,
+      432,
+      453
+    ]
+  }
+}

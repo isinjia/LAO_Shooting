@@ -1,0 +1,62 @@
+{
+  "source": "Unity prefab + FBX bake (Char_PECS_Hestia_N/Model_PECS_Hestia_N)",
+  "native": true,
+  "size": 384,
+  "character": "dock_hestia",
+  "idle": [
+    "native/idle_000.png",
+    "native/idle_001.png",
+    "native/idle_002.png",
+    "native/idle_003.png",
+    "native/idle_004.png",
+    "native/idle_005.png",
+    "native/idle_006.png",
+    "native/idle_007.png",
+    "native/idle_008.png",
+    "native/idle_009.png",
+    "native/idle_010.png",
+    "native/idle_011.png",
+    "native/idle_012.png",
+    "native/idle_013.png",
+    "native/idle_014.png",
+    "native/idle_015.png",
+    "native/idle_016.png",
+    "native/idle_017.png"
+  ],
+  "idleFps": 24.0,
+  "idleDuration": 0.75,
+  "move": [
+    "native/move_000.png",
+    "native/move_001.png",
+    "native/move_002.png",
+    "native/move_003.png",
+    "native/move_004.png",
+    "native/move_005.png",
+    "native/move_006.png",
+    "native/move_007.png",
+    "native/move_008.png",
+    "native/move_009.png",
+    "native/move_010.png",
+    "native/move_011.png",
+    "native/move_012.png",
+    "native/move_013.png",
+    "native/move_014.png",
+    "native/move_015.png",
+    "native/move_016.png",
+    "native/move_017.png"
+  ],
+  "moveFps": 24.0,
+  "moveDuration": 0.75,
+  "contentBox": {
+    "x": 59,
+    "y": 80,
+    "w": 273,
+    "h": 232
+  },
+  "sheet": "sheet.json",
+  "sheetFrames": 36,
+  "sheetFiles": [
+    "sheet_00.webp"
+  ],
+  "sheetFormat": "webp"
+}

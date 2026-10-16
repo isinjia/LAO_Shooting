@@ -1,0 +1,13 @@
+{
+  "source": "Unity LRL native Skill2 baked frames 78,80,82; warm connected component only",
+  "sha256": "76e1059b05685c08a1961e82fb212698016753a62a4c864daaf2e000d11777e1",
+  "frames": [
+    78,
+    80,
+    82
+  ],
+  "cell": [
+    256,
+    256
+  ]
+}

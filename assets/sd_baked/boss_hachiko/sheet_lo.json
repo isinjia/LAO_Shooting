@@ -1,0 +1,20 @@
+{
+ "scale": 0.3,
+ "sheets": {
+  "sheet_00.webp": {
+   "file": "sheet_00.lo.webp",
+   "sx": 0.300048828125,
+   "sy": 0.3001038421599169
+  },
+  "sheet_01.webp": {
+   "file": "sheet_01.lo.webp",
+   "sx": 0.2999751676185746,
+   "sy": 0.3
+  },
+  "sheet_02.webp": {
+   "file": "sheet_02.lo.webp",
+   "sx": 0.29997427321842035,
+   "sy": 0.299812030075188
+  }
+ }
+}

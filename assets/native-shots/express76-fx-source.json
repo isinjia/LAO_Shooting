@@ -1,0 +1,116 @@
+{
+  "root": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX",
+  "processing": "prefab-colour tint on grey additive sheets; resize only; no AI art",
+  "sheets": {
+    "sonicboom": {
+      "source": "sqns_fx/Padong_sqns2.PNG",
+      "prefab": "skill1/Express_skill1_sonicboom",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#ff6e00",
+      "sha256": "7f31cafc1a83eb78a2e87feb8a1b31f3fb42e9548c0b199543407c3b5be00355"
+    },
+    "impact": {
+      "source": "sqns_fx/DrM_1skill_last_attack.PNG",
+      "prefab": "Express_skill1_attack",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 192,
+      "tint": "#ff5a1c",
+      "sha256": "4e843087a602326a8eb94b8afb03ba774ba5ea7855336a39ef8bb5dd7fb4c730"
+    },
+    "smoke": {
+      "source": "sqns_fx/smoke_ground.PNG",
+      "prefab": "skill1/Express_down_smoke",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 192,
+      "tint": "#bd8f7e",
+      "sha256": "5ec01a5c688d231aba4bc2b66848d7c3558eeba14ce0c83d51b8343868090a64"
+    },
+    "trail": {
+      "source": "Texture/trail_fire4.png",
+      "prefab": "skill1/Express_skill1_fire_particle",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": 256,
+      "tint": "#ff6e00",
+      "sha256": "8b60fb34583d652a413c94297b4e2128057d28692b532e24282d9ba327040ff6"
+    },
+    "box": {
+      "source": "Texture/express_box.png",
+      "prefab": "skill2/Express_box_lighting",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": 256,
+      "tint": null,
+      "sha256": "b3228fe56c93226208909df96c57b869983f44d8091b733b679c7b8446f326b3"
+    },
+    "light": {
+      "source": "Texture/express_light_text 2.png",
+      "prefab": "skill2/Express_skill2_lighting",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": 256,
+      "tint": "#ffb800",
+      "sha256": "c5b7f96ac9239957d1ab45c0a04bb0a196c32258b8a672960a55b91f1a0a185e"
+    },
+    "bling": {
+      "source": "sqns_fx/bling_particle.PNG",
+      "prefab": "skill2/eye_bling_express",
+      "grid": [
+        3,
+        2
+      ],
+      "cell": 128,
+      "tint": "#ffe556",
+      "sha256": "4210b8f64418e445a29e76c46c34fc2b0b0235a597dbeeaef8e77a7d19b2c4ae"
+    },
+    "hit": {
+      "source": "sqns_fx/simple_hit 1.PNG",
+      "prefab": "skill2/Express_simple_skill_hit",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#f9ad09",
+      "sha256": "b265cf5fabf6ce5a8b1e2e5b77e8155fc55b717c531a2b662df0db26763e643b"
+    },
+    "fireparticle": {
+      "source": "sqns_fx/DrM_skill2_last_hit.PNG",
+      "prefab": "skill1/Express_skill1_fire_particle",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 192,
+      "tint": "#ff6e00",
+      "sha256": "52bc3b368b743bed2390914bcb1f4d8aa7d8a40aa2f770ea3cda75196ae2c6c4"
+    },
+    "buffline": {
+      "source": "Texture/trail_fire4.png",
+      "prefab": "skill2/Express_skill2_buff_lighting_event",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": 256,
+      "tint": "#ffb800",
+      "sha256": "8b60fb34583d652a413c94297b4e2128057d28692b532e24282d9ba327040ff6"
+    }
+  }
+}

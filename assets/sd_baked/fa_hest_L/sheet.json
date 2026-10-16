@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "character": "fa_hest_L",
+  "source": "pack_sprite_sheets.py",
+  "format": "webp",
+  "pack": "shelf-trim",
+  "cell": {
+    "w": 443,
+    "h": 263
+  },
+  "maxSheet": 4096,
+  "pad": 1,
+  "trimPad": 1,
+  "sheets": [
+    "sheet_00.webp"
+  ],
+  "frameCount": 2,
+  "idleFps": 24.0,
+  "moveFps": 24.0,
+  "dieFps": 24,
+  "attackFps": 24,
+  "skill2Fps": 24,
+  "idle": [
+    {
+      "s": 0,
+      "x": 0,
+      "y": 0,
+      "w": 443,
+      "h": 263,
+      "ox": 151,
+      "oy": 207
+    }
+  ],
+  "move": [
+    {
+      "s": 0,
+      "x": 444,
+      "y": 0,
+      "w": 443,
+      "h": 263,
+      "ox": 151,
+      "oy": 207
+    }
+  ],
+  "die": [],
+  "contentBox": {
+    "x": 134,
+    "y": 207,
+    "w": 499,
+    "h": 365
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "source": "Unity prefab + FBX bake (Char_PECS_Hestia_N/Model_PECS_Hestia_N)",
+  "native": true,
+  "size": 768,
+  "character": "fa_hest_L",
+  "idle": [
+    "native/idle_000.png"
+  ],
+  "idleFps": 24.0,
+  "idleDuration": 4.0,
+  "move": [
+    "native/move_000.png"
+  ],
+  "moveFps": 24.0,
+  "moveDuration": 4.0,
+  "contentBox": {
+    "x": 134,
+    "y": 207,
+    "w": 499,
+    "h": 365
+  },
+  "sheet": "sheet.json",
+  "sheetFrames": 2,
+  "sheetFiles": [
+    "sheet_00.webp"
+  ],
+  "sheetFormat": "webp",
+  "stillNote": "Rampalion still part (holds frame 0): trimmed to one frame (user: kit restart lag)."
+}

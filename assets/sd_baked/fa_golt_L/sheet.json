@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "character": "fa_golt_L",
+  "source": "pack_sprite_sheets.py",
+  "format": "webp",
+  "pack": "shelf-trim",
+  "cell": {
+    "w": 144,
+    "h": 252
+  },
+  "maxSheet": 4096,
+  "pad": 1,
+  "trimPad": 1,
+  "sheets": [
+    "sheet_00.webp"
+  ],
+  "frameCount": 2,
+  "idleFps": 24.0,
+  "moveFps": 24.0,
+  "dieFps": 24,
+  "attackFps": 24,
+  "skill2Fps": 24,
+  "idle": [
+    {
+      "s": 0,
+      "x": 0,
+      "y": 0,
+      "w": 144,
+      "h": 252,
+      "ox": 114,
+      "oy": 67
+    }
+  ],
+  "move": [
+    {
+      "s": 0,
+      "x": 145,
+      "y": 0,
+      "w": 144,
+      "h": 252,
+      "ox": 114,
+      "oy": 67
+    }
+  ],
+  "die": [],
+  "contentBox": {
+    "x": 110,
+    "y": 55,
+    "w": 155,
+    "h": 269
+  }
+}

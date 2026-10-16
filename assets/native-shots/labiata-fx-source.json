@@ -1,0 +1,259 @@
+{
+  "root": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX",
+  "processing": "resize/crop; grey sheets tinted to prefab colours; original art only",
+  "sheets": {
+    "hit": {
+      "source": "sqns_fx/Labiata_skill1_hit.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 192,
+      "tint": "#ff4a14",
+      "frames": 8,
+      "sha256": "1aedad23fc58b2816d633604fb6077cb083c292b8441d872925430c37e03dfbe"
+    },
+    "baghit": {
+      "source": "sqns_fx/emily_skill_hit_Sqns.PNG",
+      "grid": [
+        4,
+        4
+      ],
+      "cell": 192,
+      "tint": "#ff7a00",
+      "frames": 13,
+      "sha256": "0fe451151eee51c4320bf10fc19acefdb7664cddb5966e3860ab4d5663ef904a"
+    },
+    "blade": {
+      "source": "sqns_fx/blade_Johanna.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 256,
+      "tint": "#167cff",
+      "frames": 10,
+      "sha256": "4c140c6ee7e06f78533820b766438d84d1eb461ef6e951f2b0619a47091e0109"
+    },
+    "bladedeco": {
+      "source": "sqns_fx/Labiata_skill2_blade2_deco.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 256,
+      "tint": "#4fd4ff",
+      "frames": 9,
+      "sha256": "db3363e1939cb379fb1661c3b0b758dcf29c3419d56b5721aae20c42e3d4c9f9"
+    },
+    "smoke2": {
+      "source": "sqns_fx/Labiata_skill1_smoke2.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#bd907e",
+      "frames": 9,
+      "sha256": "f36bc2e6fd85994700693c51154e253e0d047d447cb048704ed69cf1c73a0052"
+    },
+    "smoke4": {
+      "source": "sqns_fx/Labiata_skill1_smoke4.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": "#bd907e",
+      "frames": 11,
+      "sha256": "1187c7ce8b81f89cdf4f6c7b2c872a5015f1da6a7bd20008b1fb8e2de62b7ae9"
+    },
+    "downsmoke": {
+      "source": "sqns_fx/smoke_ground.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#bd907e",
+      "frames": 9,
+      "sha256": "5ec01a5c688d231aba4bc2b66848d7c3558eeba14ce0c83d51b8343868090a64"
+    },
+    "baglight": {
+      "source": "Texture/Labiata_buff_bag_lighting.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 160,
+      "tint": "#1ab4ff",
+      "frames": 12,
+      "sha256": "7095f430b5ec8112299d0af32a053789a2bd24d303ade9106532bbaedcdcc30a"
+    },
+    "spark": {
+      "source": "sqns_fx/after_lighting.PNG",
+      "grid": [
+        4,
+        4
+      ],
+      "cell": 160,
+      "tint": "#2a8cff",
+      "frames": 16,
+      "sha256": "89f48119521b68b98a80a60f4f1188ee6e992f80ae4c0f85ebec1192423b660f"
+    },
+    "inparticle": {
+      "source": "sqns_fx/Labiata_skill2_blade_in_particle.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 192,
+      "tint": "#3aa8ff",
+      "frames": 5,
+      "sha256": "ad9940b73569c4b6597167474f5960a2ab92d68d7b5fd045ad0ca185636e6634"
+    },
+    "inaura": {
+      "source": "sqns_fx/Labiata_skill2_blade_in_aura.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 192,
+      "tint": "#9ad8ff",
+      "frames": 7,
+      "sha256": "430ac6ccfeb4bd170b587d65f295543f8e9694ee8bd8f3e39243b2c0b212ef85"
+    },
+    "swing": {
+      "source": "sqns_fx/Labiata_skill2_blade_swing.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 256,
+      "tint": "#d8f0ff",
+      "frames": 8,
+      "sha256": "42b367630f31191a3cd4b75084c41464d618bf33d66779edf70785145ea9c653"
+    },
+    "swingsmoke": {
+      "source": "sqns_fx/Labiata_skill2_blade_swing_back_smoke.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": "#bd907e",
+      "frames": 12,
+      "sha256": "c0a32a9aa3ff08a87abe4a7f6464013d976d1599417c3664f1cae39dc850aa09"
+    },
+    "upsmoke": {
+      "source": "sqns_fx/Labiata_skill2_blade_up_smoke.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 192,
+      "tint": "#e2d4cc",
+      "frames": 9,
+      "sha256": "9776a4033562e50ba90f4b3c686024403ebe5f9a017c93b4e11d41d8ce713f08"
+    },
+    "windaura": {
+      "source": "sqns_fx/Labiata_skill2_blade_wind_aura.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": "#f0e6e0",
+      "frames": 10,
+      "sha256": "910666e54abef07aac14b8cf3608f481de80b919d6e4821b8da6846a08093936"
+    },
+    "jumpsmoke": {
+      "source": "sqns_fx/Labiata_skill2_jump_up_smoke.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": "#8a7068",
+      "frames": 10,
+      "sha256": "49817f294a4104737d8600b2cb1d74f5132b8de9fdf6746f11cf07ecfb5f77ba"
+    },
+    "rocks": {
+      "source": "Texture/skill2_ground_attack.png",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": null,
+      "tint": null,
+      "frames": 1,
+      "sha256": "3bfc39ad4f3c2cd46b23b097fca6af378a906d262eff673bf32bfac1ae4a60d6"
+    },
+    "groundbomb": {
+      "source": "sqns_fx/Labiata_skill2_ground_bomb.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 256,
+      "tint": "#ffbb8e",
+      "frames": 11,
+      "sha256": "cd21f92b47518b5bce08d8c8b24e01ec759886a2f75cedf5fb127bb353d712c7"
+    },
+    "grounddeco": {
+      "source": "sqns_fx/Labiata_ground_attack_deco_2.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 256,
+      "tint": "#ff5a3c",
+      "frames": 11,
+      "sha256": "d523a8c3dc0a0b805b62e79c11851b6c4633e119a5e6522053b2784c8034d567"
+    },
+    "groundsmoke": {
+      "source": "sqns_fx/Labiata_ground_smoke.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 256,
+      "tint": "#b08a78",
+      "frames": 10,
+      "sha256": "4db70146263550f31f7e8389c90874af99eea91a753087266e6fc3314d0afb84"
+    },
+    "hit2": {
+      "source": "sqns_fx/Labiata_skill2_hit.PNG",
+      "grid": [
+        4,
+        5
+      ],
+      "cell": 256,
+      "tint": "#ff4a3a",
+      "frames": 18,
+      "sha256": "83b4f76e75fcfd65c13c7121fc9545e145290941b749adb23b5cee8a79463128"
+    },
+    "buffaura": {
+      "source": "sqns_fx/Labiata_skill2_blade_buffaura.PNG",
+      "grid": [
+        3,
+        6
+      ],
+      "cell": 192,
+      "tint": "#0f2eff",
+      "frames": 18,
+      "sha256": "651b22b5992930da86fa3f170cfa7ebf742cb0f92d9208fccaea87846709ea3d"
+    },
+    "finalhit": {
+      "source": "sqns_fx/Labiata_buff_skill2_hit.PNG",
+      "grid": [
+        3,
+        6
+      ],
+      "cell": 256,
+      "tint": "#0a61ff",
+      "frames": 18,
+      "sha256": "c79ea312af5cc5258d6431a4a1624948bc5ab64692525a9022b42b02591950b4"
+    }
+  }
+}

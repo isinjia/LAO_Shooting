@@ -1,0 +1,206 @@
+{
+  "root": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX",
+  "processing": "resize/crop; grey sheets tinted to prefab colours; original art only",
+  "sheets": {
+    "bullet": {
+      "source": "Texture/Spn_bullet.png",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": null,
+      "tint": null,
+      "sha256": "88496c0882c972d61cb7ec47de08316e3ec97a11b46bc754b9d40d58e702eb6d"
+    },
+    "lastbullet": {
+      "source": "Texture/Sleipnir_skill1_lastfire_bullet2.png",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": null,
+      "tint": null,
+      "sha256": "b3cf4d9d5270068334375d5379ed1791f8ecd452529b01e858592ec3a8e8854c"
+    },
+    "muzzle": {
+      "source": "sqns_fx/Gigantes_attack_fire.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 192,
+      "tint": "#ff8a1c",
+      "sha256": "78c67061cdae1c078dd1f735557ac0d012dcb25fa04ec7abcc8edf1825768d07"
+    },
+    "hit": {
+      "source": "sqns_fx/sniper_hit_fire_sqns.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#ff7a10",
+      "sha256": "1eb664c7df697f13b3bc37d8f199de78b3aab63518184e772149d88202ffba1b"
+    },
+    "lasthit": {
+      "source": "sqns_fx/emily_skill_hit_Sqns2.PNG",
+      "grid": [
+        4,
+        4
+      ],
+      "cell": 192,
+      "tint": "#ff8a2e",
+      "sha256": "f44fbecbc7878f65bfb883dede3e84662fc5f9d7292d7fdc529413c41cbec6fa"
+    },
+    "lastfire": {
+      "source": "sqns_fx/PD_skill1_hit.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 192,
+      "tint": "#ff7a14",
+      "sha256": "08169a850b1fdf2b6378681fb450e894dfcab75692c597c6f779d78a0606e40a"
+    },
+    "sonic": {
+      "source": "sqns_fx/Padong_sqns2.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#ff6e00",
+      "sha256": "7f31cafc1a83eb78a2e87feb8a1b31f3fb42e9548c0b199543407c3b5be00355"
+    },
+    "startsmoke": {
+      "source": "sqns_fx/smoke_sqns_.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 160,
+      "tint": "#d9d2cc",
+      "sha256": "0c428cfc0876ef2e1e8de72ffb4d6ae1dcb3fa69e086715dcb4961bd3a8ffd65"
+    },
+    "ring": {
+      "source": "sqns_fx/round_trans_sqns.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 192,
+      "tint": "#ffb43a",
+      "sha256": "ac004923900276b8970b83a6cee87c1eca128d8736e00f29a6c03d24e86f3ef2"
+    },
+    "boost": {
+      "source": "sqns_fx/slepnir_skill2_boost.PNG",
+      "grid": [
+        3,
+        2
+      ],
+      "cell": 192,
+      "tint": "#ffb030",
+      "sha256": "d1eb105a9c747623a1468de8bee227d84978b54c3130c8400ad3216d1640f5da"
+    },
+    "upsmoke": {
+      "source": "sqns_fx/DrM_attack_backsmoke1.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#cfc6bf",
+      "sha256": "bf02bf6aaf72eae1623af3287ff6ad9aabcd8f91c326420574927715e01deee0"
+    },
+    "flyboom": {
+      "source": "sqns_fx/boom_sqns_234.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": null,
+      "sha256": "8cd7d5bda21935e3c5009b519e45e8efea5c08411d5c6c05a74c1404cb1c229e"
+    },
+    "groundsmoke": {
+      "source": "sqns_fx/Sleipnir_ground_boost_smoke.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": "#bd8f7e",
+      "sha256": "29775b927e932c0eacee56ac4f051d4b90b9e2e2911ba8a05b08e00534b72307"
+    },
+    "backsmoke": {
+      "source": "sqns_fx/Gigantes_skill2_back_smoke.PNG",
+      "grid": [
+        4,
+        4
+      ],
+      "cell": 192,
+      "tint": "#927669",
+      "sha256": "827638bfd92ec6d0770a048389e9317927832e9d8b0295f4ab06ccc3a15d212f"
+    },
+    "aftersmoke": {
+      "source": "sqns_fx/Sleipnir_after_smoke.PNG",
+      "grid": [
+        4,
+        3
+      ],
+      "cell": 192,
+      "tint": "#a8826f",
+      "sha256": "bfe3e10c60cef52d9425d8372be58720a85b6439c63ccd2765e764e6e569f914"
+    },
+    "downsmoke": {
+      "source": "sqns_fx/smoke_ground.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#bd8f7e",
+      "sha256": "5ec01a5c688d231aba4bc2b66848d7c3558eeba14ce0c83d51b8343868090a64"
+    },
+    "eyes": {
+      "source": "sqns_fx/sleipnir_eyes_lighting.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 256,
+      "tint": "#ffd23a",
+      "sha256": "6b985f81eab4833a0fc38bd5a95b96ee257623f0fbba7f1a2e7b40897591a840"
+    },
+    "line": {
+      "source": "sqns_fx/blade_line_skill2.PNG",
+      "grid": [
+        4,
+        2
+      ],
+      "cell": 256,
+      "tint": "#ff9a30",
+      "sha256": "65c9c23cbef91b4b59a18bac77999e6b6018fea0620523a7a1d346279b6053d1"
+    },
+    "goggle": {
+      "source": "sqns_fx/Sleipnir_gogle_lighting.PNG",
+      "grid": [
+        3,
+        3
+      ],
+      "cell": 160,
+      "tint": "#ffd114",
+      "sha256": "c3e8374625e9b902547cff8626f6ad4ca5769dc78e1896d379af491128d27a39"
+    },
+    "aura": {
+      "source": "Texture/guess_texture.png",
+      "grid": [
+        1,
+        1
+      ],
+      "cell": 256,
+      "tint": "#ff9a3b",
+      "sha256": "0bf4cdfc3a9fc7ac8964602c84dcab2aa9ad0bc7b134c2b1f71637031a280821"
+    }
+  }
+}

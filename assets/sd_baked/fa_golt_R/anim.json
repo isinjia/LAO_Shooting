@@ -1,0 +1,29 @@
+{
+  "source": "Unity prefab + FBX bake (Char_AGS_Goltarion_N/Model_AGS_Goltarion_N)",
+  "native": true,
+  "size": 384,
+  "character": "fa_golt_R",
+  "idle": [
+    "native/idle_000.png"
+  ],
+  "idleFps": 24.0,
+  "idleDuration": 3.0,
+  "move": [
+    "native/move_000.png"
+  ],
+  "moveFps": 24.0,
+  "moveDuration": 3.0,
+  "contentBox": {
+    "x": 58,
+    "y": 120,
+    "w": 270,
+    "h": 144
+  },
+  "sheet": "sheet.json",
+  "sheetFrames": 2,
+  "sheetFiles": [
+    "sheet_00.webp"
+  ],
+  "sheetFormat": "webp",
+  "stillNote": "Rampalion still part (holds frame 0): trimmed to one frame (user: kit restart lag)."
+}

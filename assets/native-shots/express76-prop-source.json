@@ -1,0 +1,55 @@
+{
+  "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\Character\\Char_PECS_Express76_N\\Model_PECS_Express76_N\\materials\\Model_PECS_Express76_Part2.png",
+  "sha256": "7d6b212f2c17a3ea0403a6533b5b017af58b493116c5c20aa2cb1f8a44f74ccd",
+  "processing": "alpha-island crop + resize (long edge 256); original art only",
+  "props": {
+    "moneystack": {
+      "atlasRect": [
+        75,
+        51,
+        171,
+        141
+      ],
+      "size": [
+        256,
+        211
+      ]
+    },
+    "bill": {
+      "atlasRect": [
+        338,
+        58,
+        62,
+        133
+      ],
+      "size": [
+        119,
+        256
+      ]
+    },
+    "atm": {
+      "atlasRect": [
+        74,
+        652,
+        456,
+        637
+      ],
+      "size": [
+        183,
+        256
+      ]
+    },
+    "atmbroken": {
+      "atlasRect": [
+        620,
+        666,
+        580,
+        656
+      ],
+      "size": [
+        226,
+        256
+      ]
+    }
+  }
+}

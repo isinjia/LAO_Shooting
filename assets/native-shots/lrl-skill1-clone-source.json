@@ -1,0 +1,34 @@
+{
+  "source": "assets/sd_baked/lrl/native/skill1_###.png (baked from Unity LRL skill1.anim)",
+  "frames": [
+    36,
+    39,
+    42,
+    45,
+    48,
+    51,
+    54,
+    57,
+    60,
+    63,
+    66,
+    69,
+    72
+  ],
+  "sourceHashes": {
+    "36": "e2c7255d968032e05ba83fe9ab7cc2ca3cf6e7a5c5c518a796a54edde7e4a9f8",
+    "39": "03819268bd8ab6567607d1085fb4ab29ace9c37f7055426527bf2e1ad539372a",
+    "42": "d8a84dc11b6798e625a5dd432a3d33182ce092c72acfc7f97ecc81d10b747fb7",
+    "45": "9b89c600a8e8cbd6a8b07bbbe429de77175b3245b866bb3b58899a0b47b1c27c",
+    "48": "eb4f5ec1eaa943bb7ba0e3d8790f80f850b8ebce27b2e80eef4dd75a07cb12e3",
+    "51": "f7fcdfc4dbe00bf9f009ba1a5901f6cf47ec306ba02d7d492401f0791c7291cf",
+    "54": "57ff211f6e3194b059ba4f9c00918474e867fd0211b357cc5d4a131b5a355236",
+    "57": "eb967cb7315ecb73bbae568500fe77602cdee7c9d0bd376b3e24831d51069370",
+    "60": "48f2e0795a35b4b46f3cc4c6eddca4f887ed78d285fc352356ff4e62fb9342d2",
+    "63": "98bd4734ec35bb6f4c683e29fe82443c3f28f7d6d23719f57dd0e80e84e786ce",
+    "66": "6470f8ffebc6fdfb319635de705ec4329268c740333e654b988f26d0fc5beb75",
+    "69": "160ee91cb1383f656c456359a61390bc3d83243cc83b7b9a70e8f6b99e969398",
+    "72": "7b6390a9301e543bbed99058466f8b76b5228db750ea4c88404f7817893ed15d"
+  },
+  "processing": "Fixed contentBox crop and 192px resize, 4x4 sheet; original character art only"
+}

@@ -1,0 +1,28 @@
+{
+  "source": "sd_baked/express76/native/skill1_054-060.png (skill1.anim freight fly-in)",
+  "frames": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    59
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "cell": 192,
+  "sourceHashes": {
+    "54": "b751bc27555a96a277e3054dd1cd3dff817400ca221dd9060a8b3af63a0edcb5",
+    "55": "aafae8f463e8de26959dfcda61475f37d44f2680eba52338c986dd15ece1e6f0",
+    "56": "da54ab7c723d83141fc3329142ef2cb26e37d455a05f99be00bef9d8233c971a",
+    "57": "d51b16457e7920832ef225ad9c2a623902a1426b84c3a73589d0c4b67f75d011",
+    "58": "e9294dab884ee73b5427ca9dafa3f880fedb49682295e9cc084fde070f01090e",
+    "59": "82827e0e2a4c0ee76b5fbdc1e34ba43af07504f4ef984c0ce586e121eb79b2b1",
+    "60": "b243b6cae70e6cbed7a008ca85caba19b02784ad812a41a5b93057b46e9a5dc1"
+  },
+  "processing": "contentBox crop + LANCZOS resize; original character art only"
+}

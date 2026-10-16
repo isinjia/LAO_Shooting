@@ -1,0 +1,92 @@
+{
+  "hirume": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Hirume_fire.png",
+    "usedBy": "Hirume fire sheet",
+    "grid": [
+      3,
+      3
+    ],
+    "sha256": "e37b08b83268e3392ed300d19b458f4b84eebf5fce3024123c8382ddb048c3f8",
+    "bytes": 27599
+  },
+  "constantia": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\bullet_sr_re.png",
+    "usedBy": "Constantia_bullet.prefab",
+    "grid": [
+      1,
+      1
+    ],
+    "sha256": "e9c5d8a42ab341a88b6001362ab8932d3904abb60792bee3780fb75b3f48626e",
+    "bytes": 1557
+  },
+  "lrl": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\blade_Johanna.PNG",
+    "usedBy": "Shared Unity blade sheet; also referenced by Labiata_skill1_blade1.prefab",
+    "grid": [
+      4,
+      3
+    ],
+    "sha256": "4c140c6ee7e06f78533820b766438d84d1eb461ef6e951f2b0619a47091e0109",
+    "bytes": 119361
+  },
+  "merlin": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\merlin_skill\\skill1\\merlin_missile.png",
+    "usedBy": "merlin_N_bullet.prefab",
+    "grid": [
+      1,
+      1
+    ],
+    "sha256": "3f7fd2468eda8372cbbcf173a00d032e18fdce95e35910aa9881458ab435218d",
+    "bytes": 7821
+  },
+  "griffin": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\pani_fire_sqns_43_re.png",
+    "usedBy": "PA00EL_skill_1_fire.prefab pani_fire_sqns_43_m (Skill1 cannon_Fire)",
+    "grid": [
+      3,
+      3
+    ],
+    "sha256": "f16ae6d797c5c7490b1ee432c8a9b275102e5f52b6946c70eef274e97648a7a2",
+    "bytes": 13647
+  },
+  "fafnir": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResource\\FX\\character_prefab\\fafnir_skill\\Hussar_lightning1 1.png",
+    "usedBy": "fafnir_N_Skill1_A.prefab",
+    "grid": [
+      4,
+      2
+    ],
+    "sha256": "34169b08129f121e4bb2696925819ec69e568145ed5efba77feada618503a64f",
+    "bytes": 18019
+  },
+  "eternity": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\Texture\\gigantes_bullet_re.png",
+    "usedBy": "Eternity_skill1_bullet.prefab",
+    "grid": [
+      1,
+      1
+    ],
+    "sha256": "cfcc9ad0305d2f26ba46502ce1632c298f2ebff00c9ee7ef9e5e83a7dfdc0914",
+    "bytes": 1569
+  },
+  "labiata": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\Labiata_skill2_blade2_deco.PNG",
+    "usedBy": "Labiata_skill1_blade1.prefab",
+    "grid": [
+      3,
+      3
+    ],
+    "sha256": "db3363e1939cb379fb1661c3b0b758dcf29c3419d56b5721aae20c42e3d4c9f9",
+    "bytes": 176904
+  },
+  "emily": {
+    "source": "E:\\LAO\\Google_QA\\Assets\\AssetBundleResourceSub\\FX\\sqns_fx\\lazer_sqsn.PNG",
+    "usedBy": "lazer_beam_emily.prefab",
+    "grid": [
+      4,
+      4
+    ],
+    "sha256": "7d1ad0be2c56a3ea0e37d19b8ad6e9aeaaf224d35580d1aa8f759960d90b2792",
+    "bytes": 273966
+  }
+}
