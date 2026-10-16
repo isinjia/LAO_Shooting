@@ -4,3 +4,5 @@ package-lock.json
 *.log
 playwright-report/
 test-results/
+dist/
+.wrangler/

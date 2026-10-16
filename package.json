@@ -4,6 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "build": "node tools/build-cloudflare.mjs",
     "test": "node tools/test-special-shots.mjs",
     "test:basic": "node tools/test-basic-shots.mjs",
     "test:sprites": "node tools/test-sprite-clips.mjs",
