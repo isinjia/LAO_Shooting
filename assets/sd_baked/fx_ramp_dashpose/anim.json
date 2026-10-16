@@ -1,0 +1,28 @@
+{
+  "source": "rampalion skill_1 clip 3.47s, lance pulled onto the wrist",
+  "native": true,
+  "size": 768,
+  "character": "fx_ramp_dashpose",
+  "idle": [
+    "native/idle_000.png"
+  ],
+  "idleFps": 1,
+  "idleDuration": 1,
+  "move": [
+    "native/move_000.png"
+  ],
+  "moveFps": 1,
+  "moveDuration": 1,
+  "contentBox": {
+    "x": 19,
+    "y": 45,
+    "w": 748,
+    "h": 692
+  },
+  "sheet": "sheet.json",
+  "sheetFrames": 2,
+  "sheetFiles": [
+    "sheet_00.webp"
+  ],
+  "sheetFormat": "webp"
+}

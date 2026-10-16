@@ -1,0 +1,29 @@
+{
+  "source": "Unity prefab + FBX bake (Char_AGS_Tyrant_N/Model_AGS_Tyrant_N)",
+  "native": true,
+  "size": 768,
+  "character": "fc_tyranthead7",
+  "idle": [
+    "native/idle_000.png"
+  ],
+  "idleFps": 24.615382721893635,
+  "idleDuration": 1.3000001,
+  "move": [
+    "native/move_000.png"
+  ],
+  "moveFps": 24.615382721893635,
+  "moveDuration": 1.3000001,
+  "contentBox": {
+    "x": 145,
+    "y": 111,
+    "w": 494,
+    "h": 550
+  },
+  "sheet": "sheet.json",
+  "sheetFrames": 2,
+  "sheetFiles": [
+    "sheet_00.webp"
+  ],
+  "sheetFormat": "webp",
+  "stillNote": "Rampalion still part (holds frame 0): trimmed to one frame (user: kit restart lag)."
+}
